@@ -1447,3 +1447,833 @@ ENTRIES.append({
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 4},
 })
 
+
+# === Joseph Guthrie's children (113x — fills out 113→1133 line and siblings) ===
+ENTRIES.append({
+    "code": "1131",
+    "name": "Martha Ellen Guthrie",
+    "sex": "F",
+    "born": "22 Jul 1871",
+    "died": "21 Aug 1931",
+    "spouses": [{
+        "name": "Rev. George W. VanSickle",
+        "born": "24 Oct 1869",
+        "died": "28 Apr 1942",
+        "married": "7 Apr 1892",
+        "details": "Son of Zachariah and Mary [Burgess] VanSickle.",
+    }],
+    "buried": "Shady Grove Cemetery, WV",
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 12},
+})
+
+ENTRIES.append({
+    "code": "1132",
+    "name": "Charles Allen Guthrie",
+    "sex": "M",
+    "born": "20 Feb 1873",
+    "died": "1933",
+    "spouses": [
+        {"name": "Emma Spiker", "born": "22 Oct 1877", "died": "6 Aug 1905",
+         "details": "Daughter of John P. and Katherine [Beeghley] Spiker.", "order": 1},
+        {"name": "Florence (Flossie) Spoerlein", "born": "17 Aug 1887", "died": "30 Sep 1968",
+         "buried": "Shady Grove Cemetery", "order": 2},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 12},
+})
+
+ENTRIES.append({
+    "code": "1134",
+    "name": "Mary Etta Guthrie",
+    "sex": "F",
+    "born": "16 Jul 1882",
+    "died": "25 Nov 1977",
+    "spouses": [{
+        "name": "Arthur Oren VanSickle",
+        "born": "30 Aug 1881",
+        "died": "22 Apr 1956",
+        "details": "Son of Elias and Emma [Robinson] VanSickle. Both buried at Shady Grove Cemetery, WV.",
+    }],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 12},
+})
+
+ENTRIES.append({
+    "code": "1135",
+    "name": "Sarah Jane Guthrie",
+    "sex": "F",
+    "born": "1 Jun 1885",
+    "died": "15 Dec 1966",
+    "spouses": [{"name": "David Warren VanSickle", "born": "7 Nov 1883", "died": "7 Aug 1939"}],
+    "buried": "Shady Grove Cemetery, WV",
+    "residences": ["Hazelton, WV"],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 12},
+})
+
+ENTRIES.append({
+    "code": "1136",
+    "name": "Frank Guthrie",
+    "sex": "M",
+    "born": "1 Jun 1885",
+    "died": "27 Mar 1962",
+    "spouses": [{
+        "name": "Millie C. Knox",
+        "born": "15 Apr 1887",
+        "died": "1 Mar 1983",
+        "married": "30 Dec 1908",
+        "details": "Daughter of Joshua and Martha [Casseday] Knox. Married in Uniontown, PA.",
+    }],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 13},
+})
+
+# === Ward Barnes Guthrie's children (11331's kids) ===
+ENTRIES.append({
+    "code": "113311",
+    "name": "Suzanne Kay Guthrie",
+    "sex": "F",
+    "born": "2 Dec 1942",
+    "spouses": [{"name": "Glenn Duane Evenstad", "born": "25 May 1935", "married": "27 Dec 1967",
+                 "details": "Son of Ole M. Evenstad."}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 80},
+})
+
+ENTRIES.append({
+    "code": "113312",
+    "name": "Samuel Fleming Guthrie",
+    "sex": "M",
+    "born": "14 Feb 1945",
+    "spouses": [{"name": "Bonnie Jane Duncan", "born": "6 Apr 1947", "married": "7 Apr 1968"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 80},
+})
+
+ENTRIES.append({
+    "code": "113313",
+    "name": "Ward David Guthrie",
+    "sex": "M",
+    "born": "17 Mar 1946",
+    "spouses": [{"name": "Carol Ann Shaw", "born": "30 Dec 1952", "married": "21 Jan 1978"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 80},
+})
+
+ENTRIES.append({
+    "code": "113314",
+    "name": "Stephen Byron Guthrie",
+    "sex": "M",
+    "born": "25 Mar 1960",
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 80},
+})
+
+# === More Lydia/Christian Nicola kids (completes the 13E*/174* SEE_REF cluster) ===
+ENTRIES.append({
+    "code": "13E3",
+    "name": "Fredrick R. Nicola",
+    "sex": "M",
+    "born": "1891",
+    "died": "24 Nov 1970",
+    "spouses": [
+        {"name": "Edna ---", "married": "1914", "order": 1},
+        {"name": "Ethel ---", "born": "1903", "order": 2},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 23},
+})
+
+ENTRIES.append({
+    "code": "13E7",
+    "name": "Laura Bell Nicola",
+    "sex": "F",
+    "born": "1904",
+    "spouses": [{"name": "James Rockwell", "married": "1918"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 23},
+})
+
+# === Walter Christian Guthrie's kids (13F* — the patriarch's last child's line) ===
+ENTRIES.append({
+    "code": "13F1",
+    "name": "Lloyd Milton Guthrie",
+    "sex": "M",
+    "born": "24 Jul 1886",
+    "died": "1 Mar 1975",
+    "spouses": [{
+        "name": "Pearl Savage",
+        "born": "1899",
+        "died": "1965",
+        "details": "Daughter of Samuel and Sarah [Uphold] Savage. Both buried at Blooming Grove Cemetery.",
+    }],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 8},
+})
+
+ENTRIES.append({
+    "code": "13F5",
+    "name": "Matila (Mamie) Mae Guthrie",
+    "sex": "F",
+    "born": "9 Dec 1897",
+    "spouses": [{
+        "name": "Samuel Walter Ditmore",
+        "born": "1895",
+        "died": "14 Jul 1962",
+        "married": "18 Oct 1915",
+        "details": "Son of John and Melanda [Teets] Ditmore. Married at Kingwood, WV.",
+    }],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 9},
+})
+
+ENTRIES.append({
+    "code": "13F7",
+    "name": "James Quinter Guthrie",
+    "sex": "M",
+    "born": "31 Dec 1902",
+    "died": "22 Jul 1980",
+    "notes": "Died when lightning struck his house.",
+    "spouses": [{
+        "name": "Anna Florida (Braham) Reckart",
+        "born": "2 Jan 1907",
+        "died": "28 Mar 1983",
+        "details": "Daughter of William Herbert and Margaret [Dunbar] Reckart.",
+    }],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 9},
+})
+
+# === More Alexander branch (gen 4 — A22 line) ===
+ENTRIES.append({
+    "code": "A22",
+    "name": "Marshal Abner Guthrie",
+    "sex": "M",
+    "born": "12 Jun 1871",
+    "died": "25 Mar 1956",
+    "spouses": [{"name": "Cora Cuppett", "born": "27 Aug 1875", "died": "29 Jan 1956", "married": "17 Mar 1898"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 2},
+})
+
+ENTRIES.append({
+    "code": "A21",
+    "name": "Isabelle Rachel Guthrie",
+    "sex": "F",
+    "born": "16 Apr 1869",
+    "died": "24 Jul 1940",
+    "spouses": [{"name": "Truman Elsworth Frazee", "born": "1868", "died": "9 May 1942", "married": "19 Dec 1895"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 2},
+})
+
+ENTRIES.append({
+    "code": "A24",
+    "name": "Elizabeth (Lizzie) Alice Guthrie",
+    "sex": "F",
+    "born": "11 Jan 1877",
+    "died": "27 Jun 1943",
+    "spouses": [{"name": "Chancy L. Miller", "married": "1906"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 2},
+})
+
+ENTRIES.append({
+    "code": "A211",
+    "name": "Asa Ralph Frazee",
+    "sex": "M",
+    "born": "17 Dec 1896",
+    "spouses": [{
+        "name": "Grace Catherine Guthrie",
+        "born": "14 May 1903",
+        "married": "12 Sep 1925",
+        "details": "Same as #11322 — daughter of Charles Allen Guthrie (#1132), John's branch. "
+                   "Another cross-branch marriage.",
+    }],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 4},
+})
+
+ENTRIES.append({
+    "code": "11322",
+    "name": "Grace Catherine Guthrie",
+    "sex": "F",
+    "born": "14 May 1903",
+    "spouses": [{
+        "name": "Asa Ralph Frazee",
+        "born": "17 Dec 1896",
+        "married": "12 Sep 1925",
+        "details": "Same as #A211 in Alexander's branch. Son of Truman E. and Isabelle R. [Guthrie] Frazee.",
+    }],
+    "notes": "Daughter of Charles Allen Guthrie (#1132). Her marriage links John's branch to Alexander's via the Frazee line.",
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 80},
+})
+
+# === Stephen branch — Amy Guthrie's son line (565) ===
+ENTRIES.append({
+    "code": "565",
+    "name": "Kenneth Bruce Frankhouser",
+    "sex": "M",
+    "born": "5 Dec 1868",
+    "died": "12 Oct 1941",
+    "spouses": [{"name": "Sarah E. Felton", "born": "28 Mar 1865", "died": "1 Sep 1928"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 2},
+})
+
+ENTRIES.append({
+    "code": "5325",
+    "name": "Roy Leslie Guthrie",
+    "sex": "M",
+    "born": "18 Feb 1894",
+    "died": "1969",
+    "spouses": [{"name": "Elizabeth V. Ramsey", "born": "1895", "died": "1976"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 4},
+})
+
+# === James gen 4-5 chains ===
+ENTRIES.append({
+    "code": "741",
+    "name": "James Guthrie",
+    "sex": "M",
+    "born": "2 Feb 1879",
+    "died": "29 Apr 1965",
+    "spouses": [{"name": "Caroline (Carrie) B. Maust", "born": "21 Jun 1889", "died": "9 May 1965", "married": "6 Mar 1908"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 21},
+})
+
+ENTRIES.append({
+    "code": "748",
+    "name": "Troy Guthrie",
+    "sex": "M",
+    "born": "24 Feb 1891",
+    "died": "3 Dec 1966",
+    "spouses": [{"name": "Eula Esta Fike", "born": "21 May 1901", "died": "21 May 1921",
+                 "details": "Daughter of Charles and Elizabeth [Cupp] Fike."}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 21},
+})
+
+ENTRIES.append({
+    "code": "765",
+    "name": "Laura Guthrie",
+    "sex": "F",
+    "born": "19 Apr 1889",
+    "spouses": [{"name": "Oliver Clark Spiker"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 4},
+})
+
+ENTRIES.append({
+    "code": "1713",
+    "name": "Oliver Clark Spiker",
+    "sex": "M",
+    "born": "15 Feb 1886",
+    "died": "29 Sep 1974",
+    "spouses": [{
+        "name": "Laura Guthrie",
+        "born": "19 Apr 1889",
+        "died": "24 Oct 1944",
+        "married": "14 Feb 1909",
+        "details": "Same as #765 in James's branch — daughter of Harrison Guthrie #76.",
+    }],
+    "notes": "Another John/James cross-link: Oliver is son of Mary Elizabeth Nicola (#171, John line) "
+             "and Jonas Spiker; he married Laura Guthrie (#765, James line). Both buried at Webbs Chapel Cemetery.",
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 21},
+})
+
+
+# === Generation 4 — children of 111 William Harrison Guthrie ===
+ENTRIES.append({
+    "code": "1111",
+    "name": "Rhuey Pearl Guthrie",
+    "sex": "F",
+    "born": "22 Feb 1889",
+    "died": "25 Sep 1977",
+    "spouses": [
+        {"name": "Albert Ross Frazee", "born": "6 Jul 1874", "died": "22 Jun 1938",
+         "married": "26 May 1940", "order": 1},
+        {"name": "Rev. Emra Fike", "born": "26 Sep 1872", "died": "20 Mar 1956", "order": 2},
+        {"name": "Elmer Cline Shaffer", "born": "14 Sep 1885", "died": "7 Apr 1973", "order": 3},
+    ],
+    "buried": "Terra Alta, WV",
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 11},
+})
+
+ENTRIES.append({
+    "code": "1112",
+    "name": "Ada Ellen Guthrie",
+    "sex": "F",
+    "born": "17 Feb 1887",
+    "died": "1 Jan 1976",
+    "spouses": [
+        {"name": "Harry C. Windell", "born": "28 Sep 1884", "died": "16 Sep 1942", "order": 1},
+        {"name": "Charles E. Vought", "details": "Of Cransville.", "order": 2},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 11},
+})
+
+ENTRIES.append({
+    "code": "1113",
+    "name": "Chester Earl Guthrie",
+    "sex": "M",
+    "born": "11 Dec 1888",
+    "died": "18 Aug 1967",
+    "spouses": [{"name": "Martha Fike"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 11},
+})
+
+# === Archibald J. DeBerry's children (122x — completes 12 sub-tree) ===
+ENTRIES.append({
+    "code": "1222",
+    "name": "Oliver Martin DeBerry",
+    "sex": "M",
+    "born": "28 Jun 1874",
+    "died": "16 Nov 1947",
+    "spouses": [{"name": "Anna Funk", "born": "11 Nov 1880", "died": "10 Jul 1953"}],
+    "notes": "Had eleven children.",
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 13},
+})
+
+ENTRIES.append({
+    "code": "1224",
+    "name": "Charles Allen DeBerry",
+    "sex": "M",
+    "born": "8 Jul 1878",
+    "died": "7 Oct 1954",
+    "spouses": [{
+        "name": "Cora Margaret Lambert",
+        "born": "6 Sep 1885",
+        "died": "6 Oct 1961",
+        "married": "12 Oct 1908",
+        "details": "Daughter of John Allen and Emma Jane [Martin] Lambert. Both buried at Mt. Moriah Cemetery, Valley Point, WV.",
+    }],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 13},
+})
+
+# === Lucy Ann DeBerry's children (123x) ===
+ENTRIES.append({
+    "code": "1233",
+    "name": "Bruce Deal",
+    "sex": "M",
+    "born": "24 May 1881",
+    "died": "25 Jul 1951",
+    "born_place": "Cherry Grove",
+    "spouses": [{
+        "name": "Pearl Disa Rodeheaver",
+        "born": "30 May 1887",
+        "died": "2 Nov 1983",
+        "married": "1905",
+        "details": "Daughter of Cornelius and Isminnie [Sisler] Rodeheaver.",
+    }],
+    "buried": "Shady Grove Cemetery, WV",
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 14},
+})
+
+ENTRIES.append({
+    "code": "1235",
+    "name": "Julia Deal",
+    "sex": "F",
+    "born": "23 Dec 1884",
+    "died": "9 Jan 1961",
+    "spouses": [
+        {"name": "Clark (Clyde) Martin DeBerry", "born": "19 Feb 1878", "died": "3 Nov 1922",
+         "married": "1907", "order": 1,
+         "details": "Son of James and Louise [Fredlock] DeBerry."},
+        {"name": "Andrew Elias Feather", "born": "12 Dec 1865", "died": "4 Apr 1958",
+         "married": "13 Nov 1926", "order": 2,
+         "details": "Son of Isaac B. and Elizabeth [Reckart] Feather."},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 14},
+})
+
+ENTRIES.append({
+    "code": "1236",
+    "name": "Ella Delmerrl Deal",
+    "sex": "F",
+    "born": "13 Jan 1887",
+    "died": "18 Jun 1948",
+    "spouses": [{
+        "name": "Winfield Scott Feather",
+        "born": "9 Dec 1880",
+        "died": "20 Aug 1951",
+        "details": "Son of Jacob E. and Mariah Ann [Welch] Feather.",
+    }],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 14},
+})
+
+# === Susannah Ella DeBerry's daughter ===
+ENTRIES.append({
+    "code": "124",
+    "name": "Susanna Ella DeBerry",
+    "sex": "F",
+    "born": "27 Jul 1862",
+    "died": "4 Jun 1896",
+    "spouses": [{
+        "name": "Wilbur Franklin Moyers",
+        "born": "22 Aug 1864",
+        "died": "1 Jun 1951",
+        "details": "Son of Amos and Elizabeth [Herring] Moyers.",
+    }],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 2},
+})
+
+# === Mary Frances Guthrie (82, Absalom)'s children — Harned line ===
+ENTRIES.append({
+    "code": "823",
+    "name": "Walter Harned",
+    "sex": "M",
+    "born": "13 Jul 1862",
+    "died": "31 Dec 1930",
+    "spouses": [{
+        "name": "Mrs. H. J. Woodward, nee Hulda Tomelson",
+        "born": "29 Nov 1855",
+        "married": "26 Jul 1884",
+    }],
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 1},
+})
+
+ENTRIES.append({
+    "code": "825",
+    "name": "Jennie Harned",
+    "sex": "F",
+    "born": "6 Jun 1873",
+    "spouses": [{"name": "Edward Alexander", "born": "12 Mar 1872", "married": "10 May 1896"}],
+    "residences": ["Epping, ND"],
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 2},
+})
+
+# === James Marshall Guthrie (84, Absalom)'s children ===
+ENTRIES.append({
+    "code": "84",
+    "name": "James Marshall Guthrie",
+    "sex": "M",
+    "born": "20 May 1845",
+    "died": "7 Jan 1917",
+    "spouses": [{"name": "Elizabeth Jane Linton", "born": "26 Jan 1856", "married": "2 Nov 1875"}],
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 1},
+})
+
+ENTRIES.append({
+    "code": "843",
+    "name": "John Clyde Guthrie",
+    "sex": "M",
+    "born": "11 Jun 1881",
+    "spouses": [{"name": "Gertrude Simpson", "born": "31 Mar 1881", "married": "9 Jan 1913"}],
+    "residences": ["Logan, OH"],
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 3},
+})
+
+ENTRIES.append({
+    "code": "845",
+    "name": "Mellie Irene Guthrie",
+    "sex": "F",
+    "born": "14 Aug 1888",
+    "spouses": [{"name": "Ernest Brown", "born": "28 May 1884", "married": "13 Oct 1906"}],
+    "residences": ["155 Overwood Road, Akron, OH"],
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 3},
+})
+
+# === Alexander gen 4 — A22's kids ===
+ENTRIES.append({
+    "code": "A221",
+    "name": "Martha Guthrie",
+    "sex": "F",
+    "born": "22 May 1899",
+    "spouses": [{"name": "Theodore B. Alexander", "married": "6 Jul 1922"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 4},
+})
+
+ENTRIES.append({
+    "code": "A222",
+    "name": "Grace Drusilla Guthrie",
+    "sex": "F",
+    "born": "3 Mar 1902",
+    "died": "1988",
+    "spouses": [{"name": "John Franks", "married": "19 Jan 1949"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 4},
+})
+
+ENTRIES.append({
+    "code": "A225",
+    "name": "Paul Johnson Guthrie",
+    "sex": "M",
+    "born": "1 Nov 1910",
+    "died": "5 May 1977",
+    "spouses": [{"name": "Mildred Catherine Sturm", "died": "1989", "married": "23 Aug 1934"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 4},
+})
+
+# === Bruce Deal's children (1233x — gen 5 from John) ===
+ENTRIES.append({
+    "code": "12331",
+    "name": "John Cornelius Deal",
+    "sex": "M",
+    "born": "10 Jul 1906",
+    "died": "31 Oct 1958",
+    "spouses": [{
+        "name": "Laura Edith Stone",
+        "born": "18 Feb 1907",
+        "died": "1 Sep 1986",
+        "married": "1 Nov 1930",
+        "details": "Daughter of James William and Clara Bell [Smith] Stone.",
+    }],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 50},
+})
+
+ENTRIES.append({
+    "code": "12338",
+    "name": "Ray Glenn Deal",
+    "sex": "M",
+    "born": "23 Jan 1922",
+    "spouses": [{"name": "June Renee Kelly", "born": "26 Feb 1923", "married": "8 Aug 1946"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 50},
+})
+
+# === Alexander A4 line (Louise Alida's grandkids/great-grandkids) ===
+ENTRIES.append({
+    "code": "A411",
+    "name": "Ivan Deal Frankhouser",
+    "sex": "M",
+    "born": "13 Dec 1896",
+    "died": "19 Dec 1953",
+    "spouses": [{"name": "Madelon Junk", "born": "12 Oct 1902"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 6},
+})
+
+ENTRIES.append({
+    "code": "A412",
+    "name": "Ralph W. Frankhouser",
+    "sex": "M",
+    "born": "22 Feb 1898",
+    "died": "6 Nov 1981",
+    "spouses": [{"name": "Georgia Lynn", "born": "1895"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 6},
+})
+
+ENTRIES.append({
+    "code": "A451",
+    "name": "Charles Henry Cupp",
+    "sex": "M",
+    "born": "4 Jul 1904",
+    "died": "9 May 1978",
+    "spouses": [{
+        "name": "Emma Elizabeth DeBerry",
+        "born": "8 May 1916",
+        "married": "31 Mar 1934",
+        "details": "Daughter of Oliver Martin (#1222) and Anna [Funk] DeBerry — same as #12241. "
+                   "Cross-link Alexander↔John via Cupp-DeBerry marriage.",
+    }],
+    "buried": "Haywood, CA",
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 6},
+})
+
+ENTRIES.append({
+    "code": "12241",
+    "name": "Emma Elizabeth DeBerry",
+    "sex": "F",
+    "born": "8 May 1916",
+    "spouses": [{
+        "name": "Charles Henry Cupp",
+        "born": "4 Jul 1904",
+        "died": "9 May 1978",
+        "married": "31 Mar 1934",
+        "details": "Same as #A451 in Alexander's branch.",
+    }],
+    "notes": "Daughter of Oliver Martin DeBerry (#1222). Marriage connects John↔Alexander.",
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 13},
+})
+
+# === James gen 4 — Alcinda's grandkids (71's grandkids via 715 and via 711) ===
+ENTRIES.append({
+    "code": "711",
+    "name": "Lovina Catherine Barnes",
+    "sex": "F",
+    "born": "23 Mar 1863",
+    "died": "12 May 1923",
+    "spouses": [
+        {"name": "Noah Thomas", "born": "13 Sep 1864", "died": "29 Apr 1956", "married": "3 May 1885",
+         "details": "Daughter Ethel born 1886; died 1886.", "order": 1},
+    ],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 1},
+})
+
+ENTRIES.append({
+    "code": "712",
+    "name": "Barbara Ellen Barnes",
+    "sex": "F",
+    "born": "16 Jul 1866",
+    "died": "25 Apr 1895",
+    "spouses": [
+        {"name": "Ira Thomas", "born": "24 Aug 1867", "died": "18 Mar 1958", "married": "19 Jan 1893",
+         "details": "Son Ray Ernest born 19 Jan 1895; died 22 Jun 1895."},
+    ],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 1},
+})
+
+
+# === James Quinter Guthrie's children (13F7x — gen 4 of John line) ===
+ENTRIES.append({
+    "code": "13F71",
+    "name": "Betty Guthrie",
+    "sex": "F",
+    "born": "8 Apr 1932",
+    "spouses": [
+        {"name": "Raymond Rishel", "born": "3 Mar 1931", "married": "Mar 1949",
+         "details": "Son of Robert and Pearl [Thomas] Rishel.", "order": 1},
+        {"name": "Harold S. (Pee Wee) Thomas", "born": "17 Jul 1920", "died": "28 Jun 1992",
+         "married": "15 May 1954", "order": 2,
+         "details": "Son of Harold Henry and Minnie Carol [Ryan] Thomas."},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 49},
+})
+
+ENTRIES.append({
+    "code": "13F73",
+    "name": "Walter Ray Guthrie",
+    "sex": "M",
+    "born": "26 Feb 1937",
+    "died": "26 May 1990",
+    "spouses": [{"name": "Shirley Jean Knabenshoe", "born": "27 Jan 1947"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 49},
+})
+
+ENTRIES.append({
+    "code": "13F74",
+    "name": "Alice Guthrie",
+    "sex": "F",
+    "born": "24 Oct 1939",
+    "spouses": [{
+        "name": "Franklin Richard Thomas",
+        "born": "11 Mar 1933",
+        "married": "1939",
+        "details": "Son of J. Richard and Lula P. [Fike] Thomas — same as #14474 in John's branch.",
+    }],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 49},
+})
+
+ENTRIES.append({
+    "code": "13F75",
+    "name": "Ethel Jane Guthrie",
+    "sex": "F",
+    "born": "24 Sep 1941",
+    "died": "1 Aug 1975",
+    "spouses": [{"name": "Troy Everey Rosier"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 49},
+})
+
+ENTRIES.append({
+    "code": "13F76",
+    "name": "Juanita Mae Guthrie",
+    "sex": "F",
+    "born": "16 May 1944",
+    "spouses": [{"name": "Howard K. Pratt, Jr."}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 49},
+})
+
+ENTRIES.append({
+    "code": "13F77",
+    "name": "Judy Marie Guthrie",
+    "sex": "F",
+    "born": "15 Aug 1946",
+    "spouses": [{"name": "Roger Lynn Hoffman", "born": "27 Jul 1942"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 49},
+})
+
+# === Stephen branch — more depth (53x sub-line) ===
+ENTRIES.append({
+    "code": "531",
+    "name": "Mary Alice Guthrie",
+    "sex": "F",
+    "born": "about 1855",
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 2},
+})
+
+ENTRIES.append({
+    "code": "535",
+    "name": "Caroline Bell Guthrie",
+    "sex": "F",
+    "born": "1871",
+    "died": "1943",
+    "spouses": [{"name": "John Maust"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 2},
+})
+
+ENTRIES.append({
+    "code": "5322",
+    "name": "Mary Alice Guthrie",
+    "sex": "F",
+    "born": "6 Nov 1887",
+    "died": "Mar 1952",
+    "spouses": [{"name": "Chester Victor Cupp", "born": "1878", "died": "1955",
+                 "married": "1908"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 3},
+})
+
+ENTRIES.append({
+    "code": "594",
+    "name": "Stephen Dudley Guthrie",
+    "sex": "M",
+    "spouses": [{"name": "Lillie May Whithorn", "born": "1873", "married": "1893"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 3},
+})
+
+ENTRIES.append({
+    "code": "597",
+    "name": "Alva Arthur Guthrie",
+    "sex": "M",
+    "spouses": [{"name": "Eleen Geary"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 3},
+})
+
+# === Generation 5/6 examples — Linda Joyce Lightner / etc. ===
+ENTRIES.append({
+    "code": "17282",
+    "name": "Thelma Pearl Guthrie",
+    "sex": "F",
+    "born": "5 Feb 1930",
+    "spouses": [
+        {"name": "Junior Lewis Lightner", "born": "27 Feb 1927", "order": 1},
+        {"name": "Marion W. Penland", "born": "27 Mar 1920", "married": "30 Aug 1975", "order": 2},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 36},
+})
+
+ENTRIES.append({
+    "code": "172821",
+    "name": "Linda Joyce Lightner",
+    "sex": "F",
+    "born": "9 May 1947",
+    "spouses": [
+        {"name": "James W. Pickett", "details": "Son of Lewis Pickett of Morgantown.", "order": 1},
+        {"name": "Robert James", "married": "16 Sep 1985", "order": 2},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 41},
+})
+
+# === Alexander branch — A45 sub-line (Cupp family) ===
+ENTRIES.append({
+    "code": "A452",
+    "name": "Ivan Daniel Cupp",
+    "sex": "M",
+    "born": "7 Jan 1906",
+    "died": "29 Jul 1995",
+    "spouses": [
+        {"name": "Helen Tabon", "order": 1},
+        {"name": "Annariah Blake", "born": "2 Aug 1906", "died": "19 Jan 1990", "order": 2},
+    ],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 4},
+})
+
+ENTRIES.append({
+    "code": "A454",
+    "name": "Mary Virginia Cupp",
+    "sex": "F",
+    "born": "1 Oct 1912",
+    "spouses": [
+        {"name": "Clyde (Jim) Summers", "born": "19 May 1893", "died": "8 Nov 1960",
+         "married": "26 Nov 1943", "order": 1},
+        {"name": "Glenn Webster Barnes", "born": "24 Dec 1906", "died": "4 Mar 1983",
+         "married": "5 Feb 1970", "order": 2,
+         "details": "Same as #7144 in James's branch. Cross-link Alexander↔James."},
+    ],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 4},
+})
+
+ENTRIES.append({
+    "code": "7144",
+    "name": "Glenn Webster Barnes",
+    "sex": "M",
+    "born": "24 Dec 1906",
+    "died": "4 Mar 1983",
+    "spouses": [
+        {"name": "Helen Younkin", "born": "27 Feb 1907", "died": "6 Feb 1969",
+         "married": "18 Jun 1930", "order": 1},
+        {"name": "Mary Cupp Summers", "born": "1 Oct 1912", "married": "5 Feb 1970",
+         "order": 2,
+         "details": "Same as #A454 in Alexander's branch. Daughter of Melvin R. and Alice Pearl [Frankhouser] Cupp."},
+    ],
+    "notes": "His second marriage links James↔Alexander.",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+})
+
