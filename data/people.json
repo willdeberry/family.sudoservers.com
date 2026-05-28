@@ -1,0 +1,4538 @@
+{
+  "version": "1.0",
+  "metadata": {
+    "lastUpdated": "2026-05-28",
+    "sourceFiles": [
+      "John_Guthrie - Eight Generations.pdf",
+      "William_Guthrie - One Generation.pdf",
+      "Stephen_Guthrie - One Generation.pdf",
+      "Rachel_Guthrie - One Generation.pdf",
+      "James_Guthrie - Seven Generations.pdf",
+      "Absalom_Guthrie - One Generation.pdf",
+      "Alexander_Guthrie - Five Generations.pdf"
+    ],
+    "founderNote": "All seven documented PDFs are children of an unnamed common Guthrie patriarch. Their lineage codes are 1 (John), 2 (William), 5 (Stephen), 6 (Rachel), 7 (James), 8 (Absalom), A (Alexander). Codes 3, 4, 9 are unaccounted for and may represent siblings whose lines were never documented. The unnamed patriarch is recorded here as code '0' so all branches connect to a single root."
+  },
+  "people": [
+    {
+      "id": "p_000001",
+      "lineageCodes": [
+        "0"
+      ],
+      "name": {
+        "full": "Unknown Guthrie Patriarch",
+        "first": "Unknown",
+        "middle": "Guthrie",
+        "last": "Patriarch"
+      },
+      "childIds": [
+        "p_000002",
+        "p_000043",
+        "p_000046",
+        "p_000053",
+        "p_000056",
+        "p_000072",
+        "p_000080"
+      ],
+      "notes": "Inferred common ancestor of the seven documented sibling branches. Not directly attested in any of the source PDFs but logically required: John (b. 1792), William (b. 1794), Stephen (b. 1801), Rachel (b. 1804), James (b. 1806), Absalom (b. 1810), and Alexander (b. 1815) share the Guthrie surname, overlap geographically (WV/PA), and the PDFs' shared numbering scheme treats them as siblings. Gaps at codes 3, 4, and 9 suggest additional undocumented siblings."
+    },
+    {
+      "id": "p_000002",
+      "lineageCodes": [
+        "1"
+      ],
+      "name": {
+        "full": "John Guthrie",
+        "first": "John",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1792-08-31",
+        "dateRaw": "31 Aug 1792 (alt: 21 Sep 1792)"
+      },
+      "death": {
+        "date": "1870-12-10",
+        "dateRaw": "10 Dec 1870"
+      },
+      "burial": {
+        "place": "Shady Grove Cemetery"
+      },
+      "parentIds": [
+        "p_000001"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Elizabeth Boger"
+        }
+      ],
+      "childIds": [
+        "p_000003",
+        "p_000008",
+        "p_000011",
+        "p_000027",
+        "p_000094",
+        "p_000033",
+        "p_000038",
+        "p_000095",
+        "p_000041"
+      ],
+      "residences": [
+        "Hazelton, WV (2½ miles east of Brandonville, Grant district)"
+      ],
+      "occupation": "Farmer",
+      "notes": "John was a German Baptist farmer and lived 2½ miles east of Brandonville, WV on part of the farm that was sold to him by his father near the Guthrie school, Grant district. All nine of his children were born at Hazelton, WV.",
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "1",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000003",
+      "lineageCodes": [
+        "11"
+      ],
+      "name": {
+        "full": "William Guthrie",
+        "first": "William",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1819-04-01",
+        "dateRaw": "1 Apr 1819"
+      },
+      "death": {
+        "date": "1909-02-19",
+        "dateRaw": "19 Feb 1909"
+      },
+      "parentIds": [
+        "p_000002"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Marih DeBerry",
+          "date": "1882-03-02",
+          "dateRaw": "2 Mar 1882",
+          "marriageOrder": 1
+        },
+        {
+          "spouseName": "Elizabeth Glover Maust",
+          "marriageOrder": 2
+        }
+      ],
+      "childIds": [
+        "p_000004",
+        "p_000096",
+        "p_000005",
+        "p_000097"
+      ],
+      "notes": "All four first-marriage children were born near Hazelton, WV.",
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "11",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000004",
+      "lineageCodes": [
+        "111"
+      ],
+      "name": {
+        "full": "William Harrison Guthrie",
+        "first": "William",
+        "middle": "Harrison",
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1841-04-07",
+        "dateRaw": "7 Apr 1841"
+      },
+      "death": {
+        "date": "1943-09-29",
+        "dateRaw": "29 Sep 1943"
+      },
+      "parentIds": [
+        "p_000003"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Matilda May Strawser",
+          "date": "1882-03-02",
+          "dateRaw": "2 Mar 1882"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "111",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "id": "p_000005",
+      "lineageCodes": [
+        "113"
+      ],
+      "name": {
+        "full": "Joseph Guthrie",
+        "first": "Joseph",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1846-06-01",
+        "dateRaw": "1 Jun 1846"
+      },
+      "death": {
+        "date": "1912-11-12",
+        "dateRaw": "12 Nov 1912"
+      },
+      "parentIds": [
+        "p_000003"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Hannah Ellen Kelly",
+          "dateRaw": "1870"
+        }
+      ],
+      "childIds": [
+        "p_000006"
+      ],
+      "occupation": "Pastor of the Brethren Church; blacksmith and farmer",
+      "notes": "Elected to the ministry in 1880. Lived east of Hazelton on a farm and moved to Hazelton when he retired. Died at Hazelton.",
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "113",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "id": "p_000006",
+      "lineageCodes": [
+        "1133"
+      ],
+      "name": {
+        "full": "Samuel Floyd Guthrie",
+        "first": "Samuel",
+        "middle": "Floyd",
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1878-09-07",
+        "dateRaw": "7 Sep 1878"
+      },
+      "death": {
+        "date": "1939-09-13",
+        "dateRaw": "13 Sep 1939"
+      },
+      "parentIds": [
+        "p_000005"
+      ],
+      "marriages": [
+        {
+          "spouseId": "p_000060",
+          "spouseName": "Rosa Mae Barnes",
+          "spouseDetails": "Same as #715 in James's branch.",
+          "date": "1906-05-17",
+          "dateRaw": "17 May 1906"
+        }
+      ],
+      "childIds": [
+        "p_000007"
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "1133",
+          "page": 22
+        }
+      ]
+    },
+    {
+      "id": "p_000007",
+      "lineageCodes": [
+        "11331",
+        "7151"
+      ],
+      "name": {
+        "full": "Ward Barnes Guthrie",
+        "first": "Ward",
+        "middle": "Barnes",
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1916-07-29",
+        "dateRaw": "29 Jul 1916"
+      },
+      "death": {
+        "date": "1982-07-11",
+        "dateRaw": "11 Jul 1982",
+        "place": "AZ"
+      },
+      "burial": {
+        "place": "Shady Grove Cemetery"
+      },
+      "parentIds": [
+        "p_000060",
+        "p_000006"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Laura Cole Barnes",
+          "spouseDetails": "Same as #7234 — also a James-line descendant. Ward married within his own extended family.",
+          "date": "1939-06-29",
+          "dateRaw": "29 Jun 1939",
+          "marriageOrder": 1
+        },
+        {
+          "spouseName": "Erma Acuna",
+          "date": "1978-03-16",
+          "dateRaw": "16 Mar 1978",
+          "marriageOrder": 2
+        }
+      ],
+      "notes": "Carries codes 11331 (via Samuel Floyd Guthrie, John line) and 7151 (via Rosa Mae Barnes, James line). Married Laura Cole Barnes, herself a James-line descendant.",
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "11331",
+          "page": 26
+        }
+      ]
+    },
+    {
+      "id": "p_000008",
+      "lineageCodes": [
+        "12"
+      ],
+      "name": {
+        "full": "Nancy Guthrie",
+        "first": "Nancy",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1821-04-26",
+        "dateRaw": "26 Apr 1821"
+      },
+      "death": {
+        "date": "1891-09-21",
+        "dateRaw": "21 Sep 1891"
+      },
+      "parentIds": [
+        "p_000002"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Martin DeBerry"
+        }
+      ],
+      "childIds": [
+        "p_000098",
+        "p_000009",
+        "p_000010",
+        "p_000099"
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "12",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000009",
+      "lineageCodes": [
+        "122"
+      ],
+      "name": {
+        "full": "Archibald J. DeBerry",
+        "first": "Archibald",
+        "middle": "J.",
+        "last": "DeBerry"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1850-08-04",
+        "dateRaw": "4 Aug 1850"
+      },
+      "death": {
+        "date": "1895-06-10",
+        "dateRaw": "10 Jun 1895"
+      },
+      "parentIds": [
+        "p_000008"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Rebecca Graham",
+          "date": "1871-10-12",
+          "dateRaw": "12 Oct 1871",
+          "marriageOrder": 1
+        },
+        {
+          "spouseName": "Sarah M. Plum",
+          "date": "1894-06-15",
+          "dateRaw": "15 Jun 1894",
+          "marriageOrder": 2
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "122",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "id": "p_000010",
+      "lineageCodes": [
+        "123"
+      ],
+      "name": {
+        "full": "Lucy Ann DeBerry",
+        "first": "Lucy",
+        "middle": "Ann",
+        "last": "DeBerry"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1853-05-21",
+        "dateRaw": "21 May 1853"
+      },
+      "death": {
+        "date": "1926-08-29",
+        "dateRaw": "29 Aug 1926"
+      },
+      "parentIds": [
+        "p_000008"
+      ],
+      "marriages": [
+        {
+          "spouseName": "John Henry Deal",
+          "date": "1878-01-01",
+          "dateRaw": "1 Jan 1878"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "123",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "id": "p_000011",
+      "lineageCodes": [
+        "13"
+      ],
+      "name": {
+        "full": "Christian Guthrie",
+        "first": "Christian",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1824-04-29",
+        "dateRaw": "29 Apr 1824"
+      },
+      "death": {
+        "date": "1899-05-18",
+        "dateRaw": "18 May 1899"
+      },
+      "burial": {
+        "place": "Rodeheaver Cemetery near Mt. Dale, WV"
+      },
+      "parentIds": [
+        "p_000002"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Almyra Smith"
+        }
+      ],
+      "childIds": [
+        "p_000012",
+        "p_000013",
+        "p_000014",
+        "p_000015",
+        "p_000025"
+      ],
+      "residences": [
+        "Locust Grove, WV"
+      ],
+      "occupation": "Farmer",
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "13",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "p_000012",
+      "lineageCodes": [
+        "132"
+      ],
+      "name": {
+        "full": "John Guthrie",
+        "first": "John",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1846-12-28",
+        "dateRaw": "28 Dec 1846"
+      },
+      "death": {
+        "date": "1917-06-15",
+        "dateRaw": "15 Jun 1917"
+      },
+      "parentIds": [
+        "p_000011"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Emma Hollis Dotson"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "132",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "id": "p_000013",
+      "lineageCodes": [
+        "13A"
+      ],
+      "name": {
+        "full": "Mary Alverna Guthrie",
+        "first": "Mary",
+        "middle": "Alverna",
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1858-09-20",
+        "dateRaw": "20 Sep 1858"
+      },
+      "death": {
+        "date": "1937-06-16",
+        "dateRaw": "16 Jun 1937"
+      },
+      "parentIds": [
+        "p_000011"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Jacob M. A. Thomas",
+          "spouseDetails": "Son of Abraham and Nancy Meyers Thomas. Both buried at Shady Grove Cemetery.",
+          "dateRaw": "1937"
+        }
+      ],
+      "notes": "Raised Violet Seamon.",
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "13A",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "p_000014",
+      "lineageCodes": [
+        "13B"
+      ],
+      "name": {
+        "full": "Isabelle Guthrie",
+        "first": "Isabelle",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1860-08-25",
+        "dateRaw": "25 Aug 1860"
+      },
+      "death": {
+        "dateRaw": "Apr 1916"
+      },
+      "parentIds": [
+        "p_000011"
+      ],
+      "marriages": [
+        {
+          "spouseName": "George James Skiles",
+          "marriageOrder": 1
+        },
+        {
+          "spouseName": "John Haddix",
+          "marriageOrder": 2
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "13B",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "id": "p_000015",
+      "lineageCodes": [
+        "13E"
+      ],
+      "name": {
+        "full": "Lydia Alice Guthrie",
+        "first": "Lydia",
+        "middle": "Alice",
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1866-05-05",
+        "dateRaw": "5 May 1866"
+      },
+      "death": {
+        "date": "1948-05-01",
+        "dateRaw": "1 May 1948"
+      },
+      "parentIds": [
+        "p_000011"
+      ],
+      "marriages": [
+        {
+          "spouseId": "p_000040",
+          "spouseName": "Christian Nicola",
+          "spouseDetails": "Same as #174 in John's branch (her cousin — son of Susannah Guthrie Nicola).",
+          "date": "1884-12-02",
+          "dateRaw": "2 Dec 1884"
+        }
+      ],
+      "childIds": [
+        "p_000016",
+        "p_000017",
+        "p_000018",
+        "p_000019",
+        "p_000020",
+        "p_000021",
+        "p_000022",
+        "p_000023",
+        "p_000024"
+      ],
+      "notes": "Married her first cousin Christian Nicola. Their children appear under both 13E* (via her) and 174* (via him).",
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "13E",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "id": "p_000016",
+      "lineageCodes": [
+        "13E1",
+        "1741"
+      ],
+      "name": {
+        "full": "Troy A. Nicola",
+        "first": "Troy",
+        "middle": "A.",
+        "last": "Nicola"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1886-06-11",
+        "dateRaw": "11 Jun 1886"
+      },
+      "death": {
+        "date": "1952-07-10",
+        "dateRaw": "10 Jul 1952"
+      },
+      "parentIds": [
+        "p_000040",
+        "p_000015"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Bertha Montgomery",
+          "marriageOrder": 1
+        },
+        {
+          "spouseName": "Elsie Lambert",
+          "marriageOrder": 2
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "13E1",
+          "page": 22
+        }
+      ]
+    },
+    {
+      "id": "p_000017",
+      "lineageCodes": [
+        "13E2",
+        "1742"
+      ],
+      "name": {
+        "full": "Estella L. Nicola",
+        "first": "Estella",
+        "middle": "L.",
+        "last": "Nicola"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1887-10-10",
+        "dateRaw": "10 Oct 1887 (alt: 11 Oct 1887)"
+      },
+      "death": {
+        "date": "1911-10-20",
+        "dateRaw": "20 Oct 1911"
+      },
+      "parentIds": [
+        "p_000040",
+        "p_000015"
+      ],
+      "marriages": [
+        {
+          "spouseName": "George Moore",
+          "date": "1904-11-12",
+          "dateRaw": "12 Nov 1904"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "13E2",
+          "page": 22
+        }
+      ]
+    },
+    {
+      "id": "p_000018",
+      "lineageCodes": [
+        "1743"
+      ],
+      "parentIds": [
+        "p_000040",
+        "p_000015"
+      ]
+    },
+    {
+      "id": "p_000019",
+      "lineageCodes": [
+        "13E4",
+        "1744"
+      ],
+      "name": {
+        "full": "Clarence Herbert Nicola",
+        "first": "Clarence",
+        "middle": "Herbert",
+        "last": "Nicola"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1894-03-28",
+        "dateRaw": "28 Mar 1894"
+      },
+      "death": {
+        "dateRaw": "1971"
+      },
+      "parentIds": [
+        "p_000015",
+        "p_000040"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Lillian S. Ridenour",
+          "dateRaw": "1920"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "13E4",
+          "page": 23
+        }
+      ]
+    },
+    {
+      "id": "p_000020",
+      "lineageCodes": [
+        "13E5",
+        "1745"
+      ],
+      "name": {
+        "full": "Homer Andrew Nicola",
+        "first": "Homer",
+        "middle": "Andrew",
+        "last": "Nicola"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1896-10-16",
+        "dateRaw": "16 Oct 1896"
+      },
+      "parentIds": [
+        "p_000040",
+        "p_000015"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Dove Poling",
+          "date": "1921-06-24",
+          "dateRaw": "24 Jun 1921"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "13E5",
+          "page": 23
+        }
+      ]
+    },
+    {
+      "id": "p_000021",
+      "lineageCodes": [
+        "1746"
+      ],
+      "parentIds": [
+        "p_000040",
+        "p_000015"
+      ]
+    },
+    {
+      "id": "p_000022",
+      "lineageCodes": [
+        "13E7"
+      ],
+      "parentIds": [
+        "p_000015",
+        "p_000040"
+      ]
+    },
+    {
+      "id": "p_000023",
+      "lineageCodes": [
+        "1748"
+      ],
+      "parentIds": [
+        "p_000040",
+        "p_000015"
+      ]
+    },
+    {
+      "id": "p_000024",
+      "lineageCodes": [
+        "13E9"
+      ],
+      "parentIds": [
+        "p_000015",
+        "p_000040"
+      ]
+    },
+    {
+      "id": "p_000025",
+      "lineageCodes": [
+        "13F"
+      ],
+      "name": {
+        "full": "Walter Christian Guthrie",
+        "first": "Walter",
+        "middle": "Christian",
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1868-01-10",
+        "dateRaw": "10 Jan 1868"
+      },
+      "death": {
+        "date": "1923-10-22",
+        "dateRaw": "22 Oct 1923"
+      },
+      "parentIds": [
+        "p_000011"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Malinda Jane Rodeheaver",
+          "marriageOrder": 1
+        },
+        {
+          "spouseName": "Elizabeth Thomas",
+          "marriageOrder": 2
+        },
+        {
+          "spouseName": "Cora Catherine Knox",
+          "marriageOrder": 3
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "13F",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "id": "p_000026",
+      "lineageCodes": [
+        "13F72"
+      ],
+      "name": {
+        "full": "Mary Jean Guthrie",
+        "first": "Mary",
+        "middle": "Jean",
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1934-08-29",
+        "dateRaw": "29 Aug 1934"
+      },
+      "marriages": [
+        {
+          "spouseId": "p_000090",
+          "spouseName": "Martin Luther Cupp",
+          "spouseDetails": "Same as #A456 in Alexander's branch.",
+          "date": "1953-05-09",
+          "dateRaw": "9 May 1953"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "13F72",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "id": "p_000027",
+      "lineageCodes": [
+        "14"
+      ],
+      "name": {
+        "full": "James B. Guthrie",
+        "first": "James",
+        "middle": "B.",
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1826-12-27",
+        "dateRaw": "27 Dec 1826",
+        "place": "Frostburg, MD"
+      },
+      "death": {
+        "date": "1888-10-11",
+        "dateRaw": "11 Oct 1888",
+        "place": "Hazelton, WV"
+      },
+      "parentIds": [
+        "p_000002"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Susannah B. Beeghly"
+        }
+      ],
+      "childIds": [
+        "p_000028",
+        "p_000029",
+        "p_000030",
+        "p_000031",
+        "p_000032"
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "14",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "p_000028",
+      "lineageCodes": [
+        "142"
+      ],
+      "name": {
+        "full": "John Mike Guthrie",
+        "first": "John",
+        "middle": "Mike",
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1854-09-11",
+        "dateRaw": "11 Sep 1854"
+      },
+      "death": {
+        "date": "1932-07-30",
+        "dateRaw": "30 Jul 1932"
+      },
+      "parentIds": [
+        "p_000027"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Susan Elizabeth Guthrie",
+          "spouseDetails": "Same as #191 — daughter of his uncle Peter Guthrie (#19). First-cousin marriage.",
+          "date": "1881-08-25",
+          "dateRaw": "25 Aug 1881",
+          "marriageOrder": 1
+        },
+        {
+          "spouseName": "Jane Harden",
+          "dateRaw": "1886",
+          "marriageOrder": 2
+        },
+        {
+          "spouseName": "Emma Matheny",
+          "marriageOrder": 3
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "142",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "id": "p_000029",
+      "lineageCodes": [
+        "144"
+      ],
+      "name": {
+        "full": "Barbara Ellen Guthrie",
+        "first": "Barbara",
+        "middle": "Ellen",
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1858-07-17",
+        "dateRaw": "17 Jul 1858"
+      },
+      "death": {
+        "date": "1921-05-22",
+        "dateRaw": "22 May 1921"
+      },
+      "parentIds": [
+        "p_000027"
+      ],
+      "marriages": [
+        {
+          "spouseName": "William Riley Thomas",
+          "date": "1878-08-04",
+          "dateRaw": "4 Aug 1878"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "144",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "id": "p_000030",
+      "lineageCodes": [
+        "145"
+      ],
+      "name": {
+        "full": "David G. Guthrie",
+        "first": "David",
+        "middle": "G.",
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1860-08-30",
+        "dateRaw": "30 Aug 1860"
+      },
+      "death": {
+        "date": "1936-03-26",
+        "dateRaw": "26 Mar 1936"
+      },
+      "parentIds": [
+        "p_000027"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Fidella M. Miller",
+          "date": "1884-02-26",
+          "dateRaw": "26 Feb 1884"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "145",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "id": "p_000031",
+      "lineageCodes": [
+        "147"
+      ],
+      "name": {
+        "full": "Albert M. Guthrie",
+        "first": "Albert",
+        "middle": "M.",
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1864-07-12",
+        "dateRaw": "12 Jul 1864"
+      },
+      "death": {
+        "date": "1951-01-08",
+        "dateRaw": "8 Jan 1951"
+      },
+      "parentIds": [
+        "p_000027"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Susan Caroline Miller",
+          "dateRaw": "1886"
+        }
+      ],
+      "residences": [
+        "Fairchance, PA"
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "147",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "id": "p_000032",
+      "lineageCodes": [
+        "148"
+      ],
+      "name": {
+        "full": "Franklin C. Guthrie",
+        "first": "Franklin",
+        "middle": "C.",
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1868-07-06",
+        "dateRaw": "6 Jul 1868"
+      },
+      "death": {
+        "date": "1942-04-28",
+        "dateRaw": "28 Apr 1942"
+      },
+      "parentIds": [
+        "p_000027"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Barbara Rosanna Miller",
+          "dateRaw": "1889"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "148",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "id": "p_000033",
+      "lineageCodes": [
+        "16"
+      ],
+      "name": {
+        "full": "Elizabeth Guthrie",
+        "first": "Elizabeth",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1832-10-26",
+        "dateRaw": "26 Oct 1832"
+      },
+      "death": {
+        "date": "1912-03-14",
+        "dateRaw": "14 Mar 1912"
+      },
+      "parentIds": [
+        "p_000002"
+      ],
+      "marriages": [
+        {
+          "spouseName": "David Kalfus Harshbarger"
+        }
+      ],
+      "childIds": [
+        "p_000034",
+        "p_000035",
+        "p_000037"
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "16",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "p_000034",
+      "lineageCodes": [
+        "161"
+      ],
+      "name": {
+        "full": "Amanda Jane Harshbarger",
+        "first": "Amanda",
+        "middle": "Jane",
+        "last": "Harshbarger"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1860-06-09",
+        "dateRaw": "9 Jun 1860"
+      },
+      "death": {
+        "date": "1933-09-25",
+        "dateRaw": "25 Sep 1933"
+      },
+      "parentIds": [
+        "p_000033"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Jacob Peter Barnes",
+          "spouseDetails": "Second marriage for Jacob; his first wife was Sarah Ann Guthrie (#72).",
+          "date": "1880-06-17",
+          "dateRaw": "17 Jun 1880"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "161",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "id": "p_000035",
+      "lineageCodes": [
+        "162"
+      ],
+      "name": {
+        "full": "Elizabeth (Maggie) Margaret Harshbarger",
+        "first": "Elizabeth",
+        "middle": "(Maggie) Margaret",
+        "last": "Harshbarger"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1863-05-13",
+        "dateRaw": "13 May 1863"
+      },
+      "death": {
+        "date": "1928-03-16",
+        "dateRaw": "16 Mar 1928"
+      },
+      "parentIds": [
+        "p_000033"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Amos J. Moyers",
+          "date": "1886-11-06",
+          "dateRaw": "6 Nov 1886"
+        }
+      ],
+      "childIds": [
+        "p_000036"
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "162",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "id": "p_000036",
+      "lineageCodes": [
+        "1622"
+      ],
+      "name": {
+        "full": "Charles C. Moyers",
+        "first": "Charles",
+        "middle": "C.",
+        "last": "Moyers"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1889-09-23",
+        "dateRaw": "23 Sep 1889"
+      },
+      "death": {
+        "date": "1960-01-27",
+        "dateRaw": "27 Jan 1960"
+      },
+      "burial": {
+        "place": "Shady Grove Cemetery"
+      },
+      "parentIds": [
+        "p_000035"
+      ],
+      "marriages": [
+        {
+          "spouseId": "p_000064",
+          "spouseName": "Stella Guthrie",
+          "spouseDetails": "Same as #747 in James's branch.",
+          "date": "1919-05-16",
+          "dateRaw": "16 May 1919"
+        }
+      ],
+      "childIds": [
+        "p_000065",
+        "p_000066",
+        "p_000067",
+        "p_000068"
+      ],
+      "notes": "Son of Amos J. and Maggie Elizabeth (Harshbarger) Moyers. His mother Elizabeth Margaret Harshbarger (#162) is daughter of Elizabeth Guthrie (#16). So this marriage is a third John/James cross-link.",
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "1622",
+          "page": 18
+        }
+      ]
+    },
+    {
+      "id": "p_000037",
+      "lineageCodes": [
+        "166"
+      ],
+      "name": {
+        "full": "Joseph Henry Harshbarger",
+        "first": "Joseph",
+        "middle": "Henry",
+        "last": "Harshbarger"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1874-03-03",
+        "dateRaw": "3 Mar 1874"
+      },
+      "death": {
+        "date": "1938-01-15",
+        "dateRaw": "15 Jan 1938"
+      },
+      "parentIds": [
+        "p_000033"
+      ],
+      "marriages": [
+        {
+          "spouseId": "p_000063",
+          "spouseName": "Hattie Guthrie",
+          "spouseDetails": "Same as #743 in James's branch. This marriage is another John-line/James-line union.",
+          "date": "1902-04-28",
+          "dateRaw": "28 Apr 1902"
+        }
+      ],
+      "notes": "John-line man (via grandmother Elizabeth Guthrie #16) married James-line woman.",
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "166",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "id": "p_000038",
+      "lineageCodes": [
+        "17"
+      ],
+      "name": {
+        "full": "Susannah Guthrie",
+        "first": "Susannah",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1835-06-26",
+        "dateRaw": "26 Jun 1835 (alt: 20 Jun 1835)"
+      },
+      "death": {
+        "date": "1880-05-07",
+        "dateRaw": "7 May 1880"
+      },
+      "burial": {
+        "place": "Shady Grove"
+      },
+      "parentIds": [
+        "p_000002"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Jacob B. Nicola",
+          "spouseDetails": "German Baptist; mill wright, merchant and carpenter. Operated a Grist Mill at Orr, WV (between Cuzzart and Cranesville) when he died; buried near there in the Kelley Cemetery.",
+          "date": "1856-04-27",
+          "dateRaw": "27 Apr 1856"
+        }
+      ],
+      "childIds": [
+        "p_000039",
+        "p_000040"
+      ],
+      "notes": "Susanna lived most of her life in Barbour County.",
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "17",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "id": "p_000039",
+      "lineageCodes": [
+        "172"
+      ],
+      "name": {
+        "full": "Nancy Ann Nicola",
+        "first": "Nancy",
+        "middle": "Ann",
+        "last": "Nicola"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1859-04-12",
+        "dateRaw": "12 Apr 1859"
+      },
+      "death": {
+        "date": "1926-06-01",
+        "dateRaw": "1 Jun 1926"
+      },
+      "parentIds": [
+        "p_000038"
+      ],
+      "marriages": [
+        {
+          "spouseId": "p_000062",
+          "spouseName": "Jeremiah Guthrie",
+          "spouseDetails": "Same as #74 in James's branch. This marriage connects John's and James's lines.",
+          "date": "1878-04-07",
+          "dateRaw": "7 Apr 1878"
+        }
+      ],
+      "childIds": [
+        "p_000069"
+      ],
+      "notes": "Daughter of Susannah Guthrie (#17) and Jacob B. Nicola. Her marriage to Jeremiah Guthrie (#74) connects John's branch to James's branch. Their children carry double codes: e.g., Ray Guthrie is both 74A and 172A.",
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "172",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "id": "p_000040",
+      "lineageCodes": [
+        "174"
+      ],
+      "name": {
+        "full": "Christian Nicola",
+        "first": "Christian",
+        "middle": null,
+        "last": "Nicola"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1863-12-21",
+        "dateRaw": "21 Dec 1863"
+      },
+      "death": {
+        "date": "1932-03-08",
+        "dateRaw": "8 Mar 1932"
+      },
+      "parentIds": [
+        "p_000038"
+      ],
+      "marriages": [
+        {
+          "spouseId": "p_000015",
+          "spouseName": "Lydia Alice Guthrie",
+          "spouseDetails": "Same as #13E in John's branch (his cousin).",
+          "date": "1884-12-02",
+          "dateRaw": "2 Dec 1884"
+        }
+      ],
+      "childIds": [
+        "p_000016",
+        "p_000017",
+        "p_000018",
+        "p_000019",
+        "p_000020",
+        "p_000021",
+        "p_000022",
+        "p_000023",
+        "p_000024"
+      ],
+      "notes": "Son of Susannah Guthrie Nicola (#17). Married his cousin Lydia Alice Guthrie (#13E).",
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "174",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "id": "p_000041",
+      "lineageCodes": [
+        "19"
+      ],
+      "name": {
+        "full": "Peter Guthrie",
+        "first": "Peter",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1842-02-13",
+        "dateRaw": "13 Feb 1842"
+      },
+      "death": {
+        "dateRaw": "Aug 1916"
+      },
+      "parentIds": [
+        "p_000002"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Catherine Nicola Wilson",
+          "notes": "Her second marriage."
+        }
+      ],
+      "childIds": [
+        "p_000042"
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "19",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "id": "p_000042",
+      "lineageCodes": [
+        "191"
+      ],
+      "name": {
+        "full": "Susie Elizabeth Guthrie",
+        "first": "Susie",
+        "middle": "Elizabeth",
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "dateRaw": "1867"
+      },
+      "death": {
+        "date": "1886-04-15",
+        "dateRaw": "15 Apr 1886"
+      },
+      "parentIds": [
+        "p_000041"
+      ],
+      "marriages": [
+        {
+          "spouseId": "p_000028",
+          "spouseName": "John Mike Guthrie",
+          "spouseDetails": "Same as #142 in John's branch — her first cousin. Susie died young.",
+          "date": "1881-08-25",
+          "dateRaw": "25 Aug 1881"
+        }
+      ],
+      "notes": "Daughter of Peter Guthrie (#19). Married her first cousin John Mike Guthrie (#142).",
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "191",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "id": "p_000043",
+      "lineageCodes": [
+        "2"
+      ],
+      "name": {
+        "full": "William Guthrie",
+        "first": "William",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1794-09-10",
+        "dateRaw": "10 Sep 1794"
+      },
+      "death": {
+        "date": "1873-07-12",
+        "dateRaw": "12 Jul 1873"
+      },
+      "burial": {
+        "place": "Shady Grove Cemetery"
+      },
+      "parentIds": [
+        "p_000001"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Rebecca Jefferys"
+        }
+      ],
+      "childIds": [
+        "p_000044",
+        "p_000045",
+        "p_000100",
+        "p_000101"
+      ],
+      "sources": [
+        {
+          "pdf": "William_Guthrie - One Generation.pdf",
+          "entryCode": "2",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000044",
+      "lineageCodes": [
+        "21"
+      ],
+      "name": {
+        "full": "Ruth G. Guthrie",
+        "first": "Ruth",
+        "middle": "G.",
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1838-05-22",
+        "dateRaw": "22 May 1838"
+      },
+      "death": {
+        "date": "1933-12-06",
+        "dateRaw": "6 Dec 1933"
+      },
+      "burial": {
+        "place": "Shady Grove Cemetery"
+      },
+      "parentIds": [
+        "p_000043"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Jonas Frankhouser"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "William_Guthrie - One Generation.pdf",
+          "entryCode": "21",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000045",
+      "lineageCodes": [
+        "22"
+      ],
+      "name": {
+        "full": "Eleanor Jane Guthrie",
+        "first": "Eleanor",
+        "middle": "Jane",
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1840-08-28",
+        "dateRaw": "28 Aug 1840"
+      },
+      "death": {
+        "date": "1913-11-26",
+        "dateRaw": "26 Nov 1913"
+      },
+      "parentIds": [
+        "p_000043"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Abner Gaines Harshbarger",
+          "date": "1859-10-27",
+          "dateRaw": "27 Oct 1859"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "William_Guthrie - One Generation.pdf",
+          "entryCode": "22",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000046",
+      "lineageCodes": [
+        "5"
+      ],
+      "name": {
+        "full": "Stephen Guthrie",
+        "first": "Stephen",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1801-03-26",
+        "dateRaw": "26 Mar 1801"
+      },
+      "death": {
+        "date": "1888-11-28",
+        "dateRaw": "28 Nov 1888"
+      },
+      "burial": {
+        "place": "Old Brick Church Cemetery"
+      },
+      "parentIds": [
+        "p_000001"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Fanny Hazlet",
+          "marriageOrder": 1
+        },
+        {
+          "spouseName": "Barbara Dennis",
+          "marriageOrder": 2
+        }
+      ],
+      "childIds": [
+        "p_000047",
+        "p_000102",
+        "p_000048",
+        "p_000103",
+        "p_000104",
+        "p_000051",
+        "p_000105",
+        "p_000106",
+        "p_000052",
+        "p_000107"
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation.pdf",
+          "entryCode": "5",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000047",
+      "lineageCodes": [
+        "51"
+      ],
+      "name": {
+        "full": "Harrison Guthrie",
+        "first": "Harrison",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "parentIds": [
+        "p_000046"
+      ],
+      "childIds": [
+        "p_000108"
+      ],
+      "occupation": "Physician in Minnesota",
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation.pdf",
+          "entryCode": "51",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000048",
+      "lineageCodes": [
+        "53"
+      ],
+      "name": {
+        "full": "Stephen Guthrie",
+        "first": "Stephen",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1827-04-07",
+        "dateRaw": "7 Apr 1827 (alt: 17 Apr 1827)"
+      },
+      "death": {
+        "date": "1895-03-31",
+        "dateRaw": "31 Mar 1895"
+      },
+      "parentIds": [
+        "p_000046"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Elizabeth Brookmire"
+        }
+      ],
+      "childIds": [
+        "p_000049",
+        "p_000050"
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation.pdf",
+          "entryCode": "53",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000049",
+      "lineageCodes": [
+        "532"
+      ],
+      "name": {
+        "full": "Samuel Spenser Guthrie",
+        "first": "Samuel",
+        "middle": "Spenser",
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "dateRaw": "1858"
+      },
+      "death": {
+        "dateRaw": "1927"
+      },
+      "parentIds": [
+        "p_000048"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Julia D. Deahl",
+          "date": "1884-04-10",
+          "dateRaw": "10 Apr 1884"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation.pdf",
+          "entryCode": "532",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "p_000050",
+      "lineageCodes": [
+        "536"
+      ],
+      "name": {
+        "full": "Zana Estella Guthrie",
+        "first": "Zana",
+        "middle": "Estella",
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1875-11-25",
+        "dateRaw": "25 Nov 1875"
+      },
+      "death": {
+        "date": "1941-11-03",
+        "dateRaw": "3 Nov 1941"
+      },
+      "parentIds": [
+        "p_000048"
+      ],
+      "marriages": [
+        {
+          "spouseName": "William H. G. Strawser",
+          "date": "1903-03-22",
+          "dateRaw": "22 Mar 1903",
+          "marriageOrder": 1
+        },
+        {
+          "spouseName": "Joshua Grant Bishop",
+          "date": "1892-02-16",
+          "dateRaw": "16 Feb 1892",
+          "marriageOrder": 2
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation.pdf",
+          "entryCode": "536",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "p_000051",
+      "lineageCodes": [
+        "56"
+      ],
+      "name": {
+        "full": "Amy Guthrie",
+        "first": "Amy",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1840-12-20",
+        "dateRaw": "20 Dec 1840"
+      },
+      "death": {
+        "date": "1917-03-07",
+        "dateRaw": "7 Mar 1917"
+      },
+      "parentIds": [
+        "p_000046"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Daniel Frankhouser"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation.pdf",
+          "entryCode": "56",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000052",
+      "lineageCodes": [
+        "59"
+      ],
+      "name": {
+        "full": "Absalom Guthrie",
+        "first": "Absalom",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "death": {
+        "dateRaw": "1899"
+      },
+      "parentIds": [
+        "p_000046"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Demaris Denham"
+        }
+      ],
+      "residences": [
+        "Kansas"
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation.pdf",
+          "entryCode": "59",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000053",
+      "lineageCodes": [
+        "6"
+      ],
+      "name": {
+        "full": "Rachel Guthrie",
+        "first": "Rachel",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1804-04-16",
+        "dateRaw": "16 Apr 1804"
+      },
+      "death": {
+        "date": "1874-09-28",
+        "dateRaw": "28 Sep 1874"
+      },
+      "burial": {
+        "place": "Shady Grove Cemetery"
+      },
+      "parentIds": [
+        "p_000001"
+      ],
+      "marriages": [
+        {
+          "spouseName": "James G. Crawford",
+          "dateRaw": "1827"
+        }
+      ],
+      "childIds": [
+        "p_000109",
+        "p_000054",
+        "p_000055",
+        "p_000110",
+        "p_000111"
+      ],
+      "sources": [
+        {
+          "pdf": "Rachel_Guthrie - One Generation.pdf",
+          "entryCode": "6",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000054",
+      "lineageCodes": [
+        "62"
+      ],
+      "name": {
+        "full": "Isabel Crawford",
+        "first": "Isabel",
+        "middle": null,
+        "last": "Crawford"
+      },
+      "sex": "F",
+      "parentIds": [
+        "p_000053"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Hamilton Gillis"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "Rachel_Guthrie - One Generation.pdf",
+          "entryCode": "62",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000055",
+      "lineageCodes": [
+        "63"
+      ],
+      "name": {
+        "full": "Rachel Jane Crawford",
+        "first": "Rachel",
+        "middle": "Jane",
+        "last": "Crawford"
+      },
+      "sex": "F",
+      "birth": {
+        "dateRaw": "1847"
+      },
+      "death": {
+        "date": "1919-11-28",
+        "dateRaw": "28 Nov 1919"
+      },
+      "parentIds": [
+        "p_000053"
+      ],
+      "marriages": [
+        {
+          "spouseName": "William F. Thomas"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "Rachel_Guthrie - One Generation.pdf",
+          "entryCode": "63",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000056",
+      "lineageCodes": [
+        "7"
+      ],
+      "name": {
+        "full": "James Guthrie",
+        "first": "James",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1806-09-07",
+        "dateRaw": "7 Sep 1806"
+      },
+      "death": {
+        "date": "1879-03-29",
+        "dateRaw": "29 Mar 1879"
+      },
+      "burial": {
+        "place": "Shady Grove"
+      },
+      "parentIds": [
+        "p_000001"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Barbara Boger",
+          "date": "1844-07-28",
+          "dateRaw": "28 Jul 1844"
+        }
+      ],
+      "childIds": [
+        "p_000057",
+        "p_000061",
+        "p_000112",
+        "p_000062",
+        "p_000113",
+        "p_000070",
+        "p_000114"
+      ],
+      "sources": [
+        {
+          "pdf": "James_Guthrie - Seven Generations.pdf",
+          "entryCode": "7",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000057",
+      "lineageCodes": [
+        "71"
+      ],
+      "name": {
+        "full": "Alcinda J. Guthrie",
+        "first": "Alcinda",
+        "middle": "J.",
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1845-09-08",
+        "dateRaw": "8 Sep 1845"
+      },
+      "death": {
+        "date": "1923-09-18",
+        "dateRaw": "18 Sep 1923"
+      },
+      "parentIds": [
+        "p_000056"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Fleming C. Barnes",
+          "date": "1862-04-20",
+          "dateRaw": "20 Apr 1862"
+        }
+      ],
+      "childIds": [
+        "p_000058",
+        "p_000059",
+        "p_000060"
+      ],
+      "sources": [
+        {
+          "pdf": "James_Guthrie - Seven Generations.pdf",
+          "entryCode": "71",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000058",
+      "lineageCodes": [
+        "713"
+      ],
+      "name": {
+        "full": "James (Bub) M. Barnes",
+        "first": "James",
+        "middle": "(Bub) M.",
+        "last": "Barnes"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1869-02-09",
+        "dateRaw": "9 Feb 1869"
+      },
+      "death": {
+        "date": "1965-10-21",
+        "dateRaw": "21 Oct 1965"
+      },
+      "parentIds": [
+        "p_000057"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Cora Idessa Ditmore",
+          "date": "1904-01-20",
+          "dateRaw": "20 Jan 1904"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "James_Guthrie - Seven Generations.pdf",
+          "entryCode": "713",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "p_000059",
+      "lineageCodes": [
+        "714"
+      ],
+      "name": {
+        "full": "Harrison Franklin Barnes",
+        "first": "Harrison",
+        "middle": "Franklin",
+        "last": "Barnes"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1871-12-17",
+        "dateRaw": "17 Dec 1871"
+      },
+      "death": {
+        "date": "1946-01-14",
+        "dateRaw": "14 Jan 1946"
+      },
+      "parentIds": [
+        "p_000057"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Virginia Jennie Moyers",
+          "date": "1900-06-17",
+          "dateRaw": "17 Jun 1900"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "James_Guthrie - Seven Generations.pdf",
+          "entryCode": "714",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "p_000060",
+      "lineageCodes": [
+        "715"
+      ],
+      "name": {
+        "full": "Rosa Mae Barnes",
+        "first": "Rosa",
+        "middle": "Mae",
+        "last": "Barnes"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1877-09-02",
+        "dateRaw": "2 Sep 1877"
+      },
+      "death": {
+        "date": "1956-10-03",
+        "dateRaw": "3 Oct 1956"
+      },
+      "parentIds": [
+        "p_000057"
+      ],
+      "marriages": [
+        {
+          "spouseId": "p_000006",
+          "spouseName": "Samuel Floyd Guthrie",
+          "spouseDetails": "Same as #1133 in John's branch — son of Joseph Guthrie (#113).",
+          "date": "1906-05-17",
+          "dateRaw": "17 May 1906"
+        }
+      ],
+      "childIds": [
+        "p_000007"
+      ],
+      "notes": "Mother Alcinda J. Guthrie (#71, James's branch), father Fleming C. Barnes. Her marriage to Samuel Floyd Guthrie is yet another John/James cross-union.",
+      "sources": [
+        {
+          "pdf": "James_Guthrie - Seven Generations.pdf",
+          "entryCode": "715",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "p_000061",
+      "lineageCodes": [
+        "72"
+      ],
+      "name": {
+        "full": "Sarah Ann Guthrie",
+        "first": "Sarah",
+        "middle": "Ann",
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1847-02-21",
+        "dateRaw": "21 Feb 1847"
+      },
+      "death": {
+        "date": "1880-01-30",
+        "dateRaw": "30 Jan 1880"
+      },
+      "parentIds": [
+        "p_000056"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Jacob Peter Barnes",
+          "date": "1868-08-27",
+          "dateRaw": "27 Aug 1868"
+        }
+      ],
+      "notes": "After Sarah's death, Jacob Peter Barnes married Amanda Jane Harshbarger (#161). See entry 161.",
+      "sources": [
+        {
+          "pdf": "James_Guthrie - Seven Generations.pdf",
+          "entryCode": "72",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000062",
+      "lineageCodes": [
+        "74"
+      ],
+      "name": {
+        "full": "Jeremiah Guthrie",
+        "first": "Jeremiah",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1852-09-10",
+        "dateRaw": "10 Sep 1852"
+      },
+      "death": {
+        "date": "1918-04-25",
+        "dateRaw": "25 Apr 1918"
+      },
+      "parentIds": [
+        "p_000056"
+      ],
+      "marriages": [
+        {
+          "spouseId": "p_000039",
+          "spouseName": "Nancy Ann Nicola",
+          "date": "1878-04-07",
+          "dateRaw": "7 Apr 1878",
+          "notes": "Same person as #172 in John's branch — daughter of Susannah Guthrie Nicola."
+        }
+      ],
+      "childIds": [
+        "p_000063",
+        "p_000064",
+        "p_000069"
+      ],
+      "notes": "His marriage to Nancy Ann Nicola is the most significant Guthrie/Guthrie cross-branch union: James-line man marries John-line woman. Their children therefore carry two valid lineage codes (e.g., Ray Guthrie = 74A = 172A).",
+      "sources": [
+        {
+          "pdf": "James_Guthrie - Seven Generations.pdf",
+          "entryCode": "74",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000063",
+      "lineageCodes": [
+        "743"
+      ],
+      "name": {
+        "full": "Hattie Guthrie",
+        "first": "Hattie",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1881-12-20",
+        "dateRaw": "20 Dec 1881"
+      },
+      "death": {
+        "date": "1925-01-07",
+        "dateRaw": "7 Jan 1925"
+      },
+      "parentIds": [
+        "p_000062"
+      ],
+      "marriages": [
+        {
+          "spouseId": "p_000037",
+          "spouseName": "Joseph Henry Harshbarger",
+          "spouseDetails": "Same as #166 in John's branch.",
+          "date": "1902-04-28",
+          "dateRaw": "28 Apr 1902"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "James_Guthrie - Seven Generations.pdf",
+          "entryCode": "743",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "id": "p_000064",
+      "lineageCodes": [
+        "747"
+      ],
+      "name": {
+        "full": "Stella Guthrie",
+        "first": "Stella",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1889-05-08",
+        "dateRaw": "8 May 1889"
+      },
+      "death": {
+        "date": "1960-01-28",
+        "dateRaw": "28 Jan 1960"
+      },
+      "parentIds": [
+        "p_000062"
+      ],
+      "marriages": [
+        {
+          "spouseId": "p_000036",
+          "spouseName": "Charles C. Moyers",
+          "spouseDetails": "Same as #1622 in John's branch — son of Amos J. and Maggie Elizabeth (Harshbarger) Moyers, grandson of Elizabeth Guthrie (#16). Her children therefore carry double codes (7471=16221, etc).",
+          "date": "1919-05-16",
+          "dateRaw": "16 May 1919"
+        }
+      ],
+      "childIds": [
+        "p_000065",
+        "p_000066",
+        "p_000067",
+        "p_000068"
+      ],
+      "sources": [
+        {
+          "pdf": "James_Guthrie - Seven Generations.pdf",
+          "entryCode": "747",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000065",
+      "lineageCodes": [
+        "7471",
+        "16221"
+      ],
+      "name": {
+        "full": "Beatrice Mae Moyers",
+        "first": "Beatrice",
+        "middle": "Mae",
+        "last": "Moyers"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1921-09-07",
+        "dateRaw": "7 Sep 1921"
+      },
+      "parentIds": [
+        "p_000064",
+        "p_000036"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Lloyd Baysinger",
+          "date": "1950-02-11",
+          "dateRaw": "11 Feb 1950"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "James_Guthrie - Seven Generations.pdf",
+          "entryCode": "7471",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "id": "p_000066",
+      "lineageCodes": [
+        "7472",
+        "16222"
+      ],
+      "name": {
+        "full": "Alma Maxine Moyers",
+        "first": "Alma",
+        "middle": "Maxine",
+        "last": "Moyers"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1925-10-20",
+        "dateRaw": "20 Oct 1925"
+      },
+      "parentIds": [
+        "p_000064",
+        "p_000036"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Urban Lavern Long",
+          "date": "1951-06-20",
+          "dateRaw": "20 Jun 1951"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "James_Guthrie - Seven Generations.pdf",
+          "entryCode": "7472",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "id": "p_000067",
+      "lineageCodes": [
+        "7473",
+        "16223"
+      ],
+      "name": {
+        "full": "Pauline Grace Moyers",
+        "first": "Pauline",
+        "middle": "Grace",
+        "last": "Moyers"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1927-02-15",
+        "dateRaw": "15 Feb 1927"
+      },
+      "death": {
+        "date": "1981-06-23",
+        "dateRaw": "23 Jun 1981"
+      },
+      "parentIds": [
+        "p_000036",
+        "p_000064"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Paul Carlus Sines",
+          "spouseDetails": "Son of Alvin and Anna [Guthrie] Sines.",
+          "dateRaw": "Sep 1953"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "James_Guthrie - Seven Generations.pdf",
+          "entryCode": "7473",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "id": "p_000068",
+      "lineageCodes": [
+        "7474",
+        "16224"
+      ],
+      "name": {
+        "full": "Charles Ray Moyers",
+        "first": "Charles",
+        "middle": "Ray",
+        "last": "Moyers"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1931-07-28",
+        "dateRaw": "28 Jul 1931"
+      },
+      "parentIds": [
+        "p_000036",
+        "p_000064"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Dorothy (Dottie) N. Shoemaker",
+          "date": "1953-04-12",
+          "dateRaw": "12 Apr 1953"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "James_Guthrie - Seven Generations.pdf",
+          "entryCode": "7474",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "id": "p_000069",
+      "lineageCodes": [
+        "74A",
+        "172A"
+      ],
+      "name": {
+        "full": "Ray Guthrie",
+        "first": "Ray",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1895-12-17",
+        "dateRaw": "17 Dec 1895"
+      },
+      "death": {
+        "date": "1976-01-16",
+        "dateRaw": "16 Jan 1976"
+      },
+      "parentIds": [
+        "p_000039",
+        "p_000062"
+      ],
+      "marriages": [
+        {
+          "spouseId": "p_000091",
+          "spouseName": "Rhuie Lena Frankhouser",
+          "spouseDetails": "Same person as #A46 in Alexander's branch (daughter of Lucian Frankhouser).",
+          "date": "1922-03-18",
+          "dateRaw": "18 Mar 1922"
+        }
+      ],
+      "notes": "Carries two lineage codes: 74A (via father Jeremiah, James's branch) and 172A (via mother Nancy Ann Nicola, John's branch). Married into Alexander's branch via Rhuie Lena Frankhouser — connecting three of the seven sibling lines through one couple.",
+      "sources": [
+        {
+          "pdf": "James_Guthrie - Seven Generations.pdf",
+          "entryCode": "74A",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000070",
+      "lineageCodes": [
+        "76"
+      ],
+      "name": {
+        "full": "Harrison Guthrie",
+        "first": "Harrison",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1858-04-22",
+        "dateRaw": "22 Apr 1858"
+      },
+      "death": {
+        "date": "1937-04-05",
+        "dateRaw": "5 Apr 1937"
+      },
+      "parentIds": [
+        "p_000056"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Lydia Faucet",
+          "date": "1882-04-13",
+          "dateRaw": "13 Apr 1882"
+        }
+      ],
+      "childIds": [
+        "p_000071"
+      ],
+      "sources": [
+        {
+          "pdf": "James_Guthrie - Seven Generations.pdf",
+          "entryCode": "76",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "p_000071",
+      "lineageCodes": [
+        "763"
+      ],
+      "name": {
+        "full": "Effie Guthrie",
+        "first": "Effie",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1886-02-25",
+        "dateRaw": "25 Feb 1886"
+      },
+      "death": {
+        "date": "1968-06-05",
+        "dateRaw": "5 Jun 1968"
+      },
+      "parentIds": [
+        "p_000070"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Harrison Rosco (Ock) Frankhouser",
+          "spouseDetails": "Son of John and Amanda [Cupp] Frankhouser.",
+          "date": "1909-04-07",
+          "dateRaw": "7 Apr 1909"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "James_Guthrie - Seven Generations.pdf",
+          "entryCode": "763",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "id": "p_000072",
+      "lineageCodes": [
+        "8"
+      ],
+      "name": {
+        "full": "Absalom Guthrie",
+        "first": "Absalom",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1810-02-20",
+        "dateRaw": "20 Feb 1810"
+      },
+      "death": {
+        "date": "1869-02-09",
+        "dateRaw": "9 Feb 1869"
+      },
+      "parentIds": [
+        "p_000001"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Sarah Armstrong",
+          "date": "1839-05-06",
+          "dateRaw": "6 May 1839"
+        }
+      ],
+      "childIds": [
+        "p_000073",
+        "p_000074",
+        "p_000115",
+        "p_000116",
+        "p_000117",
+        "p_000118",
+        "p_000075",
+        "p_000078",
+        "p_000119",
+        "p_000120",
+        "p_000079"
+      ],
+      "sources": [
+        {
+          "pdf": "Absalom_Guthrie - One Generation.pdf",
+          "entryCode": "8",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000073",
+      "lineageCodes": [
+        "81"
+      ],
+      "name": {
+        "full": "Isaac Armstrong Guthrie",
+        "first": "Isaac",
+        "middle": "Armstrong",
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1838-02-08",
+        "dateRaw": "8 Feb 1838"
+      },
+      "death": {
+        "date": "1903-07-29",
+        "dateRaw": "29 Jul 1903"
+      },
+      "parentIds": [
+        "p_000072"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Mary Jane Fickell",
+          "date": "1865-09-07",
+          "dateRaw": "7 Sep 1865"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "Absalom_Guthrie - One Generation.pdf",
+          "entryCode": "81",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000074",
+      "lineageCodes": [
+        "82"
+      ],
+      "name": {
+        "full": "Mary Frances Guthrie",
+        "first": "Mary",
+        "middle": "Frances",
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1840-02-06",
+        "dateRaw": "6 Feb 1840"
+      },
+      "death": {
+        "date": "1907-11-10",
+        "dateRaw": "10 Nov 1907"
+      },
+      "parentIds": [
+        "p_000072"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Joseph Harned",
+          "date": "1858-11-26",
+          "dateRaw": "26 Nov 1858"
+        }
+      ],
+      "residences": [
+        "Hocking County, Ohio (moved 1863)"
+      ],
+      "sources": [
+        {
+          "pdf": "Absalom_Guthrie - One Generation.pdf",
+          "entryCode": "82",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000075",
+      "lineageCodes": [
+        "87"
+      ],
+      "name": {
+        "full": "John Forman Guthrie",
+        "first": "John",
+        "middle": "Forman",
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1851-11-02",
+        "dateRaw": "2 Nov 1851"
+      },
+      "death": {
+        "date": "1929-04-14",
+        "dateRaw": "14 Apr 1929"
+      },
+      "parentIds": [
+        "p_000072"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Hannah Grimes",
+          "date": "1881-12-27",
+          "dateRaw": "27 Dec 1881"
+        }
+      ],
+      "childIds": [
+        "p_000076",
+        "p_000077"
+      ],
+      "sources": [
+        {
+          "pdf": "Absalom_Guthrie - One Generation.pdf",
+          "entryCode": "87",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000076",
+      "lineageCodes": [
+        "873"
+      ],
+      "name": {
+        "full": "Harry Grimes Guthrie",
+        "first": "Harry",
+        "middle": "Grimes",
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1886-09-08",
+        "dateRaw": "8 Sep 1886"
+      },
+      "parentIds": [
+        "p_000075"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Ester McLaughlin",
+          "date": "1922-10-18",
+          "dateRaw": "18 Oct 1922"
+        }
+      ],
+      "residences": [
+        "2583 Glen Echo Drive, Columbus, OH"
+      ],
+      "sources": [
+        {
+          "pdf": "Absalom_Guthrie - One Generation.pdf",
+          "entryCode": "873",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "id": "p_000077",
+      "lineageCodes": [
+        "874"
+      ],
+      "name": {
+        "full": "Bruce Forman Guthrie",
+        "first": "Bruce",
+        "middle": "Forman",
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1890-09-23",
+        "dateRaw": "23 Sep 1890"
+      },
+      "parentIds": [
+        "p_000075"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Elizabeth Shaws",
+          "date": "1918-06-15",
+          "dateRaw": "15 Jun 1918"
+        }
+      ],
+      "residences": [
+        "321 Dryden Rd., Ithaca, NY"
+      ],
+      "sources": [
+        {
+          "pdf": "Absalom_Guthrie - One Generation.pdf",
+          "entryCode": "874",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "id": "p_000078",
+      "lineageCodes": [
+        "88"
+      ],
+      "name": {
+        "full": "Martha Bell Guthrie",
+        "first": "Martha",
+        "middle": "Bell",
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1854-02-15",
+        "dateRaw": "15 Feb 1854"
+      },
+      "death": {
+        "date": "1930-05-05",
+        "dateRaw": "5 May 1930"
+      },
+      "parentIds": [
+        "p_000072"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Benjamin O'Neil",
+          "spouseDetails": "Hocking County, Ohio.",
+          "date": "1874-11-29",
+          "dateRaw": "29 Nov 1874"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "Absalom_Guthrie - One Generation.pdf",
+          "entryCode": "88",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "p_000079",
+      "lineageCodes": [
+        "8B"
+      ],
+      "name": {
+        "full": "William Nolan Guthrie",
+        "first": "William",
+        "middle": "Nolan",
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1861-12-27",
+        "dateRaw": "27 Dec 1861"
+      },
+      "death": {
+        "date": "1918-11-30",
+        "dateRaw": "30 Nov 1918"
+      },
+      "parentIds": [
+        "p_000072"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Jennie Aiken",
+          "spouseDetails": "Of Pittsburgh, PA.",
+          "date": "1895-04-10",
+          "dateRaw": "10 Apr 1895"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "Absalom_Guthrie - One Generation.pdf",
+          "entryCode": "8B",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "p_000080",
+      "lineageCodes": [
+        "A"
+      ],
+      "name": {
+        "full": "Alexander B. Guthrie",
+        "first": "Alexander",
+        "middle": "B.",
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1815-04-30",
+        "dateRaw": "30 Apr 1815"
+      },
+      "death": {
+        "date": "1877-06-02",
+        "dateRaw": "2 Jun 1877"
+      },
+      "burial": {
+        "place": "Shady Grove Cemetery"
+      },
+      "parentIds": [
+        "p_000001"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Mary Jeffers",
+          "marriageOrder": 1
+        },
+        {
+          "spouseName": "Anna Smith",
+          "marriageOrder": 2
+        }
+      ],
+      "childIds": [
+        "p_000081",
+        "p_000082",
+        "p_000083",
+        "p_000087",
+        "p_000092",
+        "p_000121",
+        "p_000122",
+        "p_000123",
+        "p_000124",
+        "p_000125",
+        "p_000093"
+      ],
+      "sources": [
+        {
+          "pdf": "Alexander_Guthrie - Five Generations.pdf",
+          "entryCode": "A",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000081",
+      "lineageCodes": [
+        "A1"
+      ],
+      "name": {
+        "full": "Abner F. Guthrie",
+        "first": "Abner",
+        "middle": "F.",
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1840-02-05",
+        "dateRaw": "5 Feb 1840 (alt: 12 Apr 1840)"
+      },
+      "death": {
+        "date": "1875-05-15",
+        "dateRaw": "15 May 1875"
+      },
+      "parentIds": [
+        "p_000080"
+      ],
+      "sources": [
+        {
+          "pdf": "Alexander_Guthrie - Five Generations.pdf",
+          "entryCode": "A1",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000082",
+      "lineageCodes": [
+        "A2"
+      ],
+      "name": {
+        "full": "Preston T. Guthrie",
+        "first": "Preston",
+        "middle": "T.",
+        "last": "Guthrie"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1842-07-04",
+        "dateRaw": "4 Jul 1842"
+      },
+      "death": {
+        "date": "1895-12-27",
+        "dateRaw": "27 Dec 1895"
+      },
+      "parentIds": [
+        "p_000080"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Martha Meyers",
+          "date": "1867-03-07",
+          "dateRaw": "7 Mar 1867"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "Alexander_Guthrie - Five Generations.pdf",
+          "entryCode": "A2",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000083",
+      "lineageCodes": [
+        "A3"
+      ],
+      "name": {
+        "full": "Persis Ann Guthrie",
+        "first": "Persis",
+        "middle": "Ann",
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1844-05-04",
+        "dateRaw": "4 May 1844"
+      },
+      "death": {
+        "date": "1918-07-12",
+        "dateRaw": "12 Jul 1918"
+      },
+      "parentIds": [
+        "p_000080"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Samuel F. Romesburg",
+          "date": "1866-06-17",
+          "dateRaw": "17 Jun 1866"
+        }
+      ],
+      "childIds": [
+        "p_000084",
+        "p_000085",
+        "p_000086"
+      ],
+      "sources": [
+        {
+          "pdf": "Alexander_Guthrie - Five Generations.pdf",
+          "entryCode": "A3",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000084",
+      "lineageCodes": [
+        "A32"
+      ],
+      "name": {
+        "full": "Alexander G. Romesburg",
+        "first": "Alexander",
+        "middle": "G.",
+        "last": "Romesburg"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1868-08-13",
+        "dateRaw": "13 Aug 1868"
+      },
+      "death": {
+        "date": "1965-05-22",
+        "dateRaw": "22 May 1965"
+      },
+      "parentIds": [
+        "p_000083"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Anna Blanche Raymond"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "Alexander_Guthrie - Five Generations.pdf",
+          "entryCode": "A32",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "id": "p_000085",
+      "lineageCodes": [
+        "A35"
+      ],
+      "name": {
+        "full": "S. Walter Romesburg",
+        "first": "S.",
+        "middle": "Walter",
+        "last": "Romesburg"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1870-01-07",
+        "dateRaw": "7 Jan 1870"
+      },
+      "death": {
+        "dateRaw": "1954"
+      },
+      "parentIds": [
+        "p_000083"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Della M. Ridenour"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "Alexander_Guthrie - Five Generations.pdf",
+          "entryCode": "A35",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "id": "p_000086",
+      "lineageCodes": [
+        "A3B"
+      ],
+      "name": {
+        "full": "William Franklin Romesburg",
+        "first": "William",
+        "middle": "Franklin",
+        "last": "Romesburg"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1871-11-19",
+        "dateRaw": "19 Nov 1871"
+      },
+      "death": {
+        "date": "1948-12-07",
+        "dateRaw": "7 Dec 1948"
+      },
+      "parentIds": [
+        "p_000083"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Sarah Catherine Hileman"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "Alexander_Guthrie - Five Generations.pdf",
+          "entryCode": "A3B",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "id": "p_000087",
+      "lineageCodes": [
+        "A4"
+      ],
+      "name": {
+        "full": "Louise Alida (Lide) Guthrie",
+        "first": "Louise",
+        "middle": "Alida (Lide)",
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1846-03-03",
+        "dateRaw": "3 Mar 1846"
+      },
+      "death": {
+        "date": "1924-03-18",
+        "dateRaw": "18 Mar 1924"
+      },
+      "parentIds": [
+        "p_000080"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Henry Frankhouser",
+          "date": "1866-04-12",
+          "dateRaw": "12 Apr 1866"
+        }
+      ],
+      "childIds": [
+        "p_000088",
+        "p_000089",
+        "p_000091"
+      ],
+      "sources": [
+        {
+          "pdf": "Alexander_Guthrie - Five Generations.pdf",
+          "entryCode": "A4",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000088",
+      "lineageCodes": [
+        "A41"
+      ],
+      "name": {
+        "full": "Lucian Emmer Frankhouser",
+        "first": "Lucian",
+        "middle": "Emmer",
+        "last": "Frankhouser"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1866-03-24",
+        "dateRaw": "24 Mar 1866"
+      },
+      "death": {
+        "date": "1934-12-17",
+        "dateRaw": "17 Dec 1934"
+      },
+      "parentIds": [
+        "p_000087"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Laura M. Deal",
+          "date": "1895-02-14",
+          "dateRaw": "14 Feb 1895"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "Alexander_Guthrie - Five Generations.pdf",
+          "entryCode": "A41",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "id": "p_000089",
+      "lineageCodes": [
+        "A45"
+      ],
+      "name": {
+        "full": "Alice Pearl Frankhouser",
+        "first": "Alice",
+        "middle": "Pearl",
+        "last": "Frankhouser"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1880-06-09",
+        "dateRaw": "9 Jun 1880"
+      },
+      "death": {
+        "date": "1969-01-03",
+        "dateRaw": "3 Jan 1969"
+      },
+      "parentIds": [
+        "p_000087"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Melvin (Mel) Ray Cupp",
+          "date": "1904-05-25",
+          "dateRaw": "25 May 1904"
+        }
+      ],
+      "childIds": [
+        "p_000090"
+      ],
+      "notes": "Mother of Mary Cupp Summers (who married Glenn Webster Barnes #7144 in James's line).",
+      "sources": [
+        {
+          "pdf": "Alexander_Guthrie - Five Generations.pdf",
+          "entryCode": "A45",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "id": "p_000090",
+      "lineageCodes": [
+        "A456"
+      ],
+      "name": {
+        "full": "Martin Luther Cupp",
+        "first": "Martin",
+        "middle": "Luther",
+        "last": "Cupp"
+      },
+      "sex": "M",
+      "birth": {
+        "date": "1918-05-09",
+        "dateRaw": "9 May 1918"
+      },
+      "parentIds": [
+        "p_000089"
+      ],
+      "marriages": [
+        {
+          "spouseId": "p_000026",
+          "spouseName": "Mary Jean Guthrie",
+          "spouseDetails": "Same as #13F72 in John's branch (daughter of James Quinter Guthrie #13F7).",
+          "date": "1953-05-09",
+          "dateRaw": "9 May 1953"
+        }
+      ],
+      "notes": "Marriage connects Alexander's branch (via Alice Pearl Frankhouser #A45) to John's branch (via Mary Jean Guthrie #13F72).",
+      "sources": [
+        {
+          "pdf": "Alexander_Guthrie - Five Generations.pdf",
+          "entryCode": "A456",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "id": "p_000091",
+      "lineageCodes": [
+        "A46"
+      ],
+      "name": {
+        "full": "Rhuie Lena Frankhouser",
+        "first": "Rhuie",
+        "middle": "Lena",
+        "last": "Frankhouser"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1891-10-03",
+        "dateRaw": "3 Oct 1891"
+      },
+      "death": {
+        "date": "1944-04-22",
+        "dateRaw": "22 Apr 1944"
+      },
+      "parentIds": [
+        "p_000087"
+      ],
+      "marriages": [
+        {
+          "spouseId": "p_000069",
+          "spouseName": "Ray Guthrie",
+          "spouseDetails": "Same person as 74A in James's branch / 172A in John's branch.",
+          "date": "1922-03-18",
+          "dateRaw": "18 Mar 1922"
+        }
+      ],
+      "notes": "Her marriage to Ray Guthrie links Alexander's branch with both James's and John's branches.",
+      "sources": [
+        {
+          "pdf": "Alexander_Guthrie - Five Generations.pdf",
+          "entryCode": "A46",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000092",
+      "lineageCodes": [
+        "A5"
+      ],
+      "name": {
+        "full": "Mary Caroline Guthrie",
+        "first": "Mary",
+        "middle": "Caroline",
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1847-05-10",
+        "dateRaw": "10 May 1847"
+      },
+      "death": {
+        "date": "1915-05-21",
+        "dateRaw": "21 May 1915"
+      },
+      "parentIds": [
+        "p_000080"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Nicolas Bolyard"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "Alexander_Guthrie - Five Generations.pdf",
+          "entryCode": "A5",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "p_000093",
+      "lineageCodes": [
+        "AB"
+      ],
+      "name": {
+        "full": "Demeris E. Guthrie",
+        "first": "Demeris",
+        "middle": "E.",
+        "last": "Guthrie"
+      },
+      "sex": "F",
+      "birth": {
+        "date": "1859-02-22",
+        "dateRaw": "22 Feb 1859"
+      },
+      "death": {
+        "date": "1919-02-27",
+        "dateRaw": "27 Feb 1919"
+      },
+      "parentIds": [
+        "p_000080"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Benjamin F. Faulkner",
+          "date": "1892-04-02",
+          "dateRaw": "2 Apr 1892"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "Alexander_Guthrie - Five Generations.pdf",
+          "entryCode": "AB",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "p_000094",
+      "lineageCodes": [
+        "15"
+      ],
+      "name": {
+        "full": "Sarah Guthrie",
+        "first": "Sarah",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "birth": {
+        "date": "1829-10-22",
+        "dateRaw": "22 Oct 1829"
+      },
+      "death": {
+        "dateRaw": "Dec 1833"
+      },
+      "parentIds": [
+        "p_000002"
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "15",
+          "page": 1
+        }
+      ],
+      "flags": {
+        "diedInInfancy": true
+      }
+    },
+    {
+      "id": "p_000095",
+      "lineageCodes": [
+        "18"
+      ],
+      "name": {
+        "full": "John Guthrie",
+        "first": "John",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "birth": {
+        "date": "1839-03-19",
+        "dateRaw": "19 Mar 1839"
+      },
+      "death": {
+        "dateRaw": "1841"
+      },
+      "parentIds": [
+        "p_000002"
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "18",
+          "page": 1
+        }
+      ],
+      "flags": {
+        "diedInInfancy": true
+      }
+    },
+    {
+      "id": "p_000096",
+      "lineageCodes": [
+        "112"
+      ],
+      "name": {
+        "full": "Samuel Guthrie",
+        "first": "Samuel",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "birth": {
+        "date": "1844-06-21",
+        "dateRaw": "21 Jun 1844"
+      },
+      "parentIds": [
+        "p_000003"
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "112",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000097",
+      "lineageCodes": [
+        "114"
+      ],
+      "name": {
+        "full": "Mary Jane Guthrie",
+        "first": "Mary",
+        "middle": "Jane",
+        "last": "Guthrie"
+      },
+      "birth": {
+        "dateRaw": "about 1855"
+      },
+      "parentIds": [
+        "p_000003"
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "114",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000098",
+      "lineageCodes": [
+        "121"
+      ],
+      "name": {
+        "full": "Mary E. DeBerry",
+        "first": "Mary",
+        "middle": "E.",
+        "last": "DeBerry"
+      },
+      "birth": {
+        "dateRaw": "about 1846"
+      },
+      "parentIds": [
+        "p_000008"
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "121",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000099",
+      "lineageCodes": [
+        "124"
+      ],
+      "name": {
+        "full": "Susanna Ella DeBerry",
+        "first": "Susanna",
+        "middle": "Ella",
+        "last": "DeBerry"
+      },
+      "birth": {
+        "date": "1862-07-27",
+        "dateRaw": "27 Jul 1862"
+      },
+      "parentIds": [
+        "p_000008"
+      ],
+      "sources": [
+        {
+          "pdf": "John_Guthrie - Eight Generations.pdf",
+          "entryCode": "124",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000100",
+      "lineageCodes": [
+        "23"
+      ],
+      "name": {
+        "full": "Elnor Guthrie",
+        "first": "Elnor",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "birth": {
+        "dateRaw": "1841"
+      },
+      "death": {
+        "dateRaw": "1927"
+      },
+      "parentIds": [
+        "p_000043"
+      ],
+      "sources": [
+        {
+          "pdf": "William_Guthrie - One Generation.pdf",
+          "entryCode": "23",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000101",
+      "lineageCodes": [
+        "24"
+      ],
+      "name": {
+        "full": "Eugenus Guthrie",
+        "first": "Eugenus",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "birth": {
+        "date": "1844-03-16",
+        "dateRaw": "16 Mar 1844"
+      },
+      "death": {
+        "date": "1857-02-24",
+        "dateRaw": "24 Feb 1857"
+      },
+      "parentIds": [
+        "p_000043"
+      ],
+      "sources": [
+        {
+          "pdf": "William_Guthrie - One Generation.pdf",
+          "entryCode": "24",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000102",
+      "lineageCodes": [
+        "52"
+      ],
+      "name": {
+        "full": "Elizabeth Guthrie",
+        "first": "Elizabeth",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "parentIds": [
+        "p_000046"
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation.pdf",
+          "entryCode": "52",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000103",
+      "lineageCodes": [
+        "54"
+      ],
+      "name": {
+        "full": "Catherine Guthrie",
+        "first": "Catherine",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "birth": {
+        "dateRaw": "about 1833"
+      },
+      "parentIds": [
+        "p_000046"
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation.pdf",
+          "entryCode": "54",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000104",
+      "lineageCodes": [
+        "55"
+      ],
+      "name": {
+        "full": "Mary Guthrie",
+        "first": "Mary",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "birth": {
+        "dateRaw": "about 1835"
+      },
+      "parentIds": [
+        "p_000046"
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation.pdf",
+          "entryCode": "55",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000105",
+      "lineageCodes": [
+        "57"
+      ],
+      "name": {
+        "full": "Bell Guthrie",
+        "first": "Bell",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "birth": {
+        "dateRaw": "1843"
+      },
+      "parentIds": [
+        "p_000046"
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation.pdf",
+          "entryCode": "57",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000106",
+      "lineageCodes": [
+        "58"
+      ],
+      "name": {
+        "full": "Israel Guthrie",
+        "first": "Israel",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "birth": {
+        "dateRaw": "1847"
+      },
+      "parentIds": [
+        "p_000046"
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation.pdf",
+          "entryCode": "58",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000107",
+      "lineageCodes": [
+        "5A"
+      ],
+      "name": {
+        "full": "Florence Guthrie",
+        "first": "Florence",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "birth": {
+        "dateRaw": "1854"
+      },
+      "death": {
+        "dateRaw": "1887"
+      },
+      "parentIds": [
+        "p_000046"
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation.pdf",
+          "entryCode": "5A",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000108",
+      "lineageCodes": [
+        "511"
+      ],
+      "name": {
+        "full": "Arthur Guthrie",
+        "first": "Arthur",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "parentIds": [
+        "p_000047"
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation.pdf",
+          "entryCode": "511",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000109",
+      "lineageCodes": [
+        "61"
+      ],
+      "name": {
+        "full": "Absalom G. Crawford",
+        "first": "Absalom",
+        "middle": "G.",
+        "last": "Crawford"
+      },
+      "birth": {
+        "date": "1842-07-27",
+        "dateRaw": "27 Jul 1842"
+      },
+      "death": {
+        "date": "1848-01-19",
+        "dateRaw": "19 Jan 1848"
+      },
+      "parentIds": [
+        "p_000053"
+      ],
+      "sources": [
+        {
+          "pdf": "Rachel_Guthrie - One Generation.pdf",
+          "entryCode": "61",
+          "page": 1
+        }
+      ],
+      "flags": {
+        "diedInInfancy": true
+      }
+    },
+    {
+      "id": "p_000110",
+      "lineageCodes": [
+        "64"
+      ],
+      "name": {
+        "full": "Virginia Crawford",
+        "first": "Virginia",
+        "middle": null,
+        "last": "Crawford"
+      },
+      "parentIds": [
+        "p_000053"
+      ],
+      "sources": [
+        {
+          "pdf": "Rachel_Guthrie - One Generation.pdf",
+          "entryCode": "64",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000111",
+      "lineageCodes": [
+        "65"
+      ],
+      "name": {
+        "full": "Mary Ann Crawford",
+        "first": "Mary",
+        "middle": "Ann",
+        "last": "Crawford"
+      },
+      "parentIds": [
+        "p_000053"
+      ],
+      "sources": [
+        {
+          "pdf": "Rachel_Guthrie - One Generation.pdf",
+          "entryCode": "65",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000112",
+      "lineageCodes": [
+        "73"
+      ],
+      "name": {
+        "full": "Ephraim Guthrie",
+        "first": "Ephraim",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "birth": {
+        "date": "1850-06-14",
+        "dateRaw": "14 Jun 1850"
+      },
+      "death": {
+        "date": "1854-10-20",
+        "dateRaw": "20 Oct 1854"
+      },
+      "parentIds": [
+        "p_000056"
+      ],
+      "sources": [
+        {
+          "pdf": "James_Guthrie - Seven Generations.pdf",
+          "entryCode": "73",
+          "page": 1
+        }
+      ],
+      "flags": {
+        "diedInInfancy": true
+      }
+    },
+    {
+      "id": "p_000113",
+      "lineageCodes": [
+        "75"
+      ],
+      "name": {
+        "full": "Mary Guthrie",
+        "first": "Mary",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "birth": {
+        "date": "1854-10-15",
+        "dateRaw": "15 Oct 1854"
+      },
+      "death": {
+        "date": "1872-12-23",
+        "dateRaw": "23 Dec 1872"
+      },
+      "parentIds": [
+        "p_000056"
+      ],
+      "sources": [
+        {
+          "pdf": "James_Guthrie - Seven Generations.pdf",
+          "entryCode": "75",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000114",
+      "lineageCodes": [
+        "77"
+      ],
+      "name": {
+        "full": "Lucretia Guthrie",
+        "first": "Lucretia",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "birth": {
+        "date": "1860-04-28",
+        "dateRaw": "28 Apr 1860"
+      },
+      "death": {
+        "date": "1877-04-28",
+        "dateRaw": "28 Apr 1877"
+      },
+      "parentIds": [
+        "p_000056"
+      ],
+      "sources": [
+        {
+          "pdf": "James_Guthrie - Seven Generations.pdf",
+          "entryCode": "77",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000115",
+      "lineageCodes": [
+        "83"
+      ],
+      "name": {
+        "full": "Rachel Ann Guthrie",
+        "first": "Rachel",
+        "middle": "Ann",
+        "last": "Guthrie"
+      },
+      "birth": {
+        "date": "1843-02-11",
+        "dateRaw": "11 Feb 1843"
+      },
+      "death": {
+        "date": "1912-11-27",
+        "dateRaw": "27 Nov 1912"
+      },
+      "parentIds": [
+        "p_000072"
+      ],
+      "sources": [
+        {
+          "pdf": "Absalom_Guthrie - One Generation.pdf",
+          "entryCode": "83",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000116",
+      "lineageCodes": [
+        "84"
+      ],
+      "name": {
+        "full": "James Marshall Guthrie",
+        "first": "James",
+        "middle": "Marshall",
+        "last": "Guthrie"
+      },
+      "birth": {
+        "date": "1845-05-20",
+        "dateRaw": "20 May 1845"
+      },
+      "parentIds": [
+        "p_000072"
+      ],
+      "sources": [
+        {
+          "pdf": "Absalom_Guthrie - One Generation.pdf",
+          "entryCode": "84",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000117",
+      "lineageCodes": [
+        "85"
+      ],
+      "name": {
+        "full": "A son",
+        "first": "A",
+        "middle": null,
+        "last": "son"
+      },
+      "birth": {
+        "date": "1847-09-15",
+        "dateRaw": "15 Sep 1847"
+      },
+      "death": {
+        "dateRaw": "in infancy"
+      },
+      "parentIds": [
+        "p_000072"
+      ],
+      "sources": [
+        {
+          "pdf": "Absalom_Guthrie - One Generation.pdf",
+          "entryCode": "85",
+          "page": 1
+        }
+      ],
+      "flags": {
+        "diedInInfancy": true
+      }
+    },
+    {
+      "id": "p_000118",
+      "lineageCodes": [
+        "86"
+      ],
+      "name": {
+        "full": "Isabella Guthrie",
+        "first": "Isabella",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "birth": {
+        "date": "1849-05-10",
+        "dateRaw": "10 May 1849"
+      },
+      "death": {
+        "dateRaw": "1852"
+      },
+      "parentIds": [
+        "p_000072"
+      ],
+      "sources": [
+        {
+          "pdf": "Absalom_Guthrie - One Generation.pdf",
+          "entryCode": "86",
+          "page": 1
+        }
+      ],
+      "flags": {
+        "diedInInfancy": true
+      }
+    },
+    {
+      "id": "p_000119",
+      "lineageCodes": [
+        "89"
+      ],
+      "name": {
+        "full": "Virginia Alice Guthrie",
+        "first": "Virginia",
+        "middle": "Alice",
+        "last": "Guthrie"
+      },
+      "birth": {
+        "date": "1856-04-06",
+        "dateRaw": "6 Apr 1856"
+      },
+      "parentIds": [
+        "p_000072"
+      ],
+      "sources": [
+        {
+          "pdf": "Absalom_Guthrie - One Generation.pdf",
+          "entryCode": "89",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000120",
+      "lineageCodes": [
+        "8A"
+      ],
+      "name": {
+        "full": "Sarah Louise Guthrie",
+        "first": "Sarah",
+        "middle": "Louise",
+        "last": "Guthrie"
+      },
+      "birth": {
+        "date": "1859-01-23",
+        "dateRaw": "23 Jan 1859"
+      },
+      "parentIds": [
+        "p_000072"
+      ],
+      "sources": [
+        {
+          "pdf": "Absalom_Guthrie - One Generation.pdf",
+          "entryCode": "8A",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000121",
+      "lineageCodes": [
+        "A6"
+      ],
+      "name": {
+        "full": "Edgar W. Guthrie",
+        "first": "Edgar",
+        "middle": "W.",
+        "last": "Guthrie"
+      },
+      "parentIds": [
+        "p_000080"
+      ],
+      "sources": [
+        {
+          "pdf": "Alexander_Guthrie - Five Generations.pdf",
+          "entryCode": "A6",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000122",
+      "lineageCodes": [
+        "A7"
+      ],
+      "name": {
+        "full": "Melissa J. Guthrie",
+        "first": "Melissa",
+        "middle": "J.",
+        "last": "Guthrie"
+      },
+      "birth": {
+        "date": "1848-10-26",
+        "dateRaw": "26 Oct 1848"
+      },
+      "parentIds": [
+        "p_000080"
+      ],
+      "sources": [
+        {
+          "pdf": "Alexander_Guthrie - Five Generations.pdf",
+          "entryCode": "A7",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000123",
+      "lineageCodes": [
+        "A8"
+      ],
+      "name": {
+        "full": "Allen C. Guthrie",
+        "first": "Allen",
+        "middle": "C.",
+        "last": "Guthrie"
+      },
+      "birth": {
+        "date": "1849-11-22",
+        "dateRaw": "22 Nov 1849"
+      },
+      "death": {
+        "dateRaw": "1936"
+      },
+      "parentIds": [
+        "p_000080"
+      ],
+      "sources": [
+        {
+          "pdf": "Alexander_Guthrie - Five Generations.pdf",
+          "entryCode": "A8",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000124",
+      "lineageCodes": [
+        "A9"
+      ],
+      "name": {
+        "full": "Clarissa A. Guthrie",
+        "first": "Clarissa",
+        "middle": "A.",
+        "last": "Guthrie"
+      },
+      "birth": {
+        "dateRaw": "Dec 1851"
+      },
+      "death": {
+        "dateRaw": "1935"
+      },
+      "parentIds": [
+        "p_000080"
+      ],
+      "sources": [
+        {
+          "pdf": "Alexander_Guthrie - Five Generations.pdf",
+          "entryCode": "A9",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "p_000125",
+      "lineageCodes": [
+        "AA"
+      ],
+      "name": {
+        "full": "Leander Kidwell Guthrie",
+        "first": "Leander",
+        "middle": "Kidwell",
+        "last": "Guthrie"
+      },
+      "birth": {
+        "date": "1856-02-25",
+        "dateRaw": "25 Feb 1856"
+      },
+      "death": {
+        "date": "1914-10-20",
+        "dateRaw": "20 Oct 1914"
+      },
+      "parentIds": [
+        "p_000080"
+      ],
+      "sources": [
+        {
+          "pdf": "Alexander_Guthrie - Five Generations.pdf",
+          "entryCode": "AA",
+          "page": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://family.sudoservers.com/schema/person.schema.json",
+  "title": "Guthrie Family Tree Dataset",
+  "type": "object",
+  "required": ["version", "metadata", "people"],
+  "properties": {
+    "version": { "type": "string" },
+    "metadata": {
+      "type": "object",
+      "required": ["lastUpdated", "sourceFiles"],
+      "properties": {
+        "lastUpdated": { "type": "string", "format": "date" },
+        "sourceFiles": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "founderNote": { "type": "string" }
+      }
+    },
+    "people": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/person" }
+    }
+  },
+  "$defs": {
+    "person": {
+      "type": "object",
+      "required": ["id", "name"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable internal identifier. Never changes once assigned. Format: p_<6-digit-zero-padded>."
+        },
+        "lineageCodes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Original numbering scheme codes from the source PDFs (1-9 then A-Z per generation). A single person may have multiple codes if they appear in more than one branch."
+        },
+        "name": {
+          "type": "object",
+          "required": ["full"],
+          "properties": {
+            "full": { "type": "string", "description": "Full name as displayed" },
+            "first": { "type": ["string", "null"] },
+            "middle": { "type": ["string", "null"] },
+            "last": { "type": ["string", "null"] },
+            "maidenName": { "type": ["string", "null"], "description": "Birth surname if different from current last name (typically for married women)" },
+            "nicknames": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "sex": { "type": ["string", "null"], "enum": ["M", "F", null] },
+        "birth": { "$ref": "#/$defs/lifeEvent" },
+        "death": { "$ref": "#/$defs/lifeEvent" },
+        "burial": {
+          "type": ["object", "null"],
+          "properties": {
+            "place": { "type": ["string", "null"] }
+          }
+        },
+        "parentIds": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "IDs of biological parents. Typically 0 (root), 1 (single parent known), or 2."
+        },
+        "marriages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "spouseId": { "type": ["string", "null"], "description": "Internal ID if spouse is in our dataset" },
+              "spouseName": { "type": ["string", "null"], "description": "Free-text name if spouse is not in dataset" },
+              "spouseDetails": { "type": ["string", "null"], "description": "e.g., parents, birth date, occupation when known" },
+              "date": { "type": ["string", "null"], "format": "date" },
+              "dateRaw": { "type": ["string", "null"], "description": "Original date string, preserved when ISO conversion is uncertain" },
+              "place": { "type": ["string", "null"] },
+              "marriageOrder": { "type": ["integer", "null"], "description": "1, 2, 3 for first/second/third marriage when multiple" },
+              "notes": { "type": ["string", "null"] }
+            }
+          }
+        },
+        "childIds": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Ordered list of child IDs (birth order preserved)"
+        },
+        "residences": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Known places of residence"
+        },
+        "occupation": { "type": ["string", "null"] },
+        "notes": { "type": ["string", "null"], "description": "Free-text biographical information" },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["pdf"],
+            "properties": {
+              "pdf": { "type": "string", "description": "Source PDF filename" },
+              "entryCode": { "type": ["string", "null"], "description": "The lineage code under which this entry was found" },
+              "page": { "type": ["integer", "null"] }
+            }
+          }
+        },
+        "flags": {
+          "type": "object",
+          "properties": {
+            "diedInInfancy": { "type": "boolean" },
+            "adopted": { "type": "boolean" },
+            "stepChild": { "type": "boolean" },
+            "fosterChild": { "type": "boolean" }
+          }
+        }
+      }
+    },
+    "lifeEvent": {
+      "type": ["object", "null"],
+      "properties": {
+        "date": { "type": ["string", "null"], "format": "date", "description": "ISO date when parseable" },
+        "dateRaw": { "type": ["string", "null"], "description": "Original date string from source. Preserved verbatim when date is uncertain (e.g., 'about 1872', 'before Mar 1867')" },
+        "place": { "type": ["string", "null"] }
+      }
+    }
+  }
+}
