@@ -1,6 +1,6 @@
 # Project status
 
-Last updated: 2026-05-28
+Last updated: 2026-05-28 (post-OCR)
 
 ## What exists
 
@@ -11,18 +11,27 @@ Last updated: 2026-05-28
 
 ## Source PDFs and transcription coverage
 
-PDFs live at `~/Documents/Family Tree/`. They are scanned images — no
-embedded text. Earlier sessions used Claude's vision to read pages.
+PDFs live at `~/Documents/Family Tree/`. They are scanned images.
+We OCR'd them with `ocrmypdf --deskew --clean --oversample 600` and
+checked them into `ocr/<branch>.txt`. The OCR is too noisy for source
+data (digit errors in dates) but good enough as an *index* — see
+`parser/report_missing.py` for the auto-generated coverage report.
 
-| PDF | Pages | Coverage |
-|---|---|---|
-| Rachel_Guthrie - One Generation.pdf | 1 | ~80% (5/5 gen-1 children; 2/5 gen-2) |
-| William_Guthrie - One Generation.pdf | 3 | ~30% (root + 2/4 children; no gen-3) |
-| Absalom_Guthrie - One Generation.pdf | 4 | ~40% (root + most gen-1; spotty gen-2) |
-| Stephen_Guthrie - One Generation.pdf | 6 | ~25% (root + headline kids; deep gens thin) |
-| Alexander_Guthrie - Five Generations.pdf | 11 | ~30% (root + key gen-1/2; some gen-3/4 chains) |
-| James_Guthrie - Seven Generations.pdf | 32 | ~20% (root + key cross-branch nodes; gen 4-7 mostly empty) |
-| John_Guthrie - Eight Generations.pdf | 147 | ~10% (root + key gen 2-4 chains; ~600+ people remain) |
+Live counts (run `python3 parser/report_missing.py` for current numbers):
+
+| PDF | Pages | Codes in OCR | In dataset | Missing |
+|---|---:|---:|---:|---:|
+| rachel.txt | 1 | 4 | 2 | 2 |
+| william.txt | 3 | 22 | 1 | 21 |
+| absalom.txt | 4 | 15 | 6 | 9 |
+| stephen.txt | 6 | 29 | 7 | 22 |
+| alexander.txt | 11 | 95 | 10 | 85 |
+| james.txt | 32 | 115 | 11 | 104 |
+| john.txt | 147 | ~1100 | 56 | ~1050 |
+| **Total** | **204** | **~1390** | **~77 unique** | **~1315** |
+
+(About 5% of the "missing" codes are OCR artifacts — single letters, weird
+short tokens — not real entries. Spot-check before transcribing.)
 
 ## Decision log
 
@@ -57,16 +66,15 @@ embedded text. Earlier sessions used Claude's vision to read pages.
    see what's been done.
 2. Read this file (STATUS.md), `README.md`, and the docstring at the top
    of `parser/raw_entries.py`.
-3. `python3 parser/report_stubs.py` — lists people who exist as references
-   but have no full entry yet. That's the surface-level to-do.
-4. The deeper to-do is in the PDFs themselves. To know what's missing,
-   read a page range of a PDF that's not yet well-covered (see coverage
-   table above) and compare codes to what's in raw_entries.py.
-5. The PDFs are large; use the Read tool with `pages: "N-M"` (max 20 per
-   call). Strategy: take a range, find codes, search `parser/raw_entries.py`
-   for each code, transcribe missing ones.
-6. After adding entries: `python3 parser/build.py`, then commit both
-   `raw_entries.py` and `data/people.json` together.
+3. `python3 parser/report_missing.py --pdf <branch>` — lists exactly which
+   codes from that PDF's OCR are missing from raw_entries.py. Pick one,
+   look up the surrounding page in the PDF.
+4. For accurate transcription of a missing entry, **use Claude's vision on
+   the PDF** — not the OCR text. OCR is the index; the PDF is ground truth.
+   Use the Read tool with `pages: "N-M"` (max 20 per call) on the original
+   PDF in `~/Documents/Family Tree/`.
+5. Append entries to `parser/raw_entries.py`, run `python3 parser/build.py`,
+   commit both `raw_entries.py` and `data/people.json` together.
 
 ## Next priorities
 

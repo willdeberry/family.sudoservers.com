@@ -17,10 +17,19 @@ Never hand-edit `data/people.json` — it's generated.
 ## Useful commands
 
 ```bash
-python3 parser/build.py             # rebuild data/people.json
-python3 parser/report_stubs.py      # to-do list of un-transcribed people
-python3 parser/report_stubs.py --branch A  # filter to one sibling line
+python3 parser/build.py                   # rebuild data/people.json
+python3 parser/report_missing.py          # codes in OCR but not in dataset
+python3 parser/report_missing.py --pdf john   # filter to one PDF's report
+python3 parser/report_stubs.py            # people referenced but with no full entry
 ```
+
+## OCR vs vision
+
+`ocr/<branch>.txt` exists for grepping and the coverage report only. It
+has digit errors (e.g. "15 Nov" → "14 Nov") that are dangerous for
+genealogy. **Always use Claude's vision on the original PDF** in
+`~/Documents/Family Tree/` for accurate transcription of an entry. The
+OCR just tells you *which* codes exist.
 
 ## Key facts about the data
 
