@@ -17,11 +17,21 @@ Never hand-edit `data/people.json` — it's generated.
 ## Useful commands
 
 ```bash
-python3 parser/build.py                   # rebuild data/people.json
-python3 parser/report_missing.py          # codes in OCR but not in dataset
-python3 parser/report_missing.py --pdf john   # filter to one PDF's report
-python3 parser/report_stubs.py            # people referenced but with no full entry
+python3 parser/build.py                       # rebuild data/people.json
+python3 parser/verify.py --stats              # verification progress
+python3 parser/verify.py --pdf <branch>       # next batch of drafts to verify
+python3 parser/verify.py --code 13F71         # detail on one entry
+python3 parser/draft_from_ocr.py --pdf <branch> --missing-only  # extract more drafts
+python3 parser/report_missing.py              # codes in OCR but not in dataset
+python3 parser/report_stubs.py                # people referenced but no full entry
 ```
+
+## Workflow note
+
+The dataset is structurally complete (1351 people, all 7 branches, 7+
+generations). The active work is **verification**: most entries are OCR
+drafts (`verification.status == "draft"`) that need vision review against
+the source PDF. Use `verify.py` to get worklists grouped by PDF page.
 
 ## OCR vs vision
 

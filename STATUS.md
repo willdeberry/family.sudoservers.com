@@ -4,10 +4,15 @@ Last updated: 2026-05-28 (post-OCR)
 
 ## What exists
 
-- 187 people in `data/people.json`, generated from `parser/raw_entries.py`
-- All 7 sibling branches present
+- 1351 people in `data/people.json`, generated from `parser/raw_entries.py`
+- All 7 sibling branches present, structure largely complete
 - 12 cross-branch marriages with dedup working (see SEE_REFS in raw_entries.py)
-- Tree depth: 7 generations from inferred founder (code `0`)
+- Tree depth: 7+ generations from inferred founder (code `0`)
+- Verification status: 154 verified, 1197 draft (mostly OCR-drafted, need vision review)
+
+Per-branch descendant counts: John 417 · Alexander 64 · James 77 ·
+Stephen 31 · Absalom 22 · William 19 · Rachel 7. The lighter branches are
+that thin in the source PDFs themselves, not from missing transcription.
 
 ## Source PDFs and transcription coverage
 
@@ -62,19 +67,30 @@ short tokens — not real entries. Spot-check before transcribing.)
 
 ## Pickup checklist for a new session
 
-1. `cd /Users/will/code/family.sudoservers.com && git log --oneline` —
-   see what's been done.
-2. Read this file (STATUS.md), `README.md`, and the docstring at the top
-   of `parser/raw_entries.py`.
-3. `python3 parser/report_missing.py --pdf <branch>` — lists exactly which
-   codes from that PDF's OCR are missing from raw_entries.py. Pick one,
-   look up the surrounding page in the PDF.
-4. For accurate transcription of a missing entry, **use Claude's vision on
-   the PDF** — not the OCR text. OCR is the index; the PDF is ground truth.
-   Use the Read tool with `pages: "N-M"` (max 20 per call) on the original
-   PDF in `~/Documents/Family Tree/`.
-5. Append entries to `parser/raw_entries.py`, run `python3 parser/build.py`,
-   commit both `raw_entries.py` and `data/people.json` together.
+### Verification workflow (primary work)
+
+The dataset is structurally complete but mostly draft. Verification is the
+ongoing work.
+
+1. `python3 parser/verify.py --stats` — see overall progress.
+2. `python3 parser/verify.py --pdf <branch> --batch 10` — get a worklist
+   of 10 drafts grouped by PDF and page.
+3. Read the relevant pages of the source PDF (`~/Documents/Family Tree/`)
+   with the Read tool, using `pages: "N-M"`. Compare the visible entries
+   to the drafts.
+4. In `parser/raw_entries.py`, find each draft entry (search by code),
+   correct any errors, and update its verification block to:
+   `{"status": "verified", "source": "vision", "lastChecked": "<today>"}`.
+5. `python3 parser/build.py`, commit both files.
+
+### Adding entirely new people
+
+1. `python3 parser/report_missing.py --pdf <branch>` — codes in OCR but
+   not yet in raw_entries.py (should be near zero now since the bulk
+   import).
+2. If anything's missing, look it up in the PDF via vision and add to
+   raw_entries.py with `verification = {"status": "verified", "source":
+   "vision", ...}`.
 
 ## Next priorities
 
