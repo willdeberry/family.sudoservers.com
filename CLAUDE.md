@@ -1,0 +1,42 @@
+# family.sudoservers.com
+
+Genealogy dataset for the descendants of an unnamed Guthrie patriarch.
+Source: seven scanned PDF genealogies at `~/Documents/Family Tree/`.
+
+## Read first
+
+- `STATUS.md` — current coverage, decision log, pickup checklist.
+- `README.md` — repo layout and the edit-and-rebuild loop.
+- `parser/raw_entries.py` — docstring at the top documents the entry format.
+
+## Workflow
+
+Edit `parser/raw_entries.py`, run `python3 parser/build.py`, commit both.
+Never hand-edit `data/people.json` — it's generated.
+
+## Useful commands
+
+```bash
+python3 parser/build.py             # rebuild data/people.json
+python3 parser/report_stubs.py      # to-do list of un-transcribed people
+python3 parser/report_stubs.py --branch A  # filter to one sibling line
+```
+
+## Key facts about the data
+
+- Lineage codes use 1-9 then A-Z to allow >9 children per family. Each char
+  is one generation. `74A` = Alexander's branch, 4th child of 7th sibling,
+  10th grandchild on that line.
+- The seven sibling roots are: `1` John, `2` William, `5` Stephen,
+  `6` Rachel, `7` James, `8` Absalom, `A` Alexander. Codes 3, 4, 9 belong
+  to undocumented siblings.
+- Code `0` is the inferred common patriarch — not in any PDF, added so all
+  branches connect.
+- Cross-branch marriages (same person under two codes) go in `SEE_REFS`
+  in `raw_entries.py`. The build script merges them while preserving both
+  codes in `lineageCodes`.
+
+## PDF reading
+
+PDFs are scanned images — `pdftotext` returns nothing. Use the Read tool
+with `pages: "N-M"` (20-page max per call). Vision handles the OCR.
