@@ -164,6 +164,12 @@ def build():
                 "notes": None,
                 "sources": [],
                 "flags": {},
+                "verification": {
+                    "status": "draft",
+                    "source": "manual",
+                    "lastChecked": None,
+                    "notes": "Auto-created from a relationship link; no source data yet.",
+                },
             }
         if code and code not in people[pid]["lineageCodes"]:
             people[pid]["lineageCodes"].append(code)
@@ -207,6 +213,17 @@ def build():
 
         if entry.get("flags"):
             p["flags"].update(entry["flags"])
+
+        # Verification status. A full entry in raw_entries.py is treated as
+        # verified/manual unless it explicitly says otherwise (the drafter
+        # sets status=draft, source=ocr for entries it produced).
+        v = entry.get("verification") or {
+            "status": "verified",
+            "source": "manual",
+            "lastChecked": None,
+            "notes": None,
+        }
+        p["verification"] = v
 
         # Sources
         src = entry.get("source", {})
@@ -298,6 +315,14 @@ def build():
                 "entryCode": ccode,
                 "page": entry.get("source", {}).get("page"),
             })
+            # Stubs created from parent's children list are draft until they
+            # get their own full entry transcribed.
+            stub["verification"] = {
+                "status": "draft",
+                "source": "manual",
+                "lastChecked": None,
+                "notes": "Created from parent's children list; no full entry yet.",
+            }
 
     # Sort child IDs by their lineage code so birth order is preserved
     pid_to_code = {pid: code for code, pid in code_to_pid.items()

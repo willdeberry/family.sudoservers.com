@@ -111,6 +111,24 @@
             "stepChild": { "type": "boolean" },
             "fosterChild": { "type": "boolean" }
           }
+        },
+        "verification": {
+          "type": "object",
+          "description": "Tracks whether each person's data has been double-checked against the source PDF.",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["verified", "draft", "needs-review"],
+              "description": "verified=checked against PDF; draft=OCR-extracted, not yet checked; needs-review=verification found a diff or concern"
+            },
+            "source": {
+              "type": "string",
+              "enum": ["manual", "ocr", "vision"],
+              "description": "How this data was produced. 'manual' = hand-typed; 'ocr' = regex-extracted from OCR text; 'vision' = transcribed via Claude vision"
+            },
+            "lastChecked": { "type": ["string", "null"], "format": "date" },
+            "notes": { "type": ["string", "null"], "description": "Diffs or concerns from the last verification pass" }
+          }
         }
       }
     },

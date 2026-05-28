@@ -28,13 +28,19 @@
       "childIds": [
         "p_000002",
         "p_000077",
-        "p_000080",
-        "p_000094",
-        "p_000097",
-        "p_000119",
-        "p_000132"
+        "p_000098",
+        "p_000126",
+        "p_000130",
+        "p_000152",
+        "p_000171"
       ],
-      "notes": "Inferred common ancestor of the seven documented sibling branches. Not directly attested in any of the source PDFs but logically required: John (b. 1792), William (b. 1794), Stephen (b. 1801), Rachel (b. 1804), James (b. 1806), Absalom (b. 1810), and Alexander (b. 1815) share the Guthrie surname, overlap geographically (WV/PA), and the PDFs' shared numbering scheme treats them as siblings. Gaps at codes 3, 4, and 9 suggest additional undocumented siblings."
+      "notes": "Inferred common ancestor of the seven documented sibling branches. Not directly attested in any of the source PDFs but logically required: John (b. 1792), William (b. 1794), Stephen (b. 1801), Rachel (b. 1804), James (b. 1806), Absalom (b. 1810), and Alexander (b. 1815) share the Guthrie surname, overlap geographically (WV/PA), and the PDFs' shared numbering scheme treats them as siblings. Gaps at codes 3, 4, and 9 suggest additional undocumented siblings.",
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000002",
@@ -72,10 +78,10 @@
         "p_000021",
         "p_000033",
         "p_000058",
-        "p_000158",
+        "p_000197",
         "p_000064",
         "p_000069",
-        "p_000159",
+        "p_000198",
         "p_000075"
       ],
       "residences": [
@@ -89,7 +95,13 @@
           "entryCode": "1",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000003",
@@ -128,9 +140,9 @@
       ],
       "childIds": [
         "p_000004",
-        "p_000160",
+        "p_000199",
         "p_000008",
-        "p_000161"
+        "p_000200"
       ],
       "notes": "All four first-marriage children were born near Hazelton, WV.",
       "sources": [
@@ -139,7 +151,13 @@
           "entryCode": "11",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000004",
@@ -182,7 +200,13 @@
           "entryCode": "111",
           "page": 4
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000005",
@@ -232,7 +256,13 @@
           "entryCode": "1111",
           "page": 11
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000006",
@@ -274,7 +304,13 @@
           "entryCode": "1112",
           "page": 11
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000007",
@@ -310,7 +346,13 @@
           "entryCode": "1113",
           "page": 11
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000008",
@@ -357,7 +399,13 @@
           "entryCode": "113",
           "page": 4
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000009",
@@ -399,7 +447,13 @@
           "entryCode": "1131",
           "page": 12
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000010",
@@ -443,7 +497,13 @@
           "entryCode": "1132",
           "page": 12
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000011",
@@ -466,7 +526,7 @@
       ],
       "marriages": [
         {
-          "spouseId": "p_000136",
+          "spouseId": "p_000175",
           "spouseName": "Asa Ralph Frazee",
           "spouseDetails": "Same as #A211 in Alexander's branch. Son of Truman E. and Isabelle R. [Guthrie] Frazee.",
           "date": "1925-09-12",
@@ -480,7 +540,13 @@
           "entryCode": "11322",
           "page": 80
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000012",
@@ -507,7 +573,7 @@
       ],
       "marriages": [
         {
-          "spouseId": "p_000104",
+          "spouseId": "p_000137",
           "spouseName": "Rosa Mae Barnes",
           "spouseDetails": "Same as #715 in James's branch.",
           "date": "1906-05-17",
@@ -523,7 +589,13 @@
           "entryCode": "1133",
           "page": 22
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000013",
@@ -552,7 +624,7 @@
       },
       "parentIds": [
         "p_000012",
-        "p_000104"
+        "p_000137"
       ],
       "marriages": [
         {
@@ -582,7 +654,13 @@
           "entryCode": "11331",
           "page": 26
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000014",
@@ -617,7 +695,13 @@
           "entryCode": "113311",
           "page": 80
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000015",
@@ -651,7 +735,13 @@
           "entryCode": "113312",
           "page": 80
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000016",
@@ -685,7 +775,13 @@
           "entryCode": "113313",
           "page": 80
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000017",
@@ -712,7 +808,13 @@
           "entryCode": "113314",
           "page": 80
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000018",
@@ -749,7 +851,13 @@
           "entryCode": "1134",
           "page": 12
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000019",
@@ -791,7 +899,13 @@
           "entryCode": "1135",
           "page": 12
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000020",
@@ -830,7 +944,13 @@
           "entryCode": "1136",
           "page": 13
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000021",
@@ -861,7 +981,7 @@
         }
       ],
       "childIds": [
-        "p_000162",
+        "p_000201",
         "p_000022",
         "p_000026",
         "p_000032"
@@ -872,7 +992,13 @@
           "entryCode": "12",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000022",
@@ -921,7 +1047,13 @@
           "entryCode": "122",
           "page": 4
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000023",
@@ -958,7 +1090,13 @@
           "entryCode": "1222",
           "page": 13
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000024",
@@ -1000,7 +1138,13 @@
           "entryCode": "1224",
           "page": 13
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000025",
@@ -1023,7 +1167,7 @@
       ],
       "marriages": [
         {
-          "spouseId": "p_000151",
+          "spouseId": "p_000190",
           "spouseName": "Charles Henry Cupp",
           "spouseDetails": "Same as #A451 in Alexander's branch.",
           "date": "1934-03-31",
@@ -1037,7 +1181,13 @@
           "entryCode": "12241",
           "page": 13
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000026",
@@ -1080,7 +1230,13 @@
           "entryCode": "123",
           "page": 5
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000027",
@@ -1126,7 +1282,13 @@
           "entryCode": "1233",
           "page": 14
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000028",
@@ -1165,7 +1327,13 @@
           "entryCode": "12331",
           "page": 50
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000029",
@@ -1199,7 +1367,13 @@
           "entryCode": "12338",
           "page": 50
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000030",
@@ -1245,7 +1419,13 @@
           "entryCode": "1235",
           "page": 14
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000031",
@@ -1282,7 +1462,13 @@
           "entryCode": "1236",
           "page": 14
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000032",
@@ -1319,7 +1505,13 @@
           "entryCode": "124",
           "page": 2
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000033",
@@ -1369,7 +1561,13 @@
           "entryCode": "13",
           "page": 2
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000034",
@@ -1405,7 +1603,13 @@
           "entryCode": "132",
           "page": 5
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000035",
@@ -1444,7 +1648,13 @@
           "entryCode": "13A",
           "page": 2
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000036",
@@ -1484,7 +1694,13 @@
           "entryCode": "13B",
           "page": 5
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000037",
@@ -1536,7 +1752,13 @@
           "entryCode": "13E",
           "page": 5
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000038",
@@ -1560,8 +1782,8 @@
         "dateRaw": "10 Jul 1952"
       },
       "parentIds": [
-        "p_000074",
-        "p_000037"
+        "p_000037",
+        "p_000074"
       ],
       "marriages": [
         {
@@ -1579,7 +1801,13 @@
           "entryCode": "13E1",
           "page": 22
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000039",
@@ -1619,7 +1847,13 @@
           "entryCode": "13E2",
           "page": 22
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000040",
@@ -1662,7 +1896,13 @@
           "entryCode": "13E3",
           "page": 23
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000041",
@@ -1700,7 +1940,13 @@
           "entryCode": "13E4",
           "page": 23
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000042",
@@ -1736,17 +1982,29 @@
           "entryCode": "13E5",
           "page": 23
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000043",
       "lineageCodes": [
-        "1746"
+        "13E6"
       ],
       "parentIds": [
-        "p_000074",
-        "p_000037"
-      ]
+        "p_000037",
+        "p_000074"
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Auto-created from a relationship link; no source data yet."
+      }
     },
     {
       "id": "p_000044",
@@ -1765,8 +2023,8 @@
         "dateRaw": "1904"
       },
       "parentIds": [
-        "p_000037",
-        "p_000074"
+        "p_000074",
+        "p_000037"
       ],
       "marriages": [
         {
@@ -1780,27 +2038,45 @@
           "entryCode": "13E7",
           "page": 23
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000045",
       "lineageCodes": [
-        "1748"
+        "13E8"
       ],
       "parentIds": [
-        "p_000074",
-        "p_000037"
-      ]
+        "p_000037",
+        "p_000074"
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Auto-created from a relationship link; no source data yet."
+      }
     },
     {
       "id": "p_000046",
       "lineageCodes": [
-        "1749"
+        "13E9"
       ],
       "parentIds": [
-        "p_000074",
-        "p_000037"
-      ]
+        "p_000037",
+        "p_000074"
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Auto-created from a relationship link; no source data yet."
+      }
     },
     {
       "id": "p_000047",
@@ -1850,7 +2126,13 @@
           "entryCode": "13F",
           "page": 5
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000048",
@@ -1887,7 +2169,13 @@
           "entryCode": "13F1",
           "page": 8
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000049",
@@ -1922,7 +2210,13 @@
           "entryCode": "13F5",
           "page": 9
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000050",
@@ -1969,7 +2263,13 @@
           "entryCode": "13F7",
           "page": 9
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000051",
@@ -2011,7 +2311,13 @@
           "entryCode": "13F71",
           "page": 49
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000052",
@@ -2034,7 +2340,7 @@
       ],
       "marriages": [
         {
-          "spouseId": "p_000154",
+          "spouseId": "p_000193",
           "spouseName": "Martin Luther Cupp",
           "spouseDetails": "Same as #A456 in Alexander's branch.",
           "date": "1953-05-09",
@@ -2047,7 +2353,13 @@
           "entryCode": "13F72",
           "page": 9
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000053",
@@ -2083,7 +2395,13 @@
           "entryCode": "13F73",
           "page": 49
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000054",
@@ -2117,7 +2435,13 @@
           "entryCode": "13F74",
           "page": 49
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000055",
@@ -2153,7 +2477,13 @@
           "entryCode": "13F75",
           "page": 49
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000056",
@@ -2185,7 +2515,13 @@
           "entryCode": "13F76",
           "page": 49
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000057",
@@ -2217,7 +2553,13 @@
           "entryCode": "13F77",
           "page": 49
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000058",
@@ -2262,7 +2604,13 @@
           "entryCode": "14",
           "page": 2
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000059",
@@ -2311,7 +2659,13 @@
           "entryCode": "142",
           "page": 5
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000060",
@@ -2349,7 +2703,13 @@
           "entryCode": "144",
           "page": 5
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000061",
@@ -2387,7 +2747,13 @@
           "entryCode": "145",
           "page": 5
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000062",
@@ -2427,7 +2793,13 @@
           "entryCode": "147",
           "page": 6
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000063",
@@ -2464,7 +2836,13 @@
           "entryCode": "148",
           "page": 6
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000064",
@@ -2505,7 +2883,13 @@
           "entryCode": "16",
           "page": 2
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000065",
@@ -2544,7 +2928,13 @@
           "entryCode": "161",
           "page": 6
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000066",
@@ -2585,7 +2975,13 @@
           "entryCode": "162",
           "page": 7
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000067",
@@ -2615,7 +3011,7 @@
       ],
       "marriages": [
         {
-          "spouseId": "p_000109",
+          "spouseId": "p_000142",
           "spouseName": "Stella Guthrie",
           "spouseDetails": "Same as #747 in James's branch.",
           "date": "1919-05-16",
@@ -2623,10 +3019,10 @@
         }
       ],
       "childIds": [
-        "p_000110",
-        "p_000111",
-        "p_000112",
-        "p_000113"
+        "p_000143",
+        "p_000144",
+        "p_000145",
+        "p_000146"
       ],
       "notes": "Son of Amos J. and Maggie Elizabeth (Harshbarger) Moyers. His mother Elizabeth Margaret Harshbarger (#162) is daughter of Elizabeth Guthrie (#16). So this marriage is a third John/James cross-link.",
       "sources": [
@@ -2635,7 +3031,13 @@
           "entryCode": "1622",
           "page": 18
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000068",
@@ -2662,7 +3064,7 @@
       ],
       "marriages": [
         {
-          "spouseId": "p_000108",
+          "spouseId": "p_000141",
           "spouseName": "Hattie Guthrie",
           "spouseDetails": "Same as #743 in James's branch. This marriage is another John-line/James-line union.",
           "date": "1902-04-28",
@@ -2676,7 +3078,13 @@
           "entryCode": "166",
           "page": 7
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000069",
@@ -2723,7 +3131,13 @@
           "entryCode": "17",
           "page": 3
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000070",
@@ -2747,7 +3161,7 @@
       },
       "marriages": [
         {
-          "spouseId": "p_000118",
+          "spouseId": "p_000151",
           "spouseName": "Laura Guthrie",
           "spouseDetails": "Same as #765 in James's branch — daughter of Harrison Guthrie #76.",
           "date": "1909-02-14",
@@ -2761,7 +3175,13 @@
           "entryCode": "1713",
           "page": 21
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000071",
@@ -2788,7 +3208,7 @@
       ],
       "marriages": [
         {
-          "spouseId": "p_000106",
+          "spouseId": "p_000139",
           "spouseName": "Jeremiah Guthrie",
           "spouseDetails": "Same as #74 in James's branch. This marriage connects John's and James's lines.",
           "date": "1878-04-07",
@@ -2796,7 +3216,7 @@
         }
       ],
       "childIds": [
-        "p_000115"
+        "p_000148"
       ],
       "notes": "Daughter of Susannah Guthrie (#17) and Jacob B. Nicola. Her marriage to Jeremiah Guthrie (#74) connects John's branch to James's branch. Their children carry double codes: e.g., Ray Guthrie is both 74A and 172A.",
       "sources": [
@@ -2805,7 +3225,13 @@
           "entryCode": "172",
           "page": 8
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000072",
@@ -2844,7 +3270,13 @@
           "entryCode": "17282",
           "page": 36
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000073",
@@ -2884,7 +3316,13 @@
           "entryCode": "172821",
           "page": 41
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000074",
@@ -2936,7 +3374,13 @@
           "entryCode": "174",
           "page": 8
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000075",
@@ -2975,7 +3419,13 @@
           "entryCode": "19",
           "page": 3
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000076",
@@ -3015,7 +3465,13 @@
           "entryCode": "191",
           "page": 9
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000077",
@@ -3050,9 +3506,9 @@
       ],
       "childIds": [
         "p_000078",
-        "p_000079",
-        "p_000163",
-        "p_000164"
+        "p_000084",
+        "p_000202",
+        "p_000203"
       ],
       "sources": [
         {
@@ -3060,7 +3516,13 @@
           "entryCode": "2",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000078",
@@ -3093,16 +3555,203 @@
           "spouseName": "Jonas Frankhouser"
         }
       ],
+      "childIds": [
+        "p_000079",
+        "p_000082",
+        "p_000083"
+      ],
       "sources": [
         {
           "pdf": "William_Guthrie - One Generation.pdf",
           "entryCode": "21",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
       "id": "p_000079",
+      "lineageCodes": [
+        "212"
+      ],
+      "name": {
+        "full": "Wilbur Finley Frankhouser",
+        "first": "Wilbur",
+        "middle": "Finley",
+        "last": "Frankhouser"
+      },
+      "birth": {
+        "date": "1870-09-12",
+        "dateRaw": "12 Sep 1870"
+      },
+      "death": {
+        "date": "1963-02-25",
+        "dateRaw": "25 Feb 1963"
+      },
+      "parentIds": [
+        "p_000078"
+      ],
+      "marriages": [
+        {
+          "spouseName": "T. W"
+        }
+      ],
+      "childIds": [
+        "p_000080",
+        "p_000081"
+      ],
+      "sources": [
+        {
+          "pdf": "William_Guthrie - One Generation.pdf",
+          "entryCode": "212",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000080",
+      "lineageCodes": [
+        "2121"
+      ],
+      "name": {
+        "full": "Ometa Bianch Frankhouser",
+        "first": "Ometa",
+        "middle": "Bianch",
+        "last": "Frankhouser"
+      },
+      "parentIds": [
+        "p_000079"
+      ],
+      "sources": [
+        {
+          "pdf": "William_Guthrie - One Generation.pdf",
+          "entryCode": "2121",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000081",
+      "lineageCodes": [
+        "2124"
+      ],
+      "name": {
+        "full": "Iva Frankhouser",
+        "first": "Iva",
+        "middle": null,
+        "last": "Frankhouser"
+      },
+      "birth": {
+        "date": "1887-01-26",
+        "dateRaw": "26 Jan 1887"
+      },
+      "parentIds": [
+        "p_000079"
+      ],
+      "marriages": [
+        {
+          "spouseName": "James R",
+          "date": "1887-01-26",
+          "dateRaw": "26 Jan 1887"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "William_Guthrie - One Generation.pdf",
+          "entryCode": "2124",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000082",
+      "lineageCodes": [
+        "214"
+      ],
+      "name": {
+        "full": "Effie Jane Frankhouser",
+        "first": "Effie",
+        "middle": "Jane",
+        "last": "Frankhouser"
+      },
+      "parentIds": [
+        "p_000078"
+      ],
+      "sources": [
+        {
+          "pdf": "William_Guthrie - One Generation.pdf",
+          "entryCode": "214",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000083",
+      "lineageCodes": [
+        "215"
+      ],
+      "name": {
+        "full": "Walter Frankhouser",
+        "first": "Walter",
+        "middle": null,
+        "last": "Frankhouser"
+      },
+      "birth": {
+        "date": "1880-01-19",
+        "dateRaw": "19 Jan 1880"
+      },
+      "death": {
+        "date": "1913-11-26",
+        "dateRaw": "26 Nov 1913"
+      },
+      "parentIds": [
+        "p_000078"
+      ],
+      "sources": [
+        {
+          "pdf": "William_Guthrie - One Generation.pdf",
+          "entryCode": "215",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000084",
       "lineageCodes": [
         "22"
       ],
@@ -3131,16 +3780,491 @@
           "dateRaw": "27 Oct 1859"
         }
       ],
+      "childIds": [
+        "p_000085"
+      ],
       "sources": [
         {
           "pdf": "William_Guthrie - One Generation.pdf",
           "entryCode": "22",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000080",
+      "id": "p_000085",
+      "lineageCodes": [
+        "222"
+      ],
+      "name": {
+        "full": "William Asbury Harshbarger",
+        "first": "William",
+        "middle": "Asbury",
+        "last": "Harshbarger"
+      },
+      "birth": {
+        "date": "1866-08-16",
+        "dateRaw": "16 Aug 1866"
+      },
+      "death": {
+        "date": "1942-07-17",
+        "dateRaw": "17 Jul 1942"
+      },
+      "parentIds": [
+        "p_000084"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Wilma Perry Ralph Platt Harshbar",
+          "date": "1903-07-24",
+          "dateRaw": "24 Jul 1903"
+        }
+      ],
+      "childIds": [
+        "p_000088"
+      ],
+      "sources": [
+        {
+          "pdf": "William_Guthrie - One Generation.pdf",
+          "entryCode": "222",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000086",
+      "lineageCodes": [
+        "22211"
+      ],
+      "name": {
+        "full": "Eugene Lee Harshbarger",
+        "first": "Eugene",
+        "middle": "Lee",
+        "last": "Harshbarger"
+      },
+      "sources": [
+        {
+          "pdf": "William_Guthrie - One Generation.pdf",
+          "entryCode": "22211",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000087",
+      "lineageCodes": [
+        "22212"
+      ],
+      "name": {
+        "full": "Carolyn Harshbarger",
+        "first": "Carolyn",
+        "middle": null,
+        "last": "Harshbarger"
+      },
+      "marriages": [
+        {
+          "spouseName": "A Bc"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "William_Guthrie - One Generation.pdf",
+          "entryCode": "22212",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000088",
+      "lineageCodes": [
+        "2222"
+      ],
+      "name": {
+        "full": "Frank Victor Harshbarger",
+        "first": "Frank",
+        "middle": "Victor",
+        "last": "Harshbarger"
+      },
+      "birth": {
+        "date": "1893-10-23",
+        "dateRaw": "23 Oct 1893"
+      },
+      "death": {
+        "date": "1985-01-11",
+        "dateRaw": "11 Jan 1985"
+      },
+      "parentIds": [
+        "p_000085"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Wilma Perry",
+          "date": "1896-01-12",
+          "dateRaw": "12 Jan 1896"
+        }
+      ],
+      "childIds": [
+        "p_000089",
+        "p_000095"
+      ],
+      "sources": [
+        {
+          "pdf": "William_Guthrie - One Generation.pdf",
+          "entryCode": "2222",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000089",
+      "lineageCodes": [
+        "22221"
+      ],
+      "name": {
+        "full": "Frank Victor Harshbarger",
+        "first": "Frank",
+        "middle": "Victor",
+        "last": "Harshbarger"
+      },
+      "birth": {
+        "date": "1933-06-07",
+        "dateRaw": "07 Jun 1933"
+      },
+      "parentIds": [
+        "p_000088"
+      ],
+      "childIds": [
+        "p_000090",
+        "p_000091",
+        "p_000093",
+        "p_000094"
+      ],
+      "sources": [
+        {
+          "pdf": "William_Guthrie - One Generation.pdf",
+          "entryCode": "22221",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000090",
+      "lineageCodes": [
+        "222211"
+      ],
+      "name": {
+        "full": "Sharon Mane Harshbarger",
+        "first": "Sharon",
+        "middle": "Mane",
+        "last": "Harshbarger"
+      },
+      "birth": {
+        "date": "1958-09-09",
+        "dateRaw": "09 Sep 1958"
+      },
+      "parentIds": [
+        "p_000089"
+      ],
+      "sources": [
+        {
+          "pdf": "William_Guthrie - One Generation.pdf",
+          "entryCode": "222211",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000091",
+      "lineageCodes": [
+        "222213"
+      ],
+      "name": {
+        "full": "Mary",
+        "first": "Mary",
+        "middle": null,
+        "last": null
+      },
+      "birth": {
+        "date": "1978-06-02",
+        "dateRaw": "02 Jun 1978"
+      },
+      "parentIds": [
+        "p_000089"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Edward Moomau",
+          "dateRaw": "Mav 1988"
+        }
+      ],
+      "childIds": [
+        "p_000092"
+      ],
+      "sources": [
+        {
+          "pdf": "William_Guthrie - One Generation.pdf",
+          "entryCode": "222213",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000092",
+      "lineageCodes": [
+        "2222134"
+      ],
+      "name": {
+        "full": "Derick Peters",
+        "first": "Derick",
+        "middle": null,
+        "last": "Peters"
+      },
+      "birth": {
+        "date": "1989-08-23",
+        "dateRaw": "23 Aug 1989"
+      },
+      "parentIds": [
+        "p_000091"
+      ],
+      "sources": [
+        {
+          "pdf": "William_Guthrie - One Generation.pdf",
+          "entryCode": "2222134",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000093",
+      "lineageCodes": [
+        "222215"
+      ],
+      "name": {
+        "full": "Raymond Stephan H",
+        "first": "Raymond",
+        "middle": "Stephan",
+        "last": "H"
+      },
+      "birth": {
+        "date": "1966-07-18",
+        "dateRaw": "18 Jul 1966"
+      },
+      "parentIds": [
+        "p_000089"
+      ],
+      "sources": [
+        {
+          "pdf": "William_Guthrie - One Generation.pdf",
+          "entryCode": "222215",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000094",
+      "lineageCodes": [
+        "222216"
+      ],
+      "name": {
+        "full": "Diane Harshbareer",
+        "first": "Diane",
+        "middle": null,
+        "last": "Harshbareer"
+      },
+      "birth": {
+        "date": "1967-10-16",
+        "dateRaw": "16 Oct 1967"
+      },
+      "parentIds": [
+        "p_000089"
+      ],
+      "sources": [
+        {
+          "pdf": "William_Guthrie - One Generation.pdf",
+          "entryCode": "222216",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000095",
+      "lineageCodes": [
+        "22222"
+      ],
+      "name": {
+        "full": "Marjorie Harshbarger",
+        "first": "Marjorie",
+        "middle": null,
+        "last": "Harshbarger"
+      },
+      "birth": {
+        "date": "1930-02-13",
+        "dateRaw": "13 Feb 1930"
+      },
+      "death": {
+        "date": "1984-05-13",
+        "dateRaw": "13 may 1984"
+      },
+      "parentIds": [
+        "p_000088"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Joseph Lats",
+          "date": "1930-01-14",
+          "dateRaw": "14 Jan 1930"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "William_Guthrie - One Generation.pdf",
+          "entryCode": "22222",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000096",
+      "lineageCodes": [
+        "2262"
+      ],
+      "name": {
+        "full": "Mary Louise",
+        "first": "Mary",
+        "middle": null,
+        "last": "Louise"
+      },
+      "birth": {
+        "date": "1913-04-17",
+        "dateRaw": "17 Apr 1913"
+      },
+      "marriages": [
+        {
+          "spouseName": "Paul Brower"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "William_Guthrie - One Generation.pdf",
+          "entryCode": "2262",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000097",
+      "lineageCodes": [
+        "2263"
+      ],
+      "name": {
+        "full": "Wil Leelia Harshbarger",
+        "first": "Wil",
+        "middle": "Leelia",
+        "last": "Harshbarger"
+      },
+      "birth": {
+        "date": "1915-06-24",
+        "dateRaw": "24 Jun 1915"
+      },
+      "marriages": [
+        {
+          "spouseName": "Dennis Dunn"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "William_Guthrie - One Generation.pdf",
+          "entryCode": "2263",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000098",
       "lineageCodes": [
         "5"
       ],
@@ -3176,16 +4300,16 @@
         }
       ],
       "childIds": [
-        "p_000081",
-        "p_000165",
-        "p_000082",
-        "p_000166",
-        "p_000167",
-        "p_000089",
-        "p_000168",
-        "p_000169",
-        "p_000091",
-        "p_000170"
+        "p_000099",
+        "p_000204",
+        "p_000100",
+        "p_000205",
+        "p_000206",
+        "p_000119",
+        "p_000207",
+        "p_000208",
+        "p_000122",
+        "p_000209"
       ],
       "sources": [
         {
@@ -3193,10 +4317,16 @@
           "entryCode": "5",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000081",
+      "id": "p_000099",
       "lineageCodes": [
         "51"
       ],
@@ -3208,10 +4338,10 @@
       },
       "sex": "M",
       "parentIds": [
-        "p_000080"
+        "p_000098"
       ],
       "childIds": [
-        "p_000171"
+        "p_000210"
       ],
       "occupation": "Physician in Minnesota",
       "sources": [
@@ -3220,10 +4350,16 @@
           "entryCode": "51",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000082",
+      "id": "p_000100",
       "lineageCodes": [
         "53"
       ],
@@ -3243,7 +4379,7 @@
         "dateRaw": "31 Mar 1895"
       },
       "parentIds": [
-        "p_000080"
+        "p_000098"
       ],
       "marriages": [
         {
@@ -3251,10 +4387,10 @@
         }
       ],
       "childIds": [
-        "p_000083",
-        "p_000084",
-        "p_000087",
-        "p_000088"
+        "p_000101",
+        "p_000102",
+        "p_000108",
+        "p_000109"
       ],
       "sources": [
         {
@@ -3262,10 +4398,16 @@
           "entryCode": "53",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000083",
+      "id": "p_000101",
       "lineageCodes": [
         "531"
       ],
@@ -3280,7 +4422,7 @@
         "dateRaw": "about 1855"
       },
       "parentIds": [
-        "p_000082"
+        "p_000100"
       ],
       "sources": [
         {
@@ -3288,10 +4430,16 @@
           "entryCode": "531",
           "page": 2
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000084",
+      "id": "p_000102",
       "lineageCodes": [
         "532"
       ],
@@ -3309,7 +4457,7 @@
         "dateRaw": "1927"
       },
       "parentIds": [
-        "p_000082"
+        "p_000100"
       ],
       "marriages": [
         {
@@ -3319,8 +4467,10 @@
         }
       ],
       "childIds": [
-        "p_000085",
-        "p_000086"
+        "p_000103",
+        "p_000104",
+        "p_000106",
+        "p_000107"
       ],
       "sources": [
         {
@@ -3328,10 +4478,16 @@
           "entryCode": "532",
           "page": 2
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000085",
+      "id": "p_000103",
       "lineageCodes": [
         "5322"
       ],
@@ -3350,7 +4506,7 @@
         "dateRaw": "Mar 1952"
       },
       "parentIds": [
-        "p_000084"
+        "p_000102"
       ],
       "marriages": [
         {
@@ -3364,10 +4520,16 @@
           "entryCode": "5322",
           "page": 3
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000086",
+      "id": "p_000104",
       "lineageCodes": [
         "5325"
       ],
@@ -3386,12 +4548,15 @@
         "dateRaw": "1969"
       },
       "parentIds": [
-        "p_000084"
+        "p_000102"
       ],
       "marriages": [
         {
           "spouseName": "Elizabeth V. Ramsey"
         }
+      ],
+      "childIds": [
+        "p_000105"
       ],
       "sources": [
         {
@@ -3399,10 +4564,131 @@
           "entryCode": "5325",
           "page": 4
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000087",
+      "id": "p_000105",
+      "lineageCodes": [
+        "53253"
+      ],
+      "name": {
+        "full": "Leslie Hadden Guthrie",
+        "first": "Leslie",
+        "middle": "Hadden",
+        "last": "Guthrie"
+      },
+      "birth": {
+        "date": "1920-10-24",
+        "dateRaw": "24 Oct 1920"
+      },
+      "parentIds": [
+        "p_000104"
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation .pdf",
+          "entryCode": "53253",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000106",
+      "lineageCodes": [
+        "5326"
+      ],
+      "name": {
+        "full": "Russel Guthrie",
+        "first": "Russel",
+        "middle": null,
+        "last": "Guthrie"
+      },
+      "birth": {
+        "dateRaw": "1898"
+      },
+      "death": {
+        "date": "1963-09-06",
+        "dateRaw": "06 Sep 1963"
+      },
+      "parentIds": [
+        "p_000102"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Edna Sullwan CHILDREN"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation .pdf",
+          "entryCode": "5326",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000107",
+      "lineageCodes": [
+        "532A"
+      ],
+      "name": {
+        "full": "Lee Guthr",
+        "first": "Lee",
+        "middle": null,
+        "last": "Guthr"
+      },
+      "birth": {
+        "date": "1904-01-09",
+        "dateRaw": "09 Jan 1904"
+      },
+      "death": {
+        "date": "1980-03-15",
+        "dateRaw": "15 Mar 1980"
+      },
+      "parentIds": [
+        "p_000102"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Clara IE",
+          "date": "1904-01-09",
+          "dateRaw": "09 Jan 1904"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation .pdf",
+          "entryCode": "532A",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000108",
       "lineageCodes": [
         "535"
       ],
@@ -3420,7 +4706,7 @@
         "dateRaw": "1943"
       },
       "parentIds": [
-        "p_000082"
+        "p_000100"
       ],
       "marriages": [
         {
@@ -3433,10 +4719,16 @@
           "entryCode": "535",
           "page": 2
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000088",
+      "id": "p_000109",
       "lineageCodes": [
         "536"
       ],
@@ -3456,7 +4748,7 @@
         "dateRaw": "3 Nov 1941"
       },
       "parentIds": [
-        "p_000082"
+        "p_000100"
       ],
       "marriages": [
         {
@@ -3472,16 +4764,330 @@
           "marriageOrder": 2
         }
       ],
+      "childIds": [
+        "p_000112"
+      ],
       "sources": [
         {
           "pdf": "Stephen_Guthrie - One Generation.pdf",
           "entryCode": "536",
           "page": 2
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000089",
+      "id": "p_000110",
+      "lineageCodes": [
+        "53611"
+      ],
+      "name": {
+        "full": "Virginia Maxine Bishop",
+        "first": "Virginia",
+        "middle": "Maxine",
+        "last": "Bishop"
+      },
+      "birth": {
+        "date": "1931-11-17",
+        "dateRaw": "17 Nov 1931"
+      },
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation .pdf",
+          "entryCode": "53611",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000111",
+      "lineageCodes": [
+        "53612"
+      ],
+      "name": {
+        "full": "Marvin Paul Bishop",
+        "first": "Marvin",
+        "middle": "Paul",
+        "last": "Bishop"
+      },
+      "birth": {
+        "date": "1937-05-02",
+        "dateRaw": "02 May 1937"
+      },
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation .pdf",
+          "entryCode": "53612",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000112",
+      "lineageCodes": [
+        "5362"
+      ],
+      "name": {
+        "full": "Frewilliam Debishop",
+        "first": "Frewilliam",
+        "middle": null,
+        "last": "Debishop"
+      },
+      "birth": {
+        "date": "1913-06-21",
+        "dateRaw": "21 Jun 1913"
+      },
+      "death": {
+        "date": "1929-04-21",
+        "dateRaw": "21 Apr 1929"
+      },
+      "parentIds": [
+        "p_000109"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Vern Burl Gibson",
+          "date": "1913-06-21",
+          "dateRaw": "21 Jun 1913"
+        }
+      ],
+      "childIds": [
+        "p_000113",
+        "p_000114",
+        "p_000115"
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation .pdf",
+          "entryCode": "5362",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000113",
+      "lineageCodes": [
+        "53622"
+      ],
+      "name": {
+        "full": "Everett Clayton Bishop",
+        "first": "Everett",
+        "middle": "Clayton",
+        "last": "Bishop"
+      },
+      "birth": {
+        "date": "1930-08-23",
+        "dateRaw": "23 Aug 1930"
+      },
+      "parentIds": [
+        "p_000112"
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation .pdf",
+          "entryCode": "53622",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000114",
+      "lineageCodes": [
+        "53623"
+      ],
+      "name": {
+        "full": "Lula Berlene Bishop",
+        "first": "Lula",
+        "middle": "Berlene",
+        "last": "Bishop"
+      },
+      "birth": {
+        "date": "1933-03-01",
+        "dateRaw": "01 Mar 1933"
+      },
+      "parentIds": [
+        "p_000112"
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation .pdf",
+          "entryCode": "53623",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000115",
+      "lineageCodes": [
+        "53624"
+      ],
+      "name": {
+        "full": "Violet Rosalee Bishop",
+        "first": "Violet",
+        "middle": "Rosalee",
+        "last": "Bishop"
+      },
+      "birth": {
+        "date": "1935-07-15",
+        "dateRaw": "15 Jul 1935"
+      },
+      "parentIds": [
+        "p_000112"
+      ],
+      "childIds": [
+        "p_000116",
+        "p_000117"
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation .pdf",
+          "entryCode": "53624",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000116",
+      "lineageCodes": [
+        "536241"
+      ],
+      "name": {
+        "full": "Randal Alan Rhodes",
+        "first": "Randal",
+        "middle": "Alan",
+        "last": "Rhodes"
+      },
+      "birth": {
+        "date": "1957-02-11",
+        "dateRaw": "11 Feb 1957"
+      },
+      "parentIds": [
+        "p_000115"
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation .pdf",
+          "entryCode": "536241",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000117",
+      "lineageCodes": [
+        "536242"
+      ],
+      "name": {
+        "full": "Robm Lynn Rhodes",
+        "first": "Robm",
+        "middle": "Lynn",
+        "last": "Rhodes"
+      },
+      "birth": {
+        "date": "1961-10-23",
+        "dateRaw": "23 Oct 1961"
+      },
+      "parentIds": [
+        "p_000115"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Lels Elaine Thom",
+          "dateRaw": "Dec 1938"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation .pdf",
+          "entryCode": "536242",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000118",
+      "lineageCodes": [
+        "536262"
+      ],
+      "name": {
+        "full": "Stephanie Lee Bishop",
+        "first": "Stephanie",
+        "middle": "Lee",
+        "last": "Bishop"
+      },
+      "birth": {
+        "date": "1967-11-06",
+        "dateRaw": "06 Nov 1967"
+      },
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation .pdf",
+          "entryCode": "536262",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000119",
       "lineageCodes": [
         "56"
       ],
@@ -3501,7 +5107,7 @@
         "dateRaw": "7 Mar 1917"
       },
       "parentIds": [
-        "p_000080"
+        "p_000098"
       ],
       "marriages": [
         {
@@ -3509,7 +5115,7 @@
         }
       ],
       "childIds": [
-        "p_000090"
+        "p_000120"
       ],
       "sources": [
         {
@@ -3517,10 +5123,16 @@
           "entryCode": "56",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000090",
+      "id": "p_000120",
       "lineageCodes": [
         "565"
       ],
@@ -3540,7 +5152,7 @@
         "dateRaw": "12 Oct 1941"
       },
       "parentIds": [
-        "p_000089"
+        "p_000119"
       ],
       "marriages": [
         {
@@ -3553,10 +5165,52 @@
           "entryCode": "565",
           "page": 2
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000091",
+      "id": "p_000121",
+      "lineageCodes": [
+        "56522"
+      ],
+      "name": {
+        "full": "Sarah Frances Frankhouser",
+        "first": "Sarah",
+        "middle": "Frances",
+        "last": "Frankhouser"
+      },
+      "birth": {
+        "date": "1945-01-19",
+        "dateRaw": "19 Jan 1945"
+      },
+      "marriages": [
+        {
+          "spouseName": "John Mitchell Humberson son of John W",
+          "date": "1977-10-20",
+          "dateRaw": "20 Oct 1977"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation .pdf",
+          "entryCode": "56522",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000122",
       "lineageCodes": [
         "59"
       ],
@@ -3571,7 +5225,7 @@
         "dateRaw": "1899"
       },
       "parentIds": [
-        "p_000080"
+        "p_000098"
       ],
       "marriages": [
         {
@@ -3579,8 +5233,9 @@
         }
       ],
       "childIds": [
-        "p_000092",
-        "p_000093"
+        "p_000123",
+        "p_000124",
+        "p_000125"
       ],
       "residences": [
         "Kansas"
@@ -3591,10 +5246,49 @@
           "entryCode": "59",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000092",
+      "id": "p_000123",
+      "lineageCodes": [
+        "591"
+      ],
+      "name": {
+        "full": "Belle Guth",
+        "first": "Belle",
+        "middle": null,
+        "last": "Guth"
+      },
+      "parentIds": [
+        "p_000122"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Alva RIE Russell"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "Stephen_Guthrie - One Generation .pdf",
+          "entryCode": "591",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000124",
       "lineageCodes": [
         "594"
       ],
@@ -3606,7 +5300,7 @@
       },
       "sex": "M",
       "parentIds": [
-        "p_000091"
+        "p_000122"
       ],
       "marriages": [
         {
@@ -3620,10 +5314,16 @@
           "entryCode": "594",
           "page": 3
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000093",
+      "id": "p_000125",
       "lineageCodes": [
         "597"
       ],
@@ -3635,7 +5335,7 @@
       },
       "sex": "M",
       "parentIds": [
-        "p_000091"
+        "p_000122"
       ],
       "marriages": [
         {
@@ -3648,10 +5348,16 @@
           "entryCode": "597",
           "page": 3
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000094",
+      "id": "p_000126",
       "lineageCodes": [
         "6"
       ],
@@ -3683,11 +5389,11 @@
         }
       ],
       "childIds": [
-        "p_000172",
-        "p_000095",
-        "p_000096",
-        "p_000173",
-        "p_000174"
+        "p_000211",
+        "p_000127",
+        "p_000128",
+        "p_000212",
+        "p_000213"
       ],
       "sources": [
         {
@@ -3695,10 +5401,16 @@
           "entryCode": "6",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000095",
+      "id": "p_000127",
       "lineageCodes": [
         "62"
       ],
@@ -3710,7 +5422,7 @@
       },
       "sex": "F",
       "parentIds": [
-        "p_000094"
+        "p_000126"
       ],
       "marriages": [
         {
@@ -3723,10 +5435,16 @@
           "entryCode": "62",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000096",
+      "id": "p_000128",
       "lineageCodes": [
         "63"
       ],
@@ -3745,12 +5463,15 @@
         "dateRaw": "28 Nov 1919"
       },
       "parentIds": [
-        "p_000094"
+        "p_000126"
       ],
       "marriages": [
         {
           "spouseName": "William F. Thomas"
         }
+      ],
+      "childIds": [
+        "p_000129"
       ],
       "sources": [
         {
@@ -3758,10 +5479,52 @@
           "entryCode": "63",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000097",
+      "id": "p_000129",
+      "lineageCodes": [
+        "632"
+      ],
+      "name": {
+        "full": "Mary (Maggic) Thomas",
+        "first": "Mary",
+        "middle": "(Maggic)",
+        "last": "Thomas"
+      },
+      "death": {
+        "dateRaw": "1948"
+      },
+      "parentIds": [
+        "p_000128"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Estelle Scese"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "Rachel_Guthrie - One Generation .pdf",
+          "entryCode": "632",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000130",
       "lineageCodes": [
         "7"
       ],
@@ -3794,13 +5557,13 @@
         }
       ],
       "childIds": [
-        "p_000098",
-        "p_000105",
-        "p_000175",
-        "p_000106",
-        "p_000176",
-        "p_000116",
-        "p_000177"
+        "p_000131",
+        "p_000138",
+        "p_000214",
+        "p_000139",
+        "p_000215",
+        "p_000149",
+        "p_000216"
       ],
       "sources": [
         {
@@ -3808,10 +5571,16 @@
           "entryCode": "7",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000098",
+      "id": "p_000131",
       "lineageCodes": [
         "71"
       ],
@@ -3831,7 +5600,7 @@
         "dateRaw": "18 Sep 1923"
       },
       "parentIds": [
-        "p_000097"
+        "p_000130"
       ],
       "marriages": [
         {
@@ -3841,11 +5610,11 @@
         }
       ],
       "childIds": [
-        "p_000099",
-        "p_000100",
-        "p_000101",
-        "p_000102",
-        "p_000104"
+        "p_000132",
+        "p_000133",
+        "p_000134",
+        "p_000135",
+        "p_000137"
       ],
       "sources": [
         {
@@ -3853,10 +5622,16 @@
           "entryCode": "71",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000099",
+      "id": "p_000132",
       "lineageCodes": [
         "711"
       ],
@@ -3876,7 +5651,7 @@
         "dateRaw": "12 May 1923"
       },
       "parentIds": [
-        "p_000098"
+        "p_000131"
       ],
       "marriages": [
         {
@@ -3893,10 +5668,16 @@
           "entryCode": "711",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000100",
+      "id": "p_000133",
       "lineageCodes": [
         "712"
       ],
@@ -3916,7 +5697,7 @@
         "dateRaw": "25 Apr 1895"
       },
       "parentIds": [
-        "p_000098"
+        "p_000131"
       ],
       "marriages": [
         {
@@ -3932,10 +5713,16 @@
           "entryCode": "712",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000101",
+      "id": "p_000134",
       "lineageCodes": [
         "713"
       ],
@@ -3955,7 +5742,7 @@
         "dateRaw": "21 Oct 1965"
       },
       "parentIds": [
-        "p_000098"
+        "p_000131"
       ],
       "marriages": [
         {
@@ -3970,10 +5757,16 @@
           "entryCode": "713",
           "page": 2
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000102",
+      "id": "p_000135",
       "lineageCodes": [
         "714"
       ],
@@ -3993,7 +5786,7 @@
         "dateRaw": "14 Jan 1946"
       },
       "parentIds": [
-        "p_000098"
+        "p_000131"
       ],
       "marriages": [
         {
@@ -4003,7 +5796,7 @@
         }
       ],
       "childIds": [
-        "p_000103"
+        "p_000136"
       ],
       "sources": [
         {
@@ -4011,10 +5804,16 @@
           "entryCode": "714",
           "page": 2
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000103",
+      "id": "p_000136",
       "lineageCodes": [
         "7144"
       ],
@@ -4034,7 +5833,7 @@
         "dateRaw": "4 Mar 1983"
       },
       "parentIds": [
-        "p_000102"
+        "p_000135"
       ],
       "marriages": [
         {
@@ -4058,10 +5857,16 @@
           "entryCode": "7144",
           "page": 2
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000104",
+      "id": "p_000137",
       "lineageCodes": [
         "715"
       ],
@@ -4081,7 +5886,7 @@
         "dateRaw": "3 Oct 1956"
       },
       "parentIds": [
-        "p_000098"
+        "p_000131"
       ],
       "marriages": [
         {
@@ -4102,10 +5907,16 @@
           "entryCode": "715",
           "page": 2
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000105",
+      "id": "p_000138",
       "lineageCodes": [
         "72"
       ],
@@ -4125,7 +5936,7 @@
         "dateRaw": "30 Jan 1880"
       },
       "parentIds": [
-        "p_000097"
+        "p_000130"
       ],
       "marriages": [
         {
@@ -4141,10 +5952,16 @@
           "entryCode": "72",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000106",
+      "id": "p_000139",
       "lineageCodes": [
         "74"
       ],
@@ -4164,7 +5981,7 @@
         "dateRaw": "25 Apr 1918"
       },
       "parentIds": [
-        "p_000097"
+        "p_000130"
       ],
       "marriages": [
         {
@@ -4176,11 +5993,11 @@
         }
       ],
       "childIds": [
-        "p_000107",
-        "p_000108",
-        "p_000109",
-        "p_000114",
-        "p_000115"
+        "p_000140",
+        "p_000141",
+        "p_000142",
+        "p_000147",
+        "p_000148"
       ],
       "notes": "His marriage to Nancy Ann Nicola is the most significant Guthrie/Guthrie cross-branch union: James-line man marries John-line woman. Their children therefore carry two valid lineage codes (e.g., Ray Guthrie = 74A = 172A).",
       "sources": [
@@ -4189,10 +6006,16 @@
           "entryCode": "74",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000107",
+      "id": "p_000140",
       "lineageCodes": [
         "741"
       ],
@@ -4212,7 +6035,7 @@
         "dateRaw": "29 Apr 1965"
       },
       "parentIds": [
-        "p_000106"
+        "p_000139"
       ],
       "marriages": [
         {
@@ -4227,10 +6050,16 @@
           "entryCode": "741",
           "page": 21
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000108",
+      "id": "p_000141",
       "lineageCodes": [
         "743"
       ],
@@ -4250,7 +6079,7 @@
         "dateRaw": "7 Jan 1925"
       },
       "parentIds": [
-        "p_000106"
+        "p_000139"
       ],
       "marriages": [
         {
@@ -4267,10 +6096,16 @@
           "entryCode": "743",
           "page": 3
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000109",
+      "id": "p_000142",
       "lineageCodes": [
         "747"
       ],
@@ -4290,7 +6125,7 @@
         "dateRaw": "28 Jan 1960"
       },
       "parentIds": [
-        "p_000106"
+        "p_000139"
       ],
       "marriages": [
         {
@@ -4302,10 +6137,10 @@
         }
       ],
       "childIds": [
-        "p_000110",
-        "p_000111",
-        "p_000112",
-        "p_000113"
+        "p_000143",
+        "p_000144",
+        "p_000145",
+        "p_000146"
       ],
       "sources": [
         {
@@ -4313,10 +6148,16 @@
           "entryCode": "747",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000110",
+      "id": "p_000143",
       "lineageCodes": [
         "7471",
         "16221"
@@ -4333,8 +6174,8 @@
         "dateRaw": "7 Sep 1921"
       },
       "parentIds": [
-        "p_000067",
-        "p_000109"
+        "p_000142",
+        "p_000067"
       ],
       "marriages": [
         {
@@ -4349,10 +6190,16 @@
           "entryCode": "7471",
           "page": 9
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000111",
+      "id": "p_000144",
       "lineageCodes": [
         "7472",
         "16222"
@@ -4369,8 +6216,8 @@
         "dateRaw": "20 Oct 1925"
       },
       "parentIds": [
-        "p_000109",
-        "p_000067"
+        "p_000067",
+        "p_000142"
       ],
       "marriages": [
         {
@@ -4385,10 +6232,16 @@
           "entryCode": "7472",
           "page": 9
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000112",
+      "id": "p_000145",
       "lineageCodes": [
         "7473",
         "16223"
@@ -4409,8 +6262,8 @@
         "dateRaw": "23 Jun 1981"
       },
       "parentIds": [
-        "p_000067",
-        "p_000109"
+        "p_000142",
+        "p_000067"
       ],
       "marriages": [
         {
@@ -4425,10 +6278,16 @@
           "entryCode": "7473",
           "page": 9
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000113",
+      "id": "p_000146",
       "lineageCodes": [
         "7474",
         "16224"
@@ -4445,8 +6304,8 @@
         "dateRaw": "28 Jul 1931"
       },
       "parentIds": [
-        "p_000067",
-        "p_000109"
+        "p_000142",
+        "p_000067"
       ],
       "marriages": [
         {
@@ -4461,10 +6320,16 @@
           "entryCode": "7474",
           "page": 9
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000114",
+      "id": "p_000147",
       "lineageCodes": [
         "748"
       ],
@@ -4484,7 +6349,7 @@
         "dateRaw": "3 Dec 1966"
       },
       "parentIds": [
-        "p_000106"
+        "p_000139"
       ],
       "marriages": [
         {
@@ -4498,10 +6363,16 @@
           "entryCode": "748",
           "page": 21
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000115",
+      "id": "p_000148",
       "lineageCodes": [
         "74A",
         "172A"
@@ -4522,12 +6393,12 @@
         "dateRaw": "16 Jan 1976"
       },
       "parentIds": [
-        "p_000106",
+        "p_000139",
         "p_000071"
       ],
       "marriages": [
         {
-          "spouseId": "p_000155",
+          "spouseId": "p_000194",
           "spouseName": "Rhuie Lena Frankhouser",
           "spouseDetails": "Same person as #A46 in Alexander's branch (daughter of Lucian Frankhouser).",
           "date": "1922-03-18",
@@ -4541,10 +6412,16 @@
           "entryCode": "74A",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000116",
+      "id": "p_000149",
       "lineageCodes": [
         "76"
       ],
@@ -4564,7 +6441,7 @@
         "dateRaw": "5 Apr 1937"
       },
       "parentIds": [
-        "p_000097"
+        "p_000130"
       ],
       "marriages": [
         {
@@ -4574,8 +6451,8 @@
         }
       ],
       "childIds": [
-        "p_000117",
-        "p_000118"
+        "p_000150",
+        "p_000151"
       ],
       "sources": [
         {
@@ -4583,10 +6460,16 @@
           "entryCode": "76",
           "page": 2
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000117",
+      "id": "p_000150",
       "lineageCodes": [
         "763"
       ],
@@ -4606,7 +6489,7 @@
         "dateRaw": "5 Jun 1968"
       },
       "parentIds": [
-        "p_000116"
+        "p_000149"
       ],
       "marriages": [
         {
@@ -4622,10 +6505,16 @@
           "entryCode": "763",
           "page": 4
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000118",
+      "id": "p_000151",
       "lineageCodes": [
         "765"
       ],
@@ -4641,7 +6530,7 @@
         "dateRaw": "19 Apr 1889"
       },
       "parentIds": [
-        "p_000116"
+        "p_000149"
       ],
       "marriages": [
         {
@@ -4655,10 +6544,16 @@
           "entryCode": "765",
           "page": 4
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000119",
+      "id": "p_000152",
       "lineageCodes": [
         "8"
       ],
@@ -4688,17 +6583,17 @@
         }
       ],
       "childIds": [
-        "p_000120",
-        "p_000121",
-        "p_000178",
-        "p_000124",
-        "p_000179",
-        "p_000180",
-        "p_000127",
-        "p_000130",
-        "p_000181",
-        "p_000182",
-        "p_000131"
+        "p_000153",
+        "p_000154",
+        "p_000217",
+        "p_000160",
+        "p_000218",
+        "p_000219",
+        "p_000163",
+        "p_000168",
+        "p_000220",
+        "p_000221",
+        "p_000170"
       ],
       "sources": [
         {
@@ -4706,10 +6601,16 @@
           "entryCode": "8",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000120",
+      "id": "p_000153",
       "lineageCodes": [
         "81"
       ],
@@ -4729,7 +6630,7 @@
         "dateRaw": "29 Jul 1903"
       },
       "parentIds": [
-        "p_000119"
+        "p_000152"
       ],
       "marriages": [
         {
@@ -4744,10 +6645,16 @@
           "entryCode": "81",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000121",
+      "id": "p_000154",
       "lineageCodes": [
         "82"
       ],
@@ -4767,7 +6674,7 @@
         "dateRaw": "10 Nov 1907"
       },
       "parentIds": [
-        "p_000119"
+        "p_000152"
       ],
       "marriages": [
         {
@@ -4777,8 +6684,8 @@
         }
       ],
       "childIds": [
-        "p_000122",
-        "p_000123"
+        "p_000155",
+        "p_000156"
       ],
       "residences": [
         "Hocking County, Ohio (moved 1863)"
@@ -4789,10 +6696,16 @@
           "entryCode": "82",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000122",
+      "id": "p_000155",
       "lineageCodes": [
         "823"
       ],
@@ -4812,7 +6725,7 @@
         "dateRaw": "31 Dec 1930"
       },
       "parentIds": [
-        "p_000121"
+        "p_000154"
       ],
       "marriages": [
         {
@@ -4827,10 +6740,16 @@
           "entryCode": "823",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000123",
+      "id": "p_000156",
       "lineageCodes": [
         "825"
       ],
@@ -4846,7 +6765,7 @@
         "dateRaw": "6 Jun 1873"
       },
       "parentIds": [
-        "p_000121"
+        "p_000154"
       ],
       "marriages": [
         {
@@ -4854,6 +6773,9 @@
           "date": "1896-05-10",
           "dateRaw": "10 May 1896"
         }
+      ],
+      "childIds": [
+        "p_000157"
       ],
       "residences": [
         "Epping, ND"
@@ -4864,10 +6786,101 @@
           "entryCode": "825",
           "page": 2
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000124",
+      "id": "p_000157",
+      "lineageCodes": [
+        "8254"
+      ],
+      "name": {
+        "full": "Ruth Alice Alexander",
+        "first": "Ruth",
+        "middle": "Alice",
+        "last": "Alexander"
+      },
+      "birth": {
+        "date": "1904-12-03",
+        "dateRaw": "03 Dec 1904"
+      },
+      "parentIds": [
+        "p_000156"
+      ],
+      "sources": [
+        {
+          "pdf": "Absalom_Guthrie - One Generation .pdf",
+          "entryCode": "8254",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000158",
+      "lineageCodes": [
+        "8261"
+      ],
+      "name": {
+        "full": "Harry Hardesty",
+        "first": "Harry",
+        "middle": null,
+        "last": "Hardesty"
+      },
+      "sources": [
+        {
+          "pdf": "Absalom_Guthrie - One Generation .pdf",
+          "entryCode": "8261",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000159",
+      "lineageCodes": [
+        "8271"
+      ],
+      "name": {
+        "full": "Dale Hardesty",
+        "first": "Dale",
+        "middle": null,
+        "last": "Hardesty"
+      },
+      "birth": {
+        "dateRaw": "about 1900"
+      },
+      "sources": [
+        {
+          "pdf": "Absalom_Guthrie - One Generation .pdf",
+          "entryCode": "8271",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000160",
       "lineageCodes": [
         "84"
       ],
@@ -4887,7 +6900,7 @@
         "dateRaw": "7 Jan 1917"
       },
       "parentIds": [
-        "p_000119"
+        "p_000152"
       ],
       "marriages": [
         {
@@ -4897,8 +6910,8 @@
         }
       ],
       "childIds": [
-        "p_000125",
-        "p_000126"
+        "p_000161",
+        "p_000162"
       ],
       "sources": [
         {
@@ -4906,10 +6919,16 @@
           "entryCode": "84",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000125",
+      "id": "p_000161",
       "lineageCodes": [
         "843"
       ],
@@ -4925,7 +6944,7 @@
         "dateRaw": "11 Jun 1881"
       },
       "parentIds": [
-        "p_000124"
+        "p_000160"
       ],
       "marriages": [
         {
@@ -4943,10 +6962,16 @@
           "entryCode": "843",
           "page": 3
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000126",
+      "id": "p_000162",
       "lineageCodes": [
         "845"
       ],
@@ -4962,7 +6987,7 @@
         "dateRaw": "14 Aug 1888"
       },
       "parentIds": [
-        "p_000124"
+        "p_000160"
       ],
       "marriages": [
         {
@@ -4980,10 +7005,16 @@
           "entryCode": "845",
           "page": 3
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000127",
+      "id": "p_000163",
       "lineageCodes": [
         "87"
       ],
@@ -5003,7 +7034,7 @@
         "dateRaw": "14 Apr 1929"
       },
       "parentIds": [
-        "p_000119"
+        "p_000152"
       ],
       "marriages": [
         {
@@ -5013,8 +7044,9 @@
         }
       ],
       "childIds": [
-        "p_000128",
-        "p_000129"
+        "p_000164",
+        "p_000165",
+        "p_000167"
       ],
       "sources": [
         {
@@ -5022,10 +7054,16 @@
           "entryCode": "87",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000128",
+      "id": "p_000164",
       "lineageCodes": [
         "873"
       ],
@@ -5041,7 +7079,7 @@
         "dateRaw": "8 Sep 1886"
       },
       "parentIds": [
-        "p_000127"
+        "p_000163"
       ],
       "marriages": [
         {
@@ -5059,10 +7097,16 @@
           "entryCode": "873",
           "page": 3
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000129",
+      "id": "p_000165",
       "lineageCodes": [
         "874"
       ],
@@ -5078,7 +7122,7 @@
         "dateRaw": "23 Sep 1890"
       },
       "parentIds": [
-        "p_000127"
+        "p_000163"
       ],
       "marriages": [
         {
@@ -5086,6 +7130,9 @@
           "date": "1918-06-15",
           "dateRaw": "15 Jun 1918"
         }
+      ],
+      "childIds": [
+        "p_000166"
       ],
       "residences": [
         "321 Dryden Rd., Ithaca, NY"
@@ -5096,10 +7143,76 @@
           "entryCode": "874",
           "page": 3
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000130",
+      "id": "p_000166",
+      "lineageCodes": [
+        "8741"
+      ],
+      "name": {
+        "full": "Elizabeth Ann Guthrie",
+        "first": "Elizabeth",
+        "middle": "Ann",
+        "last": "Guthrie"
+      },
+      "parentIds": [
+        "p_000165"
+      ],
+      "sources": [
+        {
+          "pdf": "Absalom_Guthrie - One Generation .pdf",
+          "entryCode": "8741",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000167",
+      "lineageCodes": [
+        "876"
+      ],
+      "name": {
+        "full": "Park Edward Guthrie",
+        "first": "Park",
+        "middle": "Edward",
+        "last": "Guthrie"
+      },
+      "birth": {
+        "date": "1930-01-07",
+        "dateRaw": "07 Jan 1930"
+      },
+      "parentIds": [
+        "p_000163"
+      ],
+      "sources": [
+        {
+          "pdf": "Absalom_Guthrie - One Generation .pdf",
+          "entryCode": "876",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000168",
       "lineageCodes": [
         "88"
       ],
@@ -5119,7 +7232,7 @@
         "dateRaw": "5 May 1930"
       },
       "parentIds": [
-        "p_000119"
+        "p_000152"
       ],
       "marriages": [
         {
@@ -5129,16 +7242,67 @@
           "dateRaw": "29 Nov 1874"
         }
       ],
+      "childIds": [
+        "p_000169"
+      ],
       "sources": [
         {
           "pdf": "Absalom_Guthrie - One Generation.pdf",
           "entryCode": "88",
           "page": 2
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000131",
+      "id": "p_000169",
+      "lineageCodes": [
+        "882"
+      ],
+      "name": {
+        "full": "Gracie O'Neil",
+        "first": "Gracie",
+        "middle": null,
+        "last": "O'Neil"
+      },
+      "birth": {
+        "date": "1884-04-06",
+        "dateRaw": "06 Apr 1884"
+      },
+      "death": {
+        "date": "1900-10-23",
+        "dateRaw": "23 Oct 1900"
+      },
+      "parentIds": [
+        "p_000168"
+      ],
+      "marriages": [
+        {
+          "spouseName": "Hammond Hardesty - Lived in Pauldine",
+          "dateRaw": "Sep 1898"
+        }
+      ],
+      "sources": [
+        {
+          "pdf": "Absalom_Guthrie - One Generation .pdf",
+          "entryCode": "882",
+          "page": 1
+        }
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "ocr",
+        "lastChecked": null,
+        "notes": "Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting."
+      }
+    },
+    {
+      "id": "p_000170",
       "lineageCodes": [
         "8B"
       ],
@@ -5158,7 +7322,7 @@
         "dateRaw": "30 Nov 1918"
       },
       "parentIds": [
-        "p_000119"
+        "p_000152"
       ],
       "marriages": [
         {
@@ -5174,10 +7338,16 @@
           "entryCode": "8B",
           "page": 2
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000132",
+      "id": "p_000171",
       "lineageCodes": [
         "A"
       ],
@@ -5213,17 +7383,17 @@
         }
       ],
       "childIds": [
-        "p_000133",
-        "p_000134",
-        "p_000142",
-        "p_000146",
-        "p_000156",
-        "p_000183",
-        "p_000184",
+        "p_000172",
+        "p_000173",
+        "p_000181",
         "p_000185",
-        "p_000186",
-        "p_000187",
-        "p_000157"
+        "p_000195",
+        "p_000222",
+        "p_000223",
+        "p_000224",
+        "p_000225",
+        "p_000226",
+        "p_000196"
       ],
       "sources": [
         {
@@ -5231,10 +7401,16 @@
           "entryCode": "A",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000133",
+      "id": "p_000172",
       "lineageCodes": [
         "A1"
       ],
@@ -5254,7 +7430,7 @@
         "dateRaw": "15 May 1875"
       },
       "parentIds": [
-        "p_000132"
+        "p_000171"
       ],
       "sources": [
         {
@@ -5262,10 +7438,16 @@
           "entryCode": "A1",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000134",
+      "id": "p_000173",
       "lineageCodes": [
         "A2"
       ],
@@ -5285,7 +7467,7 @@
         "dateRaw": "27 Dec 1895"
       },
       "parentIds": [
-        "p_000132"
+        "p_000171"
       ],
       "marriages": [
         {
@@ -5295,9 +7477,9 @@
         }
       ],
       "childIds": [
-        "p_000135",
-        "p_000137",
-        "p_000141"
+        "p_000174",
+        "p_000176",
+        "p_000180"
       ],
       "sources": [
         {
@@ -5305,10 +7487,16 @@
           "entryCode": "A2",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000135",
+      "id": "p_000174",
       "lineageCodes": [
         "A21"
       ],
@@ -5328,7 +7516,7 @@
         "dateRaw": "24 Jul 1940"
       },
       "parentIds": [
-        "p_000134"
+        "p_000173"
       ],
       "marriages": [
         {
@@ -5338,7 +7526,7 @@
         }
       ],
       "childIds": [
-        "p_000136"
+        "p_000175"
       ],
       "sources": [
         {
@@ -5346,10 +7534,16 @@
           "entryCode": "A21",
           "page": 2
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000136",
+      "id": "p_000175",
       "lineageCodes": [
         "A211"
       ],
@@ -5365,7 +7559,7 @@
         "dateRaw": "17 Dec 1896"
       },
       "parentIds": [
-        "p_000135"
+        "p_000174"
       ],
       "marriages": [
         {
@@ -5382,10 +7576,16 @@
           "entryCode": "A211",
           "page": 4
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000137",
+      "id": "p_000176",
       "lineageCodes": [
         "A22"
       ],
@@ -5405,7 +7605,7 @@
         "dateRaw": "25 Mar 1956"
       },
       "parentIds": [
-        "p_000134"
+        "p_000173"
       ],
       "marriages": [
         {
@@ -5415,9 +7615,9 @@
         }
       ],
       "childIds": [
-        "p_000138",
-        "p_000139",
-        "p_000140"
+        "p_000177",
+        "p_000178",
+        "p_000179"
       ],
       "sources": [
         {
@@ -5425,10 +7625,16 @@
           "entryCode": "A22",
           "page": 2
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000138",
+      "id": "p_000177",
       "lineageCodes": [
         "A221"
       ],
@@ -5444,7 +7650,7 @@
         "dateRaw": "22 May 1899"
       },
       "parentIds": [
-        "p_000137"
+        "p_000176"
       ],
       "marriages": [
         {
@@ -5459,10 +7665,16 @@
           "entryCode": "A221",
           "page": 4
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000139",
+      "id": "p_000178",
       "lineageCodes": [
         "A222"
       ],
@@ -5481,7 +7693,7 @@
         "dateRaw": "1988"
       },
       "parentIds": [
-        "p_000137"
+        "p_000176"
       ],
       "marriages": [
         {
@@ -5496,10 +7708,16 @@
           "entryCode": "A222",
           "page": 4
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000140",
+      "id": "p_000179",
       "lineageCodes": [
         "A225"
       ],
@@ -5519,7 +7737,7 @@
         "dateRaw": "5 May 1977"
       },
       "parentIds": [
-        "p_000137"
+        "p_000176"
       ],
       "marriages": [
         {
@@ -5534,10 +7752,16 @@
           "entryCode": "A225",
           "page": 4
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000141",
+      "id": "p_000180",
       "lineageCodes": [
         "A24"
       ],
@@ -5557,7 +7781,7 @@
         "dateRaw": "27 Jun 1943"
       },
       "parentIds": [
-        "p_000134"
+        "p_000173"
       ],
       "marriages": [
         {
@@ -5571,10 +7795,16 @@
           "entryCode": "A24",
           "page": 2
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000142",
+      "id": "p_000181",
       "lineageCodes": [
         "A3"
       ],
@@ -5594,7 +7824,7 @@
         "dateRaw": "12 Jul 1918"
       },
       "parentIds": [
-        "p_000132"
+        "p_000171"
       ],
       "marriages": [
         {
@@ -5604,9 +7834,9 @@
         }
       ],
       "childIds": [
-        "p_000143",
-        "p_000144",
-        "p_000145"
+        "p_000182",
+        "p_000183",
+        "p_000184"
       ],
       "sources": [
         {
@@ -5614,10 +7844,16 @@
           "entryCode": "A3",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000143",
+      "id": "p_000182",
       "lineageCodes": [
         "A32"
       ],
@@ -5637,7 +7873,7 @@
         "dateRaw": "22 May 1965"
       },
       "parentIds": [
-        "p_000142"
+        "p_000181"
       ],
       "marriages": [
         {
@@ -5650,10 +7886,16 @@
           "entryCode": "A32",
           "page": 3
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000144",
+      "id": "p_000183",
       "lineageCodes": [
         "A35"
       ],
@@ -5672,7 +7914,7 @@
         "dateRaw": "1954"
       },
       "parentIds": [
-        "p_000142"
+        "p_000181"
       ],
       "marriages": [
         {
@@ -5685,10 +7927,16 @@
           "entryCode": "A35",
           "page": 3
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000145",
+      "id": "p_000184",
       "lineageCodes": [
         "A3B"
       ],
@@ -5708,7 +7956,7 @@
         "dateRaw": "7 Dec 1948"
       },
       "parentIds": [
-        "p_000142"
+        "p_000181"
       ],
       "marriages": [
         {
@@ -5721,10 +7969,16 @@
           "entryCode": "A3B",
           "page": 3
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000146",
+      "id": "p_000185",
       "lineageCodes": [
         "A4"
       ],
@@ -5744,7 +7998,7 @@
         "dateRaw": "18 Mar 1924"
       },
       "parentIds": [
-        "p_000132"
+        "p_000171"
       ],
       "marriages": [
         {
@@ -5754,9 +8008,9 @@
         }
       ],
       "childIds": [
-        "p_000147",
-        "p_000150",
-        "p_000155"
+        "p_000186",
+        "p_000189",
+        "p_000194"
       ],
       "sources": [
         {
@@ -5764,10 +8018,16 @@
           "entryCode": "A4",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000147",
+      "id": "p_000186",
       "lineageCodes": [
         "A41"
       ],
@@ -5787,7 +8047,7 @@
         "dateRaw": "17 Dec 1934"
       },
       "parentIds": [
-        "p_000146"
+        "p_000185"
       ],
       "marriages": [
         {
@@ -5797,8 +8057,8 @@
         }
       ],
       "childIds": [
-        "p_000148",
-        "p_000149"
+        "p_000187",
+        "p_000188"
       ],
       "sources": [
         {
@@ -5806,10 +8066,16 @@
           "entryCode": "A41",
           "page": 3
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000148",
+      "id": "p_000187",
       "lineageCodes": [
         "A411"
       ],
@@ -5829,7 +8095,7 @@
         "dateRaw": "19 Dec 1953"
       },
       "parentIds": [
-        "p_000147"
+        "p_000186"
       ],
       "marriages": [
         {
@@ -5842,10 +8108,16 @@
           "entryCode": "A411",
           "page": 6
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000149",
+      "id": "p_000188",
       "lineageCodes": [
         "A412"
       ],
@@ -5865,7 +8137,7 @@
         "dateRaw": "6 Nov 1981"
       },
       "parentIds": [
-        "p_000147"
+        "p_000186"
       ],
       "marriages": [
         {
@@ -5878,10 +8150,16 @@
           "entryCode": "A412",
           "page": 6
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000150",
+      "id": "p_000189",
       "lineageCodes": [
         "A45"
       ],
@@ -5901,7 +8179,7 @@
         "dateRaw": "3 Jan 1969"
       },
       "parentIds": [
-        "p_000146"
+        "p_000185"
       ],
       "marriages": [
         {
@@ -5911,10 +8189,10 @@
         }
       ],
       "childIds": [
-        "p_000151",
-        "p_000152",
-        "p_000153",
-        "p_000154"
+        "p_000190",
+        "p_000191",
+        "p_000192",
+        "p_000193"
       ],
       "notes": "Mother of Mary Cupp Summers (who married Glenn Webster Barnes #7144 in James's line).",
       "sources": [
@@ -5923,10 +8201,16 @@
           "entryCode": "A45",
           "page": 4
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000151",
+      "id": "p_000190",
       "lineageCodes": [
         "A451"
       ],
@@ -5949,7 +8233,7 @@
         "place": "Haywood, CA"
       },
       "parentIds": [
-        "p_000150"
+        "p_000189"
       ],
       "marriages": [
         {
@@ -5966,10 +8250,16 @@
           "entryCode": "A451",
           "page": 6
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000152",
+      "id": "p_000191",
       "lineageCodes": [
         "A452"
       ],
@@ -5989,7 +8279,7 @@
         "dateRaw": "29 Jul 1995"
       },
       "parentIds": [
-        "p_000150"
+        "p_000189"
       ],
       "marriages": [
         {
@@ -6007,10 +8297,16 @@
           "entryCode": "A452",
           "page": 4
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000153",
+      "id": "p_000192",
       "lineageCodes": [
         "A454"
       ],
@@ -6026,7 +8322,7 @@
         "dateRaw": "1 Oct 1912"
       },
       "parentIds": [
-        "p_000150"
+        "p_000189"
       ],
       "marriages": [
         {
@@ -6036,7 +8332,7 @@
           "marriageOrder": 1
         },
         {
-          "spouseId": "p_000103",
+          "spouseId": "p_000136",
           "spouseName": "Glenn Webster Barnes",
           "spouseDetails": "Same as #7144 in James's branch. Cross-link Alexander↔James.",
           "date": "1970-02-05",
@@ -6050,10 +8346,16 @@
           "entryCode": "A454",
           "page": 4
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000154",
+      "id": "p_000193",
       "lineageCodes": [
         "A456"
       ],
@@ -6069,7 +8371,7 @@
         "dateRaw": "9 May 1918"
       },
       "parentIds": [
-        "p_000150"
+        "p_000189"
       ],
       "marriages": [
         {
@@ -6087,10 +8389,16 @@
           "entryCode": "A456",
           "page": 7
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000155",
+      "id": "p_000194",
       "lineageCodes": [
         "A46"
       ],
@@ -6110,11 +8418,11 @@
         "dateRaw": "22 Apr 1944"
       },
       "parentIds": [
-        "p_000146"
+        "p_000185"
       ],
       "marriages": [
         {
-          "spouseId": "p_000115",
+          "spouseId": "p_000148",
           "spouseName": "Ray Guthrie",
           "spouseDetails": "Same person as 74A in James's branch / 172A in John's branch.",
           "date": "1922-03-18",
@@ -6128,10 +8436,16 @@
           "entryCode": "A46",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000156",
+      "id": "p_000195",
       "lineageCodes": [
         "A5"
       ],
@@ -6151,7 +8465,7 @@
         "dateRaw": "21 May 1915"
       },
       "parentIds": [
-        "p_000132"
+        "p_000171"
       ],
       "marriages": [
         {
@@ -6164,10 +8478,16 @@
           "entryCode": "A5",
           "page": 2
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000157",
+      "id": "p_000196",
       "lineageCodes": [
         "AB"
       ],
@@ -6187,7 +8507,7 @@
         "dateRaw": "27 Feb 1919"
       },
       "parentIds": [
-        "p_000132"
+        "p_000171"
       ],
       "marriages": [
         {
@@ -6202,10 +8522,16 @@
           "entryCode": "AB",
           "page": 2
         }
-      ]
+      ],
+      "verification": {
+        "status": "verified",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": null
+      }
     },
     {
-      "id": "p_000158",
+      "id": "p_000197",
       "lineageCodes": [
         "15"
       ],
@@ -6234,10 +8560,16 @@
       ],
       "flags": {
         "diedInInfancy": true
+      },
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
       }
     },
     {
-      "id": "p_000159",
+      "id": "p_000198",
       "lineageCodes": [
         "18"
       ],
@@ -6266,10 +8598,16 @@
       ],
       "flags": {
         "diedInInfancy": true
+      },
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
       }
     },
     {
-      "id": "p_000160",
+      "id": "p_000199",
       "lineageCodes": [
         "112"
       ],
@@ -6292,10 +8630,16 @@
           "entryCode": "112",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     },
     {
-      "id": "p_000161",
+      "id": "p_000200",
       "lineageCodes": [
         "114"
       ],
@@ -6317,10 +8661,16 @@
           "entryCode": "114",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     },
     {
-      "id": "p_000162",
+      "id": "p_000201",
       "lineageCodes": [
         "121"
       ],
@@ -6342,10 +8692,16 @@
           "entryCode": "121",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     },
     {
-      "id": "p_000163",
+      "id": "p_000202",
       "lineageCodes": [
         "23"
       ],
@@ -6370,10 +8726,16 @@
           "entryCode": "23",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     },
     {
-      "id": "p_000164",
+      "id": "p_000203",
       "lineageCodes": [
         "24"
       ],
@@ -6400,10 +8762,16 @@
           "entryCode": "24",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     },
     {
-      "id": "p_000165",
+      "id": "p_000204",
       "lineageCodes": [
         "52"
       ],
@@ -6414,7 +8782,7 @@
         "last": "Guthrie"
       },
       "parentIds": [
-        "p_000080"
+        "p_000098"
       ],
       "sources": [
         {
@@ -6422,10 +8790,16 @@
           "entryCode": "52",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     },
     {
-      "id": "p_000166",
+      "id": "p_000205",
       "lineageCodes": [
         "54"
       ],
@@ -6439,7 +8813,7 @@
         "dateRaw": "about 1833"
       },
       "parentIds": [
-        "p_000080"
+        "p_000098"
       ],
       "sources": [
         {
@@ -6447,10 +8821,16 @@
           "entryCode": "54",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     },
     {
-      "id": "p_000167",
+      "id": "p_000206",
       "lineageCodes": [
         "55"
       ],
@@ -6464,7 +8844,7 @@
         "dateRaw": "about 1835"
       },
       "parentIds": [
-        "p_000080"
+        "p_000098"
       ],
       "sources": [
         {
@@ -6472,10 +8852,16 @@
           "entryCode": "55",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     },
     {
-      "id": "p_000168",
+      "id": "p_000207",
       "lineageCodes": [
         "57"
       ],
@@ -6489,7 +8875,7 @@
         "dateRaw": "1843"
       },
       "parentIds": [
-        "p_000080"
+        "p_000098"
       ],
       "sources": [
         {
@@ -6497,10 +8883,16 @@
           "entryCode": "57",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     },
     {
-      "id": "p_000169",
+      "id": "p_000208",
       "lineageCodes": [
         "58"
       ],
@@ -6514,7 +8906,7 @@
         "dateRaw": "1847"
       },
       "parentIds": [
-        "p_000080"
+        "p_000098"
       ],
       "sources": [
         {
@@ -6522,10 +8914,16 @@
           "entryCode": "58",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     },
     {
-      "id": "p_000170",
+      "id": "p_000209",
       "lineageCodes": [
         "5A"
       ],
@@ -6542,7 +8940,7 @@
         "dateRaw": "1887"
       },
       "parentIds": [
-        "p_000080"
+        "p_000098"
       ],
       "sources": [
         {
@@ -6550,10 +8948,16 @@
           "entryCode": "5A",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     },
     {
-      "id": "p_000171",
+      "id": "p_000210",
       "lineageCodes": [
         "511"
       ],
@@ -6564,7 +8968,7 @@
         "last": "Guthrie"
       },
       "parentIds": [
-        "p_000081"
+        "p_000099"
       ],
       "sources": [
         {
@@ -6572,10 +8976,16 @@
           "entryCode": "511",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     },
     {
-      "id": "p_000172",
+      "id": "p_000211",
       "lineageCodes": [
         "61"
       ],
@@ -6594,7 +9004,7 @@
         "dateRaw": "19 Jan 1848"
       },
       "parentIds": [
-        "p_000094"
+        "p_000126"
       ],
       "sources": [
         {
@@ -6605,10 +9015,16 @@
       ],
       "flags": {
         "diedInInfancy": true
+      },
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
       }
     },
     {
-      "id": "p_000173",
+      "id": "p_000212",
       "lineageCodes": [
         "64"
       ],
@@ -6619,7 +9035,7 @@
         "last": "Crawford"
       },
       "parentIds": [
-        "p_000094"
+        "p_000126"
       ],
       "sources": [
         {
@@ -6627,10 +9043,16 @@
           "entryCode": "64",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     },
     {
-      "id": "p_000174",
+      "id": "p_000213",
       "lineageCodes": [
         "65"
       ],
@@ -6641,7 +9063,7 @@
         "last": "Crawford"
       },
       "parentIds": [
-        "p_000094"
+        "p_000126"
       ],
       "sources": [
         {
@@ -6649,10 +9071,16 @@
           "entryCode": "65",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     },
     {
-      "id": "p_000175",
+      "id": "p_000214",
       "lineageCodes": [
         "73"
       ],
@@ -6671,7 +9099,7 @@
         "dateRaw": "20 Oct 1854"
       },
       "parentIds": [
-        "p_000097"
+        "p_000130"
       ],
       "sources": [
         {
@@ -6682,10 +9110,16 @@
       ],
       "flags": {
         "diedInInfancy": true
+      },
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
       }
     },
     {
-      "id": "p_000176",
+      "id": "p_000215",
       "lineageCodes": [
         "75"
       ],
@@ -6704,7 +9138,7 @@
         "dateRaw": "23 Dec 1872"
       },
       "parentIds": [
-        "p_000097"
+        "p_000130"
       ],
       "sources": [
         {
@@ -6712,10 +9146,16 @@
           "entryCode": "75",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     },
     {
-      "id": "p_000177",
+      "id": "p_000216",
       "lineageCodes": [
         "77"
       ],
@@ -6734,7 +9174,7 @@
         "dateRaw": "28 Apr 1877"
       },
       "parentIds": [
-        "p_000097"
+        "p_000130"
       ],
       "sources": [
         {
@@ -6742,10 +9182,16 @@
           "entryCode": "77",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     },
     {
-      "id": "p_000178",
+      "id": "p_000217",
       "lineageCodes": [
         "83"
       ],
@@ -6764,7 +9210,7 @@
         "dateRaw": "27 Nov 1912"
       },
       "parentIds": [
-        "p_000119"
+        "p_000152"
       ],
       "sources": [
         {
@@ -6772,10 +9218,16 @@
           "entryCode": "83",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     },
     {
-      "id": "p_000179",
+      "id": "p_000218",
       "lineageCodes": [
         "85"
       ],
@@ -6793,7 +9245,7 @@
         "dateRaw": "in infancy"
       },
       "parentIds": [
-        "p_000119"
+        "p_000152"
       ],
       "sources": [
         {
@@ -6804,10 +9256,16 @@
       ],
       "flags": {
         "diedInInfancy": true
+      },
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
       }
     },
     {
-      "id": "p_000180",
+      "id": "p_000219",
       "lineageCodes": [
         "86"
       ],
@@ -6825,7 +9283,7 @@
         "dateRaw": "1852"
       },
       "parentIds": [
-        "p_000119"
+        "p_000152"
       ],
       "sources": [
         {
@@ -6836,10 +9294,16 @@
       ],
       "flags": {
         "diedInInfancy": true
+      },
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
       }
     },
     {
-      "id": "p_000181",
+      "id": "p_000220",
       "lineageCodes": [
         "89"
       ],
@@ -6854,7 +9318,7 @@
         "dateRaw": "6 Apr 1856"
       },
       "parentIds": [
-        "p_000119"
+        "p_000152"
       ],
       "sources": [
         {
@@ -6862,10 +9326,16 @@
           "entryCode": "89",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     },
     {
-      "id": "p_000182",
+      "id": "p_000221",
       "lineageCodes": [
         "8A"
       ],
@@ -6880,7 +9350,7 @@
         "dateRaw": "23 Jan 1859"
       },
       "parentIds": [
-        "p_000119"
+        "p_000152"
       ],
       "sources": [
         {
@@ -6888,10 +9358,16 @@
           "entryCode": "8A",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     },
     {
-      "id": "p_000183",
+      "id": "p_000222",
       "lineageCodes": [
         "A6"
       ],
@@ -6902,7 +9378,7 @@
         "last": "Guthrie"
       },
       "parentIds": [
-        "p_000132"
+        "p_000171"
       ],
       "sources": [
         {
@@ -6910,10 +9386,16 @@
           "entryCode": "A6",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     },
     {
-      "id": "p_000184",
+      "id": "p_000223",
       "lineageCodes": [
         "A7"
       ],
@@ -6928,7 +9410,7 @@
         "dateRaw": "26 Oct 1848"
       },
       "parentIds": [
-        "p_000132"
+        "p_000171"
       ],
       "sources": [
         {
@@ -6936,10 +9418,16 @@
           "entryCode": "A7",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     },
     {
-      "id": "p_000185",
+      "id": "p_000224",
       "lineageCodes": [
         "A8"
       ],
@@ -6957,7 +9445,7 @@
         "dateRaw": "1936"
       },
       "parentIds": [
-        "p_000132"
+        "p_000171"
       ],
       "sources": [
         {
@@ -6965,10 +9453,16 @@
           "entryCode": "A8",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     },
     {
-      "id": "p_000186",
+      "id": "p_000225",
       "lineageCodes": [
         "A9"
       ],
@@ -6985,7 +9479,7 @@
         "dateRaw": "1935"
       },
       "parentIds": [
-        "p_000132"
+        "p_000171"
       ],
       "sources": [
         {
@@ -6993,10 +9487,16 @@
           "entryCode": "A9",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     },
     {
-      "id": "p_000187",
+      "id": "p_000226",
       "lineageCodes": [
         "AA"
       ],
@@ -7015,7 +9515,7 @@
         "dateRaw": "20 Oct 1914"
       },
       "parentIds": [
-        "p_000132"
+        "p_000171"
       ],
       "sources": [
         {
@@ -7023,7 +9523,13 @@
           "entryCode": "AA",
           "page": 1
         }
-      ]
+      ],
+      "verification": {
+        "status": "draft",
+        "source": "manual",
+        "lastChecked": null,
+        "notes": "Created from parent's children list; no full entry yet."
+      }
     }
   ]
 }

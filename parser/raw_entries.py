@@ -2277,3 +2277,732 @@ ENTRIES.append({
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
 })
 
+
+# === Drafts extracted from rachel.txt by draft_from_ocr.py ===
+ENTRIES.append({
+    'code': '632',
+    'name': 'Mary (Maggic) Thomas',
+    "source": {
+        'pdf': 'Rachel_Guthrie - One Generation .pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'died': '1948',
+    "spouses": [
+        {
+            'name': 'Estelle Scese',
+        },
+    ],
+})
+
+
+# === Drafts extracted from william.txt by draft_from_ocr.py ===
+ENTRIES.append({
+    'code': '212',
+    'name': 'Wilbur Finley Frankhouser',
+    "source": {
+        'pdf': 'William_Guthrie - One Generation.pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '12 Sep 1870',
+    'died': '25 Feb 1963',
+    "spouses": [
+        {
+            'name': 'T. W',
+        },
+    ],
+})
+
+ENTRIES.append({
+    'code': '2121',
+    'name': 'Ometa Bianch Frankhouser',
+    "source": {
+        'pdf': 'William_Guthrie - One Generation.pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+})
+
+ENTRIES.append({
+    'code': '2124',
+    'name': 'Iva Frankhouser',
+    "source": {
+        'pdf': 'William_Guthrie - One Generation.pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '26 Jan 1887',
+    "spouses": [
+        {
+            'name': 'James R',
+            'married': '26 Jan 1887',
+        },
+    ],
+})
+
+ENTRIES.append({
+    'code': '214',
+    'name': 'Effie Jane Frankhouser',
+    "source": {
+        'pdf': 'William_Guthrie - One Generation.pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+})
+
+ENTRIES.append({
+    'code': '215',
+    'name': 'Walter Frankhouser',
+    "source": {
+        'pdf': 'William_Guthrie - One Generation.pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '19 Jan 1880',
+    'died': '26 Nov 1913',
+})
+
+ENTRIES.append({
+    'code': '222',
+    'name': 'William Asbury Harshbarger',
+    "source": {
+        'pdf': 'William_Guthrie - One Generation.pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '16 Aug 1866',
+    'died': '17 Jul 1942',
+    "spouses": [
+        {
+            'name': 'Wilma Perry Ralph Platt Harshbar',
+            'married': '24 Jul 1903',
+        },
+    ],
+})
+
+ENTRIES.append({
+    'code': '22211',
+    'name': 'Eugene Lee Harshbarger',
+    "source": {
+        'pdf': 'William_Guthrie - One Generation.pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+})
+
+ENTRIES.append({
+    'code': '22212',
+    'name': 'Carolyn Harshbarger',
+    "source": {
+        'pdf': 'William_Guthrie - One Generation.pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    "spouses": [
+        {
+            'name': 'A Bc',
+        },
+    ],
+})
+
+ENTRIES.append({
+    'code': '2222',
+    'name': 'Frank Victor Harshbarger',
+    "source": {
+        'pdf': 'William_Guthrie - One Generation.pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '23 Oct 1893',
+    'died': '11 Jan 1985',
+    "spouses": [
+        {
+            'name': 'Wilma Perry',
+            'married': '12 Jan 1896',
+        },
+    ],
+})
+
+ENTRIES.append({
+    'code': '22221',
+    'name': 'Frank Victor Harshbarger',
+    "source": {
+        'pdf': 'William_Guthrie - One Generation.pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '07 Jun 1933',
+})
+
+ENTRIES.append({
+    'code': '222211',
+    'name': 'Sharon Mane Harshbarger',
+    "source": {
+        'pdf': 'William_Guthrie - One Generation.pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '09 Sep 1958',
+})
+
+ENTRIES.append({
+    'code': '222213',
+    'name': 'Mary',
+    "source": {
+        'pdf': 'William_Guthrie - One Generation.pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '02 Jun 1978',
+    "spouses": [
+        {
+            'name': 'Edward Moomau',
+            'married': 'Mav 1988',
+        },
+    ],
+})
+
+ENTRIES.append({
+    'code': '2222134',
+    'name': 'Derick Peters',
+    "source": {
+        'pdf': 'William_Guthrie - One Generation.pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '23 Aug 1989',
+})
+
+ENTRIES.append({
+    'code': '222215',
+    'name': 'Raymond Stephan H',
+    "source": {
+        'pdf': 'William_Guthrie - One Generation.pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '18 Jul 1966',
+})
+
+ENTRIES.append({
+    'code': '222216',
+    'name': 'Diane Harshbareer',
+    "source": {
+        'pdf': 'William_Guthrie - One Generation.pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '16 Oct 1967',
+})
+
+ENTRIES.append({
+    'code': '22222',
+    'name': 'Marjorie Harshbarger',
+    "source": {
+        'pdf': 'William_Guthrie - One Generation.pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '13 Feb 1930',
+    'died': '13 may 1984',
+    "spouses": [
+        {
+            'name': 'Joseph Lats',
+            'married': '14 Jan 1930',
+        },
+    ],
+})
+
+ENTRIES.append({
+    'code': '2262',
+    'name': 'Mary Louise',
+    "source": {
+        'pdf': 'William_Guthrie - One Generation.pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '17 Apr 1913',
+    "spouses": [
+        {
+            'name': 'Paul Brower',
+        },
+    ],
+})
+
+ENTRIES.append({
+    'code': '2263',
+    'name': 'Wil Leelia Harshbarger',
+    "source": {
+        'pdf': 'William_Guthrie - One Generation.pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '24 Jun 1915',
+    "spouses": [
+        {
+            'name': 'Dennis Dunn',
+        },
+    ],
+})
+
+
+# === Drafts extracted from absalom.txt by draft_from_ocr.py ===
+ENTRIES.append({
+    'code': '8254',
+    'name': 'Ruth Alice Alexander',
+    "source": {
+        'pdf': 'Absalom_Guthrie - One Generation .pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '03 Dec 1904',
+})
+
+ENTRIES.append({
+    'code': '8261',
+    'name': 'Harry Hardesty',
+    "source": {
+        'pdf': 'Absalom_Guthrie - One Generation .pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+})
+
+ENTRIES.append({
+    'code': '8271',
+    'name': 'Dale Hardesty',
+    "source": {
+        'pdf': 'Absalom_Guthrie - One Generation .pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': 'about 1900',
+})
+
+ENTRIES.append({
+    'code': '8741',
+    'name': 'Elizabeth Ann Guthrie',
+    "source": {
+        'pdf': 'Absalom_Guthrie - One Generation .pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+})
+
+ENTRIES.append({
+    'code': '876',
+    'name': 'Park Edward Guthrie',
+    "source": {
+        'pdf': 'Absalom_Guthrie - One Generation .pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '07 Jan 1930',
+})
+
+ENTRIES.append({
+    'code': '882',
+    'name': "Gracie O'Neil",
+    "source": {
+        'pdf': 'Absalom_Guthrie - One Generation .pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '06 Apr 1884',
+    'died': '23 Oct 1900',
+    "spouses": [
+        {
+            'name': 'Hammond Hardesty - Lived in Pauldine',
+            'married': 'Sep 1898',
+        },
+    ],
+})
+
+
+# === Drafts extracted from stephen.txt by draft_from_ocr.py ===
+ENTRIES.append({
+    'code': '53253',
+    'name': 'Leslie Hadden Guthrie',
+    "source": {
+        'pdf': 'Stephen_Guthrie - One Generation .pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '24 Oct 1920',
+})
+
+ENTRIES.append({
+    'code': '5326',
+    'name': 'Russel Guthrie',
+    "source": {
+        'pdf': 'Stephen_Guthrie - One Generation .pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '1898',
+    'died': '06 Sep 1963',
+    "spouses": [
+        {
+            'name': 'Edna Sullwan CHILDREN',
+        },
+    ],
+})
+
+ENTRIES.append({
+    'code': '532A',
+    'name': 'Lee Guthr',
+    "source": {
+        'pdf': 'Stephen_Guthrie - One Generation .pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '09 Jan 1904',
+    'died': '15 Mar 1980',
+    "spouses": [
+        {
+            'name': 'Clara IE',
+            'married': '09 Jan 1904',
+        },
+    ],
+})
+
+ENTRIES.append({
+    'code': '53611',
+    'name': 'Virginia Maxine Bishop',
+    "source": {
+        'pdf': 'Stephen_Guthrie - One Generation .pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '17 Nov 1931',
+})
+
+ENTRIES.append({
+    'code': '53612',
+    'name': 'Marvin Paul Bishop',
+    "source": {
+        'pdf': 'Stephen_Guthrie - One Generation .pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '02 May 1937',
+})
+
+ENTRIES.append({
+    'code': '5362',
+    'name': 'Frewilliam Debishop',
+    "source": {
+        'pdf': 'Stephen_Guthrie - One Generation .pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '21 Jun 1913',
+    'died': '21 Apr 1929',
+    "spouses": [
+        {
+            'name': 'Vern Burl Gibson',
+            'married': '21 Jun 1913',
+        },
+    ],
+})
+
+ENTRIES.append({
+    'code': '53622',
+    'name': 'Everett Clayton Bishop',
+    "source": {
+        'pdf': 'Stephen_Guthrie - One Generation .pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '23 Aug 1930',
+})
+
+ENTRIES.append({
+    'code': '53623',
+    'name': 'Lula Berlene Bishop',
+    "source": {
+        'pdf': 'Stephen_Guthrie - One Generation .pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '01 Mar 1933',
+})
+
+ENTRIES.append({
+    'code': '53624',
+    'name': 'Violet Rosalee Bishop',
+    "source": {
+        'pdf': 'Stephen_Guthrie - One Generation .pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '15 Jul 1935',
+})
+
+ENTRIES.append({
+    'code': '536241',
+    'name': 'Randal Alan Rhodes',
+    "source": {
+        'pdf': 'Stephen_Guthrie - One Generation .pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '11 Feb 1957',
+})
+
+ENTRIES.append({
+    'code': '536242',
+    'name': 'Robm Lynn Rhodes',
+    "source": {
+        'pdf': 'Stephen_Guthrie - One Generation .pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '23 Oct 1961',
+    "spouses": [
+        {
+            'name': 'Lels Elaine Thom',
+            'married': 'Dec 1938',
+        },
+    ],
+})
+
+ENTRIES.append({
+    'code': '536262',
+    'name': 'Stephanie Lee Bishop',
+    "source": {
+        'pdf': 'Stephen_Guthrie - One Generation .pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '06 Nov 1967',
+})
+
+ENTRIES.append({
+    'code': '56522',
+    'name': 'Sarah Frances Frankhouser',
+    "source": {
+        'pdf': 'Stephen_Guthrie - One Generation .pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    'born': '19 Jan 1945',
+    "spouses": [
+        {
+            'name': 'John Mitchell Humberson son of John W',
+            'married': '20 Oct 1977',
+        },
+    ],
+})
+
+ENTRIES.append({
+    'code': '591',
+    'name': 'Belle Guth',
+    "source": {
+        'pdf': 'Stephen_Guthrie - One Generation .pdf',
+        'page': 1,
+    },
+    "verification": {
+        'status': 'draft',
+        'source': 'ocr',
+        'lastChecked': None,
+        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
+    },
+    "spouses": [
+        {
+            'name': 'Alva RIE Russell',
+        },
+    ],
+})
+
