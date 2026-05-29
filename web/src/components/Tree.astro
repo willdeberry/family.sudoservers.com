@@ -4,7 +4,7 @@
 <!-- The tree mounts into this container -->
 <div
   id="family-chart"
-  class="absolute inset-0"
+  class="f3 absolute inset-0"
   style="--card-radius: 12px;"
 >
   <div
@@ -75,16 +75,24 @@
       );
     });
 
-    // Initial render — focus on the founder so user sees something
-    chart.updateTree({ initial: true });
-
-    // After update, hide the loader
+    // After every update: hide the loader, and hide synthetic "to_add"
+    // placeholder cards that family-chart auto-creates for missing parents.
+    // The Datum is on the parent .card_cont's __data__ (D3 attaches it there).
     chart.afterUpdate = () => {
       document.getElementById('family-chart-loading')?.remove();
+      const svg = container.querySelector('svg');
+      if (!svg) return;
+      const conts = svg.querySelectorAll<SVGGElement>('g.card_cont');
+      conts.forEach(cont => {
+        const td: any = (cont as any).__data__;
+        const datum = td?.data;
+        const isPlaceholder = !!datum?.to_add;
+        if (isPlaceholder) cont.style.display = 'none';
+      });
     };
 
-    // Re-trigger an update so afterUpdate fires
-    chart.updateTree({});
+    // Initial render — fit the tree to the container so it uses the full space
+    chart.updateTree({ initial: true, tree_position: 'fit' });
 
     // Tell the top bar how many people we have
     document.dispatchEvent(
@@ -93,15 +101,25 @@
       })
     );
 
-    // Expose a way to focus on a person (used by search)
+    // Expose a way to focus on a person (used by search + modal)
     (window as any).__familytree = {
       focusOn: (id: string) => {
         const target = data.find(d => d.id === id);
         if (!target) return;
         chart.updateMainId(id);
-        chart.updateTree({});
+        chart.updateTree({ tree_position: 'main_to_middle' });
       },
+      fit: () => chart.updateTree({ tree_position: 'fit' }),
     };
+
+    // Re-fit if the window resizes (e.g., devtools toggled)
+    let resizeTimer: number | undefined;
+    window.addEventListener('resize', () => {
+      window.clearTimeout(resizeTimer);
+      resizeTimer = window.setTimeout(() => {
+        chart.updateTree({ tree_position: 'fit' });
+      }, 200);
+    });
   }
 
   bootstrap().catch(err => {
@@ -112,11 +130,28 @@
 </script>
 
 <style is:global>
-  /* family-chart base styles are imported above; this is light theming */
+  /* Dark-mode palette */
   #family-chart {
+    --male-color: #2389ce;       /* blue cards */
+    --female-color: #e87a32;     /* orange cards */
+    --genderless-color: #6b7280; /* neutral gray */
+    --text-color: #ffffff;
+    --background-color: #1e1e1e;
+
     background:
-      radial-gradient(circle at 50% 30%, rgba(180, 83, 9, 0.04), transparent 60%),
-      linear-gradient(to bottom, #fafaf9, #f5f5f4);
+      radial-gradient(circle at 50% 30%, rgba(35, 137, 206, 0.04), transparent 70%),
+      #1e1e1e;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* family-chart leaves the SVG sizing to CSS; force it to fill.
+     The SVG is nested under a generated #f3Canvas div. */
+  #family-chart #f3Canvas,
+  #family-chart #f3Canvas svg {
+    width: 100%;
+    height: 100%;
+    display: block;
   }
 
   #family-chart .card-rect,
@@ -126,5 +161,26 @@
 
   #family-chart .card_text tspan {
     font-family: ui-sans-serif, system-ui, sans-serif;
+    fill: #ffffff;
+  }
+
+  /* Slightly soften the corners to feel modern */
+  #family-chart .card-body-rect,
+  #family-chart rect.card-male,
+  #family-chart rect.card-female {
+    rx: 8;
+    ry: 8;
+  }
+
+  /* Connector lines: white on dark background */
+  #family-chart path.link {
+    stroke: rgba(255, 255, 255, 0.55) !important;
+    stroke-width: 1.5px;
+  }
+
+  /* The main person gets a stronger outline */
+  #family-chart .card-main-outline {
+    stroke: rgba(255, 255, 255, 0.85);
+    stroke-width: 2.5px;
   }
 </style>
