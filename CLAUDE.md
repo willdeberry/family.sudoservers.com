@@ -1,7 +1,15 @@
 # family.sudoservers.com
 
-Genealogy dataset for the descendants of an unnamed Guthrie patriarch.
-Source: seven scanned PDF genealogies at `~/Documents/Family Tree/`.
+Genealogy dataset and website for the descendants of an unnamed Guthrie
+patriarch. Source: seven scanned PDF genealogies at
+`~/Documents/Family Tree/`. Live site: <https://family.sudoservers.com>.
+
+## Two halves
+
+- **Dataset** (Python). `parser/raw_entries.py` → `parser/build.py` →
+  `data/people.json`. See `STATUS.md` for transcription/verification state.
+- **Website** (Astro + Tailwind + family-chart) in `web/`. See `web/README.md`
+  for the dev/deploy loop.
 
 ## Read first
 

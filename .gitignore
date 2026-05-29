@@ -3,3 +3,10 @@ __pycache__/
 .DS_Store
 .venv/
 node_modules/
+
+# Astro build output
+web/dist/
+web/.astro/
+
+# Generated from data/people.json — rebuild with npm run transform
+web/public/data/

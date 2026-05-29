@@ -1,0 +1,175 @@
+---
+---
+
+<dialog
+  id="search-palette"
+  class="rounded-xl border border-stone-200 bg-white p-0 shadow-2xl backdrop:bg-stone-900/40 backdrop:backdrop-blur-sm w-full max-w-xl mt-[15vh] mx-auto"
+>
+  <div class="flex items-center gap-3 border-b border-stone-200 px-4 py-3">
+    <svg class="h-4 w-4 text-stone-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M17 10a7 7 0 11-14 0 7 7 0 0114 0z" />
+    </svg>
+    <input
+      id="search-input"
+      type="text"
+      placeholder="Search by name…"
+      class="flex-1 border-0 bg-transparent text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-0"
+      autocomplete="off"
+    />
+    <kbd class="rounded border border-stone-300 bg-stone-50 px-1.5 py-0.5 text-xs font-mono text-stone-500">esc</kbd>
+  </div>
+  <ul id="search-results" class="max-h-[50vh] overflow-y-auto p-2">
+    <li class="px-3 py-2 text-sm text-stone-400">Start typing to search…</li>
+  </ul>
+</dialog>
+
+<script>
+  type Hit = { id: string; n: string; c: string; l: string };
+
+  let index: Hit[] | null = null;
+  let loadingPromise: Promise<Hit[]> | null = null;
+
+  async function loadIndex() {
+    if (index) return index;
+    if (!loadingPromise) {
+      loadingPromise = fetch('/data/search.json')
+        .then(r => r.json())
+        .then(json => {
+          index = json as Hit[];
+          return index!;
+        });
+    }
+    return loadingPromise;
+  }
+
+  function score(hit: Hit, q: string): number {
+    const n = hit.n.toLowerCase();
+    if (n === q) return 100;
+    if (n.startsWith(q)) return 80;
+    // Match any word start
+    const words = n.split(/\s+/);
+    if (words.some(w => w.startsWith(q))) return 60;
+    if (n.includes(q)) return 30;
+    // Match lineage code
+    if (hit.c.toLowerCase().includes(q)) return 50;
+    return 0;
+  }
+
+  function search(q: string): Hit[] {
+    if (!index) return [];
+    const lower = q.toLowerCase().trim();
+    if (!lower) return [];
+    const scored: Array<[number, Hit]> = [];
+    for (const h of index) {
+      const s = score(h, lower);
+      if (s > 0) scored.push([s, h]);
+    }
+    scored.sort((a, b) => b[0] - a[0]);
+    return scored.slice(0, 30).map(([, h]) => h);
+  }
+
+  function render(hits: Hit[], q: string) {
+    const ul = document.getElementById('search-results');
+    if (!ul) return;
+    if (!q) {
+      ul.innerHTML = '<li class="px-3 py-2 text-sm text-stone-400">Start typing to search…</li>';
+      return;
+    }
+    if (hits.length === 0) {
+      ul.innerHTML = `<li class="px-3 py-2 text-sm text-stone-400">No matches for “${q}”.</li>`;
+      return;
+    }
+    ul.innerHTML = hits.map((h, i) => `
+      <li>
+        <button
+          type="button"
+          data-id="${h.id}"
+          data-index="${i}"
+          class="hit-row group flex w-full items-center justify-between gap-3 rounded-md px-3 py-2 text-left text-sm hover:bg-amber-50 aria-selected:bg-amber-50"
+        >
+          <span class="truncate font-medium text-stone-900 group-hover:text-amber-900">${h.n}</span>
+          <span class="flex shrink-0 items-center gap-2 text-xs text-stone-500">
+            ${h.l ? `<span>${h.l}</span>` : ''}
+            ${h.c ? `<span class="rounded bg-stone-100 px-1.5 py-0.5 font-mono">${h.c}</span>` : ''}
+          </span>
+        </button>
+      </li>
+    `).join('');
+    Array.from(ul.querySelectorAll('.hit-row')).forEach(btn =>
+      btn.addEventListener('click', (e) => {
+        const id = (e.currentTarget as HTMLElement).dataset.id;
+        if (id) selectResult(id);
+      })
+    );
+    selected = 0;
+    updateSelected();
+  }
+
+  let selected = 0;
+  function updateSelected() {
+    document.querySelectorAll('.hit-row').forEach((el, i) =>
+      el.setAttribute('aria-selected', i === selected ? 'true' : 'false')
+    );
+    document.querySelector('.hit-row[aria-selected="true"]')?.scrollIntoView({ block: 'nearest' });
+  }
+
+  function selectResult(id: string) {
+    const modal = document.getElementById('search-palette') as HTMLDialogElement;
+    modal?.close();
+    window.dispatchEvent(new CustomEvent('familytree:open-person', { detail: { id } }));
+  }
+
+  function openPalette() {
+    const modal = document.getElementById('search-palette') as HTMLDialogElement;
+    const input = document.getElementById('search-input') as HTMLInputElement;
+    if (!modal || !input) return;
+    loadIndex();
+    modal.showModal();
+    input.value = '';
+    input.focus();
+    render([], '');
+  }
+
+  document.getElementById('search-trigger')?.addEventListener('click', openPalette);
+
+  document.addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+      e.preventDefault();
+      openPalette();
+    }
+  });
+
+  document.getElementById('search-input')?.addEventListener('input', async (e) => {
+    const q = (e.target as HTMLInputElement).value;
+    const idx = await loadIndex();
+    if (!idx.length) return;
+    const hits = search(q);
+    render(hits, q);
+  });
+
+  document.getElementById('search-input')?.addEventListener('keydown', (e) => {
+    const rows = document.querySelectorAll('.hit-row');
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      if (rows.length) selected = Math.min(rows.length - 1, selected + 1);
+      updateSelected();
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      if (rows.length) selected = Math.max(0, selected - 1);
+      updateSelected();
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      const row = rows[selected] as HTMLElement | undefined;
+      const id = row?.dataset.id;
+      if (id) selectResult(id);
+    }
+  });
+
+  document.getElementById('search-palette')?.addEventListener('click', (e) => {
+    const dialog = e.currentTarget as HTMLDialogElement;
+    const rect = dialog.getBoundingClientRect();
+    const inside = rect.top <= e.clientY && e.clientY <= rect.top + rect.height
+      && rect.left <= e.clientX && e.clientX <= rect.left + rect.width;
+    if (!inside) dialog.close();
+  });
+</script>

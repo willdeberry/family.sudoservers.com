@@ -1,0 +1,242 @@
+---
+---
+
+<dialog
+  id="person-modal"
+  class="rounded-2xl border border-stone-200 bg-white p-0 shadow-2xl backdrop:bg-stone-900/40 backdrop:backdrop-blur-sm w-full max-w-2xl"
+>
+  <div id="person-modal-content" class="max-h-[85vh] overflow-y-auto">
+    <!-- populated by script -->
+  </div>
+</dialog>
+
+<script>
+  type PersonDetail = {
+    id: string;
+    lineageCodes: string[];
+    name: string;
+    nameMaiden?: string;
+    sex?: 'M' | 'F';
+    birth?: { date?: string; dateRaw?: string; place?: string };
+    death?: { date?: string; dateRaw?: string; place?: string };
+    burial?: { place?: string };
+    parentIds: string[];
+    childIds: string[];
+    marriages: Array<{
+      spouseId?: string;
+      spouseName?: string;
+      date?: string;
+      dateRaw?: string;
+      place?: string;
+      order?: number;
+      notes?: string;
+    }>;
+    residences: string[];
+    occupation?: string;
+    notes?: string;
+    sources: Array<{ pdf?: string; entryCode?: string; page?: number }>;
+    verification: { status: string; source: string; lastChecked?: string; notes?: string };
+  };
+
+  let peopleIndex: Record<string, PersonDetail> | null = null;
+  let loadingPromise: Promise<Record<string, PersonDetail>> | null = null;
+
+  async function loadIndex() {
+    if (peopleIndex) return peopleIndex;
+    if (!loadingPromise) {
+      loadingPromise = fetch('/data/people-index.json')
+        .then(r => r.json())
+        .then(json => {
+          peopleIndex = json as Record<string, PersonDetail>;
+          return peopleIndex!;
+        });
+    }
+    return loadingPromise;
+  }
+
+  function fmtDate(e?: { date?: string; dateRaw?: string }) {
+    if (!e) return '—';
+    if (e.date) {
+      const d = new Date(e.date + 'T00:00:00');
+      if (!isNaN(d.valueOf())) {
+        return d.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+      }
+    }
+    return e.dateRaw || '—';
+  }
+
+  function lifespan(p: PersonDetail) {
+    const b = p.birth?.date?.slice(0, 4) || p.birth?.dateRaw?.match(/\d{4}/)?.[0] || '';
+    const d = p.death?.date?.slice(0, 4) || p.death?.dateRaw?.match(/\d{4}/)?.[0] || '';
+    if (b && d) return `${b} – ${d}`;
+    if (b) return `b. ${b}`;
+    if (d) return `d. ${d}`;
+    return '';
+  }
+
+  function badge(p: PersonDetail) {
+    const v = p.verification;
+    if (v.status === 'verified') {
+      return `<span class="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2 py-0.5 text-xs font-medium text-emerald-700 ring-1 ring-emerald-200">
+        <svg class="h-3 w-3" fill="currentColor" viewBox="0 0 20 20"><path d="M16.7 5.3a1 1 0 010 1.4l-8 8a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4L8 12.6l7.3-7.3a1 1 0 011.4 0z"/></svg>
+        Verified
+      </span>`;
+    }
+    return `<span class="inline-flex items-center gap-1 rounded-full bg-amber-50 px-2 py-0.5 text-xs font-medium text-amber-700 ring-1 ring-amber-200">
+      <svg class="h-3 w-3" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 4a1 1 0 011 1v3a1 1 0 11-2 0V7a1 1 0 011-1zm0 7a1 1 0 100 2 1 1 0 000-2z"/></svg>
+      Draft · ${v.source}
+    </span>`;
+  }
+
+  function relativeLink(id: string, idx: Record<string, PersonDetail>) {
+    const p = idx[id];
+    if (!p) return `<span class="text-stone-400">unknown</span>`;
+    const span = lifespan(p);
+    return `<button
+      type="button"
+      data-id="${id}"
+      class="rel-link group inline-flex items-center gap-1.5 rounded-md px-2 py-1 -mx-2 -my-1 text-left hover:bg-stone-100"
+    >
+      <span class="font-medium text-stone-900 group-hover:text-amber-800">${p.name}</span>
+      ${span ? `<span class="text-xs text-stone-500">${span}</span>` : ''}
+    </button>`;
+  }
+
+  function render(p: PersonDetail, idx: Record<string, PersonDetail>) {
+    const ls = lifespan(p);
+    const code = p.lineageCodes[0] || '';
+    const allCodes = p.lineageCodes.length > 1
+      ? `<span class="ml-2 text-xs text-stone-400">also ${p.lineageCodes.slice(1).join(', ')}</span>`
+      : '';
+
+    const parents = p.parentIds.map(id => relativeLink(id, idx)).join('');
+    const children = p.childIds.map(id => relativeLink(id, idx)).join('');
+
+    const marriages = p.marriages.map(m => {
+      const name = m.spouseId && idx[m.spouseId] ? relativeLink(m.spouseId, idx) : (m.spouseName || '—');
+      const date = m.date || m.dateRaw ? `<span class="text-xs text-stone-500"> m. ${m.dateRaw || m.date}</span>` : '';
+      const order = m.order ? `<span class="ml-1.5 rounded-full bg-stone-100 px-1.5 py-0.5 text-xs text-stone-500">marriage ${m.order}</span>` : '';
+      return `<div class="flex flex-wrap items-baseline gap-2">${name}${date}${order}</div>`;
+    }).join('') || '<span class="text-stone-400">—</span>';
+
+    return `
+      <div class="border-b border-stone-200 px-6 py-5">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h2 class="text-xl font-semibold tracking-tight text-stone-900">${p.name}</h2>
+            ${p.nameMaiden ? `<div class="mt-0.5 text-sm text-stone-500">née ${p.nameMaiden}</div>` : ''}
+            <div class="mt-1 flex items-baseline gap-2 text-sm text-stone-600">
+              ${ls ? `<span>${ls}</span>` : ''}
+              ${code ? `<span class="rounded bg-stone-100 px-1.5 py-0.5 font-mono text-xs text-stone-600">${code}</span>` : ''}
+              ${allCodes}
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            ${badge(p)}
+            <button
+              id="person-modal-close"
+              type="button"
+              class="grid h-8 w-8 place-items-center rounded-full text-stone-400 hover:bg-stone-100 hover:text-stone-700"
+              aria-label="Close"
+            >
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 px-6 py-5">
+        <Field label="Born">${fmtDate(p.birth)}${p.birth?.place ? `<div class="text-xs text-stone-500">${p.birth.place}</div>` : ''}</Field>
+        <Field label="Died">${fmtDate(p.death)}${p.death?.place ? `<div class="text-xs text-stone-500">${p.death.place}</div>` : ''}</Field>
+        ${p.burial?.place ? `<Field label="Buried">${p.burial.place}</Field>` : ''}
+        ${p.occupation ? `<Field label="Occupation">${p.occupation}</Field>` : ''}
+        ${p.residences.length ? `<Field label="Residence" wide>${p.residences.join(' · ')}</Field>` : ''}
+
+        <div class="md:col-span-2">
+          <SectionTitle>Parents</SectionTitle>
+          <div class="mt-1 flex flex-wrap gap-x-4 gap-y-1">${parents || '<span class="text-stone-400">unknown</span>'}</div>
+        </div>
+
+        <div class="md:col-span-2">
+          <SectionTitle>Marriages</SectionTitle>
+          <div class="mt-1 space-y-2">${marriages}</div>
+        </div>
+
+        ${children ? `
+        <div class="md:col-span-2">
+          <SectionTitle>Children (${p.childIds.length})</SectionTitle>
+          <div class="mt-1 flex flex-wrap gap-x-4 gap-y-1">${children}</div>
+        </div>` : ''}
+
+        ${p.notes ? `
+        <div class="md:col-span-2">
+          <SectionTitle>Notes</SectionTitle>
+          <p class="mt-1 text-sm text-stone-700 leading-relaxed whitespace-pre-line">${p.notes}</p>
+        </div>` : ''}
+
+        ${p.sources.length ? `
+        <div class="md:col-span-2">
+          <SectionTitle>Sources</SectionTitle>
+          <ul class="mt-1 space-y-1 text-xs text-stone-500">
+            ${p.sources.map(s => `<li>${s.pdf}${s.entryCode ? ` · entry ${s.entryCode}` : ''}${s.page ? ` · p.&nbsp;${s.page}` : ''}</li>`).join('')}
+          </ul>
+        </div>` : ''}
+
+        ${p.verification.status !== 'verified' ? `
+        <div class="md:col-span-2 rounded-md bg-amber-50/50 px-3 py-2 text-xs text-amber-800 ring-1 ring-amber-200">
+          This entry is a draft. ${p.verification.notes || 'It has not yet been verified against the source PDF.'}
+        </div>` : ''}
+      </div>
+
+      <div class="border-t border-stone-200 bg-stone-50 px-6 py-3 flex items-center justify-between text-xs text-stone-500">
+        <span>ID ${p.id}</span>
+        <a class="text-stone-600 hover:text-amber-800" href="#" id="focus-tree-on">Focus tree on this person →</a>
+      </div>
+    `
+      // Inline component substitutions (server-less)
+      .replace(/<Field label="([^"]+)"( wide)?>/g, (_, label, wide) =>
+        `<div class="${wide ? 'md:col-span-2' : ''}"><div class="text-xs font-medium uppercase tracking-wide text-stone-500">${label}</div><div class="mt-0.5 text-sm text-stone-900">`)
+      .replace(/<\/Field>/g, '</div></div>')
+      .replace(/<SectionTitle>/g, '<div class="text-xs font-medium uppercase tracking-wide text-stone-500">')
+      .replace(/<\/SectionTitle>/g, '</div>');
+  }
+
+  async function open(id: string) {
+    const idx = await loadIndex();
+    const p = idx[id];
+    if (!p) return;
+    const modal = document.getElementById('person-modal') as HTMLDialogElement | null;
+    const content = document.getElementById('person-modal-content');
+    if (!modal || !content) return;
+    content.innerHTML = render(p, idx);
+    modal.showModal();
+
+    content.querySelector('#person-modal-close')?.addEventListener('click', () => modal.close());
+    content.querySelectorAll('.rel-link').forEach(btn =>
+      btn.addEventListener('click', (e) => {
+        const targetId = (e.currentTarget as HTMLElement).dataset.id;
+        if (targetId) open(targetId);
+      })
+    );
+    content.querySelector('#focus-tree-on')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      const ft = (window as any).__familytree;
+      if (ft && id) ft.focusOn(id);
+      modal.close();
+    });
+  }
+
+  window.addEventListener('familytree:open-person', (e: any) => {
+    const id = e.detail?.id;
+    if (id) open(id);
+  });
+
+  // Close on backdrop click
+  document.getElementById('person-modal')?.addEventListener('click', (e) => {
+    const dialog = e.currentTarget as HTMLDialogElement;
+    const rect = dialog.getBoundingClientRect();
+    const clickedInside = rect.top <= e.clientY && e.clientY <= rect.top + rect.height
+      && rect.left <= e.clientX && e.clientX <= rect.left + rect.width;
+    if (!clickedInside) dialog.close();
+  });
+</script>

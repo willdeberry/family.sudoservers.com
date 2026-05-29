@@ -1,0 +1,130 @@
+---
+---
+
+<!-- The tree mounts into this container -->
+<div
+  id="family-chart"
+  class="absolute inset-0"
+  style="--card-radius: 12px;"
+>
+  <div
+    id="family-chart-loading"
+    class="grid h-full place-items-center text-stone-500"
+  >
+    <div class="flex items-center gap-3">
+      <svg class="h-5 w-5 animate-spin text-stone-400" viewBox="0 0 24 24" fill="none">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.4 0 0 5.4 0 12h4z"></path>
+      </svg>
+      <span class="text-sm">Loading 1,351 people…</span>
+    </div>
+  </div>
+</div>
+
+<script>
+  import f3 from 'family-chart';
+  import 'family-chart/styles/family-chart.css';
+
+  type Datum = {
+    id: string;
+    data: Record<string, any>;
+    rels: { parents: string[]; spouses: string[]; children: string[] };
+  };
+
+  async function bootstrap() {
+    const res = await fetch('/data/tree.json');
+    const data: Datum[] = await res.json();
+
+    // Capture size BEFORE family-chart mutates the array
+    const totalPeople = data.length;
+    const verifiedCount = data.filter(d => d.data.verified).length;
+
+    // Default focused person: the founder if present, else the first node
+    const founder =
+      data.find(d => d.id && (d as any).data['lineageCode'] === '0') || data[0];
+
+    const container = document.getElementById('family-chart');
+    if (!container) return;
+
+    const chart = f3
+      .createChart(container, data as any)
+      .setTransitionTime(550)
+      .setCardXSpacing(280)
+      .setCardYSpacing(160)
+      .setOrientationVertical();
+
+    const card = chart
+      .setCardSvg()
+      .setCardDisplay([['full name'], ['lifespan']])
+      .setMiniTree(true)
+      .setCardDim({
+        width: 250,
+        height: 70,
+        img_w: 0,
+        img_h: 0,
+        img_x: 0,
+        img_y: 0,
+        text_x: 16,
+        text_y: 24,
+      });
+
+    card.setOnCardClick((_e: MouseEvent, d: any) => {
+      const id = d.data.id;
+      window.dispatchEvent(
+        new CustomEvent('familytree:open-person', { detail: { id } })
+      );
+    });
+
+    // Initial render — focus on the founder so user sees something
+    chart.updateTree({ initial: true });
+
+    // After update, hide the loader
+    chart.afterUpdate = () => {
+      document.getElementById('family-chart-loading')?.remove();
+    };
+
+    // Re-trigger an update so afterUpdate fires
+    chart.updateTree({});
+
+    // Tell the top bar how many people we have
+    document.dispatchEvent(
+      new CustomEvent('familytree:ready', {
+        detail: { total: totalPeople, verified: verifiedCount },
+      })
+    );
+
+    // Expose a way to focus on a person (used by search)
+    (window as any).__familytree = {
+      focusOn: (id: string) => {
+        const target = data.find(d => d.id === id);
+        if (!target) return;
+        chart.updateMainId(id);
+        chart.updateTree({});
+      },
+    };
+  }
+
+  bootstrap().catch(err => {
+    console.error('Failed to load tree', err);
+    const loading = document.getElementById('family-chart-loading');
+    if (loading) loading.textContent = 'Failed to load the tree. See console.';
+  });
+</script>
+
+<style is:global>
+  /* family-chart base styles are imported above; this is light theming */
+  #family-chart {
+    background:
+      radial-gradient(circle at 50% 30%, rgba(180, 83, 9, 0.04), transparent 60%),
+      linear-gradient(to bottom, #fafaf9, #f5f5f4);
+  }
+
+  #family-chart .card-rect,
+  #family-chart .card_text {
+    cursor: pointer;
+  }
+
+  #family-chart .card_text tspan {
+    font-family: ui-sans-serif, system-ui, sans-serif;
+  }
+</style>
