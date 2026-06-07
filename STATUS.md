@@ -28,7 +28,12 @@ parent's children list provides clean basic data.
 - John pages 36-40: done (1773-1791 + gen 5 start)
 - John pages 41-45: done (12249-13264 gen 5 DeBerry/Deal/Feather/Lawson)
 - John pages 46-50: done (13265-13F89 gen 5/6 various)
-- John pages 51-147: pending
+- John pages 51-55: done (gen 5/6 Sliger/Sisler/Friend/Thomas/Strawser)
+- John pages 56-60: done (Sisler/Friend/Thomas/Strawser/Kahl gen 6)
+- John pages 61-65: done (Appleby/McKenzie/Moyers/Nicola gen 6)
+- John pages 66-70: done (164/166 Harshbarger + 17xx Spiker/Guthrie gen 6)
+- John pages 71-75: done (Guthrie/Bartholomew/Friend/Freeman gen 6)
+- John pages 76-147: pending
 
 ## Verification bugs found and fixed (2026-06-07 session)
 
