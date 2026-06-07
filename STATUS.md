@@ -20,7 +20,10 @@ parent's children list provides clean basic data.
 
 - John pages 1-5: done (founder, gen 1, gen 2, start of gen 3)
 - John pages 6-10: done (rest of gen 3 + start of gen 4 stubs)
-- John pages 11-147: pending
+- John pages 11-15: done (Nicola sibs + gen 4 11xx, 12xx starts)
+- John pages 16-20: done (deep gen 4 detail for 123x, 132x, 138x, 13B/C/D/F1)
+- John pages 21-25: done (13F gen 4 continued + 141x, 142x, 143x, 144x parents)
+- John pages 26-147: pending
 
 Per-branch descendant counts: John 417 · Alexander 64 · James 77 ·
 Stephen 31 · Absalom 22 · William 19 · Rachel 7. The lighter branches are
