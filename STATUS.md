@@ -1,14 +1,26 @@
 # Project status
 
-Last updated: 2026-05-28 (post-OCR)
+Last updated: 2026-06-07 (John PDF pages 1-10 vision-verified)
 
 ## What exists
 
-- 1351 people in `data/people.json`, generated from `parser/raw_entries.py`
+- 1503 people in `data/people.json`, generated from `parser/raw_entries.py`
 - All 7 sibling branches present, structure largely complete
 - 12 cross-branch marriages with dedup working (see SEE_REFS in raw_entries.py)
 - Tree depth: 7+ generations from inferred founder (code `0`)
-- Verification status: 154 verified, 1197 draft (mostly OCR-drafted, need vision review)
+- Verification status: 181 verified (125 manual + 56 vision), 1322 draft
+
+## Verification pass currently in progress
+
+Working through John PDF (147 pages) from the top to fix bulk-import
+errors and add missing entries. Found multiple bugs from the regex-based
+OCR drafter — cross-contaminated dates and spouses where one person's
+data leaked onto a different code. Removing dirty OCR drafts as we go;
+parent's children list provides clean basic data.
+
+- John pages 1-5: done (founder, gen 1, gen 2, start of gen 3)
+- John pages 6-10: done (rest of gen 3 + start of gen 4 stubs)
+- John pages 11-147: pending
 
 Per-branch descendant counts: John 417 · Alexander 64 · James 77 ·
 Stephen 31 · Absalom 22 · William 19 · Rachel 7. The lighter branches are
