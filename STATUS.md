@@ -23,7 +23,34 @@ parent's children list provides clean basic data.
 - John pages 11-15: done (Nicola sibs + gen 4 11xx, 12xx starts)
 - John pages 16-20: done (deep gen 4 detail for 123x, 132x, 138x, 13B/C/D/F1)
 - John pages 21-25: done (13F gen 4 continued + 141x, 142x, 143x, 144x parents)
-- John pages 26-147: pending
+- John pages 26-30: done (deep gen 5 for 144x Thomas, 145x-148x Guthrie, 161x-164x)
+- John pages 31-35: done (Harshbarger gen 5 + Spiker + Nicola + Frey)
+- John pages 36-147: pending
+
+## Verification bugs found and fixed (2026-06-07 session)
+
+Multi-page transcription bug pattern in the bulk OCR import: the
+regex-based drafter often pulled fields from neighboring entries and
+attributed them to the wrong person. Found and fixed in this session:
+
+- Entry 11 William Guthrie: spurious "married: 2 Mar 1882" (that
+  date belongs to his son 111 William Harrison's marriage)
+- Entry 14 James B. Guthrie: birth/death PLACES (Frostburg MD /
+  Hazelton WV) were on James B. but actually belong to his wife
+  Susannah B. Beeghly
+- Entry 13A Mary Alverna: "married: 1937" was actually her death year
+- Entry 124 Susanna Ella DeBerry: died 4 Jun 1896 → 4 Jul 1896
+- Entry 1111 Rhuey Pearl: 2nd-marriage date "26 May 1940" wrongly
+  attached to 1st husband (it's the Rev. Emra Fike marriage)
+- Entry 1112 Ada Ellen: died 1 Jan 1976 → 16 Jan 1976
+- Entry 1622 Charles C. Moyers: died 27 Jan 1960 → 26 May 1956
+  (the 27 Jan 1960 was actually his wife Stella's death); marriage
+  year 1919 → 1920
+
+Plus 162 OCR-draft entries removed because they contained cross-
+contaminated data (e.g., 1354 Clyde Lewis had another person's
+death year and spouse). All replaced by clean stubs from parents'
+children lists.
 
 Per-branch descendant counts: John 417 · Alexander 64 · James 77 ·
 Stephen 31 · Absalom 22 · William 19 · Rachel 7. The lighter branches are
