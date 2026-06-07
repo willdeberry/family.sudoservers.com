@@ -3283,18 +3283,6 @@ ENTRIES.append({
 
 # === Generation 5/6 examples — Linda Joyce Lightner / etc. ===
 ENTRIES.append({
-    "code": "17282",
-    "name": "Thelma Pearl Guthrie",
-    "sex": "F",
-    "born": "5 Feb 1930",
-    "spouses": [
-        {"name": "Junior Lewis Lightner", "born": "27 Feb 1927", "order": 1},
-        {"name": "Marion W. Penland", "born": "27 Mar 1920", "married": "30 Aug 1975", "order": 2},
-    ],
-    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 36},
-})
-
-ENTRIES.append({
     "code": "172821",
     "name": "Linda Joyce Lightner",
     "sex": "F",
@@ -9462,6 +9450,404 @@ ENTRIES.append({
         {"code": "172135", "name": "Delmore George Ritchey", "born": "17 Nov 1942"},
         {"code": "172136", "name": "Kenneth Dale Ritchey", "born": "25 Nov 1944"},
         {"code": "172137", "name": "Dennis Blaine Ritchey", "born": "18 Feb 1954"},
+    ],
+})
+
+
+# === Pages 71-75 vision pass (2026-06-07): Guthrie/Nicola/Bartholomew gen 6/7 ===
+ENTRIES.append({
+    "code": "17214",
+    "name": "Dora Guthrie",
+    "sex": "F",
+    "born": "24 Apr 1916",
+    "died": "7 May 1982",
+    "spouses": [{"name": "Joseph D. McNair", "born": "15 Jun 1918", "married": "13 Sep 1938"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 71},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172141", "name": "Ralph McNair", "born": "5 Oct 1939"},
+        {"code": "172142", "name": "Ruth Irene McNair", "born": "29 Feb 1944"},
+        {"code": "172143", "name": "Donald Ray McNair", "born": "5 Feb 1947"},
+        {"code": "172144", "name": "Dortha Jean McNair", "born": "26 May 1948"},
+        {"code": "172145", "name": "Pauline (Polly) Ann McNair", "born": "17 Apr 1951"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "17215",
+    "name": "Ada Belle Guthrie",
+    "sex": "F",
+    "born": "27 Sep 1921",
+    "spouses": [{"name": "John W. Boyd", "born": "27 Dec 1908", "died": "10 Aug 1978", "married": "15 Mar 1937"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 71},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172151", "name": "Shirley Jane Boyd", "born": "4 Dec 1937"},
+        {"code": "172152", "name": "Betty Maxine Boyd", "born": "20 Dec 1939"},
+        {"code": "172153", "name": "Nelda Mae Boyd", "born": "5 Jul 1942"},
+        {"code": "172154", "name": "Linda Rae Boyd", "born": "25 Mar 1945"},
+        {"code": "172155", "name": "John H. Boyd", "born": "17 Oct 1948"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "17261",
+    "name": "Clarence Edward Guthrie",
+    "sex": "M",
+    "born": "8 Jan 1925",
+    "spouses": [{"name": "Winifred Alta Knox", "born": "7 Dec 1925", "married": "11 Sep 1949"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 71},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172611", "name": "Wendy Ann Guthrie", "born": "3 Nov 1955"},
+        {"code": "172612", "name": "Clair Edward Guthrie", "born": "22 Sep 1961"},
+        {"code": "172613", "name": "Alvin Loyd Guthrie", "born": "19 Aug 1968"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "17262",
+    "name": "Ruth Dennis",
+    "sex": "F",
+    "born": "17 Nov 1926",
+    "died": "2 Oct 1996",
+    "spouses": [{"name": "Darwin H. Reckart, Sr.", "born": "16 Dec 1915", "married": "19 Mar 1949"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 71},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172621", "name": "Darwin H. Reckart, Jr.", "born": "26 Jul 1950"},
+        {"code": "172622", "name": "Dennis Reckart", "born": "22 Jul 1953"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "17282",
+    "name": "Thelma Pearl Guthrie",
+    "sex": "F",
+    "born": "5 Feb 1930",
+    "spouses": [
+        {"name": "Junior Lewis Lightner", "born": "27 Feb 1927", "married": "30 Oct 1946", "order": 1},
+        {"name": "Marion W. Penland", "born": "27 Mar 1920", "married": "30 Aug 1975", "order": 2},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 72},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172821", "name": "Linda Joyce Lightner", "born": "9 May 1947"},
+        {"code": "172822", "name": "Douglas Lightner, Jr.", "born": "25 Jan 1949"},
+        {"code": "172823", "name": "Roger Dale Lightner", "born": "29 Dec 1951"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "17283",
+    "name": "Alice Mae Guthrie",
+    "sex": "F",
+    "born": "6 Oct 1932",
+    "spouses": [{"name": "Sam Sheppard"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 72},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172831", "name": "Gwendlyn Redeen Sheppard", "born": "31 Oct 1949"},
+        {"code": "172832", "name": "Redean R. Sheppard", "born": "6 Jan 1968"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "17284",
+    "name": "Dwight J. Guthrie",
+    "sex": "M",
+    "born": "6 May 1934",
+    "spouses": [{"name": "Mabel Weaver", "born": "10 Sep 1934", "married": "7 Jun 1952"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 72},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172841", "name": "Debra Suzanna Guthrie", "born": "30 Jun 1953"},
+        {"code": "172842", "name": "Dwight David Guthrie", "born": "27 Sep 1954"},
+        {"code": "172843", "name": "Michael Dane Guthrie", "born": "2 Jun 1957"},
+        {"code": "172844", "name": "Darryl Lee Guthrie", "born": "7 Dec 1959"},
+        {"code": "172845", "name": "Diana Gaye Guthrie", "born": "29 Feb 1964"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172B2",
+    "name": "Agnes Rosalie Bartholomew",
+    "sex": "F",
+    "born": "15 Mar 1924",
+    "spouses": [{"name": "Thomas Raymond Lavens", "born": "23 Aug 1920", "married": "10 Jun 1944"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 72},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172B21", "name": "Bonnie Jean Lavens", "born": "11 Jan 1946"},
+        {"code": "172B22", "name": "Susan Adele Lavens", "born": "8 Mar 1953"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172B3",
+    "name": "Evelyn Irene Bartholomew",
+    "sex": "F",
+    "born": "24 Sep 1926",
+    "spouses": [{"name": "Walter Miller", "born": "7 May 1925", "married": "16 May 1947"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 72},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172B31", "name": "Jerry Lee Miller", "born": "16 Dec 1947", "died": "9 Feb 1994"},
+        {"code": "172B32", "name": "Joy Irene Miller", "born": "18 Apr 1952"},
+        {"code": "172B33", "name": "Lori Jean Miller", "born": "29 Sep 1955"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172B4",
+    "name": "Paul Eugene Bartholomew",
+    "sex": "M",
+    "born": "18 May 1928",
+    "spouses": [{"name": "Thelma Marie Waggoner", "born": "11 Jan 1932", "married": "21 Jan 1950"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 73},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172B41", "name": "Daniel Paul Bartholomew", "born": "18 Jul 1951"},
+        {"code": "172B42", "name": "Karen Geniese Bartholomew", "born": "3 Aug 1953"},
+        {"code": "172B43", "name": "Timothy Eugene Bartholomew", "born": "6 Jun 1957"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172B5",
+    "name": "Dorothy May Bartholomew",
+    "sex": "F",
+    "born": "31 May 1930",
+    "spouses": [{"name": "Frederick Vernon Habenicht", "born": "16 Jul 1930", "married": "29 Sep 1951"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 73},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172B51", "name": "Valerie Kay Habenicht", "born": "1 Dec 1953"},
+        {"code": "172B52", "name": "Bradley Phillip Habenicht", "born": "20 Sep 1956"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172B6",
+    "name": "Mabel Viola Bartholomew",
+    "sex": "F",
+    "born": "27 Dec 1933",
+    "died": "1 Jan 1988",
+    "spouses": [{"name": "Robert S. Hale", "born": "22 Aug 1931", "married": "13 Oct 1951"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 73},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172B61", "name": "Douglas Robert Hale", "born": "24 Oct 1952"},
+        {"code": "172B62", "name": "Cindy Lou Hale", "born": "21 Feb 1959"},
+        {"code": "172B63", "name": "Tina Dianne Hale", "born": "13 Jan 1971"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172B7",
+    "name": "David Matthew Bartholomew",
+    "sex": "M",
+    "born": "12 Jan 1940",
+    "spouses": [{"name": "Glendora Lucille Saviers", "born": "12 Sep 1945", "married": "31 Jan 1961"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 73},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172B71", "name": "Dale Arlon Bartholomew", "born": "31 Jul 1961"},
+        {"code": "172B72", "name": "Terry Gene Bartholomew", "born": "24 Mar 1963"},
+        {"code": "172B73", "name": "Deborah Annette Bartholomew", "born": "11 Jan 1967"},
+        {"code": "172B74", "name": "Dwane Ira Bartholomew", "born": "18 Apr 1968"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "17332",
+    "name": "Goldie Marie Friend",
+    "sex": "F",
+    "born": "24 Oct 1911",
+    "spouses": [
+        {"name": "Floyd Willard Shaffer", "born": "29 May 1908", "died": "4 Oct 1935", "married": "15 Sep 1928", "order": 1},
+        {"name": "Rufus Ray Rodeheaver", "born": "15 Apr 1905", "died": "7 May 1973", "married": "15 Apr 1942", "order": 2},
+        {"name": "James Alva DeBerry", "married": "8 Apr 1942", "order": 3},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 74},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "173321", "name": "Willard Arnold Shaffer", "born": "5 Apr 1929"},
+        {"code": "173322", "name": "Margaret Virginia Shaffer", "born": "22 May 1931"},
+        {"code": "173323", "name": "Robert Ray Shaffer", "born": "23 Apr 1934"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "17333",
+    "name": "Gilbert Arnold Friend",
+    "sex": "M",
+    "born": "1 Aug 1914",
+    "died": "28 Feb 1951",
+    "spouses": [{"name": "Elsie Flowers", "married": "21 May 1938"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 74},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "173331", "name": "Carolyn Sue Friend", "born": "17 Feb 1939"},
+        {"code": "173332", "name": "Gerald (Jerry) Friend"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "17334",
+    "name": "Frank William Friend",
+    "sex": "M",
+    "born": "19 May 1919",
+    "spouses": [{"name": "Minnie Taylor", "married": "9 Nov 1935"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 74},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "173341", "name": "Ruth Friend", "born": "Apr 1947"},
+        {"code": "173342", "name": "Judith (Judy) Friend"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "17335",
+    "name": "Edna Friend",
+    "sex": "F",
+    "born": "2 May 1919",
+    "spouses": [{"name": "Arthur Teets", "born": "13 Mar 1910", "married": "13 Oct 1934"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 74},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "173351", "name": "Virginia Mae Teets", "born": "28 Apr 1935"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "17336",
+    "name": "Junior Clinton Friend",
+    "sex": "M",
+    "born": "24 May 1928",
+    "died": "13 Jan 1993",
+    "spouses": [
+        {"name": "Grace Seese", "born": "17 Aug 1930", "died": "5 Jun 1990", "married": "28 Mar 1948", "order": 1},
+        {"name": "Ruth Brown", "married": "1959", "order": 2},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 75},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "173361", "name": "Robert Clinton Friend", "born": "27 Aug 1949"},
+        {"code": "173362", "name": "Timothy Friend"},
+        {"code": "173363", "name": "David Friend"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "17421",
+    "name": "Hazel Moore",
+    "sex": "F",
+    "born": "4 Nov 1908",
+    "spouses": [{"name": "Codie Ray Freeman", "born": "30 Oct 1899"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 75},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "174211", "name": "Raymond Dure Freeman", "born": "2 Dec 1925"},
+        {"code": "174212", "name": "Paul Edward Freeman", "born": "20 Aug 1927"},
+        {"code": "174213", "name": "Herbert Lee Freeman", "born": "14 Feb 1929"},
+        {"code": "174214", "name": "Robert Leo Freeman", "born": "12 Apr 1930"},
+        {"code": "174215", "name": "Doris Maralene Freeman", "born": "21 Aug 1931"},
+        {"code": "174216", "name": "Betty Louise Freeman", "born": "9 Oct 1933"},
+        {"code": "174217", "name": "Calleen May Freeman", "born": "7 Jan 1935"},
+        {"code": "174218", "name": "George Jonathan Freeman", "born": "12 Apr 1937"},
+        {"code": "174219", "name": "Tomy Ray Freeman", "born": "28 Apr 1939"},
+        {"code": "17421A", "name": "Janita Bell Freeman", "born": "22 Jun 1941", "died": "27 Jun 1941", "flags": {"diedInInfancy": True}},
+        {"code": "17421B", "name": "Anna Lee Freeman", "born": "4 Jun 1942", "died": "7 Jun 1942", "flags": {"diedInInfancy": True}},
+        {"code": "17421C", "name": "Kenneth Darl Freeman", "born": "30 Aug 1943", "died": "30 May 1945", "flags": {"diedInInfancy": True}},
+        {"code": "17421D", "name": "Richard Nathan Freeman", "born": "10 May 1945", "died": "17 May 1945", "flags": {"diedInInfancy": True}},
+    ],
+})
+
+ENTRIES.append({
+    "code": "17452",
+    "name": "Hilda Colleen Nicola",
+    "sex": "F",
+    "born": "6 Oct 1925",
+    "spouses": [{"name": "Dorsey Edwards", "married": "22 Jul 1941"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 75},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "174521", "name": "David Lee Edwards", "born": "19 Jan 1943"},
+        {"code": "174522", "name": "Della Louise Edwards", "born": "16 Mar 1944"},
+        {"code": "174523", "name": "Donia Lou Edwards", "born": "14 Jul 1946"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "17511",
+    "name": "Martha Phillips",
+    "sex": "F",
+    "born": "24 Jan 1918",
+    "spouses": [{"name": "Burchell (Burk) Pritchard", "born": "7 Mar 1915"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 75},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "175111", "name": "Shirley Ann Pritchard", "born": "25 Mar 1937"},
+        {"code": "175112", "name": "Carol Sue Pritchard", "born": "Jan 1944"},
+        {"code": "175113", "name": "Christina Fay Pritchard"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "17622",
+    "name": "Wilson Nicola Miller",
+    "sex": "M",
+    "born": "3 Apr 1925",
+    "spouses": [{"name": "Theo Fisher"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 75},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "176221", "name": "Patricia Ann Miller", "born": "20 Feb 1969"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "17623",
+    "name": "Helen Virginia Miller",
+    "sex": "F",
+    "born": "11 Dec 1926",
+    "spouses": [{"name": "James Paul Harr", "born": "1906", "married": "17 Jun 1956"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 75},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "176231", "name": "Nancy Ann Harr", "born": "17 Nov 1956"},
+        {"code": "176232", "name": "James Paul Harr, Jr.", "born": "29 Jan 1958"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "17721",
+    "name": "Floyd Thamer Frey, Jr.",
+    "sex": "M",
+    "born": "7 Aug 1916",
+    "spouses": [{"name": "Maydell Marsh", "born": "21 Aug 1921", "married": "6 Apr 1942"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 75},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "177211", "name": "Ronald Keith Frey", "born": "26 Dec 1948"},
+        {"code": "177212", "name": "Dorothy (Dotty) Lucy Frey", "born": "28 Nov 1949"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "17722",
+    "name": "Ella Christine Frey",
+    "sex": "F",
+    "born": "25 Dec 1917",
+    "died": "17 Mar 1964",
+    "spouses": [{"name": "Howard Morris"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 75},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "177221", "name": "Armond Morris"},
+        {"code": "177222", "name": "Albert Morris"},
+        {"code": "177223", "name": "Patricia Morris"},
     ],
 })
 
@@ -18775,54 +19161,6 @@ ENTRIES.append({
 })
 
 ENTRIES.append({
-    'code': '172142',
-    'name': 'Ruth Irene McNair',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '29 Feb 1944',
-})
-
-ENTRIES.append({
-    'code': '172143',
-    'name': 'Donald Rav McNair',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '05 Feb 1947',
-})
-
-ENTRIES.append({
-    'code': '172144',
-    'name': 'Dortha Jean McNair',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '26 May 1948',
-})
-
-ENTRIES.append({
     'code': '1721452',
     'name': 'Karen Lynn Butler',
     "source": {
@@ -18851,55 +19189,6 @@ ENTRIES.append({
         'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
     },
     'born': '19 Mar 1978',
-})
-
-ENTRIES.append({
-    'code': '172151',
-    'name': 'Shirlev Jane Bovd',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '04 Dec 1937',
-})
-
-ENTRIES.append({
-    'code': '172152',
-    'name': 'Betty Maxine Boyd',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '20 Dec 1939',
-})
-
-ENTRIES.append({
-    'code': '172153',
-    'name': 'Nelds Mac Bovd',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '25 Mar 1945',
-    'died': '02 Feb 1982',
 })
 
 ENTRIES.append({
@@ -19107,21 +19396,6 @@ ENTRIES.append({
         'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
     },
     'born': '23 Mar 1977',
-})
-
-ENTRIES.append({
-    'code': '172612',
-    'name': 'Clair Edward Guthrie',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
 })
 
 ENTRIES.append({
@@ -19385,22 +19659,6 @@ ENTRIES.append({
 })
 
 ENTRIES.append({
-    'code': '172831',
-    'name': 'Gwen Redeen Sheppard',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '06 Jan 1968',
-})
-
-ENTRIES.append({
     'code': '1728411',
     'name': 'Grant Andrew Uber',
     "source": {
@@ -19414,22 +19672,6 @@ ENTRIES.append({
         'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
     },
     'born': 'Feb 1992',
-})
-
-ENTRIES.append({
-    'code': '172842',
-    'name': 'Dwight David Guthrie',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '27 Sep 1954',
 })
 
 ENTRIES.append({
@@ -19579,38 +19821,6 @@ ENTRIES.append({
 })
 
 ENTRIES.append({
-    'code': '172B22',
-    'name': 'Susan Adele Lavens',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '08 Mar 1953',
-})
-
-ENTRIES.append({
-    'code': '172B32',
-    'name': 'Joy lrene Miller',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '18 Apr 1952',
-})
-
-ENTRIES.append({
     'code': '172B422',
     'name': 'Adam Paul Lindqu',
     "source": {
@@ -19623,38 +19833,6 @@ ENTRIES.append({
         'lastChecked': None,
         'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
     },
-})
-
-ENTRIES.append({
-    'code': '172B43',
-    'name': 'Timothy Eugene Bartholomew',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '06 Jun 1957',
-})
-
-ENTRIES.append({
-    'code': '172B61',
-    'name': 'Douglas Robert Hale',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '24 Oct 1952',
 })
 
 ENTRIES.append({
@@ -19721,38 +19899,6 @@ ENTRIES.append({
 })
 
 ENTRIES.append({
-    'code': '172B63',
-    'name': 'Tina Dianne Hale',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '3 Jan 1971',
-})
-
-ENTRIES.append({
-    'code': '172B71',
-    'name': 'Dale Arion Barthol',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '24 Mar 1963',
-})
-
-ENTRIES.append({
     'code': '172B722',
     'name': 'Tabitha Michelle Bartholomew',
     "source": {
@@ -19766,22 +19912,6 @@ ENTRIES.append({
         'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
     },
     'born': '09 Dec 1987',
-})
-
-ENTRIES.append({
-    'code': '172B73',
-    'name': 'De Annetic bor Bartholome ah w',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '11 Jan 1967',
 })
 
 ENTRIES.append({
@@ -20355,22 +20485,6 @@ ENTRIES.append({
 })
 
 ENTRIES.append({
-    'code': '173321',
-    'name': 'Willa Amoild Shaffer',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '05 Apr 1929',
-})
-
-ENTRIES.append({
     'code': '17332111',
     'name': 'Travis Benjamin Shaffer',
     "source": {
@@ -20384,23 +20498,6 @@ ENTRIES.append({
         'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
     },
     'born': '16 Apr 1983',
-})
-
-ENTRIES.append({
-    'code': '173322',
-    'name': 'Ma Virginia rga Shaffer',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '23 Apr 1934',
-    'died': '28 Feb 1951',
 })
 
 ENTRIES.append({
@@ -20506,38 +20603,6 @@ ENTRIES.append({
 })
 
 ENTRIES.append({
-    'code': '173341',
-    'name': 'Ruth Friend',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': 'Apr 1947',
-})
-
-ENTRIES.append({
-    'code': '173361',
-    'name': 'Robert Clinton Friend',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '27 Aug 1949',
-})
-
-ENTRIES.append({
     'code': '1733611',
     'name': 'Robert Clinton Delmar Friend',
     "source": {
@@ -20559,188 +20624,6 @@ ENTRIES.append({
 })
 
 ENTRIES.append({
-    'code': '174211',
-    'name': 'Ravmond Dure Freeman',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '02 Dec 1925',
-})
-
-ENTRIES.append({
-    'code': '174212',
-    'name': 'Paul Edward Freeman',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '20 Aug 1927',
-})
-
-ENTRIES.append({
-    'code': '174213',
-    'name': 'Herb Lee Freeman',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '14 Feb 1929',
-})
-
-ENTRIES.append({
-    'code': '174214',
-    'name': 'Janita Bell Freeman',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '22 Jun 1941',
-    'died': '27 Jun 1941',
-})
-
-ENTRIES.append({
-    'code': '174216',
-    'name': 'Betty Louise Freeman',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '09 Oct. 1933',
-})
-
-ENTRIES.append({
-    'code': '174217',
-    'name': 'Calleen May ee se',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
-
-ENTRIES.append({
-    'code': '174218',
-    'name': 'George Jonathan Freeman',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
-
-ENTRIES.append({
-    'code': '174219',
-    'name': 'Tomy Ray Freeman',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
-
-ENTRIES.append({
-    'code': '17421B',
-    'name': 'Anna Lee Freeman',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '04 Jun 1942',
-    'died': '07 Jun 1942',
-})
-
-ENTRIES.append({
-    'code': '17421C',
-    'name': 'Kenneth Darl Freeman',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '30 Aug 1943',
-    'died': '30 May 1945',
-})
-
-ENTRIES.append({
-    'code': '17421D',
-    'name': 'Richard Nathan Freeman',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '10 May 1945',
-    "spouses": [
-        {
-            'name': 'Burchell (Burk) Pritchard',
-            'married': '07 Mar 1915',
-        },
-    ],
-})
-
-ENTRIES.append({
     'code': '174583',
     'name': 'Howard Andrew Nicola',
     "source": {
@@ -20754,29 +20637,6 @@ ENTRIES.append({
         'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
     },
     'born': '23 Oct 1930',
-})
-
-ENTRIES.append({
-    'code': '175111',
-    'name': 'Shurley Ann Pritc',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '20 Feb 1969',
-    'died': '17 Mar 1964',
-    "spouses": [
-        {
-            'name': 'Theo Fisher Pa Ann tric Miller ia',
-            'married': '20 Feb 1969',
-        },
-    ],
 })
 
 ENTRIES.append({
