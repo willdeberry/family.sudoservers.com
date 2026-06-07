@@ -25,7 +25,10 @@ parent's children list provides clean basic data.
 - John pages 21-25: done (13F gen 4 continued + 141x, 142x, 143x, 144x parents)
 - John pages 26-30: done (deep gen 5 for 144x Thomas, 145x-148x Guthrie, 161x-164x)
 - John pages 31-35: done (Harshbarger gen 5 + Spiker + Nicola + Frey)
-- John pages 36-147: pending
+- John pages 36-40: done (1773-1791 + gen 5 start)
+- John pages 41-45: done (12249-13264 gen 5 DeBerry/Deal/Feather/Lawson)
+- John pages 46-50: done (13265-13F89 gen 5/6 various)
+- John pages 51-147: pending
 
 ## Verification bugs found and fixed (2026-06-07 session)
 
