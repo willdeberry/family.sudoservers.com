@@ -3154,32 +3154,6 @@ ENTRIES.append({
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 4},
 })
 
-# === Bruce Deal's children (1233x — gen 5 from John) ===
-ENTRIES.append({
-    "code": "12331",
-    "name": "John Cornelius Deal",
-    "sex": "M",
-    "born": "10 Jul 1906",
-    "died": "31 Oct 1958",
-    "spouses": [{
-        "name": "Laura Edith Stone",
-        "born": "18 Feb 1907",
-        "died": "1 Sep 1986",
-        "married": "1 Nov 1930",
-        "details": "Daughter of James William and Clara Bell [Smith] Stone.",
-    }],
-    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 50},
-})
-
-ENTRIES.append({
-    "code": "12338",
-    "name": "Ray Glenn Deal",
-    "sex": "M",
-    "born": "23 Jan 1922",
-    "spouses": [{"name": "June Renee Kelly", "born": "26 Feb 1923", "married": "8 Aug 1946"}],
-    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 50},
-})
-
 # === Alexander A4 line (Louise Alida's grandkids/great-grandkids) ===
 ENTRIES.append({
     "code": "A411",
@@ -3211,8 +3185,10 @@ ENTRIES.append({
         "name": "Emma Elizabeth DeBerry",
         "born": "8 May 1916",
         "married": "31 Mar 1934",
-        "details": "Daughter of Oliver Martin (#1222) and Anna [Funk] DeBerry — same as #12241. "
-                   "Cross-link Alexander↔John via Cupp-DeBerry marriage.",
+        "details": "Per Alexander PDF: daughter of Oliver Martin DeBerry and Anna [Funk] DeBerry. "
+                   "Earlier dataset claimed this is #12241 but the John PDF clearly shows 12241 = "
+                   "Hazel Belle DeBerry (m. McNear). The Cupp-DeBerry cross-link is real but the "
+                   "exact John-side code needs reverification against the Alexander PDF.",
     }],
     "buried": "Haywood, CA",
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 6},
@@ -6240,6 +6216,660 @@ ENTRIES.append({
     "children": [
         {"code": "122481", "name": "Everett Dwight Wolfe", "born": "15 May 1936", "died": "9 Dec 1936", "flags": {"diedInInfancy": True}, "buried": "Mt. Moriah Cemetery, Valley Point, WV"},
         {"code": "122482", "name": "Jessie Allen Hornick", "born": "14 Apr 1943"},
+    ],
+})
+
+
+# === Pages 41-45 vision pass (2026-06-07): gen 5 DeBerry + Deal + Feather + 132x ===
+ENTRIES.append({
+    "code": "12249",
+    "name": "Arletta Lucille DeBerry",
+    "sex": "F",
+    "born": "11 Aug 1922",
+    "spouses": [{"name": "Fernando (Fred)(Fritz) Bernabei", "born": "18 Feb 1913", "died": "26 Dec 1973", "married": "25 Aug 1949"}],
+    "notes": "Adopted 30 Nov 1949 the children of Fritz and first wife Angelina Russo.",
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 41},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "122491", "name": "Lenna Italia Mary Bernabei", "born": "28 Jul 1941", "flags": {"adopted": True}},
+        {"code": "122492", "name": "Janice Margaret Mae Bernabei", "born": "13 Jul 1943", "flags": {"adopted": True}},
+        {"code": "122493", "name": "Arthur Umberto Charles Bernabei", "born": "31 Oct 1944", "flags": {"adopted": True}},
+        {"code": "122494", "name": "Lorraine Jestina Arletta Bernabei", "born": "3 Jan 1946", "flags": {"adopted": True}},
+    ],
+})
+
+ENTRIES.append({
+    "code": "1224A",
+    "name": "Albert Ray DeBerry",
+    "sex": "M",
+    "born": "8 Oct 1924",
+    "died": "20 Nov 1968",
+    "spouses": [{"name": "Lexie Jeanelle Cole", "born": "24 Feb 1927", "married": "1 Jun 1946"}],
+    "notes": "Killed in the Farmington #9 Mine explosion 20 Nov 1968. His body was removed 12 Jan 1971.",
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 41},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1224A1", "name": "Roger DeVaughn DeBerry", "born": "13 Apr 1947"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12311",
+    "name": "Laura Susan Deal",
+    "sex": "F",
+    "born": "28 Nov 1903",
+    "died": "6 Apr 1956",
+    "spouses": [{"name": "Joseph William Kelly", "born": "10 Sep 1896", "died": "13 Dec 1965", "married": "31 Jul 1931"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 41},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "123111", "name": "Jo Annabel Kelly", "born": "8 Jan 1930"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12312",
+    "name": "Elmer Deal",
+    "sex": "M",
+    "spouses": [{"name": "Bertha Irene Buron"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 41},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "123121", "name": "Jacklyn Deal"},
+        {"code": "123122", "name": "Judy Deal"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12322",
+    "name": "Henrietta Hoffman",
+    "sex": "F",
+    "spouses": [{"name": "Lester Keefover"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 41},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "123221", "name": "Cecil Keefover"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12331",
+    "name": "John Cornelius Deal",
+    "sex": "M",
+    "born": "10 Jul 1906",
+    "died": "31 Oct 1958",
+    "spouses": [{"name": "Laura Edith Stone", "born": "18 Feb 1907", "died": "1 Sep 1986", "married": "1 Nov 1930"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 41},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "123311", "name": "William Guy Deal", "born": "26 Nov 1931"},
+        {"code": "123312", "name": "Bruce Earl Deal", "born": "22 Oct 1936"},
+        {"code": "123313", "name": "Glenn Paul Deal", "born": "3 Aug 1941"},
+        {"code": "123314", "name": "Dale Allen Deal", "born": "5 May 1943"},
+        {"code": "123315", "name": "Everett Clyde Deal", "born": "28 Jun 1946"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12332",
+    "name": "Edna Faye Deal",
+    "sex": "F",
+    "born": "19 Dec 1907",
+    "died": "12 Jan 1955",
+    "buried": "Shady Grove Cemetery, WV",
+    "spouses": [{"name": "William Cyrus Shaffer", "born": "20 Mar 1906", "died": "28 Aug 1983", "married": "25 Nov 1925",
+                 "buried": "Shady Grove Cemetery, WV"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 41},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "123321", "name": "Dorothy Irene Shaffer", "born": "21 Feb 1926"},
+        {"code": "123322", "name": "Betty Jane Shaffer", "born": "16 Feb 1928"},
+        {"code": "123323", "name": "Grace Pearl Shaffer", "born": "19 Oct 1930"},
+        {"code": "123324", "name": "Mary Lou Shaffer", "born": "5 Nov 1933"},
+        {"code": "123325", "name": "Chester Junior Shaffer", "born": "11 Mar 1935"},
+        {"code": "123326", "name": "William Jackson Shaffer", "born": "22 Nov 1937"},
+        {"code": "123327", "name": "Glenn Dale Shaffer", "born": "3 Feb 1943", "died": "3 Feb 1943", "flags": {"diedInInfancy": True}},
+        {"code": "123328", "name": "Sharlett Shaffer", "born": "24 May 1944", "died": "3 Jun 1944", "flags": {"diedInInfancy": True}},
+        {"code": "123329", "name": "Joyce Elaine Shaffer", "born": "14 Sep 1946"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12333",
+    "name": "Carl Claude Deal",
+    "sex": "M",
+    "born": "5 May 1910",
+    "died": "3 Oct 1981",
+    "spouses": [{"name": "Alva Mildred Awman", "born": "2 Jul 1916", "married": "25 Sep 1937"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 41},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "123331", "name": "Charles Bruce Deal", "born": "1 Feb 1938", "died": "25 Jan 1956"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12334",
+    "name": "Hazel Lucy Deal",
+    "sex": "F",
+    "born": "4 Nov 1912",
+    "died": "21 Apr 1984",
+    "spouses": [{"name": "Lester Chester Livengood", "born": "10 Aug 1906", "died": "18 Jul 1972"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 42},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "123341", "name": "Wilma Jean Livengood", "born": "1 Mar 1932"},
+        {"code": "123342", "name": "Lester Ray Livengood", "born": "14 Jun 1935"},
+        {"code": "123343", "name": "Dorothy Marie Livengood", "born": "15 May 1937"},
+        {"code": "123344", "name": "Robert Glenn Livengood", "born": "15 Feb 1939"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12335",
+    "name": "Ralph Paul Deal",
+    "sex": "M",
+    "born": "3 Oct 1914",
+    "born_place": "Hazelton",
+    "died": "20 Mar 1994",
+    "spouses": [{"name": "Dorothy Lucille Seese", "born": "25 Feb 1917", "married": "Mar 1937"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 42},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "123351", "name": "Russell Ray Deal", "born": "18 Dec 1937"},
+        {"code": "123352", "name": "Junior Glen Deal", "born": "6 Jun 1945"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12338",
+    "name": "Ray Glenn Deal",
+    "sex": "M",
+    "born": "23 Jan 1922",
+    "spouses": [{"name": "June Renee Kelly", "born": "26 Feb 1923", "married": "8 Aug 1946"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 42},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "123381", "name": "Paul Franklin Deal", "born": "30 May 1947"},
+        {"code": "123382", "name": "Larry Guy Deal", "born": "17 Jun 1949"},
+        {"code": "123383", "name": "Donald Perry Deal", "born": "5 Mar 1952"},
+        {"code": "123384", "name": "Kay Marlene Deal", "born": "6 Dec 1958"},
+        {"code": "123385", "name": "Mark Cecil Deal", "born": "8 Jun 1962"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12341",
+    "name": "Gertrude Trembly",
+    "sex": "F",
+    "born": "12 Feb 1908",
+    "died": "21 Aug 1987",
+    "spouses": [
+        {"name": "George E. Grogg", "married": "25 Oct 1927", "order": 1},
+        {"name": "Alfred R. Sten", "married": "25 Jan 1946", "order": 2},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 42},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "123411", "name": "Carolyn", "flags": {"stepChild": True}},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12342",
+    "name": "Lillian Beatrice Tremble",
+    "sex": "F",
+    "born": "29 Mar 1912",
+    "spouses": [{"name": "Leo Kotchek", "born": "9 May 1918", "married": "23 Jun 1946"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 42},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "123421", "name": "Cynthia Louise Kotchek", "born": "25 Aug 1947"},
+        {"code": "123422", "name": "Patricia Lee Kotchek", "born": "9 Jun 1949"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12351",
+    "name": "Dempsey Ernest DeBerry",
+    "sex": "M",
+    "born": "25 Sep 1904",
+    "died": "20 Nov 1962",
+    "spouses": [{"name": "Vadna Merle Sisler", "born": "5 Jun 1912", "died": "2 Oct 1984"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 42},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "123511", "name": "Lillian Ruth DeBerry", "born": "11 Jan 1936"},
+        {"code": "123512", "name": "Janet Sue DeBerry"},
+        {"code": "123513", "name": "Nancy Kay DeBerry"},
+        {"code": "123514", "name": "Jack Dempsey DeBerry", "born": "4 Dec 1942"},
+        {"code": "123515", "name": "Don Everett DeBerry", "born": "11 May 1946"},
+        {"code": "123516", "name": "Karen Diane DeBerry"},
+        {"code": "123517", "name": "Duane Chester DeBerry"},
+        {"code": "123518", "name": "Rita Bevelyn DeBerry"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12352",
+    "name": "Gilbert Preseon DeBerry",
+    "sex": "M",
+    "born": "13 Jun 1907",
+    "died": "18 Aug 1968",
+    "spouses": [{"name": "Violetta Loraw", "born": "8 Jun 1910", "married": "17 Oct 1931"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 42},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "123521", "name": "Ronald Prentice DeBerry", "born": "29 Sep 1932"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12361",
+    "name": "Nellie Pauline Feather",
+    "sex": "F",
+    "born": "22 Sep 1907",
+    "born_place": "Albright, WV",
+    "spouses": [{"name": "Loren Dwight Wiles", "born": "10 Dec 1902", "born_place": "Aurora, WV", "married": "25 Jun 1927",
+                 "married_place": "Borghman, WV"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 42},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "123611", "name": "Loren Dwight Wiles, Jr.", "born": "1 Jul 1928"},
+        {"code": "123612", "name": "Elizabeth Rosalie Wiles", "born": "6 Jun 1933"},
+        {"code": "123613", "name": "Harold Gene Wiles", "born": "17 Jan 1943", "born_place": "Albright, WV"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12363",
+    "name": "Virgie Leda Feather",
+    "sex": "F",
+    "born": "25 Oct 1910",
+    "born_place": "Albright, WV",
+    "spouses": [{"name": "Loyal Dick Shirley", "born": "9 Mar 1909", "married": "25 Oct 1930", "married_place": "Oakland, MD"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 43},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "123631", "name": "Patricia Ann Shirley", "born": "22 Nov 1936"},
+        {"code": "123632", "name": "Elizabeth Sue Shirley", "born": "14 Dec 1941"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12364",
+    "name": "Rosalie Francine Feather",
+    "sex": "F",
+    "born": "23 Mar 1916",
+    "born_place": "Albright, WV",
+    "spouses": [{"name": "Samuel Edward Henry", "born": "5 Jan 1911", "married": "31 Dec 1938", "married_place": "Kingwood, WV"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 43},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "123641", "name": "William Edward Henry", "born": "19 Jul 1942"},
+        {"code": "123642", "name": "Sharon Kay Henry", "born": "13 Dec 1946"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12365",
+    "name": "Wilmeth Scott Feather",
+    "sex": "M",
+    "born": "24 Jun 1919",
+    "born_place": "Albright, WV",
+    "spouses": [{"name": "Maxine Alice Elliott", "born": "27 Apr 1922", "married": "11 Aug 1945", "married_place": "Hutton, MD"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 43},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "123651", "name": "Robert Lynn Feather", "born": "17 Dec 1945"},
+        {"code": "123652", "name": "Mary Ann Feather", "born": "30 May 1947"},
+        {"code": "123653", "name": "Ella Lee Feather", "born": "7 Sep 1949"},
+        {"code": "123654", "name": "Linda Joy Feather", "born": "27 May 1951"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12366",
+    "name": "Fred Lynn Feather",
+    "sex": "M",
+    "born": "23 Mar 1923",
+    "born_place": "Albright, WV",
+    "spouses": [{"name": "Mary Rebecca Keener", "born": "22 Oct 1922", "born_place": "Fairmont, WV"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 43},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "123661", "name": "Kathy Lynn Feather", "born": "6 Nov 1958"},
+        {"code": "123662", "name": "Mark Lee Feather", "born": "5 Oct 1962"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12371",
+    "name": "Kermit Walton Miller",
+    "sex": "M",
+    "born": "23 Aug 1911",
+    "spouses": [{"name": "Lora Burhl Harned", "born": "30 Jul 1913", "married": "13 May 1939"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 43},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "123711", "name": "Jon Max Miller", "born": "16 Oct 1939"},
+        {"code": "123712", "name": "Marvin Kay Miller", "born": "29 Apr 1945"},
+        {"code": "123713", "name": "Marion Fay Miller", "born": "29 Apr 1945"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12372",
+    "name": "Ruby Fern Miller",
+    "sex": "F",
+    "born": "5 Jul 1913",
+    "spouses": [{"name": "James A. Romano", "born": "2 Jan 1914", "married": "16 Oct 1940"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 43},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "123721", "name": "Mary Romano"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12373",
+    "name": "Emerson Scott Miller",
+    "sex": "M",
+    "born": "11 Jun 1918",
+    "spouses": [{"name": "Louise Shaw", "born": "2 Nov 1921", "married": "22 Nov 1945"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 43},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "123731", "name": "Mary Elizabeth Miller"},
+        {"code": "123732", "name": "Martha Sue Miller"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12381",
+    "name": "Evelyn Fern Liston",
+    "sex": "F",
+    "born": "6 Sep 1918",
+    "died": "29 Sep 1954",
+    "spouses": [{"name": "Charles R. Addis", "born": "1903", "died": "1984"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 43},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "123811", "name": "Walter F. Addis", "born": "1936", "died": "1937", "flags": {"diedInInfancy": True}},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12382",
+    "name": "Ralph Waldo Liston",
+    "sex": "M",
+    "born": "6 Dec 1920",
+    "spouses": [{"name": "Bessie Marie Nedrow", "born": "22 Dec 1919"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 43},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "123821", "name": "Judith Ann Liston"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "12412",
+    "name": "Blaine Messinger",
+    "sex": "M",
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 44},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "124121", "name": "Donna Lee Messinger"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "13212",
+    "name": "Elwood Herbert Guthrie",
+    "sex": "M",
+    "born": "8 Sep 1916",
+    "died": "25 Aug 1983",
+    "spouses": [
+        {"name": "Macie Mae Frazee", "died": "8 Dec 1982", "order": 1},
+        {"name": "Florence Fike", "order": 2},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 44},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "132121", "name": "Mary Ann Guthrie", "born": "1937"},
+        {"code": "132122", "name": "Judith Eileen (Judy) Guthrie", "born": "19 Dec 1954"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "13213",
+    "name": "Charles Ellis Guthrie",
+    "sex": "M",
+    "spouses": [{"name": "Delphine Fearer"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 44},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "132131", "name": "Kenneth Guthrie"},
+        {"code": "132132", "name": "James Guthrie"},
+        {"code": "132133", "name": "Frances Guthrie"},
+        {"code": "132134", "name": "Ralph V. Guthrie", "born": "1960", "died": "14 Jul 1979"},
+        {"code": "132135", "name": "Ernest Guthrie"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "13214",
+    "name": "Stanley Vernon Guthrie",
+    "sex": "M",
+    "born": "11 Sep 1920",
+    "died": "29 May 1978",
+    "buried": "Thomas Cemetery, Rt. 40, Markleysburg, PA",
+    "spouses": [{"name": "Ruth I. Conaway"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 44},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "132141", "name": "Candice Rae Guthrie"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "13215",
+    "name": "Rose Guthrie",
+    "sex": "F",
+    "born": "18 Jun 1927",
+    "died": "3 Feb 1996",
+    "spouses": [{"name": "Raymond Myers", "died": "11 Apr 1984"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 44},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "132151", "name": "Ruth Myers"},
+        {"code": "132152", "name": "Sandy Myers"},
+        {"code": "132153", "name": "Raymond Myers"},
+        {"code": "132154", "name": "Vickey Myers"},
+        {"code": "132155", "name": "Ronald M. Myers", "born": "23 Dec 1953", "died": "16 Jun 1954", "flags": {"diedInInfancy": True}},
+        {"code": "132156", "name": "Kieth Myers", "born": "1953"},
+        {"code": "132157", "name": "Marlene Margaret Myers"},
+        {"code": "132158", "name": "Shelly Myers"},
+        {"code": "132159", "name": "Erick Myers"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "13216",
+    "name": "Ralph Harold Guthrie",
+    "sex": "M",
+    "born": "4 Jan 1933",
+    "died": "27 Jul 1982",
+    "buried": "Parnell Cemetery",
+    "notes": "PDF says only 'Had Two Children'.",
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 44},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "13217",
+    "name": "Virginia Ruth Guthrie",
+    "sex": "F",
+    "born": "6 Oct 1939",
+    "died": "27 Sep 1987",
+    "spouses": [{"name": "Russell Ray Deal", "born": "18 Dec 1937", "details": "Same as #123351 — son of Ralph Paul Deal #12335."}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 44},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "132171", "name": "Debra Joyce Deal", "born": "27 Feb 1959"},
+        {"code": "132172", "name": "Pamela Deal"},
+        {"code": "132173", "name": "Randy Deal", "born": "7 Feb 1962"},
+        {"code": "132174", "name": "Michael (Mike) Ray Deal", "born": "25 May 1963"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "13218",
+    "name": "Connie Ellen Guthrie",
+    "sex": "F",
+    "born": "1 Oct 1944",
+    "spouses": [{"name": "Gary Ray Smith", "married": "12 Oct 1962", "details": "Same as #13C512 — son of Rena K. Guthrie (#13C5)."}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 44},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "132181", "name": "Gary Michael Smith"},
+        {"code": "132182", "name": "Tamara Lynn Smith", "born": "24 Dec 1966"},
+        {"code": "132183", "name": "Kimberly Ellen Smith", "born": "1 Nov 1969", "died": "2 Nov 1969", "flags": {"diedInInfancy": True}},
+    ],
+})
+
+ENTRIES.append({
+    "code": "13222",
+    "name": "Donna Mae Guthrie",
+    "sex": "F",
+    "born": "6 Aug 1897",
+    "died": "11 Mar 1995",
+    "spouses": [{"name": "Greeley Emerson Strawser", "born": "24 Jun 1897", "died": "29 Oct 1963", "married": "20 Aug 1920"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 45},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "132221", "name": "Geraldine Rita Strawser", "born": "29 May 1927"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "13223",
+    "name": "Clarence Ray Guthrie",
+    "sex": "M",
+    "born": "16 Feb 1902",
+    "died": "29 Jul 1971",
+    "buried": "Centenary Cemetery",
+    "spouses": [{"name": "Mary Mae Livengood", "born": "26 Mar 1906", "died": "7 May 1989", "buried": "Centenary Cemetery"}],
+    "notes": "PDF header is 'CLARENCE RAY GUTHRIE' but appears as Charles Ray elsewhere; using PDF header.",
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 45},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "132231", "name": "Hagan L. Guthrie", "born": "27 Mar 1930"},
+        {"code": "132232", "name": "Marlin Guthrie", "born": "20 Feb 1932"},
+        {"code": "132233", "name": "Audrey Jean Guthrie", "born": "20 Dec 1937"},
+        {"code": "132234", "name": "Wendell Ray Guthrie", "born": "21 Sep 1940"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "13224",
+    "name": "Edna Pauline Guthrie",
+    "sex": "F",
+    "born": "30 Jun 1914",
+    "died": "14 Jan 1997",
+    "spouses": [{"name": "John I. VanSickle", "born": "15 Aug 1912", "died": "4 Oct 1979"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 45},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "132241", "name": "Myron L. VanSickle", "born": "10 Jun 1941"},
+        {"code": "132242", "name": "Mark J. VanSickle", "born": "29 Aug 1951"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "13241",
+    "name": "Nora May Trembly",
+    "sex": "F",
+    "born": "18 May 1892",
+    "spouses": [{"name": "Clyde Epley", "married": "12 Oct 1912"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 45},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "132411", "name": "Clyde Epley, Jr."},
+    ],
+})
+
+ENTRIES.append({
+    "code": "13243",
+    "name": "Nellie Clove Trembly",
+    "sex": "F",
+    "born": "14 Feb 1895",
+    "spouses": [{"name": "Harold Wendell", "married": "16 Oct 1916"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 45},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "132431", "name": "Josephine Eleanor Wendell", "born": "8 Sep 1917"},
+        {"code": "132432", "name": "Betty Wendell"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "13261",
+    "name": "Chester Dotson Lawson",
+    "sex": "M",
+    "born": "29 Sep 1903",
+    "died": "27 Aug 1992",
+    "spouses": [{"name": "Faye Evelyn Rodeheaver", "born": "9 Nov 1908", "married": "30 Jul 1927"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 45},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "132611", "name": "Donley Blaine Lawson", "born": "18 Mar 1928"},
+        {"code": "132612", "name": "Gayle Owens Lawson", "born": "9 Oct 1930"},
+        {"code": "132613", "name": "Wahneta Jean Lawson", "born": "11 Jun 1935"},
+        {"code": "132614", "name": "Chester Kent Lawson", "born": "20 Nov 1949"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "13262",
+    "name": "Ralph H. Lawson",
+    "sex": "M",
+    "born": "26 Jan 1906",
+    "spouses": [{"name": "Lillian Ryland", "died": "22 Jun 1996"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 45},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "132621", "name": "Iris Lawson", "flags": {"diedInInfancy": True}},
+        {"code": "132622", "name": "Caroline Lawson", "born": "18 Nov 1941"},
+        {"code": "132623", "name": "Greg Lawson", "born": "8 Aug 1944"},
+        {"code": "132624", "name": "David Lawson", "born": "20 Nov 1947"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "13263",
+    "name": "Emma Evelyn Lawson",
+    "sex": "F",
+    "born": "13 Dec 1907",
+    "spouses": [{"name": "John Howard Kelly", "born": "7 Nov 1909", "died": "26 Oct 1974"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 45},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "132631", "name": "Phyllis Joann Kelly", "born": "28 Nov 1950"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "13264",
+    "name": "Everett Paul Lawson",
+    "sex": "M",
+    "born": "17 Jul 1911",
+    "spouses": [{"name": "Vivian Rosalie Reckart", "born": "15 May 1913"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 45},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "132641", "name": "Thomas Robert (Bobby) Lawson"},
+        {"code": "132642", "name": "Jackson Paul Lawson", "born": "29 Oct 1934"},
     ],
 })
 
@@ -10460,21 +11090,6 @@ ENTRIES.append({
 })
 
 ENTRIES.append({
-    'code': '123111',
-    'name': 'Jo Annab Kelly',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
-
-ENTRIES.append({
     'code': '1231112',
     'name': 'Joseph Eugene Feency',
     "source": {
@@ -10503,38 +11118,6 @@ ENTRIES.append({
         'lastChecked': None,
         'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
     },
-})
-
-ENTRIES.append({
-    'code': '123311',
-    'name': 'WGuv Deal',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
-
-ENTRIES.append({
-    'code': '123312',
-    'name': 'Bruce Earl Deal',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '22 Oct 1936',
-    'died': '12 Jan 1955',
 })
 
 ENTRIES.append({
@@ -10765,22 +11348,6 @@ ENTRIES.append({
 })
 
 ENTRIES.append({
-    'code': '123322',
-    'name': 'BJane ett Shaffer y',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '16 Feb 1928',
-})
-
-ENTRIES.append({
     'code': '1233231',
     'name': 'Danicl J',
     "source": {
@@ -10970,22 +11537,6 @@ ENTRIES.append({
 })
 
 ENTRIES.append({
-    'code': '123325',
-    'name': 'Chester Junior Shaffer',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '14 Jun 1933',
-})
-
-ENTRIES.append({
     'code': '1233252',
     'name': 'Deborah Kay Shaffer',
     "source": {
@@ -11016,23 +11567,6 @@ ENTRIES.append({
         'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
     },
     'born': '26 Apr 1986',
-})
-
-ENTRIES.append({
-    'code': '123326',
-    'name': 'William Jackson Shaffer',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '24 May 1944',
-    'died': '03 Feb 1943',
 })
 
 ENTRIES.append({
@@ -11122,45 +11656,6 @@ ENTRIES.append({
 })
 
 ENTRIES.append({
-    'code': '123329',
-    'name': 'Jo Elaine ve Shaffer',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '14 Sep 1946',
-    'died': '03 Oct 1981',
-    "spouses": [
-        {
-            'name': 'Lester Chester Livengood',
-            'married': '18 Jul 1972',
-        },
-    ],
-})
-
-ENTRIES.append({
-    'code': '123341',
-    'name': 'Wilma Jean Livengood',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '14 Jun 1935',
-})
-
-ENTRIES.append({
     'code': '1233511',
     'name': 'Debra Deal',
     "source": {
@@ -11191,191 +11686,6 @@ ENTRIES.append({
 })
 
 ENTRIES.append({
-    'code': '123382',
-    'name': 'Larr Y Guy Deal',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '13 Apr 1951',
-})
-
-ENTRIES.append({
-    'code': '123384',
-    'name': 'Kavy Marlene Deal',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '06 Dec 1958',
-})
-
-ENTRIES.append({
-    'code': '123385',
-    'name': 'Mark Cecil Deal',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '08 Jun 1962',
-})
-
-ENTRIES.append({
-    'code': '123422',
-    'name': 'Pa Lee Koichek',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '25 Sep 1904',
-    'died': '20 Nov 1962',
-    "spouses": [
-        {
-            'name': 'Vadna Merie Sisler',
-            'married': '05 Jun 1912',
-        },
-    ],
-})
-
-ENTRIES.append({
-    'code': '123512',
-    'name': 'Janet Suc DeB',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
-
-ENTRIES.append({
-    'code': '123514',
-    'name': 'Jack Dempsey DeB',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
-
-ENTRIES.append({
-    'code': '123515',
-    'name': 'Don Everett DeBerry',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '11 May 1946',
-})
-
-ENTRIES.append({
-    'code': '123517',
-    'name': 'Duane Chester DeBerry',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
-
-ENTRIES.append({
-    'code': '123518',
-    'name': 'RITA BEVELYN DeBERRY',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '11 Dec 1933',
-    "spouses": [
-        {
-            'name': 'Michael Fav CHILDREN',
-            'married': 'Sep 1932',
-        },
-    ],
-})
-
-ENTRIES.append({
-    'code': '123611',
-    'name': 'Loren Dwight Wiles',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
-
-ENTRIES.append({
-    'code': '123612',
-    'name': 'Eliz Rosalie Wiles',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '17 Jan 1943',
-})
-
-ENTRIES.append({
     'code': '1236123',
     'name': 'Joe Beth Fnend',
     "source": {
@@ -11398,133 +11708,6 @@ ENTRIES.append({
 })
 
 ENTRIES.append({
-    'code': '123632',
-    'name': 'Elizabeth Suc Shirley',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '23 Mar 1916',
-})
-
-ENTRIES.append({
-    'code': '123651',
-    'name': 'Robert Lynn Feather',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '17 Dec 1945',
-})
-
-ENTRIES.append({
-    'code': '123653',
-    'name': 'Ella Lee Feather',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '07 Sep 1949',
-})
-
-ENTRIES.append({
-    'code': '123654',
-    'name': 'Linda Joy Feather',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '27 May 1951',
-    'died': '13 Jun 1970',
-})
-
-ENTRIES.append({
-    'code': '123661',
-    'name': 'Kathy Lynn Feather',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '06 Nov 1958',
-})
-
-ENTRIES.append({
-    'code': '123662',
-    'name': 'Mark Lee Feathe',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
-
-ENTRIES.append({
-    'code': '123712',
-    'name': 'Marin Kav Miller',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
-
-ENTRIES.append({
-    'code': '123713',
-    'name': 'Ma Fay Miller',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '02 Jan 1914',
-})
-
-ENTRIES.append({
     'code': '1237132',
     'name': 'Lesa Jean Feather',
     "source": {
@@ -11543,21 +11726,6 @@ ENTRIES.append({
             'name': 'Kenneth Frazoc',
         },
     ],
-})
-
-ENTRIES.append({
-    'code': '124121',
-    'name': 'Donna Lee Messenger',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
 })
 
 ENTRIES.append({
@@ -11625,137 +11793,6 @@ ENTRIES.append({
 })
 
 ENTRIES.append({
-    'code': '132152',
-    'name': 'Sandy Myers',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '27 Aug 1971',
-})
-
-ENTRIES.append({
-    'code': '132156',
-    'name': 'Kieth Myers',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '1953',
-})
-
-ENTRIES.append({
-    'code': '132157',
-    'name': 'Maricne Margaret Myers',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
-
-ENTRIES.append({
-    'code': '132158',
-    'name': 'Shelly Myers',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
-
-ENTRIES.append({
-    'code': '132171',
-    'name': 'Deb Joyce Deal',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '27 Feb 1959',
-    "spouses": [
-        {
-            'name': 'Gienn ela Walls',
-        },
-    ],
-})
-
-ENTRIES.append({
-    'code': '132173',
-    'name': 'Randy Deal',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
-
-ENTRIES.append({
-    'code': '132174',
-    'name': 'Michael (Mike) Ray Deal',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '25 May 1963',
-})
-
-ENTRIES.append({
-    'code': '132182',
-    'name': 'Tamara Lynn Smith',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '24 Dec 1966',
-    'died': '02 Nov 1969',
-})
-
-ENTRIES.append({
     'code': '1321822',
     'name': 'Raellen Wittman',
     "source": {
@@ -11773,93 +11810,6 @@ ENTRIES.append({
         {
             'name': 'Rudolph Havnila',
             'married': 'Jan 1927',
-        },
-    ],
-})
-
-ENTRIES.append({
-    'code': '132221',
-    'name': 'Geraldme Rita Strawser',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '29 May 1927',
-})
-
-ENTRIES.append({
-    'code': '132231',
-    'name': 'Hagan L',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '27 Mar 1930',
-})
-
-ENTRIES.append({
-    'code': '132232',
-    'name': 'Marlin Guthnc',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '20 Feb 1932',
-})
-
-ENTRIES.append({
-    'code': '132233',
-    'name': 'Audrey Jean Guthrie',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '20 Dec 1937',
-})
-
-ENTRIES.append({
-    'code': '132234',
-    'name': 'We Ray Nd Guthrie Ell',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '21 Sep 1940',
-    'died': '01 Feb 1968',
-    "spouses": [
-        {
-            'name': 'Norma Friend',
-            'married': '46 Feb 1930',
         },
     ],
 })
@@ -11893,38 +11843,6 @@ ENTRIES.append({
         'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
     },
     'born': '23 Oct 1989',
-})
-
-ENTRIES.append({
-    'code': '132431',
-    'name': 'Josephine Eleanor Wendell',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '29 Sep 1903',
-})
-
-ENTRIES.append({
-    'code': '132611',
-    'name': 'Do Blaine nley Lawson',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '18 Mar 1928',
 })
 
 ENTRIES.append({
@@ -12010,22 +11928,6 @@ ENTRIES.append({
 })
 
 ENTRIES.append({
-    'code': '132612',
-    'name': 'Gayle Owens Lawson',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '09 Oct 1930',
-})
-
-ENTRIES.append({
     'code': '13261211',
     'name': 'Seth Augustus Lawson',
     "source": {
@@ -12039,50 +11941,6 @@ ENTRIES.append({
         'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
     },
     'born': '27 Dec 1982',
-})
-
-ENTRIES.append({
-    'code': '132613',
-    'name': 'Wahneta Jean Lawson',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '11 Jun 1935',
-    "spouses": [
-        {
-            'name': 'Wade Friend',
-        },
-    ],
-})
-
-ENTRIES.append({
-    'code': '132614',
-    'name': 'Ch Kent Lawson',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '26 Jan 1906',
-    'died': '22 Jun 1996',
-    "spouses": [
-        {
-            'name': 'Patricia Armstrong an RAL H',
-            'married': '26 Jan 1906',
-        },
-    ],
 })
 
 ENTRIES.append({
@@ -12108,60 +11966,6 @@ ENTRIES.append({
 })
 
 ENTRIES.append({
-    'code': '132622',
-    'name': 'Caroline Lawson',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
-
-ENTRIES.append({
-    'code': '132623',
-    'name': 'Greg Lawson',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '08 Aug 1944',
-})
-
-ENTRIES.append({
-    'code': '132624',
-    'name': 'David Lawson',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '20 Nov 1947',
-    'died': '26 Oct 1974',
-    "spouses": [
-        {
-            'name': 'John Howard Kelly',
-            'married': '26 Oct 1974',
-        },
-    ],
-})
-
-ENTRIES.append({
     'code': '1326241',
     'name': 'Alice Kay Lawson',
     "source": {
@@ -12178,48 +11982,6 @@ ENTRIES.append({
     "spouses": [
         {
             'name': 'Annabelle Sypolt',
-        },
-    ],
-})
-
-ENTRIES.append({
-    'code': '132631',
-    'name': 'Phyliss Joann Kelly',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '17 Jul 1911',
-    "spouses": [
-        {
-            'name': 'Vivian Rosalie Reckart',
-            'married': '15 May 1913',
-        },
-    ],
-})
-
-ENTRIES.append({
-    'code': '132641',
-    'name': 'Thomas Robert (Bobby) Lawson',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    "spouses": [
-        {
-            'name': 'Aanabelle Sypolt',
         },
     ],
 })
@@ -12286,28 +12048,6 @@ ENTRIES.append({
         'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
     },
     'born': '14 Jul 1982',
-})
-
-ENTRIES.append({
-    'code': '132642',
-    'name': 'Jackson Paul Lawson',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'died': '24 Feb 1975',
-    "spouses": [
-        {
-            'name': 'Freda M',
-            'married': '10 Apr 1979',
-        },
-    ],
 })
 
 ENTRIES.append({
