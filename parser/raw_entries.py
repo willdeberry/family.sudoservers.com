@@ -16291,11 +16291,11 @@ ENTRIES.append({
     "source": {"pdf": "Rachel_Guthrie - One Generation.pdf", "page": 1},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Husband son of James and Maragret Hamilton [Gills] Crawford"},
     "children": [
-        {"code": "61", "name": "Absalom G. Crawford", "born": "27 Jul 1842", "died": "19 Jan 1848"},
+        {"code": "61", "name": "Absalom G. Crawford", "born": "27 Jul 1842", "died": "19 Jan 1848", "verified_terminal": True},
         {"code": "62", "name": "Isabel Crawford"},
         {"code": "63", "name": "Rachel Jane Crawford", "born": "1847"},
-        {"code": "64", "name": "Virginia Crawford"},
-        {"code": "65", "name": "Mary Ann Crawford"},
+        {"code": "64", "name": "Virginia Crawford", "verified_terminal": True, "details": "m. William Gillis"},
+        {"code": "65", "name": "Mary Ann Crawford", "verified_terminal": True, "details": "m. Calvin Smith"},
     ],
 })
 
@@ -16307,10 +16307,10 @@ ENTRIES.append({
     "source": {"pdf": "Rachel_Guthrie - One Generation.pdf", "page": 1},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
     "children": [
-        {"code": "621", "name": "Allie Gillis"},
-        {"code": "622", "name": "James Gillis"},
-        {"code": "623", "name": "Lydia Gillis"},
-        {"code": "624", "name": "Maggie Gillis"},
+        {"code": "621", "name": "Allie Gillis", "verified_terminal": True},
+        {"code": "622", "name": "James Gillis", "verified_terminal": True},
+        {"code": "623", "name": "Lydia Gillis", "verified_terminal": True},
+        {"code": "624", "name": "Maggie Gillis", "verified_terminal": True},
     ],
 })
 
@@ -16326,6 +16326,36 @@ ENTRIES.append({
     "children": [
         {"code": "631", "name": "James Thomas", "died": "1952"},
         {"code": "632", "name": "Mary (Maggie) Thomas", "died": "1948"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "631",
+    "name": "James Thomas",
+    "sex": "M",
+    "died": "1952",
+    "spouses": [{"name": "Estelle Seese", "details": "sister of Bryce Seese"}],
+    "source": {"pdf": "Rachel_Guthrie - One Generation.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "6311", "name": "Paul Thomas", "verified_terminal": True},
+        {"code": "6312", "name": "Rachel Thomas", "verified_terminal": True},
+        {"code": "6313", "name": "Viola Thomas", "verified_terminal": True},
+        {"code": "6314", "name": "Fred Thomas", "verified_terminal": True, "flags": {"adopted": True}},
+    ],
+})
+
+ENTRIES.append({
+    "code": "632",
+    "name": "Mary (Maggie) Thomas",
+    "sex": "F",
+    "died": "1948",
+    "spouses": [{"name": "Albert Meyers", "details": "Meyers or Myers"}],
+    "source": {"pdf": "Rachel_Guthrie - One Generation.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "6321", "name": "Viola Meyers", "verified_terminal": True},
+        {"code": "6322", "name": "William Meyers", "verified_terminal": True, "flags": {"diedInInfancy": True}, "died": "in infancy"},
     ],
 })
 

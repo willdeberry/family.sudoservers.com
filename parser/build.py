@@ -342,16 +342,25 @@ def build():
                 "page": entry.get("source", {}).get("page"),
             })
             # Stubs from a parent's children list have NOT been directly
-            # verified — we've only seen this person's name+date listed
-            # under their parent's entry. Their own line in the PDF (with
-            # marriage, residence, children, death detail) has not been
-            # transcribed. They stay draft until someone reads their entry.
-            stub["verification"] = {
-                "status": "draft",
-                "source": "manual",
-                "lastChecked": None,
-                "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here.",
-            }
+            # verified UNLESS the children-list entry has the explicit flag
+            # `verified_terminal=True` — meaning the transcriber has read the
+            # source PDF page and confirmed the PDF says no more about this
+            # person than what's in the children list (i.e., no own-entry).
+            if child.get("verified_terminal"):
+                parent_v = entry.get("verification") or {"status": "verified", "source": "manual"}
+                stub["verification"] = {
+                    "status": "verified",
+                    "source": parent_v.get("source", "manual"),
+                    "lastChecked": parent_v.get("lastChecked"),
+                    "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data.",
+                }
+            else:
+                stub["verification"] = {
+                    "status": "draft",
+                    "source": "manual",
+                    "lastChecked": None,
+                    "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here.",
+                }
 
     # Sort child IDs by their lineage code so birth order is preserved
     pid_to_code = {pid: code for code, pid in code_to_pid.items()
