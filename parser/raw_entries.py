@@ -386,65 +386,8 @@ ENTRIES.append({
 })
 
 # === 2. WILLIAM GUTHRIE ===
-ENTRIES.append({
-    "code": "2",
-    "name": "William Guthrie",
-    "sex": "M",
-    "born": "10 Sep 1794",
-    "died": "12 Jul 1873",
-    "buried": "Shady Grove Cemetery",
-    "spouses": [{
-        "name": "Rebecca Jefferys",
-        "born": "9 Mar 1801",
-        "died": "15 Apr 1869",
-        "father": "Benjamin Jefferys",
-        "mother": "Elizabeth Smith Jefferys",
-        "buried": "Shady Grove Cemetery",
-    }],
-    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 1},
-    "children": [
-        {"code": "21", "name": "Ruth G. Guthrie", "born": "22 May 1838"},
-        {"code": "22", "name": "Eleanor Jane Guthrie", "born": "28 Aug 1840"},
-        {"code": "23", "name": "Elnor Guthrie", "born": "1841", "died": "1927"},
-        {"code": "24", "name": "Eugenus Guthrie", "born": "16 Mar 1844", "died": "24 Feb 1857"},
-    ],
-})
 
-ENTRIES.append({
-    "code": "21",
-    "name": "Ruth G. Guthrie",
-    "sex": "F",
-    "born": "22 May 1838",
-    "died": "6 Dec 1933",
-    "buried": "Shady Grove Cemetery",
-    "spouses": [{
-        "name": "Jonas Frankhouser",
-        "born": "20 Sep 1833",
-        "died": "3 Feb 1920",
-        "father": "Daniel Frankhouser",
-        "mother": "Elizabeth Moyers Frankhouser",
-        "buried": "Shady Grove Cemetery",
-    }],
-    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 1},
-})
 
-ENTRIES.append({
-    "code": "22",
-    "name": "Eleanor Jane Guthrie",
-    "sex": "F",
-    "born": "28 Aug 1840",
-    "died": "26 Nov 1913",
-    "died_alt": "1912",
-    "spouses": [{
-        "name": "Abner Gaines Harshbarger",
-        "born": "1836",
-        "died": "1919",
-        "father": "Jacob Harshbarger",
-        "mother": "Nancy Rankin Harshbarger",
-        "married": "27 Oct 1859",
-    }],
-    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 1},
-})
 
 # === 5. STEPHEN GUTHRIE ===
 ENTRIES.append({
@@ -517,53 +460,8 @@ ENTRIES.append({
 
 
 # === 6. RACHEL GUTHRIE ===
-ENTRIES.append({
-    "code": "6",
-    "name": "Rachel Guthrie",
-    "sex": "F",
-    "born": "16 Apr 1804",
-    "died": "28 Sep 1874",
-    "buried": "Shady Grove Cemetery",
-    "spouses": [{
-        "name": "James G. Crawford",
-        "born": "25 Jun 1815",
-        "died": "22 Feb 1902",
-        "father": "James Crawford",
-        "mother": "Maragret Hamilton (Gillis) Crawford",
-        "married": "1827",
-        "buried": "Shady Grove Cemetery",
-    }],
-    "source": {"pdf": "Rachel_Guthrie - One Generation.pdf", "page": 1},
-    "children": [
-        {"code": "61", "name": "Absalom G. Crawford", "born": "27 Jul 1842", "died": "19 Jan 1848", "flags": {"diedInInfancy": True}},
-        {"code": "62", "name": "Isabel Crawford"},
-        {"code": "63", "name": "Rachel Jane Crawford", "born": "1847"},
-        {"code": "64", "name": "Virginia Crawford"},
-        {"code": "65", "name": "Mary Ann Crawford"},
-    ],
-})
 
-ENTRIES.append({
-    "code": "62",
-    "name": "Isabel Crawford",
-    "sex": "F",
-    "spouses": [{"name": "Hamilton Gillis"}],
-    "source": {"pdf": "Rachel_Guthrie - One Generation.pdf", "page": 1},
-})
 
-ENTRIES.append({
-    "code": "63",
-    "name": "Rachel Jane Crawford",
-    "sex": "F",
-    "born": "1847",
-    "died": "28 Nov 1919",
-    "spouses": [{
-        "name": "William F. Thomas",
-        "born": "16 Apr 1853",
-        "died": "19 Feb 1930",
-    }],
-    "source": {"pdf": "Rachel_Guthrie - One Generation.pdf", "page": 1},
-})
 
 # === 7. JAMES GUTHRIE ===
 ENTRIES.append({
@@ -773,19 +671,6 @@ ENTRIES.append({
     "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 2},
 })
 
-ENTRIES.append({
-    "code": "8B",
-    "name": "William Nolan Guthrie",
-    "sex": "M",
-    "born": "27 Dec 1861",
-    "died": "30 Nov 1918",
-    "spouses": [{
-        "name": "Jennie Aiken",
-        "married": "10 Apr 1895",
-        "details": "Of Pittsburgh, PA.",
-    }],
-    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 2},
-})
 
 # === A. ALEXANDER B. GUTHRIE ===
 ENTRIES.append({
@@ -2973,26 +2858,8 @@ ENTRIES.append({
     "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 1},
 })
 
-ENTRIES.append({
-    "code": "825",
-    "name": "Jennie Harned",
-    "sex": "F",
-    "born": "6 Jun 1873",
-    "spouses": [{"name": "Edward Alexander", "born": "12 Mar 1872", "married": "10 May 1896"}],
-    "residences": ["Epping, ND"],
-    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 2},
-})
 
 # === James Marshall Guthrie (84, Absalom)'s children ===
-ENTRIES.append({
-    "code": "84",
-    "name": "James Marshall Guthrie",
-    "sex": "M",
-    "born": "20 May 1845",
-    "died": "7 Jan 1917",
-    "spouses": [{"name": "Elizabeth Jane Linton", "born": "26 Jan 1856", "married": "2 Nov 1875"}],
-    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 1},
-})
 
 ENTRIES.append({
     "code": "843",
@@ -16035,6 +15902,244 @@ ENTRIES.append({
 })
 
 
+# === Absalom + William + Rachel PDFs vision pass (2026-06-08): completes all small PDFs ===
+ENTRIES.append({
+    "code": "83",
+    "name": "Rachel Ann Guthrie",
+    "sex": "F",
+    "born": "11 Feb 1843",
+    "died": "27 Nov 1912",
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "84",
+    "name": "James Marshall Guthrie",
+    "sex": "M",
+    "born": "20 May 1845",
+    "died": "7 Jan 1917",
+    "spouses": [{"name": "Elizabeth Jane Linton", "born": "26 Jan 1856", "married": "2 Nov 1875"}],
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "841", "name": "Myrta Belle Guthrie", "born": "9 Feb 1877"},
+        {"code": "842", "name": "Harley Urias Guthrie", "born": "16 Jan 1879"},
+        {"code": "843", "name": "John Clyde Guthrie", "born": "11 Jun 1881"},
+        {"code": "844", "name": "Louisiana Guthrie", "born": "8 Sep 1886", "died": "in infancy", "flags": {"diedInInfancy": True}},
+        {"code": "845", "name": "Mellie Irene Guthrie", "born": "14 Aug 1888"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "8B",
+    "name": "William Nolan Guthrie",
+    "sex": "M",
+    "born": "27 Dec 1861",
+    "died": "30 Nov 1918",
+    "spouses": [{"name": "Jennie Aiken", "married": "10 Apr 1895"}],
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Wife from Pittsburgh, PA"},
+    "children": [
+        {"code": "8B1", "name": "Donald Spencer Guthrie", "born": "31 Jul 1901"},
+        {"code": "8B2", "name": "William Norman Guthrie", "born": "29 Oct 1908"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "812",
+    "name": "Ora Bell Guthrie",
+    "sex": "F",
+    "born": "18 Dec 1868",
+    "spouses": [{"name": "Edwin D. Frost", "born": "17 Apr 1865", "died": "2 Sep 1929", "married": "2 Oct 1889"}],
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "8121", "name": "Berlin Earl Frost", "born": "4 Apr 1898", "died": "7 Jan 1919"},
+        {"code": "8122", "name": "Mary Genevieve Frost", "born": "7 May 1904"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "825",
+    "name": "Jennie Harned",
+    "sex": "F",
+    "born": "6 Jun 1873",
+    "spouses": [{"name": "Edward Alexander", "born": "12 Mar 1872", "married": "10 May 1896"}],
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Lived in Epping, ND"},
+    "children": [
+        {"code": "8251", "name": "Walter Harned Alexander", "born": "16 Feb 1898"},
+        {"code": "8252", "name": "Mary Frances Alexander", "born": "9 Feb 1900"},
+        {"code": "8253", "name": "Charles Edward Alexander", "born": "2 Feb 1902"},
+        {"code": "8254", "name": "Ruth Alice Alexander", "born": "3 Dec 1904"},
+        {"code": "8255", "name": "Christine Mae Alexander", "born": "12 Jun 1906"},
+        {"code": "8256", "name": "Joseph William Alexander", "born": "12 May 1908"},
+        {"code": "8257", "name": "Alma V. Alexander", "born": "26 Jun 1910"},
+        {"code": "8258", "name": "Marjorie L. Alexander", "born": "6 Nov 1913"},
+        {"code": "8259", "name": "Claire Esther Alexander", "born": "13 Dec 1915"},
+        {"code": "825A", "name": "Jean Isabel Alexander", "born": "4 Aug 1919"},
+    ],
+})
+
+# William branch
+ENTRIES.append({
+    "code": "2",
+    "name": "William Guthrie",
+    "sex": "M",
+    "born": "10 Sep 1794",
+    "died": "12 Jul 1873",
+    "buried": "Shady Grove Cemetery",
+    "spouses": [{"name": "Rebecca Jefferys", "born": "9 Mar 1801", "died": "15 Apr 1869"}],
+    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Wife dau of Benjamin and Elizabeth (Smith) Jefferys"},
+    "children": [
+        {"code": "21", "name": "Ruth G. Guthrie", "born": "22 May 1838"},
+        {"code": "22", "name": "Eleanor Jane Guthrie", "born": "28 Aug 1840"},
+        {"code": "23", "name": "Elnor Guthrie", "born": "1841", "died": "1927"},
+        {"code": "24", "name": "Eugenus Guthrie", "born": "16 Mar 1844", "died": "24 Feb 1857"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "21",
+    "name": "Ruth G. Guthrie",
+    "sex": "F",
+    "born": "22 May 1838",
+    "died": "6 Dec 1933",
+    "spouses": [{"name": "Jonas Frankhouser", "born": "20 Sep 1833", "died": "3 Feb 1920"}],
+    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Husband son of Daniel and Elizabeth (Movers) Frankhouser"},
+    "children": [
+        {"code": "211", "name": "George Frankhouser", "died": "1945"},
+        {"code": "212", "name": "Wilbur Finley Frankhouser", "born": "12 Sep 1870"},
+        {"code": "213", "name": "Minnie P. Frankhouser", "born": "26 Jul 1873", "died": "25 Feb 1963"},
+        {"code": "214", "name": "Effie Jane Frankhouser"},
+        {"code": "215", "name": "Walter Frankhouser", "born": "19 Jan 1880"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "22",
+    "name": "Eleanor Jane Guthrie",
+    "sex": "F",
+    "born": "28 Aug 1840",
+    "died": "26 Nov 1913",
+    "spouses": [{"name": "Abner Gaines Harshbarger", "born": "1836", "died": "1919", "married": "27 Oct 1859"}],
+    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Husband son of Jacob and Nancy (Rankin) Harshbarger"},
+    "children": [
+        {"code": "221", "name": "Felicia Irene Harshbarger", "born": "16 Dec 1860"},
+        {"code": "222", "name": "William Asbury Harshbarger", "born": "1 Sep 1862"},
+        {"code": "223", "name": "Emma Rebecca Harshbarger", "born": "1864"},
+        {"code": "224", "name": "Isaac Hebron Harshbarger", "born": "11 Oct 1866"},
+        {"code": "225", "name": "Jeremiah Wesley Harshbarger", "born": "29 Nov 1870", "died": "1 Feb 1872"},
+        {"code": "226", "name": "George Crosfield Harshbarger", "born": "18 Dec 1878"},
+        {"code": "227", "name": "Jennie Lavina Harshbarger", "born": "18 May 1883", "died": "15 May 1974"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "212",
+    "name": "Wilber Finley Frankhouser",
+    "sex": "M",
+    "born": "12 Sep 1870",
+    "died": "11 Mar 1957",
+    "spouses": [{"name": "(Dot) Malinda Jane Mosser", "born": "1 Apr 1871", "died": "22 Feb 1961"}],
+    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "2121", "name": "Ometa Blanch Frankhouser", "born": "3 Mar 1905", "died": "11 Sep 1905"},
+        {"code": "2122", "name": "Carl Frankhouser"},
+        {"code": "2123", "name": "Chester Frankhouser"},
+        {"code": "2124", "name": "Iva Frankhouser"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "222",
+    "name": "William Asbury Harshbarger",
+    "sex": "M",
+    "born": "1 Sep 1862",
+    "died": "17 Jul 1942",
+    "spouses": [{"name": "Lucy Platt", "born": "16 Aug 1866", "died": "27 Jul 1953", "married": "22 Jun 1888"}],
+    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Dr Harshbarger was a math professor at Washburn College, Topeka, KS for 50 yrs"},
+    "children": [
+        {"code": "2221", "name": "Eugene Lee Harshbarger", "born": "12 Dec 1889"},
+        {"code": "2222", "name": "Frank Victor Harshbarger", "born": "23 Oct 1893"},
+        {"code": "2223", "name": "Ralph Platt Harshbarger", "died": "in infancy", "flags": {"diedInInfancy": True}},
+        {"code": "2224", "name": "Ray Stratton Harshbarger", "born": "24 Jul 1903", "died": "7 Jul 1955"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "226",
+    "name": "George Crosfield Harshbarger",
+    "sex": "M",
+    "born": "18 Dec 1878",
+    "spouses": [{"name": "Olive Twig"}],
+    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Lived in South Cumberland, MD"},
+    "children": [
+        {"code": "2261", "name": "Eleanor Harshbarger"},
+        {"code": "2262", "name": "Mary Louise Harshbarger", "born": "17 Apr 1913"},
+        {"code": "2263", "name": "William Lee Harshbarger", "born": "24 Jun 1915"},
+        {"code": "2264", "name": "Emma Lucille Harshbarger"},
+    ],
+})
+
+# Rachel branch
+ENTRIES.append({
+    "code": "6",
+    "name": "Rachel Guthrie",
+    "sex": "F",
+    "born": "16 Apr 1804",
+    "died": "28 Sep 1874",
+    "buried": "Shady Grove Cemetery",
+    "spouses": [{"name": "James G. Crawford", "born": "25 Jun 1815", "died": "22 Feb 1902", "married": "1827"}],
+    "source": {"pdf": "Rachel_Guthrie - One Generation.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Husband son of James and Maragret Hamilton [Gills] Crawford"},
+    "children": [
+        {"code": "61", "name": "Absalom G. Crawford", "born": "27 Jul 1842", "died": "19 Jan 1848"},
+        {"code": "62", "name": "Isabel Crawford"},
+        {"code": "63", "name": "Rachel Jane Crawford", "born": "1847"},
+        {"code": "64", "name": "Virginia Crawford"},
+        {"code": "65", "name": "Mary Ann Crawford"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "62",
+    "name": "Isabel Crawford",
+    "sex": "F",
+    "spouses": [{"name": "Hamilton Gillis"}],
+    "source": {"pdf": "Rachel_Guthrie - One Generation.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "621", "name": "Allie Gillis"},
+        {"code": "622", "name": "James Gillis"},
+        {"code": "623", "name": "Lydia Gillis"},
+        {"code": "624", "name": "Maggie Gillis"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "63",
+    "name": "Rachel Jane Crawford",
+    "sex": "F",
+    "born": "1847",
+    "died": "28 Nov 1919",
+    "spouses": [{"name": "William F. Thomas", "born": "16 Apr 1853", "died": "19 Feb 1930"}],
+    "source": {"pdf": "Rachel_Guthrie - One Generation.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "631", "name": "James Thomas", "died": "1952"},
+        {"code": "632", "name": "Mary (Maggie) Thomas", "died": "1948"},
+    ],
+})
+
+
 # === Stephen PDF pages 1-6 vision pass (2026-06-08): full branch detail ===
 ENTRIES.append({
     "code": "5A",
@@ -19391,27 +19496,6 @@ ENTRIES.append({
 
 
 # === Drafts extracted from william.txt by draft_from_ocr.py ===
-ENTRIES.append({
-    'code': '212',
-    'name': 'Wilbur Finley Frankhouser',
-    "source": {
-        'pdf': 'William_Guthrie - One Generation.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '12 Sep 1870',
-    'died': '25 Feb 1963',
-    "spouses": [
-        {
-            'name': 'T. W',
-        },
-    ],
-})
 
 ENTRIES.append({
     'code': '2121',
@@ -19482,28 +19566,6 @@ ENTRIES.append({
     'died': '26 Nov 1913',
 })
 
-ENTRIES.append({
-    'code': '222',
-    'name': 'William Asbury Harshbarger',
-    "source": {
-        'pdf': 'William_Guthrie - One Generation.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '16 Aug 1866',
-    'died': '17 Jul 1942',
-    "spouses": [
-        {
-            'name': 'Wilma Perry Ralph Platt Harshbar',
-            'married': '24 Jul 1903',
-        },
-    ],
-})
 
 ENTRIES.append({
     'code': '22211',

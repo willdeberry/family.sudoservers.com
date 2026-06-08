@@ -1,14 +1,15 @@
 # Project status
 
-Last updated: 2026-06-08 (John PDF complete — all 147 pages vision-verified)
+Last updated: 2026-06-08 (ALL 7 PDFs complete — 204 pages vision-verified)
 
 ## What exists
 
-- 3448 people in `data/people.json`, generated from `parser/raw_entries.py`
-- All 7 sibling branches present, structure largely complete
-- 12 cross-branch marriages with dedup working (see SEE_REFS in raw_entries.py)
+- 3767 people in `data/people.json`, generated from `parser/raw_entries.py`
+- All 7 sibling branches present and fully detailed
+- 12+ cross-branch marriages with dedup working (see SEE_REFS in raw_entries.py)
 - Tree depth: 8 generations from inferred founder (code `0`)
-- Verification status: 1076 verified (84 manual + 992 vision), 2372 draft (31% verified)
+- Vision verification of all 7 source PDFs complete (John 147pp, James 32pp,
+  Alexander 11pp, Stephen 6pp, Absalom 4pp, William 3pp, Rachel 1pp = 204pp)
 
 ## Verification pass currently in progress
 
@@ -33,10 +34,16 @@ parent's children list provides clean basic data.
 - John pages 61-65: done (Appleby/McKenzie/Moyers/Nicola gen 6)
 - John pages 66-70: done (164/166 Harshbarger + 17xx Spiker/Guthrie gen 6)
 - John pages 71-75: done (Guthrie/Bartholomew/Friend/Freeman gen 6)
-- John pages 76-147: done (all remaining gen 6-8 entries; John PDF complete 2026-06-08)
+- John pages 76-147: done
+- James pages 1-32: done (Barnes/Guthrie gen 3-7 with cross-branch refs)
+- Alexander pages 1-11: done (Frankhouser/Cupp/Romesburg/Evans through gen 6)
+- Stephen pages 1-6: done (full branch — Bishop/Frankhouser/Guthrie)
+- Absalom pages 1-4: done (Harned/Alexander/Hardesty)
+- William pages 1-3: done (Frankhouser/Harshbarger families)
+- Rachel page 1: done (Crawford/Gillis/Thomas)
 
-Next: James PDF (32 pages), then Alexander (11), Stephen (6), Absalom (4),
-William (3), Rachel (1).
+Verification of all PDFs is complete. Remaining work is data quality
+improvements and the website experience.
 
 ## Verification bugs found and fixed (2026-06-07 session)
 
