@@ -16118,6 +16118,205 @@ ENTRIES.append({
 })
 
 
+# === Alexander PDF pages 1-6 vision pass (2026-06-08): A founder + gen 2-4 detail ===
+
+ENTRIES.append({
+    "code": "A23",
+    "name": "Lindley (Lynn) David Guthrie",
+    "sex": "M",
+    "born": "4 Apr 1873",
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Lived with brother Abner"},
+})
+
+ENTRIES.append({
+    "code": "A31",
+    "name": "John H. Romesburg",
+    "sex": "M",
+    "spouses": [{"name": "Myrtle"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A311", "name": "Millie R. Romesburg"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A33",
+    "name": "Lewis F. Romesburg",
+    "sex": "M",
+    "died": "25 Mar 1952",
+    "spouses": [{"name": "Elizabeth"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "A34",
+    "name": "Nicolas O. Romesburg",
+    "sex": "M",
+    "died": "23 Dec 1953",
+    "spouses": [{"name": "Jessie Kennedy", "died": "20 Mar 1952"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A341", "name": "Ellen Romesburg"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A36",
+    "name": "Martha Romesburg",
+    "sex": "F",
+    "born": "1873",
+    "died": "1928",
+    "spouses": [{"name": "J.E. Williams", "died": "1951"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "A37",
+    "name": "Bruce S. Romesburg",
+    "sex": "M",
+    "born": "20 May 1875",
+    "died": "4 Dec 1957",
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "A38",
+    "name": "Mary Alice Romesburg",
+    "sex": "F",
+    "born": "29 Aug 1876",
+    "died": "23 Jan 1971",
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "A39",
+    "name": "Charles K. Romesburg",
+    "sex": "M",
+    "born": "12 Jun 1882",
+    "died": "15 Dec 1962",
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "A3A",
+    "name": "Persis Ann Romesburg",
+    "sex": "F",
+    "born": "23 Apr 1885",
+    "died": "18 Mar 1977",
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "A3C",
+    "name": "Robert P. Romesburg",
+    "sex": "M",
+    "born": "9 Feb 1888",
+    "died": "2 Jul 1953",
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+
+
+
+ENTRIES.append({
+    "code": "A413",
+    "name": "Edna Frankhouser",
+    "sex": "F",
+    "born": "16 Jan 1900",
+    "died": "30 Nov 1983",
+    "spouses": [
+        {"name": "John Springer Clark", "order": 1},
+        {"name": "Dennis Hurley", "order": 2},
+    ],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 6},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A4131", "name": "John Springer Clark, Jr.", "born": "22 Dec 1920"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A414",
+    "name": "Henry Andrew Frankhouser",
+    "sex": "M",
+    "born": "1907",
+    "died": "1970",
+    "spouses": [{"name": "Cecelia Bonchosky", "born": "1905", "died": "1974"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 6},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A4141", "name": "Rita Frankhouser"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A415",
+    "name": "Guy Frankhouser",
+    "sex": "M",
+    "born": "22 Apr 1911",
+    "died": "30 May 1972",
+    "spouses": [{"name": "Frances V. Pence", "born": "12 Nov 1913", "died": "17 Jul 1982"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 6},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A4151", "name": "Geraldine Lorraine Frankhouser", "born": "26 Apr 1933"},
+        {"code": "A4152", "name": "Thomas Lee Frankhouser", "born": "6 Apr 1934"},
+        {"code": "A4153", "name": "Lawrence Emmer Frankhouser", "born": "27 Jun 1938"},
+        {"code": "A4154", "name": "Francis G. Frankhouser", "born": "22 Sep 1939"},
+        {"code": "A4155", "name": "Donald D. Frankhouser", "born": "30 Jul 1942"},
+    ],
+})
+
+
+ENTRIES.append({
+    "code": "A455",
+    "name": "Robert Eugene Cupp",
+    "sex": "M",
+    "born": "31 Jan 1915",
+    "spouses": [
+        {"name": "Hazel Harned", "order": 1},
+        {"name": "June (Herring) Hileman", "born": "3 Apr 1923", "married": "15 Oct 1950", "order": 2},
+    ],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 6},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A4551", "name": "Ronald Eugene Cupp", "born": "8 Jun 1940"},
+    ],
+})
+
+
+ENTRIES.append({
+    "code": "AB2",
+    "name": "Ruby Pearl Guthrie",
+    "sex": "F",
+    "born": "18 Jan 1893",
+    "died": "18 Oct 1979",
+    "spouses": [
+        {"name": "Hosea Meyers", "born": "21 Sep 1892", "died": "7 Dec 1924", "order": 1},
+        {"name": "Edwin Ross Evans", "born": "14 Jul 1879", "died": "13 Aug 1964", "order": 2},
+    ],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "AB21", "name": "Vesty D. Meyers"},
+        {"code": "AB22", "name": "Massereen Evans"},
+        {"code": "AB23", "name": "Wanda M. Evans"},
+        {"code": "AB24", "name": "Stanley Regis Evans"},
+        {"code": "AB25", "name": "Infant Son"},
+    ],
+})
+
+
 # === James PDF pages 27-32 vision pass (2026-06-08): gen 7 grandchildren (Blankenship/Wotring/Dailey/Forman/Teets/Cuppett/Walls/Wolfe/Kisner/Reckart/Everly/Simpson/Thomas/Schutzendorf/Slavins/Robichaud) ===
 ENTRIES.append({
     "code": "713111",
@@ -20026,21 +20225,6 @@ ENTRIES.append({
     'died': '09 May 1978',
 })
 
-ENTRIES.append({
-    'code': 'A415',
-    'name': 'GUY FRANKb',
-    "source": {
-        'pdf': 'Alexander_Guthrie - Five Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '12 Nov 1913',
-})
 
 ENTRIES.append({
     'code': 'A41524',
@@ -20525,28 +20709,6 @@ ENTRIES.append({
     'born': '06 Jun 1950',
 })
 
-ENTRIES.append({
-    'code': 'AB2',
-    'name': 'Ruby Pearl Guthrie',
-    "source": {
-        'pdf': 'Alexander_Guthrie - Five Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '18 Jan 1893',
-    'died': '18 Oct 1979',
-    "spouses": [
-        {
-            'name': 'Edwin Ross Evans',
-            'married': '14 Jul 1879',
-        },
-    ],
-})
 
 ENTRIES.append({
     'code': 'AB21',
