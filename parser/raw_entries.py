@@ -197,6 +197,12 @@ SEE_REFS = [
     {"codes": ["74721", "162221"], "reason": "Doyle Wayne Long — cross-coded (third code)"},
     {"codes": ["7482", "17282"], "reason": "Thelma Pearl Guthrie — James/John cross"},
     {"codes": ["7483", "17283"], "reason": "Alice Mae Guthrie — James/John cross"},
+
+    # Fifth pass — no-date drafts matched by unambiguous normalized name
+    {"codes": ["1233512", "132172"], "reason": "Pamela Deal — cross-marriage"},
+    {"codes": ["172722", "162222"], "reason": "Nolan Wade Long — Stella Guthrie's grandson"},
+    {"codes": ["74144", "172144"], "reason": "Dortha Jean McNair — James/John cross"},
+    {"codes": ["A4565", "13F725"], "reason": "Charles Wesley Cupp — Alexander/John cross"},
 ]
 
 # ---------------------------------------------------------------------------
@@ -21128,20 +21134,6 @@ ENTRIES.append({
     'born': '26 Jun 1978',
 })
 
-ENTRIES.append({
-    'code': 'A4565',
-    'name': 'Charles Wesley Cupp',
-    "source": {
-        'pdf': 'Alexander_Guthrie - Five Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
 
 ENTRIES.append({
     'code': 'A45652',
@@ -21533,20 +21525,6 @@ ENTRIES.append({
     },
 })
 
-ENTRIES.append({
-    'code': '74144',
-    'name': 'Dortha Jean McNair',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
 
 ENTRIES.append({
     'code': '741456',
@@ -22225,20 +22203,6 @@ ENTRIES.append({
     },
 })
 
-ENTRIES.append({
-    'code': '1233512',
-    'name': 'Pamela Deal',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
 
 ENTRIES.append({
     'code': '1236123',
@@ -24903,20 +24867,6 @@ ENTRIES.append({
 
 
 
-ENTRIES.append({
-    'code': '172722',
-    'name': 'Nolan Wade Long',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
 
 ENTRIES.append({
     'code': '172723',
