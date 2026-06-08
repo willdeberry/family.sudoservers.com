@@ -16425,8 +16425,8 @@ ENTRIES.append({
     "children": [
         {"code": "21", "name": "Ruth G. Guthrie", "born": "22 May 1838"},
         {"code": "22", "name": "Eleanor Jane Guthrie", "born": "28 Aug 1840"},
-        {"code": "23", "name": "Elnor Guthrie", "born": "1841", "died": "1927"},
-        {"code": "24", "name": "Eugenus Guthrie", "born": "16 Mar 1844", "died": "24 Feb 1857"},
+        {"code": "23", "name": "Elnor Guthrie", "born": "1841", "died": "1927", "verified_terminal": True},
+        {"code": "24", "name": "Eugenus Guthrie", "born": "16 Mar 1844", "died": "24 Feb 1857", "verified_terminal": True},
     ],
 })
 
@@ -16440,10 +16440,10 @@ ENTRIES.append({
     "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 1},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Husband son of Daniel and Elizabeth (Movers) Frankhouser"},
     "children": [
-        {"code": "211", "name": "George Frankhouser", "died": "1945"},
+        {"code": "211", "name": "George Frankhouser", "died": "1945", "verified_terminal": True},
         {"code": "212", "name": "Wilbur Finley Frankhouser", "born": "12 Sep 1870"},
-        {"code": "213", "name": "Minnie P. Frankhouser", "born": "26 Jul 1873", "died": "25 Feb 1963"},
-        {"code": "214", "name": "Effie Jane Frankhouser"},
+        {"code": "213", "name": "Minnie P. Frankhouser", "born": "26 Jul 1873", "died": "25 Feb 1963", "verified_terminal": True, "details": "m. T. W. Kinnan"},
+        {"code": "214", "name": "Effie Jane Frankhouser", "verified_terminal": True, "details": "m. 27 Jan 1904 to Silas Beerbower"},
         {"code": "215", "name": "Walter Frankhouser", "born": "19 Jan 1880"},
     ],
 })
@@ -16458,13 +16458,13 @@ ENTRIES.append({
     "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 1},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Husband son of Jacob and Nancy (Rankin) Harshbarger"},
     "children": [
-        {"code": "221", "name": "Felicia Irene Harshbarger", "born": "16 Dec 1860"},
+        {"code": "221", "name": "Felicia Irene Harshbarger", "born": "16 Dec 1860", "verified_terminal": True, "details": "m. 1905 to Simon S. Hartman"},
         {"code": "222", "name": "William Asbury Harshbarger", "born": "1 Sep 1862"},
         {"code": "223", "name": "Emma Rebecca Harshbarger", "born": "1864"},
         {"code": "224", "name": "Isaac Hebron Harshbarger", "born": "11 Oct 1866"},
-        {"code": "225", "name": "Jeremiah Wesley Harshbarger", "born": "29 Nov 1870", "died": "1 Feb 1872"},
+        {"code": "225", "name": "Jeremiah Wesley Harshbarger", "born": "29 Nov 1870", "died": "1 Feb 1872", "verified_terminal": True},
         {"code": "226", "name": "George Crosfield Harshbarger", "born": "18 Dec 1878"},
-        {"code": "227", "name": "Jennie Lavina Harshbarger", "born": "18 May 1883", "died": "15 May 1974"},
+        {"code": "227", "name": "Jennie Lavina Harshbarger", "born": "18 May 1883", "died": "15 May 1974", "verified_terminal": True, "details": "b. at Tunnelton, WV"},
     ],
 })
 
@@ -16478,10 +16478,36 @@ ENTRIES.append({
     "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 1},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
     "children": [
-        {"code": "2121", "name": "Ometa Blanch Frankhouser", "born": "3 Mar 1905", "died": "11 Sep 1905"},
-        {"code": "2122", "name": "Carl Frankhouser"},
-        {"code": "2123", "name": "Chester Frankhouser"},
+        {"code": "2121", "name": "Ometa Blanch Frankhouser", "born": "3 Mar 1905", "died": "11 Sep 1905", "verified_terminal": True},
+        {"code": "2122", "name": "Carl Frankhouser", "verified_terminal": True},
+        {"code": "2123", "name": "Chester Frankhouser", "verified_terminal": True},
         {"code": "2124", "name": "Iva Frankhouser"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "215",
+    "name": "Walter C. Frankhouser",
+    "sex": "M",
+    "born": "19 Jan 1880",
+    "died": "3 May 1958",
+    "spouses": [{"name": "Lula P. Younkin", "born": "30 Nov 1886", "died": "23 Nov 1935"}],
+    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Wife dau of Winfield Scott and Henrietta Younkin"},
+    "children": [
+        {"code": "2151", "name": "Scott Frankhouser", "born": "22 Sep 1911", "died": "22 Sep 1911", "verified_terminal": True, "flags": {"diedInInfancy": True}},
+    ],
+})
+
+ENTRIES.append({
+    "code": "2124",
+    "name": "Iva Frankhouser",
+    "sex": "F",
+    "spouses": [{"name": "James R. Griffith", "born": "26 Jan 1887", "died": "2 Feb 1977", "details": "son of Andrew and Mariah [Barbour] Griffin"}],
+    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "21241", "name": "Doris Frankhouser", "verified_terminal": True, "details": "m. Wilbur Dale Hartley"},
     ],
 })
 
@@ -16497,8 +16523,38 @@ ENTRIES.append({
     "children": [
         {"code": "2221", "name": "Eugene Lee Harshbarger", "born": "12 Dec 1889"},
         {"code": "2222", "name": "Frank Victor Harshbarger", "born": "23 Oct 1893"},
-        {"code": "2223", "name": "Ralph Platt Harshbarger", "died": "in infancy", "flags": {"diedInInfancy": True}},
-        {"code": "2224", "name": "Ray Stratton Harshbarger", "born": "24 Jul 1903", "died": "7 Jul 1955"},
+        {"code": "2223", "name": "Ralph Platt Harshbarger", "died": "in infancy", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "2224", "name": "Ray Stratton Harshbarger", "born": "24 Jul 1903", "died": "7 Jul 1955", "verified_terminal": True, "details": "m. Rachel Scott, b. 24 Dec 1900"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "223",
+    "name": "Emma Rebecca Harshbarger",
+    "sex": "F",
+    "born": "1864",
+    "died": "May 1935",
+    "spouses": [{"name": "J. Hood Whetsell", "died": "1945"}],
+    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "2231", "name": "Mabelle (Mable) Whetsell", "verified_terminal": True, "details": "m. Arthur T. Hopwood; lived in Morgantown, WV"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "224",
+    "name": "Isaac Hebron (Heb) Harshbarger",
+    "sex": "M",
+    "born": "11 Oct 1866",
+    "died": "20 Mar 1936",
+    "died_place": "Jacksonville, FL",
+    "occupation": "Railroad mail clerk",
+    "spouses": [{"name": "Hattie Derring"}],
+    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "2241", "name": "Helen Harshbarger", "verified_terminal": True},
     ],
 })
 
@@ -16514,7 +16570,189 @@ ENTRIES.append({
         {"code": "2261", "name": "Eleanor Harshbarger"},
         {"code": "2262", "name": "Mary Louise Harshbarger", "born": "17 Apr 1913"},
         {"code": "2263", "name": "William Lee Harshbarger", "born": "24 Jun 1915"},
-        {"code": "2264", "name": "Emma Lucille Harshbarger"},
+        {"code": "2264", "name": "Emma Lucille Harshbarger", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "2221",
+    "name": "Eugene Lee Harshbarger",
+    "sex": "M",
+    "born": "12 Dec 1889",
+    "died": "14 Jun 1965",
+    "spouses": [{"name": "Thirza"}],
+    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "22211", "name": "Eugene Lee Harshbarger, Jr."},
+        {"code": "22212", "name": "Carolyn Harshbarger"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "2222",
+    "name": "Frank Victor Harshbarger",
+    "sex": "M",
+    "born": "23 Oct 1893",
+    "died": "1 Apr 1944",
+    "spouses": [{"name": "Wilma Perry", "born": "12 Jan 1896", "died": "11 Jan 1985"}],
+    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "22221", "name": "Frank Victor Harshbarger, Jr.", "born": "1 Nov 1923"},
+        {"code": "22222", "name": "Marjorie Harshbarger", "born": "13 Feb 1930"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "2261",
+    "name": "Eleanor Harshbarger",
+    "sex": "F",
+    "spouses": [{"name": "Douglas Stevans"}],
+    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "22611", "name": "Patricia", "verified_terminal": True},
+        {"code": "22612", "name": "Charles", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "2262",
+    "name": "Mary Louise Harshbarger",
+    "sex": "F",
+    "born": "17 Apr 1913",
+    "spouses": [
+        {"name": "Paul Brower", "order": 1},
+        {"name": "George Keller", "order": 2},
+    ],
+    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "22621", "name": "Karen Lee Brower", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "2263",
+    "name": "William Lee Harshbarger",
+    "sex": "M",
+    "born": "24 Jun 1915",
+    "spouses": [{"name": "Mary", "born": "9 Dec 1914"}],
+    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "22631", "name": "James William Harshbarger", "born": "18 Oct 1941", "verified_terminal": True},
+        {"code": "22632", "name": "George Harshbarger", "born": "31 May 1944", "verified_terminal": True, "details": "m. Margaret"},
+        {"code": "22633", "name": "Anne Harshbarger", "born": "4 Dec 1947"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "22211",
+    "name": "Eugene Lee Harshbarger, Jr.",
+    "sex": "M",
+    "spouses": [{"name": "Gladys"}],
+    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "222111", "name": "Douglas Harshbarger", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "22212",
+    "name": "Carolyn Harshbarger",
+    "sex": "F",
+    "spouses": [{"name": "A. B. C. (Gus) Johns"}],
+    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "222121", "name": "Elizabeth Thirza Johns", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "22221",
+    "name": "Frank Victor Harshbarger, Jr.",
+    "sex": "M",
+    "born": "1 Nov 1923",
+    "spouses": [{"name": "Mary Lois Collins", "born": "7 Jun 1933", "married": "2 Dec 1956"}],
+    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "222211", "name": "Sharon Marie Harshbarger", "born": "24 Sep 1957"},
+        {"code": "222212", "name": "Frank Victor Harshbarger, III", "born": "9 Sep 1958", "verified_terminal": True},
+        {"code": "222213", "name": "Mary Patricia Harshbarger", "born": "6 Dec 1959"},
+        {"code": "222214", "name": "Linda Ann Harshbarger", "born": "2 Sep 1961", "verified_terminal": True},
+        {"code": "222215", "name": "Raymond Stephan Harshbarger", "born": "18 Jul 1966", "verified_terminal": True},
+        {"code": "222216", "name": "Diane Harshbarger", "born": "16 Oct 1967", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "22222",
+    "name": "Marjorie Harshbarger",
+    "sex": "F",
+    "born": "13 Feb 1930",
+    "spouses": [{"name": "Joseph Latms", "born": "14 Jan 1930"}],
+    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "222221", "name": "Karen Latms", "born": "2 Aug 1954", "verified_terminal": True},
+        {"code": "222222", "name": "Janet Kay Latms", "born": "14 Jun 1955", "died": "13 May 1984", "verified_terminal": True, "details": "m. Garry Mitchell"},
+        {"code": "222223", "name": "Nancy Jo Latms", "born": "8 Oct 1964", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "22633",
+    "name": "Anne Harshbarger",
+    "sex": "F",
+    "born": "4 Dec 1947",
+    "spouses": [{"name": "Dennis Dunn"}],
+    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "226331", "name": "Roger Dunn", "born": "26 Jul 1976", "verified_terminal": True},
+        {"code": "226332", "name": "Lindsay Dunn", "born": "19 Feb 1979", "verified_terminal": True},
+        {"code": "226333", "name": "Sarah Elizabeth Dunn", "born": "6 Jan 1981", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "222211",
+    "name": "Sharon Marie Harshbarger",
+    "sex": "F",
+    "born": "24 Sep 1957",
+    "spouses": [
+        {"name": "Rich Bankhrad", "order": 1},
+        {"name": "William Anderson", "order": 2},
+    ],
+    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "2222111", "name": "Joshua Jo Bankhead", "born": "21 Apr 1977", "verified_terminal": True},
+        {"code": "2222112", "name": "Daniel Anderson", "born": "17 Jul 1986", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "222213",
+    "name": "Mary Patricia Harshbarger",
+    "sex": "F",
+    "born": "6 Dec 1959",
+    "spouses": [
+        {"name": "Edward Moomau", "order": 1},
+        {"name": "Shawn Peters", "married": "1 May 1988", "order": 2},
+    ],
+    "source": {"pdf": "William_Guthrie - One Generation.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "2222131", "name": "Lori Marie Moomau", "born": "2 Jun 1978", "verified_terminal": True},
+        {"code": "2222132", "name": "Denise Nicole Moomau", "born": "4 Sep 1980", "verified_terminal": True},
+        {"code": "2222133", "name": "Jed Vincent Moomua", "born": "10 Oct 1981", "verified_terminal": True},
+        {"code": "2222134", "name": "Derick Peters", "born": "23 Aug 1989", "verified_terminal": True},
     ],
 })
 
@@ -19941,166 +20179,15 @@ ENTRIES.append({
 
 
 
-ENTRIES.append({
-    'code': '22211',
-    'name': 'Eugene Lee Harshbarger',
-    "source": {
-        'pdf': 'William_Guthrie - One Generation.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
-
-ENTRIES.append({
-    'code': '22212',
-    'name': 'Carolyn Harshbarger',
-    "source": {
-        'pdf': 'William_Guthrie - One Generation.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    "spouses": [
-        {
-            'name': 'A Bc',
-        },
-    ],
-})
 
 
-ENTRIES.append({
-    'code': '22221',
-    'name': 'Frank Victor Harshbarger',
-    "source": {
-        'pdf': 'William_Guthrie - One Generation.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '07 Jun 1933',
-})
 
-ENTRIES.append({
-    'code': '222211',
-    'name': 'Sharon Mane Harshbarger',
-    "source": {
-        'pdf': 'William_Guthrie - One Generation.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '09 Sep 1958',
-})
 
-ENTRIES.append({
-    'code': '222213',
-    'name': 'Mary',
-    "source": {
-        'pdf': 'William_Guthrie - One Generation.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '02 Jun 1978',
-    "spouses": [
-        {
-            'name': 'Edward Moomau',
-            'married': 'Mav 1988',
-        },
-    ],
-})
 
-ENTRIES.append({
-    'code': '2222134',
-    'name': 'Derick Peters',
-    "source": {
-        'pdf': 'William_Guthrie - One Generation.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '23 Aug 1989',
-})
 
-ENTRIES.append({
-    'code': '222215',
-    'name': 'Raymond Stephan H',
-    "source": {
-        'pdf': 'William_Guthrie - One Generation.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '18 Jul 1966',
-})
 
-ENTRIES.append({
-    'code': '222216',
-    'name': 'Diane Harshbareer',
-    "source": {
-        'pdf': 'William_Guthrie - One Generation.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '16 Oct 1967',
-})
 
-ENTRIES.append({
-    'code': '22222',
-    'name': 'Marjorie Harshbarger',
-    "source": {
-        'pdf': 'William_Guthrie - One Generation.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '13 Feb 1930',
-    'died': '13 may 1984',
-    "spouses": [
-        {
-            'name': 'Joseph Lats',
-            'married': '14 Jan 1930',
-        },
-    ],
-})
+
 
 
 
