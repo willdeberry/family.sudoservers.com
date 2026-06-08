@@ -1327,21 +1327,6 @@ ENTRIES.append({
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 3},
 })
 
-ENTRIES.append({
-    "code": "A456",
-    "name": "Martin Luther Cupp",
-    "sex": "M",
-    "born": "9 May 1918",
-    "spouses": [{
-        "name": "Mary Jean Guthrie",
-        "born": "29 Aug 1934",
-        "married": "9 May 1953",
-        "details": "Same as #13F72 in John's branch (daughter of James Quinter Guthrie #13F7).",
-    }],
-    "notes": "Marriage connects Alexander's branch (via Alice Pearl Frankhouser #A45) "
-             "to John's branch (via Mary Jean Guthrie #13F72).",
-    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 7},
-})
 
 ENTRIES.append({
     "code": "A46",
@@ -16118,6 +16103,362 @@ ENTRIES.append({
 })
 
 
+# === Alexander PDF pages 7-11 vision pass (2026-06-08): Cupp/Frankhouser/Evans/Frazee gen 5-6 ===
+ENTRIES.append({
+    "code": "A456",
+    "name": "Martin Luther Cupp",
+    "sex": "M",
+    "born": "9 May 1918",
+    "spouses": [{"name": "Mary Jean Guthrie", "born": "29 Aug 1934", "married": "9 May 1953"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 7},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Wife dau of James and Anna [Braham] Guthrie — cross-marriage 13F72"},
+    "children": [
+        {"code": "A4561", "name": "Martin Edward Cupp", "born": "30 Dec 1953"},
+        {"code": "A4562", "name": "Roger Lee Cupp", "born": "13 Mar 1955"},
+        {"code": "A4563", "name": "James Melvin Cupp", "born": "13 Oct 1957"},
+        {"code": "A4564", "name": "Marvin Dale Cupp", "born": "18 Dec 1959"},
+        {"code": "A4565", "name": "Charles Wesley Cupp", "born": "13 Jul 1961"},
+        {"code": "A4566", "name": "Richard Glenn Cupp", "born": "17 Sep 1963"},
+        {"code": "A4567", "name": "Sharon Louise Cupp", "born": "12 Dec 1965"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A457",
+    "name": "Ray Darwin Cupp",
+    "sex": "M",
+    "born": "7 Apr 1921",
+    "spouses": [{"name": "Joann DeWitt"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 7},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A4571", "name": "Rhoda Joann Cupp", "born": "3 Oct 1950"},
+        {"code": "A4572", "name": "Luann Rae Cupp", "born": "2 Dec 1953"},
+        {"code": "A4573", "name": "Allen Bruce Cupp", "born": "2 May 1956"},
+        {"code": "A4574", "name": "Kellye Sue Cupp", "born": "3 Apr 1959"},
+        {"code": "A4575", "name": "Darwin DeWitt Cupp", "born": "20 Feb 1961"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A459",
+    "name": "Alma Pearl Cupp",
+    "sex": "F",
+    "born": "8 Apr 1926",
+    "spouses": [{"name": "Clayton Edwin King", "born": "30 Aug 1925", "married": "8 Feb 1947"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 7},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A4591", "name": "Sherrie Kay King", "born": "12 Jul 1952"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "AB21",
+    "name": "Vesty D. Meyers",
+    "sex": "F",
+    "spouses": [{"name": "Curlin"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 7},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "AB211", "name": "Pearly Meyers"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "AB22",
+    "name": "Massereen Evans",
+    "sex": "F",
+    "spouses": [{"name": "Clyde Coates", "died": "1974"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 7},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "AB221", "name": "Buster Evans"},
+        {"code": "AB222", "name": "Harry Coates"},
+        {"code": "AB223", "name": "Violet Coates"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "AB23",
+    "name": "Wanda M. Evans",
+    "sex": "F",
+    "spouses": [{"name": "Charles Friend", "born": "3 Apr 1922", "died": "11 Aug 1985"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 7},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "AB231", "name": "Sylvia Friend"},
+        {"code": "AB232", "name": "Shirley Friend"},
+        {"code": "AB233", "name": "Kathern Friend"},
+        {"code": "AB234", "name": "Vernon Ray Friend"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "AB24",
+    "name": "Stanley Regis Evans",
+    "sex": "M",
+    "born": "23 Oct 1926",
+    "spouses": [{"name": "Hazel Fike"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 7},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "AB241", "name": "Darlene Fike Evans"},
+        {"code": "AB242", "name": "Richard Lee Evans", "born": "2 May 1955", "died": "9 Aug 1974"},
+        {"code": "AB243", "name": "Terry Lynn Evans", "born": "1956"},
+        {"code": "AB244", "name": "Wendy Jo Evans", "born": "12 Nov 1991"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A2121",
+    "name": "Norma Ruth Frazee",
+    "sex": "F",
+    "born": "30 Aug 1938",
+    "spouses": [{"name": "Paul Oliver Frazee", "born": "30 Dec 1927", "died": "20 Feb 1989", "married": "20 Sep 1956"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 8},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A21211", "name": "Barbara Ann Frazee", "born": "9 Sep 1957"},
+        {"code": "A21212", "name": "Gail Darlene Frazee", "born": "30 Oct 1958"},
+        {"code": "A21213", "name": "Paula Sue Frazee", "born": "1 May 1960"},
+        {"code": "A21214", "name": "Shirley Jean Frazee", "born": "27 May 1962"},
+        {"code": "A21215", "name": "William Owen Frazee", "born": "13 Jan 1975"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A2122",
+    "name": "Glenna Belle Frazee",
+    "sex": "F",
+    "born": "15 Dec 1940",
+    "spouses": [{"name": "Charles Edward Eisentrout", "married": "25 Dec 1958"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 8},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A21221", "name": "James Walter Eisentrout", "born": "8 Jan 1960"},
+        {"code": "A21222", "name": "Donna Sue Eisentrout", "born": "28 Mar 1962"},
+        {"code": "A21223", "name": "Nancy Marie Eisentrout", "born": "3 Oct 1966"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A2131",
+    "name": "Mary Louise Frazee",
+    "sex": "F",
+    "born": "27 Apr 1941",
+    "died": "7 Jan 1966",
+    "spouses": [
+        {"name": "Robert Carroll Hager Jr.", "born": "18 Aug 1934", "married": "26 Sep 1959", "order": 1},
+        {"name": "William Albert Knight", "married": "1 Sep 1967", "order": 2},
+    ],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 8},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A21311", "name": "Robert Carroll Hager III", "born": "24 Sep 1960"},
+        {"code": "A21312", "name": "Jonathan Allen Hager", "born": "21 Jun 1964"},
+        {"code": "A21313", "name": "William Albert Knight", "born": "16 Nov 1967"},
+        {"code": "A21314", "name": "Sheri Lynn Knight", "born": "24 Jun 1970"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A4112",
+    "name": "Darwin Hankins Frankhouser",
+    "sex": "M",
+    "born": "23 Mar 1926",
+    "spouses": [{"name": "Elaine Bierer"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 8},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A41121", "name": "Darwin Hankins Frankhouser, Jr.", "born": "28 Mar 1957"},
+        {"code": "A41122", "name": "Susan Elaine Frankhouser", "born": "14 Nov 1962"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A4113",
+    "name": "Joanne Madelon Frankhouser",
+    "sex": "F",
+    "born": "7 Jul 1939",
+    "spouses": [{"name": "Robert Endsley"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 8},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A41131", "name": "Mark Christian Endsley", "born": "10 Oct 1959"},
+        {"code": "A41132", "name": "Pamela Anne Endsley", "born": "12 May 1967"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A4131",
+    "name": "John Springer Clark, Jr.",
+    "sex": "M",
+    "born": "22 Dec 1920",
+    "spouses": [{"name": "Dorothy Eicher", "born": "4 Aug 1921"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 8},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A41311", "name": "Donna Lee Clark", "born": "16 Jan 1946"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A4141",
+    "name": "Rita Frankhouser",
+    "sex": "F",
+    "spouses": [{"name": "Charles Bosley"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 8},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A41411", "name": "Barbara Bosley"},
+        {"code": "A41412", "name": "Brenda Bosley"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A4151",
+    "name": "Geraldine Lorraine Frankhouser",
+    "sex": "F",
+    "born": "26 Apr 1933",
+    "spouses": [{"name": "Roy Chuck", "born": "11 Dec 1924"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 8},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A41511", "name": "Diane L. Chuck", "born": "1 Dec 1961"},
+        {"code": "A41512", "name": "Douglas Chuck", "born": "23 Sep 1963"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A4152",
+    "name": "Thomas Lee Frankhouser",
+    "sex": "M",
+    "born": "6 Apr 1934",
+    "spouses": [{"name": "Roberta Zaucha", "born": "21 Feb 1936"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 9},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A41521", "name": "Lee Alan Frankhouser", "born": "2 Feb 1958"},
+        {"code": "A41522", "name": "Gary J. Frankhouser", "born": "15 Nov 1959"},
+        {"code": "A41523", "name": "Lisa Beth Frankhouser", "born": "2 May 1961"},
+        {"code": "A41524", "name": "Tami Linn Frankhouser", "born": "17 Aug 1962"},
+        {"code": "A41525", "name": "Thomas Todd Frankhouser", "born": "2 Sep 1964"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A4153",
+    "name": "Lawrence Emmer Frankhouser",
+    "sex": "M",
+    "born": "27 Jun 1938",
+    "spouses": [{"name": "Dorothy Markutsa", "born": "27 Sep 1937"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 9},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Both children adopted"},
+    "children": [
+        {"code": "A41531", "name": "Eric Joseph Frankhouser", "born": "10 Nov 1971", "flags": {"adopted": True}},
+        {"code": "A41532", "name": "Jennifer Lynette Frankhouser", "born": "28 Oct 1974", "flags": {"adopted": True}},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A4154",
+    "name": "Francis G. Frankhouser",
+    "sex": "M",
+    "born": "22 Sep 1939",
+    "spouses": [
+        {"name": "Patsy Bryan", "order": 1},
+        {"name": "Sarah Thomas", "born": "21 Apr 1956", "order": 2},
+    ],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 9},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A41541", "name": "Tina Frankhouser", "born": "21 Apr 1961"},
+        {"code": "A41542", "name": "Jennifer Frankhouser", "born": "26 Apr 1976"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A4512",
+    "name": "Jean Elizabeth Cupp",
+    "sex": "F",
+    "born": "12 Oct 1935",
+    "spouses": [{"name": "Ray Underwood", "born": "5 May 1925", "married": "10 Feb 1960"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 9},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A45121", "name": "Eileen Patricia Underwood", "born": "8 May 1961"},
+        {"code": "A45122", "name": "Lloyd Charles Underwood", "born": "20 May 1963"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A4513",
+    "name": "Darvin Eugene Cupp",
+    "sex": "M",
+    "born": "28 Jun 1939",
+    "spouses": [{"name": "Rose Marie Bettencourt", "born": "19 May 1941", "married": "5 Sep 1959"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 9},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A45131", "name": "Ronald Eugene Cupp", "born": "4 Jan 1961"},
+        {"code": "A45132", "name": "Rodney Ernest Cupp", "born": "5 Oct 1962"},
+        {"code": "A45133", "name": "Renee Elisa Cupp", "born": "23 Jun 1964"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A4515",
+    "name": "Shirley Mae Cupp",
+    "sex": "F",
+    "born": "2 Jun 1942",
+    "spouses": [
+        {"name": "David Anderson", "born": "5 Mar 1939", "married": "10 Oct 1959", "order": 1},
+        {"name": "Jack Davenport", "born": "23 Aug 1937", "married": "17 Mar 1968", "order": 2},
+    ],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 9},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A45151", "name": "Diana Lynn Anderson", "born": "12 May 1960"},
+        {"code": "A45152", "name": "Debbie Lou Anderson", "born": "19 May 1961"},
+        {"code": "A45153", "name": "Charles Phillip Anderson", "born": "4 Sep 1964"},
+        {"code": "A45154", "name": "Tammy Davenport", "born": "23 Aug 1968"},
+        {"code": "A45155", "name": "Kimberly Davenport", "born": "21 May 1969"},
+        {"code": "A45156", "name": "Keith Davenport", "born": "4 Jun 1972"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A4551",
+    "name": "Ronald Eugene Cupp",
+    "sex": "M",
+    "born": "8 Jun 1940",
+    "spouses": [{"name": "Bonnie Vitez", "born": "26 Oct 1943", "married": "20 Feb 1965"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 10},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A45511", "name": "Shelley Cupp", "born": "11 Jul 1965", "died": "25 Jul 1965"},
+        {"code": "A45512", "name": "Shawn Cupp", "born": "11 Jul 1965", "died": "25 Jul 1965"},
+        {"code": "A45513", "name": "Ronald Scott Cupp", "born": "21 Nov 1968"},
+        {"code": "A45514", "name": "Michael Eugene Cupp", "born": "3 Apr 1975"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A4591",
+    "name": "Sherrie Kay King",
+    "sex": "F",
+    "born": "12 Jul 1952",
+    "spouses": [{"name": "John David Smith", "born": "6 Jun 1950", "married": "12 Jul 1975"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 10},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Husband son of Forrest & Ella [Thompson] Smith"},
+    "children": [
+        {"code": "A44911", "name": "Ryan David Smith", "born": "27 Apr 1984"},
+        {"code": "A44912", "name": "Eric Paul Smith", "born": "27 Apr 1984"},
+    ],
+})
+
+
 # === Alexander PDF pages 1-6 vision pass (2026-06-08): A founder + gen 2-4 detail ===
 
 ENTRIES.append({
@@ -19678,22 +20019,6 @@ ENTRIES.append({
     'born': '13 Jul 1960',
 })
 
-ENTRIES.append({
-    'code': 'A2121',
-    'name': 'Norma Ruth Frazee',
-    "source": {
-        'pdf': 'Alexander_Guthrie - Five Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '30 Aug 1938',
-    'died': '20 Feb 1989',
-})
 
 ENTRIES.append({
     'code': 'A21211',
@@ -19877,22 +20202,6 @@ ENTRIES.append({
     ],
 })
 
-ENTRIES.append({
-    'code': 'A2131',
-    'name': 'Mary Louise Frazee',
-    "source": {
-        'pdf': 'Alexander_Guthrie - Five Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '27 Apr 1941',
-    'died': '07 Jan 1966',
-})
 
 ENTRIES.append({
     'code': 'A21311',
@@ -20192,21 +20501,6 @@ ENTRIES.append({
     ],
 })
 
-ENTRIES.append({
-    'code': 'A4131',
-    'name': 'Geraldine Lorraine Frankhob',
-    "source": {
-        'pdf': 'Alexander_Guthrie - Five Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '27 Jun 1938',
-})
 
 ENTRIES.append({
     'code': 'A4134',
@@ -20671,119 +20965,12 @@ ENTRIES.append({
     'born': '11 May 1983',
 })
 
-ENTRIES.append({
-    'code': 'A457',
-    'name': 'Ray Darwin Cupp',
-    "source": {
-        'pdf': 'Alexander_Guthrie - Five Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '07 Apr 1921',
-    'died': '1974',
-    "spouses": [
-        {
-            'name': 'Clyde Coates',
-        },
-    ],
-})
-
-ENTRIES.append({
-    'code': 'A4591',
-    'name': 'Sher Kay Rie King',
-    "source": {
-        'pdf': 'Alexander_Guthrie - Five Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '06 Jun 1950',
-})
 
 
-ENTRIES.append({
-    'code': 'AB21',
-    'name': 'Vesty D',
-    "source": {
-        'pdf': 'Alexander_Guthrie - Five Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
 
-ENTRIES.append({
-    'code': 'AB22',
-    'name': 'MaEvans',
-    "source": {
-        'pdf': 'Alexander_Guthrie - Five Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    "spouses": [
-        {
-            'name': 'Clyde een Caates',
-        },
-    ],
-})
 
-ENTRIES.append({
-    'code': 'AB23',
-    'name': 'Wanda M',
-    "source": {
-        'pdf': 'Alexander_Guthrie - Five Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '03 Apr 1922',
-    'died': '11 Aug 1985',
-    "spouses": [
-        {
-            'name': 'Charies Friend',
-            'married': '03 Apr 1922',
-        },
-    ],
-})
 
-ENTRIES.append({
-    'code': 'AB24',
-    'name': 'Stanicy Regis Evans',
-    "source": {
-        'pdf': 'Alexander_Guthrie - Five Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '17 Dec 1896',
-    'died': '19 Oct 1988',
-})
+
 
 ENTRIES.append({
     'code': 'AB241',
