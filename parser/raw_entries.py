@@ -785,17 +785,18 @@ ENTRIES.append({
         "married": "6 May 1839",
     }],
     "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
     "children": [
         {"code": "81", "name": "Isaac Armstrong Guthrie", "born": "8 Feb 1838"},
         {"code": "82", "name": "Mary Frances Guthrie", "born": "6 Feb 1840"},
-        {"code": "83", "name": "Rachel Ann Guthrie", "born": "11 Feb 1843", "died": "27 Nov 1912"},
+        {"code": "83", "name": "Rachel Ann Guthrie", "born": "11 Feb 1843", "died": "27 Nov 1912", "verified_terminal": True},
         {"code": "84", "name": "James Marshall Guthrie", "born": "20 May 1845"},
-        {"code": "85", "name": "A son", "born": "15 Sep 1847", "died": "in infancy", "flags": {"diedInInfancy": True}},
-        {"code": "86", "name": "Isabella Guthrie", "born": "10 May 1849", "died": "1852", "flags": {"diedInInfancy": True}},
+        {"code": "85", "name": "A son", "born": "15 Sep 1847", "died": "in infancy", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "86", "name": "Isabella Guthrie", "born": "10 May 1849", "died": "1852", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "87", "name": "John Forman Guthrie", "born": "2 Nov 1851"},
         {"code": "88", "name": "Martha Bell Guthrie", "born": "15 Feb 1854"},
-        {"code": "89", "name": "Virginia Alice Guthrie", "born": "6 Apr 1856"},
-        {"code": "8A", "name": "Sarah Louise Guthrie", "born": "23 Jan 1859"},
+        {"code": "89", "name": "Virginia Alice Guthrie", "born": "6 Apr 1856", "verified_terminal": True},
+        {"code": "8A", "name": "Sarah Louise Guthrie", "born": "23 Jan 1859", "verified_terminal": True, "details": "lived with Virginia, Columbus, Ohio"},
         {"code": "8B", "name": "William Nolan Guthrie", "born": "27 Dec 1861"},
     ],
 })
@@ -813,6 +814,11 @@ ENTRIES.append({
         "married": "7 Sep 1865",
     }],
     "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "811", "name": "William Marshall Guthrie", "born": "8 Jun 1867", "died": "31 Oct 1921", "verified_terminal": True, "details": "m. 25 Dec 1895; Flora West"},
+        {"code": "812", "name": "Ora Bell Guthrie", "born": "18 Dec 1868"},
+    ],
 })
 
 ENTRIES.append({
@@ -829,6 +835,16 @@ ENTRIES.append({
         "married": "26 Nov 1858",
     }],
     "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "821", "name": "Bruce Harned", "born": "13 Aug 1859", "died": "18 Nov 1863", "verified_terminal": True},
+        {"code": "822", "name": "Annie Harned", "born": "14 Aug 1860", "died": "17 Feb 1899", "verified_terminal": True, "details": "m. 6 Feb 1889 Gus Mann b. Paulding County, Ohio; d. Mar 1899"},
+        {"code": "823", "name": "Walter Harned", "born": "13 Jul 1862", "died": "31 Dec 1930"},
+        {"code": "824", "name": "Edward Harned", "born": "24 Jan 1865", "died": "in infancy", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "825", "name": "Jennie Harned", "born": "6 Jun 1873"},
+        {"code": "826", "name": "Lucy Harned", "born": "1 Oct 1876"},
+        {"code": "827", "name": "Mary Harned", "born": "8 Feb 1879"},
+    ],
 })
 
 ENTRIES.append({
@@ -843,6 +859,16 @@ ENTRIES.append({
         "married": "27 Dec 1881",
     }],
     "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "871", "name": "Charles William Guthrie", "born": "31 Jan 1883", "verified_terminal": True, "details": "m. 24 Apr 1907 Mae Grey b. 26 Dec 1882 (Hocking County, Ohio)"},
+        {"code": "872", "name": "Anna May Guthrie", "born": "28 Dec 1884"},
+        {"code": "873", "name": "Harry Grimes Guthrie", "born": "8 Sep 1886"},
+        {"code": "874", "name": "Bruce Forman Guthrie", "born": "23 Sep 1890"},
+        {"code": "875", "name": "Sarah Louise Guthrie", "born": "5 Feb 1894", "verified_terminal": True, "details": "Lived in Sunbury, Ohio"},
+        {"code": "876", "name": "Park Edward Guthrie", "born": "21 Dec 1895"},
+        {"code": "877", "name": "John Paul Guthrie", "born": "13 Aug 1898"},
+    ],
 })
 
 ENTRIES.append({
@@ -859,6 +885,11 @@ ENTRIES.append({
         "details": "Hocking County, Ohio.",
     }],
     "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "881", "name": "Mattie O'Neil", "born": "12 Jul 1877", "verified_terminal": True, "details": "m. 15 Jun 1904 R. E. Allen, b. 21 Nov 1869 (Athens County, Ohio)"},
+        {"code": "882", "name": "Gracie O'Neil", "born": "6 Apr 1884", "died": "23 Oct 1900", "verified_terminal": True},
+    ],
 })
 
 
@@ -2176,6 +2207,11 @@ ENTRIES.append({
     "spouses": [{"name": "Ester McLaughlin", "married": "18 Oct 1922"}],
     "residences": ["2583 Glen Echo Drive, Columbus, OH"],
     "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "8731", "name": "John Robert Guthrie", "born": "26 Aug 1923", "verified_terminal": True},
+        {"code": "8732", "name": "Rhoda Jane Guthrie", "born": "7 Sep 1925", "verified_terminal": True},
+    ],
 })
 
 ENTRIES.append({
@@ -2186,6 +2222,10 @@ ENTRIES.append({
     "spouses": [{"name": "Elizabeth Shaws", "born": "3 Nov 1894", "married": "15 Jun 1918"}],
     "residences": ["321 Dryden Rd., Ithaca, NY"],
     "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "8741", "name": "Elizabeth Ann Guthrie", "born": "22 Aug 1923", "verified_terminal": True},
+    ],
 })
 
 # === A few more James gen 3 to show depth ===
@@ -3059,6 +3099,12 @@ ENTRIES.append({
     "spouses": [{"name": "Gertrude Simpson", "born": "31 Mar 1881", "married": "9 Jan 1913"}],
     "residences": ["Logan, OH"],
     "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "8431", "name": "John Simpson Guthrie", "born": "14 Nov 1913", "died": "4 Jul 1917", "verified_terminal": True, "flags": {"diedInInfancy": True}},
+        {"code": "8432", "name": "James Emerson Guthrie", "born": "5 Dec 1916", "verified_terminal": True},
+        {"code": "8433", "name": "Harriet Elizabeth Guthrie", "born": "10 Dec 1920", "verified_terminal": True},
+    ],
 })
 
 ENTRIES.append({
@@ -3069,6 +3115,11 @@ ENTRIES.append({
     "spouses": [{"name": "Ernest Brown", "born": "28 May 1884", "married": "13 Oct 1906"}],
     "residences": ["155 Overwood Road, Akron, OH"],
     "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "8451", "name": "Jane Guthrie Brown", "born": "30 Mar 1919", "verified_terminal": True},
+        {"code": "8452", "name": "Donald Ernest Brown", "born": "3 Jun 1921", "verified_terminal": True},
+    ],
 })
 
 # === Alexander gen 4 — A22's kids ===
@@ -16094,16 +16145,6 @@ ENTRIES.append({
 
 # === Absalom + William + Rachel PDFs vision pass (2026-06-08): completes all small PDFs ===
 ENTRIES.append({
-    "code": "83",
-    "name": "Rachel Ann Guthrie",
-    "sex": "F",
-    "born": "11 Feb 1843",
-    "died": "27 Nov 1912",
-    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 1},
-    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
-})
-
-ENTRIES.append({
     "code": "84",
     "name": "James Marshall Guthrie",
     "sex": "M",
@@ -16116,7 +16157,7 @@ ENTRIES.append({
         {"code": "841", "name": "Myrta Belle Guthrie", "born": "9 Feb 1877"},
         {"code": "842", "name": "Harley Urias Guthrie", "born": "16 Jan 1879"},
         {"code": "843", "name": "John Clyde Guthrie", "born": "11 Jun 1881"},
-        {"code": "844", "name": "Louisiana Guthrie", "born": "8 Sep 1886", "died": "in infancy", "flags": {"diedInInfancy": True}},
+        {"code": "844", "name": "Louisiana Guthrie", "born": "8 Sep 1886", "died": "in infancy", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "845", "name": "Mellie Irene Guthrie", "born": "14 Aug 1888"},
     ],
 })
@@ -16131,8 +16172,81 @@ ENTRIES.append({
     "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 2},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Wife from Pittsburgh, PA"},
     "children": [
-        {"code": "8B1", "name": "Donald Spencer Guthrie", "born": "31 Jul 1901"},
-        {"code": "8B2", "name": "William Norman Guthrie", "born": "29 Oct 1908"},
+        {"code": "8B1", "name": "Donald Spencer Guthrie", "born": "31 Jul 1901", "verified_terminal": True, "details": "lived with Mother, Columbus OH"},
+        {"code": "8B2", "name": "William Norman Guthrie", "born": "29 Oct 1908", "verified_terminal": True, "details": "m. 26 Jul 1930 Kirkpatrick (lived at Grandville, Ohio)"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "841",
+    "name": "Myrta Belle Guthrie",
+    "sex": "F",
+    "born": "9 Feb 1877",
+    "spouses": [{"name": "George Hengst", "born": "7 Mar 1870", "married": "29 Sep 1897"}],
+    "residences": ["Logan, OH"],
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "8411", "name": "Raymond Guthrie Hengst", "born": "2 Aug 1898", "verified_terminal": True, "details": "Lived in Cleveland, OH"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "842",
+    "name": "Harley Urias Guthrie",
+    "sex": "M",
+    "born": "16 Jan 1879",
+    "died": "4 Feb 1918",
+    "spouses": [{"name": "Marcella Lanker", "born": "27 Nov 1881", "married": "5 May 1905"}],
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "8421", "name": "Marcella Jane Guthrie", "born": "11 Feb 1914", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "872",
+    "name": "Anna May Guthrie",
+    "sex": "F",
+    "born": "28 Dec 1884",
+    "died": "10 Feb 1916",
+    "spouses": [{"name": "Francis Clark", "born": "27 Jun 1882", "married": "27 Jun 1906"}],
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "8721", "name": "Hannah Marie Clark", "born": "18 Dec 1906", "verified_terminal": True},
+        {"code": "8722", "name": "Clarence Irving Clark", "born": "1 Jan 1909", "verified_terminal": True},
+        {"code": "8723", "name": "Lawrence Arthur Clark", "born": "19 Aug 1910", "verified_terminal": True},
+        {"code": "8724", "name": "Ida Louise Clark", "born": "31 Mar 1914", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "876",
+    "name": "Park Edward Guthrie",
+    "sex": "M",
+    "born": "21 Dec 1895",
+    "spouses": [{"name": "June Roberts", "born": "11 Mar 1902", "married": "24 Dec 1925"}],
+    "residences": ["980 Stelzer Rd. Columbus, OH"],
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Child code 9861 reproduces the PDF's numbering anomaly."},
+    "children": [
+        {"code": "9861", "name": "Maurice Edward Guthrie", "born": "7 Jan 1930", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "877",
+    "name": "John Paul Guthrie",
+    "sex": "M",
+    "born": "13 Aug 1898",
+    "spouses": [{"name": "Marjorie Wheeler", "married": "8 Apr 1928"}],
+    "residences": ["541 E. 105th St. Cleveland, OH"],
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "8771", "name": "George Paul Guthrie", "verified_terminal": True},
     ],
 })
 
@@ -16145,7 +16259,7 @@ ENTRIES.append({
     "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 2},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
     "children": [
-        {"code": "8121", "name": "Berlin Earl Frost", "born": "4 Apr 1898", "died": "7 Jan 1919"},
+        {"code": "8121", "name": "Berlin Earl Frost", "born": "4 Apr 1898", "died": "7 Jan 1919", "verified_terminal": True},
         {"code": "8122", "name": "Mary Genevieve Frost", "born": "7 May 1904"},
     ],
 })
@@ -16161,14 +16275,139 @@ ENTRIES.append({
     "children": [
         {"code": "8251", "name": "Walter Harned Alexander", "born": "16 Feb 1898"},
         {"code": "8252", "name": "Mary Frances Alexander", "born": "9 Feb 1900"},
-        {"code": "8253", "name": "Charles Edward Alexander", "born": "2 Feb 1902"},
+        {"code": "8253", "name": "Charles Edward Alexander", "born": "2 Feb 1902", "verified_terminal": True, "details": "m. 31 May 1928 Mary Kemp"},
         {"code": "8254", "name": "Ruth Alice Alexander", "born": "3 Dec 1904"},
         {"code": "8255", "name": "Christine Mae Alexander", "born": "12 Jun 1906"},
-        {"code": "8256", "name": "Joseph William Alexander", "born": "12 May 1908"},
-        {"code": "8257", "name": "Alma V. Alexander", "born": "26 Jun 1910"},
-        {"code": "8258", "name": "Marjorie L. Alexander", "born": "6 Nov 1913"},
-        {"code": "8259", "name": "Claire Esther Alexander", "born": "13 Dec 1915"},
-        {"code": "825A", "name": "Jean Isabel Alexander", "born": "4 Aug 1919"},
+        {"code": "8256", "name": "Joseph William Alexander", "born": "12 May 1908", "verified_terminal": True},
+        {"code": "8257", "name": "Alma V. Alexander", "born": "26 Jun 1910", "verified_terminal": True},
+        {"code": "8258", "name": "Marjorie L. Alexander", "born": "6 Nov 1913", "verified_terminal": True},
+        {"code": "8259", "name": "Claire Esther Alexander", "born": "13 Dec 1915", "verified_terminal": True},
+        {"code": "825A", "name": "Jean Isabel Alexander", "born": "4 Aug 1919", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "8122",
+    "name": "Mary Genevieve Frost",
+    "sex": "F",
+    "born": "7 May 1904",
+    "spouses": [{"name": "Otto Jesse Hill", "married": "10 Jun 1925"}],
+    "residences": ["Berlin Heights, OH"],
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "81221", "name": "Robert Edwin Hill", "born": "16 Jan 1928", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "8251",
+    "name": "Walter Harned Alexander",
+    "sex": "M",
+    "born": "16 Feb 1898",
+    "spouses": [{"name": "Cora Glaus", "married": "12 Jun 1928"}],
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "82511", "name": "Walter Cirtus Alexander", "born": "10 Jul 1929", "verified_terminal": True},
+        {"code": "82512", "name": "Avis Ardele Alexander", "born": "8 Sep 1930", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "8252",
+    "name": "Mary Frances Alexander",
+    "sex": "F",
+    "born": "9 Feb 1900",
+    "spouses": [{"name": "Paul Miller", "married": "8 May 1921"}],
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "82521", "name": "Phyllis Miller", "born": "28 Feb 1922", "verified_terminal": True},
+        {"code": "82522", "name": "Rita Miller", "born": "11 Nov 1923", "verified_terminal": True},
+        {"code": "82523", "name": "Melba Miller", "born": "15 Nov 1924", "verified_terminal": True},
+        {"code": "82524", "name": "Patricia Miller", "born": "6 Aug 1926", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "8254",
+    "name": "Ruth Alice Alexander",
+    "sex": "F",
+    "born": "3 Dec 1904",
+    "spouses": [{"name": "Arthur Grau", "married": "17 Mar 1928"}],
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "82541", "name": "William Arthur Grau", "born": "15 Jul 1929", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "8255",
+    "name": "Christine Mae Alexander",
+    "sex": "F",
+    "born": "12 Jun 1906",
+    "spouses": [{"name": "Frank E. Prim", "married": "1925"}],
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "82551", "name": "Wayne Prim", "born": "26 Oct 1926", "verified_terminal": True},
+        {"code": "82552", "name": "Fae Prim", "born": "18 Mar 1928", "verified_terminal": True},
+        {"code": "82553", "name": "Virginia Prim", "born": "20 Jan 1930", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "826",
+    "name": "Lucy Harned",
+    "sex": "F",
+    "born": "1 Oct 1876",
+    "spouses": [{"name": "Hammond Hardesty"}],
+    "residences": ["Paulding, OH"],
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "8261", "name": "Harry Hardesty", "born": "1894"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "827",
+    "name": "Mary Harned",
+    "sex": "F",
+    "born": "8 Feb 1879",
+    "spouses": [{"name": "Homer Hardesty", "married": "Sep 1898"}],
+    "residences": ["Piggott, Ark."],
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "8271", "name": "Dale Hardesty", "born": "about 1900"},
+        {"code": "8272", "name": "Died in Infancy", "verified_terminal": True, "flags": {"diedInInfancy": True}},
+    ],
+})
+
+ENTRIES.append({
+    "code": "8261",
+    "name": "Harry Hardesty",
+    "sex": "M",
+    "born": "1894",
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "82611", "name": "One Child", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "8271",
+    "name": "Dale Hardesty",
+    "sex": "M",
+    "born": "about 1900",
+    "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "82711", "name": "One Son", "verified_terminal": True},
     ],
 })
 
@@ -19868,90 +20107,10 @@ ENTRIES.append({
 
 # === Drafts extracted from absalom.txt by draft_from_ocr.py ===
 
-ENTRIES.append({
-    'code': '8261',
-    'name': 'Harry Hardesty',
-    "source": {
-        'pdf': 'Absalom_Guthrie - One Generation .pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
 
-ENTRIES.append({
-    'code': '8271',
-    'name': 'Dale Hardesty',
-    "source": {
-        'pdf': 'Absalom_Guthrie - One Generation .pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': 'about 1900',
-})
 
-ENTRIES.append({
-    'code': '8741',
-    'name': 'Elizabeth Ann Guthrie',
-    "source": {
-        'pdf': 'Absalom_Guthrie - One Generation .pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
 
-ENTRIES.append({
-    'code': '876',
-    'name': 'Park Edward Guthrie',
-    "source": {
-        'pdf': 'Absalom_Guthrie - One Generation .pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '07 Jan 1930',
-})
 
-ENTRIES.append({
-    'code': '882',
-    'name': "Gracie O'Neil",
-    "source": {
-        'pdf': 'Absalom_Guthrie - One Generation .pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '06 Apr 1884',
-    'died': '23 Oct 1900',
-    "spouses": [
-        {
-            'name': 'Hammond Hardesty - Lived in Pauldine',
-            'married': 'Sep 1898',
-        },
-    ],
-})
 
 
 # === Drafts extracted from stephen.txt by draft_from_ocr.py ===
