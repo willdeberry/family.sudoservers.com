@@ -75,6 +75,75 @@ SEE_REFS = [
     {"codes": ["13E7", "1747"], "reason": "Same"},
     {"codes": ["13E8", "1748"], "reason": "Same"},
     {"codes": ["13E9", "1749"], "reason": "Same"},
+
+    # Auto-merged OCR-draft / verified pairs (2026-06-08). Each pair is the
+    # same person under multiple lineage codes — either a real cross-marriage
+    # (e.g. James/John crosses) or an OCR code-recognition error in the source.
+    {"codes": ["1363162", "1365162"], "reason": "George McKinley Shafer b. 23 Jul 1954 — OCR code variant"},
+    {"codes": ["13635156", "1365156"], "reason": "Amelia Jane Shafer b. 18 Mar 1961 — OCR code variant"},
+    {"codes": ["144332", "144532"], "reason": "Glenna Catherine Spiker b. 20 Sep 1941 — OCR code variant"},
+    {"codes": ["144382", "16482"], "reason": "Ross Carlton Miller b. 14 Apr 1946 — cross-coded"},
+    {"codes": ["1443A2", "164A2"], "reason": "Ronald Kenneth Smith b. 28 Feb 1947 — cross-coded"},
+    {"codes": ["1443B", "164B"], "reason": "Daisy Bell Harshbarger b. 11 Feb 1925 — cross-coded"},
+    {"codes": ["162231", "142821"], "reason": "Catherine Louise Sines b. 28 Feb 1954 — Sines cross-marriage"},
+    {"codes": ["163123", "142523"], "reason": "Robert Eugene Nicola b. 26 Mar 1934 — Nicola cross-marriage"},
+    {"codes": ["1631231", "1425231"], "reason": "Arveta Louise Nicola b. 16 Sep 1953 — Nicola cross-marriage"},
+    {"codes": ["1648352", "164832"], "reason": "Christina Marie Stevanus b. 18 Aug 1969 — OCR code variant"},
+    {"codes": ["171123", "144533"], "reason": "Ruby Lovine Spiker b. 21 Dec 1945 — Spiker cross-marriage"},
+    {"codes": ["171134", "122474"], "reason": "Judy Ann DeBerry b. 23 Aug 1943 — DeBerry cross-marriage"},
+    {"codes": ["1713421", "1224321"], "reason": "Sherry Lynne Shea b. 27 Jan 1963 — Shea cross-marriage"},
+    {"codes": ["1723212", "166212"], "reason": "Cynthia Lee Hileman b. 20 Apr 1951 — Hileman cross-marriage"},
+    {"codes": ["1723221", "166221"], "reason": "Tami Lynn Hileman b. 28 Jan 1960 — Hileman cross-marriage"},
+    {"codes": ["17272", "7472"], "reason": "Alma Maxine Moyers b. 20 Oct 1925 — Stella Guthrie's daughter (James/John cross)"},
+    {"codes": ["173242", "163142"], "reason": "Loretta Mae Glover b. 25 Jul 1933 — cross-coded"},
+    {"codes": ["173252", "163152"], "reason": "Shirley Jean Greathouse b. 17 May 1939 — cross-coded"},
+    {"codes": ["17328", "16318"], "reason": "Judson Junior Nicola b. 27 Feb 1930 — Nicola cross-marriage"},
+    {"codes": ["73332", "72332"], "reason": "James Ronald Barnes b. 25 Aug 1955 — OCR code variant"},
+    {"codes": ["73333", "72333"], "reason": "Nancy Carolyn Barnes b. 25 Apr 1957 — OCR code variant"},
+    {"codes": ["74114", "17211A"], "reason": "Betty Ruth Guthrie b. 22 Jun 1943 — James/John cross via Jeremiah-Nancy Nicola"},
+    {"codes": ["741182", "1721182"], "reason": "Gary DeWayne Russell b. 28 Oct 1961 — James/John cross"},
+    {"codes": ["74119", "172119"], "reason": "Harvey Paul Guthrie b. 14 Nov 1941 — James/John cross"},
+    {"codes": ["7411B", "17211B"], "reason": "Carl Lee Guthrie b. 27 Feb 1945 — James/John cross"},
+    {"codes": ["7411D", "17211D"], "reason": "Helen Ann Guthrie b. 23 Oct 1949 — James/John cross"},
+    {"codes": ["741322", "1721322"], "reason": "Rodney Wayne Ritchey b. 27 Dec 1959 — James/John cross"},
+    {"codes": ["74136", "172136"], "reason": "Kenneth Dale Ritchey b. 25 Nov 1944 — James/John cross"},
+    {"codes": ["7414", "17214"], "reason": "Dora Guthrie b. 24 Apr 1916 — James/John cross"},
+    {"codes": ["7432", "1662"], "reason": "Emma Harshbarger b. 30 Jan 1906 — James/John cross"},
+    {"codes": ["74321", "16621"], "reason": "Charles Ray Hileman b. 18 Feb 1925 — James/John cross"},
+    {"codes": ["743212", "166212"], "reason": "Cynthia Lee Hileman b. 20 Apr 1951 — James/John cross (third code)"},
+    {"codes": ["7436", "172B6"], "reason": "Mabel Viola Bartholomew b. 27 Dec 1933 — James/John cross via Dessie 74B/172B"},
+    {"codes": ["74612", "172612"], "reason": "Clair Edward Guthrie b. 22 Sep 1961 — James/John cross"},
+    {"codes": ["74B4", "172B4"], "reason": "Paul Eugene Bartholomew b. 18 May 1928 — James/John cross via Dessie"},
+    {"codes": ["74B61", "172B61"], "reason": "Douglas Robert Hale b. 24 Oct 1952 — James/John cross"},
+    {"codes": ["74B74", "172B74"], "reason": "Dwane Ira Bartholomew b. 18 Apr 1968 — James/John cross"},
+    {"codes": ["765212", "1443112"], "reason": "Paul Joseph Narivanchik b. 14 Sep 1954 — Narivanchik cross-coding"},
+    {"codes": ["765421", "1224321"], "reason": "Sherry Lynne Shea b. 27 Jan 1963 — Shea cross (third code)"},
+    {"codes": ["A21122", "1132222"], "reason": "Brenda Kay Frazee b. 24 Aug 1959 — Alexander/John cross"},
+
+    # Second pass — same person, OCR date-format variant (e.g. "05 Jun" vs "5 Jun")
+    {"codes": ["1345113", "1365113"], "reason": "James Harold Shafer b. 9 Mar 1946 — OCR code variant"},
+    {"codes": ["13C5122", "132182"], "reason": "Tamara Lynn Smith b. 24 Dec 1966 — cross-coded"},
+    {"codes": ["14431111", "1641111"], "reason": "Sabrina Louise Narivanchik b. 6 Sep 1971 — Narivanchik cross"},
+    {"codes": ["144321", "16421"], "reason": "Anna Marie Harshbarger b. 5 Jun 1935 — cross-coded"},
+    {"codes": ["144322", "16422"], "reason": "Mary Ellen Harshbarger b. 6 Feb 1937 — cross-coded"},
+    {"codes": ["144343", "164A3"], "reason": "Linda Grace Smith b. 3 Jan 1949 — cross-coded"},
+    {"codes": ["14438", "1648"], "reason": "Pearl Catherine Harshbarger b. 2 Jul 1919 — cross-coded"},
+    {"codes": ["1631242", "1425242"], "reason": "Tamra Lynn Whipkey b. 9 Jan 1968 — Nicola cross"},
+    {"codes": ["171133", "122473"], "reason": "Marvin Glenn DeBerry b. 8 May 1942 — DeBerry cross"},
+    {"codes": ["1713422", "1224322"], "reason": "Kenneth Scott Shea b. 5 Apr 1969 — Shea cross"},
+    {"codes": ["17271", "7471"], "reason": "Beatrice Mae Moyers b. 7 Sep 1921 — Stella Guthrie's daughter"},
+    {"codes": ["172711", "162211"], "reason": "Lawrence Keith Baysinger b. 28 Aug 1954 — cross-coded (draft has OCR date '2 Aug')"},
+    {"codes": ["17273", "7473"], "reason": "Pauline Grace Moyers b. 15 Feb 1927 — Stella's daughter (draft has OCR date '25 Feb')"},
+    {"codes": ["173224", "142524"], "reason": "Dorothy Jean Nicola b. 6 Oct 1937 — Nicola cross"},
+    {"codes": ["17325", "16315"], "reason": "Marie Pearl Nicola b. 9 Apr 1919 — Nicola cross"},
+    {"codes": ["74116", "172116"], "reason": "Delbert Glenn Guthrie b. 1 Sep 1938 — James/John cross"},
+    {"codes": ["74132", "172132"], "reason": "Donald Ray Ritchey b. 3 Oct 1935 — James/John cross"},
+    {"codes": ["74151", "172151"], "reason": "Shirley Jane Boyd b. 4 Dec 1937 — James/John cross"},
+    {"codes": ["743215", "166215"], "reason": "Melissa Ann Hileman b. 5 Nov 1961 — James/John cross"},
+    {"codes": ["74322", "16622"], "reason": "Playford Gail Hileman b. 7 Jan 1929 — James/John cross"},
+    {"codes": ["76541", "122431"], "reason": "Kermit Nelson DeBerry b. 6 Dec 1937 — James/John cross"},
+    {"codes": ["7655", "17135"], "reason": "Thelma Olieta Spiker b. 2 Dec 1921 — James/John cross"},
+    {"codes": ["A436", "A456"], "reason": "Martin Luther Cupp b. 9 May 1918 — OCR code variant"},
 ]
 
 # ---------------------------------------------------------------------------
@@ -20119,27 +20188,6 @@ ENTRIES.append({
     'born': '01 Jun 1956',
 })
 
-ENTRIES.append({
-    'code': 'A21122',
-    'name': 'Brenda Kay Frazee',
-    "source": {
-        'pdf': 'Alexander_Guthrie - Five Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '24 Aug 1959',
-    "spouses": [
-        {
-            'name': 'Fred Allen Baislew',
-            'married': '07 Sep 1952',
-        },
-    ],
-})
 
 ENTRIES.append({
     'code': 'A211221',
@@ -20796,21 +20844,6 @@ ENTRIES.append({
     },
 })
 
-ENTRIES.append({
-    'code': 'A436',
-    'name': 'Martin Luther Cupp',
-    "source": {
-        'pdf': 'Alexander_Guthrie - Five Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '09 May 1918',
-})
 
 ENTRIES.append({
     'code': 'A44911',
@@ -21254,37 +21287,7 @@ ENTRIES.append({
 
 
 
-ENTRIES.append({
-    'code': '73332',
-    'name': 'James Ronald Barnes',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '25 Aug 1955',
-})
 
-ENTRIES.append({
-    'code': '73333',
-    'name': 'Nancy Carolyn Barnes',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '25 Apr 1957',
-})
 
 ENTRIES.append({
     'code': '741121',
@@ -21302,21 +21305,6 @@ ENTRIES.append({
     'born': '11 Nov 1963',
 })
 
-ENTRIES.append({
-    'code': '74114',
-    'name': 'Betty Ruth Guthrie',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '22 Jun 1943',
-})
 
 ENTRIES.append({
     'code': '7411513',
@@ -21335,21 +21323,6 @@ ENTRIES.append({
     'died': '29 Apr 1974',
 })
 
-ENTRIES.append({
-    'code': '74116',
-    'name': 'Delbert Glenn Guthrie',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '01 Sep 1938',
-})
 
 ENTRIES.append({
     'code': '74118',
@@ -21367,37 +21340,7 @@ ENTRIES.append({
     'born': '14 Nov 1973',
 })
 
-ENTRIES.append({
-    'code': '741182',
-    'name': 'Gary DeWayne Russell',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '28 Oct 1961',
-})
 
-ENTRIES.append({
-    'code': '74119',
-    'name': 'Harvey Paul Guthrie',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '14 Nov 1941',
-})
 
 ENTRIES.append({
     'code': '741194',
@@ -21415,21 +21358,6 @@ ENTRIES.append({
     'born': '14 Jan 1984',
 })
 
-ENTRIES.append({
-    'code': '7411B',
-    'name': 'Carl Lee Guthrie',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '27 Feb 1945',
-})
 
 ENTRIES.append({
     'code': '7411B1',
@@ -21447,21 +21375,6 @@ ENTRIES.append({
     'born': '31 Jan 1968',
 })
 
-ENTRIES.append({
-    'code': '7411D',
-    'name': 'Helen Ann Guthrie',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '23 Oct 1949',
-})
 
 ENTRIES.append({
     'code': '7411D1',
@@ -21576,37 +21489,7 @@ ENTRIES.append({
     'born': '14 Jun 1976',
 })
 
-ENTRIES.append({
-    'code': '74132',
-    'name': 'Donald Ray Ritchey',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '03 Oct 1935',
-})
 
-ENTRIES.append({
-    'code': '741322',
-    'name': 'Rodney Wayne Ritchey',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '27 Dec 1959',
-})
 
 ENTRIES.append({
     'code': '74133',
@@ -21640,21 +21523,6 @@ ENTRIES.append({
     'born': '16 Sep 1939',
 })
 
-ENTRIES.append({
-    'code': '74136',
-    'name': 'Kenneth Dale Ritchey',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '25 Nov 1944',
-})
 
 ENTRIES.append({
     'code': '741362',
@@ -21688,21 +21556,6 @@ ENTRIES.append({
     'born': '17 Nov 1942',
 })
 
-ENTRIES.append({
-    'code': '7414',
-    'name': 'Dora Guthrie',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '24 Apr 1916',
-})
 
 ENTRIES.append({
     'code': '74142',
@@ -21766,101 +21619,11 @@ ENTRIES.append({
     'born': '27 Sep 1921',
 })
 
-ENTRIES.append({
-    'code': '74151',
-    'name': 'Shirley Jane Boyd',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '04 Dec 1937',
-})
 
-ENTRIES.append({
-    'code': '7432',
-    'name': 'Emma Harshbarger',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '30 Jan 1906',
-})
 
-ENTRIES.append({
-    'code': '74321',
-    'name': 'Charles Ray Hileman',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '18 Feb 1925',
-})
 
-ENTRIES.append({
-    'code': '743212',
-    'name': 'Cynthia Lee Hileman',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '20 Apr 1951',
-})
 
-ENTRIES.append({
-    'code': '743215',
-    'name': 'Melissa Ann Hileman',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '05 Nov 1961',
-})
 
-ENTRIES.append({
-    'code': '74322',
-    'name': 'Playford Gail Hileman',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '07 Jan 1929',
-})
 
 ENTRIES.append({
     'code': '743221',
@@ -21910,21 +21673,6 @@ ENTRIES.append({
     'born': '04 Jul 1935',
 })
 
-ENTRIES.append({
-    'code': '7436',
-    'name': 'Mabel Viola Bartholomew',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '27 Dec 1933',
-})
 
 ENTRIES.append({
     'code': '7445',
@@ -21957,21 +21705,6 @@ ENTRIES.append({
     'born': '03 Nov 1956',
 })
 
-ENTRIES.append({
-    'code': '74612',
-    'name': 'Clair Edward Guthrie',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '22 Sep 1961',
-})
 
 ENTRIES.append({
     'code': '746121',
@@ -22211,21 +21944,6 @@ ENTRIES.append({
     'born': '18 Apr 1952',
 })
 
-ENTRIES.append({
-    'code': '74B4',
-    'name': 'Paul Eugene Bartholomew',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '18 May 1928',
-})
 
 ENTRIES.append({
     'code': '74B422',
@@ -22275,37 +21993,7 @@ ENTRIES.append({
     'born': '14 Feb 1978',
 })
 
-ENTRIES.append({
-    'code': '74B61',
-    'name': 'Douglas Robert Hale',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '24 Oct 1952',
-})
 
-ENTRIES.append({
-    'code': '74B74',
-    'name': 'Dwane Ira Bartholomew',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '18 Apr 1968',
-})
 
 ENTRIES.append({
     'code': '7652',
@@ -22355,21 +22043,6 @@ ENTRIES.append({
     'born': '30 Jul 1979',
 })
 
-ENTRIES.append({
-    'code': '765212',
-    'name': 'Paul Joseph Narivanchik',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '14 Sep 1954',
-})
 
 ENTRIES.append({
     'code': '7653',
@@ -22402,37 +22075,7 @@ ENTRIES.append({
     },
 })
 
-ENTRIES.append({
-    'code': '76541',
-    'name': 'Kermit Nelson DeBerry',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '06 Dec 1937',
-})
 
-ENTRIES.append({
-    'code': '765421',
-    'name': 'Sherry Lynne Shea',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '27 Jan 1963',
-})
 
 ENTRIES.append({
     'code': '7654221',
@@ -22450,21 +22093,6 @@ ENTRIES.append({
     'born': '03 Apr 1995',
 })
 
-ENTRIES.append({
-    'code': '7655',
-    'name': 'Thelma Olieta Spiker',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '02 Dec 1921',
-})
 
 ENTRIES.append({
     'code': '76551',
@@ -22948,21 +22576,6 @@ ENTRIES.append({
     ],
 })
 
-ENTRIES.append({
-    'code': '1345113',
-    'name': 'James Harold Shafer',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '09 Mar 1946',
-})
 
 ENTRIES.append({
     'code': '135412',
@@ -23013,21 +22626,6 @@ ENTRIES.append({
     'born': '26 Nov 1972',
 })
 
-ENTRIES.append({
-    'code': '1363162',
-    'name': 'George McKinley Shafer',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '23 Jul 1954',
-})
 
 ENTRIES.append({
     'code': '1363178',
@@ -23068,21 +22666,6 @@ ENTRIES.append({
     ],
 })
 
-ENTRIES.append({
-    'code': '13635156',
-    'name': 'Amelia Jane Shafer',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '18 Mar 1961',
-})
 
 ENTRIES.append({
     'code': '1365114',
@@ -23482,28 +23065,6 @@ ENTRIES.append({
 })
 
 
-ENTRIES.append({
-    'code': '13C5122',
-    'name': 'Tamara Lynn Smith',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '24 dec 1966',
-    'died': '02 Nov 1969',
-    "spouses": [
-        {
-            'name': 'Kay Hevner',
-            'married': '16 Jan 1977',
-        },
-    ],
-})
 
 ENTRIES.append({
     'code': '13F32',
@@ -23720,21 +23281,6 @@ ENTRIES.append({
     'born': '16 Oct 1906',
 })
 
-ENTRIES.append({
-    'code': '14431111',
-    'name': 'Sabrina Louise Narivanchik',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '06 Sep 1971',
-})
 
 ENTRIES.append({
     'code': '14431113',
@@ -23801,37 +23347,7 @@ ENTRIES.append({
     'born': '28 May 1976',
 })
 
-ENTRIES.append({
-    'code': '144321',
-    'name': 'Anna Marie Harshbarger',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '05 Jun 1935',
-})
 
-ENTRIES.append({
-    'code': '144322',
-    'name': 'Mary Ellen Harshbarger',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '06 Feb 1937',
-})
 
 ENTRIES.append({
     'code': '144323',
@@ -23848,28 +23364,6 @@ ENTRIES.append({
     },
 })
 
-ENTRIES.append({
-    'code': '144332',
-    'name': 'Glenna Catherine Spiker',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '20 Sep 1941',
-    'died': '20 May 1997',
-    "spouses": [
-        {
-            'name': 'Jean Howdershett Charlotte Groves Larry Groves il P',
-            'married': '28 Jun 1920',
-        },
-    ],
-})
 
 ENTRIES.append({
     'code': '144341',
@@ -23903,21 +23397,6 @@ ENTRIES.append({
     'born': '20 Feb 1967',
 })
 
-ENTRIES.append({
-    'code': '144343',
-    'name': 'Linda Grace Smith',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '03 Jan 1949',
-})
 
 ENTRIES.append({
     'code': '144352',
@@ -24017,21 +23496,6 @@ ENTRIES.append({
     'born': '27 Mar 1936',
 })
 
-ENTRIES.append({
-    'code': '14438',
-    'name': 'Pearl Catherine Harshbarger',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '02 Jul 1919',
-})
 
 ENTRIES.append({
     'code': '144381',
@@ -24050,21 +23514,6 @@ ENTRIES.append({
     'died': '12 Aug 1943',
 })
 
-ENTRIES.append({
-    'code': '144382',
-    'name': 'Ross Carlton Miller',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '14 Apr 1946',
-})
 
 ENTRIES.append({
     'code': '144383',
@@ -24113,37 +23562,7 @@ ENTRIES.append({
     'born': '06 Jun 1943',
 })
 
-ENTRIES.append({
-    'code': '1443A2',
-    'name': 'Ronald Kenneth Smith',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '28 Feb 1947',
-})
 
-ENTRIES.append({
-    'code': '1443B',
-    'name': 'Daisy Bell Harshbarger',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '11 Feb 1925',
-})
 
 ENTRIES.append({
     'code': '1443C11',
@@ -24620,21 +24039,6 @@ ENTRIES.append({
     'born': '15 Jul 1983',
 })
 
-ENTRIES.append({
-    'code': '162231',
-    'name': 'Catherine Louise Sines',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '28 Feb 1954',
-})
 
 ENTRIES.append({
     'code': '162232',
@@ -24767,45 +24171,7 @@ ENTRIES.append({
     'died': '02 Mar 1931',
 })
 
-ENTRIES.append({
-    'code': '163123',
-    'name': 'Robert Eugene Nicola',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '26 Mar 1934',
-    'died': '30 Jan 1980',
-})
 
-ENTRIES.append({
-    'code': '1631231',
-    'name': 'Arveta Louise Nicola',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '16 Sep 1953',
-    'died': '21 Feb 1988',
-    "spouses": [
-        {
-            'name': 'Llovd (Red) Jackson Hall',
-            'married': 'Sep 1923',
-        },
-    ],
-})
 
 ENTRIES.append({
     'code': '16312311',
@@ -24855,21 +24221,6 @@ ENTRIES.append({
     'born': '20 Oct 1981',
 })
 
-ENTRIES.append({
-    'code': '1631242',
-    'name': 'Tamra Lynn Whipkey',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '09 Jan 1968',
-})
 
 ENTRIES.append({
     'code': '16312421',
@@ -25057,21 +24408,6 @@ ENTRIES.append({
     'born': '17 Apr 1989',
 })
 
-ENTRIES.append({
-    'code': '1648352',
-    'name': 'Christina Marie Stevanus',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '18 Aug 1969',
-})
 
 ENTRIES.append({
     'code': '1662142',
@@ -25206,55 +24542,8 @@ ENTRIES.append({
     'died': '25 Jun 1997',
 })
 
-ENTRIES.append({
-    'code': '171123',
-    'name': 'Ruby Lovine Spiker',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '21 Dec 1945',
-    'died': '23 Jul 1985',
-})
 
-ENTRIES.append({
-    'code': '171133',
-    'name': 'Marvin Glenn DeBerry',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '08 May 1942',
-})
 
-ENTRIES.append({
-    'code': '171134',
-    'name': 'Judy Ann DeBerry',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '23 Aug 1943',
-    'died': '28 Sep 1992',
-})
 
 ENTRIES.append({
     'code': '1713211',
@@ -25376,21 +24665,6 @@ ENTRIES.append({
     ],
 })
 
-ENTRIES.append({
-    'code': '1713421',
-    'name': 'Sherry Lynne Shea',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '27 Jan 1963',
-})
 
 ENTRIES.append({
     'code': '17134211',
@@ -25407,21 +24681,6 @@ ENTRIES.append({
     },
 })
 
-ENTRIES.append({
-    'code': '1713422',
-    'name': 'Kenneth Scott Shea',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '05 Apr 1969',
-})
 
 ENTRIES.append({
     'code': '17134221',
@@ -25935,21 +25194,6 @@ ENTRIES.append({
     'born': '08 Dec 1980',
 })
 
-ENTRIES.append({
-    'code': '1723212',
-    'name': 'Cynthia Lee Hileman',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '20 Apr 1951',
-})
 
 ENTRIES.append({
     'code': '1723213',
@@ -26047,21 +25291,6 @@ ENTRIES.append({
     'born': '07 Jan 1929',
 })
 
-ENTRIES.append({
-    'code': '1723221',
-    'name': 'Tami Lynn Hileman',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '28 Jan 1960',
-})
 
 ENTRIES.append({
     'code': '1723222',
@@ -26111,37 +25340,7 @@ ENTRIES.append({
     'born': '23 Mar 1977',
 })
 
-ENTRIES.append({
-    'code': '17271',
-    'name': 'Beatrice Mae Moyers',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '07 Sep 1921',
-})
 
-ENTRIES.append({
-    'code': '172711',
-    'name': 'Lawrence Keith Baysinger',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '2 Aug 1954',
-})
 
 ENTRIES.append({
     'code': '1727111',
@@ -26175,21 +25374,6 @@ ENTRIES.append({
     'born': '15 Sep 1964',
 })
 
-ENTRIES.append({
-    'code': '17272',
-    'name': 'Alma Maxine Moyers',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '20 Oct 1925',
-})
 
 ENTRIES.append({
     'code': '172721',
@@ -26238,21 +25422,6 @@ ENTRIES.append({
     'born': '09 Mar 1961',
 })
 
-ENTRIES.append({
-    'code': '17273',
-    'name': 'Pauline Grace Moyers',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '25 Feb 1927',
-})
 
 ENTRIES.append({
     'code': '172731',
@@ -26851,22 +26020,6 @@ ENTRIES.append({
     'born': '15 Mar 1988',
 })
 
-ENTRIES.append({
-    'code': '173224',
-    'name': 'Dorothy Jean Nicola',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '06 Oct 1937',
-    'died': '30 Jan 1980',
-})
 
 ENTRIES.append({
     'code': '1732241',
@@ -26916,22 +26069,6 @@ ENTRIES.append({
     'born': '01 Apr 1914',
 })
 
-ENTRIES.append({
-    'code': '173242',
-    'name': 'Loretta Mae Glover',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '25 Jul 1933',
-    'died': '1940',
-})
 
 ENTRIES.append({
     'code': '1732421',
@@ -27076,22 +26213,6 @@ ENTRIES.append({
     'born': '03 Feb 1952',
 })
 
-ENTRIES.append({
-    'code': '17325',
-    'name': 'Marie Pearl Nicola',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '09 Apr 1919',
-    'died': '18 Nov 1994',
-})
 
 ENTRIES.append({
     'code': '173251',
@@ -27110,21 +26231,6 @@ ENTRIES.append({
     'died': '22 Dec 1937',
 })
 
-ENTRIES.append({
-    'code': '173252',
-    'name': 'Shirley Jean Greathouse',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '17 May 1939',
-})
 
 ENTRIES.append({
     'code': '17326',
@@ -27158,21 +26264,6 @@ ENTRIES.append({
     'born': '09 Jun 1940',
 })
 
-ENTRIES.append({
-    'code': '17328',
-    'name': 'JUDSON (Nick) JUNIOR NICOLA',
-    "source": {
-        'pdf': 'John_Guthrie - Eight Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '27 Feb 1930',
-})
 
 ENTRIES.append({
     'code': '173282',
