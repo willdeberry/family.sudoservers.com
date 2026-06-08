@@ -3254,18 +3254,6 @@ ENTRIES.append({
     "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 3},
 })
 
-# === Generation 5/6 examples — Linda Joyce Lightner / etc. ===
-ENTRIES.append({
-    "code": "172821",
-    "name": "Linda Joyce Lightner",
-    "sex": "F",
-    "born": "9 May 1947",
-    "spouses": [
-        {"name": "James W. Pickett", "details": "Son of Lewis Pickett of Morgantown.", "order": 1},
-        {"name": "Robert James", "married": "16 Sep 1985", "order": 2},
-    ],
-    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 41},
-})
 
 # === Alexander branch — A45 sub-line (Cupp family) ===
 ENTRIES.append({
@@ -14232,6 +14220,435 @@ ENTRIES.append({
         {"code": "1721455", "name": "Joseph Roy Ulderich", "born": "8 Jan 1980"},
         {"code": "1721456", "name": "Fred Allen Ulderich", "born": "5 Feb 1983"},
         {"code": "1721457", "name": "Samantha", "born": "23 Jul 1987"},
+    ],
+})
+
+
+# === Pages 116-120 vision pass (2026-06-07): Boyd/Lightner/Sheppard/Guthrie/Lavens/Miller/Bartholomew/Habenicht/Hale ===
+ENTRIES.append({
+    "code": "172151",
+    "name": "Shirley Jane Boyd",
+    "sex": "F",
+    "born": "4 Dec 1937",
+    "spouses": [{"name": "Harry David Harawitz", "born": "9 Apr 1939", "married": "4 May 1962"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 116},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721511", "name": "Sharon Elaine Harawitz", "born": "31 May 1963"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172153",
+    "name": "Nelda Mae Boyd",
+    "sex": "F",
+    "born": "5 Jul 1942",
+    "spouses": [{"name": "Gerald Martin Mauthe", "born": "24 Sep 1937", "married": "29 Jul 1961"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 116},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721531", "name": "Gerald Mark Mauthe", "born": "1 Feb 1962"},
+        {"code": "1721532", "name": "Kathy Ann Mauthe", "born": "1 Jun 1965"},
+        {"code": "1721533", "name": "Wesley Robert Mauthe", "born": "8 Nov 1968"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172154",
+    "name": "Linda Rae Boyd",
+    "sex": "F",
+    "born": "25 Mar 1945",
+    "spouses": [{"name": "Donald Stewer", "married": "23 Jan 1964"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 116},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721541", "name": "Donald Joseph Stewer", "born": "24 Aug 1957"},
+        {"code": "1721542", "name": "Rodney Lee Stewer", "born": "7 Sep 1965"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172611",
+    "name": "Wendy Ann Guthrie",
+    "sex": "F",
+    "born": "3 Nov 1956",
+    "spouses": [{"name": "Richard Preston Jefferies", "born": "20 Dec 1957", "married": "21 May 1983"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 116},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1726111", "name": "Timothy Preston Jefferies", "born": "3 Mar 1987"},
+        {"code": "1726112", "name": "Amanda Marie Jefferies", "born": "28 Feb 1990"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172612",
+    "name": "Clair Edward Guthrie",
+    "sex": "M",
+    "born": "22 Sep 1961",
+    "spouses": [{"name": "Brenda Eileen Wertz", "born": "5 Feb 1968", "married": "23 Jul 1993"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 116},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1726121", "name": "Clair (CJ) Edward Guthrie, Jr.", "born": "19 Jul 1996"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172613",
+    "name": "Alvin Loyd Guthrie",
+    "sex": "M",
+    "born": "19 Aug 1968",
+    "spouses": [{"name": "Wandy Kay Fraizer", "born": "23 Jul 1968", "married": "20 Apr 1996"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 116},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1726131", "name": "Cody Lewis Lacy", "born": "15 Dec 1992"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172622",
+    "name": "Dennis Reckart",
+    "sex": "M",
+    "born": "22 Jul 1953",
+    "spouses": [{"name": "Katherine Sypolt", "married": "8 Sep 1973"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 117},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1726221", "name": "Lisa Dawn Reckart", "born": "4 Jan 1974"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172821",
+    "name": "Linda Joyce Lightner",
+    "sex": "F",
+    "born": "9 May 1947",
+    "spouses": [
+        {"name": "James W. Pickett", "married": "7 May 1966", "order": 1},
+        {"name": "Robert James", "married": "27 Sep 1985", "order": 2},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 118},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1728211", "name": "Lincoln Lewis Pickett", "born": "7 Apr 1968"},
+        {"code": "1728212", "name": "Ashleigh Nicole James"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172822",
+    "name": "Douglas Lightner, Jr.",
+    "sex": "M",
+    "born": "25 Jan 1949",
+    "spouses": [{"name": "Judy", "married": "16 Sep 1974"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 118},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1728221", "name": "Christina Alexandra Lightner"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172823",
+    "name": "Roger Dale Lightner",
+    "sex": "M",
+    "born": "29 Dec 1951",
+    "died": "31 May 1987",
+    "spouses": [{"name": "Sheryl Knotts"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 118},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1728231", "name": "Roxanna Kay Lightner", "born": "15 Nov 1969"},
+        {"code": "1728232", "name": "Rodger Dale Lightner", "born": "6 Oct 1971"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172831",
+    "name": "Gwendlyn Redeen Sheppard",
+    "sex": "F",
+    "born": "31 Oct 1949",
+    "spouses": [
+        {"name": "Gary Evans", "order": 1},
+        {"name": "Randy Wayne Moyers", "born": "12 Nov 1952", "order": 2},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 118},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1728311", "name": "Renee Michelle Evans", "born": "21 Nov 1969"},
+        {"code": "1728312", "name": "Aaron Troy Moyers, Jr.", "born": "23 Jul 1977"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172841",
+    "name": "Debra Suzanna Guthrie",
+    "sex": "F",
+    "born": "30 Jun 1953",
+    "spouses": [{"name": "Kerry D. Uber", "married": "9 Jun 1973"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 118},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1728411", "name": "Grant Andrew Uber", "born": "7 Jul 1983"},
+        {"code": "1728412", "name": "Bethany Elizabeth Uber", "born": "Feb 1992"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172842",
+    "name": "Dwight David Guthrie",
+    "sex": "M",
+    "born": "27 Sep 1954",
+    "spouses": [
+        {"name": "Patricia Ann Buckner", "married": "1976", "order": 1},
+        {"name": "Diane Theresa Bukouac", "born": "6 Dec 1955", "married": "12 Aug 1983", "order": 2},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 118},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1728421", "name": "Christie Brooke Guthrie", "born": "4 Jul 1985"},
+        {"code": "1728422", "name": "David Justin Guthrie", "born": "9 Sep 1986"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172843",
+    "name": "Michael Dane Guthrie",
+    "sex": "M",
+    "born": "2 Jun 1957",
+    "occupation": "Free Methodist Minister",
+    "spouses": [{"name": "Catherine (Kathy) Wight", "born": "15 Jan 1958", "married": "24 Jun 1978"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 118},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1728431", "name": "Joshua Aaron Guthrie", "born": "3 Jun 1981"},
+        {"code": "1728432", "name": "Rebekah Joy Guthrie", "born": "11 Nov 1986"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172844",
+    "name": "Darryl Lee Guthrie",
+    "sex": "M",
+    "born": "7 Dec 1959",
+    "spouses": [{"name": "Jill Heintz"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 118},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1728441", "name": "Troy Jacob Guthrie", "born": "3 Jun 1987"},
+        {"code": "1728442", "name": "Taylor Leigh Guthrie", "born": "4 Jul 1990"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172B21",
+    "name": "Bonnie Jean Lavens",
+    "sex": "F",
+    "born": "11 Jan 1946",
+    "spouses": [
+        {"name": "Ronald Lee Gaines", "married": "16 Apr 1966", "order": 1},
+        {"name": "Walter Reiling", "order": 2},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 118},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172B211", "name": "Jeanette Lee Gaines", "born": "9 Mar 1972"},
+        {"code": "172B212", "name": "Jeffrey Thomas Gaines", "born": "17 Dec 1974"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172B32",
+    "name": "Joy Irene Miller",
+    "sex": "F",
+    "born": "18 Apr 1952",
+    "spouses": [{"name": "Patrick E. Thompson", "born": "7 Apr 1945", "married": "18 Mar 1973"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 119},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172B321", "name": "Andrea May Thompson", "born": "31 May 1974"},
+        {"code": "172B322", "name": "Jamie Nicholas Thompson", "born": "21 Feb 1976"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172B33",
+    "name": "Lori Jean Miller",
+    "sex": "F",
+    "born": "29 Sep 1955",
+    "spouses": [
+        {"name": "Frad Hall", "order": 1},
+        {"name": "William Keith Lemieux, Jr.", "born": "24 Feb 1965", "married": "28 Jun 1986", "order": 2},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 119},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172B331", "name": "J. Trevor Hall", "born": "14 Aug 1991"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172B41",
+    "name": "Daniel Paul Bartholomew",
+    "sex": "M",
+    "born": "18 Jul 1951",
+    "spouses": [{"name": "Donna Lea Thorpe", "born": "17 Jan 1953", "married": "1 Jun 1974"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 119},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172B411", "name": "Aaron Eugene Bartholomew", "born": "28 Nov 1979"},
+        {"code": "172B412", "name": "Elizabeth Ann Bartholomew", "born": "19 Jun 1982"},
+        {"code": "172B413", "name": "Sarah Sun Hee Bartholomew", "born": "12 Jun 1984"},
+        {"code": "172B414", "name": "Leah Hoo Hee Bartholomew", "born": "12 Jun 1984"},
+        {"code": "172B415", "name": "Rachelle Rockelle Bartholomew", "born": "9 Dec 1986"},
+        {"code": "172B416", "name": "Noah Rocky Daniel Bartholomew", "born": "9 Dec 1986"},
+        {"code": "172B417", "name": "Rebekah Rocklene Bartholomew", "born": "9 Dec 1986"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172B42",
+    "name": "Karen Geniese Bartholomew",
+    "sex": "F",
+    "born": "3 Aug 1953",
+    "spouses": [{"name": "Neil Dennis Lindquist", "born": "17 Oct 1951", "married": "13 Jan 1978"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 119},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172B421", "name": "Kyle Don Lindquist", "born": "6 Apr 1979"},
+        {"code": "172B422", "name": "Adam Paul Lindquist", "born": "24 Jul 1981"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172B43",
+    "name": "Timothy Eugene Bartholomew",
+    "sex": "M",
+    "born": "6 Jun 1957",
+    "spouses": [{"name": "Donna J. DiMaggio", "married": "17 Aug 1979"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 119},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172B431", "name": "Danielle M. Bartholomew", "born": "13 Apr 1983"},
+        {"code": "172B432", "name": "Zachary J. Bartholomew", "born": "28 Sep 1985"},
+        {"code": "172B433", "name": "Breanna Lannelle Bartholomew", "born": "5 Oct 1990"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172B51",
+    "name": "Valerie Kay Habenicht",
+    "sex": "F",
+    "born": "1 Dec 1953",
+    "spouses": [{"name": "Roger Paul Busse", "born": "1 Mar 1953", "married": "8 Jun 1974"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 119},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172B511", "name": "Katherine Ann Busse", "born": "14 Feb 1978"},
+        {"code": "172B512", "name": "Kelty Elizabeth Busse", "born": "25 Apr 1980"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172B52",
+    "name": "Bradley Phillip Habenicht",
+    "sex": "M",
+    "born": "20 Sep 1956",
+    "spouses": [{"name": "Marla Jo Flynn", "born": "1 May 1956", "married": "16 May 1980"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 119},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172B521", "name": "Lauren Flynn Habenicht", "born": "17 Apr 1984"},
+        {"code": "172B522", "name": "Kristie Micolle Habenicht", "born": "26 Sep 1987"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172B61",
+    "name": "Douglas Robert Hale",
+    "sex": "M",
+    "born": "24 Oct 1952",
+    "spouses": [{"name": "Linda L. Welskop", "born": "18 Apr 1952", "married": "19 Aug 1972"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 119},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172B611", "name": "Raynee Sue Hale", "born": "17 Apr 1978"},
+        {"code": "172B612", "name": "Benjamen Robert Hale", "born": "2 Mar 1981"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172B62",
+    "name": "Cindy Lou Hale",
+    "sex": "F",
+    "born": "21 Feb 1959",
+    "spouses": [{"name": "Daniel Joseph Klein", "born": "14 Aug 1943", "married": "29 Mar 1980"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 120},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172B621", "name": "Jeffrey Daniel Klein", "born": "16 May 1983"},
+        {"code": "172B622", "name": "William Peter Klein", "born": "5 Jul 1985"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172B63",
+    "name": "Tina Dianne Hale",
+    "sex": "F",
+    "born": "13 Jan 1971",
+    "spouses": [{"name": "Todd Odis Fogelberg", "married": "8 Sep 1990"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 120},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172B631", "name": "Jacob McKenzie Fogelberg", "born": "2 May 1992"},
+        {"code": "172B632", "name": "Jordan Taylor Fogelberg", "born": "3 Jun 1993"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172B72",
+    "name": "Terry Gene Bartholomew",
+    "sex": "M",
+    "born": "24 May 1963",
+    "spouses": [{"name": "Michelle Ray Chipman", "born": "10 Apr 1968", "married": "16 Mar 1985"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 120},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172B721", "name": "Summer Michelle Bartholomew", "born": "26 Jun 1985", "died": "26 Jun 1985", "flags": {"diedInInfancy": True}},
+        {"code": "172B722", "name": "Tabitha Michelle Bartholomew", "born": "9 Dec 1987"},
+        {"code": "172B723", "name": "Nicole Casey Bartholomew", "born": "14 Jul 1989"},
+        {"code": "172B724", "name": "Victoria Anne Bartholomew", "born": "22 Apr 1991"},
+        {"code": "172B725", "name": "Joshua Walter Edward Bartholomew", "born": "4 Dec 1992"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172B73",
+    "name": "Deborah Annette Bartholomew",
+    "sex": "F",
+    "born": "11 Jan 1967",
+    "spouses": [{"name": "Rod Thomas Jones", "born": "20 Jul 1964", "married": "19 Sep 1987"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 120},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172B731", "name": "Thomas David Jones", "born": "28 Nov 1990"},
+        {"code": "172B732", "name": "Terrance Magnum Jones", "born": "27 May 1993"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172B74",
+    "name": "Dwane Ira Bartholomew",
+    "sex": "M",
+    "born": "18 Apr 1968",
+    "spouses": [{"name": "Carolyn Eileen Berti", "born": "25 Jul 1968", "married": "7 Feb 1988"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 120},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "172B741", "name": "Serena Caress Bartholomew", "born": "25 Nov 1986"},
+        {"code": "172B742", "name": "Julia Bliss Bartholomew", "born": "11 May 1989"},
     ],
 })
 
