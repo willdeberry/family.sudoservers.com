@@ -275,10 +275,11 @@ def build():
         parent_pid = code_to_pid[pcode]
         if child_pid == parent_pid:
             continue  # safety: avoid self-parenting
-        if child_pid not in people:
-            ensure_person(child_pid, code)
-        if parent_pid not in people:
-            ensure_person(parent_pid, pcode)
+        # Always ensure both codes are recorded on the person record, even when
+        # the person already exists (handles SEE_REF cross-codes both flowing
+        # through here at separate iterations).
+        ensure_person(child_pid, code)
+        ensure_person(parent_pid, pcode)
         if parent_pid not in people[child_pid]["parentIds"]:
             people[child_pid]["parentIds"].append(parent_pid)
         if child_pid not in people[parent_pid]["childIds"]:
@@ -312,14 +313,21 @@ def build():
                         "entryCode": ccode,
                         "page": entry.get("source", {}).get("page"),
                     })
-                    # Cross-coded SEE_REF child where neither side has a
-                    # full entry — still a draft until its own line is read.
-                    p["verification"] = {
-                        "status": "draft",
-                        "source": "manual",
-                        "lastChecked": None,
-                        "notes": "Stub from parent's children list (SEE_REF cross-code). PDF's own line for this person not yet transcribed.",
-                    }
+                    if child.get("verified_terminal"):
+                        parent_v = entry.get("verification") or {"status": "verified", "source": "manual"}
+                        p["verification"] = {
+                            "status": "verified",
+                            "source": parent_v.get("source", "manual"),
+                            "lastChecked": parent_v.get("lastChecked"),
+                            "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data.",
+                        }
+                    else:
+                        p["verification"] = {
+                            "status": "draft",
+                            "source": "manual",
+                            "lastChecked": None,
+                            "notes": "Stub from parent's children list (SEE_REF cross-code). PDF's own line for this person not yet transcribed.",
+                        }
                 continue
             # Create a stub person
             canonical_code[ccode] = ccode
