@@ -592,17 +592,18 @@ ENTRIES.append({
         {"name": "Barbara Dennis", "born": "25 May 1800", "died": "22 Apr 1873", "order": 2},
     ],
     "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
     "children": [
         # First marriage
         {"code": "51", "name": "Harrison Guthrie"},
-        {"code": "52", "name": "Elizabeth Guthrie"},
+        {"code": "52", "name": "Elizabeth Guthrie", "verified_terminal": True},
         # Second marriage
         {"code": "53", "name": "Stephen Guthrie", "born": "7 Apr 1827"},
-        {"code": "54", "name": "Catherine Guthrie", "born": "about 1833"},
-        {"code": "55", "name": "Mary Guthrie", "born": "about 1835"},
+        {"code": "54", "name": "Catherine Guthrie", "born": "about 1833", "verified_terminal": True, "details": "m. Mr. Dunham"},
+        {"code": "55", "name": "Mary Guthrie", "born": "about 1835", "verified_terminal": True, "details": "m. William Browning"},
         {"code": "56", "name": "Amy Guthrie", "born": "20 Dec 1840", "died": "1899"},
-        {"code": "57", "name": "Bell Guthrie", "born": "1843"},
-        {"code": "58", "name": "Israel Guthrie", "born": "1847"},
+        {"code": "57", "name": "Bell Guthrie", "born": "1843", "verified_terminal": True, "details": "m. Simon Miller"},
+        {"code": "58", "name": "Israel Guthrie", "born": "1847", "verified_terminal": True, "details": "Lived at York Run, PA"},
         {"code": "59", "name": "Absalom Guthrie", "died": "about 1899"},
         {"code": "5A", "name": "Florence Guthrie", "born": "1854", "died": "1887"},
     ],
@@ -614,8 +615,9 @@ ENTRIES.append({
     "sex": "M",
     "occupation": "Physician in Minnesota",
     "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
     "children": [
-        {"code": "511", "name": "Arthur Guthrie", "occupation": "Major General in the Army"},
+        {"code": "511", "name": "Arthur Guthrie", "occupation": "Major General in the Army", "verified_terminal": True},
     ],
 })
 
@@ -632,6 +634,15 @@ ENTRIES.append({
         "died": "1931",
     }],
     "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "531", "name": "Mary Alice Guthrie", "born": "about 1855"},
+        {"code": "532", "name": "Samuel Spencer Guthrie", "born": "1858"},
+        {"code": "533", "name": "William A. Guthrie", "born": "1861", "verified_terminal": True},
+        {"code": "534", "name": "Gertrude Guthrie", "verified_terminal": True},
+        {"code": "535", "name": "Caroline Bell Guthrie", "born": "1871"},
+        {"code": "536", "name": "Zana Estella Guthrie", "born": "25 Nov 1875"},
+    ],
 })
 
 ENTRIES.append({
@@ -646,6 +657,15 @@ ENTRIES.append({
         "died": "31 Mar 1929",
     }],
     "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "561", "name": "Edith Frankhouse", "verified_terminal": True, "details": "m. Chalmers Glover"},
+        {"code": "562", "name": "Elizabeth (Lizzie) Frankhouser", "verified_terminal": True, "details": "m. Bruce Fichtner"},
+        {"code": "563", "name": "Ada Frankhouser", "verified_terminal": True, "details": "m. D.E.L. (Lew) Forman"},
+        {"code": "564", "name": "Truman Frankhouser", "verified_terminal": True},
+        {"code": "565", "name": "Kenneth Bruce Frankhouser", "born": "5 Dec 1868"},
+        {"code": "566", "name": "Homer Frankhouser", "verified_terminal": True},
+    ],
 })
 
 
@@ -3257,6 +3277,7 @@ ENTRIES.append({
     "sex": "F",
     "born": "about 1855",
     "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
 })
 
 ENTRIES.append({
@@ -3267,17 +3288,12 @@ ENTRIES.append({
     "died": "1943",
     "spouses": [{"name": "John Maust"}],
     "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "5351", "name": "Oren Maust", "verified_terminal": True},
+    ],
 })
 
-
-
-ENTRIES.append({
-    "code": "597",
-    "name": "Alva Arthur Guthrie",
-    "sex": "M",
-    "spouses": [{"name": "Eleen Geary"}],
-    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 3},
-})
 
 
 # === Alexander branch — A45 sub-line (Cupp family) ===
@@ -16858,15 +16874,15 @@ ENTRIES.append({
     "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 2},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
     "children": [
-        {"code": "5321", "name": "William H. Guthrie", "born": "8 Mar 1885", "died": "1894"},
+        {"code": "5321", "name": "William H. Guthrie", "born": "8 Mar 1885", "died": "1894", "verified_terminal": True},
         {"code": "5322", "name": "Mary Alice Guthrie", "born": "6 Nov 1887"},
-        {"code": "5323", "name": "Rosa F. Guthrie", "born": "1889", "died": "24 Jan 1905"},
-        {"code": "5324", "name": "Julia Carolyn Guthrie", "born": "1892", "died": "1892"},
+        {"code": "5323", "name": "Rosa F. Guthrie", "born": "1889", "died": "24 Jan 1905", "verified_terminal": True},
+        {"code": "5324", "name": "Julia Carolyn Guthrie", "born": "1892", "died": "1892", "verified_terminal": True},
         {"code": "5325", "name": "Roy Leslie Guthrie", "born": "18 Feb 1894"},
         {"code": "5326", "name": "Russell Guthrie"},
         {"code": "5327", "name": "Ruby Guthrie", "born": "1898"},
-        {"code": "5328", "name": "Grace Guthrie", "born": "1900"},
-        {"code": "5329", "name": "Elizabeth Guthrie", "born": "1902", "died": "1955"},
+        {"code": "5328", "name": "Grace Guthrie", "born": "1900", "verified_terminal": True, "details": "m. Jasper McCrobie, b. 1897, d. 1982"},
+        {"code": "5329", "name": "Elizabeth Guthrie", "born": "1902", "died": "1955", "verified_terminal": True},
         {"code": "532A", "name": "Lee Guthrie"},
     ],
 })
@@ -16881,12 +16897,12 @@ ENTRIES.append({
     "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 3},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
     "children": [
-        {"code": "53221", "name": "Alberta Cupp"},
-        {"code": "53222", "name": "Woodrow W. Cupp", "born": "25 Sep 1912", "died": "1935"},
-        {"code": "53223", "name": "Elizabeth Cupp", "born": "1914", "died": "1933"},
-        {"code": "53224", "name": "Mary Grace Cupp"},
-        {"code": "53225", "name": "Virginia Cupp"},
-        {"code": "53226", "name": "John Cupp"},
+        {"code": "53221", "name": "Alberta Cupp", "verified_terminal": True, "details": "m. Mr. Beatty"},
+        {"code": "53222", "name": "Woodrow W. Cupp", "born": "25 Sep 1912", "died": "1935", "verified_terminal": True},
+        {"code": "53223", "name": "Elizabeth Cupp", "born": "1914", "died": "1933", "verified_terminal": True},
+        {"code": "53224", "name": "Mary Grace Cupp", "verified_terminal": True},
+        {"code": "53225", "name": "Virginia Cupp", "verified_terminal": True},
+        {"code": "53226", "name": "John Cupp", "verified_terminal": True},
     ],
 })
 
@@ -16900,10 +16916,10 @@ ENTRIES.append({
     "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 4},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
     "children": [
-        {"code": "53251", "name": "Julia Maragret Guthrie", "born": "1917", "died": "1974"},
-        {"code": "53252", "name": "Charles S. Guthrie", "born": "1918", "died": "1971"},
+        {"code": "53251", "name": "Julia Maragret Guthrie", "born": "1917", "died": "1974", "verified_terminal": True},
+        {"code": "53252", "name": "Charles S. Guthrie", "born": "1918", "died": "1971", "verified_terminal": True},
         {"code": "53253", "name": "Leslie Hadden Guthrie", "born": "24 Oct 1920"},
-        {"code": "53254", "name": "Helen Virginia Guthrie", "born": "1924", "died": "1986"},
+        {"code": "53254", "name": "Helen Virginia Guthrie", "born": "1924", "died": "1986", "verified_terminal": True},
     ],
 })
 
@@ -16922,6 +16938,50 @@ ENTRIES.append({
 })
 
 ENTRIES.append({
+    "code": "532531",
+    "name": "Linda Ruth Guthrie",
+    "sex": "F",
+    "born": "1 Nov 1946",
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 6},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "5325311", "name": "Kimberley Ann Pettey", "born": "1964"},
+        {"code": "5325312", "name": "Michael Andrew Soland", "born": "1969", "verified_terminal": True},
+        {"code": "5325313", "name": "Kelly Vallencourt", "born": "1979", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "532532",
+    "name": "Colleen Kay Guthrie",
+    "sex": "F",
+    "born": "2 Nov 1951",
+    "spouses": [{"name": "Randal Worley"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 6},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "5325321", "name": "Deanna Worley", "born": "1980", "verified_terminal": True},
+        {"code": "5325322", "name": "Nathan Leslie Worley", "born": "1982", "verified_terminal": True},
+        {"code": "5325323", "name": "Mathew Worley", "born": "1985", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "5325311",
+    "name": "Kimberly Ann Pettey",
+    "sex": "F",
+    "born": "1964",
+    "spouses": [{"name": "Timmothy McKenzie", "born": "1960"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 6},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "53253111", "name": "James Hadden McKenzie", "born": "Mar 1990", "verified_terminal": True},
+        {"code": "53253112", "name": "Candice McKenzie", "born": "1992", "verified_terminal": True},
+        {"code": "53253113", "name": "Christina Bell McKenzie", "born": "Jan 1994", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
     "code": "536",
     "name": "Zana Estella Guthrie",
     "sex": "F",
@@ -16936,8 +16996,8 @@ ENTRIES.append({
     "children": [
         {"code": "5361", "name": "Henry Stephen Bishop", "born": "9 Jan 1904"},
         {"code": "5362", "name": "Frederick William Bishop", "born": "9 May 1907"},
-        {"code": "5363", "name": "Edgar Wayne Bishop", "born": "1 Sep 1909", "died": "6 Nov 1985"},
-        {"code": "5364", "name": "Ivan Paul Bishop"},
+        {"code": "5363", "name": "Edgar Wayne Bishop", "born": "1 Sep 1909", "died": "6 Nov 1985", "verified_terminal": True},
+        {"code": "5364", "name": "Ivan Paul Bishop", "verified_terminal": True, "details": "foster daughter Elizabeth Carol Bishop"},
     ],
 })
 
@@ -16967,14 +17027,169 @@ ENTRIES.append({
     "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 4},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Wife dau of Thomas Hall and Alta May [Christopher] Gibson"},
     "children": [
-        {"code": "53621", "name": "Willis Ray Bishop", "born": "21 Apr 1929", "died": "21 Apr 1929"},
+        {"code": "53621", "name": "Willis Ray Bishop", "born": "21 Apr 1929", "died": "21 Apr 1929", "verified_terminal": True},
         {"code": "53622", "name": "Everett Clayton Bishop", "born": "23 Aug 1930"},
         {"code": "53623", "name": "Lula Berlene Bishop", "born": "1 Mar 1933"},
         {"code": "53624", "name": "Violet Rosalee Bishop", "born": "15 Jul 1935"},
         {"code": "53625", "name": "Robert Allen Bishop"},
         {"code": "53626", "name": "Alfred Lee Bishop", "born": "18 Oct 1942"},
-        {"code": "53627", "name": "Joyce Lynne Bishop", "born": "16 Nov 1948"},
-        {"code": "53628", "name": "Judy Anne Bishop", "born": "16 Nov 1948"},
+        {"code": "53627", "name": "Joyce Lynne Bishop", "born": "16 Nov 1948", "verified_terminal": True, "details": "m. 21 Apr 1973 Christopher Columbus Tatham Jr."},
+        {"code": "53628", "name": "Judy Anne Bishop", "born": "16 Nov 1948", "verified_terminal": True, "details": "m. 7 Mar 1970 Robert Z. O'Connor"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "53611",
+    "name": "Virginia Maxine Bishop",
+    "sex": "F",
+    "born": "17 Nov 1931",
+    "spouses": [{"name": "Russell Lee (Wege) Sliger", "born": "23 Sep 1930", "married": "18 Nov 1950"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 5},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Husband son of Samuel R. and Freda M. [Duffner] Sliger"},
+    "children": [
+        {"code": "536111", "name": "Iva Lucinda Sliger", "born": "10 Dec 1951", "verified_terminal": True, "details": "m. 20 Jun 1970 James Edward Cummings"},
+        {"code": "536112", "name": "Vivetta Sue Sliger", "born": "11 Feb 1956", "verified_terminal": True},
+        {"code": "536113", "name": "Brindley Lee Sliger", "born": "14 Oct 1960", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "53612",
+    "name": "Marvin Paul Bishop",
+    "sex": "M",
+    "spouses": [{"name": "Charlotte Ella Sanders", "born": "2 May 1937", "married": "14 Nov 1955"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 5},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Wife dau of Franklin W. and Ellen E. [Albright] Sanders"},
+    "children": [
+        {"code": "536121", "name": "James Marvin Bishop", "born": "17 Jul 1958", "verified_terminal": True},
+        {"code": "536122", "name": "Philip Brent Bishop", "born": "26 Mar 1963"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "53613",
+    "name": "Willis Kay Bishop",
+    "sex": "M",
+    "born": "16 Sep 1943",
+    "spouses": [{"name": "Carolyn Sue Bolinger", "born": "2 Aug 1947", "married": "16 Sep 1967"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 5},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Wife dau of Lloyd and Alma [Davis] Bolinger"},
+    "children": [
+        {"code": "536131", "name": "Eric Willis Bishop", "born": "7 Jan 1969", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "53622",
+    "name": "Everett Clayton Bishop",
+    "sex": "M",
+    "born": "23 Aug 1930",
+    "spouses": [{"name": "Francis Linn Williams", "born": "30 Apr 1937", "married": "2 Jun 1957"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 5},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Wife dau of Robert Kenneth and Gail Mildred [Torry] Williams"},
+    "children": [
+        {"code": "536221", "name": "Michael Jay Bishop", "born": "19 Oct 1959", "verified_terminal": True},
+        {"code": "536222", "name": "Beth Ann Bishop", "born": "28 Apr 1962", "verified_terminal": True},
+        {"code": "536223", "name": "Lynn Ann Bishop", "born": "28 Jul 1963", "verified_terminal": True},
+        {"code": "536224", "name": "Patrick Everett Bishop", "born": "16 Aug 1966", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "53623",
+    "name": "Lula Berlene Bishop",
+    "sex": "F",
+    "born": "1 Mar 1933",
+    "spouses": [{"name": "Richard (Dick) Marvin Miller", "born": "15 Jul 1932", "married": "21 Jun 1952"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 5},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Husband son of Loyd T. (Red) and Dortha [Frankhouser] Miller"},
+    "children": [
+        {"code": "536231", "name": "Trudy Renell Miller", "born": "6 Nov 1954"},
+        {"code": "536232", "name": "Gregory Marvin Miller", "born": "7 May 1956"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "53624",
+    "name": "Violet Rosalee Bishop",
+    "sex": "F",
+    "born": "15 Jul 1935",
+    "spouses": [{"name": "Perry Wendell Rhodes", "born": "27 Nov 1934", "married": "11 Feb 1956"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 5},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Husband son of Lester Valentine and Hilda Catherine [Weaver] Rhodes"},
+    "children": [
+        {"code": "536241", "name": "Randal Alan Rhodes", "born": "11 Feb 1957", "verified_terminal": True},
+        {"code": "536242", "name": "Robin Lynn Rhodes", "born": "23 Oct 1961", "verified_terminal": True},
+        {"code": "536243", "name": "Rhonda Jo Rhodes", "born": "2 Feb 1963", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "53625",
+    "name": "Robert Allen Bishop",
+    "sex": "M",
+    "spouses": [{"name": "Lela Elaine Thompson", "born": "9 Dec 1938", "details": "dau of Harry Babe and Lela Erma [Wright] Thompson"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 5},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "536251", "name": "Robin Lynn Bishop", "born": "17 Jan 1962", "verified_terminal": True},
+        {"code": "536252", "name": "Dawn Renee Bishop", "born": "20 Feb 1965", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "53626",
+    "name": "Alfred Lee Bishop",
+    "sex": "M",
+    "born": "18 Oct 1942",
+    "spouses": [{"name": "Shirley Lee Maxwell", "born": "7 Jul 1941", "married": "30 Apr 1963", "details": "dau of Nelson and Pearl Elizabeth [Brooks] Maxwell"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 6},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "536261", "name": "Frederick Nelson Bishop", "born": "4 May 1963", "verified_terminal": True},
+        {"code": "536262", "name": "Stephanie Lee Bishop", "born": "6 Nov 1967", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "536122",
+    "name": "Philip Brent Bishop",
+    "sex": "M",
+    "born": "26 Mar 1963",
+    "spouses": [{"name": "Barbara Annette Dietz", "born": "16 Apr 1962", "married": "4 Nov 1981", "details": "dau of John and Betty (Summers) Dietz"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 6},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "5361221", "name": "Brandon Philip Bishop", "born": "30 Dec 1981", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "536231",
+    "name": "Trudy Renell Miller",
+    "sex": "F",
+    "born": "6 Nov 1954",
+    "spouses": [{"name": "John Mitchell Humberson", "details": "son of John W. and Algene (Mitchell) Humberson"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 6},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "5362311", "name": "Stacy Renell Humberson", "born": "20 Oct 1977", "verified_terminal": True},
+        {"code": "5362312", "name": "Arron Humberson", "verified_terminal": True},
+        {"code": "5362313", "name": "Abby Nicole Humberson", "born": "13 Jul 1988", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "536232",
+    "name": "Gregory Marvin Miller",
+    "sex": "M",
+    "born": "7 May 1956",
+    "spouses": [{"name": "Renita Jo Bishoff", "details": "dau of George David and Helen Y. (Savage) Bishoff"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 6},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "5362321", "name": "Chasity Jo Bishoff", "born": "7 May 1975", "verified_terminal": True},
+        {"code": "5362322", "name": "Justin Michael Bishoff", "born": "31 Dec 1978", "verified_terminal": True},
     ],
 })
 
@@ -16988,12 +17203,41 @@ ENTRIES.append({
     "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 2},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
     "children": [
-        {"code": "5651", "name": "Hazel Grace Frankhouser", "born": "20 Jul 1900"},
+        {"code": "5651", "name": "Hazel Grace Frankhouser", "born": "20 Jul 1900", "verified_terminal": True},
         {"code": "5652", "name": "Orlando Felton Frankhouser", "born": "1901"},
-        {"code": "5653", "name": "Daniel Henry Frankhouser", "born": "1902", "died": "1963"},
-        {"code": "5654", "name": "Edith Mae Frankhouser", "born": "1904", "died": "1947"},
-        {"code": "5655", "name": "Kenneth Bruce Frankhouser", "born": "1907"},
-        {"code": "5656", "name": "Mary Ruth Frankhouser", "born": "1908"},
+        {"code": "5653", "name": "Daniel Henry Frankhouser", "born": "1902", "died": "1963", "verified_terminal": True},
+        {"code": "5654", "name": "Edith Mae Frankhouser", "born": "1904", "died": "1947", "verified_terminal": True, "details": "m. Freeland"},
+        {"code": "5655", "name": "Kenneth Bruce Frankhouser", "born": "1907", "verified_terminal": True},
+        {"code": "5656", "name": "Mary Ruth Frankhouser", "born": "1908", "verified_terminal": True, "details": "m. Roth"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "5652",
+    "name": "Orlando Felton Frankhouser",
+    "sex": "M",
+    "born": "1901",
+    "died": "1971",
+    "spouses": [{"name": "Mary Taylor", "married": "10 Jun 1942"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "56521", "name": "Kenneth W. Frankhouser", "born": "5 Oct 1942", "verified_terminal": True},
+        {"code": "56522", "name": "Sarah Frances Frankhouser", "born": "19 Jan 1945"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "56522",
+    "name": "Sarah Frances Frankhouser",
+    "sex": "F",
+    "born": "19 Jan 1945",
+    "spouses": [{"name": "Ronnie Metheny", "married": "11 Jun 1968"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 6},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "565221", "name": "Allen Lynn Metheny", "born": "9 Dec 1971", "verified_terminal": True},
+        {"code": "565222", "name": "Rhonda Sue Metheny", "born": "11 Feb 1975", "verified_terminal": True},
     ],
 })
 
@@ -17011,7 +17255,7 @@ ENTRIES.append({
         {"code": "592", "name": "Jennie Guthrie"},
         {"code": "593", "name": "Ezra Guthrie"},
         {"code": "594", "name": "Stephen Dudley Guthrie"},
-        {"code": "595", "name": "Harrison H. Guthrie"},
+        {"code": "595", "name": "Harrison H. Guthrie", "verified_terminal": True},
         {"code": "596", "name": "Thomas Harlic Guthrie"},
         {"code": "597", "name": "Alva Arthur Guthrie"},
         {"code": "598", "name": "Gadi Gilford Guthrie"},
@@ -17022,18 +17266,80 @@ ENTRIES.append({
 })
 
 ENTRIES.append({
-    "code": "591",
-    "name": "Belle Guthrie",
+    "code": "592",
+    "name": "Jennie Guthrie",
     "sex": "F",
-    "spouses": [{"name": "Alva Russell"}],
+    "spouses": [{"name": "James Corbin"}],
     "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 2},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
     "children": [
-        {"code": "5911", "name": "Arley Russell"},
-        {"code": "5912", "name": "Ira Russell"},
-        {"code": "5913", "name": "Pat Russell"},
-        {"code": "5914", "name": "Herman Russell"},
-        {"code": "5915", "name": "Minnie Russell"},
+        {"code": "5921", "name": "Lewis Corbin", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "593",
+    "name": "Ezra Guthrie",
+    "sex": "M",
+    "spouses": [{"name": "Lillie Hightower", "died": "1913"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "5931", "name": "Ida Guthrie", "verified_terminal": True},
+        {"code": "5932", "name": "Edna Guthrie", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "598",
+    "name": "Gadi Gilford Guthrie",
+    "sex": "M",
+    "spouses": [{"name": "Edna Graves"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "5981", "name": "Frances Guthrie", "verified_terminal": True},
+        {"code": "5982", "name": "Hoyland Menette Guthrie", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "599",
+    "name": "Mary Jane Guthrie",
+    "sex": "F",
+    "spouses": [{"name": "Edward Stevens"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "5991", "name": "Neva Stevens", "verified_terminal": True},
+        {"code": "5992", "name": "Nola Stevens", "verified_terminal": True},
+        {"code": "5993", "name": "Gertrude Stevens", "verified_terminal": True},
+        {"code": "5994", "name": "Edna Stevens", "verified_terminal": True},
+        {"code": "5995", "name": "Dayton Stevens", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "59A",
+    "name": "Levi Leroy Guthrie",
+    "sex": "M",
+    "spouses": [{"name": "Adeline Wylie"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "59A1", "name": "Lavina Guthrie", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "59B",
+    "name": "Gertrude Guthrie",
+    "sex": "F",
+    "spouses": [{"name": "William Wylie"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "59B1", "name": "Bertram Wylie", "verified_terminal": True},
     ],
 })
 
@@ -17047,9 +17353,38 @@ ENTRIES.append({
     "children": [
         {"code": "5941", "name": "Oma Gertrude Guthrie", "born": "26 Dec 1894"},
         {"code": "5942", "name": "Leon Eugene Guthrie", "born": "16 Feb 1897"},
-        {"code": "5943", "name": "Stephen Leroy Guthrie", "born": "1900", "died": "in infancy", "flags": {"diedInInfancy": True}},
-        {"code": "5944", "name": "Edna Victoria Guthrie", "born": "1904"},
-        {"code": "5945", "name": "Cyrus Sylvester Guthrie", "born": "14 May 1909"},
+        {"code": "5943", "name": "Stephen Leroy Guthrie", "born": "1900", "died": "in infancy", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "5944", "name": "Edna Victoria Guthrie", "born": "1904", "verified_terminal": True, "details": "m. 1926 to Lylie Munn"},
+        {"code": "5945", "name": "Cyrus Sylvester Guthrie", "born": "14 May 1909", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "5941",
+    "name": "Oma Gertrude Guthrie",
+    "sex": "F",
+    "born": "26 Dec 1894",
+    "spouses": [{"name": "Guy D. Hadley", "married": "Jul 1916"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "59411", "name": "Eileen Hadley", "verified_terminal": True},
+        {"code": "59412", "name": "Keith Hadley", "verified_terminal": True},
+        {"code": "59413", "name": "Bryce Hadley", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "5942",
+    "name": "Leon Eugene Guthrie",
+    "sex": "M",
+    "born": "16 Feb 1897",
+    "spouses": [{"name": "Ethel May Garrison", "born": "30 Aug 1902", "married": "28 Mar 1920"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 5},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "59421", "name": "Welsley B. Garrison", "verified_terminal": True, "details": "m. Valotta Jane Nicholson"},
+        {"code": "59422", "name": "Delmar Denzel Garrison", "born": "10 Oct 1923", "verified_terminal": True},
     ],
 })
 
@@ -17061,12 +17396,87 @@ ENTRIES.append({
     "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 3},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
     "children": [
-        {"code": "5961", "name": "Juanita Guthrie"},
-        {"code": "5962", "name": "Bernice Guthrie"},
-        {"code": "5963", "name": "Alta Guthrie"},
-        {"code": "5964", "name": "Ivalee Guthrie"},
+        {"code": "5961", "name": "Juanita Guthrie", "verified_terminal": True},
+        {"code": "5962", "name": "Bernice Guthrie", "verified_terminal": True},
+        {"code": "5963", "name": "Alta Guthrie", "verified_terminal": True},
+        {"code": "5964", "name": "Ivalee Guthrie", "verified_terminal": True},
     ],
 })
+
+ENTRIES.append({
+    "code": "597",
+    "name": "Alva Arthur Guthrie",
+    "sex": "M",
+    "spouses": [{"name": "Eleen Geary"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "5971", "name": "Arthur Guthrie", "verified_terminal": True},
+        {"code": "5972", "name": "Blanche Guthrie", "verified_terminal": True},
+        {"code": "5973", "name": "Gifford Guthrie", "verified_terminal": True},
+        {"code": "5974", "name": "Frances Guthrie", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "591",
+    "name": "Belle Guthrie",
+    "sex": "F",
+    "spouses": [{"name": "Alva Russell"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "5911", "name": "Arley Russell", "verified_terminal": True},
+        {"code": "5912", "name": "Ira Russell", "verified_terminal": True},
+        {"code": "5913", "name": "Pat Russell", "verified_terminal": True},
+        {"code": "5914", "name": "Herman Russell", "verified_terminal": True},
+        {"code": "5915", "name": "Minnie Russell", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "5326",
+    "name": "Russell Guthrie",
+    "sex": "M",
+    "spouses": [{"name": "Edna Sullivan"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "53261", "name": "Walter Guthrie", "verified_terminal": True},
+        {"code": "53262", "name": "Julia Guthrie", "verified_terminal": True},
+        {"code": "53263", "name": "Gladys Guthrie", "verified_terminal": True},
+        {"code": "53264", "name": "Russell Guthrie Jr.", "verified_terminal": True},
+    ],
+})
+
+ENTRIES.append({
+    "code": "5327",
+    "name": "Ruby Guthrie",
+    "sex": "F",
+    "born": "1898",
+    "died": "6 Sep 1963",
+    "spouses": [{"name": "Edward Mason Browning"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "53271", "name": "Donald Browning", "verified_terminal": True},
+        {"code": "53272", "name": "Wilma Browning", "verified_terminal": True, "details": "m. D.P. Stalmaker"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "532A",
+    "name": "Lee Guthrie",
+    "sex": "M",
+    "spouses": [{"name": "Clara Brooks"}],
+    "source": {"pdf": "Stephen_Guthrie - One Generation.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "532A1", "name": "Robert Guthrie", "verified_terminal": True},
+        {"code": "532A2", "name": "Carolyn Guthrie", "verified_terminal": True},
+    ],
+})
+
 
 
 # === Alexander PDF pages 7-11 vision pass (2026-06-08): Cupp/Frankhouser/Evans/Frazee gen 5-6 ===
@@ -20210,81 +20620,9 @@ ENTRIES.append({
 
 
 
-ENTRIES.append({
-    'code': '536241',
-    'name': 'Randal Alan Rhodes',
-    "source": {
-        'pdf': 'Stephen_Guthrie - One Generation .pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '11 Feb 1957',
-})
 
-ENTRIES.append({
-    'code': '536242',
-    'name': 'Robm Lynn Rhodes',
-    "source": {
-        'pdf': 'Stephen_Guthrie - One Generation .pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '23 Oct 1961',
-    "spouses": [
-        {
-            'name': 'Lels Elaine Thom',
-            'married': 'Dec 1938',
-        },
-    ],
-})
 
-ENTRIES.append({
-    'code': '536262',
-    'name': 'Stephanie Lee Bishop',
-    "source": {
-        'pdf': 'Stephen_Guthrie - One Generation .pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '06 Nov 1967',
-})
 
-ENTRIES.append({
-    'code': '56522',
-    'name': 'Sarah Frances Frankhouser',
-    "source": {
-        'pdf': 'Stephen_Guthrie - One Generation .pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '19 Jan 1945',
-    "spouses": [
-        {
-            'name': 'John Mitchell Humberson son of John W',
-            'married': '20 Oct 1977',
-        },
-    ],
-})
 
 
 
