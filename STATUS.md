@@ -1,14 +1,14 @@
 # Project status
 
-Last updated: 2026-06-07 (John PDF pages 1-10 vision-verified)
+Last updated: 2026-06-08 (John PDF complete — all 147 pages vision-verified)
 
 ## What exists
 
-- 1503 people in `data/people.json`, generated from `parser/raw_entries.py`
+- 3448 people in `data/people.json`, generated from `parser/raw_entries.py`
 - All 7 sibling branches present, structure largely complete
 - 12 cross-branch marriages with dedup working (see SEE_REFS in raw_entries.py)
-- Tree depth: 7+ generations from inferred founder (code `0`)
-- Verification status: 181 verified (125 manual + 56 vision), 1322 draft
+- Tree depth: 8 generations from inferred founder (code `0`)
+- Verification status: 1076 verified (84 manual + 992 vision), 2372 draft (31% verified)
 
 ## Verification pass currently in progress
 
@@ -33,7 +33,10 @@ parent's children list provides clean basic data.
 - John pages 61-65: done (Appleby/McKenzie/Moyers/Nicola gen 6)
 - John pages 66-70: done (164/166 Harshbarger + 17xx Spiker/Guthrie gen 6)
 - John pages 71-75: done (Guthrie/Bartholomew/Friend/Freeman gen 6)
-- John pages 76-147: pending
+- John pages 76-147: done (all remaining gen 6-8 entries; John PDF complete 2026-06-08)
+
+Next: James PDF (32 pages), then Alexander (11), Stephen (6), Absalom (4),
+William (3), Rachel (1).
 
 ## Verification bugs found and fixed (2026-06-07 session)
 
