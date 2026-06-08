@@ -13777,6 +13777,465 @@ ENTRIES.append({
 })
 
 
+# === Pages 111-115 vision pass (2026-06-07): 172xxx Guthrie/Seese/Ritchey gen 7/8 ===
+ENTRIES.append({
+    "code": "171351",
+    "name": "Gladys Kay Duncan",
+    "sex": "F",
+    "born": "7 Sep 1946",
+    "spouses": [
+        {"name": "Thomas H. Mosher", "married": "22 Nov 1969", "order": 1},
+        {"name": "Carlos Spears", "married": "23 Mar 1975", "order": 2},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 112},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1713511", "name": "Timothy Thomas Mosher", "born": "14 Jul 1970"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172111",
+    "name": "Genevieve Caroline Guthrie",
+    "sex": "F",
+    "born": "5 Jan 1933",
+    "spouses": [{"name": "Charles I. Swauger", "born": "2 Apr 1913", "married": "1 Jul 1950"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 112},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721111", "name": "Carol Ann Swauger", "born": "4 Sep 1951"},
+        {"code": "1721112", "name": "Betty Jo Swauger", "born": "21 Jan 1954"},
+        {"code": "1721113", "name": "Marilyn Sue Swauger", "born": "17 Apr 1955"},
+        {"code": "1721114", "name": "Delma Louise Swauger", "born": "9 Dec 1957"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172112",
+    "name": "James Franklin Guthrie",
+    "sex": "M",
+    "born": "11 Sep 1934",
+    "spouses": [{"name": "Lillian Durst", "born": "7 Apr 1945", "married": "11 May 1963"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 112},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721121", "name": "Dale Eugene Guthrie", "born": "11 Nov 1963"},
+        {"code": "1721122", "name": "Cheryl Ann Guthrie", "born": "19 Nov 1964"},
+        {"code": "1721123", "name": "James Franklin Guthrie, Jr.", "born": "19 Feb 1966"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172114",
+    "name": "Robert Dale Guthrie",
+    "sex": "M",
+    "born": "13 Jun 1936",
+    "spouses": [{"name": "Elsie Mae Spiker", "born": "18 May 1939", "married": "25 Nov 1960"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 112},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721141", "name": "William Dale Guthrie", "born": "31 Jul 1962"},
+        {"code": "1721142", "name": "Gladys May Guthrie", "born": "19 May 1964"},
+        {"code": "1721143", "name": "George Glenn Guthrie"},
+        {"code": "1721144", "name": "Kimberly Jean Guthrie"},
+        {"code": "1721145", "name": "Rebecca Lynn Guthrie", "born": "15 Oct 1970", "died": "11 Jul 1980"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172115",
+    "name": "Viola Marie Guthrie",
+    "sex": "F",
+    "born": "10 Jul 1937",
+    "spouses": [{"name": "Herbert Blaine (Buck) Hixon", "born": "20 Feb 1926", "married": "27 May 1954"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 112},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721151", "name": "Peggy Marie Hixon", "born": "10 Jul 1955"},
+        {"code": "1721152", "name": "Donna June Hixon", "born": "6 Nov 1956", "died": "20 Jan 1957", "flags": {"diedInInfancy": True}},
+        {"code": "1721153", "name": "Gary Blaine Hixon", "born": "12 Jun 1958", "died": "13 Jun 1958", "flags": {"diedInInfancy": True}},
+        {"code": "1721154", "name": "Robert Ray (Bobby) Hixon", "born": "23 Sep 1961"},
+        {"code": "1721155", "name": "Pamela Sue Hixon", "born": "11 Oct 1963"},
+        {"code": "1721156", "name": "Jeffrey Lee Hixon", "born": "6 Oct 1966"},
+        {"code": "1721157", "name": "David Lynn Hixon", "born": "24 Oct 1968"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172116",
+    "name": "Delbert Glenn Guthrie",
+    "sex": "M",
+    "born": "1 Sep 1938",
+    "spouses": [{"name": "Rita Ann Garlitz"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 113},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721161", "name": "Tammie Guthrie", "born": "11 Oct 1967", "died": "11 Nov 1967", "flags": {"diedInInfancy": True}},
+        {"code": "1721162", "name": "Tina Marie Guthrie", "born": "5 Dec 1968"},
+        {"code": "1721163", "name": "Amy Sue Guthrie", "born": "27 Dec 1969"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172118",
+    "name": "Thelma Jean Guthrie",
+    "sex": "F",
+    "born": "6 Nov 1940",
+    "spouses": [{"name": "Donald Russell", "married": "7 Mar 1959"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 113},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721181", "name": "Donald Lee Russell, Jr.", "born": "26 Aug 1959"},
+        {"code": "1721182", "name": "Gary DeWayne Russell", "born": "28 Oct 1961"},
+        {"code": "1721183", "name": "Melissa Ellen Russell", "born": "14 Nov 1973"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172119",
+    "name": "Harvey Paul Guthrie",
+    "sex": "M",
+    "born": "14 Nov 1941",
+    "spouses": [
+        {"name": "Rosie McKenzie", "married": "1965", "order": 1},
+        {"name": "Shawn Ann Fewster", "married": "24 Dec 1976", "order": 2},
+        {"name": "Terri Miller", "born": "11 Oct 1963", "married": "27 Jul 1983", "order": 3},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 113},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721191", "name": "Charles Ray Guthrie", "born": "21 May 1966"},
+        {"code": "1721192", "name": "Patricia Ann Guthrie"},
+        {"code": "1721193", "name": "John Henry Guthrie"},
+        {"code": "1721194", "name": "Harvey Paul Guthrie, Jr."},
+        {"code": "1721195", "name": "Nicole Ann Guthrie", "born": "14 Jan 1984"},
+        {"code": "1721196", "name": "Rebecca Marie Guthrie", "born": "25 Jan 1985"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "17211A",
+    "name": "Betty Ruth Guthrie",
+    "sex": "F",
+    "born": "22 Jun 1943",
+    "died": "15 Dec 1988",
+    "spouses": [{"name": "Samuel Isabel"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 113},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "17211A1", "name": "Roger Allen Guthrie", "born": "4 Sep 1959", "died": "19 Dec 1978"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "17211B",
+    "name": "Carl Lee Guthrie",
+    "sex": "M",
+    "born": "27 Feb 1945",
+    "spouses": [{"name": "Jo Ann Bowser", "born": "27 Aug 1949", "married": "9 Mar 1968"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 113},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "17211B1", "name": "Carl Joseph Guthrie", "born": "31 Jan 1968"},
+        {"code": "17211B2", "name": "Christina Lynn Guthrie", "born": "11 May 1971"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "17211D",
+    "name": "Helen Ann Guthrie",
+    "sex": "F",
+    "born": "23 Oct 1949",
+    "spouses": [{"name": "Robert Ray Fike", "married": "29 Jun 1979"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 113},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "17211D1", "name": "Susan Michella Fike", "born": "25 Jun 1977"},
+        {"code": "17211D2", "name": "Beth Ann Fike", "born": "3 Jan 1979"},
+        {"code": "17211D3", "name": "Samantha Mae Fike", "born": "29 Dec 1980"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "17211E",
+    "name": "Linda Sue Guthrie",
+    "sex": "F",
+    "born": "5 Aug 1951",
+    "spouses": [{"name": "Keith Galloway", "married": "22 Dec 1975"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 113},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "17211E1", "name": "Julia Pearl Galloway", "born": "23 Jun 1978"},
+        {"code": "17211E2", "name": "Myron Scott Galloway", "born": "18 May 1982"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172121",
+    "name": "James W. Seese",
+    "sex": "M",
+    "born": "6 Aug 1930",
+    "spouses": [{"name": "Roberta Louise Goldsborough", "born": "10 Apr 1937", "married": "27 Feb 1957"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 113},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721211", "name": "Anita Ann Seese", "born": "15 Aug 1957"},
+        {"code": "1721212", "name": "Kevin Luke Seese", "born": "31 Jan 1959"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172122",
+    "name": "Thelma Mae Seese",
+    "sex": "F",
+    "born": "1 Dec 1932",
+    "spouses": [{"name": "Curtis Hoover Wolfe", "born": "2 Apr 1929", "married": "20 Oct 1952"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 114},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721221", "name": "Cindy Diane Wolfe", "born": "23 Nov 1953"},
+        {"code": "1721222", "name": "Christine Mae Wolfe", "born": "7 Jan 1955", "died": "7 Jan 1955", "flags": {"diedInInfancy": True}},
+        {"code": "1721223", "name": "Steven Curtis Wolfe", "born": "27 Sep 1956"},
+        {"code": "1721224", "name": "Daniel Thurman Wolfe", "born": "8 Jan 1965"},
+        {"code": "1721225", "name": "Misty Ruth Wolfe", "born": "20 Oct 1970"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172123",
+    "name": "Thomas Ray Seese",
+    "sex": "M",
+    "born": "23 Nov 1943",
+    "spouses": [{"name": "Sheila (Cookie) Savage", "born": "5 Feb 1948", "married": "5 Jun 1965"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 114},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721231", "name": "Thomas Ray Seese, Jr.", "born": "11 May 1966", "died": "15 Oct 1994"},
+        {"code": "1721232", "name": "Jeffrey Howard Seese", "born": "14 Sep 1969"},
+        {"code": "1721233", "name": "Brian Lee Seese", "born": "11 Mar 1972", "died": "15 Oct 1994"},
+        {"code": "1721234", "name": "Susan Rae Seese", "born": "5 Feb 1978"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172124",
+    "name": "Dale Franklin Seese",
+    "sex": "M",
+    "born": "28 May 1949",
+    "spouses": [
+        {"name": "Margaret Ann Jordan", "married": "15 Jun 1974", "order": 1},
+        {"name": "Bonnie Marie Riffle", "born": "1956", "married": "Sep 1977", "order": 2},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 114},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721241", "name": "Justin William Seese", "born": "10 Dec 1979"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172125",
+    "name": "David Henry Seese",
+    "sex": "M",
+    "born": "3 Sep 1950",
+    "spouses": [{"name": "Sheila Jean Pretzel", "born": "23 Dec 1955"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 114},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721251", "name": "David Shawn Seese", "born": "16 Nov 1973"},
+        {"code": "1721252", "name": "Gregory Alan Seese", "born": "3 May 1976"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172126",
+    "name": "Mark Lee Seese",
+    "sex": "M",
+    "born": "21 Apr 1954",
+    "spouses": [
+        {"name": "Laura Lee Niner", "born": "1959", "married": "2 Jan 1976", "order": 1},
+        {"name": "Ellen Bucklew", "born": "19 Apr 1965", "married": "8 Dec 1984", "order": 2},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 114},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721261", "name": "Christopher Lee Seese", "born": "14 Jun 1976"},
+        {"code": "1721262", "name": "Joseph Bryson Seese", "born": "4 Aug 1977"},
+        {"code": "1721263", "name": "Courtney Nicole Seese", "born": "15 Jul 1986"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172131",
+    "name": "Frances Elaine Ritchey",
+    "sex": "F",
+    "born": "19 Jun 1934",
+    "spouses": [{"name": "Ralph Rucinski", "born": "17 Jun 1932", "died": "4 Apr 1977", "married": "19 Sep 1957"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 114},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721311", "name": "Faye Diana Rucinski", "born": "29 Apr 1960"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172132",
+    "name": "Donald Ray Ritchey",
+    "sex": "M",
+    "born": "3 Oct 1935",
+    "spouses": [{"name": "Delma Summers", "born": "3 Oct 1935", "married": "30 Jun 1957"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 114},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721321", "name": "Donald Ray Ritchey, Jr.", "born": "7 May 1958"},
+        {"code": "1721322", "name": "Rodney Wayne Ritchey", "born": "27 Dec 1959"},
+        {"code": "1721323", "name": "Andrea Sue Ritchey", "born": "10 Jan 1964"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172133",
+    "name": "Jane Louise Ritchey",
+    "sex": "F",
+    "born": "11 Sep 1937",
+    "died": "24 Oct 1995",
+    "spouses": [{"name": "William Moore", "married": "30 Mar 1957"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 114},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721331", "name": "Roger Lee Moore", "born": "1 Jul 1959"},
+        {"code": "1721332", "name": "William Dean Moore", "born": "16 Oct 1962"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172134",
+    "name": "Susie Alberta Ritchey",
+    "sex": "F",
+    "born": "16 Sep 1939",
+    "spouses": [{"name": "Donald Hogue", "married": "29 Sep 1959"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 115},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721341", "name": "Donna Sue Hogue", "born": "21 Dec 1965"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172135",
+    "name": "Delmore George Ritchey",
+    "sex": "M",
+    "born": "17 Nov 1942",
+    "spouses": [{"name": "Lillian Hannah Curry", "born": "17 Jan 1943", "married": "19 Jun 1964"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 115},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721351", "name": "Sherri Lee Ritchey", "born": "28 Mar 1965"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172136",
+    "name": "Kenneth Dale Ritchey",
+    "sex": "M",
+    "born": "25 Nov 1944",
+    "spouses": [{"name": "Brenda Gail Silcox", "born": "19 Oct 1948", "married": "6 May 1967"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 115},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721361", "name": "Michael Dale Ritchey", "born": "16 Sep 1968"},
+        {"code": "1721362", "name": "Adam Shane Ritchey", "born": "7 Aug 1972"},
+        {"code": "1721363", "name": "Eric Mathew Ritchey", "born": "27 May 1977"},
+        {"code": "1721364", "name": "Amy Michelle Ritchey", "born": "9 Oct 1979"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172137",
+    "name": "Dennis Blaine Ritchey",
+    "sex": "M",
+    "born": "18 Feb 1954",
+    "spouses": [{"name": "Mary Putaturo", "born": "22 Aug 1955", "married": "18 Jan 1974"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 115},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721371", "name": "David Christopher Ritchey", "born": "12 Mar 1982"},
+        {"code": "1721372", "name": "Daniel Patrick Ritchey", "born": "4 Sep 1984"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172142",
+    "name": "Ruth Irene McNair",
+    "sex": "F",
+    "born": "29 Feb 1944",
+    "spouses": [
+        {"name": "John Robert Childers", "born": "21 Jan 1944", "married": "25 Jan 1963", "order": 1},
+        {"name": "James David Sweeney", "born": "12 May 1945", "married": "15 Jun 1976", "order": 2},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 115},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721421", "name": "Teresa Jane Childers", "born": "14 Dec 1965"},
+        {"code": "1721422", "name": "Cathleen Marie Childers", "born": "7 Mar 1967"},
+        {"code": "1721423", "name": "Deborah Louise Childers", "born": "19 Jun 1968"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172143",
+    "name": "Donald Ray McNair",
+    "sex": "M",
+    "born": "5 Feb 1947",
+    "spouses": [{"name": "Kathy Butler", "married": "31 May 1975"}],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 115},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721431", "name": "Andrew James McNair", "born": "15 Aug 1977"},
+        {"code": "1721432", "name": "Randall Ray McNair", "born": "15 Aug 1977"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172144",
+    "name": "Dortha Jean McNair",
+    "sex": "F",
+    "born": "26 May 1948",
+    "spouses": [
+        {"name": "Roy Butler", "order": 1},
+        {"name": "David Glisan", "born": "17 Jan 1955", "married": "14 Jul 1990", "order": 2},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 115},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721441", "name": "Roger Lee Butler", "born": "15 Sep 1967"},
+        {"code": "1721442", "name": "Roy Lee Butler", "born": "9 Sep 1968", "died": "30 Oct 1988"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "172145",
+    "name": "Pauline (Polly) Ann McNair",
+    "sex": "F",
+    "born": "17 Apr 1951",
+    "spouses": [
+        {"name": "Ralph Butler", "born": "12 Oct 1948", "married": "1969", "order": 1},
+        {"name": "James William Ulderich", "born": "23 May 1942", "married": "30 May 1977", "order": 2},
+    ],
+    "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 115},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "children": [
+        {"code": "1721451", "name": "Sue Ann Butler", "born": "17 Apr 1969"},
+        {"code": "1721452", "name": "Karen Lynn Butler", "born": "23 Jul 1970"},
+        {"code": "1721453", "name": "Kelley Sue Butler", "born": "20 Dec 1975"},
+        {"code": "1721454", "name": "Donald James Ulderich", "born": "19 Mar 1978"},
+        {"code": "1721455", "name": "Joseph Roy Ulderich", "born": "8 Jan 1980"},
+        {"code": "1721456", "name": "Fred Allen Ulderich", "born": "5 Feb 1983"},
+        {"code": "1721457", "name": "Samantha", "born": "23 Jul 1987"},
+    ],
+})
+
+
 # === Drafts extracted from rachel.txt by draft_from_ocr.py ===
 ENTRIES.append({
     'code': '632',
