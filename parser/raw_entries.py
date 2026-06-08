@@ -15945,7 +15945,240 @@ ENTRIES.append({
     "name": "Gary Lee Fike",
     "sex": "M",
     "born": "23 Sep 1954",
-    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 7},
+    "spouses": [{"name": "Margaret Ann Scott", "married": "Jul 1980"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 16},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "717631", "name": "Emily Scott Fike", "born": "11 Mar 1983"},
+        {"code": "717632", "name": "Adam Scott Fike", "born": "30 Dec 1986"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "722111",
+    "name": "Sharon Elizabeth Thornton",
+    "sex": "F",
+    "born": "15 Jan 1959",
+    "spouses": [{"name": "Michael Clifton Weber III", "married": "10 Oct 1981"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 16},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "722112",
+    "name": "Robert Barnes Thornton Jr",
+    "sex": "M",
+    "born": "24 Jun 1961",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 16},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "722113",
+    "name": "Marilyn Anderson Thornton",
+    "sex": "F",
+    "born": "15 Jun 1963",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 16},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "722121",
+    "name": "Jeff David Thornton",
+    "sex": "M",
+    "born": "15 Apr 1973",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 16},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "722122",
+    "name": "Chandler Campbell Thornton",
+    "sex": "M",
+    "born": "2 May 1975",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 16},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "722131",
+    "name": "James Hogg Rogers III",
+    "sex": "M",
+    "born": "22 Jul 1963",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 16},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "722132",
+    "name": "Clint Thornton Rogers",
+    "sex": "M",
+    "born": "20 Feb 1966",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 16},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "722133",
+    "name": "Charlotte Elizabeth Rogers",
+    "sex": "F",
+    "born": "7 Aug 1967",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 16},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "723111",
+    "name": "Sharon Leigh Shelton",
+    "sex": "F",
+    "born": "9 Sep 1961",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 16},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "723112",
+    "name": "Joseph Vanderbilt Shelton, Jr.",
+    "sex": "M",
+    "born": "10 Mar 1964",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 16},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "723113",
+    "name": "Suzanne Lynn Shelton",
+    "sex": "F",
+    "born": "18 Sep 1965",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 16},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "723121",
+    "name": "Gwendolyn Elaine Seaton",
+    "sex": "F",
+    "born": "28 Jun 1971",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 16},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "723122",
+    "name": "Michael Wayne Seaton",
+    "sex": "M",
+    "born": "10 Jun 1974",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 16},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "723123",
+    "name": "Lori Katherine Seaton",
+    "sex": "F",
+    "born": "20 Jan 1978",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 16},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "723311",
+    "name": "Lee Robert Barnes",
+    "sex": "M",
+    "born": "7 Apr 1982",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 16},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "723321",
+    "name": "James Ronald Barnes Jr.",
+    "sex": "M",
+    "born": "3 Jul 1981",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 16},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "723331",
+    "name": "Michele Carolyn Wilde",
+    "sex": "F",
+    "born": "23 Aug 1982",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 16},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "723521",
+    "name": "Amy Laura Dutterer",
+    "sex": "F",
+    "born": "9 Mar 1982",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 17},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "725111",
+    "name": "Kathryn Diana Parks",
+    "sex": "F",
+    "born": "7 Jun 1960",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 17},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "725112",
+    "name": "Matthew David Parks",
+    "sex": "M",
+    "born": "16 Oct 1963",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 17},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "725211",
+    "name": "Patricia Sue Slavins",
+    "sex": "F",
+    "born": "28 Oct 1951",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 17},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "725212",
+    "name": "William Edgar Slavins, Jr.",
+    "sex": "M",
+    "born": "27 Jun 1954",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 17},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "725221",
+    "name": "Jane Carolyn (Adams) Welch",
+    "sex": "F",
+    "born": "11 Jan 1959",
+    "spouses": [{"name": "Samuel Cooper McMillan III", "born": "7 Mar 1957", "married": "24 Jul 1982"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 17},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Adopted by Welch (stepfather)"},
+})
+
+ENTRIES.append({
+    "code": "725222",
+    "name": "Thomas Conley (Adams) Welch",
+    "sex": "M",
+    "born": "15 Feb 1960",
+    "spouses": [{"name": "Nancy Gaye Vaughn", "born": "21 May 1960", "married": "14 Aug 1982"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 17},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Adopted by Welch (stepfather)"},
+})
+
+ENTRIES.append({
+    "code": "725223",
+    "name": "Sally Ann Welch",
+    "sex": "F",
+    "born": "2 Feb 1969",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 17},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
 })
 
@@ -20252,70 +20485,6 @@ ENTRIES.append({
 })
 
 
-ENTRIES.append({
-    'code': '717631',
-    'name': 'Emily Scott Fike',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '11 Mar 1983',
-})
-
-
-ENTRIES.append({
-    'code': '722122',
-    'name': 'Chandler Campbell Thornton',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '02 May 1975',
-})
-
-
-ENTRIES.append({
-    'code': '723111',
-    'name': 'Sharon Leigh Shelton',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-})
-
-ENTRIES.append({
-    'code': '723112',
-    'name': 'Joseph Vanderbilt Shelton',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '10 Mar 1964',
-})
 
 
 
@@ -20326,21 +20495,11 @@ ENTRIES.append({
 
 
 
-ENTRIES.append({
-    'code': '725222',
-    'name': 'Thomsne Conley (Adena) Welch',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '15 Feb 1960',
-})
+
+
+
+
+
 
 ENTRIES.append({
     'code': '73332',
