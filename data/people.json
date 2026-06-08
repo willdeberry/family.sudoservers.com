@@ -1677,8 +1677,8 @@
     {
       "id": "p_000036",
       "lineageCodes": [
-        "A211221",
-        "11322221"
+        "11322221",
+        "A211221"
       ],
       "name": {
         "full": "Jamie Lynn Balsley",
@@ -1710,8 +1710,8 @@
     {
       "id": "p_000037",
       "lineageCodes": [
-        "A211222",
-        "11322222"
+        "11322222",
+        "A211222"
       ],
       "name": {
         "full": "Brad Allan Balsley",
@@ -11014,8 +11014,8 @@
       },
       "sex": "F",
       "parentIds": [
-        "p_000171",
-        "p_000239"
+        "p_000239",
+        "p_000171"
       ],
       "marriages": [
         {
@@ -11197,8 +11197,8 @@
         "dateRaw": "24 Dec 1966"
       },
       "parentIds": [
-        "p_000415",
-        "p_000244"
+        "p_000244",
+        "p_000415"
       ],
       "marriages": [
         {
@@ -19609,8 +19609,8 @@
     {
       "id": "p_000429",
       "lineageCodes": [
-        "13E6",
-        "1746"
+        "1746",
+        "13E6"
       ],
       "name": {
         "full": "Ruby May Nicola",
@@ -19623,8 +19623,8 @@
         "dateRaw": "5 Apr 1901"
       },
       "parentIds": [
-        "p_000423",
-        "p_001008"
+        "p_001008",
+        "p_000423"
       ],
       "sources": [
         {
@@ -19657,8 +19657,8 @@
         "dateRaw": "1904"
       },
       "parentIds": [
-        "p_000423",
-        "p_001008"
+        "p_001008",
+        "p_000423"
       ],
       "marriages": [
         {
@@ -20469,8 +20469,8 @@
         "dateRaw": "13 Jul 1961"
       },
       "parentIds": [
-        "p_001348",
-        "p_000443"
+        "p_000443",
+        "p_001348"
       ],
       "marriages": [
         {
@@ -20760,8 +20760,8 @@
         "dateRaw": "5 May 1958"
       },
       "parentIds": [
-        "p_000618",
-        "p_000453"
+        "p_000453",
+        "p_000618"
       ],
       "marriages": [
         {
@@ -23222,9 +23222,9 @@
     {
       "id": "p_000508",
       "lineageCodes": [
-        "173221",
         "142521",
-        "163121"
+        "163121",
+        "173221"
       ],
       "name": {
         "full": "Mary Maxine Nicola",
@@ -23241,8 +23241,8 @@
         "dateRaw": "2 Mar 1931"
       },
       "parentIds": [
-        "p_000772",
-        "p_000507"
+        "p_000507",
+        "p_000772"
       ],
       "sources": [
         {
@@ -23279,8 +23279,8 @@
         "dateRaw": "26 Mar 1934"
       },
       "parentIds": [
-        "p_000507",
-        "p_000772"
+        "p_000772",
+        "p_000507"
       ],
       "marriages": [
         {
@@ -23798,10 +23798,10 @@
         "adopted": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list (SEE_REF cross-code). PDF's own line for this person not yet transcribed."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -25412,8 +25412,8 @@
         "dateRaw": "27 May 1960"
       },
       "parentIds": [
-        "p_000553",
-        "p_000586"
+        "p_000586",
+        "p_000553"
       ],
       "marriages": [
         {
@@ -26580,8 +26580,8 @@
         "dateRaw": "17 Feb 1946"
       },
       "parentIds": [
-        "p_000577",
-        "p_000571"
+        "p_000571",
+        "p_000577"
       ],
       "marriages": [
         {
@@ -26989,10 +26989,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list (SEE_REF cross-code). PDF's own line for this person not yet transcribed."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -27037,8 +27037,8 @@
     {
       "id": "p_000593",
       "lineageCodes": [
-        "1646",
-        "14436"
+        "14436",
+        "1646"
       ],
       "name": {
         "full": "May Thomas Harshbarger",
@@ -27055,8 +27055,8 @@
         "dateRaw": "13 Apr 1916"
       },
       "parentIds": [
-        "p_000797",
-        "p_000587"
+        "p_000587",
+        "p_000797"
       ],
       "sources": [
         {
@@ -27110,8 +27110,8 @@
     {
       "id": "p_000595",
       "lineageCodes": [
-        "164C21",
-        "1443C21"
+        "1443C21",
+        "164C21"
       ],
       "name": {
         "full": "Richard Allen Sager",
@@ -30557,8 +30557,8 @@
     {
       "id": "p_000671",
       "lineageCodes": [
-        "14751314",
-        "14751311"
+        "14751311",
+        "14751314"
       ],
       "name": {
         "full": "Brian Keith Cuppett",
@@ -35166,8 +35166,8 @@
     {
       "id": "p_000772",
       "lineageCodes": [
-        "16312",
-        "17322"
+        "17322",
+        "16312"
       ],
       "name": {
         "full": "Earl Jackson Nicola",
@@ -35196,10 +35196,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list (SEE_REF cross-code). PDF's own line for this person not yet transcribed."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -35361,8 +35361,8 @@
     {
       "id": "p_000776",
       "lineageCodes": [
-        "16314211",
-        "17324211"
+        "17324211",
+        "16314211"
       ],
       "name": {
         "full": "Christine Lloyd Parnell",
@@ -35521,8 +35521,8 @@
     {
       "id": "p_000780",
       "lineageCodes": [
-        "16314231",
-        "17324231"
+        "17324231",
+        "16314231"
       ],
       "name": {
         "full": "Dean Alan Moyers",
@@ -35554,8 +35554,8 @@
     {
       "id": "p_000781",
       "lineageCodes": [
-        "16314232",
-        "17324232"
+        "17324232",
+        "16314232"
       ],
       "name": {
         "full": "Jeremy Colt Moyers",
@@ -35701,8 +35701,8 @@
         "dateRaw": "18 Nov 1994"
       },
       "parentIds": [
-        "p_000767",
-        "p_000989"
+        "p_000989",
+        "p_000767"
       ],
       "marriages": [
         {
@@ -37633,8 +37633,8 @@
         "dateRaw": "7 Mar 1984"
       },
       "parentIds": [
-        "p_000797",
-        "p_000587"
+        "p_000587",
+        "p_000797"
       ],
       "marriages": [
         {
@@ -38058,8 +38058,8 @@
         "dateRaw": "11 Feb 1925"
       },
       "parentIds": [
-        "p_000797",
-        "p_000587"
+        "p_000587",
+        "p_000797"
       ],
       "marriages": [
         {
@@ -38383,8 +38383,8 @@
         "dateRaw": "30 Jan 1906"
       },
       "parentIds": [
-        "p_001238",
-        "p_000841"
+        "p_000841",
+        "p_001238"
       ],
       "marriages": [
         {
@@ -38634,8 +38634,8 @@
     {
       "id": "p_000848",
       "lineageCodes": [
-        "1662131",
-        "17232131"
+        "17232131",
+        "1662131"
       ],
       "name": {
         "full": "Laura Nicole Hileman",
@@ -39019,8 +39019,8 @@
     {
       "id": "p_000857",
       "lineageCodes": [
-        "1662221",
-        "17232221"
+        "17232221",
+        "1662221"
       ],
       "name": {
         "full": "Garrett Steven Reed",
@@ -39860,8 +39860,8 @@
         "dateRaw": "2 Dec 1921"
       },
       "parentIds": [
-        "p_000871",
-        "p_001253"
+        "p_001253",
+        "p_000871"
       ],
       "marriages": [
         {
@@ -41081,8 +41081,8 @@
     {
       "id": "p_000901",
       "lineageCodes": [
-        "7411B1",
-        "17211B1"
+        "17211B1",
+        "7411B1"
       ],
       "name": {
         "full": "Carl Joseph Guthrie",
@@ -42378,8 +42378,8 @@
         "dateRaw": "7 May 1982"
       },
       "parentIds": [
-        "p_000879",
-        "p_001237"
+        "p_001237",
+        "p_000879"
       ],
       "marriages": [
         {
@@ -42660,8 +42660,8 @@
         "dateRaw": "27 Sep 1921"
       },
       "parentIds": [
-        "p_001237",
-        "p_000879"
+        "p_000879",
+        "p_001237"
       ],
       "marriages": [
         {
@@ -43061,8 +43061,8 @@
     {
       "id": "p_000945",
       "lineageCodes": [
-        "1726121",
-        "746121"
+        "746121",
+        "1726121"
       ],
       "name": {
         "full": "Clair (CJ) Edward Guthrie, Jr.",
@@ -43348,8 +43348,8 @@
         "dateRaw": "5 Feb 1930"
       },
       "parentIds": [
-        "p_001244",
-        "p_000950"
+        "p_000950",
+        "p_001244"
       ],
       "marriages": [
         {
@@ -44564,8 +44564,8 @@
         "dateRaw": "1 Jan 1988"
       },
       "parentIds": [
-        "p_000964",
-        "p_001238"
+        "p_001238",
+        "p_000964"
       ],
       "marriages": [
         {
@@ -55867,9 +55867,9 @@
         "dateRaw": "7 Sep 1921"
       },
       "parentIds": [
+        "p_000949",
         "p_001239",
-        "p_000739",
-        "p_000949"
+        "p_000739"
       ],
       "marriages": [
         {
@@ -55915,9 +55915,9 @@
         "dateRaw": "20 Oct 1925"
       },
       "parentIds": [
-        "p_001239",
         "p_000949",
-        "p_000739"
+        "p_000739",
+        "p_001239"
       ],
       "marriages": [
         {
@@ -56014,8 +56014,8 @@
         "dateRaw": "28 Jul 1931"
       },
       "parentIds": [
-        "p_000739",
-        "p_001239"
+        "p_001239",
+        "p_000739"
       ],
       "marriages": [
         {
@@ -56112,8 +56112,8 @@
         "dateRaw": "16 Jan 1976"
       },
       "parentIds": [
-        "p_000878",
-        "p_001236"
+        "p_001236",
+        "p_000878"
       ],
       "marriages": [
         {
@@ -62123,10 +62123,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
+        "status": "verified",
         "source": "manual",
         "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -62882,10 +62882,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -62914,10 +62914,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -63150,10 +63150,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -63982,10 +63982,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -64089,10 +64089,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -64230,10 +64230,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -64286,10 +64286,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -64342,10 +64342,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -64370,10 +64370,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -64426,10 +64426,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -64462,10 +64462,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -64490,10 +64490,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -65252,10 +65252,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -65494,10 +65494,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -65960,10 +65960,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -66333,10 +66333,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -66361,10 +66361,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -66561,10 +66561,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -66889,10 +66889,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -66917,10 +66917,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -67118,10 +67118,10 @@
         "stepChild": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -67174,10 +67174,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -67452,10 +67452,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -68162,10 +68162,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -68226,10 +68226,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -68293,10 +68293,10 @@
         "stepChild": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -68328,10 +68328,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -68356,10 +68356,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -68661,10 +68661,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -69697,10 +69697,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -70019,10 +70019,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -70360,10 +70360,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -70424,10 +70424,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -70908,10 +70908,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -71075,10 +71075,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -71223,10 +71223,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -71325,10 +71325,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -71357,10 +71357,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -71453,10 +71453,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -72343,10 +72343,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -72418,10 +72418,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -72834,10 +72834,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -72865,10 +72865,10 @@
         "adopted": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -72921,10 +72921,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -73111,10 +73111,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -73171,10 +73171,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -73455,10 +73455,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -73483,10 +73483,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -73511,10 +73511,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -73539,10 +73539,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -73828,10 +73828,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -73891,10 +73891,10 @@
         "adopted": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -73922,10 +73922,10 @@
         "adopted": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -74016,10 +74016,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -74080,10 +74080,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -74112,10 +74112,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -74311,10 +74311,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -74847,10 +74847,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -74989,10 +74989,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -75096,10 +75096,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -75128,10 +75128,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -75164,10 +75164,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -75299,10 +75299,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -75331,10 +75331,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -75367,10 +75367,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -75399,10 +75399,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -75431,10 +75431,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -75463,10 +75463,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -75612,10 +75612,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -75739,10 +75739,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -75831,10 +75831,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -75987,10 +75987,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -76015,10 +76015,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -76148,10 +76148,10 @@
         "stepChild": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -76179,10 +76179,10 @@
         "stepChild": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -76211,10 +76211,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -76307,10 +76307,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -76530,10 +76530,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -76714,10 +76714,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -77212,10 +77212,10 @@
         "adopted": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -77243,10 +77243,10 @@
         "adopted": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -77278,10 +77278,10 @@
         "adopted": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -77548,10 +77548,10 @@
         "stepChild": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -77583,10 +77583,10 @@
         "stepChild": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -77618,10 +77618,10 @@
         "stepChild": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -77756,10 +77756,10 @@
         "adopted": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -77791,10 +77791,10 @@
         "adopted": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -77826,10 +77826,10 @@
         "adopted": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -77861,10 +77861,10 @@
         "adopted": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -78130,10 +78130,10 @@
         "stepChild": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -80989,10 +80989,10 @@
         "stepChild": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -81020,10 +81020,10 @@
         "stepChild": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -88720,10 +88720,10 @@
         "stepChild": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -89548,10 +89548,10 @@
         "adopted": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -89775,10 +89775,10 @@
         "adopted": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -94296,10 +94296,10 @@
         "adopted": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -95193,10 +95193,10 @@
         "adopted": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -97058,10 +97058,10 @@
         "stepChild": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -98874,10 +98874,10 @@
         "adopted": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -99979,10 +99979,10 @@
         "stepChild": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -100292,10 +100292,10 @@
         "stepChild": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -101498,10 +101498,10 @@
         "stepChild": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -101529,10 +101529,10 @@
         "adopted": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -101560,10 +101560,10 @@
         "adopted": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -101591,10 +101591,10 @@
         "adopted": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -101714,10 +101714,10 @@
         "stepChild": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -101745,10 +101745,10 @@
         "stepChild": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -107628,10 +107628,10 @@
         "stepChild": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -107663,10 +107663,10 @@
         "stepChild": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -107698,10 +107698,10 @@
         "stepChild": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -113689,10 +113689,10 @@
         "adopted": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-07",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -115815,10 +115815,10 @@
         "adopted": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -115846,10 +115846,10 @@
         "stepChild": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -115881,10 +115881,10 @@
         "stepChild": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -123330,10 +123330,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -123414,10 +123414,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -123442,10 +123442,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -123470,10 +123470,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -123526,10 +123526,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -123562,10 +123562,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -123625,10 +123625,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -124484,10 +124484,10 @@
         "adopted": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -124519,10 +124519,10 @@
         "adopted": true
       },
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -125191,10 +125191,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -125371,10 +125371,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -125840,10 +125840,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -125872,10 +125872,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -125904,10 +125904,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -125936,10 +125936,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
@@ -127195,10 +127195,10 @@
         }
       ],
       "verification": {
-        "status": "draft",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here."
+        "status": "verified",
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
     {
