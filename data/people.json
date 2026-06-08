@@ -37,9 +37,9 @@
       "notes": "Inferred common ancestor of the seven documented sibling branches. Not directly attested in any of the source PDFs but logically required: John (b. 1792), William (b. 1794), Stephen (b. 1801), Rachel (b. 1804), James (b. 1806), Absalom (b. 1810), and Alexander (b. 1815) share the Guthrie surname, overlap geographically (WV/PA), and the PDFs' shared numbering scheme treats them as siblings. Gaps at codes 3, 4, and 9 suggest additional undocumented siblings.",
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Inferred common ancestor; not directly attested in any PDF."
       }
     },
     {
@@ -1495,9 +1495,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -1964,9 +1964,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -4044,8 +4044,8 @@
     {
       "id": "p_000088",
       "lineageCodes": [
-        "17134221",
-        "12243221"
+        "12243221",
+        "17134221"
       ],
       "name": {
         "full": "Kristin Marie Shea",
@@ -11014,8 +11014,8 @@
       },
       "sex": "F",
       "parentIds": [
-        "p_000239",
-        "p_000171"
+        "p_000171",
+        "p_000239"
       ],
       "marriages": [
         {
@@ -19387,8 +19387,8 @@
         "dateRaw": "20 Oct 1911"
       },
       "parentIds": [
-        "p_000423",
-        "p_001008"
+        "p_001008",
+        "p_000423"
       ],
       "marriages": [
         {
@@ -19445,8 +19445,8 @@
         "dateRaw": "24 Nov 1970"
       },
       "parentIds": [
-        "p_001008",
-        "p_000423"
+        "p_000423",
+        "p_001008"
       ],
       "marriages": [
         {
@@ -19511,8 +19511,8 @@
         "dateRaw": "1971"
       },
       "parentIds": [
-        "p_001008",
-        "p_000423"
+        "p_000423",
+        "p_001008"
       ],
       "marriages": [
         {
@@ -19564,8 +19564,8 @@
         "dateRaw": "16 Oct 1896"
       },
       "parentIds": [
-        "p_000423",
-        "p_001008"
+        "p_001008",
+        "p_000423"
       ],
       "marriages": [
         {
@@ -19609,8 +19609,8 @@
     {
       "id": "p_000429",
       "lineageCodes": [
-        "1746",
-        "13E6"
+        "13E6",
+        "1746"
       ],
       "name": {
         "full": "Ruby May Nicola",
@@ -19623,8 +19623,8 @@
         "dateRaw": "5 Apr 1901"
       },
       "parentIds": [
-        "p_001008",
-        "p_000423"
+        "p_000423",
+        "p_001008"
       ],
       "sources": [
         {
@@ -19657,8 +19657,8 @@
         "dateRaw": "1904"
       },
       "parentIds": [
-        "p_001008",
-        "p_000423"
+        "p_000423",
+        "p_001008"
       ],
       "marriages": [
         {
@@ -19696,8 +19696,8 @@
     {
       "id": "p_000431",
       "lineageCodes": [
-        "1748",
-        "13E8"
+        "13E8",
+        "1748"
       ],
       "name": {
         "full": "Dorsey E. Nicola",
@@ -19706,8 +19706,8 @@
         "last": "Nicola"
       },
       "parentIds": [
-        "p_001008",
-        "p_000423"
+        "p_000423",
+        "p_001008"
       ],
       "sources": [
         {
@@ -20469,8 +20469,8 @@
         "dateRaw": "13 Jul 1961"
       },
       "parentIds": [
-        "p_000443",
-        "p_001348"
+        "p_001348",
+        "p_000443"
       ],
       "marriages": [
         {
@@ -23222,9 +23222,9 @@
     {
       "id": "p_000508",
       "lineageCodes": [
+        "173221",
         "142521",
-        "163121",
-        "173221"
+        "163121"
       ],
       "name": {
         "full": "Mary Maxine Nicola",
@@ -23241,8 +23241,8 @@
         "dateRaw": "2 Mar 1931"
       },
       "parentIds": [
-        "p_000507",
-        "p_000772"
+        "p_000772",
+        "p_000507"
       ],
       "sources": [
         {
@@ -23279,8 +23279,8 @@
         "dateRaw": "26 Mar 1934"
       },
       "parentIds": [
-        "p_000772",
-        "p_000507"
+        "p_000507",
+        "p_000772"
       ],
       "marriages": [
         {
@@ -23365,8 +23365,8 @@
     {
       "id": "p_000511",
       "lineageCodes": [
-        "14252311",
-        "16312311"
+        "16312311",
+        "14252311"
       ],
       "name": {
         "full": "Amy Noel Hammons",
@@ -23771,8 +23771,8 @@
     {
       "id": "p_000521",
       "lineageCodes": [
-        "16312421",
-        "14252421"
+        "14252421",
+        "16312421"
       ],
       "name": {
         "full": "Travis Cody Gatian",
@@ -24030,8 +24030,8 @@
         "dateRaw": "28 Feb 1954"
       },
       "parentIds": [
-        "p_001242",
-        "p_000525"
+        "p_000525",
+        "p_001242"
       ],
       "marriages": [
         {
@@ -24069,8 +24069,8 @@
     {
       "id": "p_000527",
       "lineageCodes": [
-        "162232",
-        "142822"
+        "142822",
+        "162232"
       ],
       "name": {
         "full": "Wendy Gay Sines",
@@ -24083,8 +24083,8 @@
         "dateRaw": "13 Feb 1963"
       },
       "parentIds": [
-        "p_001242",
-        "p_000525"
+        "p_000525",
+        "p_001242"
       ],
       "sources": [
         {
@@ -25138,8 +25138,8 @@
         "dateRaw": "9 Aug 1959"
       },
       "parentIds": [
-        "p_000549",
-        "p_000133"
+        "p_000133",
+        "p_000549"
       ],
       "marriages": [
         {
@@ -27110,8 +27110,8 @@
     {
       "id": "p_000595",
       "lineageCodes": [
-        "1443C21",
-        "164C21"
+        "164C21",
+        "1443C21"
       ],
       "name": {
         "full": "Richard Allen Sager",
@@ -30557,8 +30557,8 @@
     {
       "id": "p_000671",
       "lineageCodes": [
-        "14751311",
-        "14751314"
+        "14751314",
+        "14751311"
       ],
       "name": {
         "full": "Brian Keith Cuppett",
@@ -34063,8 +34063,8 @@
     {
       "id": "p_000748",
       "lineageCodes": [
-        "1727421",
-        "1622421"
+        "1622421",
+        "1727421"
       ],
       "name": {
         "full": "Charles Junior (CJ) Moyers",
@@ -35180,8 +35180,8 @@
         "dateRaw": "26 Sep 1909"
       },
       "parentIds": [
-        "p_000989",
-        "p_000767"
+        "p_000767",
+        "p_000989"
       ],
       "childIds": [
         "p_000508",
@@ -35224,8 +35224,8 @@
         "dateRaw": "30 Jan 1980"
       },
       "parentIds": [
-        "p_000989",
-        "p_000767"
+        "p_000767",
+        "p_000989"
       ],
       "marriages": [
         {
@@ -35361,8 +35361,8 @@
     {
       "id": "p_000776",
       "lineageCodes": [
-        "17324211",
-        "16314211"
+        "16314211",
+        "17324211"
       ],
       "name": {
         "full": "Christine Lloyd Parnell",
@@ -35394,8 +35394,8 @@
     {
       "id": "p_000777",
       "lineageCodes": [
-        "17324212",
-        "16314212"
+        "16314212",
+        "17324212"
       ],
       "name": {
         "full": "Richard Blaine Moyers, Jr.",
@@ -35521,8 +35521,8 @@
     {
       "id": "p_000780",
       "lineageCodes": [
-        "17324231",
-        "16314231"
+        "16314231",
+        "17324231"
       ],
       "name": {
         "full": "Dean Alan Moyers",
@@ -35732,8 +35732,8 @@
     {
       "id": "p_000785",
       "lineageCodes": [
-        "173251",
-        "163151"
+        "163151",
+        "173251"
       ],
       "name": {
         "full": "Harold E. Greathouse",
@@ -36111,8 +36111,8 @@
         "dateRaw": "27 Feb 1930"
       },
       "parentIds": [
-        "p_000989",
-        "p_000767"
+        "p_000767",
+        "p_000989"
       ],
       "marriages": [
         {
@@ -36500,8 +36500,8 @@
         "dateRaw": "6 Sep 1971"
       },
       "parentIds": [
-        "p_000800",
-        "p_000588"
+        "p_000588",
+        "p_000800"
       ],
       "marriages": [
         {
@@ -38383,8 +38383,8 @@
         "dateRaw": "30 Jan 1906"
       },
       "parentIds": [
-        "p_000841",
-        "p_001238"
+        "p_001238",
+        "p_000841"
       ],
       "marriages": [
         {
@@ -38634,8 +38634,8 @@
     {
       "id": "p_000848",
       "lineageCodes": [
-        "17232131",
-        "1662131"
+        "1662131",
+        "17232131"
       ],
       "name": {
         "full": "Laura Nicole Hileman",
@@ -39860,8 +39860,8 @@
         "dateRaw": "2 Dec 1921"
       },
       "parentIds": [
-        "p_001253",
-        "p_000871"
+        "p_000871",
+        "p_001253"
       ],
       "marriages": [
         {
@@ -41160,8 +41160,8 @@
     {
       "id": "p_000903",
       "lineageCodes": [
-        "7411D1",
-        "17211D1"
+        "17211D1",
+        "7411D1"
       ],
       "name": {
         "full": "Susan Michella Fike",
@@ -42282,8 +42282,8 @@
     {
       "id": "p_000928",
       "lineageCodes": [
-        "741362",
-        "1721362"
+        "1721362",
+        "741362"
       ],
       "name": {
         "full": "Adam Shane Ritchey",
@@ -43348,8 +43348,8 @@
         "dateRaw": "5 Feb 1930"
       },
       "parentIds": [
-        "p_000950",
-        "p_001244"
+        "p_001244",
+        "p_000950"
       ],
       "marriages": [
         {
@@ -43542,8 +43542,8 @@
         "dateRaw": "6 Oct 1932"
       },
       "parentIds": [
-        "p_001244",
-        "p_000950"
+        "p_000950",
+        "p_001244"
       ],
       "marriages": [
         {
@@ -51377,9 +51377,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -51430,9 +51430,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -51476,9 +51476,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -51521,9 +51521,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -51570,9 +51570,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -51911,9 +51911,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -52095,9 +52095,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -53227,9 +53227,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -53547,9 +53547,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -55693,9 +55693,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -55741,9 +55741,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -55791,9 +55791,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -55843,9 +55843,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -55867,9 +55867,9 @@
         "dateRaw": "7 Sep 1921"
       },
       "parentIds": [
+        "p_000739",
         "p_000949",
-        "p_001239",
-        "p_000739"
+        "p_001239"
       ],
       "marriages": [
         {
@@ -55891,9 +55891,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -55939,9 +55939,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -55967,8 +55967,8 @@
         "dateRaw": "23 Jun 1981"
       },
       "parentIds": [
-        "p_000949",
         "p_001239",
+        "p_000949",
         "p_000739"
       ],
       "marriages": [
@@ -55991,9 +55991,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -56014,8 +56014,8 @@
         "dateRaw": "28 Jul 1931"
       },
       "parentIds": [
-        "p_001239",
-        "p_000739"
+        "p_000739",
+        "p_001239"
       ],
       "marriages": [
         {
@@ -56038,9 +56038,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -56085,9 +56085,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -56112,8 +56112,8 @@
         "dateRaw": "16 Jan 1976"
       },
       "parentIds": [
-        "p_001236",
-        "p_000878"
+        "p_000878",
+        "p_001236"
       ],
       "marriages": [
         {
@@ -56134,9 +56134,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -56230,9 +56230,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -56352,9 +56352,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -56466,9 +56466,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -57014,9 +57014,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -58090,9 +58090,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -58127,9 +58127,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -58177,9 +58177,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -58225,9 +58225,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -58267,9 +58267,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -58508,9 +58508,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -58548,9 +58548,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -58591,9 +58591,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -58635,9 +58635,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -58762,9 +58762,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -58865,9 +58865,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -58944,9 +58944,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -59071,9 +59071,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -59520,9 +59520,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -59606,9 +59606,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -59657,9 +59657,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -59703,9 +59703,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -59829,9 +59829,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -60283,9 +60283,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -60336,9 +60336,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -60527,9 +60527,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -60576,9 +60576,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -60899,9 +60899,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -60941,9 +60941,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -60988,9 +60988,9 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
-        "notes": null
+        "source": "vision",
+        "lastChecked": "2026-06-08",
+        "notes": "Direct PDF read confirmed name+dates."
       }
     },
     {
@@ -62052,8 +62052,8 @@
       },
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
+        "source": "vision",
+        "lastChecked": "2026-06-08",
         "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
@@ -62088,8 +62088,8 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
+        "source": "vision",
+        "lastChecked": "2026-06-08",
         "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
@@ -62124,8 +62124,8 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
+        "source": "vision",
+        "lastChecked": "2026-06-08",
         "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
@@ -62606,8 +62606,8 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
+        "source": "vision",
+        "lastChecked": "2026-06-08",
         "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
@@ -62638,8 +62638,8 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
+        "source": "vision",
+        "lastChecked": "2026-06-08",
         "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
@@ -62673,8 +62673,8 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
+        "source": "vision",
+        "lastChecked": "2026-06-08",
         "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
@@ -62707,8 +62707,8 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
+        "source": "vision",
+        "lastChecked": "2026-06-08",
         "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },
@@ -62743,8 +62743,8 @@
       ],
       "verification": {
         "status": "verified",
-        "source": "manual",
-        "lastChecked": null,
+        "source": "vision",
+        "lastChecked": "2026-06-08",
         "notes": "Terminal stub: confirmed against source PDF — no separate entry for this person; parent's children list is the complete data."
       }
     },

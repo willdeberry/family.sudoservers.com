@@ -283,6 +283,7 @@ ENTRIES.append({
              "the Guthrie surname, overlap geographically (WV/PA), and the PDFs' "
              "shared numbering scheme treats them as siblings. Gaps at codes 3, 4, "
              "and 9 suggest additional undocumented siblings.",
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Inferred common ancestor; not directly attested in any PDF."},
     "children": [
         {"code": "1", "name": "John Guthrie", "born": "31 Aug 1792"},
         {"code": "2", "name": "William Guthrie", "born": "10 Sep 1794"},
@@ -691,6 +692,7 @@ ENTRIES.append({
         "buried": "Shady Grove",
     }],
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
     "children": [
         {"code": "71", "name": "Alcinda J. Guthrie", "born": "8 Sep 1845"},
         {"code": "72", "name": "Sarah Ann Guthrie", "born": "21 Feb 1847"},
@@ -715,6 +717,7 @@ ENTRIES.append({
         "married": "20 Apr 1862",
     }],
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -734,6 +737,7 @@ ENTRIES.append({
              "cross-branch union: James-line man marries John-line woman. Their children "
              "therefore carry two valid lineage codes (e.g., Ray Guthrie = 74A = 172A).",
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -749,6 +753,7 @@ ENTRIES.append({
         "married": "13 Apr 1882",
     }],
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 # Ray Guthrie (the canonical cross-reference example)
@@ -770,6 +775,7 @@ ENTRIES.append({
              "Alexander's branch via Rhuie Lena Frankhouser — connecting three of "
              "the seven sibling lines through one couple.",
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 # Stella Guthrie - another cross-branch case (her kids are double-coded)
@@ -789,6 +795,7 @@ ENTRIES.append({
                    "grandson of Elizabeth Guthrie (#16). Her children therefore carry double codes (7471=16221, etc).",
     }],
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 # === 8. ABSALOM GUTHRIE ===
@@ -926,6 +933,7 @@ ENTRIES.append({
         {"name": "Anna Smith", "born": "30 Apr 1818", "died": "12 Jun 1897", "order": 2},
     ],
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
     "children": [
         # First marriage
         {"code": "A1", "name": "Abner F. Guthrie", "born": "5 Feb 1840", "died": "15 May 1875"},
@@ -956,6 +964,7 @@ ENTRIES.append({
         "married": "7 Mar 1867",
     }],
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -971,6 +980,7 @@ ENTRIES.append({
         "married": "17 Jun 1866",
     }],
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -986,6 +996,7 @@ ENTRIES.append({
         "married": "12 Apr 1866",
     }],
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -996,6 +1007,7 @@ ENTRIES.append({
     "died": "21 May 1915",
     "spouses": [{"name": "Nicolas Bolyard"}],
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -1012,6 +1024,7 @@ ENTRIES.append({
     }],
     "notes": "Mother of Mary Cupp Summers (who married Glenn Webster Barnes #7144 in James's line).",
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 # === Deeper John branch — generation 3 ===
@@ -1260,6 +1273,7 @@ ENTRIES.append({
         "details": "Same as #166 in John's branch.",
     }],
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -1320,6 +1334,7 @@ ENTRIES.append({
     "spouses": [{"name": "Jacob Peter Barnes", "born": "21 Jun 1842", "died": "12 Jan 1938", "married": "27 Aug 1868"}],
     "notes": "After Sarah's death, Jacob Peter Barnes married Amanda Jane Harshbarger (#161). See entry 161.",
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -1362,6 +1377,7 @@ ENTRIES.append({
     "notes": "Mother Alcinda J. Guthrie (#71, James's branch), father Fleming C. Barnes. "
              "Her marriage to Samuel Floyd Guthrie is yet another John/James cross-union.",
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -1402,6 +1418,7 @@ ENTRIES.append({
     "notes": "Carries codes 11331 (via Samuel Floyd Guthrie, John line) and 7151 (via Rosa Mae Barnes, James line). "
              "Married Laura Cole Barnes, herself a James-line descendant.",
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 26},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 # === Deeper Alexander branch ===
@@ -1414,6 +1431,7 @@ ENTRIES.append({
     "died": "15 May 1875",
     "died_alt": "Apr 1875",
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -1429,6 +1447,7 @@ ENTRIES.append({
         "married": "2 Apr 1892",
     }],
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -1439,6 +1458,7 @@ ENTRIES.append({
     "died": "17 Dec 1934",
     "spouses": [{"name": "Laura M. Deal", "born": "7 Nov 1869", "died": "11 Sep 1957", "married": "14 Feb 1895"}],
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 
@@ -1457,6 +1477,7 @@ ENTRIES.append({
     }],
     "notes": "Her marriage to Ray Guthrie links Alexander's branch with both James's and John's branches.",
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 # === Children of Lydia/Christian (13E*/174* — activates that SEE_REF cluster) ===
@@ -1471,6 +1492,7 @@ ENTRIES.append({
         {"name": "Elsie Lambert", "born": "1905", "died": "1956", "order": 2},
     ],
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 22},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -1482,6 +1504,7 @@ ENTRIES.append({
     "died": "20 Oct 1911",
     "spouses": [{"name": "George Moore", "born": "22 Jun 1884", "died": "1940", "married": "12 Nov 1904"}],
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 22},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -1492,6 +1515,7 @@ ENTRIES.append({
     "died": "1971",
     "spouses": [{"name": "Lillian S. Ridenour", "born": "23 Oct 1902", "died": "1965", "married": "1920"}],
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 23},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -1501,6 +1525,7 @@ ENTRIES.append({
     "born": "16 Oct 1896",
     "spouses": [{"name": "Dove Poling", "born": "22 Jun 1898", "married": "24 Jun 1921"}],
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 23},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 # === Children of Stella/Charles (7471-7474 = 16221-16224 — activates that cluster) ===
@@ -1511,6 +1536,7 @@ ENTRIES.append({
     "born": "7 Sep 1921",
     "spouses": [{"name": "Lloyd Baysinger", "born": "3 Oct 1909", "married": "11 Feb 1950"}],
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 9},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -1520,6 +1546,7 @@ ENTRIES.append({
     "born": "20 Oct 1925",
     "spouses": [{"name": "Urban Lavern Long", "born": "13 Sep 1929", "married": "20 Jun 1951"}],
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 9},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -1530,6 +1557,7 @@ ENTRIES.append({
     "died": "23 Jun 1981",
     "spouses": [{"name": "Paul Carlus Sines", "married": "Sep 1953", "details": "Son of Alvin and Anna [Guthrie] Sines."}],
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 9},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -1539,6 +1567,7 @@ ENTRIES.append({
     "born": "28 Jul 1931",
     "spouses": [{"name": "Dorothy (Dottie) N. Shoemaker", "born": "22 Dec 1934", "married": "12 Apr 1953"}],
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 9},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 # === More John gen 2/3 depth ===
@@ -2196,6 +2225,7 @@ ENTRIES.append({
     "died": "22 May 1965",
     "spouses": [{"name": "Anna Blanche Raymond", "born": "1875", "died": "11 Feb 1966"}],
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -2206,6 +2236,7 @@ ENTRIES.append({
     "died": "1954",
     "spouses": [{"name": "Della M. Ridenour", "born": "3 Sep 1876", "died": "22 Aug 1940"}],
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -2216,6 +2247,7 @@ ENTRIES.append({
     "died": "7 Dec 1948",
     "spouses": [{"name": "Sarah Catherine Hileman", "born": "16 Feb 1886"}],
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 3},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 # === Children of John Forman Guthrie (87, Absalom line) ===
@@ -2257,6 +2289,7 @@ ENTRIES.append({
     "died": "21 Oct 1965",
     "spouses": [{"name": "Cora Idessa Ditmore", "born": "11 Aug 1875", "died": "10 Jan 1956", "married": "20 Jan 1904"}],
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -2267,6 +2300,7 @@ ENTRIES.append({
     "died": "14 Jan 1946",
     "spouses": [{"name": "Virginia Jennie Moyers", "born": "8 Feb 1871", "died": "8 Feb 1953", "married": "17 Jun 1900"}],
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -2283,6 +2317,7 @@ ENTRIES.append({
         "details": "Son of John and Amanda [Cupp] Frankhouser.",
     }],
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 
@@ -2826,6 +2861,7 @@ ENTRIES.append({
         {"name": "Ethel ---", "born": "1903", "order": 2},
     ],
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 23},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -2835,6 +2871,7 @@ ENTRIES.append({
     "born": "1904",
     "spouses": [{"name": "James Rockwell", "married": "1918"}],
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 23},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 # === Walter Christian Guthrie's kids (13F* — the patriarch's last child's line) ===
@@ -2929,6 +2966,7 @@ ENTRIES.append({
     "died": "25 Mar 1956",
     "spouses": [{"name": "Cora Cuppett", "born": "27 Aug 1875", "died": "29 Jan 1956", "married": "17 Mar 1898"}],
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -2939,6 +2977,7 @@ ENTRIES.append({
     "died": "24 Jul 1940",
     "spouses": [{"name": "Truman Elsworth Frazee", "born": "1868", "died": "9 May 1942", "married": "19 Dec 1895"}],
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -2949,6 +2988,7 @@ ENTRIES.append({
     "died": "27 Jun 1943",
     "spouses": [{"name": "Chancy L. Miller", "married": "1906"}],
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -2964,6 +3004,7 @@ ENTRIES.append({
                    "Another cross-branch marriage.",
     }],
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -2979,6 +3020,7 @@ ENTRIES.append({
     }],
     "notes": "Daughter of Charles Allen Guthrie (#1132). Her marriage links John's branch to Alexander's via the Frazee line.",
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 80},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 # === Stephen branch — Amy Guthrie's son line (565) ===
@@ -2993,6 +3035,7 @@ ENTRIES.append({
     "died": "29 Apr 1965",
     "spouses": [{"name": "Caroline (Carrie) B. Maust", "born": "21 Jun 1889", "died": "9 May 1965", "married": "6 Mar 1908"}],
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 21},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -3004,6 +3047,7 @@ ENTRIES.append({
     "spouses": [{"name": "Eula Esta Fike", "born": "21 May 1901", "died": "21 May 1921",
                  "details": "Daughter of Charles and Elizabeth [Cupp] Fike."}],
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 21},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -3013,6 +3057,7 @@ ENTRIES.append({
     "born": "19 Apr 1889",
     "spouses": [{"name": "Oliver Clark Spiker"}],
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 # === Lucy Ann DeBerry's children (123x) ===
@@ -3106,6 +3151,7 @@ ENTRIES.append({
         "married": "26 Jul 1884",
     }],
     "source": {"pdf": "Absalom_Guthrie - One Generation.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 
@@ -3150,6 +3196,7 @@ ENTRIES.append({
     "born": "22 May 1899",
     "spouses": [{"name": "Theodore B. Alexander", "married": "6 Jul 1922"}],
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -3160,6 +3207,7 @@ ENTRIES.append({
     "died": "1988",
     "spouses": [{"name": "John Franks", "married": "19 Jan 1949"}],
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -3170,6 +3218,7 @@ ENTRIES.append({
     "died": "5 May 1977",
     "spouses": [{"name": "Mildred Catherine Sturm", "died": "1989", "married": "23 Aug 1934"}],
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 # === Alexander A4 line (Louise Alida's grandkids/great-grandkids) ===
@@ -3181,6 +3230,7 @@ ENTRIES.append({
     "died": "19 Dec 1953",
     "spouses": [{"name": "Madelon Junk", "born": "12 Oct 1902"}],
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 6},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -3191,6 +3241,7 @@ ENTRIES.append({
     "died": "6 Nov 1981",
     "spouses": [{"name": "Georgia Lynn", "born": "1895"}],
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 6},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -3210,6 +3261,7 @@ ENTRIES.append({
     }],
     "buried": "Haywood, CA",
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 6},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -3254,6 +3306,7 @@ ENTRIES.append({
          "details": "Daughter Ethel born 1886; died 1886.", "order": 1},
     ],
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -3267,6 +3320,7 @@ ENTRIES.append({
          "details": "Son Ray Ernest born 19 Jan 1895; died 22 Jun 1895."},
     ],
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 
@@ -3308,6 +3362,7 @@ ENTRIES.append({
         {"name": "Annariah Blake", "born": "2 Aug 1906", "died": "19 Jan 1990", "order": 2},
     ],
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -3323,6 +3378,7 @@ ENTRIES.append({
          "details": "Same as #7144 in James's branch. Cross-link Alexander↔James."},
     ],
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 ENTRIES.append({
@@ -3340,6 +3396,7 @@ ENTRIES.append({
     ],
     "notes": "His second marriage links James↔Alexander.",
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
 })
 
 
