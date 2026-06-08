@@ -324,10 +324,10 @@ ENTRIES.append({
         {"code": "12", "name": "Nancy Guthrie", "born": "26 Apr 1821", "born_alt": "25 Apr 1821"},
         {"code": "13", "name": "Christian Guthrie", "born": "29 Apr 1824"},
         {"code": "14", "name": "James B. Guthrie", "born": "27 Dec 1826"},
-        {"code": "15", "name": "Sarah Guthrie", "born": "22 Oct 1829", "died": "Dec 1833", "flags": {"diedInInfancy": True}},
+        {"code": "15", "name": "Sarah Guthrie", "born": "22 Oct 1829", "died": "Dec 1833", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "16", "name": "Elizabeth Guthrie", "born": "26 Oct 1832"},
         {"code": "17", "name": "Susannah Guthrie", "born": "26 May 1835", "born_alt": "20 May 1835"},
-        {"code": "18", "name": "John Guthrie", "born": "19 Mar 1839", "died": "1841", "flags": {"diedInInfancy": True}},
+        {"code": "18", "name": "John Guthrie", "born": "19 Mar 1839", "died": "1841", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "19", "name": "Peter Guthrie", "born": "13 Feb 1842", "born_alt": "18 Feb 1842"},
     ],
 })
@@ -373,7 +373,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 1},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "121", "name": "Mary E. DeBerry", "born": "about 1846"},
+        {"code": "121", "name": "Mary E. DeBerry", "born": "about 1846", "verified_terminal": True},
         {"code": "122", "name": "Archibald J. DeBerry", "born": "4 Aug 1850"},
         {"code": "123", "name": "Lucy Ann DeBerry", "born": "21 May 1853"},
         {"code": "124", "name": "Susanna Ella DeBerry", "born": "27 Jul 1862"},
@@ -443,10 +443,10 @@ ENTRIES.append({
         {"code": "146", "name": "Nancy Guthrie", "born": "12 Apr 1863", "died": "1 Jun 1926"},
         {"code": "147", "name": "Albert M. Guthrie", "born": "12 Jul 1864"},
         {"code": "148", "name": "Franklin C. Guthrie", "born": "6 Jul 1868"},
-        {"code": "149", "name": "Levi Guthrie", "born": "1871", "died": "10 Jan 1872", "flags": {"diedInInfancy": True}},
+        {"code": "149", "name": "Levi Guthrie", "born": "1871", "died": "10 Jan 1872", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "14A", "name": "Lucian Guthrie", "born": "about 1872"},
         {"code": "14B", "name": "Mary Guthrie", "born": "about 1874"},
-        {"code": "14C", "name": "Jane Guthrie"},
+        {"code": "14C", "name": "Jane Guthrie", "verified_terminal": True},
     ],
 })
 
@@ -536,17 +536,17 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "1721", "name": "James Guthrie", "born": "2 Feb 1879"},
-        {"code": "1722", "name": "Susanna Guthrie", "born": "14 Feb 1880", "died": "14 Sep 1961"},
+        {"code": "1722", "name": "Susanna Guthrie", "born": "14 Feb 1880", "died": "14 Sep 1961", "verified_terminal": True},
         {"code": "1723", "name": "Hattie Guthrie", "born": "20 Dec 1881"},
-        {"code": "1724", "name": "Norton Guthrie", "born": "13 Apr 1884", "died": "28 Feb 1966"},
-        {"code": "1725", "name": "Infant Daughter", "born": "29 Jan 1886", "died": "29 Jan 1886", "flags": {"diedInInfancy": True}},
+        {"code": "1724", "name": "Norton Guthrie", "born": "13 Apr 1884", "died": "28 Feb 1966", "verified_terminal": True},
+        {"code": "1725", "name": "Infant Daughter", "born": "29 Jan 1886", "died": "29 Jan 1886", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "1726", "name": "Loyd (Lloyd) Guthrie", "born": "2 Apr 1887"},
         {"code": "1727", "name": "Stella Guthrie", "born": "8 May 1889"},
         {"code": "1728", "name": "Troy Guthrie", "born": "24 Feb 1891"},
-        {"code": "1729", "name": "Dellie Guthrie", "born": "17 Sep 1893", "died": "22 Jan 1895", "flags": {"diedInInfancy": True}},
-        {"code": "172A", "name": "Ray Guthrie", "born": "17 Dec 1895", "died": "16 Jan 1976"},
+        {"code": "1729", "name": "Dellie Guthrie", "born": "17 Sep 1893", "died": "22 Jan 1895", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "172A", "name": "Ray Guthrie", "born": "17 Dec 1895", "died": "16 Jan 1976", "verified_terminal": True},
         {"code": "172B", "name": "Dessie Guthrie", "born": "6 Apr 1899"},
-        {"code": "172C", "name": "Infant Son", "born": "1 Jun 1902", "died": "1 Jun 1902", "flags": {"diedInInfancy": True}},
+        {"code": "172C", "name": "Infant Son", "born": "1 Jun 1902", "died": "1 Jun 1902", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -567,10 +567,10 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "191", "name": "Susie Elizabeth Guthrie", "born": "1867"},
-        {"code": "192", "name": "John Guthrie", "born": "4 Feb 1869", "died": "in infancy", "flags": {"diedInInfancy": True}},
+        {"code": "192", "name": "John Guthrie", "born": "4 Feb 1869", "died": "in infancy", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "193", "name": "Henry M. Guthrie", "born": "6 Jul 1870"},
         {"code": "194", "name": "Rev. Wilbert Guthrie", "born": "1875", "died": "1934"},
-        {"code": "195", "name": "Charles H. Guthrie", "born": "4 Oct 1876"},
+        {"code": "195", "name": "Charles H. Guthrie", "born": "4 Oct 1876", "verified_terminal": True},
         {"code": "196", "name": "Ida Guthrie", "born": "1880", "born_alt": "1882"},
     ],
 })
@@ -694,9 +694,9 @@ ENTRIES.append({
     "children": [
         {"code": "71", "name": "Alcinda J. Guthrie", "born": "8 Sep 1845"},
         {"code": "72", "name": "Sarah Ann Guthrie", "born": "21 Feb 1847"},
-        {"code": "73", "name": "Ephraim Guthrie", "born": "14 Jun 1850", "died": "20 Oct 1854", "flags": {"diedInInfancy": True}},
+        {"code": "73", "name": "Ephraim Guthrie", "born": "14 Jun 1850", "died": "20 Oct 1854", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "74", "name": "Jeremiah Guthrie", "born": "10 Sep 1852"},
-        {"code": "75", "name": "Mary Guthrie", "born": "15 Oct 1854", "died": "23 Dec 1872"},
+        {"code": "75", "name": "Mary Guthrie", "born": "15 Oct 1854", "died": "23 Dec 1872", "verified_terminal": True},
         {"code": "76", "name": "Harrison Guthrie", "born": "22 Apr 1858"},
         {"code": "77", "name": "Lucretia Guthrie", "born": "28 Apr 1860", "died": "28 Apr 1877"},
     ],
@@ -933,12 +933,12 @@ ENTRIES.append({
         {"code": "A3", "name": "Persis Ann Guthrie", "born": "4 May 1844"},
         {"code": "A4", "name": "Louise Alida (Lide) Guthrie", "born": "3 Mar 1846"},
         {"code": "A5", "name": "Mary Caroline Guthrie", "born": "10 May 1847"},
-        {"code": "A6", "name": "Edgar W. Guthrie"},
+        {"code": "A6", "name": "Edgar W. Guthrie", "verified_terminal": True},
         # Second marriage
-        {"code": "A7", "name": "Melissa J. Guthrie", "born": "26 Oct 1848"},
-        {"code": "A8", "name": "Allen C. Guthrie", "born": "22 Nov 1849", "died": "1936"},
-        {"code": "A9", "name": "Clarissa A. Guthrie", "born": "Dec 1851", "died": "1935"},
-        {"code": "AA", "name": "Leander Kidwell Guthrie", "born": "25 Feb 1856", "died": "20 Oct 1914"},
+        {"code": "A7", "name": "Melissa J. Guthrie", "born": "26 Oct 1848", "verified_terminal": True},
+        {"code": "A8", "name": "Allen C. Guthrie", "born": "22 Nov 1849", "died": "1936", "verified_terminal": True},
+        {"code": "A9", "name": "Clarissa A. Guthrie", "born": "Dec 1851", "died": "1935", "verified_terminal": True},
+        {"code": "AA", "name": "Leander Kidwell Guthrie", "born": "25 Feb 1856", "died": "20 Oct 1914", "verified_terminal": True},
         {"code": "AB", "name": "Demeris E. Guthrie", "born": "22 Feb 1859"},
     ],
 })
@@ -1068,14 +1068,14 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 4},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "1221", "name": "James R. DeBerry", "born": "22 Nov 1872", "died": "13 Dec 1896"},
+        {"code": "1221", "name": "James R. DeBerry", "born": "22 Nov 1872", "died": "13 Dec 1896", "verified_terminal": True},
         {"code": "1222", "name": "Oliver Martin DeBerry", "born": "28 Jun 1874"},
         {"code": "1223", "name": "Nancy Arletta DeBerry", "born": "7 May 1876"},
         {"code": "1224", "name": "Charles Allen DeBerry", "born": "8 Jul 1878"},
-        {"code": "1225", "name": "John C. DeBerry", "born": "29 Oct 1880", "died": "11 Dec 1897"},
+        {"code": "1225", "name": "John C. DeBerry", "born": "29 Oct 1880", "died": "11 Dec 1897", "verified_terminal": True},
         {"code": "1226", "name": "Henry R. DeBerry", "born": "5 Dec 1882"},
         {"code": "1227", "name": "Stanford Earl DeBerry", "born": "11 Dec 1884"},
-        {"code": "1228", "name": "Edna (Eline) Ethel DeBerry", "born": "2 Feb 1885", "born_alt": "2 Feb 1886", "died": "24 Jul 1899"},
+        {"code": "1228", "name": "Edna (Eline) Ethel DeBerry", "born": "2 Feb 1885", "born_alt": "2 Feb 1886", "died": "24 Jul 1899", "verified_terminal": True},
         {"code": "1229", "name": "William Vance DeBerry", "born": "24 Nov 1888"},
         {"code": "122A", "name": "Ola Otis DeBerry", "born": "11 May 1891"},
         {"code": "122B", "name": "Jasper Nelson DeBerry", "born": "17 Nov 1894"},
@@ -1101,7 +1101,7 @@ ENTRIES.append({
         {"code": "1237", "name": "Ina Deal", "born": "26 Jan 1889"},
         {"code": "1238", "name": "Rhoda Deal", "born": "2 May 1892"},
         {"code": "1239", "name": "Rena Deal", "born": "3 Aug 1896", "died": "11 Jul 1965"},
-        {"code": "123A", "name": "Jackson Deal", "born": "21 Feb 1899", "died": "16 Oct 1923"},
+        {"code": "123A", "name": "Jackson Deal", "born": "21 Feb 1899", "died": "16 Oct 1923", "verified_terminal": True},
     ],
 })
 
@@ -1118,16 +1118,16 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 6},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "13B1", "name": "William Skiles", "died": "as a child", "flags": {"diedInInfancy": True}},
+        {"code": "13B1", "name": "William Skiles", "died": "as a child", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "13B2", "name": "Lily May Skiles", "born": "19 Aug 1883"},
-        {"code": "13B3", "name": "Mary Elizabeth Skiles", "born": "23 Aug 1886", "died": "1958"},
-        {"code": "13B4", "name": "Pearl Tracy Skiles", "born": "1888", "died": "1906", "died_alt": "1911"},
-        {"code": "13B5", "name": "James Fieldon Skiles", "born": "1890"},
-        {"code": "13B6", "name": "Rosa Ola Skiles", "born": "20 Aug 1892"},
+        {"code": "13B3", "name": "Mary Elizabeth Skiles", "born": "23 Aug 1886", "died": "1958", "verified_terminal": True},
+        {"code": "13B4", "name": "Pearl Tracy Skiles", "born": "1888", "died": "1906", "died_alt": "1911", "verified_terminal": True},
+        {"code": "13B5", "name": "James Fieldon Skiles", "born": "1890", "verified_terminal": True},
+        {"code": "13B6", "name": "Rosa Ola Skiles", "born": "20 Aug 1892", "verified_terminal": True},
         {"code": "13B7", "name": "Frederick Haddix", "born": "1896", "born_place": "Barbour County", "died": "1976"},
-        {"code": "13B8", "name": "Florence Haddix"},
-        {"code": "13B9", "name": "Claud Haddix", "died": "about 1924"},
-        {"code": "13BA", "name": "Denzid Haddix", "born": "1903", "died": "1909", "flags": {"diedInInfancy": True}},
+        {"code": "13B8", "name": "Florence Haddix", "verified_terminal": True},
+        {"code": "13B9", "name": "Claud Haddix", "died": "about 1924", "verified_terminal": True},
+        {"code": "13BA", "name": "Denzid Haddix", "born": "1903", "died": "1909", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -1153,12 +1153,12 @@ ENTRIES.append({
         {"code": "13E3", "name": "Fredrick Nicola", "born": "1891"},
         {"code": "13E4", "name": "Clarence Herbert Nicola", "born": "28 Mar 1894"},
         {"code": "13E5", "name": "Homer Andrew Nicola", "born": "16 Oct 1896"},
-        {"code": "13E6", "name": "Ruby May Nicola", "born": "5 Apr 1901"},
+        {"code": "13E6", "name": "Ruby May Nicola", "born": "5 Apr 1901", "verified_terminal": True},
         {"code": "13E7", "name": "Luara B. Nicola", "born": "1904"},
-        {"code": "13E8", "name": "Dorsey E. Nicola"},
-        {"code": "13E9", "name": "Ola Ruth Nicola", "born": "1908"},
-        {"code": "13EA", "name": "Infant", "died": "in infancy", "flags": {"diedInInfancy": True}},
-        {"code": "13EB", "name": "Infant", "died": "in infancy", "flags": {"diedInInfancy": True}},
+        {"code": "13E8", "name": "Dorsey E. Nicola", "verified_terminal": True},
+        {"code": "13E9", "name": "Ola Ruth Nicola", "born": "1908", "verified_terminal": True},
+        {"code": "13EA", "name": "Infant", "died": "in infancy", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "13EB", "name": "Infant", "died": "in infancy", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -1183,22 +1183,22 @@ ENTRIES.append({
     "children": [
         # Second marriage (per PDF)
         {"code": "13F1", "name": "Lloyd Milton Guthrie", "born": "24 Jul 1886"},
-        {"code": "13F2", "name": "Della Mae Guthrie", "born": "1891", "died": "1891", "flags": {"diedInInfancy": True}},
-        {"code": "13F3", "name": "Infant Daughter", "born": "10 Dec 1894", "died": "1894", "flags": {"diedInInfancy": True}},
-        {"code": "13F4", "name": "Troy McCledlon Guthrie", "born": "11 Jan 1895", "died": "31 Jul 1919"},
+        {"code": "13F2", "name": "Della Mae Guthrie", "born": "1891", "died": "1891", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "13F3", "name": "Infant Daughter", "born": "10 Dec 1894", "died": "1894", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "13F4", "name": "Troy McCledlon Guthrie", "born": "11 Jan 1895", "died": "31 Jul 1919", "verified_terminal": True},
         {"code": "13F5", "name": "Matila (Mammie) Mae Guthrie", "born": "9 Dec 1897"},
-        {"code": "13F6", "name": "Henry Rudolph (Dolph) Guthrie", "born": "31 Dec 1899", "died": "6 Aug 1918"},
+        {"code": "13F6", "name": "Henry Rudolph (Dolph) Guthrie", "born": "31 Dec 1899", "died": "6 Aug 1918", "verified_terminal": True},
         # Third marriage (per PDF)
         {"code": "13F7", "name": "James Quinter Guthrie", "born": "31 Dec 1902"},
         {"code": "13F8", "name": "George Robert Guthrie", "born": "12 Feb 1903"},
-        {"code": "13F9", "name": "Martha Guthrie", "born": "18 Mar 1906"},
+        {"code": "13F9", "name": "Martha Guthrie", "born": "18 Mar 1906", "verified_terminal": True},
         {"code": "13FA", "name": "Mary Elizabeth Guthrie", "born": "18 Mar 1907"},
         {"code": "13FB", "name": "Dessie Myrtle Guthrie", "born": "1 Jul 1909"},
         {"code": "13FC", "name": "Susan (Susie) Murhl Guthrie", "born": "26 May 1911"},
         {"code": "13FD", "name": "John Ray Guthrie", "born": "1 Oct 1914"},
         {"code": "13FE", "name": "Nellie Virginia Guthrie", "born": "20 Mar 1917"},
-        {"code": "13FF", "name": "Alice Frances Guthrie", "born": "6 Jun 1919"},
-        {"code": "13FG", "name": "Harley Theodore Guthrie", "born": "28 Mar 1922", "died": "31 Oct 1925", "flags": {"diedInInfancy": True}},
+        {"code": "13FF", "name": "Alice Frances Guthrie", "born": "6 Jun 1919", "verified_terminal": True},
+        {"code": "13FG", "name": "Harley Theodore Guthrie", "born": "28 Mar 1922", "died": "31 Oct 1925", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -1239,7 +1239,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 10},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "1661", "name": "Homer Loid Harshbarger", "born": "27 Sep 1902", "died": "6 Apr 1927"},
+        {"code": "1661", "name": "Homer Loid Harshbarger", "born": "27 Sep 1902", "died": "6 Apr 1927", "verified_terminal": True},
         {"code": "1662", "name": "Emma Harshbarger", "born": "30 Jan 1906"},
         {"code": "1663", "name": "Jeremiah Joseph Harshbarger", "born": "6 Jul 1911"},
         {"code": "1664", "name": "David Harshbarger", "born": "9 Dec 1913"},
@@ -1284,9 +1284,9 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 30},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "16221", "name": "Beatrice Mae Moyers", "born": "7 Sep 1921"},
-        {"code": "16222", "name": "Alma Maxine Moyers", "born": "20 Oct 1925"},
-        {"code": "16223", "name": "Pauline Grace Moyers", "born": "15 Feb 1927"},
+        {"code": "16221", "name": "Beatrice Mae Moyers", "born": "7 Sep 1921", "verified_terminal": True},
+        {"code": "16222", "name": "Alma Maxine Moyers", "born": "20 Oct 1925", "verified_terminal": True},
+        {"code": "16223", "name": "Pauline Grace Moyers", "born": "15 Feb 1927", "verified_terminal": True},
         {"code": "16224", "name": "Charles Ray Moyers", "born": "28 Jul 1931"},
     ],
 })
@@ -1305,8 +1305,8 @@ ENTRIES.append({
         {"code": "1622", "name": "Charles C. Moyers", "born": "23 Sep 1889"},
         {"code": "1623", "name": "Harold D. Moyers", "born": "24 Apr 1891"},
         {"code": "1624", "name": "Rosella May Moyers", "born": "3 May 1899"},
-        {"code": "1625", "name": "Bertha O. Moyers"},
-        {"code": "1626", "name": "Bessie L. Moyers", "born": "1 Apr 1893", "died": "27 Jan 1933"},
+        {"code": "1625", "name": "Bertha O. Moyers", "verified_terminal": True},
+        {"code": "1626", "name": "Bessie L. Moyers", "born": "1 Apr 1893", "died": "27 Jan 1933", "verified_terminal": True},
     ],
 })
 
@@ -1332,9 +1332,9 @@ ENTRIES.append({
     "children": [
         {"code": "1611", "name": "Vida Barnes", "born": "27 Mar 1881"},
         {"code": "1612", "name": "Nannie Barnes", "born": "15 Dec 1882"},
-        {"code": "1613", "name": "Walter Scott Barnes", "born": "4 Jun 1886", "died": "1 Dec 1957"},
-        {"code": "1614", "name": "Russell Emerson Barnes", "born": "15 Mar 1891", "died": "3 Jan 1925"},
-        {"code": "1615", "name": "Leslie Virgil Barnes", "born": "3 Mar 1893", "died": "Dec 1959"},
+        {"code": "1613", "name": "Walter Scott Barnes", "born": "4 Jun 1886", "died": "1 Dec 1957", "verified_terminal": True},
+        {"code": "1614", "name": "Russell Emerson Barnes", "born": "15 Mar 1891", "died": "3 Jan 1925", "verified_terminal": True},
+        {"code": "1615", "name": "Leslie Virgil Barnes", "born": "3 Mar 1893", "died": "Dec 1959", "verified_terminal": True},
     ],
     "spouses": [{
         "name": "Jacob Peter Barnes",
@@ -1609,7 +1609,7 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "1141", "name": "Walter Reed Hartman", "born": "26 Jul 1872"},
-        {"code": "1142", "name": "Minnie M. Hartman", "born": "9 Jul 1879", "died": "12 Jan 1960"},
+        {"code": "1142", "name": "Minnie M. Hartman", "born": "9 Jul 1879", "died": "12 Jan 1960", "verified_terminal": True},
     ],
 })
 
@@ -1642,10 +1642,10 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 5},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "1331", "name": "Frank Strawser"},
-        {"code": "1332", "name": "Lewis Strawser"},
-        {"code": "1333", "name": "Rebecca Strawser"},
-        {"code": "1334", "name": "Rena Strawser"},
+        {"code": "1331", "name": "Frank Strawser", "verified_terminal": True},
+        {"code": "1332", "name": "Lewis Strawser", "verified_terminal": True},
+        {"code": "1333", "name": "Rebecca Strawser", "verified_terminal": True},
+        {"code": "1334", "name": "Rena Strawser", "verified_terminal": True},
     ],
 })
 
@@ -1659,9 +1659,9 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 5},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "1351", "name": "Charles Howard Lewis", "born": "1873", "died": "25 Feb 1953"},
+        {"code": "1351", "name": "Charles Howard Lewis", "born": "1873", "died": "25 Feb 1953", "verified_terminal": True},
         {"code": "1352", "name": "Melvin Lewis"},
-        {"code": "1353", "name": "Walter Cristy Lewis", "born": "14 Jun 1880", "died": "1967"},
+        {"code": "1353", "name": "Walter Cristy Lewis", "born": "14 Jun 1880", "died": "1967", "verified_terminal": True},
         {"code": "1354", "name": "Clyde D. Lewis", "born": "14 Jun 1890"},
     ],
 })
@@ -1676,14 +1676,14 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 5},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "1361", "name": "Stephen Turney", "born": "19 Dec 1872", "died": "11 Apr 1881"},
+        {"code": "1361", "name": "Stephen Turney", "born": "19 Dec 1872", "died": "11 Apr 1881", "verified_terminal": True},
         {"code": "1362", "name": "Florence Iey Turney", "born": "10 May 1874", "died": "20 Jul 1953"},
         {"code": "1363", "name": "Henry R. Turney", "born": "12 May 1875", "died": "12 Oct 1953"},
-        {"code": "1364", "name": "Christian Turney", "born": "23 Jul 1877", "died": "12 Mar 1878", "flags": {"diedInInfancy": True}},
+        {"code": "1364", "name": "Christian Turney", "born": "23 Jul 1877", "died": "12 Mar 1878", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "1365", "name": "Maud Turney"},
         {"code": "1366", "name": "Pearl A. Turney", "born": "10 Mar 1884"},
-        {"code": "1367", "name": "Clarence I. Turney", "born": "21 Apr 1885", "died": "1885", "flags": {"diedInInfancy": True}},
-        {"code": "1368", "name": "George Turney", "born": "24 Jan 1888", "died": "28 Dec 1910"},
+        {"code": "1367", "name": "Clarence I. Turney", "born": "21 Apr 1885", "died": "1885", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "1368", "name": "George Turney", "born": "24 Jan 1888", "died": "28 Dec 1910", "verified_terminal": True},
     ],
 })
 
@@ -1842,17 +1842,17 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         # First marriage
-        {"code": "13C1", "name": "Earl Guthrie"},
+        {"code": "13C1", "name": "Earl Guthrie", "verified_terminal": True},
         {"code": "13C2", "name": "Worley Guthrie", "died": "6 May 1949"},
         {"code": "13C3", "name": "Alvin Guthrie"},
         {"code": "13C4", "name": "Alice (Allie) S. Guthrie"},
         {"code": "13C5", "name": "Rena K. Guthrie", "born": "26 Mar 1898"},
-        {"code": "13C6", "name": "Elma Guthrie"},
+        {"code": "13C6", "name": "Elma Guthrie", "verified_terminal": True},
         # Second marriage
         {"code": "13C7", "name": "Russell Guthrie"},
         {"code": "13C8", "name": "Ernest Guthrie"},
         {"code": "13C9", "name": "Arlie Guthrie, Jr.", "born": "5 May 1908"},
-        {"code": "13CA", "name": "Edna Guthrie"},
+        {"code": "13CA", "name": "Edna Guthrie", "verified_terminal": True},
         {"code": "13CB", "name": "Woodrow Wilson Guthrie"},
         {"code": "13CC", "name": "Chester E. Guthrie", "born": "25 Dec 1916", "died": "24 Mar 1962"},
     ],
@@ -1870,7 +1870,7 @@ ENTRIES.append({
     "children": [
         {"code": "13D1", "name": "Daniel Myers"},
         {"code": "13D2", "name": "Myrtle Myers"},
-        {"code": "13D3", "name": "Roy Myers"},
+        {"code": "13D3", "name": "Roy Myers", "verified_terminal": True},
     ],
 })
 
@@ -1884,15 +1884,15 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 7},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "1411", "name": "James L Uphold, Jr.", "born": "21 Nov 1872", "died": "10 Jun 1914"},
+        {"code": "1411", "name": "James L Uphold, Jr.", "born": "21 Nov 1872", "died": "10 Jun 1914", "verified_terminal": True},
         {"code": "1412", "name": "John Jacob Uphold", "born": "23 Mar 1877"},
-        {"code": "1413", "name": "Mary A. Uphold", "born": "15 Jul 1881"},
-        {"code": "1414", "name": "Flemming Clyde Uphold", "born": "3 May 1883", "died": "Jan 1945"},
+        {"code": "1413", "name": "Mary A. Uphold", "born": "15 Jul 1881", "verified_terminal": True},
+        {"code": "1414", "name": "Flemming Clyde Uphold", "born": "3 May 1883", "died": "Jan 1945", "verified_terminal": True},
         {"code": "1415", "name": "Charles Ray Uphold", "born": "19 Nov 1885"},
         {"code": "1416", "name": "David Franklin Uphold", "born": "8 Oct 1887"},
-        {"code": "1417", "name": "William H. Uphold", "born": "21 May 1890", "died": "21 Nov 1890", "flags": {"diedInInfancy": True}},
+        {"code": "1417", "name": "William H. Uphold", "born": "21 May 1890", "died": "21 Nov 1890", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "1418", "name": "Ella May Uphold", "born": "2 Jul 1892"},
-        {"code": "1419", "name": "Laura Bell Uphold"},
+        {"code": "1419", "name": "Laura Bell Uphold", "verified_terminal": True},
         {"code": "141A", "name": "Basil M. Uphold"},
     ],
 })
@@ -1911,13 +1911,13 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         # First marriage
-        {"code": "1431", "name": "Infant", "flags": {"diedInInfancy": True}},
+        {"code": "1431", "name": "Infant", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         # Second marriage
         {"code": "1432", "name": "Margaret (Maggie) Sliger", "born": "1883"},
         {"code": "1433", "name": "Sarah Ellen Sliger", "born": "14 Sep 1885"},
         {"code": "1434", "name": "Mollie Sliger", "born": "14 Nov 1888"},
         {"code": "1435", "name": "Emma Pearl Sliger", "born": "15 Aug 1895"},
-        {"code": "1436", "name": "Anna Sliger"},
+        {"code": "1436", "name": "Anna Sliger", "verified_terminal": True},
         {"code": "1437", "name": "Bruce Sliger", "died": "1946"},
         {"code": "1438", "name": "Herman Joseph Sliger", "born": "2 Jul 1900"},
     ],
@@ -1935,10 +1935,10 @@ ENTRIES.append({
     "children": [
         {"code": "1461", "name": "Sarah (Sadie) Catherine Miller", "born": "22 Nov 1883"},
         {"code": "1462", "name": "David C. Miller", "born": "4 Sep 1885"},
-        {"code": "1463", "name": "Rosa Mary Miller", "born": "8 May 1887", "died": "6 Sep 1907"},
-        {"code": "1464", "name": "Jammy Russie Miller", "born": "20 Jun 1891", "died": "15 Jan 1892", "flags": {"diedInInfancy": True}},
-        {"code": "1465", "name": "Rosia Miller", "died": "1928"},
-        {"code": "1466", "name": "Howard Miller", "died": "1934"},
+        {"code": "1463", "name": "Rosa Mary Miller", "born": "8 May 1887", "died": "6 Sep 1907", "verified_terminal": True},
+        {"code": "1464", "name": "Jammy Russie Miller", "born": "20 Jun 1891", "died": "15 Jan 1892", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "1465", "name": "Rosia Miller", "died": "1928", "verified_terminal": True},
+        {"code": "1466", "name": "Howard Miller", "died": "1934", "verified_terminal": True},
         {"code": "1467", "name": "Pearl D. Miller", "born": "22 Mar 1921"},
     ],
 })
@@ -1952,7 +1952,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 9},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "14A1", "name": "William Guthrie"},
+        {"code": "14A1", "name": "William Guthrie", "verified_terminal": True},
     ],
 })
 
@@ -1964,7 +1964,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 9},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "14B1", "name": "Norman Guthrie", "born": "8 Mar 1897"},
+        {"code": "14B1", "name": "Norman Guthrie", "born": "8 Mar 1897", "verified_terminal": True},
     ],
 })
 
@@ -2002,10 +2002,10 @@ ENTRIES.append({
         {"code": "1643", "name": "Albert Richard Harshbarger", "born": "14 Dec 1908"},
         {"code": "1644", "name": "Harrison Theodore Harshbarger", "born": "4 Apr 1911"},
         {"code": "1645", "name": "Elizabeth Ellen Harshbarger", "born": "7 Apr 1913"},
-        {"code": "1646", "name": "May Thomas Harshbarger", "born": "3 Apr 1916", "died": "13 Apr 1916", "flags": {"diedInInfancy": True}},
+        {"code": "1646", "name": "May Thomas Harshbarger", "born": "3 Apr 1916", "died": "13 Apr 1916", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "1647", "name": "Charles Reuben Harshbarger", "born": "16 Nov 1917"},
         {"code": "1648", "name": "Pearl Catherine Harshbarger", "born": "2 Jul 1919"},
-        {"code": "1649", "name": "Violet May Harshbarger", "born": "9 Jun 1921"},
+        {"code": "1649", "name": "Violet May Harshbarger", "born": "9 Jun 1921", "verified_terminal": True},
         {"code": "164A", "name": "Myrtle Grace Harshbarger", "born": "22 Feb 1923"},
         {"code": "164B", "name": "Daisy Bell Harshbarger", "born": "11 Feb 1925"},
         {"code": "164C", "name": "Goldie Irene Harshbarger", "born": "13 May 1927"},
@@ -2022,8 +2022,8 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 10},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "1651", "name": "Gilbert Harshbarger", "born": "10 Oct 1893"},
-        {"code": "1652", "name": "Blanche Harshbarger"},
+        {"code": "1651", "name": "Gilbert Harshbarger", "born": "10 Oct 1893", "verified_terminal": True},
+        {"code": "1652", "name": "Blanche Harshbarger", "verified_terminal": True},
     ],
 })
 
@@ -2060,13 +2060,13 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         # First marriage
-        {"code": "1421", "name": "Truman Guthrie", "born": "1 Apr 1884", "died": "26 Sep 1885", "flags": {"diedInInfancy": True}},
-        {"code": "1422", "name": "Son", "born": "15 Apr 1886", "died": "15 Apr 1886", "flags": {"diedInInfancy": True}},
+        {"code": "1421", "name": "Truman Guthrie", "born": "1 Apr 1884", "died": "26 Sep 1885", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "1422", "name": "Son", "born": "15 Apr 1886", "died": "15 Apr 1886", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         # Second marriage
-        {"code": "1423", "name": "Mary Guthrie", "born": "27 Aug 1886", "died": "12 Aug 1887", "flags": {"diedInInfancy": True}},
-        {"code": "1424", "name": "a daughter", "born": "14 Apr 1887", "flags": {"diedInInfancy": True}},
+        {"code": "1423", "name": "Mary Guthrie", "born": "27 Aug 1886", "died": "12 Aug 1887", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "1424", "name": "a daughter", "born": "14 Apr 1887", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "1425", "name": "George Franklin Guthrie", "born": "5 Mar 1890"},
-        {"code": "1426", "name": "Sarah Guthrie"},
+        {"code": "1426", "name": "Sarah Guthrie", "verified_terminal": True},
         # Third marriage
         {"code": "1427", "name": "Orva Guthrie", "born": "18 Jan 1892"},
         {"code": "1428", "name": "Anna Gay Guthrie", "born": "23 Jan 1895"},
@@ -2110,8 +2110,8 @@ ENTRIES.append({
         {"code": "1446", "name": "John Marshall Thomas", "born": "1 Feb 1893"},
         {"code": "1447", "name": "James Richard Thomas", "born": "11 Mar 1896"},
         {"code": "1448", "name": "Daisy Pearl Thomas", "born": "7 Sep 1897"},
-        {"code": "1449", "name": "Charles Chester Thomas", "born": "22 Aug 1900", "died": "1 Jan 1963"},
-        {"code": "144A", "name": "Alberta Thomas", "died": "in infancy", "flags": {"diedInInfancy": True}},
+        {"code": "1449", "name": "Charles Chester Thomas", "born": "22 Aug 1900", "died": "1 Jan 1963", "verified_terminal": True},
+        {"code": "144A", "name": "Alberta Thomas", "died": "in infancy", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -2128,11 +2128,11 @@ ENTRIES.append({
     "children": [
         {"code": "1451", "name": "Irvin A. Guthrie", "born": "4 Nov 1884"},
         {"code": "1452", "name": "Violet M. Guthrie", "born": "1886"},
-        {"code": "1453", "name": "Lillian A. Guthrie"},
+        {"code": "1453", "name": "Lillian A. Guthrie", "verified_terminal": True},
         {"code": "1454", "name": "Nola E. Guthrie", "born": "28 Mar 1891"},
         {"code": "1455", "name": "Daisy E. Guthrie", "born": "4 Mar 1893"},
-        {"code": "1456", "name": "George Cecil Guthrie", "born": "1893", "died": "18 Jul 1982"},
-        {"code": "1457", "name": "Groover Guthrie", "born": "1893", "died": "8 Nov 1946"},
+        {"code": "1456", "name": "George Cecil Guthrie", "born": "1893", "died": "18 Jul 1982", "verified_terminal": True},
+        {"code": "1457", "name": "Groover Guthrie", "born": "1893", "died": "8 Nov 1946", "verified_terminal": True},
         {"code": "1458", "name": "David Paul Guthrie", "born": "4 Apr 1900"},
         {"code": "1459", "name": "Elfleda A. Guthrie", "born": "13 Feb 1903"},
     ],
@@ -2152,7 +2152,7 @@ ENTRIES.append({
         {"code": "1471", "name": "Ada Ora Guthrie", "born": "10 Apr 1886"},
         {"code": "1472", "name": "Hosea H. Guthrie", "born": "16 Mar 1888"},
         {"code": "1473", "name": "Sarah Vivian Guthrie", "born": "10 Feb 1890"},
-        {"code": "1474", "name": "Effie Guthrie", "born": "7 Sep 1892", "died": "1895", "flags": {"diedInInfancy": True}},
+        {"code": "1474", "name": "Effie Guthrie", "born": "7 Sep 1892", "died": "1895", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "1475", "name": "Carrie E. Guthrie", "born": "12 Sep 1895"},
         {"code": "1476", "name": "Herbert J. Guthrie", "born": "22 Aug 1898"},
     ],
@@ -2177,10 +2177,10 @@ ENTRIES.append({
         {"code": "1487", "name": "James E. Guthrie", "born": "1904"},
         {"code": "1488", "name": "Sarah E. Guthrie", "born": "14 Nov 1906"},
         {"code": "1489", "name": "Helen J. Guthrie", "born": "28 Oct 1908"},
-        {"code": "148A", "name": "Charles H. Guthrie", "born": "1 May 1919"},
-        {"code": "148B", "name": "Amy B. Guthrie", "died": "in infancy", "flags": {"diedInInfancy": True}},
-        {"code": "148C", "name": "Alice Guthrie", "died": "in infancy", "flags": {"diedInInfancy": True}},
-        {"code": "148D", "name": "William Guthrie", "died": "in infancy", "flags": {"diedInInfancy": True}},
+        {"code": "148A", "name": "Charles H. Guthrie", "born": "1 May 1919", "verified_terminal": True},
+        {"code": "148B", "name": "Amy B. Guthrie", "died": "in infancy", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "148C", "name": "Alice Guthrie", "died": "in infancy", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "148D", "name": "William Guthrie", "died": "in infancy", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -2304,12 +2304,12 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 14},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "11311", "name": "Cora Ellen VanSickle", "born": "5 Aug 1893", "died": "6 Feb 1896", "flags": {"diedInInfancy": True}},
+        {"code": "11311", "name": "Cora Ellen VanSickle", "born": "5 Aug 1893", "died": "6 Feb 1896", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "11312", "name": "Walter E. VanSickle", "born": "24 Jun 1895"},
         {"code": "11313", "name": "Rosa Virginia VanSickle", "born": "9 Nov 1897"},
-        {"code": "11314", "name": "Asa R. VanSickle", "born": "6 Jan 1900", "died": "19 Dec 1905", "flags": {"diedInInfancy": True}},
+        {"code": "11314", "name": "Asa R. VanSickle", "born": "6 Jan 1900", "died": "19 Dec 1905", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "11315", "name": "Quinter VanSickle", "born": "14 Aug 1902"},
-        {"code": "11316", "name": "Ruby VanSickle", "born": "14 Feb 1912"},
+        {"code": "11316", "name": "Ruby VanSickle", "born": "14 Feb 1912", "verified_terminal": True},
     ],
 })
 
@@ -2329,10 +2329,10 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         # First marriage
-        {"code": "11321", "name": "Harry Milton Guthrie", "born": "16 Mar 1899"},
+        {"code": "11321", "name": "Harry Milton Guthrie", "born": "16 Mar 1899", "verified_terminal": True},
         {"code": "11322", "name": "Grace Catherine Guthrie", "born": "14 May 1903"},
         {"code": "11323", "name": "Eula Guthrie", "born": "23 May"},
-        {"code": "11324", "name": "Wayne Guthrie", "born": "5 Jan"},
+        {"code": "11324", "name": "Wayne Guthrie", "born": "5 Jan", "verified_terminal": True},
     ],
 })
 
@@ -2351,7 +2351,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 14},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "11341", "name": "Winnifred Ruth VanSickle", "born": "6 Jul 1896", "died": "Apr 1978"},
+        {"code": "11341", "name": "Winnifred Ruth VanSickle", "born": "6 Jul 1896", "died": "Apr 1978", "verified_terminal": True},
         {"code": "11342", "name": "Evelyn VanSickle"},
         {"code": "11343", "name": "David Guthrie VanSickle", "born": "16 Dec 1911"},
     ],
@@ -2422,7 +2422,7 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "1751", "name": "Goldie Nicola", "born": "3 Feb 1890"},
-        {"code": "1752", "name": "Blanche Nicola", "born": "6 Jan 1892", "died": "18 Jul 1972"},
+        {"code": "1752", "name": "Blanche Nicola", "born": "6 Jan 1892", "died": "18 Jul 1972", "verified_terminal": True},
     ],
 })
 
@@ -2436,7 +2436,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 11},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "1761", "name": "Annie E. Nicola", "born": "1896", "died": "1896", "flags": {"diedInInfancy": True}},
+        {"code": "1761", "name": "Annie E. Nicola", "born": "1896", "died": "1896", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "1762", "name": "Edna Anna Nicola", "born": "21 Mar 1897", "died": "1973"},
     ],
 })
@@ -2451,7 +2451,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 12},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "1771", "name": "Clyde E. Frey", "born": "27 Apr 1890", "died": "5 Sep 1914"},
+        {"code": "1771", "name": "Clyde E. Frey", "born": "27 Apr 1890", "died": "5 Sep 1914", "verified_terminal": True},
         {"code": "1772", "name": "Floyd Thamer Frey", "born": "17 Feb 1892"},
         {"code": "1773", "name": "Hugh M. Frey", "born": "9 Jan 1894"},
         {"code": "1774", "name": "Charles H. Frey", "born": "18 Aug 1897", "died": "10 Jan 1946"},
@@ -2488,7 +2488,7 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "1791", "name": "Edith Grace Carol", "born": "4 Feb 1901"},
-        {"code": "1792", "name": "Lawrence Carol", "born": "26 Dec 1903"},
+        {"code": "1792", "name": "Lawrence Carol", "born": "26 Dec 1903", "verified_terminal": True},
     ],
 })
 
@@ -2506,7 +2506,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 12},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "1961", "name": "Denely Berry"},
+        {"code": "1961", "name": "Denely Berry", "verified_terminal": True},
     ],
 })
 
@@ -2527,7 +2527,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 13},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "11111", "name": "Earl Glenn Frazee", "born": "12 Sep 1913", "died": "6 Jan 1960"},
+        {"code": "11111", "name": "Earl Glenn Frazee", "born": "12 Sep 1913", "died": "6 Jan 1960", "verified_terminal": True},
         {"code": "11112", "name": "Edna Mae Frazee", "born": "6 Sep 1921"},
     ],
 })
@@ -2547,11 +2547,11 @@ ENTRIES.append({
     "children": [
         # First marriage
         {"code": "11121", "name": "William Carl Windell", "born": "24 Nov 1911"},
-        {"code": "11122", "name": "Glenn F. Windell"},
-        {"code": "11123", "name": "Paul C. Windell"},
-        {"code": "11124", "name": "Beatrice Windell"},
-        {"code": "11125", "name": "Bivilene Windell"},
-        {"code": "11126", "name": "Faye C. Windell"},
+        {"code": "11122", "name": "Glenn F. Windell", "verified_terminal": True},
+        {"code": "11123", "name": "Paul C. Windell", "verified_terminal": True},
+        {"code": "11124", "name": "Beatrice Windell", "verified_terminal": True},
+        {"code": "11125", "name": "Bivilene Windell", "verified_terminal": True},
+        {"code": "11126", "name": "Faye C. Windell", "verified_terminal": True},
         {"code": "11127", "name": "Eleanor Windell"},
     ],
 })
@@ -2567,10 +2567,10 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "11131", "name": "Madeline Guthrie"},
-        {"code": "11132", "name": "Wilda Guthrie"},
-        {"code": "11133", "name": "Lorraine Guthrie"},
-        {"code": "11134", "name": "Robert M. Guthrie"},
-        {"code": "11135", "name": "Richard D. Guthrie"},
+        {"code": "11132", "name": "Wilda Guthrie", "verified_terminal": True},
+        {"code": "11133", "name": "Lorraine Guthrie", "verified_terminal": True},
+        {"code": "11134", "name": "Robert M. Guthrie", "verified_terminal": True},
+        {"code": "11135", "name": "Richard D. Guthrie", "verified_terminal": True},
     ],
 })
 
@@ -2585,8 +2585,8 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 13},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "11141", "name": "Eleanor Bestwick"},
-        {"code": "11142", "name": "Charles Bestwick"},
+        {"code": "11141", "name": "Eleanor Bestwick", "verified_terminal": True},
+        {"code": "11142", "name": "Charles Bestwick", "verified_terminal": True},
     ],
 })
 
@@ -2620,10 +2620,10 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 13},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "11221", "name": "Bessie Gertude Trembly", "born": "21 Jun 1893"},
+        {"code": "11221", "name": "Bessie Gertude Trembly", "born": "21 Jun 1893", "verified_terminal": True},
         {"code": "11222", "name": "Lena Ellen Trembly", "born": "29 Apr 1896"},
-        {"code": "11223", "name": "Earl C. Trembly", "born": "4 Nov 1903", "died": "28 Apr 1924"},
-        {"code": "11224", "name": "Regina C. Trembly", "born": "10 Feb 1914"},
+        {"code": "11223", "name": "Earl C. Trembly", "born": "4 Nov 1903", "died": "28 Apr 1924", "verified_terminal": True},
+        {"code": "11224", "name": "Regina C. Trembly", "born": "10 Feb 1914", "verified_terminal": True},
     ],
 })
 
@@ -2638,12 +2638,12 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 14},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "11231", "name": "Joseph Burns", "died": "19 Jan 1967"},
-        {"code": "11232", "name": "Samuel Herbert Burns"},
-        {"code": "11233", "name": "Robert Burns"},
-        {"code": "11234", "name": "Allen Burns"},
-        {"code": "11235", "name": "Mary Burns"},
-        {"code": "11236", "name": "Edith Burns"},
+        {"code": "11231", "name": "Joseph Burns", "died": "19 Jan 1967", "verified_terminal": True},
+        {"code": "11232", "name": "Samuel Herbert Burns", "verified_terminal": True},
+        {"code": "11233", "name": "Robert Burns", "verified_terminal": True},
+        {"code": "11234", "name": "Allen Burns", "verified_terminal": True},
+        {"code": "11235", "name": "Mary Burns", "verified_terminal": True},
+        {"code": "11236", "name": "Edith Burns", "verified_terminal": True},
     ],
 })
 
@@ -2658,7 +2658,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 14},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "11241", "name": "Erma Cupp"},
+        {"code": "11241", "name": "Erma Cupp", "verified_terminal": True},
         {"code": "11242", "name": "Vivian Cupp"},
         {"code": "11243", "name": "Nellie Cupp", "born": "23 Apr 1903"},
     ],
@@ -2676,8 +2676,8 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "11411", "name": "Wilford Hartman"},
-        {"code": "11412", "name": "Carlton Hartman"},
-        {"code": "11413", "name": "Cora Hartman"},
+        {"code": "11412", "name": "Carlton Hartman", "verified_terminal": True},
+        {"code": "11413", "name": "Cora Hartman", "verified_terminal": True},
     ],
 })
 
@@ -2704,7 +2704,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 15},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "12231", "name": "May Brown"},
+        {"code": "12231", "name": "May Brown", "verified_terminal": True},
     ],
 })
 
@@ -2731,8 +2731,8 @@ ENTRIES.append({
         {"code": "12242", "name": "Lucy Elizabeth DeBerry", "born": "3 Sep 1910"},
         {"code": "12243", "name": "William Henry DeBerry", "born": "16 Jan 1912"},
         {"code": "12244", "name": "Junior Clark DeBerry", "born": "24 Sep 1913"},
-        {"code": "12245", "name": "Jessie Harold DeBerry", "born": "20 Nov 1915", "died": "22 Nov 1915", "flags": {"diedInInfancy": True}},
-        {"code": "12246", "name": "Herbert Lee DeBerry", "born": "8 Oct 1916", "died": "8 Oct 1916", "flags": {"diedInInfancy": True}},
+        {"code": "12245", "name": "Jessie Harold DeBerry", "born": "20 Nov 1915", "died": "22 Nov 1915", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "12246", "name": "Herbert Lee DeBerry", "born": "8 Oct 1916", "died": "8 Oct 1916", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "12247", "name": "James Oliver DeBerry", "born": "24 Aug 1917"},
         {"code": "12248", "name": "Mary Alice DeBerry", "born": "25 Nov 1919"},
         {"code": "12249", "name": "Arletta Lucille DeBerry", "born": "11 Aug 1922"},
@@ -2766,7 +2766,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 15},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "12271", "name": "DeBerry child"},
+        {"code": "12271", "name": "DeBerry child", "verified_terminal": True},
     ],
 })
 
@@ -2855,13 +2855,13 @@ ENTRIES.append({
     "children": [
         {"code": "13F11", "name": "Samuel Playford Guthrie"},
         {"code": "13F12", "name": "Junior Walter Guthrie", "born": "16 Jun 1922", "died": "26 Jan 1994"},
-        {"code": "13F13", "name": "George D. Guthrie", "born": "1925"},
-        {"code": "13F14", "name": "William Guthrie"},
-        {"code": "13F15", "name": "Clarence Robert Guthrie"},
-        {"code": "13F16", "name": "Mabel Guthrie"},
-        {"code": "13F17", "name": "Pauline Guthrie"},
-        {"code": "13F18", "name": "Sarah R. Guthrie", "born": "11 Jul 1925", "died": "11 Jul 1925", "flags": {"diedInInfancy": True}},
-        {"code": "13F19", "name": "Daisy M. Guthrie", "born": "11 Jul 1925"},
+        {"code": "13F13", "name": "George D. Guthrie", "born": "1925", "verified_terminal": True},
+        {"code": "13F14", "name": "William Guthrie", "verified_terminal": True},
+        {"code": "13F15", "name": "Clarence Robert Guthrie", "verified_terminal": True},
+        {"code": "13F16", "name": "Mabel Guthrie", "verified_terminal": True},
+        {"code": "13F17", "name": "Pauline Guthrie", "verified_terminal": True},
+        {"code": "13F18", "name": "Sarah R. Guthrie", "born": "11 Jul 1925", "died": "11 Jul 1925", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "13F19", "name": "Daisy M. Guthrie", "born": "11 Jul 1925", "verified_terminal": True},
     ],
 })
 
@@ -2880,16 +2880,16 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 21},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "13F51", "name": "Freda Beatrice Ditmore", "born": "30 Dec 1916"},
+        {"code": "13F51", "name": "Freda Beatrice Ditmore", "born": "30 Dec 1916", "verified_terminal": True},
         {"code": "13F52", "name": "Ethel Marie Ditmore", "born": "8 Jul 1919"},
-        {"code": "13F53", "name": "Nellie Pauline Ditmore", "born": "1 Apr 1921", "died": "1 Jun 1939"},
-        {"code": "13F54", "name": "Calvin Ray Ditmore", "born": "8 Mar 1924"},
-        {"code": "13F55", "name": "Thelma May Ditmore", "born": "8 Aug 1925"},
-        {"code": "13F56", "name": "Samuel Walter Ditmore, Jr.", "born": "21 Nov 1927"},
-        {"code": "13F57", "name": "Beulah Dreme Ditmore", "born": "14 Dec 1929"},
-        {"code": "13F58", "name": "Thomas Dale Ditmore", "born": "27 Aug 1934"},
-        {"code": "13F59", "name": "Ronald Lee Ditmore", "born": "15 Nov 1936"},
-        {"code": "13F5A", "name": "James Franklin Ditmore", "born": "2 Jun 1942"},
+        {"code": "13F53", "name": "Nellie Pauline Ditmore", "born": "1 Apr 1921", "died": "1 Jun 1939", "verified_terminal": True},
+        {"code": "13F54", "name": "Calvin Ray Ditmore", "born": "8 Mar 1924", "verified_terminal": True},
+        {"code": "13F55", "name": "Thelma May Ditmore", "born": "8 Aug 1925", "verified_terminal": True},
+        {"code": "13F56", "name": "Samuel Walter Ditmore, Jr.", "born": "21 Nov 1927", "verified_terminal": True},
+        {"code": "13F57", "name": "Beulah Dreme Ditmore", "born": "14 Dec 1929", "verified_terminal": True},
+        {"code": "13F58", "name": "Thomas Dale Ditmore", "born": "27 Aug 1934", "verified_terminal": True},
+        {"code": "13F59", "name": "Ronald Lee Ditmore", "born": "15 Nov 1936", "verified_terminal": True},
+        {"code": "13F5A", "name": "James Franklin Ditmore", "born": "2 Jun 1942", "verified_terminal": True},
     ],
 })
 
@@ -2916,7 +2916,7 @@ ENTRIES.append({
         {"code": "13F75", "name": "Ethel Jane Guthrie", "born": "24 Sep 1941"},
         {"code": "13F76", "name": "Juanita Mae Guthrie", "born": "16 May 1944"},
         {"code": "13F77", "name": "Judy Marie Guthrie", "born": "15 Aug 1946"},
-        {"code": "13F78", "name": "Albert Lee Guthrie", "born": "10 Apr 1950", "died": "8 Jul 1950", "flags": {"diedInInfancy": True}},
+        {"code": "13F78", "name": "Albert Lee Guthrie", "born": "10 Apr 1950", "died": "8 Jul 1950", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -3039,8 +3039,8 @@ ENTRIES.append({
         {"code": "12333", "name": "Carl Claude Deal", "born": "5 May 1910"},
         {"code": "12334", "name": "Hazel Lucy Deal", "born": "4 Nov 1912"},
         {"code": "12335", "name": "Ralph Paul Deal", "born": "3 Oct 1914"},
-        {"code": "12336", "name": "Clarence Hermon Deal", "born": "29 Aug 1916", "died": "12 Dec 1916", "flags": {"diedInInfancy": True}},
-        {"code": "12337", "name": "Mary Mae Deal", "born": "30 Sep 1918", "died": "13 Feb 1919", "flags": {"diedInInfancy": True}},
+        {"code": "12336", "name": "Clarence Hermon Deal", "born": "29 Aug 1916", "died": "12 Dec 1916", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "12337", "name": "Mary Mae Deal", "born": "30 Sep 1918", "died": "13 Feb 1919", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "12338", "name": "Ray Glenn Deal", "born": "23 Jan 1922"},
     ],
 })
@@ -3065,7 +3065,7 @@ ENTRIES.append({
         # First marriage
         {"code": "12351", "name": "Dempsey Ernest DeBerry", "born": "25 Sep 1904"},
         {"code": "12352", "name": "Gilbert Preston DeBerry", "born": "13 Jun 1907"},
-        {"code": "12353", "name": "Mabel Ellen DeBerry", "born": "5 Jan 1915", "died": "5 Jan 1915", "flags": {"diedInInfancy": True}},
+        {"code": "12353", "name": "Mabel Ellen DeBerry", "born": "5 Jan 1915", "died": "5 Jan 1915", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -3085,7 +3085,7 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "12361", "name": "Nellie Pauline Feather", "born": "22 Sep 1907"},
-        {"code": "12362", "name": "Lena Alfreda Feather", "born": "12 Feb 1909", "died": "27 Apr 1909", "flags": {"diedInInfancy": True}},
+        {"code": "12362", "name": "Lena Alfreda Feather", "born": "12 Feb 1909", "died": "27 Apr 1909", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "12363", "name": "Virgie Loda Feather", "born": "25 Oct 1910"},
         {"code": "12364", "name": "Rosalie Francine Feather", "born": "23 Mar 1916"},
         {"code": "12365", "name": "Wilmeth Scott Feather", "born": "24 Jun 1919"},
@@ -3354,7 +3354,7 @@ ENTRIES.append({
     "children": [
         {"code": "12321", "name": "Ross Hoffman"},
         {"code": "12322", "name": "Henrietta Hoffman"},
-        {"code": "12323", "name": "Lucy Hoffman"},
+        {"code": "12323", "name": "Lucy Hoffman", "verified_terminal": True},
     ],
 })
 
@@ -3422,7 +3422,7 @@ ENTRIES.append({
     "children": [
         {"code": "12381", "name": "Evelyn Fern Liston", "born": "6 Sep 1918"},
         {"code": "12382", "name": "Ralph Waldo Liston", "born": "6 Dec 1920"},
-        {"code": "12383", "name": "Charles J. Liston", "born": "3 Jun 1935", "died": "2 Jan 1962"},
+        {"code": "12383", "name": "Charles J. Liston", "born": "3 Jun 1935", "died": "2 Jan 1962", "verified_terminal": True},
         {"code": "12384", "name": "Mrs. Willard Teets", "flags": {"stepChild": True}},
     ],
 })
@@ -3468,7 +3468,7 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         # First marriage
-        {"code": "13211", "name": "Rena Guthrie"},
+        {"code": "13211", "name": "Rena Guthrie", "verified_terminal": True},
         # Second marriage
         {"code": "13212", "name": "Elwood Herbert Guthrie", "born": "8 Sep 1916"},
         {"code": "13213", "name": "Charles Ellis Guthrie", "born": "28 Feb 19"},
@@ -3498,7 +3498,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 17},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "13221", "name": "Ada C. Guthrie", "born": "25 Dec 1895", "died": "10 Oct 1898", "flags": {"diedInInfancy": True}},
+        {"code": "13221", "name": "Ada C. Guthrie", "born": "25 Dec 1895", "died": "10 Oct 1898", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "13222", "name": "Donna Mae Guthrie", "born": "6 Aug 1897"},
         {"code": "13223", "name": "Charles Ray Guthrie", "born": "16 Feb 1902"},
         {"code": "13224", "name": "Edna Pauline Guthrie", "born": "30 Jun 1914"},
@@ -3521,11 +3521,11 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "13241", "name": "Nora May Trembly", "born": "18 May 1892"},
-        {"code": "13242", "name": "Flora May Trembly", "born": "14 Feb 1894"},
+        {"code": "13242", "name": "Flora May Trembly", "born": "14 Feb 1894", "verified_terminal": True},
         {"code": "13243", "name": "Nellie Clove Trembly", "born": "14 Feb 1895"},
-        {"code": "13244", "name": "Chester Paul Trembly", "born": "13 Jun 1900", "died": "7 Jan 1976"},
-        {"code": "13245", "name": "Martin Trembly", "born": "23 Feb 1902"},
-        {"code": "13246", "name": "Maude Trembly", "born": "23 Feb 1903"},
+        {"code": "13244", "name": "Chester Paul Trembly", "born": "13 Jun 1900", "died": "7 Jan 1976", "verified_terminal": True},
+        {"code": "13245", "name": "Martin Trembly", "born": "23 Feb 1902", "verified_terminal": True},
+        {"code": "13246", "name": "Maude Trembly", "born": "23 Feb 1903", "verified_terminal": True},
     ],
 })
 
@@ -3548,7 +3548,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 17},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "13251", "name": "Ethel Marie Wilhelm", "born": "25 Aug 1907", "died": "1 Mar 1970"},
+        {"code": "13251", "name": "Ethel Marie Wilhelm", "born": "25 Aug 1907", "died": "1 Mar 1970", "verified_terminal": True},
     ],
 })
 
@@ -3577,7 +3577,7 @@ ENTRIES.append({
         {"code": "13263", "name": "Emma Evelyn Lawson", "born": "13 Dec 1907"},
         {"code": "13264", "name": "Everett Paul Larson", "born": "17 Jul 1911"},
         {"code": "13265", "name": "Russell Ray Lawson", "born": "23 Mar 1914"},
-        {"code": "13266", "name": "Robert G. Lawson", "born": "13 Mar 1916", "died": "1969"},
+        {"code": "13266", "name": "Robert G. Lawson", "born": "13 Mar 1916", "died": "1969", "verified_terminal": True},
         {"code": "13267", "name": "Clarence S. Lawson", "born": "22 Mar 1920"},
         {"code": "13268", "name": "Sheldon Lawson", "born": "30 Jun 1922", "died": "1969"},
     ],
@@ -3603,7 +3603,7 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "13541", "name": "Osa Freda Lewis", "born": "19 Nov 1915"},
-        {"code": "13542", "name": "Herbert Ray Lewis", "born": "16 Apr 1917"},
+        {"code": "13542", "name": "Herbert Ray Lewis", "born": "16 Apr 1917", "verified_terminal": True},
     ],
 })
 
@@ -3621,15 +3621,15 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "13651", "name": "Dessie Alice Hauger", "born": "5 May 1898"},
-        {"code": "13652", "name": "Dora Hauger"},
-        {"code": "13653", "name": "Edna Hauger"},
+        {"code": "13652", "name": "Dora Hauger", "verified_terminal": True},
+        {"code": "13653", "name": "Edna Hauger", "verified_terminal": True},
         {"code": "13654", "name": "Cora Hauger", "born": "3 Nov 1899"},
-        {"code": "13655", "name": "Daughter", "died": "1923", "flags": {"diedInInfancy": True}},
-        {"code": "13656", "name": "Pauline Hauger"},
-        {"code": "13657", "name": "Lois Hauger"},
-        {"code": "13658", "name": "Lulu Hauger"},
-        {"code": "13659", "name": "Herbert Hauger"},
-        {"code": "1365A", "name": "Grace Hauger"},
+        {"code": "13655", "name": "Daughter", "died": "1923", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "13656", "name": "Pauline Hauger", "verified_terminal": True},
+        {"code": "13657", "name": "Lois Hauger", "verified_terminal": True},
+        {"code": "13658", "name": "Lulu Hauger", "verified_terminal": True},
+        {"code": "13659", "name": "Herbert Hauger", "verified_terminal": True},
+        {"code": "1365A", "name": "Grace Hauger", "verified_terminal": True},
     ],
 })
 
@@ -3650,7 +3650,7 @@ ENTRIES.append({
         # First marriage
         {"code": "13661", "name": "Ethel Ficky"},
         # Second marriage
-        {"code": "13662", "name": "Dorthy Rolls DeBerry"},
+        {"code": "13662", "name": "Dorthy Rolls DeBerry", "verified_terminal": True},
     ],
 })
 
@@ -3665,9 +3665,9 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 18},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "13811", "name": "John L. Teets"},
-        {"code": "13812", "name": "Fred Teets"},
-        {"code": "13813", "name": "Claude Teets"},
+        {"code": "13811", "name": "John L. Teets", "verified_terminal": True},
+        {"code": "13812", "name": "Fred Teets", "verified_terminal": True},
+        {"code": "13813", "name": "Claude Teets", "verified_terminal": True},
     ],
 })
 
@@ -3690,10 +3690,10 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "13821", "name": "Edith M. Teets", "born": "19 Jan 1898"},
-        {"code": "13822", "name": "Charles R. Teets", "born": "1899", "died": "1916"},
+        {"code": "13822", "name": "Charles R. Teets", "born": "1899", "died": "1916", "verified_terminal": True},
         {"code": "13823", "name": "Cora Teets", "born": "1902"},
-        {"code": "13824", "name": "Harvey Teets", "born": "Aug 1904", "died": "27 Jan 1975"},
-        {"code": "13825", "name": "Marie Teets", "born": "11 Apr 1911", "died": "12 Jan 1978"},
+        {"code": "13824", "name": "Harvey Teets", "born": "Aug 1904", "died": "27 Jan 1975", "verified_terminal": True},
+        {"code": "13825", "name": "Marie Teets", "born": "11 Apr 1911", "died": "12 Jan 1978", "verified_terminal": True},
         {"code": "13826", "name": "Rosalee Teets", "born": "Sep 1917"},
         {"code": "13827", "name": "Rollin Adair Teets", "born": "26 Mar 1919"},
     ],
@@ -3710,14 +3710,14 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 19},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "13831", "name": "Elizah Alen Uphold", "born": "1 May 1897", "died": "7 May 1958"},
-        {"code": "13832", "name": "Adam E. Uphold", "died": "31 May 1980"},
-        {"code": "13833", "name": "Gertrude Uphold"},
-        {"code": "13834", "name": "Jene Uphold"},
-        {"code": "13835", "name": "Delia Uphold"},
-        {"code": "13836", "name": "Sam Uphold"},
-        {"code": "13837", "name": "Orval Uphold"},
-        {"code": "13838", "name": "Theodore Uphold"},
+        {"code": "13831", "name": "Elizah Alen Uphold", "born": "1 May 1897", "died": "7 May 1958", "verified_terminal": True},
+        {"code": "13832", "name": "Adam E. Uphold", "died": "31 May 1980", "verified_terminal": True},
+        {"code": "13833", "name": "Gertrude Uphold", "verified_terminal": True},
+        {"code": "13834", "name": "Jene Uphold", "verified_terminal": True},
+        {"code": "13835", "name": "Delia Uphold", "verified_terminal": True},
+        {"code": "13836", "name": "Sam Uphold", "verified_terminal": True},
+        {"code": "13837", "name": "Orval Uphold", "verified_terminal": True},
+        {"code": "13838", "name": "Theodore Uphold", "verified_terminal": True},
     ],
 })
 
@@ -3740,11 +3740,11 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 19},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "13841", "name": "Theadore Teets"},
+        {"code": "13841", "name": "Theadore Teets", "verified_terminal": True},
         {"code": "13842", "name": "Arthur Paul Teet", "born": "7 Dec 1920"},
-        {"code": "13843", "name": "Maude Teets"},
+        {"code": "13843", "name": "Maude Teets", "verified_terminal": True},
         {"code": "13844", "name": "Florence F. (Flora) Teets", "born": "31 Dec 1909"},
-        {"code": "13845", "name": "Esta Teets"},
+        {"code": "13845", "name": "Esta Teets", "verified_terminal": True},
     ],
 })
 
@@ -3777,18 +3777,18 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 19},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "13861", "name": "Robert Uphold"},
+        {"code": "13861", "name": "Robert Uphold", "verified_terminal": True},
         {"code": "13862", "name": "Cora Uphold", "born": "1 Jan 1904"},
         {"code": "13863", "name": "Bessie Uphold"},
         {"code": "13864", "name": "Edna Uphold", "born": "1906"},
         {"code": "13865", "name": "Grace Uphold"},
         {"code": "13866", "name": "Icie Myrtle Uphold"},
-        {"code": "13867", "name": "Russel Uphold"},
-        {"code": "13868", "name": "Troy Uphold"},
-        {"code": "13869", "name": "Gladys Uphold"},
-        {"code": "1386A", "name": "Infant", "buried": "Keeler Glade Cemetery", "flags": {"diedInInfancy": True}},
-        {"code": "1386B", "name": "Infant", "buried": "Keeler Glade Cemetery", "flags": {"diedInInfancy": True}},
-        {"code": "1386C", "name": "Infant", "buried": "Keeler Glade Cemetery", "flags": {"diedInInfancy": True}},
+        {"code": "13867", "name": "Russel Uphold", "verified_terminal": True},
+        {"code": "13868", "name": "Troy Uphold", "verified_terminal": True},
+        {"code": "13869", "name": "Gladys Uphold", "verified_terminal": True},
+        {"code": "1386A", "name": "Infant", "buried": "Keeler Glade Cemetery", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "1386B", "name": "Infant", "buried": "Keeler Glade Cemetery", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "1386C", "name": "Infant", "buried": "Keeler Glade Cemetery", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -3810,11 +3810,11 @@ ENTRIES.append({
         {"code": "13B21", "name": "Lola Violet Murphy", "born": "21 Feb 1905"},
         {"code": "13B22", "name": "Marie Edna Sikes", "born": "23 Mar 1907"},
         # Second marriage
-        {"code": "13B23", "name": "Hazel Pearl Bee", "born": "12 Sep 1912"},
-        {"code": "13B24", "name": "Verna Jane Bee", "born": "9 Aug 1915", "died": "1952"},
-        {"code": "13B25", "name": "Ester Mae Bee", "born": "24 Jul 1917"},
-        {"code": "13B26", "name": "Mary Catherine Bee", "born": "9 Jun 1922"},
-        {"code": "13B27", "name": "Charles Paul Bee", "born": "4 Mar 1930"},
+        {"code": "13B23", "name": "Hazel Pearl Bee", "born": "12 Sep 1912", "verified_terminal": True},
+        {"code": "13B24", "name": "Verna Jane Bee", "born": "9 Aug 1915", "died": "1952", "verified_terminal": True},
+        {"code": "13B25", "name": "Ester Mae Bee", "born": "24 Jul 1917", "verified_terminal": True},
+        {"code": "13B26", "name": "Mary Catherine Bee", "born": "9 Jun 1922", "verified_terminal": True},
+        {"code": "13B27", "name": "Charles Paul Bee", "born": "4 Mar 1930", "verified_terminal": True},
     ],
 })
 
@@ -3827,7 +3827,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 20},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "13C21", "name": "William R. Guthrie", "born": "25 May 1939"},
+        {"code": "13C21", "name": "William R. Guthrie", "born": "25 May 1939", "verified_terminal": True},
     ],
 })
 
@@ -3853,7 +3853,7 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "13C51", "name": "Ray Smith", "born": "10 Jun 1918"},
-        {"code": "13C52", "name": "Ocelea Elizabeth Smith", "born": "1 May 1926", "died": "4 May 1926", "flags": {"diedInInfancy": True}},
+        {"code": "13C52", "name": "Ocelea Elizabeth Smith", "born": "1 May 1926", "died": "4 May 1926", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "13C53", "name": "Janice Smith", "born": "30 Jul 1939"},
     ],
 })
@@ -3868,8 +3868,8 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 20},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "13C91", "name": "Emma Jean Guthrie"},
-        {"code": "13C92", "name": "J. R. Guthrie", "died": "13 Jan 1993"},
+        {"code": "13C91", "name": "Emma Jean Guthrie", "verified_terminal": True},
+        {"code": "13C92", "name": "J. R. Guthrie", "died": "13 Jan 1993", "verified_terminal": True},
         {"code": "13C93", "name": "Harvey (Harry) Guthrie"},
     ],
 })
@@ -3882,7 +3882,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 20},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "13D21", "name": "Victor Leech"},
+        {"code": "13D21", "name": "Victor Leech", "verified_terminal": True},
     ],
 })
 
@@ -3903,12 +3903,12 @@ ENTRIES.append({
         {"code": "13F83", "name": "Helen Marie Guthrie", "born": "6 Oct 1947"},
         {"code": "13F84", "name": "Walter Herbert Guthrie", "born": "8 Mar 1950"},
         {"code": "13F85", "name": "Catherine Ruth Guthrie", "born": "30 Jul 1951"},
-        {"code": "13F86", "name": "Samuel Franklin Guthrie", "born": "21 Aug 1953"},
+        {"code": "13F86", "name": "Samuel Franklin Guthrie", "born": "21 Aug 1953", "verified_terminal": True},
         {"code": "13F87", "name": "Dorothy Elaine Guthrie", "born": "16 Apr 1956"},
-        {"code": "13F88", "name": "George Daniel Guthrie", "born": "24 Mar 1958"},
+        {"code": "13F88", "name": "George Daniel Guthrie", "born": "24 Mar 1958", "verified_terminal": True},
         {"code": "13F89", "name": "Cora Rose Guthrie", "born": "7 May 1960"},
         {"code": "13F8A", "name": "Mary Maude Guthrie", "born": "21 Feb 1962"},
-        {"code": "13F8B", "name": "Glenn Wesley Guthrie", "born": "21 Feb 1962", "died": "21 Feb 1962", "flags": {"diedInInfancy": True}},
+        {"code": "13F8B", "name": "Glenn Wesley Guthrie", "born": "21 Feb 1962", "died": "21 Feb 1962", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -3922,9 +3922,9 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 21},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "13FA1", "name": "Ralph Conaway"},
-        {"code": "13FA2", "name": "Freda Conaway"},
-        {"code": "13FA3", "name": "Lula Conaway"},
+        {"code": "13FA1", "name": "Ralph Conaway", "verified_terminal": True},
+        {"code": "13FA2", "name": "Freda Conaway", "verified_terminal": True},
+        {"code": "13FA3", "name": "Lula Conaway", "verified_terminal": True},
     ],
 })
 
@@ -3959,7 +3959,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 22},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "13FC1", "name": "William (Billy) Casteel", "details": "son of Dale Casteel"},
+        {"code": "13FC1", "name": "William (Billy) Casteel", "details": "son of Dale Casteel", "verified_terminal": True},
     ],
 })
 
@@ -3980,12 +3980,12 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         # First marriage
-        {"code": "13FD1", "name": "Daughter", "details": "raised by John's sister Frances Frazee"},
+        {"code": "13FD1", "name": "Daughter", "details": "raised by John's sister Frances Frazee", "verified_terminal": True},
         # Second marriage
         {"code": "13FD2", "name": "Shirley Guthrie"},
-        {"code": "13FD3", "name": "Janey I. Guthrie", "born": "14 Sep 1952", "died": "19 Apr 1953", "flags": {"diedInInfancy": True}, "buried": "Parnell cemetery"},
+        {"code": "13FD3", "name": "Janey I. Guthrie", "born": "14 Sep 1952", "died": "19 Apr 1953", "flags": {"diedInInfancy": True}, "buried": "Parnell cemetery", "verified_terminal": True},
         {"code": "13FD4", "name": "Donald (Buddy) Guthrie", "born": "about 1953"},
-        {"code": "13FD5", "name": "Lucy Guthrie"},
+        {"code": "13FD5", "name": "Lucy Guthrie", "verified_terminal": True},
         {"code": "13FD6", "name": "Billy Wade Guthrie", "born": "11 Oct 1957", "died": "21 Dec 1977"},
     ],
 })
@@ -4011,9 +4011,9 @@ ENTRIES.append({
         {"code": "13FE2", "name": "Noami Virginia Noss", "born": "19 Sep 1935"},
         {"code": "13FE3", "name": "John Frederick Noss", "born": "20 Apr 1939"},
         {"code": "13FE4", "name": "Wayne E. Noss"},
-        {"code": "13FE5", "name": "James T. Noss", "born": "29 Jun 1945", "died": "3 Jul 1966"},
+        {"code": "13FE5", "name": "James T. Noss", "born": "29 Jun 1945", "died": "3 Jul 1966", "verified_terminal": True},
         {"code": "13FE6", "name": "Shirley Noss"},
-        {"code": "13FE7", "name": "Robert E. Noss"},
+        {"code": "13FE7", "name": "Robert E. Noss", "verified_terminal": True},
     ],
 })
 
@@ -4035,10 +4035,10 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 22},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "14121", "name": "Franklin Uphold", "born": "11 Dec 1911"},
-        {"code": "14122", "name": "Mary Virginia Uphold", "born": "30 Jul 1914", "died": "18 Oct 1914", "flags": {"diedInInfancy": True}},
-        {"code": "14123", "name": "Charles M. Uphold", "born": "1925", "died": "8 Jul 1946"},
-        {"code": "14124", "name": "William Uphold", "died": "1948"},
+        {"code": "14121", "name": "Franklin Uphold", "born": "11 Dec 1911", "verified_terminal": True},
+        {"code": "14122", "name": "Mary Virginia Uphold", "born": "30 Jul 1914", "died": "18 Oct 1914", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "14123", "name": "Charles M. Uphold", "born": "1925", "died": "8 Jul 1946", "verified_terminal": True},
+        {"code": "14124", "name": "William Uphold", "died": "1948", "verified_terminal": True},
     ],
 })
 
@@ -4095,10 +4095,10 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "14181", "name": "Elizabeth Matilda Turner", "born": "19 Aug 1912"},
-        {"code": "14182", "name": "Wendell Floyd Turner", "born": "18 Oct 1918"},
+        {"code": "14182", "name": "Wendell Floyd Turner", "born": "18 Oct 1918", "verified_terminal": True},
         {"code": "14183", "name": "Sarapto Marie Turner", "born": "8 Apr 1919"},
-        {"code": "14184", "name": "Daisy Winona Turner", "born": "30 Nov 1922"},
-        {"code": "14185", "name": "Earl Donald Turner", "born": "4 May 1927"},
+        {"code": "14184", "name": "Daisy Winona Turner", "born": "30 Nov 1922", "verified_terminal": True},
+        {"code": "14185", "name": "Earl Donald Turner", "born": "4 May 1927", "verified_terminal": True},
         {"code": "14186", "name": "Kenneth George Turner", "born": "30 Jul 1929"},
     ],
 })
@@ -4111,10 +4111,10 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 23},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "141A1", "name": "John Uphold"},
-        {"code": "141A2", "name": "Charley Uphold"},
-        {"code": "141A3", "name": "Basel Uphold, Jr."},
-        {"code": "141A4", "name": "Walter Uphold"},
+        {"code": "141A1", "name": "John Uphold", "verified_terminal": True},
+        {"code": "141A2", "name": "Charley Uphold", "verified_terminal": True},
+        {"code": "141A3", "name": "Basel Uphold, Jr.", "verified_terminal": True},
+        {"code": "141A4", "name": "Walter Uphold", "verified_terminal": True},
     ],
 })
 
@@ -4137,12 +4137,12 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 23},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "14251", "name": "Charles B. Guthrie", "born": "10 Nov 1910", "died": "3 Dec 1910", "flags": {"diedInInfancy": True}},
+        {"code": "14251", "name": "Charles B. Guthrie", "born": "10 Nov 1910", "died": "3 Dec 1910", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "14252", "name": "Edna Grace Guthrie", "born": "23 Apr 1912"},
         {"code": "14253", "name": "John Edward Guthrie", "born": "2 Jan 1914", "died": "5 Aug 1957"},
-        {"code": "14254", "name": "Scott Franklin Guthrie", "born": "7 Mar 1917", "died": "11 Feb 1948"},
-        {"code": "14255", "name": "Blaine Austin Guthrie", "born": "24 Dec 1927", "died": "9 Nov 1942"},
-        {"code": "14256", "name": "Nellie Mae Guthrie", "born": "8 Jan 1935", "died": "8 Jan 1935", "flags": {"diedInInfancy": True}},
+        {"code": "14254", "name": "Scott Franklin Guthrie", "born": "7 Mar 1917", "died": "11 Feb 1948", "verified_terminal": True},
+        {"code": "14255", "name": "Blaine Austin Guthrie", "born": "24 Dec 1927", "died": "9 Nov 1942", "verified_terminal": True},
+        {"code": "14256", "name": "Nellie Mae Guthrie", "born": "8 Jan 1935", "died": "8 Jan 1935", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -4163,12 +4163,12 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 23},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "14271", "name": "Edna Mae Guthrie"},
+        {"code": "14271", "name": "Edna Mae Guthrie", "verified_terminal": True},
         {"code": "14272", "name": "Emma Ruth Guthrie"},
-        {"code": "14273", "name": "Mary Eleanor Guthrie"},
-        {"code": "14274", "name": "Goldie Marie Guthrie"},
-        {"code": "14275", "name": "Ralph Guthrie", "residences": ["Florida"]},
-        {"code": "14276", "name": "Asa B. Guthrie", "residences": ["Barton, MD"]},
+        {"code": "14273", "name": "Mary Eleanor Guthrie", "verified_terminal": True},
+        {"code": "14274", "name": "Goldie Marie Guthrie", "verified_terminal": True},
+        {"code": "14275", "name": "Ralph Guthrie", "residences": ["Florida"], "verified_terminal": True},
+        {"code": "14276", "name": "Asa B. Guthrie", "residences": ["Barton, MD"], "verified_terminal": True},
     ],
 })
 
@@ -4194,7 +4194,7 @@ ENTRIES.append({
         {"code": "14282", "name": "Paul Carlus Sines", "born": "7 Dec 1923"},
         {"code": "14283", "name": "Mary Elizabeth Sines", "born": "23 Jan 1926", "died": "18 Oct 1975"},
         {"code": "14284", "name": "Robert Jackson Sines", "born": "1 Jun 1928"},
-        {"code": "14285", "name": "Martha Sines", "born": "Mar 1930", "died": "15 Aug 1930", "flags": {"diedInInfancy": True}},
+        {"code": "14285", "name": "Martha Sines", "born": "Mar 1930", "died": "15 Aug 1930", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "14286", "name": "Ethel Mae Sines", "born": "8 Sep 1931"},
         {"code": "14287", "name": "Willard Elijah Sines", "born": "22 Feb 1934"},
         {"code": "14288", "name": "Ralph Edward Sines", "born": "7 Feb 1936"},
@@ -4218,16 +4218,16 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 24},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "14291", "name": "Martha Guthrie", "born": "8 Sep 1914", "notes": "daughter of Myrtle"},
+        {"code": "14291", "name": "Martha Guthrie", "born": "8 Sep 1914", "notes": "daughter of Myrtle", "verified_terminal": True},
         {"code": "14292", "name": "Clyde Guthrie", "born": "4 Jun 1916"},
         {"code": "14293", "name": "Dorothy Guthrie", "born": "4 Jul 1918"},
         {"code": "14294", "name": "Fred Guthrie", "born": "28 Oct 1920"},
         {"code": "14295", "name": "Jessie Guthrie", "born": "20 Aug 1922"},
         {"code": "14296", "name": "Mabel Guthrie", "born": "1 Apr 1924"},
-        {"code": "14297", "name": "Betty Guthrie", "born": "19 Feb 1927"},
+        {"code": "14297", "name": "Betty Guthrie", "born": "19 Feb 1927", "verified_terminal": True},
         {"code": "14298", "name": "Earl Guthrie, Jr.", "born": "28 Mar 1928"},
         {"code": "14299", "name": "Lucy Guthrie", "born": "26 Jul 1931"},
-        {"code": "1429A", "name": "Glen Guthrie", "born": "27 Mar 1933"},
+        {"code": "1429A", "name": "Glen Guthrie", "born": "27 Mar 1933", "verified_terminal": True},
         {"code": "1429B", "name": "Jack Guthrie", "born": "2 Feb 1936"},
         {"code": "1429C", "name": "Donna Jean Guthrie", "born": "18 Apr 1939"},
     ],
@@ -4243,14 +4243,14 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 24},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "14321", "name": "Vernie Myers"},
-        {"code": "14322", "name": "Hazel Myers"},
-        {"code": "14323", "name": "Edna Myers"},
-        {"code": "14324", "name": "Pearl Myers"},
-        {"code": "14325", "name": "Effie Myers"},
-        {"code": "14326", "name": "Jessie Myers"},
-        {"code": "14327", "name": "Mildred Myers"},
-        {"code": "14328", "name": "Gilbert Myers"},
+        {"code": "14321", "name": "Vernie Myers", "verified_terminal": True},
+        {"code": "14322", "name": "Hazel Myers", "verified_terminal": True},
+        {"code": "14323", "name": "Edna Myers", "verified_terminal": True},
+        {"code": "14324", "name": "Pearl Myers", "verified_terminal": True},
+        {"code": "14325", "name": "Effie Myers", "verified_terminal": True},
+        {"code": "14326", "name": "Jessie Myers", "verified_terminal": True},
+        {"code": "14327", "name": "Mildred Myers", "verified_terminal": True},
+        {"code": "14328", "name": "Gilbert Myers", "verified_terminal": True},
         {"code": "14329", "name": "Donald Myers", "born": "31 Aug 1919"},
     ],
 })
@@ -4265,17 +4265,17 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 24},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "14331", "name": "Samuel Darnell"},
-        {"code": "14332", "name": "Earl Darnell"},
-        {"code": "14333", "name": "Albert Darnell"},
-        {"code": "14334", "name": "Adam Darnell"},
-        {"code": "14335", "name": "Elmer Darnell"},
-        {"code": "14336", "name": "Pearl Darnell"},
-        {"code": "14337", "name": "Dorothy Darnell"},
-        {"code": "14338", "name": "Mae Darnell"},
-        {"code": "14339", "name": "Mary Darnell"},
-        {"code": "1433A", "name": "Sarah Darnell"},
-        {"code": "1433B", "name": "Roberta Darnell"},
+        {"code": "14331", "name": "Samuel Darnell", "verified_terminal": True},
+        {"code": "14332", "name": "Earl Darnell", "verified_terminal": True},
+        {"code": "14333", "name": "Albert Darnell", "verified_terminal": True},
+        {"code": "14334", "name": "Adam Darnell", "verified_terminal": True},
+        {"code": "14335", "name": "Elmer Darnell", "verified_terminal": True},
+        {"code": "14336", "name": "Pearl Darnell", "verified_terminal": True},
+        {"code": "14337", "name": "Dorothy Darnell", "verified_terminal": True},
+        {"code": "14338", "name": "Mae Darnell", "verified_terminal": True},
+        {"code": "14339", "name": "Mary Darnell", "verified_terminal": True},
+        {"code": "1433A", "name": "Sarah Darnell", "verified_terminal": True},
+        {"code": "1433B", "name": "Roberta Darnell", "verified_terminal": True},
     ],
 })
 
@@ -4292,7 +4292,7 @@ ENTRIES.append({
         {"code": "14341", "name": "Bertha Elizabeth Cuppett"},
         {"code": "14342", "name": "Nellie Cuppett", "born": "6 Jul 1920"},
         {"code": "14343", "name": "Mamie Cuppett"},
-        {"code": "14344", "name": "Harry Cuppett"},
+        {"code": "14344", "name": "Harry Cuppett", "verified_terminal": True},
     ],
 })
 
@@ -4318,9 +4318,9 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 25},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "14371", "name": "Emma Sliger"},
-        {"code": "14372", "name": "Jane Sliger"},
-        {"code": "14373", "name": "Anna Bell Sliger"},
+        {"code": "14371", "name": "Emma Sliger", "verified_terminal": True},
+        {"code": "14372", "name": "Jane Sliger", "verified_terminal": True},
+        {"code": "14373", "name": "Anna Bell Sliger", "verified_terminal": True},
     ],
 })
 
@@ -4334,7 +4334,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 25},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "14381", "name": "William Herman Sliger", "born": "1 Jun 1923", "died": "15 Jul 1992"},
+        {"code": "14381", "name": "William Herman Sliger", "born": "1 Jun 1923", "died": "15 Jul 1992", "verified_terminal": True},
     ],
 })
 
@@ -4386,7 +4386,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 25},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "14421", "name": "Infant son", "born": "22 Aug 1909", "died": "22 Aug 1909", "flags": {"diedInInfancy": True}},
+        {"code": "14421", "name": "Infant son", "born": "22 Aug 1909", "died": "22 Aug 1909", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "14422", "name": "Chester Martin Nicola", "born": "7 Oct 1914"},
     ],
 })
@@ -4430,14 +4430,14 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 25},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "14451", "name": "Ethel H. Friend", "born": "7 Jun 1913"},
+        {"code": "14451", "name": "Ethel H. Friend", "born": "7 Jun 1913", "verified_terminal": True},
         {"code": "14452", "name": "Ivan Samuel Friend", "born": "7 Mar 1915"},
         {"code": "14453", "name": "Pearl Lovine Friend", "born": "29 Nov 1916"},
         {"code": "14454", "name": "Helen Dorothy Friend", "born": "12 Apr 1918"},
         {"code": "14455", "name": "Avis Mae Friend", "born": "28 Jun 1920"},
-        {"code": "14456", "name": "Charles Orval Friend", "born": "3 Apr 1923", "died": "11 Aug 1985"},
-        {"code": "14457", "name": "Virgil William Friend", "born": "17 Mar 1926", "died": "9 May 1994"},
-        {"code": "14458", "name": "Sylvia Marie Friend", "born": "23 Jul 1930", "died": "17 Jun 1935", "flags": {"diedInInfancy": True}},
+        {"code": "14456", "name": "Charles Orval Friend", "born": "3 Apr 1923", "died": "11 Aug 1985", "verified_terminal": True},
+        {"code": "14457", "name": "Virgil William Friend", "born": "17 Mar 1926", "died": "9 May 1994", "verified_terminal": True},
+        {"code": "14458", "name": "Sylvia Marie Friend", "born": "23 Jul 1930", "died": "17 Jun 1935", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -4478,9 +4478,9 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 26},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "14471", "name": "Infant son", "born": "11 Feb 1922", "died": "11 Feb 1922", "flags": {"diedInInfancy": True}},
+        {"code": "14471", "name": "Infant son", "born": "11 Feb 1922", "died": "11 Feb 1922", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "14472", "name": "Jessie Mae Thomas", "born": "25 May 1923", "died": "30 Sep 1931", "buried": "Shady Grove Cemetery, WV"},
-        {"code": "14473", "name": "James Robert Thomas", "born": "2 Mar 1930", "died": "22 Jun 1933", "buried": "Shady Grove Cemetery, WV"},
+        {"code": "14473", "name": "James Robert Thomas", "born": "2 Mar 1930", "died": "22 Jun 1933", "buried": "Shady Grove Cemetery, WV", "verified_terminal": True},
         {"code": "14474", "name": "Franklin Richard Thomas", "born": "11 Mar 1933"},
         {"code": "14475", "name": "David Ervin Thomas", "born": "6 Apr 1939"},
         {"code": "14476", "name": "Clarence Dewight Thomas", "born": "29 Oct 1942"},
@@ -4509,8 +4509,8 @@ ENTRIES.append({
     "children": [
         {"code": "14481", "name": "Donna Mae Strawser", "born": "18 Jun 1917"},
         {"code": "14482", "name": "Paul Woodrow Strawser", "born": "23 Apr 1920"},
-        {"code": "14483", "name": "Charles Ford Strawser", "born": "6 Jun 1923"},
-        {"code": "14484", "name": "Lucilla V. Strawser", "born": "16 Nov 1926"},
+        {"code": "14483", "name": "Charles Ford Strawser", "born": "6 Jun 1923", "verified_terminal": True},
+        {"code": "14484", "name": "Lucilla V. Strawser", "born": "16 Nov 1926", "verified_terminal": True},
         {"code": "14485", "name": "Cecil Ray Strawser", "born": "11 Aug 1935"},
     ],
 })
@@ -4526,7 +4526,7 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "14511", "name": "Helen L. Guthrie", "born": "4 Nov 1903"},
-        {"code": "14512", "name": "Charles D. H. Guthrie", "born": "18 Dec 1905"},
+        {"code": "14512", "name": "Charles D. H. Guthrie", "born": "18 Dec 1905", "verified_terminal": True},
     ],
 })
 
@@ -4553,7 +4553,7 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "14541", "name": "John P. Blosser", "born": "8 Apr 1912"},
-        {"code": "14542", "name": "Rosala V. Blosser"},
+        {"code": "14542", "name": "Rosala V. Blosser", "verified_terminal": True},
         {"code": "14543", "name": "Dorothy M. Blosser", "born": "20 Apr 1919"},
         {"code": "14544", "name": "David G. Blosser", "born": "24 Sep 1922"},
     ],
@@ -4568,12 +4568,12 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 26},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "14551", "name": "Leonard G. Baily", "born": "15 Dec 1914"},
-        {"code": "14552", "name": "James Baily", "born": "12 Dec 1917"},
-        {"code": "14553", "name": "Warren H. Baily", "born": "15 Jun 1921"},
-        {"code": "14554", "name": "Betty J. Baily", "born": "28 Feb 1927"},
-        {"code": "14555", "name": "Donald Baily", "born": "24 Apr 1931"},
-        {"code": "14556", "name": "Robert D. Baily", "born": "28 Jun 1934"},
+        {"code": "14551", "name": "Leonard G. Baily", "born": "15 Dec 1914", "verified_terminal": True},
+        {"code": "14552", "name": "James Baily", "born": "12 Dec 1917", "verified_terminal": True},
+        {"code": "14553", "name": "Warren H. Baily", "born": "15 Jun 1921", "verified_terminal": True},
+        {"code": "14554", "name": "Betty J. Baily", "born": "28 Feb 1927", "verified_terminal": True},
+        {"code": "14555", "name": "Donald Baily", "born": "24 Apr 1931", "verified_terminal": True},
+        {"code": "14556", "name": "Robert D. Baily", "born": "28 Jun 1934", "verified_terminal": True},
     ],
 })
 
@@ -4592,7 +4592,7 @@ ENTRIES.append({
     "children": [
         # First marriage
         {"code": "14581", "name": "W. P. Guthrie", "born": "23 Jul 1922"},
-        {"code": "14582", "name": "Vernice Elaine Guthrie", "born": "13 Nov 1923"},
+        {"code": "14582", "name": "Vernice Elaine Guthrie", "born": "13 Nov 1923", "verified_terminal": True},
         {"code": "14583", "name": "Rita Guthrie", "born": "4 Mar 1926"},
         {"code": "14584", "name": "Wallace J. Hinkle", "flags": {"adopted": True}},
     ],
@@ -4607,11 +4607,11 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 27},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "14591", "name": "Charles Cole, Jr."},
+        {"code": "14591", "name": "Charles Cole, Jr.", "verified_terminal": True},
         {"code": "14592", "name": "Sarah Jeremiah Cole"},
-        {"code": "14593", "name": "Robert Cole"},
-        {"code": "14594", "name": "Betty Sue Cole"},
-        {"code": "14595", "name": "Ronald Cole"},
+        {"code": "14593", "name": "Robert Cole", "verified_terminal": True},
+        {"code": "14594", "name": "Betty Sue Cole", "verified_terminal": True},
+        {"code": "14595", "name": "Ronald Cole", "verified_terminal": True},
     ],
 })
 
@@ -4629,13 +4629,13 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         # First marriage
-        {"code": "14611", "name": "Irene Dodid", "born": "15 Apr 1905", "died": "19 Jul 1909", "flags": {"diedInInfancy": True}},
-        {"code": "14612", "name": "Herbert Dodid", "born": "22 Mar 1907", "died": "19 Jul 1907", "flags": {"diedInInfancy": True}},
+        {"code": "14611", "name": "Irene Dodid", "born": "15 Apr 1905", "died": "19 Jul 1909", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "14612", "name": "Herbert Dodid", "born": "22 Mar 1907", "died": "19 Jul 1907", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "14613", "name": "George E. Dodid", "born": "27 Mar 1909"},
         # Second marriage
         {"code": "14614", "name": "Birges (Birdie) Agnes Miller", "born": "9 Jul 1915"},
         {"code": "14615", "name": "Violet Miller"},
-        {"code": "14616", "name": "Person Miller"},
+        {"code": "14616", "name": "Person Miller", "verified_terminal": True},
         {"code": "14617", "name": "Mable Miller", "born": "29 Jul 1917"},
     ],
 })
@@ -4650,7 +4650,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 27},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "14621", "name": "James Miller", "born": "1917", "died": "1918", "flags": {"diedInInfancy": True}},
+        {"code": "14621", "name": "James Miller", "born": "1917", "died": "1918", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -4663,8 +4663,8 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 27},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "14671", "name": "Betty Lou Jordon", "born": "11 Oct 1939"},
-        {"code": "14672", "name": "Floyd Jordon", "born": "12 Oct 1942"},
+        {"code": "14671", "name": "Betty Lou Jordon", "born": "11 Oct 1939", "verified_terminal": True},
+        {"code": "14672", "name": "Floyd Jordon", "born": "12 Oct 1942", "verified_terminal": True},
     ],
 })
 
@@ -4678,12 +4678,12 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 27},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "14711", "name": "Emma C. Kahl", "born": "1906"},
-        {"code": "14712", "name": "Opal I. Kahl", "born": "1908"},
-        {"code": "14713", "name": "Russel R. Kahl", "born": "1910"},
+        {"code": "14711", "name": "Emma C. Kahl", "born": "1906", "verified_terminal": True},
+        {"code": "14712", "name": "Opal I. Kahl", "born": "1908", "verified_terminal": True},
+        {"code": "14713", "name": "Russel R. Kahl", "born": "1910", "verified_terminal": True},
         {"code": "14714", "name": "Ralph Kahl", "born": "19 Apr 1913"},
-        {"code": "14715", "name": "Edna M. Kahl", "born": "1915"},
-        {"code": "14716", "name": "Floyd R. Kahl", "born": "1917"},
+        {"code": "14715", "name": "Edna M. Kahl", "born": "1915", "verified_terminal": True},
+        {"code": "14716", "name": "Floyd R. Kahl", "born": "1917", "verified_terminal": True},
         {"code": "14717", "name": "Eleanor E. Kahl", "born": "2 Apr 1920"},
         {"code": "14718", "name": "Edward Harold Kahl", "born": "16 Dec 1922"},
         {"code": "14719", "name": "Everett Kahl", "flags": {"stepChild": True}},
@@ -4772,12 +4772,12 @@ ENTRIES.append({
         {"code": "14811", "name": "Myrtle P. McKenzie", "born": "13 Jan 1920"},
         {"code": "14812", "name": "Violet R. McKenzie", "born": "19 Aug 1921"},
         {"code": "14813", "name": "Bessie Ellen McKenzie", "born": "28 Oct 1923"},
-        {"code": "14814", "name": "Lillie M. McKenzie", "born": "8 Feb 1925"},
+        {"code": "14814", "name": "Lillie M. McKenzie", "born": "8 Feb 1925", "verified_terminal": True},
         {"code": "14815", "name": "Alice B. McKenzie", "born": "23 Jul 1926"},
-        {"code": "14816", "name": "Chester F. McKenzie", "born": "15 Jan 1928"},
-        {"code": "14817", "name": "Garnet Grace McKenzie", "born": "21 Aug 1929"},
-        {"code": "14818", "name": "James R. McKenzie", "born": "8 Jun 1931", "died": "1 Oct 1931", "flags": {"diedInInfancy": True}},
-        {"code": "14819", "name": "Martha Jane McKenzie", "born": "29 Jul 1933", "died": "5 Dec 1933", "flags": {"diedInInfancy": True}},
+        {"code": "14816", "name": "Chester F. McKenzie", "born": "15 Jan 1928", "verified_terminal": True},
+        {"code": "14817", "name": "Garnet Grace McKenzie", "born": "21 Aug 1929", "verified_terminal": True},
+        {"code": "14818", "name": "James R. McKenzie", "born": "8 Jun 1931", "died": "1 Oct 1931", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "14819", "name": "Martha Jane McKenzie", "born": "29 Jul 1933", "died": "5 Dec 1933", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -4792,9 +4792,9 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "14821", "name": "Barbara Guthrie", "born": "11 Dec 1917"},
-        {"code": "14822", "name": "Charles H. Guthrie"},
+        {"code": "14822", "name": "Charles H. Guthrie", "verified_terminal": True},
         {"code": "14823", "name": "Virginia Guthrie", "born": "17 Nov 1922"},
-        {"code": "14824", "name": "Samuel F. Guthrie"},
+        {"code": "14824", "name": "Samuel F. Guthrie", "verified_terminal": True},
     ],
 })
 
@@ -4813,11 +4813,11 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         # First marriage
-        {"code": "14841", "name": "Harman Guthrie", "born": "1918"},
+        {"code": "14841", "name": "Harman Guthrie", "born": "1918", "verified_terminal": True},
         # Second marriage
         {"code": "14842", "name": "Arrena Guthrie"},
         {"code": "14843", "name": "Pauline Guthrie"},
-        {"code": "14844", "name": "A. J. Guthrie"},
+        {"code": "14844", "name": "A. J. Guthrie", "verified_terminal": True},
     ],
 })
 
@@ -4850,11 +4850,11 @@ ENTRIES.append({
     "children": [
         # First marriage
         {"code": "14861", "name": "Irene Kendall", "born": "25 Jan 1924"},
-        {"code": "14862", "name": "Infant", "flags": {"diedInInfancy": True}},
-        {"code": "14863", "name": "Infant", "flags": {"diedInInfancy": True}},
+        {"code": "14862", "name": "Infant", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "14863", "name": "Infant", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         # Second marriage
         {"code": "14864", "name": "Irma M. Baker", "born": "13 Jan 1930"},
-        {"code": "14865", "name": "Thomas A. Baker", "born": "19 Jul 1932"},
+        {"code": "14865", "name": "Thomas A. Baker", "born": "19 Jul 1932", "verified_terminal": True},
         {"code": "14866", "name": "Donald Franklin Baker", "born": "9 Oct 1935"},
     ],
 })
@@ -4871,10 +4871,10 @@ ENTRIES.append({
     "children": [
         {"code": "14871", "name": "Elsie Elizabeth Guthrie", "born": "17 Jul 1926"},
         {"code": "14872", "name": "Perry Franklin Guthrie", "born": "28 Nov 1928"},
-        {"code": "14873", "name": "Herbert Lester Guthrie", "born": "5 Jul 1933"},
-        {"code": "14874", "name": "Ray Marshall Guthrie", "born": "21 Apr 1936"},
-        {"code": "14875", "name": "Shirley Ann Guthrie", "born": "1 Feb 1943"},
-        {"code": "14876", "name": "James E. Guthrie, Jr.", "born": "24 Apr 1945"},
+        {"code": "14873", "name": "Herbert Lester Guthrie", "born": "5 Jul 1933", "verified_terminal": True},
+        {"code": "14874", "name": "Ray Marshall Guthrie", "born": "21 Apr 1936", "verified_terminal": True},
+        {"code": "14875", "name": "Shirley Ann Guthrie", "born": "1 Feb 1943", "verified_terminal": True},
+        {"code": "14876", "name": "James E. Guthrie, Jr.", "born": "24 Apr 1945", "verified_terminal": True},
     ],
 })
 
@@ -4889,14 +4889,14 @@ ENTRIES.append({
     "children": [
         {"code": "14881", "name": "Edward F. Brandgard", "born": "25 Dec 1923"},
         {"code": "14882", "name": "Evelene J. Brandgard", "born": "19 Jul 1927"},
-        {"code": "14883", "name": "Marie Brandgard", "born": "29 Jan 1930", "died": "18 Feb 1930", "flags": {"diedInInfancy": True}},
+        {"code": "14883", "name": "Marie Brandgard", "born": "29 Jan 1930", "died": "18 Feb 1930", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "14884", "name": "Pearl L. Brandgard", "born": "5 May 1934"},
         {"code": "14885", "name": "Peter Ray Brandgard, Jr.", "born": "5 Jan 1936"},
         {"code": "14886", "name": "Ralph S. Brandgard", "born": "16 Jun 1938"},
-        {"code": "14887", "name": "Walter Joseph Brandgard", "born": "5 Nov 1939", "died": "19 Dec 1951"},
-        {"code": "14888", "name": "Laura Bell Brandgard", "born": "16 Mar 1940", "died": "3 Aug 1940", "flags": {"diedInInfancy": True}},
-        {"code": "14889", "name": "John R. Brandgard", "born": "18 Oct 1942"},
-        {"code": "1488A", "name": "Clarence R. Brandgard", "born": "7 Nov 1944"},
+        {"code": "14887", "name": "Walter Joseph Brandgard", "born": "5 Nov 1939", "died": "19 Dec 1951", "verified_terminal": True},
+        {"code": "14888", "name": "Laura Bell Brandgard", "born": "16 Mar 1940", "died": "3 Aug 1940", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "14889", "name": "John R. Brandgard", "born": "18 Oct 1942", "verified_terminal": True},
+        {"code": "1488A", "name": "Clarence R. Brandgard", "born": "7 Nov 1944", "verified_terminal": True},
     ],
 })
 
@@ -4909,12 +4909,12 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 29},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "14891", "name": "Delbert Guthrie", "born": "8 Jun 1928", "notes": "Raised by Rev. Oliver R. and Bessie Hart his aunt (see 14851)"},
+        {"code": "14891", "name": "Delbert Guthrie", "born": "8 Jun 1928", "notes": "Raised by Rev. Oliver R. and Bessie Hart his aunt (see 14851)", "verified_terminal": True},
         {"code": "14892", "name": "Ester Leona Tate", "born": "8 May 1933"},
-        {"code": "14893", "name": "Paul Kenneth Tate", "born": "14 Dec 1935"},
-        {"code": "14894", "name": "Elenor Delores Tate", "born": "7 Nov 1939"},
-        {"code": "14895", "name": "Elsie Loretta Tate", "born": "25 Jun 1941"},
-        {"code": "14896", "name": "Nancy Arlene Tate", "born": "30 May 1945"},
+        {"code": "14893", "name": "Paul Kenneth Tate", "born": "14 Dec 1935", "verified_terminal": True},
+        {"code": "14894", "name": "Elenor Delores Tate", "born": "7 Nov 1939", "verified_terminal": True},
+        {"code": "14895", "name": "Elsie Loretta Tate", "born": "25 Jun 1941", "verified_terminal": True},
+        {"code": "14896", "name": "Nancy Arlene Tate", "born": "30 May 1945", "verified_terminal": True},
     ],
 })
 
@@ -4960,8 +4960,8 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "16211", "name": "Rasely B. Moyers", "born": "5 Apr 1914"},
-        {"code": "16212", "name": "Thomas Ugene Moyers", "born": "16 Jan 1918"},
-        {"code": "16213", "name": "Walter Moyers, Jr."},
+        {"code": "16212", "name": "Thomas Ugene Moyers", "born": "16 Jan 1918", "verified_terminal": True},
+        {"code": "16213", "name": "Walter Moyers, Jr.", "verified_terminal": True},
     ],
 })
 
@@ -4987,7 +4987,7 @@ ENTRIES.append({
         {"code": "16233", "name": "Irene Fay Moyers", "born": "17 Nov 1921"},
         {"code": "16234", "name": "Myron Harold Moyers", "born": "9 Oct 1924"},
         {"code": "16235", "name": "Hubert Benton Moyers", "born": "5 Feb 1929"},
-        {"code": "16236", "name": "Katherline Grace Moyers", "born": "21 Jan 1931", "died": "21 Jan 1931", "flags": {"diedInInfancy": True}},
+        {"code": "16236", "name": "Katherline Grace Moyers", "born": "21 Jan 1931", "died": "21 Jan 1931", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "16237", "name": "Dwight Lorain Moyers", "born": "4 Oct 1932"},
     ],
 })
@@ -5003,10 +5003,10 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "16241", "name": "Vernon Ray Wright", "born": "15 Sep 1920"},
-        {"code": "16242", "name": "Norval G. Wright", "born": "1924", "died": "7 Jan 1944", "died_place": "Italy during WW II"},
+        {"code": "16242", "name": "Norval G. Wright", "born": "1924", "died": "7 Jan 1944", "died_place": "Italy during WW II", "verified_terminal": True},
         {"code": "16243", "name": "Gladys Marie Wright", "born": "28 Aug 1927"},
-        {"code": "16244", "name": "Vivian Wright"},
-        {"code": "16245", "name": "Naomi Irene Wright", "born": "22 Aug 1935", "died": "23 Aug 1935", "flags": {"diedInInfancy": True}, "buried": "Shady Grove Cemetery, WV"},
+        {"code": "16244", "name": "Vivian Wright", "verified_terminal": True},
+        {"code": "16245", "name": "Naomi Irene Wright", "born": "22 Aug 1935", "died": "23 Aug 1935", "flags": {"diedInInfancy": True}, "buried": "Shady Grove Cemetery, WV", "verified_terminal": True},
     ],
 })
 
@@ -5118,7 +5118,7 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "16441", "name": "Harrison (Teddy) Theodore Harshbarger", "born": "15 May 1963"},
-        {"code": "16442", "name": "James Allen Harshbarger", "born": "6 Dec 1965"},
+        {"code": "16442", "name": "James Allen Harshbarger", "born": "6 Dec 1965", "verified_terminal": True},
     ],
 })
 
@@ -5136,8 +5136,8 @@ ENTRIES.append({
         {"code": "16451", "name": "Rosetta Grace Fresh", "born": "5 Sep 1937"},
         {"code": "16452", "name": "Alvin Francis Fresh", "born": "21 May 1939"},
         {"code": "16453", "name": "Doris Jean Fresh", "born": "4 Nov 1943"},
-        {"code": "16454", "name": "Infant Daughter", "born": "4 Nov 1943", "died": "4 Nov 1943", "flags": {"diedInInfancy": True}},
-        {"code": "16455", "name": "Infant Daughter", "born": "4 Nov 1943", "died": "5 Nov 1943", "flags": {"diedInInfancy": True}},
+        {"code": "16454", "name": "Infant Daughter", "born": "4 Nov 1943", "died": "4 Nov 1943", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "16455", "name": "Infant Daughter", "born": "4 Nov 1943", "died": "5 Nov 1943", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "16456", "name": "Betty Mae Fresh", "born": "10 Mar 1955"},
     ],
 })
@@ -5166,7 +5166,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 31},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "16481", "name": "Infant son", "born": "12 Aug 1943", "died": "12 Aug 1943", "flags": {"diedInInfancy": True}},
+        {"code": "16481", "name": "Infant son", "born": "12 Aug 1943", "died": "12 Aug 1943", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "16482", "name": "Ross Carlton Miller", "born": "14 Apr 1946"},
         {"code": "16483", "name": "Norma Jean Miller", "born": "6 Sep 1947"},
     ],
@@ -5246,7 +5246,7 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "16631", "name": "Mary Louise Harshbarger", "born": "4 Jul 1935"},
-        {"code": "16632", "name": "Vernice Ann Harshbarger", "born": "20 Mar 1954", "died": "22 Mar 1954", "flags": {"diedInInfancy": True}, "buried": "Shady Grove Cemetery, WV"},
+        {"code": "16632", "name": "Vernice Ann Harshbarger", "born": "20 Mar 1954", "died": "22 Mar 1954", "flags": {"diedInInfancy": True}, "buried": "Shady Grove Cemetery, WV", "verified_terminal": True},
     ],
 })
 
@@ -5276,7 +5276,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 32},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "17111", "name": "Clarence Webster Spiker", "born": "9 Jun 1906", "died": "2 Jul 1932"},
+        {"code": "17111", "name": "Clarence Webster Spiker", "born": "9 Jun 1906", "died": "2 Jul 1932", "verified_terminal": True},
         {"code": "17112", "name": "Ivon Theadore Spiker", "born": "12 Dec 1910"},
         {"code": "17113", "name": "Rosa Silvia Spiker", "born": "24 May 1917"},
     ],
@@ -5321,9 +5321,9 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 33},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "17131", "name": "Ralph Ersel Spiker", "born": "17 Jan 1910", "died": "18 Dec 1912", "flags": {"diedInInfancy": True}},
-        {"code": "17132", "name": "Edna Mae Spiker", "born": "27 Aug 1911"},
-        {"code": "17133", "name": "Mildred Maud Spiker", "born": "13 Mar 1916"},
+        {"code": "17131", "name": "Ralph Ersel Spiker", "born": "17 Jan 1910", "died": "18 Dec 1912", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "17132", "name": "Edna Mae Spiker", "born": "27 Aug 1911", "verified_terminal": True},
+        {"code": "17133", "name": "Mildred Maud Spiker", "born": "13 Mar 1916", "verified_terminal": True},
         {"code": "17134", "name": "Shirel Victoria Spiker", "born": "6 Jul 1918"},
         {"code": "17135", "name": "Thelma Olieta Spiker", "born": "2 Dec 1921"},
         {"code": "17136", "name": "Ruth Virginia Spiker", "born": "23 Apr 1923"},
@@ -5416,7 +5416,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 33},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "17281", "name": "Robert Eugene Guthrie", "born": "6 Feb 1929", "died": "7 Feb 1929", "flags": {"diedInInfancy": True}},
+        {"code": "17281", "name": "Robert Eugene Guthrie", "born": "6 Feb 1929", "died": "7 Feb 1929", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "17282", "name": "Thelma Pearl Guthrie", "born": "5 Feb 1930"},
         {"code": "17283", "name": "Alice Mae Guthrie", "born": "6 Oct 1932"},
         {"code": "17284", "name": "Dwight J. Guthrie", "born": "6 May 1934"},
@@ -5433,7 +5433,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 34},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "172B1", "name": "Donald Bartholomew", "born": "4 Feb 1923", "died": "9 Feb 1923", "flags": {"diedInInfancy": True}},
+        {"code": "172B1", "name": "Donald Bartholomew", "born": "4 Feb 1923", "died": "9 Feb 1923", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "172B2", "name": "Agnes Rosalie Bartholomew", "born": "15 Mar 1924"},
         {"code": "172B3", "name": "Evelyn Irene Bartholomew", "born": "24 Sep 1926"},
         {"code": "172B4", "name": "Paul Eugene Bartholomew", "born": "18 May 1928"},
@@ -5458,7 +5458,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 34},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "17311", "name": "Infant son", "born": "22 Aug 1909", "died": "22 Aug 1909", "flags": {"diedInInfancy": True}},
+        {"code": "17311", "name": "Infant son", "born": "22 Aug 1909", "died": "22 Aug 1909", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "17312", "name": "Chester Martin Nicola", "born": "7 Oct 1914"},
     ],
 })
@@ -5492,13 +5492,13 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 34},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "17331", "name": "Harry C. Friend", "born": "23 May 1910", "died": "27 May 1910", "flags": {"diedInInfancy": True}},
+        {"code": "17331", "name": "Harry C. Friend", "born": "23 May 1910", "died": "27 May 1910", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "17332", "name": "Goldie Marie Friend", "born": "24 Oct 1911"},
         {"code": "17333", "name": "Gilbert Arnold Friend", "born": "1 Aug 1914", "died": "28 Feb 1951"},
         {"code": "17334", "name": "Frank William Friend"},
         {"code": "17335", "name": "Edna Friend", "born": "2 May 1919"},
         {"code": "17336", "name": "Junior Clinton Friend", "born": "24 May 1928"},
-        {"code": "17337", "name": "Thelma Grace Friend", "born": "13 Mar 1930"},
+        {"code": "17337", "name": "Thelma Grace Friend", "born": "13 Mar 1930", "verified_terminal": True},
     ],
 })
 
@@ -5515,7 +5515,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 34},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "17411", "name": "Mildred Nicola"},
+        {"code": "17411", "name": "Mildred Nicola", "verified_terminal": True},
         {"code": "17412", "name": "Helen Nicola"},
     ],
 })
@@ -5548,7 +5548,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 34},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "17431", "name": "Paul Nicola"},
+        {"code": "17431", "name": "Paul Nicola", "verified_terminal": True},
     ],
 })
 
@@ -5562,7 +5562,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 35},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "17441", "name": "Clarence Herbert Nicola Jr.", "born": "20 Nov 1920"},
+        {"code": "17441", "name": "Clarence Herbert Nicola Jr.", "born": "20 Nov 1920", "verified_terminal": True},
     ],
 })
 
@@ -5577,10 +5577,10 @@ ENTRIES.append({
     "children": [
         {"code": "17451", "name": "Ruth Bertha Nicola", "born": "31 Aug 1923"},
         {"code": "17452", "name": "Hilda Colleen Nicola", "born": "6 Oct 1925"},
-        {"code": "17453", "name": "Howard Andrew Nicola", "born": "12 May 1928"},
-        {"code": "17454", "name": "Joan Nicola", "born": "23 Oct 1930"},
-        {"code": "17455", "name": "Bernald Nale Nicola", "born": "30 Jul 1937"},
-        {"code": "17456", "name": "Dorsey Eugene Nicola", "born": "5 Apr 1940"},
+        {"code": "17453", "name": "Howard Andrew Nicola", "born": "12 May 1928", "verified_terminal": True},
+        {"code": "17454", "name": "Joan Nicola", "born": "23 Oct 1930", "verified_terminal": True},
+        {"code": "17455", "name": "Bernald Nale Nicola", "born": "30 Jul 1937", "verified_terminal": True},
+        {"code": "17456", "name": "Dorsey Eugene Nicola", "born": "5 Apr 1940", "verified_terminal": True},
     ],
 })
 
@@ -5622,7 +5622,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 35},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "17621", "name": "Robert Martin Miller", "born": "8 Aug 1920"},
+        {"code": "17621", "name": "Robert Martin Miller", "born": "8 Aug 1920", "verified_terminal": True},
         {"code": "17622", "name": "Wilson Nicola Miller", "born": "3 Apr 1925"},
         {"code": "17623", "name": "Helen Virginia Miller", "born": "11 Dec 1926"},
     ],
@@ -5646,12 +5646,12 @@ ENTRIES.append({
         {"code": "17723", "name": "Robert Lewis Frey", "born": "19 May 1919"},
         {"code": "17724", "name": "Edythe Lucille Frey"},
         {"code": "17725", "name": "Ralph Marshall Frey"},
-        {"code": "17726", "name": "James William Frey", "born": "4 Aug 1923", "died": "19 Jan 1939"},
+        {"code": "17726", "name": "James William Frey", "born": "4 Aug 1923", "died": "19 Jan 1939", "verified_terminal": True},
         {"code": "17727", "name": "Lelia Margaret Frey", "born": "6 Sep 1925"},
         {"code": "17728", "name": "George Calvin Frey", "born": "1 Mar 1927"},
         {"code": "17729", "name": "Charles Leon Frey", "born": "17 Aug 1929"},
         {"code": "1772A", "name": "Daniel Harold Frey", "born": "17 Jun 1931"},
-        {"code": "1772B", "name": "Joanne Frey", "died": "in infancy", "flags": {"diedInInfancy": True}},
+        {"code": "1772B", "name": "Joanne Frey", "died": "in infancy", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "1772C", "name": "John Thomas Frey"},
         {"code": "1772D", "name": "Darl Eugene Frey"},
         {"code": "1772E", "name": "Donald Semmelman", "flags": {"stepChild": True}},
@@ -5672,8 +5672,8 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "17731", "name": "Harold Frey", "born": "12 Dec 1920"},
-        {"code": "17732", "name": "Evelyn Frey", "born": "23 Jan 1923"},
-        {"code": "17733", "name": "Ellen Frey", "born": "6 May 1927"},
+        {"code": "17732", "name": "Evelyn Frey", "born": "23 Jan 1923", "verified_terminal": True},
+        {"code": "17733", "name": "Ellen Frey", "born": "6 May 1927", "verified_terminal": True},
     ],
 })
 
@@ -5691,7 +5691,7 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "17741", "name": "Ruth Frey", "born": "14 Sep 1921"},
-        {"code": "17742", "name": "Infant son", "flags": {"diedInInfancy": True}},
+        {"code": "17742", "name": "Infant son", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -5704,10 +5704,10 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 36},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "17751", "name": "William A. Frey", "born": "15 Apr 1922"},
-        {"code": "17752", "name": "Geraldine Frey", "born": "9 Apr 1925"},
+        {"code": "17751", "name": "William A. Frey", "born": "15 Apr 1922", "verified_terminal": True},
+        {"code": "17752", "name": "Geraldine Frey", "born": "9 Apr 1925", "verified_terminal": True},
         {"code": "17753", "name": "Don Robert Frey", "born": "28 Apr 1927"},
-        {"code": "17754", "name": "Hilda L. Frey", "born": "1 Aug 1934"},
+        {"code": "17754", "name": "Hilda L. Frey", "born": "1 Aug 1934", "verified_terminal": True},
     ],
 })
 
@@ -5724,8 +5724,8 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 36},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "17761", "name": "Dorothy V. Frey", "born": "28 Jun 1926"},
-        {"code": "17762", "name": "William D. Frey", "born": "30 May 1934"},
+        {"code": "17761", "name": "Dorothy V. Frey", "born": "28 Jun 1926", "verified_terminal": True},
+        {"code": "17762", "name": "William D. Frey", "born": "30 May 1934", "verified_terminal": True},
     ],
 })
 
@@ -5755,7 +5755,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 36},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "17811", "name": "Vincent Lee Ball", "born": "10 Feb 1922"},
+        {"code": "17811", "name": "Vincent Lee Ball", "born": "10 Feb 1922", "verified_terminal": True},
         {"code": "17812", "name": "Ada Catherine Ball", "born": "12 Jan 1923"},
         {"code": "17813", "name": "Anna Bell Ball", "born": "4 Sep 1925"},
     ],
@@ -5787,9 +5787,9 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "17831", "name": "Paul Morris Ball", "born": "5 May 1922"},
-        {"code": "17832", "name": "Charles William Ball", "born": "21 Aug 1923"},
+        {"code": "17832", "name": "Charles William Ball", "born": "21 Aug 1923", "verified_terminal": True},
         {"code": "17833", "name": "Russell Edgar Ball", "born": "3 Dec 1924", "died_alt": "1926"},
-        {"code": "17834", "name": "Leo Dennis Ball"},
+        {"code": "17834", "name": "Leo Dennis Ball", "verified_terminal": True},
     ],
 })
 
@@ -5803,10 +5803,10 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 36},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "17911", "name": "Harold D. Gelhausen", "born": "13 Sep 1934"},
-        {"code": "17912", "name": "Georgie Lee Gelhausen", "born": "2 Aug 1936"},
+        {"code": "17911", "name": "Harold D. Gelhausen", "born": "13 Sep 1934", "verified_terminal": True},
+        {"code": "17912", "name": "Georgie Lee Gelhausen", "born": "2 Aug 1936", "verified_terminal": True},
         {"code": "17913", "name": "Freddie Gelhausen"},
-        {"code": "17914", "name": "Sonny Gelhausen"},
+        {"code": "17914", "name": "Sonny Gelhausen", "verified_terminal": True},
     ],
 })
 
@@ -5914,7 +5914,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 38},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "113121", "name": "Orley D. VanSickle", "born": "8 Mar 1930", "died": "8 Mar 1930", "flags": {"diedInInfancy": True}},
+        {"code": "113121", "name": "Orley D. VanSickle", "born": "8 Mar 1930", "died": "8 Mar 1930", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "113122", "name": "Ersel R. Hewitt", "born": "6 Feb 1925", "died": "6 Oct 1982", "flags": {"adopted": True}},
         {"code": "113123", "name": "Jessie Hewitt", "flags": {"adopted": True}},
         {"code": "113124", "name": "Elsie Hewitt", "born": "15 Jul 1928", "flags": {"adopted": True}},
@@ -5931,7 +5931,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 38},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "113131", "name": "Inez M. Burd", "born": "3 Sep 1928", "died": "11 Nov 1928", "flags": {"diedInInfancy": True}},
+        {"code": "113131", "name": "Inez M. Burd", "born": "3 Sep 1928", "died": "11 Nov 1928", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -6119,7 +6119,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 40},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "122481", "name": "Everett Dwight Wolfe", "born": "15 May 1936", "died": "9 Dec 1936", "flags": {"diedInInfancy": True}, "buried": "Mt. Moriah Cemetery, Valley Point, WV"},
+        {"code": "122481", "name": "Everett Dwight Wolfe", "born": "15 May 1936", "died": "9 Dec 1936", "flags": {"diedInInfancy": True}, "buried": "Mt. Moriah Cemetery, Valley Point, WV", "verified_terminal": True},
         {"code": "122482", "name": "Jessie Allen Hornick", "born": "14 Apr 1943", "verified_terminal": True},
     ],
 })
@@ -6233,8 +6233,8 @@ ENTRIES.append({
         {"code": "123324", "name": "Mary Lou Shaffer", "born": "5 Nov 1933"},
         {"code": "123325", "name": "Chester Junior Shaffer", "born": "11 Mar 1935"},
         {"code": "123326", "name": "William Jackson Shaffer", "born": "22 Nov 1937"},
-        {"code": "123327", "name": "Glenn Dale Shaffer", "born": "3 Feb 1943", "died": "3 Feb 1943", "flags": {"diedInInfancy": True}},
-        {"code": "123328", "name": "Sharlett Shaffer", "born": "24 May 1944", "died": "3 Jun 1944", "flags": {"diedInInfancy": True}},
+        {"code": "123327", "name": "Glenn Dale Shaffer", "born": "3 Feb 1943", "died": "3 Feb 1943", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "123328", "name": "Sharlett Shaffer", "born": "24 May 1944", "died": "3 Jun 1944", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "123329", "name": "Joyce Elaine Shaffer", "born": "14 Sep 1946"},
     ],
 })
@@ -6500,7 +6500,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 43},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "123811", "name": "Walter F. Addis", "born": "1936", "died": "1937", "flags": {"diedInInfancy": True}},
+        {"code": "123811", "name": "Walter F. Addis", "born": "1936", "died": "1937", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -6591,7 +6591,7 @@ ENTRIES.append({
         {"code": "132152", "name": "Sandy Myers"},
         {"code": "132153", "name": "Raymond Myers", "verified_terminal": True},
         {"code": "132154", "name": "Vickey Myers"},
-        {"code": "132155", "name": "Ronald M. Myers", "born": "23 Dec 1953", "died": "16 Jun 1954", "flags": {"diedInInfancy": True}},
+        {"code": "132155", "name": "Ronald M. Myers", "born": "23 Dec 1953", "died": "16 Jun 1954", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "132156", "name": "Kieth Myers", "born": "1953", "verified_terminal": True},
         {"code": "132157", "name": "Marlene Margaret Myers"},
         {"code": "132158", "name": "Shelly Myers", "verified_terminal": True},
@@ -6639,7 +6639,7 @@ ENTRIES.append({
     "children": [
         {"code": "132181", "name": "Gary Michael Smith", "verified_terminal": True},
         {"code": "132182", "name": "Tamara Lynn Smith", "born": "24 Dec 1966"},
-        {"code": "132183", "name": "Kimberly Ellen Smith", "born": "1 Nov 1969", "died": "2 Nov 1969", "flags": {"diedInInfancy": True}},
+        {"code": "132183", "name": "Kimberly Ellen Smith", "born": "1 Nov 1969", "died": "2 Nov 1969", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -6744,7 +6744,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 45},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "132621", "name": "Iris Lawson", "flags": {"diedInInfancy": True}},
+        {"code": "132621", "name": "Iris Lawson", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "132622", "name": "Caroline Lawson", "born": "18 Nov 1941"},
         {"code": "132623", "name": "Greg Lawson", "born": "8 Aug 1944"},
         {"code": "132624", "name": "David Lawson", "born": "20 Nov 1947"},
@@ -6943,8 +6943,8 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 47},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "138271", "name": "Virginia Ellen Teets", "born": "23 Jan 1940", "died": "26 Jan 1940", "flags": {"diedInInfancy": True}},
-        {"code": "138272", "name": "Stanley Teets", "born": "29 Aug 1943", "died": "27 Mar 1944", "flags": {"diedInInfancy": True}},
+        {"code": "138271", "name": "Virginia Ellen Teets", "born": "23 Jan 1940", "died": "26 Jan 1940", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "138272", "name": "Stanley Teets", "born": "29 Aug 1943", "died": "27 Mar 1944", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "138273", "name": "Johnny Teets", "born": "Sep 1944", "verified_terminal": True},
         {"code": "138274", "name": "Clarence Cecil Teets", "born": "24 Oct 1947"},
         {"code": "138275", "name": "Rollin Eugene Teets", "born": "16 Jan 1951"},
@@ -7266,7 +7266,7 @@ ENTRIES.append({
     "children": [
         {"code": "13F811", "name": "Fred Lawless", "born": "20 Dec 1964", "verified_terminal": True},
         {"code": "13F812", "name": "Vince Lawless", "born": "10 Mar 1966", "verified_terminal": True},
-        {"code": "13F813", "name": "Kathy Michelle Lawless", "born": "13 Aug 1967", "died": "31 Aug 1967", "flags": {"diedInInfancy": True}},
+        {"code": "13F813", "name": "Kathy Michelle Lawless", "born": "13 Aug 1967", "died": "31 Aug 1967", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -7285,7 +7285,7 @@ ENTRIES.append({
         {"code": "13F821", "name": "Michael Guthrie", "verified_terminal": True},
         {"code": "13F822", "name": "Andrew Guthrie", "verified_terminal": True},
         {"code": "13F823", "name": "Lesley Ann Guthrie", "born": "1 Apr 1974", "verified_terminal": True},
-        {"code": "13F824", "name": "Ezra Grant Guthrie, Jr.", "born": "7 Aug 1975", "died": "3 Nov 1975", "flags": {"diedInInfancy": True}},
+        {"code": "13F824", "name": "Ezra Grant Guthrie, Jr.", "born": "7 Aug 1975", "died": "3 Nov 1975", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "13F825", "name": "Janice Lynn Guthrie", "born": "30 Jan 1977", "verified_terminal": True},
         {"code": "13F826", "name": "Elizabeth Ann Guthrie", "born": "11 Sep 1982", "verified_terminal": True},
     ],
@@ -7429,7 +7429,7 @@ ENTRIES.append({
     "children": [
         {"code": "13FE21", "name": "Carolyn Sue Ringer", "born": "14 Feb 1954", "verified_terminal": True},
         {"code": "13FE22", "name": "Linda Diana Ringer", "born": "5 Feb 1957", "verified_terminal": True},
-        {"code": "13FE23", "name": "Sandra Kay Ringer", "born": "19 Mar 1965", "died": "17 Nov 1968", "flags": {"diedInInfancy": True}},
+        {"code": "13FE23", "name": "Sandra Kay Ringer", "born": "19 Mar 1965", "died": "17 Nov 1968", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -7563,8 +7563,8 @@ ENTRIES.append({
         {"code": "141617", "name": "Stanley Ray Bankhead", "born": "3 Jan 1952", "verified_terminal": True},
         {"code": "141618", "name": "David Blaine Bankhead", "born": "18 Mar 1953", "verified_terminal": True},
         {"code": "141619", "name": "Edna Diane Bankhead", "born": "19 Sep 1955", "verified_terminal": True},
-        {"code": "14161A", "name": "Ruby Elain Bankhead", "born": "16 Oct 1956", "died": "16 Oct 1956", "flags": {"diedInInfancy": True}},
-        {"code": "14161B", "name": "David Anthony Bankhead", "born": "23 Feb 1959", "died": "23 Feb 1959", "flags": {"diedInInfancy": True}},
+        {"code": "14161A", "name": "Ruby Elain Bankhead", "born": "16 Oct 1956", "died": "16 Oct 1956", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "14161B", "name": "David Anthony Bankhead", "born": "23 Feb 1959", "died": "23 Feb 1959", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -7624,8 +7624,8 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 53},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "142521", "name": "Mary Maxine Nicola", "born": "3 Aug 1930", "died": "2 Mar 1931", "flags": {"diedInInfancy": True}},
-        {"code": "142522", "name": "Martha Marie Nicola", "born": "3 Aug 1930", "died": "3 Aug 1930", "flags": {"diedInInfancy": True}},
+        {"code": "142521", "name": "Mary Maxine Nicola", "born": "3 Aug 1930", "died": "2 Mar 1931", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "142522", "name": "Martha Marie Nicola", "born": "3 Aug 1930", "died": "3 Aug 1930", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "142523", "name": "Robert Eugene Nicola", "born": "26 Mar 1934"},
         {"code": "142524", "name": "Dorothy Jean Nicola", "born": "6 Oct 1937"},
     ],
@@ -7712,7 +7712,7 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "142871", "name": "Eugene Sines", "verified_terminal": True},
-        {"code": "142872", "name": "Died at birth", "flags": {"diedInInfancy": True}},
+        {"code": "142872", "name": "Died at birth", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "142873", "name": "Kevin Sines", "verified_terminal": True},
     ],
 })
@@ -7744,7 +7744,7 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "142921", "name": "James Guthrie", "verified_terminal": True},
-        {"code": "142922", "name": "Clyde Guthrie, Jr.", "born": "Sep 1941", "died": "17 Dec 1941", "flags": {"diedInInfancy": True}},
+        {"code": "142922", "name": "Clyde Guthrie, Jr.", "born": "Sep 1941", "died": "17 Dec 1941", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -7869,13 +7869,13 @@ ENTRIES.append({
     "children": [
         {"code": "143421", "name": "Glenn D. Cuppett", "verified_terminal": True},
         {"code": "143422", "name": "Paul J. Nicola", "verified_terminal": True},
-        {"code": "143423", "name": "Elizabeth Mae Nicola", "born": "5 Jul 1942", "died": "25 Sep 1942", "flags": {"diedInInfancy": True}},
+        {"code": "143423", "name": "Elizabeth Mae Nicola", "born": "5 Jul 1942", "died": "25 Sep 1942", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "143424", "name": "Carl R. Nicola", "born": "9 Sep 1946"},
         {"code": "143425", "name": "Robert Martin Nicola", "born": "26 Sep 1951", "verified_terminal": True},
         {"code": "143426", "name": "Betty K. Nicola", "born": "13 Sep 1953"},
         {"code": "143427", "name": "Jacob George Nicola, Jr.", "born": "27 May 1960"},
-        {"code": "143428", "name": "Infant", "flags": {"diedInInfancy": True}},
-        {"code": "143429", "name": "Infant", "flags": {"diedInInfancy": True}},
+        {"code": "143428", "name": "Infant", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "143429", "name": "Infant", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "14342A", "name": "Charles E. Nicola", "verified_terminal": True},
         {"code": "14342B", "name": "Charlotte K. Nicola", "verified_terminal": True},
     ],
@@ -8269,7 +8269,7 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "145811", "name": "Jeremiah W. Guthrie", "born": "8 Jan 1942", "verified_terminal": True},
-        {"code": "145812", "name": "Infant", "born": "8 Oct 1943", "died": "1943", "flags": {"diedInInfancy": True}},
+        {"code": "145812", "name": "Infant", "born": "8 Oct 1943", "died": "1943", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "145813", "name": "Jean Marie Guthrie", "born": "4 May 1945", "verified_terminal": True},
     ],
 })
@@ -8341,7 +8341,7 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "147181", "name": "Donna Louise Kahl", "born": "18 Jun 1942"},
-        {"code": "147182", "name": "Edward Wallace Kahl", "born": "29 Dec 1943", "died": "26 Jan 1944", "flags": {"diedInInfancy": True}},
+        {"code": "147182", "name": "Edward Wallace Kahl", "born": "29 Dec 1943", "died": "26 Jan 1944", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "147183", "name": "Shirley Jean Kahl", "born": "20 Jul 1945"},
         {"code": "147184", "name": "Roy Douglas Kahl", "born": "8 Sep 1949", "verified_terminal": True},
     ],
@@ -8376,13 +8376,13 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 60},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "147311", "name": "Albert Miller", "born": "10 Mar 1934", "died": "1934", "flags": {"diedInInfancy": True}},
+        {"code": "147311", "name": "Albert Miller", "born": "10 Mar 1934", "died": "1934", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "147312", "name": "Russell E. Miller", "born": "28 Feb 1935", "verified_terminal": True},
         {"code": "147313", "name": "Deloris Jane Miller", "born": "11 Apr 1936", "verified_terminal": True},
         {"code": "147314", "name": "William Howard Miller", "born": "16 Apr 1938", "verified_terminal": True},
-        {"code": "147315", "name": "Helen Jean Miller", "born": "12 Jun 1939", "died": "12 Jun 1939", "flags": {"diedInInfancy": True}},
+        {"code": "147315", "name": "Helen Jean Miller", "born": "12 Jun 1939", "died": "12 Jun 1939", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "147316", "name": "Douglas Paul Miller", "born": "2 Feb 1942", "verified_terminal": True},
-        {"code": "147317", "name": "Caroline Miller", "born": "18 Oct 1943", "died": "18 Oct 1943", "flags": {"diedInInfancy": True}},
+        {"code": "147317", "name": "Caroline Miller", "born": "18 Oct 1943", "died": "18 Oct 1943", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -8408,8 +8408,8 @@ ENTRIES.append({
         {"code": "147516", "name": "Thomas Edward Appleby", "born": "7 Feb 1951"},
         {"code": "147517", "name": "James William Appleby", "born": "8 Jun 1953"},
         {"code": "147518", "name": "Mark Bradley Appleby", "born": "28 Apr 1958"},
-        {"code": "147519", "name": "John Henry Appleby", "born": "18 Sep 1961", "died": "14 Apr 1963", "flags": {"diedInInfancy": True}},
-        {"code": "14751A", "name": "Darlene Lynn Appleby", "born": "24 Mar 1966", "died": "22 Sep 1967", "flags": {"diedInInfancy": True}},
+        {"code": "147519", "name": "John Henry Appleby", "born": "18 Sep 1961", "died": "14 Apr 1963", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "14751A", "name": "Darlene Lynn Appleby", "born": "24 Mar 1966", "died": "22 Sep 1967", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -8465,7 +8465,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 61},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "147621", "name": "Larry Brady", "born": "22 Sep 1946", "died": "27 Nov 1951", "flags": {"diedInInfancy": True}},
+        {"code": "147621", "name": "Larry Brady", "born": "22 Sep 1946", "died": "27 Nov 1951", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "147622", "name": "Roger Lee Brady", "born": "22 Nov 1951", "verified_terminal": True},
         {"code": "147623", "name": "Carol Ann Brady", "born": "7 Feb 1958", "verified_terminal": True},
         {"code": "147624", "name": "David Mark Brady", "born": "6 Apr 1961", "verified_terminal": True},
@@ -8484,7 +8484,7 @@ ENTRIES.append({
         {"code": "147631", "name": "Harold Ray Dice", "born": "16 Sep 1949", "verified_terminal": True},
         {"code": "147632", "name": "Rebecca Anna Dice", "born": "28 Aug 1954", "verified_terminal": True},
         {"code": "147633", "name": "Barbara Lynn Dice", "born": "9 Apr 1958", "verified_terminal": True},
-        {"code": "147634", "name": "Darlene Marie Dice", "born": "20 Aug 1959", "died": "Sep 1959", "flags": {"diedInInfancy": True}},
+        {"code": "147634", "name": "Darlene Marie Dice", "born": "20 Aug 1959", "died": "Sep 1959", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "147635", "name": "Robert John Dice", "born": "18 Nov 1961", "verified_terminal": True},
     ],
 })
@@ -8612,7 +8612,7 @@ ENTRIES.append({
     "children": [
         {"code": "148711", "name": "Catherine May Riggins", "born": "29 Jul 1944", "verified_terminal": True},
         {"code": "148712", "name": "John Henry Riggins, Jr.", "born": "12 Aug 1946", "verified_terminal": True},
-        {"code": "148713", "name": "Cyntha Lou Riggins", "born": "1 Jun 1952", "died": "8 Jul 1952", "flags": {"diedInInfancy": True}},
+        {"code": "148713", "name": "Cyntha Lou Riggins", "born": "1 Jun 1952", "died": "8 Jul 1952", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -8626,7 +8626,7 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "148811", "name": "Peter E. Brandgard", "born": "16 Mar 1948", "verified_terminal": True},
-        {"code": "148812", "name": "James Ray Brandgard", "born": "27 Jun 1955", "died": "16 May 1960", "flags": {"diedInInfancy": True}},
+        {"code": "148812", "name": "James Ray Brandgard", "born": "27 Jun 1955", "died": "16 May 1960", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -8869,7 +8869,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 65},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "162411", "name": "Shirley Irene Wright", "born": "14 Jan 1946", "died": "9 Jan 1960", "flags": {"diedInInfancy": True}},
+        {"code": "162411", "name": "Shirley Irene Wright", "born": "14 Jan 1946", "died": "9 Jan 1960", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "162412", "name": "Paulette Marie Wright", "born": "23 Mar 1957"},
         {"code": "162413", "name": "Jefferie Ray Wright", "born": "27 Nov 1963"},
     ],
@@ -8921,9 +8921,9 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 65},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "163141", "name": "Infant", "born": "1930", "died": "1930", "flags": {"diedInInfancy": True}},
+        {"code": "163141", "name": "Infant", "born": "1930", "died": "1930", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "163142", "name": "Loretta Mae Glover", "born": "25 Jul 1933"},
-        {"code": "163143", "name": "Robert M. Collins", "born": "1940", "died": "1940", "flags": {"diedInInfancy": True}},
+        {"code": "163143", "name": "Robert M. Collins", "born": "1940", "died": "1940", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "163144", "name": "Larry Robert Collins", "born": "3 Feb 1952"},
     ],
 })
@@ -8938,7 +8938,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 65},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "163151", "name": "Harold E. Greathouse", "born": "30 Oct 1937", "died": "22 Dec 1937", "flags": {"diedInInfancy": True}},
+        {"code": "163151", "name": "Harold E. Greathouse", "born": "30 Oct 1937", "died": "22 Dec 1937", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "163152", "name": "Shirley Jean Greathouse", "born": "17 May 1939"},
     ],
 })
@@ -9403,7 +9403,7 @@ ENTRIES.append({
     "children": [
         {"code": "172111", "name": "Genevieve Caroline Guthrie", "born": "5 Jan 1933"},
         {"code": "172112", "name": "James Franklin Guthrie", "born": "11 Sep 1934"},
-        {"code": "172113", "name": "Jeremiah Jacob Guthrie", "born": "11 Sep 1934", "died": "11 Sep 1934", "flags": {"diedInInfancy": True}},
+        {"code": "172113", "name": "Jeremiah Jacob Guthrie", "born": "11 Sep 1934", "died": "11 Sep 1934", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "172114", "name": "Robert Dale Guthrie", "born": "13 Jun 1936"},
         {"code": "172115", "name": "Viola Marie Guthrie", "born": "10 Jul 1937"},
         {"code": "172116", "name": "Delbert Glenn Guthrie", "born": "1 Sep 1938"},
@@ -9759,10 +9759,10 @@ ENTRIES.append({
         {"code": "174217", "name": "Calleen May Freeman", "born": "7 Jan 1935", "verified_terminal": True},
         {"code": "174218", "name": "George Jonathan Freeman", "born": "12 Apr 1937", "verified_terminal": True},
         {"code": "174219", "name": "Tomy Ray Freeman", "born": "28 Apr 1939", "verified_terminal": True},
-        {"code": "17421A", "name": "Janita Bell Freeman", "born": "22 Jun 1941", "died": "27 Jun 1941", "flags": {"diedInInfancy": True}},
-        {"code": "17421B", "name": "Anna Lee Freeman", "born": "4 Jun 1942", "died": "7 Jun 1942", "flags": {"diedInInfancy": True}},
-        {"code": "17421C", "name": "Kenneth Darl Freeman", "born": "30 Aug 1943", "died": "30 May 1945", "flags": {"diedInInfancy": True}},
-        {"code": "17421D", "name": "Richard Nathan Freeman", "born": "10 May 1945", "died": "17 May 1945", "flags": {"diedInInfancy": True}},
+        {"code": "17421A", "name": "Janita Bell Freeman", "born": "22 Jun 1941", "died": "27 Jun 1941", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "17421B", "name": "Anna Lee Freeman", "born": "4 Jun 1942", "died": "7 Jun 1942", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "17421C", "name": "Kenneth Darl Freeman", "born": "30 Aug 1943", "died": "30 May 1945", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "17421D", "name": "Richard Nathan Freeman", "born": "10 May 1945", "died": "17 May 1945", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -9864,7 +9864,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 76},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "177231", "name": "Infant", "flags": {"diedInInfancy": True}},
+        {"code": "177231", "name": "Infant", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -10760,12 +10760,12 @@ ENTRIES.append({
     "children": [
         {"code": "1233231", "name": "Cyrus Duane Chidester", "born": "17 Jan 1949"},
         {"code": "1233232", "name": "Fred LeRoy Lewis", "born": "18 Nov 1950", "verified_terminal": True},
-        {"code": "1233233", "name": "Steven Lee Lewis", "born": "26 Feb 1955", "died": "2 Apr 1956", "flags": {"diedInInfancy": True}},
+        {"code": "1233233", "name": "Steven Lee Lewis", "born": "26 Feb 1955", "died": "2 Apr 1956", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "1233234", "name": "Diane Lynn Lewis", "born": "22 Feb 1957"},
         {"code": "1233235", "name": "Mack Arthur Lewis, Jr.", "born": "7 Sep 1958"},
         {"code": "1233236", "name": "Paul Kevin Lewis", "born": "20 Nov 1959"},
         {"code": "1233237", "name": "William Jackson Lewis", "born": "7 Apr 1961", "died": "8 Oct 1977", "verified_terminal": True},
-        {"code": "1233238", "name": "Pamela Ann Lewis", "born": "17 May 1963", "died": "16 Feb 1965", "flags": {"diedInInfancy": True}},
+        {"code": "1233238", "name": "Pamela Ann Lewis", "born": "17 May 1963", "died": "16 Feb 1965", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "1233239", "name": "Crystal Sue Lewis", "born": "8 May 1964", "verified_terminal": True},
     ],
 })
@@ -11238,7 +11238,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 87},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "1237131", "name": "Veronica Joy Feather", "born": "10 Jun 1970", "died": "13 Jun 1970", "flags": {"diedInInfancy": True}},
+        {"code": "1237131", "name": "Veronica Joy Feather", "born": "10 Jun 1970", "died": "13 Jun 1970", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "1237132", "name": "Lesa Jean Feather", "born": "19 Jul 1972", "verified_terminal": True},
     ],
 })
@@ -11428,10 +11428,10 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 88},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "1322341", "name": "Infant", "flags": {"diedInInfancy": True}},
+        {"code": "1322341", "name": "Infant", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "1322342", "name": "Denzel Ray Guthrie", "born": "22 Sep 1962"},
         {"code": "1322343", "name": "Denise Rene Guthrie", "born": "22 Sep 1962"},
-        {"code": "1322344", "name": "Dana Len Guthrie", "born": "14 Jan 1968", "died": "1 Feb 1968", "flags": {"diedInInfancy": True}},
+        {"code": "1322344", "name": "Dana Len Guthrie", "born": "14 Jan 1968", "died": "1 Feb 1968", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -11575,7 +11575,7 @@ ENTRIES.append({
         {"code": "1365111", "name": "Judith Ann Shafer", "born": "29 Jan 1942"},
         {"code": "1365112", "name": "Janet Louise Shafer", "born": "12 Jun 1943"},
         {"code": "1365113", "name": "James Harold Shafer", "born": "9 Mar 1946"},
-        {"code": "1365114", "name": "Infant", "born": "30 Jan 1947", "died": "30 Jan 1947", "flags": {"diedInInfancy": True}},
+        {"code": "1365114", "name": "Infant", "born": "30 Jan 1947", "died": "30 Jan 1947", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "1365115", "name": "Emily Ruth Shafer", "born": "20 Jan 1948", "verified_terminal": True},
         {"code": "1365116", "name": "Margaret Jane Shafer", "born": "5 Jan 1949"},
         {"code": "1365117", "name": "Robert Gay Shafer", "born": "3 Nov 1950"},
@@ -11643,11 +11643,11 @@ ENTRIES.append({
         {"code": "1365151", "name": "Dallas Basil Shafer", "born": "5 Mar 1951"},
         {"code": "1365152", "name": "Anthony Thomas Shafer", "born": "10 Mar 1952"},
         {"code": "1365153", "name": "Debra June Shafer", "born": "4 Jan 1955"},
-        {"code": "1365154", "name": "Dennis Vaughn Shafer", "born": "26 Apr 1957", "died": "20 May 1957", "flags": {"diedInInfancy": True}},
+        {"code": "1365154", "name": "Dennis Vaughn Shafer", "born": "26 Apr 1957", "died": "20 May 1957", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "1365155", "name": "Dessie Carmellia Shafer", "born": "10 Mar 1960"},
         {"code": "1365156", "name": "Amelia Jane Shafer", "born": "18 Mar 1961"},
         {"code": "1365157", "name": "Fredy Junior Shafer, Jr.", "born": "1 Nov 1962", "verified_terminal": True},
-        {"code": "1365158", "name": "Franklin David Shafer", "born": "2 Feb 1959", "died": "2 Feb 1959", "flags": {"diedInInfancy": True}},
+        {"code": "1365158", "name": "Franklin David Shafer", "born": "2 Feb 1959", "died": "2 Feb 1959", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -11678,11 +11678,11 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "1365171", "name": "Marshall William Eugene Krimpel", "born": "25 Jul 1945"},
-        {"code": "1365172", "name": "Ronald Tracy Beam Krimpel", "born": "10 Feb 1947", "died": "16 May 1955", "flags": {"diedInInfancy": True}},
+        {"code": "1365172", "name": "Ronald Tracy Beam Krimpel", "born": "10 Feb 1947", "died": "16 May 1955", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "1365173", "name": "Kenneth Lawrence Krimpel", "born": "8 Aug 1949"},
         {"code": "1365174", "name": "Robert McKinley Krimpel", "born": "1 May 1951"},
         {"code": "1365175", "name": "Lathan Carr Krimpel", "born": "2 Aug 1952"},
-        {"code": "1365176", "name": "Joseph J. Krimpel, Jr.", "born": "27 May 1954", "died": "28 May 1957", "flags": {"diedInInfancy": True}},
+        {"code": "1365176", "name": "Joseph J. Krimpel, Jr.", "born": "27 May 1954", "died": "28 May 1957", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "1365177", "name": "Alice Mae Krimpel", "born": "18 Nov 1956"},
         {"code": "1365178", "name": "Cheryl Leigh Krimpel", "born": "10 Jan 1968", "verified_terminal": True},
     ],
@@ -11716,7 +11716,7 @@ ENTRIES.append({
         {"code": "1365192", "name": "Richard David Sisler", "born": "17 Oct 1949"},
         {"code": "1365193", "name": "Adra Ann Sisler", "born": "2 Oct 1950"},
         {"code": "1365194", "name": "Linda Lou Sisler", "born": "13 Apr 1952"},
-        {"code": "1365195", "name": "Jerry Lynn Sisler", "born": "10 Mar 1953", "died": "19 Jul 1953", "flags": {"diedInInfancy": True}},
+        {"code": "1365195", "name": "Jerry Lynn Sisler", "born": "10 Mar 1953", "died": "19 Jul 1953", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "1365196", "name": "Paul Edward Sisler", "born": "2 Jul 1956"},
     ],
 })
@@ -11831,7 +11831,7 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "1382751", "name": "Kristie Lynn Teets", "born": "9 Oct 1972", "verified_terminal": True},
-        {"code": "1382752", "name": "Pamela Teets", "born": "1977", "died": "14 Apr 1977", "flags": {"diedInInfancy": True}},
+        {"code": "1382752", "name": "Pamela Teets", "born": "1977", "died": "14 Apr 1977", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "1382753", "name": "Amy Teets", "born": "28 Mar 1978", "verified_terminal": True},
     ],
 })
@@ -12325,7 +12325,7 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "1415411", "name": "Scott Jones", "born": "23 Nov 1960", "verified_terminal": True},
-        {"code": "1415412", "name": "Marti Jones", "born": "18 Nov 1964", "died": "19 Nov 1969", "flags": {"diedInInfancy": True}},
+        {"code": "1415412", "name": "Marti Jones", "born": "18 Nov 1964", "died": "19 Nov 1969", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "1415413", "name": "Robert E. Jones III", "born": "5 Feb 1980", "verified_terminal": True},
     ],
 })
@@ -12802,7 +12802,7 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "1445511", "name": "Chad Steward Evans", "verified_terminal": True},
-        {"code": "1445512", "name": "Tony Lynn Evans", "born": "29 Mar 1979", "died": "15 Apr 1979", "flags": {"diedInInfancy": True}},
+        {"code": "1445512", "name": "Tony Lynn Evans", "born": "29 Mar 1979", "died": "15 Apr 1979", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "1445513", "name": "Cassie Ann Evans", "verified_terminal": True},
     ],
 })
@@ -13881,8 +13881,8 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "1721151", "name": "Peggy Marie Hixon", "born": "10 Jul 1955"},
-        {"code": "1721152", "name": "Donna June Hixon", "born": "6 Nov 1956", "died": "20 Jan 1957", "flags": {"diedInInfancy": True}},
-        {"code": "1721153", "name": "Gary Blaine Hixon", "born": "12 Jun 1958", "died": "13 Jun 1958", "flags": {"diedInInfancy": True}},
+        {"code": "1721152", "name": "Donna June Hixon", "born": "6 Nov 1956", "died": "20 Jan 1957", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "1721153", "name": "Gary Blaine Hixon", "born": "12 Jun 1958", "died": "13 Jun 1958", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "1721154", "name": "Robert Ray (Bobby) Hixon", "born": "23 Sep 1961", "verified_terminal": True},
         {"code": "1721155", "name": "Pamela Sue Hixon", "born": "11 Oct 1963", "verified_terminal": True},
         {"code": "1721156", "name": "Jeffrey Lee Hixon", "born": "6 Oct 1966"},
@@ -13899,7 +13899,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 113},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "1721161", "name": "Tammie Guthrie", "born": "11 Oct 1967", "died": "11 Nov 1967", "flags": {"diedInInfancy": True}},
+        {"code": "1721161", "name": "Tammie Guthrie", "born": "11 Oct 1967", "died": "11 Nov 1967", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "1721162", "name": "Tina Marie Guthrie", "born": "5 Dec 1968"},
         {"code": "1721163", "name": "Amy Sue Guthrie", "born": "27 Dec 1969"},
     ],
@@ -14023,7 +14023,7 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
         {"code": "1721221", "name": "Cindy Diane Wolfe", "born": "23 Nov 1953"},
-        {"code": "1721222", "name": "Christine Mae Wolfe", "born": "7 Jan 1955", "died": "7 Jan 1955", "flags": {"diedInInfancy": True}},
+        {"code": "1721222", "name": "Christine Mae Wolfe", "born": "7 Jan 1955", "died": "7 Jan 1955", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "1721223", "name": "Steven Curtis Wolfe", "born": "27 Sep 1956", "verified_terminal": True},
         {"code": "1721224", "name": "Daniel Thurman Wolfe", "born": "8 Jan 1965"},
         {"code": "1721225", "name": "Misty Ruth Wolfe", "born": "20 Oct 1970", "verified_terminal": True},
@@ -14657,7 +14657,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 120},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "172B721", "name": "Summer Michelle Bartholomew", "born": "26 Jun 1985", "died": "26 Jun 1985", "flags": {"diedInInfancy": True}},
+        {"code": "172B721", "name": "Summer Michelle Bartholomew", "born": "26 Jun 1985", "died": "26 Jun 1985", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "172B722", "name": "Tabitha Michelle Bartholomew", "born": "9 Dec 1987", "verified_terminal": True},
         {"code": "172B723", "name": "Nicole Casey Bartholomew", "born": "14 Jul 1989", "verified_terminal": True},
         {"code": "172B724", "name": "Victoria Anne Bartholomew", "born": "22 Apr 1991", "verified_terminal": True},
@@ -14872,7 +14872,7 @@ ENTRIES.append({
     "children": [
         {"code": "12241211", "name": "Bradley Vaughn DeVall", "born": "15 Dec 1969", "verified_terminal": True},
         {"code": "12241212", "name": "Traci Dawn DeVall", "born": "19 Jun 1973", "verified_terminal": True},
-        {"code": "12241213", "name": "Tami Ann DeVall", "born": "6 May 1976", "died": "31 Jul 1977", "flags": {"diedInInfancy": True}},
+        {"code": "12241213", "name": "Tami Ann DeVall", "born": "6 May 1976", "died": "31 Jul 1977", "flags": {"diedInInfancy": True}, "verified_terminal": True},
     ],
 })
 
@@ -15140,8 +15140,8 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 125},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "12332141", "name": "Jerry Allen Valentine, Jr.", "flags": {"diedInInfancy": True}},
-        {"code": "12332142", "name": "Sharlene Sue Valentine", "flags": {"diedInInfancy": True}},
+        {"code": "12332141", "name": "Jerry Allen Valentine, Jr.", "flags": {"diedInInfancy": True}, "verified_terminal": True},
+        {"code": "12332142", "name": "Sharlene Sue Valentine", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "12332143", "name": "Gerald Allen Valentine, Jr.", "verified_terminal": True},
         {"code": "12332144", "name": "John Wesley Valentine", "verified_terminal": True},
     ],
@@ -15174,7 +15174,7 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 125},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "12332161", "name": "Stephanie Ray Fike", "born": "23 Oct 1972", "died": "24 Nov 1972", "flags": {"diedInInfancy": True}},
+        {"code": "12332161", "name": "Stephanie Ray Fike", "born": "23 Oct 1972", "died": "24 Nov 1972", "flags": {"diedInInfancy": True}, "verified_terminal": True},
         {"code": "12332162", "name": "Buffie Rae Fike", "born": "1 Apr 1974"},
         {"code": "12332163", "name": "Brandy Sue Fike", "born": "25 Feb 1976", "verified_terminal": True},
     ],
@@ -17489,13 +17489,13 @@ ENTRIES.append({
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 7},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Wife dau of James and Anna [Braham] Guthrie — cross-marriage 13F72"},
     "children": [
-        {"code": "A4561", "name": "Martin Edward Cupp", "born": "30 Dec 1953"},
-        {"code": "A4562", "name": "Roger Lee Cupp", "born": "13 Mar 1955"},
-        {"code": "A4563", "name": "James Melvin Cupp", "born": "13 Oct 1957"},
-        {"code": "A4564", "name": "Marvin Dale Cupp", "born": "18 Dec 1959"},
+        {"code": "A4561", "name": "Martin Edward Cupp", "born": "30 Dec 1953", "verified_terminal": True},
+        {"code": "A4562", "name": "Roger Lee Cupp", "born": "13 Mar 1955", "verified_terminal": True},
+        {"code": "A4563", "name": "James Melvin Cupp", "born": "13 Oct 1957", "verified_terminal": True},
+        {"code": "A4564", "name": "Marvin Dale Cupp", "born": "18 Dec 1959", "verified_terminal": True},
         {"code": "A4565", "name": "Charles Wesley Cupp", "born": "13 Jul 1961"},
-        {"code": "A4566", "name": "Richard Glenn Cupp", "born": "17 Sep 1963"},
-        {"code": "A4567", "name": "Sharon Louise Cupp", "born": "12 Dec 1965"},
+        {"code": "A4566", "name": "Richard Glenn Cupp", "born": "17 Sep 1963", "verified_terminal": True},
+        {"code": "A4567", "name": "Sharon Louise Cupp", "born": "12 Dec 1965", "verified_terminal": True},
     ],
 })
 
@@ -17508,11 +17508,11 @@ ENTRIES.append({
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 7},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
     "children": [
-        {"code": "A4571", "name": "Rhoda Joann Cupp", "born": "3 Oct 1950"},
-        {"code": "A4572", "name": "Luann Rae Cupp", "born": "2 Dec 1953"},
-        {"code": "A4573", "name": "Allen Bruce Cupp", "born": "2 May 1956"},
-        {"code": "A4574", "name": "Kellye Sue Cupp", "born": "3 Apr 1959"},
-        {"code": "A4575", "name": "Darwin DeWitt Cupp", "born": "20 Feb 1961"},
+        {"code": "A4571", "name": "Rhoda Joann Cupp", "born": "3 Oct 1950", "verified_terminal": True},
+        {"code": "A4572", "name": "Luann Rae Cupp", "born": "2 Dec 1953", "verified_terminal": True},
+        {"code": "A4573", "name": "Allen Bruce Cupp", "born": "2 May 1956", "verified_terminal": True},
+        {"code": "A4574", "name": "Kellye Sue Cupp", "born": "3 Apr 1959", "verified_terminal": True},
+        {"code": "A4575", "name": "Darwin DeWitt Cupp", "born": "20 Feb 1961", "verified_terminal": True},
     ],
 })
 
@@ -17537,7 +17537,7 @@ ENTRIES.append({
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 7},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
     "children": [
-        {"code": "AB211", "name": "Pearly Meyers"},
+        {"code": "AB211", "name": "Pearly Meyers", "verified_terminal": True},
     ],
 })
 
@@ -17550,8 +17550,8 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
     "children": [
         {"code": "AB221", "name": "Buster Evans"},
-        {"code": "AB222", "name": "Harry Coates"},
-        {"code": "AB223", "name": "Violet Coates"},
+        {"code": "AB222", "name": "Harry Coates", "verified_terminal": True},
+        {"code": "AB223", "name": "Violet Coates", "verified_terminal": True},
     ],
 })
 
@@ -17566,7 +17566,7 @@ ENTRIES.append({
         {"code": "AB231", "name": "Sylvia Friend"},
         {"code": "AB232", "name": "Shirley Friend"},
         {"code": "AB233", "name": "Kathern Friend"},
-        {"code": "AB234", "name": "Vernon Ray Friend"},
+        {"code": "AB234", "name": "Vernon Ray Friend", "verified_terminal": True},
     ],
 })
 
@@ -17581,7 +17581,7 @@ ENTRIES.append({
     "children": [
         {"code": "AB241", "name": "Darlene Fike Evans"},
         {"code": "AB242", "name": "Richard Lee Evans", "born": "2 May 1955", "died": "9 Aug 1974"},
-        {"code": "AB243", "name": "Terry Lynn Evans", "born": "1956"},
+        {"code": "AB243", "name": "Terry Lynn Evans", "born": "1956", "verified_terminal": True},
         {"code": "AB244", "name": "Wendy Jo Evans", "born": "12 Nov 1991"},
     ],
 })
@@ -17854,7 +17854,7 @@ ENTRIES.append({
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 2},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
     "children": [
-        {"code": "A311", "name": "Millie R. Romesburg"},
+        {"code": "A311", "name": "Millie R. Romesburg", "verified_terminal": True},
     ],
 })
 
@@ -17990,7 +17990,7 @@ ENTRIES.append({
         {"code": "A4152", "name": "Thomas Lee Frankhouser", "born": "6 Apr 1934"},
         {"code": "A4153", "name": "Lawrence Emmer Frankhouser", "born": "27 Jun 1938"},
         {"code": "A4154", "name": "Francis G. Frankhouser", "born": "22 Sep 1939"},
-        {"code": "A4155", "name": "Donald D. Frankhouser", "born": "30 Jul 1942"},
+        {"code": "A4155", "name": "Donald D. Frankhouser", "born": "30 Jul 1942", "verified_terminal": True},
     ],
 })
 
@@ -18029,7 +18029,7 @@ ENTRIES.append({
         {"code": "AB22", "name": "Massereen Evans"},
         {"code": "AB23", "name": "Wanda M. Evans"},
         {"code": "AB24", "name": "Stanley Regis Evans"},
-        {"code": "AB25", "name": "Infant Son"},
+        {"code": "AB25", "name": "Infant Son", "verified_terminal": True},
     ],
 })
 
@@ -18532,11 +18532,11 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
     "children": [
         {"code": "7171", "name": "James Blaine Frazee", "born": "15 Oct 1911", "died": "5 Mar 1979"},
-        {"code": "7172", "name": "Dorothy Frazee"},
-        {"code": "7173", "name": "Keith Ellsworth Frazee", "born": "25 Mar 1914", "died": "16 Apr 1993"},
-        {"code": "7174", "name": "Richard Frazee", "born": "22 Oct 1915", "died": "11 Oct 1989"},
-        {"code": "7175", "name": "Virginia Frazee"},
-        {"code": "7176", "name": "June Grace Frazee", "born": "10 Jun 1924"},
+        {"code": "7172", "name": "Dorothy Frazee", "verified_terminal": True},
+        {"code": "7173", "name": "Keith Ellsworth Frazee", "born": "25 Mar 1914", "died": "16 Apr 1993", "verified_terminal": True},
+        {"code": "7174", "name": "Richard Frazee", "born": "22 Oct 1915", "died": "11 Oct 1989", "verified_terminal": True},
+        {"code": "7175", "name": "Virginia Frazee", "verified_terminal": True},
+        {"code": "7176", "name": "June Grace Frazee", "born": "10 Jun 1924", "verified_terminal": True},
     ],
 })
 
@@ -18632,7 +18632,7 @@ ENTRIES.append({
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
     "children": [
-        {"code": "7211", "name": "Lillian DeWitt", "born": "20 Jun 1896", "died": "Jun 1900"},
+        {"code": "7211", "name": "Lillian DeWitt", "born": "20 Jun 1896", "died": "Jun 1900", "verified_terminal": True},
     ],
 })
 
@@ -18646,8 +18646,8 @@ ENTRIES.append({
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 4},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
     "children": [
-        {"code": "7221", "name": "Raymond Barnes Thornton", "born": "9 Oct 1900"},
-        {"code": "7222", "name": "Helen Lucille Thornton", "born": "28 Dec 1902"},
+        {"code": "7221", "name": "Raymond Barnes Thornton", "born": "9 Oct 1900", "verified_terminal": True},
+        {"code": "7222", "name": "Helen Lucille Thornton", "born": "28 Dec 1902", "verified_terminal": True},
     ],
 })
 
@@ -18665,7 +18665,7 @@ ENTRIES.append({
         {"code": "7232", "name": "Genevieve Lillian Barnes", "born": "22 Sep 1914", "died": "15 Jun 1932"},
         {"code": "7233", "name": "James Quinter Barnes, Jr.", "born": "23 Dec 1916"},
         {"code": "7234", "name": "Laura Cole Barnes", "born": "16 Dec 1918"},
-        {"code": "7235", "name": "Robert Paul Barnes", "born": "3 Oct 1923"},
+        {"code": "7235", "name": "Robert Paul Barnes", "born": "3 Oct 1923", "verified_terminal": True},
     ],
 })
 
