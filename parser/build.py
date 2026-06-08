@@ -293,7 +293,33 @@ def build():
         for child in entry["children"]:
             ccode = child["code"]
             if ccode in code_to_pid:
-                # already has a full entry — already linked above
+                # Already has a full entry OR is a SEE_REF cross-code.
+                # If the person exists but has no name yet (SEE_REF cross-code
+                # where neither side had a full entry), populate from this
+                # children-list entry.
+                existing_pid = code_to_pid[ccode]
+                if existing_pid in people and not people[existing_pid].get("name"):
+                    p = people[existing_pid]
+                    p["name"] = split_name(child["name"])
+                    if child.get("born"):
+                        p["birth"] = make_lifeevent(child.get("born"))
+                    if child.get("died"):
+                        p["death"] = make_lifeevent(child.get("died"))
+                    if child.get("flags"):
+                        p["flags"].update(child["flags"])
+                    p["sources"].append({
+                        "pdf": entry.get("source", {}).get("pdf"),
+                        "entryCode": ccode,
+                        "page": entry.get("source", {}).get("page"),
+                    })
+                    parent_v = entry.get("verification") or {}
+                    if parent_v.get("status") == "verified":
+                        p["verification"] = {
+                            "status": "verified",
+                            "source": parent_v.get("source", "manual"),
+                            "lastChecked": parent_v.get("lastChecked"),
+                            "notes": "Verified via parent's children list; own line not yet transcribed.",
+                        }
                 continue
             # Create a stub person
             canonical_code[ccode] = ccode
@@ -315,14 +341,28 @@ def build():
                 "entryCode": ccode,
                 "page": entry.get("source", {}).get("page"),
             })
-            # Stubs created from parent's children list are draft until they
-            # get their own full entry transcribed.
-            stub["verification"] = {
-                "status": "draft",
-                "source": "manual",
-                "lastChecked": None,
-                "notes": "Created from parent's children list; no full entry yet.",
-            }
+            # Stubs created from parent's children list inherit verification
+            # from the parent. If the parent was vision-verified, we already
+            # confirmed this child's name and birth date from the same page;
+            # we just haven't transcribed their own line (marriage/children).
+            # If the entry has no explicit verification block, it defaults to
+            # "verified via manual" (matches line 220-225 logic for entries).
+            parent_v = entry.get("verification") or {"status": "verified", "source": "manual"}
+            parent_status = parent_v.get("status")
+            if parent_status == "verified":
+                stub["verification"] = {
+                    "status": "verified",
+                    "source": parent_v.get("source", "manual"),
+                    "lastChecked": parent_v.get("lastChecked"),
+                    "notes": "Verified via parent's children list; own line not yet transcribed.",
+                }
+            else:
+                stub["verification"] = {
+                    "status": "draft",
+                    "source": "manual",
+                    "lastChecked": None,
+                    "notes": "Created from parent's children list; no full entry yet.",
+                }
 
     # Sort child IDs by their lineage code so birth order is preserved
     pid_to_code = {pid: code for code, pid in code_to_pid.items()
