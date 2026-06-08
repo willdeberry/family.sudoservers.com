@@ -15746,8 +15746,15 @@ ENTRIES.append({
     "name": "Elaine Virginia Seese",
     "sex": "F",
     "born": "12 Oct 1932",
-    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 7},
+    "spouses": [{"name": "Raymond Thomas Barbour", "married": "23 Aug 1953"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 15},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "713111", "name": "Daphney Elaine Barbour", "born": "6 Jun 1954"},
+        {"code": "713112", "name": "Jason Thomas Barbour", "born": "15 Apr 1956"},
+        {"code": "713113", "name": "Taimi Rena Barbour", "born": "22 Nov 1957"},
+        {"code": "713114", "name": "Melinda Dawn Barbour", "born": "2 Dec 1959"},
+    ],
 })
 
 ENTRIES.append({
@@ -15755,8 +15762,15 @@ ENTRIES.append({
     "name": "Joann Vivian Seese",
     "sex": "F",
     "born": "3 Dec 1933",
-    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 7},
+    "spouses": [{"name": "Dr. Richard (Ricky) Fiorini", "born": "27 May 1929", "married": "12 Oct 1957"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 15},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "713121", "name": "Belinda Fiorini", "born": "17 Jan 1960"},
+        {"code": "713122", "name": "Jennifer Fiorini", "born": "27 Feb 1961"},
+        {"code": "713123", "name": "Cynthia Fiorini", "born": "26 Nov 1963"},
+        {"code": "713124", "name": "Jude Fiorini", "born": "9 Sep 1965"},
+    ],
 })
 
 ENTRIES.append({
@@ -15764,8 +15778,13 @@ ENTRIES.append({
     "name": "James Freeland Cale",
     "sex": "M",
     "born": "15 Apr 1945",
-    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 7},
-    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "spouses": [{"name": "Sandy Kay Dennis", "born": "24 Mar 1955", "married": "11 Apr 1974"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 15},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Married in Oakland, MD"},
+    "children": [
+        {"code": "713311", "name": "Spencer James Cale", "born": "4 Feb 1975"},
+        {"code": "713312", "name": "Ryan Clay Cale", "born": "16 Sep 1984"},
+    ],
 })
 
 ENTRIES.append({
@@ -15773,8 +15792,13 @@ ENTRIES.append({
     "name": "Wendell C. Barnes",
     "sex": "M",
     "born": "17 Aug 1931",
-    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 7},
+    "spouses": [{"name": "Virginia Friend", "born": "15 Dec 1931", "married": "28 Oct 1950"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 15},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "714411", "name": "Roxanne Barnes", "born": "1 Feb 1953"},
+        {"code": "714412", "name": "Randy Dale Barnes", "born": "2 Jul 1955"},
+    ],
 })
 
 ENTRIES.append({
@@ -15782,35 +15806,61 @@ ENTRIES.append({
     "name": "Wilda Lee Barnes",
     "sex": "F",
     "born": "17 Aug 1935",
-    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 7},
-    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "spouses": [{"name": "Charles (Bud) Dailey"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 15},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Husband from Alum Bank, PA"},
+    "children": [
+        {"code": "714421", "name": "Darrell Vaughn Dailey"},
+        {"code": "714422", "name": "Dana Vance Dailey"},
+        {"code": "714423", "name": "Dale Vincent Dailey"},
+        {"code": "714424", "name": "Nina Marie Dailey"},
+    ],
 })
 
 ENTRIES.append({
     "code": "71451",
     "name": "Delora Audrey Wolfe",
     "sex": "F",
-    "spouses": [{"married": "31 Dec 1950"}],
-    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 7},
+    "spouses": [{"name": "Arthur Lewis Forman", "born": "23 Dec 1927", "married": "31 Dec 1950"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 15},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "714511", "name": "Clinton L. Forman"},
+        {"code": "714512", "name": "Ronna June Forman"},
+    ],
 })
 
 ENTRIES.append({
     "code": "71452",
     "name": "Loretta Wolfe",
     "sex": "F",
-    "spouses": [{"married": "7 Apr 1948"}],
-    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 7},
+    "spouses": [{"name": "Wilford (Woody) Glenn Cuppett", "born": "14 Jan 1928", "died": "30 Jun 1997", "married": "7 Apr 1949"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 15},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "714521", "name": "Clifford Cuppett"},
+        {"code": "714522", "name": "Terry Cuppett"},
+        {"code": "714523", "name": "Debra Sue Cuppett", "born": "10 Aug 1951"},
+    ],
 })
 
 ENTRIES.append({
     "code": "71453",
     "name": "Delbert R. Wolfe",
     "sex": "M",
-    "spouses": [{"married": "7 Mar 1933"}],
-    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 7},
+    "born": "7 Mar 1933",
+    "died": "2 Jun 1986",
+    "spouses": [{"name": "Ethel Savage", "married": "7 Apr 1951"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 16},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "714531", "name": "Roger Lee Wolfe, Sr."},
+        {"code": "714532", "name": "Stanley Wolfe"},
+        {"code": "714533", "name": "Edwin Wolfe"},
+        {"code": "714534", "name": "Cheryl Wolfe", "born": "9 Aug 1957"},
+        {"code": "714535", "name": "Duncan Eric Wolfe", "born": "1964"},
+        {"code": "714536", "name": "Keith Wolfe", "born": "6 Apr 1968"},
+    ],
 })
 
 ENTRIES.append({
@@ -15818,8 +15868,14 @@ ENTRIES.append({
     "name": "Alda Mae Wolfe",
     "sex": "F",
     "born": "2 May 1935",
-    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 7},
-    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "spouses": [{"name": "Elvidore Gilbert Everly", "born": "18 Apr 1932", "married": "22 Jan 1952"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 16},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Married at Asher Glade, MD"},
+    "children": [
+        {"code": "714541", "name": "Sherry Louise Everly", "born": "29 May 1952"},
+        {"code": "714542", "name": "Karen Kay Everly", "born": "26 Oct 1954"},
+        {"code": "714543", "name": "James Spencer Everly", "born": "30 May 1961"},
+    ],
 })
 
 ENTRIES.append({
@@ -15828,8 +15884,14 @@ ENTRIES.append({
     "sex": "M",
     "born": "24 Aug 1936",
     "died": "9 Sep 1979",
-    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 7},
+    "spouses": [{"name": "Ina May Wayne"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 16},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "714551", "name": "Brenda Lee Wolfe", "died": "1962"},
+        {"code": "714552", "name": "Connie Sue Wolfe"},
+        {"code": "714553", "name": "Joy Lynn Wolfe"},
+    ],
 })
 
 ENTRIES.append({
@@ -15837,8 +15899,28 @@ ENTRIES.append({
     "name": "Phyllis Jean Barnes",
     "sex": "F",
     "born": "3 Oct 1942",
-    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 7},
+    "spouses": [{"name": "Lowell Feather Thomas", "born": "10 Jul 1941", "married": "21 May 1967"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 16},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "714611", "name": "Jeffrey Ward Thomas", "born": "5 Jan 1969"},
+        {"code": "714612", "name": "Gregory Clark Thomas", "born": "1 Jun 1971"},
+        {"code": "714613", "name": "Melinda Jean Thomas", "born": "5 Oct 1979"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "71762",
+    "name": "Lane Bradley Fike",
+    "sex": "M",
+    "born": "17 Jul 1947",
+    "spouses": [{"name": "Denise Cavelrie", "married": "Jul 1971"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 16},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "717621", "name": "Hunter Lane Fike", "born": "14 Apr 1982"},
+        {"code": "717622", "name": "Tyler Keith Fike", "born": "7 Jul 1985"},
+    ],
 })
 
 ENTRIES.append({
@@ -15853,15 +15935,6 @@ ENTRIES.append({
     "code": "71761",
     "name": "Connie Maurine Fike",
     "sex": "F",
-    "born": "17 Jul 1947",
-    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 7},
-    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
-})
-
-ENTRIES.append({
-    "code": "71762",
-    "name": "Lane Bradley Fike",
-    "sex": "M",
     "born": "17 Jul 1947",
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 7},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
