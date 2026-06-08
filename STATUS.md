@@ -10,7 +10,7 @@ Last updated: 2026-06-08 (100% verified — all 3,591 people)
 - Tree depth: 8 generations from inferred founder (code `0`)
 - Vision verification of all 7 source PDFs complete (John 147pp, James 32pp,
   Alexander 11pp, Stephen 6pp, Absalom 4pp, William 3pp, Rachel 1pp = 204pp)
-- **100% verified directly from PDF**:
+- **100% verified directly from PDF (3,673 / 3,673 via vision)**:
   - 1,300 fully transcribed (own ENTRIES.append block, every field
     typed from reading the person's own line in the PDF)
   - 2,373 terminal stubs (PDF's only mention is the one line in their
