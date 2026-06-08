@@ -312,14 +312,14 @@ def build():
                         "entryCode": ccode,
                         "page": entry.get("source", {}).get("page"),
                     })
-                    parent_v = entry.get("verification") or {}
-                    if parent_v.get("status") == "verified":
-                        p["verification"] = {
-                            "status": "verified",
-                            "source": parent_v.get("source", "manual"),
-                            "lastChecked": parent_v.get("lastChecked"),
-                            "notes": "Verified via parent's children list; own line not yet transcribed.",
-                        }
+                    # Cross-coded SEE_REF child where neither side has a
+                    # full entry — still a draft until its own line is read.
+                    p["verification"] = {
+                        "status": "draft",
+                        "source": "manual",
+                        "lastChecked": None,
+                        "notes": "Stub from parent's children list (SEE_REF cross-code). PDF's own line for this person not yet transcribed.",
+                    }
                 continue
             # Create a stub person
             canonical_code[ccode] = ccode
@@ -341,28 +341,17 @@ def build():
                 "entryCode": ccode,
                 "page": entry.get("source", {}).get("page"),
             })
-            # Stubs created from parent's children list inherit verification
-            # from the parent. If the parent was vision-verified, we already
-            # confirmed this child's name and birth date from the same page;
-            # we just haven't transcribed their own line (marriage/children).
-            # If the entry has no explicit verification block, it defaults to
-            # "verified via manual" (matches line 220-225 logic for entries).
-            parent_v = entry.get("verification") or {"status": "verified", "source": "manual"}
-            parent_status = parent_v.get("status")
-            if parent_status == "verified":
-                stub["verification"] = {
-                    "status": "verified",
-                    "source": parent_v.get("source", "manual"),
-                    "lastChecked": parent_v.get("lastChecked"),
-                    "notes": "Verified via parent's children list; own line not yet transcribed.",
-                }
-            else:
-                stub["verification"] = {
-                    "status": "draft",
-                    "source": "manual",
-                    "lastChecked": None,
-                    "notes": "Created from parent's children list; no full entry yet.",
-                }
+            # Stubs from a parent's children list have NOT been directly
+            # verified — we've only seen this person's name+date listed
+            # under their parent's entry. Their own line in the PDF (with
+            # marriage, residence, children, death detail) has not been
+            # transcribed. They stay draft until someone reads their entry.
+            stub["verification"] = {
+                "status": "draft",
+                "source": "manual",
+                "lastChecked": None,
+                "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here.",
+            }
 
     # Sort child IDs by their lineage code so birth order is preserved
     pid_to_code = {pid: code for code, pid in code_to_pid.items()
