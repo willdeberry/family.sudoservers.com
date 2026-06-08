@@ -15740,6 +15740,321 @@ ENTRIES.append({
 })
 
 
+# === James PDF pages 1-5 vision pass (2026-06-08): Barnes/Guthrie gen 3-5 ===
+ENTRIES.append({
+    "code": "716",
+    "name": "Dora Belle Barnes",
+    "sex": "F",
+    "born": "6 Aug 1880",
+    "died": "4 Dec 1952",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Lived with her sister Rosa in Hazelton, WV"},
+})
+
+ENTRIES.append({
+    "code": "717",
+    "name": "Pearlie Grace Barnes",
+    "sex": "F",
+    "born": "24 Apr 1886",
+    "died": "21 Feb 1967",
+    "spouses": [{"name": "Walter Frazee", "born": "29 May 1886", "died": "17 May 1925", "married": "30 Jun 1911"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "7171", "name": "James Blaine Frazee", "born": "15 Oct 1911", "died": "5 Mar 1979"},
+        {"code": "7172", "name": "Dorothy Frazee"},
+        {"code": "7173", "name": "Keith Ellsworth Frazee", "born": "25 Mar 1914", "died": "16 Apr 1993"},
+        {"code": "7174", "name": "Richard Frazee", "born": "22 Oct 1915", "died": "11 Oct 1989"},
+        {"code": "7175", "name": "Virginia Frazee"},
+        {"code": "7176", "name": "June Grace Frazee", "born": "10 Jun 1924"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "7131",
+    "name": "Evelyn Virginia Barnes",
+    "sex": "F",
+    "born": "16 Dec 1904",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "7132",
+    "name": "Mildren Grace Barnes",
+    "sex": "F",
+    "born": "14 Nov 1909",
+    "died": "28 Dec 1922",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "7133",
+    "name": "Mabel May Barnes",
+    "sex": "F",
+    "born": "23 Aug 1912",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "7141",
+    "name": "Hugh Ercil Barnes",
+    "sex": "M",
+    "born": "5 Oct 1901",
+    "died": "19 Nov 1990",
+    "spouses": [{"name": "Marie Minerva White", "born": "25 Nov 1896", "died": "15 Feb 1990", "married": "29 Jun 1936"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Wife dau of Thomas B. and Cora (Armstrong) White"},
+})
+
+ENTRIES.append({
+    "code": "7142",
+    "name": "Infant Barnes",
+    "sex": "M",
+    "born": "12 Aug 1903",
+    "died": "12 Aug 1903",
+    "flags": {"diedInInfancy": True},
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "7143",
+    "name": "Ethel Barnes",
+    "sex": "F",
+    "born": "26 Jul 1904",
+    "died": "28 Apr 1982",
+    "spouses": [{"name": "Dailey J. Kelly", "born": "2 Jul 1907", "died": "11 Feb 1980", "married": "22 Sep 19"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "7145",
+    "name": "Ina Winifred Barnes",
+    "sex": "F",
+    "born": "13 Jan 1908",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "7146",
+    "name": "Fleming Clark Barnes",
+    "sex": "M",
+    "born": "28 Nov 1912",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "721",
+    "name": "Lillian Irene Barnes",
+    "sex": "F",
+    "born": "5 Jun 1869",
+    "died": "30 Oct 1954",
+    "spouses": [
+        {"name": "Baltus DeWitt", "born": "1 Aug 1859", "died": "10 Sep 1900", "married": "17 Sep 1895", "order": 1},
+        {"name": "George E. Wolfe", "born": "2 Jul 1863", "died": "13 Jun 1949", "married": "3 Jun 1918", "order": 2},
+    ],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "7211", "name": "Lillian DeWitt", "born": "20 Jun 1896", "died": "Jun 1900"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "722",
+    "name": "Virginia Barbara Barnes",
+    "sex": "F",
+    "born": "12 Feb 1871",
+    "died": "17 Apr 1946",
+    "spouses": [{"name": "William H. Thornton", "born": "10 Dec 1864", "died": "22 Mar 1929", "married": "14 or 20 Jun 1898"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "7221", "name": "Raymond Barnes Thornton", "born": "9 Oct 1900"},
+        {"code": "7222", "name": "Helen Lucille Thornton", "born": "28 Dec 1902"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "723",
+    "name": "James Quinter Barnes",
+    "sex": "M",
+    "born": "7 May 1873",
+    "died": "20 Sep 1956",
+    "spouses": [{"name": "Laura Cole", "born": "16 Oct 1887", "died": "20 May 1971", "married": "26 Jun 1912"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "7231", "name": "Howard Emerson Barnes", "born": "2 Apr 1913"},
+        {"code": "7232", "name": "Genevieve Lillian Barnes", "born": "22 Sep 1914", "died": "15 Jun 1932"},
+        {"code": "7233", "name": "James Quinter Barnes, Jr.", "born": "23 Dec 1916"},
+        {"code": "7234", "name": "Laura Cole Barnes", "born": "16 Dec 1918"},
+        {"code": "7235", "name": "Robert Paul Barnes", "born": "3 Oct 1923"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "724",
+    "name": "William H. Barnes",
+    "sex": "M",
+    "born": "2 May 1875",
+    "died": "11 Apr 1948",
+    "spouses": [{"name": "Ada M. Simpson", "born": "1872", "died": "1942", "married": "7 Feb 1940"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Wife from Kansas"},
+})
+
+ENTRIES.append({
+    "code": "725",
+    "name": "John Jacob Barnes",
+    "sex": "M",
+    "born": "22 Oct 1877",
+    "died": "30 Sep 1963",
+    "spouses": [{"name": "Mattie Ann Mosser", "born": "2 Nov 1875", "died": "13 Nov 1962", "married": "25 Oct 1899"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "7251", "name": "Ralph Mosser Barnes", "born": "17 Oct 1900"},
+        {"code": "7252", "name": "Edith Barnes", "born": "10 Aug 1902"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "726",
+    "name": "Sara Alice Barnes",
+    "sex": "F",
+    "born": "23 Jan 1880",
+    "died": "9 Nov 1948",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "74C",
+    "name": "Infant son",
+    "sex": "M",
+    "born": "1 Jun 1902",
+    "died": "1 Jun 1902",
+    "flags": {"diedInInfancy": True},
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 1},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "761",
+    "name": "Cora Guthrie",
+    "sex": "F",
+    "born": "15 Jan 1883",
+    "died": "17 Aug 1924",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "762",
+    "name": "Alcinda Guthrie",
+    "sex": "F",
+    "born": "5 Aug 1884",
+    "died": "23 Feb 1962",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "764",
+    "name": "Hosea Guthrie",
+    "sex": "M",
+    "born": "19 Nov 1887",
+    "died": "2 Sep 1954",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "766",
+    "name": "Lester Guthrie",
+    "sex": "M",
+    "born": "8 Sep 1890",
+    "died": "16 Apr 1974",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "767",
+    "name": "Roy Guthrie",
+    "sex": "M",
+    "born": "15 Dec 1892",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "768",
+    "name": "Grace Guthrie",
+    "sex": "F",
+    "born": "15 Dec 1892",
+    "died": "14 Feb 1893",
+    "flags": {"diedInInfancy": True},
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "769",
+    "name": "Walter Guthrie",
+    "sex": "M",
+    "born": "11 Jul 1895",
+    "died": "1 Jul 1959",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "76A",
+    "name": "Infant son",
+    "sex": "M",
+    "born": "11 Jul 1895",
+    "died": "11 Jul 1895",
+    "flags": {"diedInInfancy": True},
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+})
+
+ENTRIES.append({
+    "code": "7651",
+    "name": "Ralph Ersel Spiker",
+    "sex": "M",
+    "born": "17 Jan 1910",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 5},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Also coded 17131 (cross-branch via John 17)"},
+})
+
+ENTRIES.append({
+    "code": "7656",
+    "name": "Ruth Virginia Spiker",
+    "sex": "F",
+    "born": "23 Apr 1923",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 5},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Also coded 17136 (cross-branch via John 17)"},
+})
+
+ENTRIES.append({
+    "code": "7631",
+    "name": "Robert Delmer Seese",
+    "sex": "M",
+    "born": "13 Sep 1909",
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 5},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Foster son"},
+})
+
+
 # === Pages 146-147 vision pass (2026-06-08): John gen 8 final — Fike/Chidester/Lawson/Wakefield/Bolyard/Burgess/Ryan/Krimpel/Rosenberger ===
 ENTRIES.append({
     "code": "12332121",
@@ -19549,22 +19864,6 @@ ENTRIES.append({
     ],
 })
 
-ENTRIES.append({
-    'code': '7145',
-    'name': 'Ina Winifred Barnes',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '13 Jan 1908',
-    'died': '20 Aug 1984',
-})
 
 ENTRIES.append({
     'code': '71454',
@@ -19604,21 +19903,6 @@ ENTRIES.append({
     ],
 })
 
-ENTRIES.append({
-    'code': '7146',
-    'name': 'Fleming Clark Barnes',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '29 Aug 1913',
-})
 
 ENTRIES.append({
     'code': '71511',
@@ -19637,28 +19921,6 @@ ENTRIES.append({
     'died': '23 May 1963',
 })
 
-ENTRIES.append({
-    'code': '717',
-    'name': 'Pear Grace Barnes Lie',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '24 Apr 1886',
-    'died': '17 May 1925',
-    "spouses": [
-        {
-            'name': 'Kathleen Nordeck',
-            'married': '25 Mar 1914',
-        },
-    ],
-})
 
 ENTRIES.append({
     'code': '717631',
@@ -19676,22 +19938,6 @@ ENTRIES.append({
     'born': '11 Mar 1983',
 })
 
-ENTRIES.append({
-    'code': '722',
-    'name': 'Virginia Barbara',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '10 Dec 1864',
-    'died': '19 Jul 1972',
-})
 
 ENTRIES.append({
     'code': '722122',
@@ -19709,21 +19955,6 @@ ENTRIES.append({
     'born': '02 May 1975',
 })
 
-ENTRIES.append({
-    'code': '7231',
-    'name': 'Howard Emerson Barnes',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '02 Apr 1913',
-})
 
 ENTRIES.append({
     'code': '723111',
@@ -19756,39 +19987,7 @@ ENTRIES.append({
     'born': '10 Mar 1964',
 })
 
-ENTRIES.append({
-    'code': '7232',
-    'name': 'Genevieve Lillian Bames',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '22 Sep 1914',
-    'died': '15 Jun 1932',
-})
 
-ENTRIES.append({
-    'code': '7233',
-    'name': 'James Quinter Barnes',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '22 May 1919',
-    'died': '03 Jul 1969',
-})
 
 ENTRIES.append({
     'code': '72331',
@@ -19806,45 +20005,7 @@ ENTRIES.append({
     'born': '23 Feb 1953',
 })
 
-ENTRIES.append({
-    'code': '7234',
-    'name': 'Lau Cole Barnes',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '16 Dec 1918',
-    'died': '15 Nov 1977',
-    "spouses": [
-        {
-            'name': 'Ailene Barger Thompson',
-            'married': '13 Sep 1903',
-        },
-    ],
-})
 
-ENTRIES.append({
-    'code': '725',
-    'name': 'John Jacob Barnes',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '22 Oct 1877',
-    'died': '30 Sep 1963',
-})
 
 ENTRIES.append({
     'code': '72511',
@@ -19863,21 +20024,6 @@ ENTRIES.append({
     'died': '29 Oct 1996',
 })
 
-ENTRIES.append({
-    'code': '7252',
-    'name': 'Edith Barnes',
-    "source": {
-        'pdf': 'James_Guthrie - Seven Generations.pdf',
-        'page': 1,
-    },
-    "verification": {
-        'status': 'draft',
-        'source': 'ocr',
-        'lastChecked': None,
-        'notes': 'Extracted via regex from ocrmypdf output. Dates/names may have OCR errors — verify against source PDF before trusting.',
-    },
-    'born': '10 Aug 1902',
-})
 
 ENTRIES.append({
     'code': '72521',
