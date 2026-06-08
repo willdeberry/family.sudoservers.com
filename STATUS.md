@@ -1,15 +1,16 @@
 # Project status
 
-Last updated: 2026-06-08 (ALL 7 PDFs complete — 204 pages vision-verified)
+Last updated: 2026-06-08 (100% verified — all 3,591 people)
 
 ## What exists
 
-- 3767 people in `data/people.json`, generated from `parser/raw_entries.py`
+- 3591 people in `data/people.json`, generated from `parser/raw_entries.py`
 - All 7 sibling branches present and fully detailed
-- 12+ cross-branch marriages with dedup working (see SEE_REFS in raw_entries.py)
+- 180+ cross-branch marriages with dedup working (see SEE_REFS in raw_entries.py)
 - Tree depth: 8 generations from inferred founder (code `0`)
 - Vision verification of all 7 source PDFs complete (John 147pp, James 32pp,
   Alexander 11pp, Stephen 6pp, Absalom 4pp, William 3pp, Rachel 1pp = 204pp)
+- **100% verified**: 3,397 via vision, 109 via ocr, 85 via manual
 
 ## Verification pass currently in progress
 
