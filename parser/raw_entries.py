@@ -16117,6 +16117,258 @@ ENTRIES.append({
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
 })
 
+
+# === James PDF pages 27-32 vision pass (2026-06-08): gen 7 grandchildren (Blankenship/Wotring/Dailey/Forman/Teets/Cuppett/Walls/Wolfe/Kisner/Reckart/Everly/Simpson/Thomas/Schutzendorf/Slavins/Robichaud) ===
+ENTRIES.append({
+    "code": "713111",
+    "name": "Daphney Elaine Barbour",
+    "sex": "F",
+    "born": "6 Jun 1954",
+    "spouses": [{"name": "Thomas Edward Blankenship", "married": "12 May 1973"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 27},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Expanded from page 27"},
+    "children": [
+        {"code": "7131111", "name": "Erin Jennifer Blankenship", "born": "7 Dec 1975"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "714411",
+    "name": "Roxanne Barnes",
+    "sex": "F",
+    "born": "1 Feb 1953",
+    "spouses": [{"name": "Martin Dale (Bud) Wotring", "born": "18 Sep 1951", "married": "1 Apr 1972"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 27},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Expanded from page 27"},
+    "children": [
+        {"code": "7144111", "name": "Gregory Martin Wotring", "born": "14 Aug 1972"},
+        {"code": "7144112", "name": "Matthew Lane Worting", "born": "29 Jan 1977"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "714422",
+    "name": "Dana Vance Dailey",
+    "sex": "M",
+    "spouses": [{"name": "Sarah Naranjo"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 27},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Expanded from page 27"},
+    "children": [
+        {"code": "7144221", "name": "Jesse Dailey"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "714423",
+    "name": "Dale Vincent Dailey",
+    "sex": "M",
+    "spouses": [{"name": "Georgia Dickson"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 27},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Expanded from page 27"},
+    "children": [
+        {"code": "7144231", "name": "Daniell Dailey"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "714511",
+    "name": "Clinton L. Forman",
+    "sex": "M",
+    "spouses": [{"name": "Susan Kay Benson", "born": "26 May 1960", "married": "26 May 1979"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 27},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Married at Marklesburg, PA Union Church"},
+    "children": [
+        {"code": "7145111", "name": "Timothy Forman", "born": "15 Feb 1980"},
+        {"code": "7145112", "name": "Tiffany Lynn Forman", "born": "8 Jun 1984"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "714512",
+    "name": "Ronna June Forman",
+    "sex": "F",
+    "spouses": [{"name": "Rollin Eugene Teets", "born": "16 Jan 1951", "married": "10 Apr 1971"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 27},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Expanded from page 27"},
+    "children": [
+        {"code": "7145121", "name": "Kristi Teets", "born": "Oct 1972"},
+        {"code": "7145122", "name": "Pamela Teets", "died": "14 Apr 1977"},
+        {"code": "7145123", "name": "Amy Teets", "born": "1978"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "714521",
+    "name": "Clifford Cuppett",
+    "sex": "M",
+    "spouses": [{"name": "Linda Schnopp"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 27},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Expanded from page 27"},
+    "children": [
+        {"code": "7145211", "name": "Carrie Lynn Cuppett", "born": "18 Oct 1988"},
+        {"code": "7145212", "name": "Jesse Cuppett"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "714523",
+    "name": "Debra Sue Cuppett",
+    "sex": "F",
+    "born": "10 Aug 1951",
+    "spouses": [{"name": "Orval Lee Walls", "born": "30 Jan 1953", "married": "14 Aug 1970"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 27},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Married at Pisgah, WV"},
+    "children": [
+        {"code": "7145231", "name": "Robby Lee Walls", "born": "31 Jan 1974"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "714531",
+    "name": "Roger Lee Wolfe Sr.",
+    "sex": "M",
+    "spouses": [{"name": "Wanda Fike"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 27},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Expanded from page 27"},
+    "children": [
+        {"code": "7145311", "name": "Ronda Wolfe", "born": "1971"},
+        {"code": "7145312", "name": "Roger Lee Wolfe, Jr.", "born": "30 Aug 1974"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "714532",
+    "name": "Stanley Wolfe",
+    "sex": "M",
+    "spouses": [{"name": "Joyce"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 28},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Expanded from page 28"},
+    "children": [
+        {"code": "7145321", "name": "a son"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "714533",
+    "name": "Edwin Wolfe",
+    "sex": "M",
+    "spouses": [{"name": "Debbie Lewis"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 28},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Wife from Pisgah"},
+    "children": [
+        {"code": "7145331", "name": "Heidi Rae Wolfe", "born": "8 Jan 1974"},
+        {"code": "7145332", "name": "Renee Wolfe"},
+        {"code": "7145333", "name": "Bethany Ann Wolfe"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "714535",
+    "name": "Duncan Eric Wolfe",
+    "sex": "M",
+    "born": "1964",
+    "spouses": [{"name": "Roberta Metheny"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 28},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Expanded from page 28"},
+    "children": [
+        {"code": "7145351", "name": "Heather Wolfe", "born": "Jul 1980"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "714541",
+    "name": "Sherry Louise Everly",
+    "sex": "F",
+    "born": "29 May 1952",
+    "spouses": [{"name": "Richard Kisner", "married": "19 Jun 1970"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 28},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Born Uniontown, PA; married Oakland, MD"},
+    "children": [
+        {"code": "7145411", "name": "Jeffery Scott Kisner", "born": "14 Oct 1973"},
+        {"code": "7145412", "name": "Shane Richard Kisner", "born": "28 Nov 1976"},
+        {"code": "7145413", "name": "Angela Dawn Kisner", "born": "15 Mar 1979"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "714542",
+    "name": "Karen Kay Everly",
+    "sex": "F",
+    "born": "26 Oct 1954",
+    "spouses": [{"name": "Dallas Eugene Reckart Jr.", "born": "6 Mar 1951", "married": "27 Feb 1971"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 28},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Divorced 1987"},
+    "children": [
+        {"code": "7145421", "name": "Karmon Kay Reckart", "born": "23 Oct 1973"},
+        {"code": "7145422", "name": "Brandon Eugene Reckart", "born": "25 Aug 1976"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "714543",
+    "name": "James Spencer Everly",
+    "sex": "M",
+    "born": "30 May 1961",
+    "spouses": [{"name": "Wendy Jo Evans", "born": "12 Nov 1961", "married": "14 Jul 1979"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 28},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Married at Asher Glade, MD"},
+    "children": [
+        {"code": "7145431", "name": "Chastity Dawn Everly", "born": "21 Jan 1980"},
+        {"code": "7145432", "name": "Katie Jo Everly", "born": "17 Jul 1989"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "714553",
+    "name": "Joy Lynn Wolfe",
+    "sex": "F",
+    "spouses": [{"name": "Randall Wensel (Randy) Simpson", "born": "11 Apr 1963"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 28},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Expanded from page 28"},
+    "children": [
+        {"code": "7145531", "name": "Nathan Dwain Simpson", "born": "19 Dec 1989"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "714611",
+    "name": "Jeffrey Ward Thomas",
+    "sex": "M",
+    "born": "5 Jan 1969",
+    "spouses": [{"name": "Julia Wolfe", "married": "14 Jul 19"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 28},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Expanded from page 28"},
+    "children": [
+        {"code": "7146111", "name": "Brandon Lowell Thomas", "born": "9 Jul 1995"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "725211",
+    "name": "Patricia Sue Slavins",
+    "sex": "F",
+    "born": "28 Oct 1951",
+    "spouses": [{"name": "Dudley Steven Schutzendorf", "born": "10 Sep 1949", "married": "30 Jun 1973"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 29},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Expanded from page 29"},
+    "children": [
+        {"code": "7252111", "name": "Eric Von Schutzendorf", "born": "24 May 1978"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "725212",
+    "name": "William Edgar Slavins, Jr.",
+    "sex": "M",
+    "born": "27 Jun 1954",
+    "spouses": [{"name": "Laura Lee Robichaud", "born": "20 Aug 1954", "married": "26 Jun 1976"}],
+    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 29},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Expanded from page 29"},
+    "children": [
+        {"code": "7252121", "name": "Jessica Lee Slavins", "born": "15 Apr 1981"},
+    ],
+})
+
 ENTRIES.append({
     "code": "725111",
     "name": "Kathryn Diana Parks",
@@ -16131,24 +16383,6 @@ ENTRIES.append({
     "name": "Matthew David Parks",
     "sex": "M",
     "born": "16 Oct 1963",
-    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 17},
-    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
-})
-
-ENTRIES.append({
-    "code": "725211",
-    "name": "Patricia Sue Slavins",
-    "sex": "F",
-    "born": "28 Oct 1951",
-    "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 17},
-    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
-})
-
-ENTRIES.append({
-    "code": "725212",
-    "name": "William Edgar Slavins, Jr.",
-    "sex": "M",
-    "born": "27 Jun 1954",
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 17},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
 })
