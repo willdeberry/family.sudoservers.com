@@ -46,8 +46,10 @@ try {
   };
 
   async function bootstrap() {
+    performance.mark('chart:fetch-start');
     const res = await fetch('/data/tree.json');
     const payload = await res.json();
+    performance.mark('chart:fetch-end');
     // `server-serialization`: counts are precomputed at build time so we
     // don't filter all 4.9k rows on the client just to populate the top bar.
     const { totalPeople, verifiedCount } = payload.meta;
@@ -60,6 +62,7 @@ try {
     const container = document.getElementById('family-chart');
     if (!container) return;
 
+    performance.mark('chart:create-start');
     const chart = f3
       .createChart(container, data as any)
       .setTransitionTime(550)
@@ -75,7 +78,10 @@ try {
     const card = chart
       .setCardSvg()
       .setCardDisplay([['full name'], ['lifespan']])
-      .setMiniTree(true)
+      // Disabled: minitree renders a small expandable icon per card, costing
+      // extra SVG nodes per render. Save the work — depth limits already give
+      // users a way to expand.
+      .setMiniTree(false)
       .setCardDim({
         width: 250,
         height: 70,
@@ -110,8 +116,23 @@ try {
       });
     };
 
+    performance.mark('chart:create-end');
     // Initial render — fit the tree to the container so it uses the full space
+    performance.mark('chart:render-start');
     chart.updateTree({ initial: true, tree_position: 'fit' });
+    performance.mark('chart:render-end');
+
+    // Surface where time went in the console so we can profile real loads.
+    queueMicrotask(() => {
+      const m = (a: string, b: string) =>
+        performance.measure(`${a}→${b}`, a, b).duration | 0;
+      console.log(
+        '[chart timings]',
+        'fetch+parse', m('chart:fetch-start', 'chart:fetch-end') + 'ms,',
+        'setup', m('chart:create-start', 'chart:create-end') + 'ms,',
+        'initial render', m('chart:render-start', 'chart:render-end') + 'ms',
+      );
+    });
 
     // Tell the top bar how many people we have
     document.dispatchEvent(
@@ -148,14 +169,17 @@ try {
       fit: () => chart.updateTree({ tree_position: 'fit' }),
     };
 
-    // Re-fit if the window resizes (e.g., devtools toggled)
-    let resizeTimer: number | undefined;
-    window.addEventListener('resize', () => {
-      window.clearTimeout(resizeTimer);
-      resizeTimer = window.setTimeout(() => {
-        chart.updateTree({ tree_position: 'fit' });
-      }, 200);
-    });
+    // Re-fit if the window resizes (e.g., devtools toggled). Defer attaching
+    // the listener so the resize handler doesn't compete with initial paint.
+    setTimeout(() => {
+      let resizeTimer: number | undefined;
+      window.addEventListener('resize', () => {
+        window.clearTimeout(resizeTimer);
+        resizeTimer = window.setTimeout(() => {
+          chart.updateTree({ tree_position: 'fit' });
+        }, 200);
+      });
+    }, 1000);
   }
 
   // Defer the heavy chart bootstrap until the browser is idle. This lets the
