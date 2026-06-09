@@ -58,8 +58,21 @@ SEE_REFS = [
     # Ward Barnes Guthrie: father Samuel Floyd Guthrie (1133, John line);
     # mother Rosa Mae Barnes (715, James line)
     {"codes": ["11331", "7151"], "reason": "Mother is 715 in James line; father is 1133 in John line"},
-    # Stella Guthrie's children appear in both James (747x) and John (1622x) branches
-    # via her marriage to Charles C. Moyers
+    # James Guthrie (son of Jeremiah=74 and Nancy Nicola=172) coded both 741 and 1721
+    {"codes": ["741", "1721"], "reason": "James Guthrie b. 2 Feb 1879 — Jeremiah & Nancy's son; James/John cross-coding"},
+    # Troy Guthrie (also Jeremiah & Nancy's son) coded 748 and 1728
+    {"codes": ["748", "1728"], "reason": "Troy Guthrie b. 24 Feb 1891 — Jeremiah & Nancy's son; James/John cross-coding"},
+    # Theodore Ralph Narivanchik coded both 164111 and 1443111
+    {"codes": ["164111", "1443111"], "reason": "Theodore Ralph Narivanchik — cross-coded parent"},
+
+    # Stella Guthrie herself: same person under James 747 and John 1727
+    # (daughter of Jeremiah Guthrie = 74 and Nancy Ann Nicola = 172).
+    # Her children also appear under THREE codes because their parents are
+    # cross-coded too. Without this merge, Beatrice/Alma/Pauline/Charles end
+    # up with the two duplicate Stella records as separate parents (3 total).
+    {"codes": ["747", "1727"], "reason": "Stella Guthrie — daughter of Jeremiah (74) and Nancy Nicola (172, James/John cross)"},
+    # Stella's children appear in James (747x), John (1622x via Charles), and
+    # John (1727x via Stella as Susannah's granddaughter).
     {"codes": ["7471", "16221"], "reason": "Stella Guthrie 747 (James) m. Charles Moyers 1622 (John)"},
     {"codes": ["7472", "16222"], "reason": "Same"},
     {"codes": ["7473", "16223"], "reason": "Same"},
@@ -111,7 +124,10 @@ SEE_REFS = [
     {"codes": ["7432", "1662"], "reason": "Emma Harshbarger b. 30 Jan 1906 — James/John cross"},
     {"codes": ["74321", "16621"], "reason": "Charles Ray Hileman b. 18 Feb 1925 — James/John cross"},
     {"codes": ["743212", "166212"], "reason": "Cynthia Lee Hileman b. 20 Apr 1951 — James/John cross (third code)"},
-    {"codes": ["7436", "172B6"], "reason": "Mabel Viola Bartholomew b. 27 Dec 1933 — James/John cross via Dessie 74B/172B"},
+    # NOTE: removed the prior "7436 = 172B6" SEE_REF. The OCR-extracted code
+    # "7436" was actually a mangled read of "74B6" (B vs 3), so it should have
+    # been 74B6 = 172B6 with parent 74B (Dessie). The earlier merge gave Mabel
+    # both 743 (Hattie, wrong) and 172B (Dessie, correct) as parents.
     {"codes": ["74612", "172612"], "reason": "Clair Edward Guthrie b. 22 Sep 1961 — James/John cross"},
     {"codes": ["74B4", "172B4"], "reason": "Paul Eugene Bartholomew b. 18 May 1928 — James/John cross via Dessie"},
     {"codes": ["74B61", "172B61"], "reason": "Douglas Robert Hale b. 24 Oct 1952 — James/John cross"},
@@ -146,7 +162,9 @@ SEE_REFS = [
     {"codes": ["A436", "A456"], "reason": "Martin Luther Cupp b. 9 May 1918 — OCR code variant"},
 
     # Third pass — OCR-mangled name matches confirmed by exact birth date
-    {"codes": ["144135", "144155"], "reason": "Wilma Marie Sisler — OCR code variant"},
+    # NOTE: removed prior "144135 = 144155" SEE_REF. The OCR draft "144135"
+    # was a mangled read of "144155" (Wilma, Paul's daughter); the earlier
+    # merge spuriously gave her Carlos (14413) as a second parent.
     {"codes": ["144227", "143427"], "reason": "Jacob George Nicola Jr. — cross-coded"},
     {"codes": ["144371", "16471"], "reason": "Barbara Jean Harshbarger — cross-coded"},
     {"codes": ["171341", "122431"], "reason": "Kermit Nelson DeBerry — cross-coded (third code)"},
@@ -171,7 +189,9 @@ SEE_REFS = [
     {"codes": ["76551", "171351"], "reason": "Gladys Kay Duncan — cross-coded"},
     {"codes": ["768422", "1224322"], "reason": "Kenneth Scott Shea — cross-coded (third code)"},
     {"codes": ["A21121", "1132221"], "reason": "Kathy Marie Frazee — Alexander/John cross"},
-    {"codes": ["A4134", "A4154"], "reason": "Francis G. Frankhouser — OCR code variant"},
+    # NOTE: removed prior "A4134 = A4154" SEE_REF. OCR misread one as the
+    # other but they have different parents (A413 Edna vs A415 Guy); the merge
+    # gave Francis two unrelated parents.
     {"codes": ["173244", "163144"], "reason": "Larry Robert Collins — cross-coded"},
     {"codes": ["74B32", "172B32"], "reason": "Joy Irene Miller — cross-coded"},
 
