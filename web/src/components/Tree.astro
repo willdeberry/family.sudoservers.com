@@ -9,7 +9,7 @@ const treePath = resolve(fileURLToPath(import.meta.url), '..', '..', '..', 'publ
 let peopleCount: string;
 try {
   const tree = JSON.parse(readFileSync(treePath, 'utf-8'));
-  peopleCount = tree.length.toLocaleString('en-US');
+  peopleCount = (tree.meta?.totalPeople ?? tree.people?.length ?? 0).toLocaleString('en-US');
 } catch {
   peopleCount = '';
 }
@@ -47,15 +47,15 @@ try {
 
   async function bootstrap() {
     const res = await fetch('/data/tree.json');
-    const data: Datum[] = await res.json();
+    const payload = await res.json();
+    // `server-serialization`: counts are precomputed at build time so we
+    // don't filter all 4.9k rows on the client just to populate the top bar.
+    const { totalPeople, verifiedCount } = payload.meta;
+    const data: Datum[] = payload.people;
 
-    // Capture size BEFORE family-chart mutates the array
-    const totalPeople = data.length;
-    const verifiedCount = data.filter(d => d.data.verified).length;
-
-    // Default focused person: the founder if present, else the first node
-    const founder =
-      data.find(d => d.id && (d as any).data['lineageCode'] === '0') || data[0];
+    // Default focused person: the founder (always p_000001 — code "0").
+    // We don't need to find them since family-chart starts at data[0] by
+    // default and the founder is built first in transform-data.mjs.
 
     const container = document.getElementById('family-chart');
     if (!container) return;
@@ -65,6 +65,12 @@ try {
       .setTransitionTime(550)
       .setCardXSpacing(280)
       .setCardYSpacing(160)
+      // Limit how many generations render at once. Without these, a focused
+      // founder pulls in ~8 generations of descendants (~4,900 nodes) and the
+      // layout pass takes seconds. With the limits the chart renders the
+      // immediate family fast; users can click cards to expand further.
+      .setAncestryDepth(3)
+      .setProgenyDepth(3)
       .setOrientationVertical();
 
     const card = chart

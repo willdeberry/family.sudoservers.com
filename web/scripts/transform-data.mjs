@@ -65,36 +65,30 @@ function isoYear(event) {
   return null;
 }
 
+// `server-serialization`: minimize what the client actually needs to render
+// the chart. The card only displays full name + lifespan; everything else
+// (birthday, deathday raw, lineageCode, verified flag) is used only when the
+// user opens the modal, which fetches people-index.json on demand.
 const treeData = people.map(p => {
-  // Spouses: collect spouseIds from marriages (skip unlinked)
   const spouseIds = (p.marriages || [])
     .map(m => m.spouseId)
     .filter(Boolean);
 
-  // Parents/children: use stored relationship arrays
   const parents = (p.parentIds || []).filter(id => byId.has(id));
   const children = (p.childIds || []).filter(id => byId.has(id));
 
   const birthYear = isoYear(p.birth);
   const deathYear = isoYear(p.death);
+  const lifespan = birthYear || deathYear
+    ? `${birthYear || '?'} – ${deathYear || ''}`.trim().replace(/\s+–\s+$/, '')
+    : '';
 
   return {
     id: p.id,
     data: {
       gender: inferGender(p),
-      'first name': p.name?.first || '',
-      'last name': p.name?.last || '',
       'full name': displayName(p.name),
-      birthday: p.birth?.date || p.birth?.dateRaw || '',
-      deathday: p.death?.date || p.death?.dateRaw || '',
-      birthYear: birthYear || '',
-      deathYear: deathYear || '',
-      lifespan: birthYear || deathYear
-        ? `${birthYear || '?'} – ${deathYear || ''}`.trim().replace(/\s+–\s+$/, '')
-        : '',
-      lineageCode: (p.lineageCodes || [])[0] || '',
-      verified: p.verification?.status === 'verified',
-      avatar: '', // could be added later
+      lifespan,
     },
     rels: {
       parents,
@@ -137,7 +131,15 @@ for (const p of people) {
   };
 }
 
-writeFileSync(resolve(outDir, 'tree.json'), JSON.stringify(treeData));
+// Counts are computed once at build time and shipped with the tree so the
+// client doesn't have to re-iterate 4.9k rows just to know totals.
+const totalPeople = treeData.length;
+const verifiedCount = people.filter(p => p.verification?.status === 'verified').length;
+
+writeFileSync(resolve(outDir, 'tree.json'), JSON.stringify({
+  meta: { totalPeople, verifiedCount },
+  people: treeData,
+}));
 writeFileSync(resolve(outDir, 'people-index.json'), JSON.stringify(peopleIndex));
 
 // Build a tiny search index (id, name, lineage codes, lifespan)
