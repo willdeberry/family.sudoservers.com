@@ -433,11 +433,46 @@ def build():
             if len(matches) == 1:
                 m["spouseId"] = matches[0]
 
+    # Add reciprocal marriages for any auto-linked spouses where the spouse
+    # doesn't have a back-marriage to this person. Without this, the chart
+    # would render the relationship only one direction.
+    for pid, p in list(people.items()):
+        for m in p.get("marriages", []):
+            sp_id = m.get("spouseId")
+            if not sp_id or sp_id not in people:
+                continue
+            sp = people[sp_id]
+            # Does the spouse already have a marriage back to this person?
+            if any(mm.get("spouseId") == pid for mm in sp.get("marriages", [])):
+                continue
+            # Add a reciprocal marriage
+            sp["marriages"].append({
+                "spouseId": pid,
+                "spouseName": (p.get("name") or {}).get("full"),
+                "date": m.get("date"),
+                "dateRaw": m.get("dateRaw"),
+                "place": m.get("place"),
+                "marriageOrder": None,
+                "notes": None,
+            })
+
     # Materialize spouses as Person records. Every named spouse that doesn't
     # already correspond to an existing person becomes a synthetic node so the
-    # family-chart can render them. They get a lineageCode like "1224312-sp1"
-    # so we can distinguish them from natural-born family members. Symmetric:
-    # the materialized spouse gets a back-reference to this marriage.
+    # family-chart can render them.
+    #
+    # Dedup: if a spouse name + birth year matches an already-materialized
+    # synthetic spouse, reuse that pid instead of creating a duplicate. This
+    # handles the case where one person had two marriages — e.g. Jacob Peter
+    # Barnes married Sarah Ann Guthrie then Amanda Jane Harshbarger; both
+    # wives reference him and he should be a SINGLE synth record with two
+    # marriages, not two synthetic Jacobs.
+
+    def spouse_key(m_dict):
+        name = (m_dict.get("spouseName") or "").lower().strip()
+        born = (m_dict.get("_spouseBirth") or "").strip()
+        return (name, born) if name else None
+
+    materialized_by_key = {}
     spouse_counter = 0
     for pid in list(people.keys()):
         p = people[pid]
@@ -447,6 +482,27 @@ def build():
             spouse_name = m.get("spouseName")
             if not spouse_name:
                 continue
+
+            key = spouse_key(m)
+            existing_sp_pid = materialized_by_key.get(key) if key else None
+
+            if existing_sp_pid:
+                # Reuse the existing synth: just add a marriage on their side
+                # pointing back to this person.
+                sp_person = people[existing_sp_pid]
+                if not any(mm.get("spouseId") == pid for mm in sp_person.get("marriages", [])):
+                    sp_person["marriages"].append({
+                        "spouseId": pid,
+                        "spouseName": (p.get("name") or {}).get("full"),
+                        "date": m.get("date"),
+                        "dateRaw": m.get("dateRaw"),
+                        "place": m.get("place"),
+                        "marriageOrder": m.get("marriageOrder"),
+                        "notes": m.get("notes"),
+                    })
+                m["spouseId"] = existing_sp_pid
+                continue
+
             spouse_counter += 1
             sp_pid = f"sp_{spouse_counter:06d}"
             primary_code = (p.get("lineageCodes") or ["?"])[0]
@@ -454,7 +510,6 @@ def build():
             ensure_person(sp_pid, spouse_code)
             sp_person = people[sp_pid]
             sp_person["name"] = split_name(spouse_name)
-            # Infer sex as opposite of primary person
             if p.get("sex") == "M":
                 sp_person["sex"] = "F"
             elif p.get("sex") == "F":
@@ -472,7 +527,6 @@ def build():
                 "lastChecked": p.get("verification", {}).get("lastChecked"),
                 "notes": f"Materialized spouse of {primary_code}; data from that entry's spouses array.",
             }
-            # Mirror marriage on the spouse's side
             sp_person["marriages"].append({
                 "spouseId": pid,
                 "spouseName": (p.get("name") or {}).get("full"),
@@ -483,6 +537,43 @@ def build():
                 "notes": m.get("notes"),
             })
             m["spouseId"] = sp_pid
+            if key:
+                materialized_by_key[key] = sp_pid
+
+    # Link spouses as co-parents of their partner's children. Without this,
+    # children only get a single parent (the lineage-code path), so the chart
+    # only renders one parent line. Heuristic: if person A is married to B
+    # and A has children, B is also a parent of those children — UNLESS those
+    # children already have a different second parent (i.e., from a prior
+    # marriage of A) AND the child's birth doesn't fall in this marriage's
+    # window. For now we use the simpler rule: take A's marriageOrder=1 spouse
+    # as the default co-parent of every A-child who has no second parent.
+    for pid, p in list(people.items()):
+        if not p.get("marriages"):
+            continue
+        # Pick the primary spouse: marriageOrder=1, or first marriage if none flagged
+        primary_sp_id = None
+        ordered = sorted(p["marriages"], key=lambda mm: (mm.get("marriageOrder") or 99))
+        for m in ordered:
+            if m.get("spouseId"):
+                primary_sp_id = m["spouseId"]
+                break
+        if not primary_sp_id:
+            continue
+        for child_id in p.get("childIds", []):
+            child = people.get(child_id)
+            if not child:
+                continue
+            # Already has 2+ parents — skip
+            if len(child.get("parentIds", [])) >= 2:
+                continue
+            if primary_sp_id in child.get("parentIds", []):
+                continue
+            child["parentIds"].append(primary_sp_id)
+            # Mirror: the spouse gets the child too
+            sp = people.get(primary_sp_id)
+            if sp and child_id not in sp.get("childIds", []):
+                sp["childIds"].append(child_id)
 
     # Clean: remove None-valued fields for compactness
     output_people = []
