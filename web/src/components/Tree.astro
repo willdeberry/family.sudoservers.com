@@ -158,11 +158,21 @@ try {
     });
   }
 
-  bootstrap().catch(err => {
-    console.error('Failed to load tree', err);
-    const loading = document.getElementById('family-chart-loading');
-    if (loading) loading.textContent = 'Failed to load the tree. See console.';
-  });
+  // Defer the heavy chart bootstrap until the browser is idle. This lets the
+  // page (search bar, top bar, modal stubs) become interactive immediately,
+  // even though family-chart's calculateTree() takes a couple hundred ms.
+  const startBootstrap = () => {
+    bootstrap().catch(err => {
+      console.error('Failed to load tree', err);
+      const loading = document.getElementById('family-chart-loading');
+      if (loading) loading.textContent = 'Failed to load the tree. See console.';
+    });
+  };
+  if ('requestIdleCallback' in window) {
+    (window as any).requestIdleCallback(startBootstrap, { timeout: 500 });
+  } else {
+    setTimeout(startBootstrap, 0);
+  }
 </script>
 
 <style is:global>

@@ -25,44 +25,46 @@
 
 <script>
   type Hit = { id: string; n: string; c: string; l: string };
+  // Precomputed lowercase fields per hit so the hot loop doesn't redo
+  // toLowerCase() / split() on every keystroke.
+  type PreparedHit = { hit: Hit; n: string; words: string[]; c: string };
 
-  let index: Hit[] | null = null;
-  let loadingPromise: Promise<Hit[]> | null = null;
+  let prepared: PreparedHit[] | null = null;
+  let loadingPromise: Promise<PreparedHit[]> | null = null;
 
   async function loadIndex() {
-    if (index) return index;
+    if (prepared) return prepared;
     if (!loadingPromise) {
       loadingPromise = fetch('/data/search.json')
         .then(r => r.json())
-        .then(json => {
-          index = json as Hit[];
-          return index!;
+        .then((json: Hit[]) => {
+          // Prepare normalized fields once at load time.
+          prepared = json.map(hit => ({
+            hit,
+            n: hit.n.toLowerCase(),
+            words: hit.n.toLowerCase().split(/\s+/),
+            c: hit.c.toLowerCase(),
+          }));
+          return prepared;
         });
     }
     return loadingPromise;
   }
 
-  function score(hit: Hit, q: string): number {
-    const n = hit.n.toLowerCase();
-    if (n === q) return 100;
-    if (n.startsWith(q)) return 80;
-    // Match any word start
-    const words = n.split(/\s+/);
-    if (words.some(w => w.startsWith(q))) return 60;
-    if (n.includes(q)) return 30;
-    // Match lineage code
-    if (hit.c.toLowerCase().includes(q)) return 50;
-    return 0;
-  }
-
   function search(q: string): Hit[] {
-    if (!index) return [];
+    if (!prepared) return [];
     const lower = q.toLowerCase().trim();
     if (!lower) return [];
     const scored: Array<[number, Hit]> = [];
-    for (const h of index) {
-      const s = score(h, lower);
-      if (s > 0) scored.push([s, h]);
+    for (let i = 0; i < prepared.length; i++) {
+      const p = prepared[i];
+      let s = 0;
+      if (p.n === lower) s = 100;
+      else if (p.n.startsWith(lower)) s = 80;
+      else if (p.words.some(w => w.startsWith(lower))) s = 60;
+      else if (p.c.includes(lower)) s = 50;
+      else if (p.n.includes(lower)) s = 30;
+      if (s > 0) scored.push([s, p.hit]);
     }
     scored.sort((a, b) => b[0] - a[0]);
     return scored.slice(0, 30).map(([, h]) => h);
@@ -95,12 +97,8 @@
         </button>
       </li>
     `).join('');
-    Array.from(ul.querySelectorAll('.hit-row')).forEach(btn =>
-      btn.addEventListener('click', (e) => {
-        const id = (e.currentTarget as HTMLElement).dataset.id;
-        if (id) selectResult(id);
-      })
-    );
+    // Event delegation: one listener on the UL instead of 30 listeners
+    // rebound per keystroke.
     selected = 0;
     updateSelected();
   }
@@ -139,12 +137,30 @@
     }
   });
 
-  document.getElementById('search-input')?.addEventListener('input', async (e) => {
+  // Single delegated click listener on the results UL (instead of binding 30
+  // listeners per render). Survives across renders so we don't rebind.
+  document.getElementById('search-results')?.addEventListener('click', (e) => {
+    const target = (e.target as HTMLElement).closest('.hit-row') as HTMLElement | null;
+    if (!target) return;
+    const id = target.dataset.id;
+    if (id) selectResult(id);
+  });
+
+  // Debounce search to one animation frame. Coalesces fast typing into a
+  // single render per frame (~16ms) instead of one render per keystroke.
+  let searchPending = 0;
+  let lastQuery = '';
+  document.getElementById('search-input')?.addEventListener('input', (e) => {
     const q = (e.target as HTMLInputElement).value;
-    const idx = await loadIndex();
-    if (!idx.length) return;
-    const hits = search(q);
-    render(hits, q);
+    lastQuery = q;
+    if (searchPending) return;
+    searchPending = requestAnimationFrame(async () => {
+      searchPending = 0;
+      const idx = await loadIndex();
+      if (!idx.length) return;
+      const hits = search(lastQuery);
+      render(hits, lastQuery);
+    });
   });
 
   document.getElementById('search-input')?.addEventListener('keydown', (e) => {
