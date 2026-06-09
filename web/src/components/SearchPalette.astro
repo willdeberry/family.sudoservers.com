@@ -97,8 +97,12 @@
         </button>
       </li>
     `).join('');
-    // Event delegation: one listener on the UL instead of 30 listeners
-    // rebound per keystroke.
+    Array.from(ul.querySelectorAll<HTMLButtonElement>('.hit-row')).forEach(btn =>
+      btn.addEventListener('click', () => {
+        const id = btn.dataset.id;
+        if (id) selectResult(id);
+      })
+    );
     selected = 0;
     updateSelected();
   }
@@ -135,15 +139,6 @@
       e.preventDefault();
       openPalette();
     }
-  });
-
-  // Single delegated click listener on the results UL (instead of binding 30
-  // listeners per render). Survives across renders so we don't rebind.
-  document.getElementById('search-results')?.addEventListener('click', (e) => {
-    const target = (e.target as HTMLElement).closest('.hit-row') as HTMLElement | null;
-    if (!target) return;
-    const id = target.dataset.id;
-    if (id) selectResult(id);
   });
 
   // Debounce search to one animation frame. Coalesces fast typing into a
