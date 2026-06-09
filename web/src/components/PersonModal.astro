@@ -190,7 +190,10 @@
 
       <div class="border-t border-stone-800 bg-[#171717] px-6 py-3 flex items-center justify-between text-xs text-stone-400">
         <span>ID ${p.id}</span>
-        <a class="text-stone-300 hover:text-amber-300" href="#" id="focus-tree-on">Focus tree on this person →</a>
+        <span class="flex gap-4">
+          <a class="text-stone-300 hover:text-amber-300" href="#" id="trace-to-founder">Trace ancestry to founder →</a>
+          <a class="text-stone-300 hover:text-amber-300" href="#" id="focus-tree-on">Focus tree here →</a>
+        </span>
       </div>
     `
       // Inline component substitutions (server-less)
@@ -222,6 +225,12 @@
       e.preventDefault();
       const ft = (window as any).__familytree;
       if (ft && id) ft.focusOn(id);
+      modal.close();
+    });
+    content.querySelector('#trace-to-founder')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      const ft = (window as any).__familytree;
+      if (ft && id) ft.focusOn(id, { trace: true });
       modal.close();
     });
   }

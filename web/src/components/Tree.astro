@@ -67,10 +67,9 @@ try {
       .setCardYSpacing(160)
       // Limit how many generations render at once. Without these, a focused
       // founder pulls in ~8 generations of descendants (~4,900 nodes) and the
-      // layout pass takes seconds. With the limits the chart renders the
-      // immediate family fast; users can click cards to expand further.
-      .setAncestryDepth(3)
-      .setProgenyDepth(3)
+      // layout pass takes seconds. Users can click cards to expand further.
+      .setAncestryDepth(6)
+      .setProgenyDepth(6)
       .setOrientationVertical();
 
     const card = chart
@@ -121,11 +120,26 @@ try {
       })
     );
 
-    // Expose a way to focus on a person (used by search + modal)
+    // Expose a way to focus on a person (used by search + modal).
+    // `trace: true` lifts the ancestry depth so you can see the chain all
+    // the way back to the founder. The depth resets when you focus on
+    // someone else.
+    const defaultAncestry = 6;
+    const defaultProgeny = 6;
     (window as any).__familytree = {
-      focusOn: (id: string) => {
+      focusOn: (id: string, opts: { trace?: boolean } = {}) => {
         const target = data.find(d => d.id === id);
         if (!target) return;
+        if (opts.trace) {
+          // Tall enough to reach the founder (8 generations from the
+          // deepest gen-8 descendant). Hide progeny so the trace is
+          // just the ancestral line + their immediate family.
+          chart.setAncestryDepth(20);
+          chart.setProgenyDepth(0);
+        } else {
+          chart.setAncestryDepth(defaultAncestry);
+          chart.setProgenyDepth(defaultProgeny);
+        }
         chart.updateMainId(id);
         chart.updateTree({ tree_position: 'main_to_middle' });
       },
