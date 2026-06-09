@@ -136,7 +136,46 @@ for (const p of people) {
 const totalPeople = treeData.length;
 const verifiedCount = people.filter(p => p.verification?.status === 'verified').length;
 
+// Initial-slice for fast first paint. We BFS the founder's neighborhood up to
+// `INITIAL_DEPTH` hops and emit a self-contained subset: each node's rels are
+// rewritten to drop any pointer outside the slice, so family-chart can render
+// it without dangling-ref crashes. The full dataset still ships separately
+// (tree-full.json) and is fetched lazily when the user navigates outside.
+const INITIAL_DEPTH = 4;
+const treeById = new Map(treeData.map(d => [d.id, d]));
+const visited = new Set(['p_000001']);
+let frontier = ['p_000001'];
+for (let depth = 0; depth < INITIAL_DEPTH; depth++) {
+  const next = [];
+  for (const id of frontier) {
+    const node = treeById.get(id);
+    if (!node) continue;
+    for (const nb of [...node.rels.parents, ...node.rels.spouses, ...node.rels.children]) {
+      if (visited.has(nb)) continue;
+      visited.add(nb);
+      next.push(nb);
+    }
+  }
+  frontier = next;
+  if (!frontier.length) break;
+}
+const initialSlice = treeData
+  .filter(d => visited.has(d.id))
+  .map(d => ({
+    id: d.id,
+    data: d.data,
+    rels: {
+      parents: d.rels.parents.filter(x => visited.has(x)),
+      spouses: d.rels.spouses.filter(x => visited.has(x)),
+      children: d.rels.children.filter(x => visited.has(x)),
+    },
+  }));
+
 writeFileSync(resolve(outDir, 'tree.json'), JSON.stringify({
+  meta: { totalPeople, verifiedCount, sliceSize: initialSlice.length },
+  people: initialSlice,
+}));
+writeFileSync(resolve(outDir, 'tree-full.json'), JSON.stringify({
   meta: { totalPeople, verifiedCount },
   people: treeData,
 }));
