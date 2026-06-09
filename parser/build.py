@@ -422,14 +422,39 @@ def build():
         if full:
             name_index.setdefault(full.lower().strip(), []).append(pid)
 
+    def birth_year(person):
+        b = (person.get("birth") or {}).get("dateRaw") or ""
+        m = re.search(r"\b(1[6-9]\d{2}|20\d{2})\b", b)
+        return int(m.group(1)) if m else None
+
     for pid, p in people.items():
         for m in p.get("marriages", []):
             if m.get("spouseId") or not m.get("spouseName"):
                 continue
             key = m["spouseName"].lower().strip()
             matches = name_index.get(key, [])
-            # Require exactly one match AND it shouldn't be self
-            matches = [x for x in matches if x != pid]
+            # Exclude self AND anyone who's already a parent or child of this
+            # person — same-name father/son or mother/daughter pairs are common
+            # and otherwise the auto-linker happily makes Ross Jr his own dad.
+            forbidden = {pid}
+            forbidden.update(p.get("parentIds", []))
+            forbidden.update(p.get("childIds", []))
+            matches = [x for x in matches if x not in forbidden]
+
+            # If we have a spouse birth year from the marriage record, prefer
+            # candidates whose own birth year matches (within a year tolerance).
+            spouse_birth = m.get("_spouseBirth") or ""
+            spouse_year_m = re.search(r"\b(1[6-9]\d{2}|20\d{2})\b", spouse_birth)
+            if spouse_year_m and len(matches) > 0:
+                target_year = int(spouse_year_m.group(1))
+                year_matches = [
+                    x for x in matches
+                    if birth_year(people[x]) is not None
+                    and abs(birth_year(people[x]) - target_year) <= 1
+                ]
+                if year_matches:
+                    matches = year_matches
+
             if len(matches) == 1:
                 m["spouseId"] = matches[0]
 
@@ -564,6 +589,12 @@ def build():
             child = people.get(child_id)
             if not child:
                 continue
+            # Defensive: never make a person their own parent. Same-name
+            # father/son pairs (e.g. Ross Carlton Miller Sr/Jr) used to slip
+            # through here when the auto-linker mis-linked the parent to
+            # the child as a spouse.
+            if primary_sp_id == child_id:
+                continue
             # Already has 2+ parents — skip
             if len(child.get("parentIds", [])) >= 2:
                 continue
@@ -574,6 +605,41 @@ def build():
             sp = people.get(primary_sp_id)
             if sp and child_id not in sp.get("childIds", []):
                 sp["childIds"].append(child_id)
+
+    # Integrity sweep: family-chart will infinite-loop on self-references or
+    # bidirectional parent/child links. Drop any that slipped past the guards
+    # above (most commonly from auto-link mis-matches we couldn't catch).
+    self_refs_removed = 0
+    cycles_removed = 0
+    for pid, p in people.items():
+        if pid in p.get("parentIds", []):
+            p["parentIds"] = [x for x in p["parentIds"] if x != pid]
+            self_refs_removed += 1
+        if pid in p.get("childIds", []):
+            p["childIds"] = [x for x in p["childIds"] if x != pid]
+            self_refs_removed += 1
+    # Bidirectional A↔B parent/child: keep only one direction, decided by
+    # who has the lower-numbered (older) pid. Father is usually p_NN < child's pid.
+    for pid, p in people.items():
+        for child_id in list(p.get("childIds", [])):
+            child = people.get(child_id)
+            if not child:
+                continue
+            if pid in child.get("childIds", []):
+                # Pick the parent: the one with the smaller pid wins
+                parent_pid = min(pid, child_id)
+                child_pid = max(pid, child_id)
+                people[parent_pid]["childIds"] = [
+                    x for x in people[parent_pid]["childIds"] if x != parent_pid
+                ]
+                # Remove the wrong-way edge: parent_pid as child of child_pid
+                if parent_pid in people[child_pid].get("childIds", []):
+                    people[child_pid]["childIds"].remove(parent_pid)
+                if child_pid in people[parent_pid].get("parentIds", []):
+                    people[parent_pid]["parentIds"].remove(child_pid)
+                cycles_removed += 1
+    if self_refs_removed or cycles_removed:
+        print(f"Integrity sweep: removed {self_refs_removed} self-refs, {cycles_removed} cycles")
 
     # Clean: remove None-valued fields for compactness
     output_people = []
