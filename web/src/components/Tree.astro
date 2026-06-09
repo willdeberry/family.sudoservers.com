@@ -91,10 +91,11 @@ try {
     const card = chart
       .setCardSvg()
       .setCardDisplay([['full name'], ['lifespan']])
-      // Disabled: minitree renders a small expandable icon per card, costing
-      // extra SVG nodes per render. Save the work — depth limits already give
-      // users a way to expand.
-      .setMiniTree(false)
+      // setMiniTree renders the small expand-arrow on cards that have hidden
+      // relations (children/parents past the depth limit). Without it there's
+      // no way to expand a node's children inline — the only navigation is
+      // click-to-recenter via the modal.
+      .setMiniTree(true)
       .setCardDim({
         width: 250,
         height: 70,
