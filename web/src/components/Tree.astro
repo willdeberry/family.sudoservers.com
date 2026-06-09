@@ -107,8 +107,17 @@ try {
         text_y: 24,
       });
 
-    card.setOnCardClick((_e: MouseEvent, d: any) => {
+    card.setOnCardClick((e: MouseEvent, d: any) => {
       const id = d.data.id;
+      // Shift-click (or alt-click) recenters the chart on this card without
+      // opening the modal — a quick way to navigate. Plain click opens modal
+      // as before. The small expand-arrow icon on cards (rendered by
+      // family-chart when there are off-screen relations) also recenters.
+      if (e.shiftKey || e.altKey) {
+        const ft = (window as any).__familytree;
+        if (ft) ft.focusOn(id);
+        return;
+      }
       window.dispatchEvent(
         new CustomEvent('familytree:open-person', { detail: { id } })
       );
