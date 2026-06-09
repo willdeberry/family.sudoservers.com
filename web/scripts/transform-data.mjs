@@ -74,17 +74,14 @@ const treeData = people.map(p => {
     .map(m => m.spouseId)
     .filter(Boolean);
 
-  // family-chart is a tree layout, not a DAG. If we hand it both biological
-  // parents for every person, any pedigree-collapse case (descendants of
-  // two cousins marrying, etc.) makes the shared ancestors get drawn
-  // multiple times. Keep only the lineage-code parent here; the other
-  // parent still appears in the tree because the chart renders spouses
-  // adjacent at the parent level, and children visually connect to both.
-  // parentIds[0] is the lineage-code parent (added first by build.py's
-  // second pass); any extras are the spouse co-parent links we add later.
-  const parents = (p.parentIds || [])
-    .filter(id => byId.has(id))
-    .slice(0, 1);
+  // Ship both biological parents. family-chart needs both ids on the child
+  // so its hierarchyGetterParents pulls them BOTH up as ancestors (couples
+  // render adjacent only when both walked up the ancestry tree). If we ship
+  // only one, ancestors render solo because the chart's setupSpouses skips
+  // ancestry-side nodes. Pedigree collapse (cousin marriages → same ancestor
+  // reached via multiple paths) is handled by setDuplicateBranchToggle(true)
+  // on the chart, which collapses converging hierarchy branches.
+  const parents = (p.parentIds || []).filter(id => byId.has(id));
   const children = (p.childIds || []).filter(id => byId.has(id));
 
   const birthYear = isoYear(p.birth);
