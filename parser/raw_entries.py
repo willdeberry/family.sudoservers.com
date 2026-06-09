@@ -8217,7 +8217,7 @@ ENTRIES.append({
     "sex": "F",
     "born": "29 Nov 1916",
     "died": "11 Sep 1978",
-    "spouses": [{"name": "Ivon Theodore Spiker", "born": "12 Dec 1910", "died": "17 Apr 1978", "married": "14 Sep 1935", "details": "Same as #17112."}],
+    "spouses": [{"name": "Ivon Theadore Spiker", "born": "12 Dec 1910", "died": "17 Apr 1978", "married": "14 Sep 1935", "details": "Same as #17112."}],
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 57},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [

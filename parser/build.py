@@ -232,8 +232,17 @@ def build():
             if src_record not in p["sources"]:
                 p["sources"].append(src_record)
 
-        # Spouses → marriages
+        # Spouses → marriages. Dedupe: when SEE_REF merges two entries for the
+        # same person, both may carry the same marriage. Skip if we've already
+        # added a marriage with the same spouse name (case-insensitive).
+        existing_spouse_names = {
+            (m.get("spouseName") or "").lower().strip()
+            for m in p["marriages"]
+        }
         for sp in entry.get("spouses", []):
+            sp_name = (sp.get("name") or "").lower().strip()
+            if sp_name and sp_name in existing_spouse_names:
+                continue
             marriage = {
                 "spouseId": None,  # filled in pass 2 if spouse exists in dataset
                 "spouseName": sp.get("name"),
@@ -253,6 +262,7 @@ def build():
             marriage["date"] = iso
             marriage["dateRaw"] = raw
             p["marriages"].append(marriage)
+            existing_spouse_names.add(sp_name)
 
     # Post-pass: ensure SEE_REF codes both land in lineageCodes (even if only
     # one side had a full entry — the SEE_REF itself is the assertion).
@@ -422,6 +432,57 @@ def build():
             matches = [x for x in matches if x != pid]
             if len(matches) == 1:
                 m["spouseId"] = matches[0]
+
+    # Materialize spouses as Person records. Every named spouse that doesn't
+    # already correspond to an existing person becomes a synthetic node so the
+    # family-chart can render them. They get a lineageCode like "1224312-sp1"
+    # so we can distinguish them from natural-born family members. Symmetric:
+    # the materialized spouse gets a back-reference to this marriage.
+    spouse_counter = 0
+    for pid in list(people.keys()):
+        p = people[pid]
+        for idx, m in enumerate(p.get("marriages", [])):
+            if m.get("spouseId"):
+                continue
+            spouse_name = m.get("spouseName")
+            if not spouse_name:
+                continue
+            spouse_counter += 1
+            sp_pid = f"sp_{spouse_counter:06d}"
+            primary_code = (p.get("lineageCodes") or ["?"])[0]
+            spouse_code = f"{primary_code}-sp{idx+1}"
+            ensure_person(sp_pid, spouse_code)
+            sp_person = people[sp_pid]
+            sp_person["name"] = split_name(spouse_name)
+            # Infer sex as opposite of primary person
+            if p.get("sex") == "M":
+                sp_person["sex"] = "F"
+            elif p.get("sex") == "F":
+                sp_person["sex"] = "M"
+            if m.get("_spouseBirth"):
+                sp_person["birth"] = make_lifeevent(m["_spouseBirth"])
+            if m.get("_spouseDeath"):
+                sp_person["death"] = make_lifeevent(m["_spouseDeath"])
+            if m.get("_spouseBuried"):
+                sp_person["burial"] = {"place": m["_spouseBuried"]}
+            sp_person["sources"] = list(p.get("sources") or [])
+            sp_person["verification"] = {
+                "status": "verified",
+                "source": "vision",
+                "lastChecked": p.get("verification", {}).get("lastChecked"),
+                "notes": f"Materialized spouse of {primary_code}; data from that entry's spouses array.",
+            }
+            # Mirror marriage on the spouse's side
+            sp_person["marriages"].append({
+                "spouseId": pid,
+                "spouseName": (p.get("name") or {}).get("full"),
+                "date": m.get("date"),
+                "dateRaw": m.get("dateRaw"),
+                "place": m.get("place"),
+                "marriageOrder": m.get("marriageOrder"),
+                "notes": m.get("notes"),
+            })
+            m["spouseId"] = sp_pid
 
     # Clean: remove None-valued fields for compactness
     output_people = []
