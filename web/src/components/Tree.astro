@@ -86,6 +86,13 @@ try {
       // layout pass takes seconds. Users can click cards to expand further.
       .setAncestryDepth(6)
       .setProgenyDepth(6)
+      // Pedigree collapse: this dataset has lots of intra-family marriages
+      // (first-cousin marriages, descendants of two siblings marrying each
+      // other, the 122 DeBerry x 17xx Nicola lines crossing repeatedly).
+      // Without this, an ancestor reached through multiple paths gets drawn
+      // multiple times. Enabling the toggle puts a small button on the
+      // duplicates so you can collapse them down to a single instance.
+      .setDuplicateBranchToggle(true)
       .setOrientationVertical();
 
     const card = chart
