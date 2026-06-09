@@ -285,6 +285,69 @@ SEE_REFS = [
     {"codes": ["A45622", "1321572"], "reason": "Meghan Cortney Cupp — Alexander/John cross"},
     {"codes": ["A45671", "13F7271"], "reason": "Jennifer Dawn Cupp — Alexander/John cross"},
     {"codes": ["A45672", "13F7272"], "reason": "Tiffany Jo Reckart — Alexander/John cross"},
+
+    # === Final pass: 38 duplicate clusters found by name+birth-date matching ===
+
+    # DeBerry / Shea cross-marriage (Kermit Nelson DeBerry 122431 = 171341)
+    {"codes": ["1224311", "1713411"], "reason": "Michael Nelson DeBerry — DeBerry/Shea cross"},
+    {"codes": ["1224312", "1713412"], "reason": "William (Teddy) Dale DeBerry — DeBerry/Shea cross"},
+    {"codes": ["12243111", "17134111"], "reason": "Jennifer Leanne DeBerry — DeBerry/Shea cross"},
+    {"codes": ["12243112", "17134112"], "reason": "Melissa Sue DeBerry — DeBerry/Shea cross"},
+    {"codes": ["12243121", "17134121"], "reason": "William Dale DeBerry Jr. — DeBerry/Shea cross"},
+
+    # Narivanchik cross-coding (Theodore/Paul/Linda Narivanchik = 164111-113 / 1443111-113)
+    {"codes": ["164112", "1443112"], "reason": "Paul Joseph Narivanchik — Narivanchik cross"},
+    {"codes": ["164113", "1443113"], "reason": "Linda Mae Narivanchik — Narivanchik cross"},
+    {"codes": ["1641112", "14431112"], "reason": "Theodore Ralph Narivanchik Jr. — Narivanchik cross"},
+    {"codes": ["1641113", "14431113"], "reason": "William Ralph Narivanchik — Narivanchik cross"},
+    {"codes": ["1641121", "14431121"], "reason": "Kara Elizabeth Sonntag — Narivanchik cross"},
+    {"codes": ["1641122", "14431122"], "reason": "Alicia Marie Sonntag — Narivanchik cross"},
+    {"codes": ["1641123", "14431123"], "reason": "Adam Edward Sonntag — Narivanchik cross"},
+    {"codes": ["1641131", "14431131"], "reason": "Robert Joseph Yingling III — Narivanchik cross"},
+    {"codes": ["1641132", "14431132"], "reason": "Kimberlie Mae Edwards — Narivanchik cross"},
+
+    # Jeremiah Guthrie's line — gen 4 children of 74=172 (James/John cross)
+    {"codes": ["743", "1723"], "reason": "Hattie Guthrie — Jeremiah's daughter; James/John cross"},
+
+    # Hattie's daughter Emma Harshbarger appears under three codes
+    {"codes": ["1662", "17232"], "reason": "Emma Harshbarger — Hattie's daughter; James/John cross"},
+    {"codes": ["1661", "17231"], "reason": "Homer Loid Harshbarger — same family"},
+    {"codes": ["1663", "17233"], "reason": "Jeremiah Joseph Harshbarger — same"},
+    {"codes": ["1664", "17234"], "reason": "David Harshbarger — same"},
+
+    # Spiker cross-coding (children of Laura Guthrie 17xx and via the cross-marriage)
+    {"codes": ["7651", "17131"], "reason": "Ralph Ersel Spiker — James/John cross"},
+    {"codes": ["7656", "17136"], "reason": "Ruth Virginia Spiker — James/John cross"},
+
+    # Ward Barnes Guthrie's children: 113311-113314 = 72341-72344 via Ward+Laura marriage
+    {"codes": ["113312", "72342"], "reason": "Samuel Fleming Guthrie — Ward+Laura's child"},
+    {"codes": ["113313", "72343"], "reason": "Ward David Guthrie — same"},
+    {"codes": ["113314", "72344"], "reason": "Stephen Byron Guthrie — same"},
+
+    # Cupp/Frankhouser cross-marriage: 13F72 (Mary Jean Guthrie) m. A456 (Martin Luther Cupp)
+    {"codes": ["13F721", "A4561"], "reason": "Martin Edward Cupp — Cupp/Guthrie cross"},
+    {"codes": ["13F722", "A4562"], "reason": "Roger Lee Cupp — same"},
+    {"codes": ["13F723", "A4563"], "reason": "James Melvin Cupp — same"},
+    {"codes": ["13F724", "A4564"], "reason": "Marvin Dale Cupp — same"},
+    {"codes": ["13F726", "A4566"], "reason": "Richard Glenn Cupp — same"},
+    {"codes": ["13F727", "A4567"], "reason": "Sharon Louise Cupp — same"},
+
+    # Nicola cross-marriage: 1442 (Chester Martin Nicola family) intersects 1731
+    {"codes": ["14422", "17312"], "reason": "Chester Martin Nicola — Nicola cross"},
+    {"codes": ["14421", "17311"], "reason": "Infant Son (b. 22 Aug 1909) — same"},
+
+    # Lawson/Collins cross (Sheldon Lawson's daughter Tammie m. Collins)
+    {"codes": ["1434122", "12332112"], "reason": "Tammie Sue Collins — Collins cross"},
+
+    # Other surviving duplicates from name+date match:
+    {"codes": ["166312", "1713312"], "reason": "Patricia Ann Summers — cross-coded"},
+    {"codes": ["16454", "16455"], "reason": "Infant Daughter Fresh — OCR code variant"},
+    # NOTE: 14851 and 14891 both named "Delbert Guthrie" born 8 Jun 1928 but
+    # have different parents (Bessie 1485 vs Helen 1489) — likely two
+    # different cousins with the same name and birth date, not duplicates.
+    # Removed the SEE_REF that was treating them as one person.
+    {"codes": ["74C", "172C"], "reason": "Infant son (Jeremiah's, b. 1 Jun 1902) — James/John cross"},
+    {"codes": ["1663121", "17133121"], "reason": "Chad David Summers — Harshbarger/Spiker cross"},
 ]
 
 # ---------------------------------------------------------------------------
