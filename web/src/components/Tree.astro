@@ -1,4 +1,18 @@
 ---
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+// Compute the people count at build time so the loading text is always
+// accurate. Reads the same tree.json the client fetches.
+const treePath = resolve(fileURLToPath(import.meta.url), '..', '..', '..', 'public', 'data', 'tree.json');
+let peopleCount: string;
+try {
+  const tree = JSON.parse(readFileSync(treePath, 'utf-8'));
+  peopleCount = tree.length.toLocaleString('en-US');
+} catch {
+  peopleCount = '';
+}
 ---
 
 <!-- The tree mounts into this container -->
@@ -16,7 +30,7 @@
         <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
         <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.4 0 0 5.4 0 12h4z"></path>
       </svg>
-      <span class="text-sm">Loading 1,351 people…</span>
+      <span class="text-sm">Loading {peopleCount} people…</span>
     </div>
   </div>
 </div>
