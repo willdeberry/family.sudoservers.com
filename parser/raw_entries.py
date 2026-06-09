@@ -2162,7 +2162,7 @@ ENTRIES.append({
     "born": "11 Sep 1854",
     "died": "30 Jul 1932",
     "spouses": [
-        {"name": "Susan Elizabeth Guthrie", "born": "1867", "died": "15 Apr 1886",
+        {"name": "Susie Elizabeth Guthrie", "born": "1867", "died": "15 Apr 1886",
          "married": "25 Aug 1881", "order": 1,
          "details": "Same as #191 — daughter of his uncle Peter Guthrie (#19). First-cousin marriage."},
         {"name": "Jane Harden", "born": "15 Jan 1865", "married": "1886", "order": 2},
@@ -2940,8 +2940,8 @@ ENTRIES.append({
     "born": "1891",
     "died": "24 Nov 1970",
     "spouses": [
-        {"name": "Edna ---", "married": "1914", "order": 1},
-        {"name": "Ethel ---", "born": "1903", "order": 2},
+        {"name": "Edna", "married": "1914", "order": 1},
+        {"name": "Ethel", "born": "1903", "order": 2},
     ],
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 23},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
@@ -3510,9 +3510,9 @@ ENTRIES.append({
     "spouses": [
         {"name": "Helen Younkin", "born": "27 Feb 1907", "died": "6 Feb 1969",
          "married": "18 Jun 1930", "order": 1},
-        {"name": "Mary Cupp Summers", "born": "1 Oct 1912", "married": "5 Feb 1970",
+        {"name": "Mary Virginia Cupp", "born": "1 Oct 1912", "married": "5 Feb 1970",
          "order": 2,
-         "details": "Same as #A454 in Alexander's branch. Daughter of Melvin R. and Alice Pearl [Frankhouser] Cupp."},
+         "details": "Same as #A454 in Alexander's branch. Daughter of Melvin R. and Alice Pearl [Frankhouser] Cupp. (Listed as 'Mary Cupp Summers' in some sources — Summers was her first married name.)"},
     ],
     "notes": "His second marriage links James↔Alexander.",
     "source": {"pdf": "James_Guthrie - Seven Generations.pdf", "page": 2},
@@ -5627,7 +5627,7 @@ ENTRIES.append({
     "born": "2 Apr 1881",
     "died": "3 Mar 1964",
     "spouses": [
-        {"name": "Susannah Thomas", "born": "31 Jan 1881", "died": "23 Aug 1929", "married": "21 May 1903",
+        {"name": "Susannah A. Thomas", "born": "31 Jan 1881", "died": "23 Aug 1929", "married": "21 May 1903",
          "details": "Same as #1442 — daughter of Barbara Ellen Guthrie #144.", "order": 1},
         {"name": "Martha (Matt) Bishoff Ringer", "born": "14 Sep 1866", "died": "29 Dec 1944", "married": "6 May 1932",
          "details": "Widow of Noah Ringer.", "order": 2},
@@ -12288,7 +12288,7 @@ ENTRIES.append({
     "sex": "M",
     "born": "30 Dec 1953",
     "spouses": [
-        {"name": "Darlene Louise Movers", "born": "24 Feb 1959", "married": "7 Jul 1979", "order": 1},
+        {"name": "Darlene Louise Moyers", "born": "24 Feb 1959", "married": "7 Jul 1979", "order": 1},
         {"name": "Joyce Casteel", "order": 2},
     ],
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 94},
@@ -20141,7 +20141,7 @@ ENTRIES.append({
     "sex": "M",
     "born": "12 Nov 1952",
     "spouses": [
-        {"name": "Gwendlyn Redeem Sheppard", "born": "31 Oct 1939", "married": "17 May 1975", "order": 1},
+        {"name": "Gwendlyn Redeen Sheppard", "born": "31 Oct 1949", "married": "17 May 1975", "order": 1},
         {"name": "Sandra Lynn Wolfe", "order": 2},
     ],
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 139},
