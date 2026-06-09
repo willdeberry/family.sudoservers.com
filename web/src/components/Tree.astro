@@ -122,8 +122,8 @@ try {
 
     // Expose a way to focus on a person (used by search + modal).
     // `trace: true` lifts the ancestry depth so you can see the chain all
-    // the way back to the founder. The depth resets when you focus on
-    // someone else.
+    // the way back to the founder, and zooms out to fit the whole chain in
+    // the viewport. The defaults reset when you focus on someone else.
     const defaultAncestry = 6;
     const defaultProgeny = 6;
     (window as any).__familytree = {
@@ -131,17 +131,19 @@ try {
         const target = data.find(d => d.id === id);
         if (!target) return;
         if (opts.trace) {
-          // Tall enough to reach the founder (8 generations from the
-          // deepest gen-8 descendant). Hide progeny so the trace is
-          // just the ancestral line + their immediate family.
-          chart.setAncestryDepth(20);
+          // 50 is overkill (the dataset is 9 generations deep) but cheap.
+          chart.setAncestryDepth(50);
           chart.setProgenyDepth(0);
+          chart.updateMainId(id);
+          // 'fit' zooms out so the founder, way up at the top, is visible
+          // alongside the focused descendant at the bottom.
+          chart.updateTree({ tree_position: 'fit' });
         } else {
           chart.setAncestryDepth(defaultAncestry);
           chart.setProgenyDepth(defaultProgeny);
+          chart.updateMainId(id);
+          chart.updateTree({ tree_position: 'main_to_middle' });
         }
-        chart.updateMainId(id);
-        chart.updateTree({ tree_position: 'main_to_middle' });
       },
       fit: () => chart.updateTree({ tree_position: 'fit' }),
     };
