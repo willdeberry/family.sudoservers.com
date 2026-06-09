@@ -16,6 +16,19 @@
   <div class="flex-1"></div>
 
   <button
+    id="nav-back"
+    type="button"
+    disabled
+    title="Back (Backspace)"
+    class="hidden items-center gap-1.5 rounded-md border border-stone-700 bg-stone-800 px-2.5 py-1.5 text-sm text-stone-400 hover:border-stone-600 hover:bg-stone-700 hover:text-stone-200 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-stone-800 disabled:hover:text-stone-400 sm:flex"
+  >
+    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+    </svg>
+    <span>Back</span>
+  </button>
+
+  <button
     id="search-trigger"
     type="button"
     class="group flex items-center gap-2 rounded-md border border-stone-700 bg-stone-800 px-3 py-1.5 text-sm text-stone-400 hover:border-stone-600 hover:bg-stone-700 hover:text-stone-200"
@@ -44,5 +57,12 @@
     if (elTotal) elTotal.textContent = `${total.toLocaleString()} people`;
     if (elVerified) elVerified.textContent = `${verified}`;
     document.getElementById('stats-pill')?.classList.remove('hidden');
+  });
+
+  const backBtn = document.getElementById('nav-back') as HTMLButtonElement | null;
+  backBtn?.addEventListener('click', () => (window as any).__familytree?.back());
+  document.addEventListener('familytree:nav', (e: any) => {
+    if (!backBtn) return;
+    backBtn.disabled = !e.detail.canGoBack;
   });
 </script>

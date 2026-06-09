@@ -121,7 +121,11 @@ try {
             seenInTree.add(id);
             kept.push(c);
           }
-          node.children = kept;
+          // d3.tree's firstWalk does `if (children)` and then reads
+          // `children[0].z`, so an empty array crashes the layout. Drop
+          // the property entirely instead.
+          if (kept.length === 0) delete node.children;
+          else node.children = kept;
           for (const c of kept) queue.push(c);
         }
         // family-chart's setupSpouses (called later) reads d.data.rels.spouses
@@ -276,6 +280,43 @@ try {
       }
     }, 100);
 
+    // Focus history. Each recenter (search, modal "Focus tree", shift-click,
+    // family-chart's own mini-tree expand arrow, etc.) pushes the previous
+    // main_id so back() can return to it. Family-chart has its own
+    // main_id_history but it dedupes — going A→B→A→C leaves history without
+    // a way to return to A from C without oscillating, so we keep our own.
+    const backStack: string[] = [];
+    const BACK_STACK_MAX = 50;
+    let suppressNextPush = false;
+    // Seed lastMainId from the initial render that already completed, so
+    // the first focusOn after page load correctly pushes the founder onto
+    // the back stack (rather than discarding it as "null").
+    let lastMainId: string | null = chart.store.state.main_id;
+
+    chart.beforeUpdate = () => {
+      const currentMain = chart.store.state.main_id;
+      if (lastMainId && currentMain && lastMainId !== currentMain) {
+        if (suppressNextPush) {
+          suppressNextPush = false;
+        } else {
+          backStack.push(lastMainId);
+          if (backStack.length > BACK_STACK_MAX) backStack.shift();
+        }
+      }
+      lastMainId = currentMain;
+    };
+
+    function emitNav() {
+      document.dispatchEvent(new CustomEvent('familytree:nav', {
+        detail: { canGoBack: backStack.length > 0 },
+      }));
+    }
+    const prevAfterUpdate = chart.afterUpdate;
+    chart.afterUpdate = (props: any) => {
+      prevAfterUpdate?.(props);
+      emitNav();
+    };
+
     (window as any).__familytree = {
       focusOn: async (id: string, opts: { trace?: boolean } = {}) => {
         // Make sure the focus target (and its neighborhood) is loaded.
@@ -299,8 +340,36 @@ try {
           chart.updateTree({ tree_position: 'main_to_middle' });
         }
       },
+      back: () => {
+        if (!backStack.length) return false;
+        const prev = backStack.pop()!;
+        suppressNextPush = true;
+        // Always restore the default depth on back — the previous focus may
+        // have been a trace mode (ancestry=50, progeny=0), which would
+        // otherwise stick around and warp the parent view.
+        chart.setAncestryDepth(defaultAncestry);
+        chart.setProgenyDepth(defaultProgeny);
+        chart.updateMainId(prev);
+        chart.updateTree({ tree_position: 'main_to_middle' });
+        return true;
+      },
+      canGoBack: () => backStack.length > 0,
       fit: () => chart.updateTree({ tree_position: 'fit' }),
     };
+
+    // Backspace = go back, when no input/textarea is focused and neither
+    // the search palette nor the person modal is open (so users can still
+    // erase characters and close-on-Esc keeps working).
+    window.addEventListener('keydown', (e) => {
+      if (e.key !== 'Backspace') return;
+      const tgt = e.target as HTMLElement | null;
+      if (tgt?.matches('input, textarea, select, [contenteditable="true"]')) return;
+      const modal = document.getElementById('person-modal') as HTMLDialogElement | null;
+      const palette = document.getElementById('search-palette') as HTMLDialogElement | null;
+      if (modal?.open || palette?.open) return;
+      e.preventDefault();
+      (window as any).__familytree?.back();
+    });
 
     // Re-fit if the window resizes (e.g., devtools toggled). Defer attaching
     // the listener so the resize handler doesn't compete with initial paint.
