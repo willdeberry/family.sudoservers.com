@@ -58,12 +58,11 @@ const cards = await page.evaluate(() => {
   return out.sort((a, b) => a.y - b.y || a.x - b.x);
 });
 
-console.log('\nVisible cards (sorted by y then x):');
+console.log('\nAll cards (H = hidden / placeholder):');
 for (const c of cards) {
-  if (c.hidden) continue;
   console.log(
     `  y=${String(Math.round(c.y)).padStart(6)} x=${String(Math.round(c.x)).padStart(6)} ` +
-    `${c.isMain ? '★' : ' '} ${c.isAncestry ? 'a' : ' '} ${c.hasSpouse ? 's' : ' '} ` +
+    `${c.isMain ? '★' : ' '} ${c.isAncestry ? 'a' : ' '} ${c.hasSpouse ? 's' : ' '} ${c.hidden ? 'H' : ' '} ` +
     `${c.name.slice(0, 50)}`
   );
 }

@@ -100,25 +100,14 @@ try {
       // layout pass takes seconds. Users can click cards to expand further.
       .setAncestryDepth(6)
       .setProgenyDepth(6)
-      // Collapse pedigree-collapse cases (a single ancestor reached via
-      // two child paths from a cousin marriage). Without this, family-chart
-      // happily draws the same John+Elizabeth couple twice with half the
-      // children under each. With it, the converging branch is detected and
-      // one copy is closed off (toggle-able by the user).
       .setDuplicateBranchToggle(true)
-      // De-duplicate the d3 hierarchy before layout. The built-in
-      // duplicate_branch_toggle only catches matching (p1, p2) couples; it
-      // misses the common case where two cousins (each separately descended
-      // from the focused person) marry — both render as descendants, AND
-      // each appears as the other's synth spouse, AND their shared kids
-      // render under both real-descendant parents. We walk BFS and keep
-      // the first occurrence of each person.id; later copies have their
-      // children trimmed so the lineage isn't re-walked twice.
       .setModifyTreeHierarchy((root: any, isAncestry: boolean) => {
-        // Walk the d3 hierarchy BFS, keeping only the first occurrence of
-        // each person and trimming all later subtrees that re-encounter
-        // someone already placed. This collapses cousin-marriage cases
-        // where the same descendant is reachable via two child paths.
+        // On the ancestry side, defer to family-chart's own duplicate
+        // handling (enabled by setDuplicateBranchToggle above): it places
+        // a clickable C1/C2 toggle on cards whose ancestry path is shared
+        // with another card, so the user can flip which branch is shown
+        // instead of having one silently severed.
+        if (isAncestry) return;
         const seenInTree = new Set<string>();
         seenInTree.add(root.data.id);
         const queue: any[] = [root];
@@ -135,15 +124,13 @@ try {
           node.children = kept;
           for (const c of kept) queue.push(c);
         }
-        if (isAncestry) return;
         // family-chart's setupSpouses (called later) reads d.data.rels.spouses
         // and synthesizes a spouse card next to every non-ancestry node.
         // For cousin marriages where BOTH partners are descendants, this
         // produces a synth duplicate of a person we already placed as a
-        // real descendant. Trim those redundant spouse ids; we restore
-        // them in chart.afterUpdate so subsequent recenters see the full
-        // spouse list. mutating in place is safe because spouses arrays
-        // are arrays of strings, not shared references.
+        // real descendant. Trim those redundant spouse ids; restore them
+        // in chart.afterUpdate so subsequent recenters see the full
+        // spouse list.
         savedSpouseLists.clear();
         for (const node of [root, ...allDescendants(root)]) {
           const id = node.data.id;
