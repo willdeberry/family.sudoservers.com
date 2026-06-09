@@ -370,6 +370,26 @@ def build():
                     "notes": "Stub from parent's children list. PDF's own line for this person not yet transcribed — may contain marriage/death/children data not captured here.",
                 }
 
+    # Re-run the parent/child code-prefix linkage now that pass 3 has added
+    # children-list stubs to code_to_pid. Without this, a grandchild whose
+    # immediate parent is a stub (e.g. 71721 whose parent 7172 only exists as
+    # a verified_terminal child of 717) would never get its parent link.
+    all_codes = set(code_to_pid.keys())
+    for code in all_codes:
+        pcode = parent_code(code)
+        if not pcode or pcode not in code_to_pid:
+            continue
+        child_pid = code_to_pid[code]
+        parent_pid = code_to_pid[pcode]
+        if child_pid == parent_pid:
+            continue
+        ensure_person(child_pid, code)
+        ensure_person(parent_pid, pcode)
+        if parent_pid not in people[child_pid]["parentIds"]:
+            people[child_pid]["parentIds"].append(parent_pid)
+        if child_pid not in people[parent_pid]["childIds"]:
+            people[parent_pid]["childIds"].append(child_pid)
+
     # Sort child IDs by their lineage code so birth order is preserved
     pid_to_code = {pid: code for code, pid in code_to_pid.items()
                    if canonical_code.get(code) == code}

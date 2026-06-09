@@ -3061,6 +3061,43 @@ ENTRIES.append({
     "spouses": [{"name": "Truman Elsworth Frazee", "born": "1868", "died": "9 May 1942", "married": "19 Dec 1895"}],
     "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 2},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Direct PDF read confirmed name+dates."},
+    "children": [
+        {"code": "A211", "name": "Asa Ralph Frazee", "born": "17 Dec 1896"},
+        {"code": "A212", "name": "Walter Guthrie Frazee", "born": "18 Oct 1898", "died": "19 Oct 1988"},
+        {"code": "A213", "name": "Frank Clark Frazee", "born": "4 Aug 1902"},
+        {"code": "A214", "name": "Carrie Elizabeth Frazee", "born": "27 Sep 1906", "died": "6 May 1996"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A212",
+    "name": "Walter Guthrie Frazee",
+    "sex": "M",
+    "born": "18 Oct 1898",
+    "died": "19 Oct 1988",
+    "buried": "Shady Grove",
+    "spouses": [{"name": "Ila Roberta Evans", "born": "17 Aug 1909", "died": "29 May 1978", "married": "11 Apr 1936", "details": "dau of Owen C. & Cora B. [Umbel] Evans"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A2121", "name": "Norma Ruth Frazee", "born": "30 Aug 1938"},
+        {"code": "A2122", "name": "Glenna Belle Frazee", "born": "15 Dec 1940"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "A214",
+    "name": "Carrie Elizabeth Frazee",
+    "sex": "F",
+    "born": "27 Sep 1906",
+    "died": "6 May 1996",
+    "spouses": [{"name": "Carlus Franklin Shaffer", "born": "20 Jul 1910", "married": "20 Sep 1941", "details": "son of Ami & Mary [Jones] Shaffer"}],
+    "source": {"pdf": "Alexander_Guthrie - Five Generations.pdf", "page": 4},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": None},
+    "children": [
+        {"code": "A2141", "name": "Darwin Roy Shaffer", "born": "8 Aug 1944", "verified_terminal": True, "details": "m. 3 Aug 1985 Patricia Rae Thomas Lawrence"},
+        {"code": "A2142", "name": "Wendell E. Shaffer", "born": "14 May 1949", "died": "20 Oct 1949", "verified_terminal": True, "flags": {"diedInInfancy": True}},
+    ],
 })
 
 ENTRIES.append({
