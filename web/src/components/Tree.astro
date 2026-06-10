@@ -427,7 +427,8 @@ try {
       if (tgt?.matches('input, textarea, select, [contenteditable="true"]')) return;
       const modal = document.getElementById('person-modal') as HTMLDialogElement | null;
       const palette = document.getElementById('search-palette') as HTMLDialogElement | null;
-      if (modal?.open || palette?.open) return;
+      const suggestion = document.getElementById('suggestion-modal') as HTMLDialogElement | null;
+      if (modal?.open || palette?.open || suggestion?.open) return;
       e.preventDefault();
       (window as any).__familytree?.back();
     });

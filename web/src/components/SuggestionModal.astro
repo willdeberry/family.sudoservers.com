@@ -1,0 +1,233 @@
+---
+const clientId = import.meta.env.PUBLIC_GOOGLE_CLIENT_ID || '';
+---
+
+<dialog
+  id="suggestion-modal"
+  class="m-auto w-[min(560px,calc(100vw-2rem))] rounded-xl border border-stone-700 bg-[#1f1f1f] p-0 text-stone-100 shadow-2xl backdrop:bg-black/60 backdrop:backdrop-blur-sm"
+>
+  <form id="suggestion-form" class="flex flex-col gap-4 p-6">
+    <div class="flex items-start justify-between">
+      <div>
+        <h2 class="text-lg font-semibold">Suggest an addition</h2>
+        <p class="mt-1 text-sm text-stone-400">
+          Spotted a missing person, wrong date, or new source? Sign in with
+          Google so we can credit the suggestion, and we'll review it before
+          merging.
+        </p>
+      </div>
+      <button
+        type="button"
+        id="suggestion-close"
+        class="rounded p-1 text-stone-400 hover:bg-stone-800 hover:text-stone-200"
+        aria-label="Close"
+      >
+        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6l12 12M18 6L6 18" />
+        </svg>
+      </button>
+    </div>
+
+    <div id="suggestion-signin" class="flex flex-col items-start gap-2">
+      <span class="text-xs uppercase tracking-wide text-stone-500">Step 1 · Sign in</span>
+      <div id="g_id_onload"
+        data-client_id={clientId}
+        data-callback="onSuggestionSignIn"
+        data-auto_select="false"
+        data-ux_mode="popup"></div>
+      <div class="g_id_signin" data-type="standard" data-theme="filled_black" data-size="large" data-text="signin_with"></div>
+      <p id="suggestion-signin-error" class="hidden text-xs text-red-400"></p>
+    </div>
+
+    <div id="suggestion-signed-in" class="hidden flex-col gap-3">
+      <div class="flex items-center justify-between rounded-md border border-stone-700 bg-stone-800 px-3 py-2 text-sm">
+        <span>
+          Signed in as <span id="suggestion-user" class="font-medium text-stone-100"></span>
+        </span>
+        <button type="button" id="suggestion-signout" class="text-xs text-stone-400 hover:text-stone-200 underline">
+          Use a different account
+        </button>
+      </div>
+
+      <label class="flex flex-col gap-1 text-sm">
+        <span class="text-stone-300">Subject <span class="text-red-400">*</span></span>
+        <input
+          required
+          name="subject"
+          maxlength="200"
+          placeholder="e.g. Add death date for Charles Allen DeBerry"
+          class="rounded-md border border-stone-700 bg-stone-900 px-3 py-2 text-stone-100 placeholder-stone-500 focus:border-amber-500 focus:outline-none"
+        />
+      </label>
+
+      <label class="flex flex-col gap-1 text-sm">
+        <span class="text-stone-300">
+          Related person ID
+          <span class="text-stone-500">(optional, e.g. <code>p_001234</code>)</span>
+        </span>
+        <input
+          name="personId"
+          pattern="^(p|sp)_\d{6}$"
+          placeholder="p_001234"
+          class="rounded-md border border-stone-700 bg-stone-900 px-3 py-2 font-mono text-sm text-stone-100 placeholder-stone-500 focus:border-amber-500 focus:outline-none"
+        />
+      </label>
+
+      <label class="flex flex-col gap-1 text-sm">
+        <span class="text-stone-300">Details <span class="text-red-400">*</span></span>
+        <textarea
+          required
+          name="body"
+          rows="5"
+          maxlength="8000"
+          placeholder="What's the change? What's the source?"
+          class="rounded-md border border-stone-700 bg-stone-900 px-3 py-2 text-stone-100 placeholder-stone-500 focus:border-amber-500 focus:outline-none"
+        ></textarea>
+      </label>
+
+      <label class="flex flex-col gap-1 text-sm">
+        <span class="text-stone-300">Source URL <span class="text-stone-500">(optional)</span></span>
+        <input
+          name="sourceUrl"
+          type="url"
+          placeholder="https://…"
+          class="rounded-md border border-stone-700 bg-stone-900 px-3 py-2 text-stone-100 placeholder-stone-500 focus:border-amber-500 focus:outline-none"
+        />
+      </label>
+
+      <div class="flex items-center justify-between gap-3">
+        <p id="suggestion-error" class="text-sm text-red-400"></p>
+        <button
+          type="submit"
+          id="suggestion-submit"
+          class="rounded-md bg-amber-600 px-4 py-2 text-sm font-medium text-stone-50 hover:bg-amber-500 disabled:cursor-not-allowed disabled:opacity-50"
+        >
+          Submit suggestion
+        </button>
+      </div>
+    </div>
+
+    <div id="suggestion-success" class="hidden flex-col gap-3">
+      <p class="text-sm text-stone-300">
+        Thanks! Your suggestion is recorded as
+        <a id="suggestion-issue-link" class="text-amber-400 underline" href="#" target="_blank" rel="noopener">an issue on the dataset repo</a>.
+        We'll review it and update the tree.
+      </p>
+      <button
+        type="button"
+        id="suggestion-done"
+        class="self-end rounded-md border border-stone-700 bg-stone-800 px-3 py-1.5 text-sm text-stone-200 hover:bg-stone-700"
+      >
+        Done
+      </button>
+    </div>
+  </form>
+</dialog>
+
+<script is:inline src="https://accounts.google.com/gsi/client" async defer></script>
+
+<script>
+  type SignedIn = { idToken: string; name?: string; email?: string };
+
+  let signedIn: SignedIn | null = null;
+
+  function dialog() {
+    return document.getElementById('suggestion-modal') as HTMLDialogElement;
+  }
+
+  // Google Identity Services calls this as a global. Decode the JWT
+  // (just to display the name; the server re-verifies the signature).
+  (window as any).onSuggestionSignIn = (resp: { credential: string }) => {
+    const idToken = resp.credential;
+    let payload: any = {};
+    try {
+      payload = JSON.parse(atob(idToken.split('.')[1].replace(/-/g, '+').replace(/_/g, '/')));
+    } catch { /* malformed JWT — server will reject */ }
+    signedIn = { idToken, name: payload.name, email: payload.email };
+    document.getElementById('suggestion-signin')?.classList.add('hidden');
+    const signedSection = document.getElementById('suggestion-signed-in');
+    signedSection?.classList.remove('hidden');
+    signedSection?.classList.add('flex');
+    const u = document.getElementById('suggestion-user');
+    if (u) u.textContent = payload.name || payload.email || 'your Google account';
+  };
+
+  function open() {
+    signedIn = null;
+    document.getElementById('suggestion-signin')?.classList.remove('hidden');
+    const signedSection = document.getElementById('suggestion-signed-in');
+    signedSection?.classList.add('hidden');
+    signedSection?.classList.remove('flex');
+    document.getElementById('suggestion-success')?.classList.add('hidden');
+    (document.getElementById('suggestion-form') as HTMLFormElement)?.reset();
+    const err = document.getElementById('suggestion-error');
+    if (err) err.textContent = '';
+    dialog()?.showModal();
+  }
+
+  function close() {
+    dialog()?.close();
+  }
+
+  document.getElementById('suggest-addition-trigger')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    open();
+  });
+
+  document.getElementById('suggestion-close')?.addEventListener('click', close);
+  document.getElementById('suggestion-done')?.addEventListener('click', close);
+
+  document.getElementById('suggestion-signout')?.addEventListener('click', () => {
+    signedIn = null;
+    document.getElementById('suggestion-signin')?.classList.remove('hidden');
+    const signedSection = document.getElementById('suggestion-signed-in');
+    signedSection?.classList.add('hidden');
+    signedSection?.classList.remove('flex');
+    // GIS auto-select stays off; user can click the GIS button again
+    (window as any).google?.accounts?.id?.disableAutoSelect?.();
+  });
+
+  // Close on backdrop click
+  dialog()?.addEventListener('click', (e) => {
+    if (e.target === dialog()) close();
+  });
+
+  document.getElementById('suggestion-form')?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!signedIn) return;
+    const errEl = document.getElementById('suggestion-error');
+    const submitBtn = document.getElementById('suggestion-submit') as HTMLButtonElement;
+    if (errEl) errEl.textContent = '';
+    submitBtn.disabled = true;
+    try {
+      const form = e.currentTarget as HTMLFormElement;
+      const data = Object.fromEntries(new FormData(form).entries());
+      const body = {
+        idToken: signedIn.idToken,
+        subject: String(data.subject || '').trim(),
+        body: String(data.body || '').trim(),
+        personId: String(data.personId || '').trim() || undefined,
+        sourceUrl: String(data.sourceUrl || '').trim() || undefined,
+      };
+      const res = await fetch('/api/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      });
+      const json = await res.json();
+      if (!res.ok || !json.ok) throw new Error(json.error || `HTTP ${res.status}`);
+      const signedSection = document.getElementById('suggestion-signed-in');
+      signedSection?.classList.add('hidden');
+      signedSection?.classList.remove('flex');
+      const success = document.getElementById('suggestion-success');
+      success?.classList.remove('hidden');
+      success?.classList.add('flex');
+      const link = document.getElementById('suggestion-issue-link') as HTMLAnchorElement;
+      link.href = json.issueUrl;
+    } catch (err: any) {
+      if (errEl) errEl.textContent = err.message || 'Something went wrong.';
+    } finally {
+      submitBtn.disabled = false;
+    }
+  });
+</script>

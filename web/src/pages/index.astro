@@ -4,6 +4,9 @@ import TopBar from '../components/TopBar.astro';
 import Tree from '../components/Tree.astro';
 import PersonModal from '../components/PersonModal.astro';
 import SearchPalette from '../components/SearchPalette.astro';
+import SuggestionModal from '../components/SuggestionModal.astro';
+
+export const prerender = true;
 ---
 
 <Layout>
@@ -17,15 +20,17 @@ import SearchPalette from '../components/SearchPalette.astro';
         <span>
           Compiled from seven hand-curated PDFs, eight generations deep.
         </span>
-        <a
+        <button
+          id="suggest-addition-trigger"
+          type="button"
           class="rounded-md border border-stone-700 bg-stone-800 px-3 py-1.5 text-stone-200 hover:border-stone-600 hover:bg-stone-700"
-          href="mailto:family@sudoservers.com?subject=Family%20tree%20addition"
         >
           Suggest an addition
-        </a>
+        </button>
       </div>
     </footer>
   </div>
   <PersonModal />
   <SearchPalette />
+  <SuggestionModal />
 </Layout>
