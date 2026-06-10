@@ -1,5 +1,7 @@
 ---
-const clientId = import.meta.env.PUBLIC_GOOGLE_CLIENT_ID || '';
+// Auth is initialised globally by AuthState.astro. This modal just reads
+// window.__auth and renders one of the GIS buttons when the user isn't
+// signed in yet.
 ---
 
 <dialog
@@ -30,11 +32,6 @@ const clientId = import.meta.env.PUBLIC_GOOGLE_CLIENT_ID || '';
 
     <div id="suggestion-signin" class="flex flex-col items-start gap-2">
       <span class="text-xs uppercase tracking-wide text-stone-500">Step 1 · Sign in</span>
-      <div id="g_id_onload"
-        data-client_id={clientId}
-        data-callback="onSuggestionSignIn"
-        data-auto_select="false"
-        data-ux_mode="popup"></div>
       <div class="g_id_signin" data-type="standard" data-theme="filled_black" data-size="large" data-text="signin_with"></div>
       <p id="suggestion-signin-error" class="hidden text-xs text-red-400"></p>
     </div>
@@ -124,46 +121,42 @@ const clientId = import.meta.env.PUBLIC_GOOGLE_CLIENT_ID || '';
   </form>
 </dialog>
 
-<script is:inline src="https://accounts.google.com/gsi/client" async defer></script>
-
 <script>
-  type SignedIn = { idToken: string; name?: string; email?: string };
-
-  let signedIn: SignedIn | null = null;
-
   function dialog() {
     return document.getElementById('suggestion-modal') as HTMLDialogElement;
   }
 
-  // Google Identity Services calls this as a global. Decode the JWT
-  // (just to display the name; the server re-verifies the signature).
-  (window as any).onSuggestionSignIn = (resp: { credential: string }) => {
-    const idToken = resp.credential;
-    let payload: any = {};
-    try {
-      payload = JSON.parse(atob(idToken.split('.')[1].replace(/-/g, '+').replace(/_/g, '/')));
-    } catch { /* malformed JWT — server will reject */ }
-    signedIn = { idToken, name: payload.name, email: payload.email };
-    document.getElementById('suggestion-signin')?.classList.add('hidden');
-    const signedSection = document.getElementById('suggestion-signed-in');
-    signedSection?.classList.remove('hidden');
-    signedSection?.classList.add('flex');
-    const u = document.getElementById('suggestion-user');
-    if (u) u.textContent = payload.name || payload.email || 'your Google account';
-  };
+  function renderSignedState(u: any) {
+    const signed = !!u;
+    const signinSec = document.getElementById('suggestion-signin');
+    const signedSec = document.getElementById('suggestion-signed-in');
+    if (signed) {
+      signinSec?.classList.add('hidden');
+      signedSec?.classList.remove('hidden');
+      signedSec?.classList.add('flex');
+      const nameEl = document.getElementById('suggestion-user');
+      if (nameEl) nameEl.textContent = u.name || u.email || 'your Google account';
+    } else {
+      signinSec?.classList.remove('hidden');
+      signedSec?.classList.add('hidden');
+      signedSec?.classList.remove('flex');
+    }
+  }
 
   function open() {
-    signedIn = null;
-    document.getElementById('suggestion-signin')?.classList.remove('hidden');
-    const signedSection = document.getElementById('suggestion-signed-in');
-    signedSection?.classList.add('hidden');
-    signedSection?.classList.remove('flex');
+    renderSignedState((window as any).__auth?.getUser?.());
     document.getElementById('suggestion-success')?.classList.add('hidden');
     (document.getElementById('suggestion-form') as HTMLFormElement)?.reset();
     const err = document.getElementById('suggestion-error');
     if (err) err.textContent = '';
     dialog()?.showModal();
   }
+
+  // Keep the modal in sync when auth changes while it's open.
+  document.addEventListener('auth:change', (e: any) => {
+    if (!dialog()?.open) return;
+    renderSignedState(e.detail.user);
+  });
 
   function close() {
     dialog()?.close();
@@ -178,13 +171,7 @@ const clientId = import.meta.env.PUBLIC_GOOGLE_CLIENT_ID || '';
   document.getElementById('suggestion-done')?.addEventListener('click', close);
 
   document.getElementById('suggestion-signout')?.addEventListener('click', () => {
-    signedIn = null;
-    document.getElementById('suggestion-signin')?.classList.remove('hidden');
-    const signedSection = document.getElementById('suggestion-signed-in');
-    signedSection?.classList.add('hidden');
-    signedSection?.classList.remove('flex');
-    // GIS auto-select stays off; user can click the GIS button again
-    (window as any).google?.accounts?.id?.disableAutoSelect?.();
+    (window as any).__auth?.signOut?.();
   });
 
   // Close on backdrop click
@@ -194,7 +181,8 @@ const clientId = import.meta.env.PUBLIC_GOOGLE_CLIENT_ID || '';
 
   document.getElementById('suggestion-form')?.addEventListener('submit', async (e) => {
     e.preventDefault();
-    if (!signedIn) return;
+    const user = (window as any).__auth?.getUser?.();
+    if (!user) return;
     const errEl = document.getElementById('suggestion-error');
     const submitBtn = document.getElementById('suggestion-submit') as HTMLButtonElement;
     if (errEl) errEl.textContent = '';
@@ -203,7 +191,7 @@ const clientId = import.meta.env.PUBLIC_GOOGLE_CLIENT_ID || '';
       const form = e.currentTarget as HTMLFormElement;
       const data = Object.fromEntries(new FormData(form).entries());
       const body = {
-        idToken: signedIn.idToken,
+        idToken: user.idToken,
         subject: String(data.subject || '').trim(),
         body: String(data.body || '').trim(),
         personId: String(data.personId || '').trim() || undefined,

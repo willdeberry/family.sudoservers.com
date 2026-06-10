@@ -47,6 +47,27 @@
     <span class="ml-1.5 text-stone-600">·</span>
     <span class="ml-1.5"><span id="stat-verified">…</span> verified</span>
   </div>
+
+  <!-- Auth pill. The GIS button renders inside #auth-signin-host when
+       signed out; #auth-user shows name + sign-out when signed in. The
+       GIS DOM API mounts only on data-rendered elements, so we ship a
+       g_id_signin div here and let the loader do its thing once the
+       GSI script lands. -->
+  <div id="auth-signin-host" class="hidden h-9 items-center sm:flex">
+    <div class="g_id_signin"
+      data-type="standard"
+      data-theme="filled_black"
+      data-size="medium"
+      data-text="signin_with"
+      data-shape="pill"></div>
+  </div>
+  <div id="auth-user" class="hidden items-center gap-2 rounded-md border border-stone-700 bg-stone-800 px-2.5 py-1.5 text-sm sm:flex">
+    <img id="auth-user-pic" class="hidden h-5 w-5 rounded-full" alt="" />
+    <span id="auth-user-name" class="max-w-[160px] truncate text-stone-200"></span>
+    <button id="auth-signout" type="button" class="text-xs text-stone-400 hover:text-stone-200 underline">
+      Sign out
+    </button>
+  </div>
 </header>
 
 <script>
@@ -64,5 +85,39 @@
   document.addEventListener('familytree:nav', (e: any) => {
     if (!backBtn) return;
     backBtn.disabled = !e.detail.canGoBack;
+  });
+
+  const signinHost = document.getElementById('auth-signin-host');
+  const userPill = document.getElementById('auth-user');
+  const userName = document.getElementById('auth-user-name');
+  const userPic = document.getElementById('auth-user-pic') as HTMLImageElement | null;
+  function renderAuth(u: any) {
+    const signedIn = !!u;
+    if (signedIn) {
+      signinHost?.classList.add('hidden');
+      signinHost?.classList.remove('sm:flex');
+      userPill?.classList.remove('hidden');
+      userPill?.classList.add('sm:flex');
+      if (userName) userName.textContent = u.name || u.email || 'Signed in';
+      if (userPic) {
+        if (u.picture) {
+          userPic.src = u.picture;
+          userPic.classList.remove('hidden');
+        } else {
+          userPic.classList.add('hidden');
+        }
+      }
+    } else {
+      signinHost?.classList.remove('hidden');
+      signinHost?.classList.add('sm:flex');
+      userPill?.classList.add('hidden');
+      userPill?.classList.remove('sm:flex');
+    }
+  }
+  // Pick up state in case auth was restored before this script ran.
+  renderAuth((window as any).__auth?.getUser?.());
+  document.addEventListener('auth:change', (e: any) => renderAuth(e.detail.user));
+  document.getElementById('auth-signout')?.addEventListener('click', () => {
+    (window as any).__auth?.signOut?.();
   });
 </script>

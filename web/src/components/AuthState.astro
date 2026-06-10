@@ -1,0 +1,101 @@
+---
+const clientId = import.meta.env.PUBLIC_GOOGLE_CLIENT_ID || '';
+---
+
+<!-- Global GIS config. The rendered Sign-in buttons in TopBar and the
+     SuggestionModal both fire onAuthSignIn defined below. -->
+<div id="g_id_onload"
+  data-client_id={clientId}
+  data-callback="onAuthSignIn"
+  data-auto_select="false"
+  data-ux_mode="popup"
+  style="display: none;"></div>
+
+<script is:inline src="https://accounts.google.com/gsi/client" async defer></script>
+
+<script>
+  type AuthUser = {
+    idToken: string;
+    name?: string;
+    email?: string;
+    picture?: string;
+    exp: number; // seconds since epoch
+  };
+
+  const STORAGE_KEY = 'ft:auth';
+  const listeners = new Set<(u: AuthUser | null) => void>();
+
+  function decodeIdToken(idToken: string): Partial<AuthUser> {
+    try {
+      const payload = JSON.parse(
+        atob(idToken.split('.')[1].replace(/-/g, '+').replace(/_/g, '/'))
+      );
+      return {
+        name: payload.name,
+        email: payload.email,
+        picture: payload.picture,
+        exp: Number(payload.exp) || 0,
+      };
+    } catch {
+      return {};
+    }
+  }
+
+  function load(): AuthUser | null {
+    try {
+      const raw = sessionStorage.getItem(STORAGE_KEY);
+      if (!raw) return null;
+      const u: AuthUser = JSON.parse(raw);
+      // Treat expired tokens as signed-out. Google ID tokens are valid
+      // for ~1 hour; if the user is mid-session and it lapses, they'll
+      // be asked to sign in again at submit time rather than getting a
+      // confusing 401.
+      if (!u.exp || u.exp * 1000 < Date.now()) {
+        sessionStorage.removeItem(STORAGE_KEY);
+        return null;
+      }
+      return u;
+    } catch {
+      return null;
+    }
+  }
+
+  function save(u: AuthUser | null) {
+    if (u) sessionStorage.setItem(STORAGE_KEY, JSON.stringify(u));
+    else sessionStorage.removeItem(STORAGE_KEY);
+    for (const fn of listeners) fn(u);
+    document.dispatchEvent(new CustomEvent('auth:change', { detail: { user: u } }));
+  }
+
+  // Single shared callback used by every g_id_signin button on the page.
+  (window as any).onAuthSignIn = (resp: { credential: string }) => {
+    const decoded = decodeIdToken(resp.credential);
+    const u: AuthUser = {
+      idToken: resp.credential,
+      name: decoded.name,
+      email: decoded.email,
+      picture: decoded.picture,
+      exp: decoded.exp || 0,
+    };
+    save(u);
+  };
+
+  (window as any).__auth = {
+    getUser: load,
+    signOut: () => {
+      save(null);
+      (window as any).google?.accounts?.id?.disableAutoSelect?.();
+    },
+    onChange: (fn: (u: AuthUser | null) => void) => {
+      listeners.add(fn);
+      return () => listeners.delete(fn);
+    },
+  };
+
+  // Broadcast the persisted state once the page settles so listeners
+  // wiring up after this script can pick up the user without polling.
+  document.addEventListener('DOMContentLoaded', () => {
+    const u = load();
+    if (u) document.dispatchEvent(new CustomEvent('auth:change', { detail: { user: u } }));
+  });
+</script>

@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import AuthState from '../components/AuthState.astro';
 import TopBar from '../components/TopBar.astro';
 import Tree from '../components/Tree.astro';
 import PersonModal from '../components/PersonModal.astro';
@@ -10,6 +11,7 @@ export const prerender = true;
 ---
 
 <Layout>
+  <AuthState />
   <div class="flex h-full flex-col">
     <TopBar />
     <main class="relative flex-1 overflow-hidden">
