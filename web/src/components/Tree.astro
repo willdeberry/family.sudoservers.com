@@ -60,7 +60,7 @@ try {
   // Spouse-list mutations made by setModifyTreeHierarchy need to be undone
   // before the next render so the next focus point sees the full marriage
   // graph. Keyed by person id → original rels.spouses array reference.
-  const savedSpouseLists = new Map<string, string[]>();
+  const savedSpouseLists = new Map<any, string[]>();
   function allDescendants(root: any): any[] {
     const out: any[] = [];
     const queue = [root];
@@ -137,13 +137,14 @@ try {
         // spouse list.
         savedSpouseLists.clear();
         for (const node of [root, ...allDescendants(root)]) {
-          const id = node.data.id;
           const spouses: string[] = node.data.rels.spouses || [];
-          const trimmed = spouses.filter(spId => !seenInTree.has(spId));
-          if (trimmed.length !== spouses.length) {
-            savedSpouseLists.set(id, spouses);
-            node.data.rels.spouses = trimmed;
+          let needsTrim = false;
+          for (const spId of spouses) {
+            if (seenInTree.has(spId)) { needsTrim = true; break; }
           }
+          if (!needsTrim) continue;
+          savedSpouseLists.set(node.data, spouses);
+          node.data.rels.spouses = spouses.filter(spId => !seenInTree.has(spId));
         }
       })
       .setOrientationVertical();
@@ -200,10 +201,10 @@ try {
       // Restore the marriage links we temporarily stripped in the dedup hook.
       // The chart only reads rels.spouses during a layout pass, so by the
       // time afterUpdate fires the trimmed list has already done its job.
+      // (We keyed by the data object itself so this is O(saved), not O(n²).)
       if (savedSpouseLists.size) {
-        for (const [id, original] of savedSpouseLists) {
-          const node = data.find(d => d.id === id);
-          if (node) node.rels.spouses = original;
+        for (const [datum, original] of savedSpouseLists) {
+          datum.rels.spouses = original;
         }
         savedSpouseLists.clear();
       }
@@ -317,40 +318,99 @@ try {
       emitNav();
     };
 
+    // Rough heuristic for "is this focus going to be slow to render."
+    // Anyone within a few hops of the founder pulls in 2k+ cards at depth 6;
+    // we warn the user with a loading overlay while the layout runs so the
+    // UI doesn't feel hung. Threshold tuned empirically — 500 descendants in
+    // any direction reliably correlates with a >1s render on this dataset.
+    const SLOW_DESCENDANT_THRESHOLD = 500;
+    const byIdMap = new Map<string, Datum>();
+    function rebuildByIdMap() {
+      byIdMap.clear();
+      for (const d of data) byIdMap.set(d.id, d);
+    }
+    function isLikelySlow(id: string): boolean {
+      if (byIdMap.size !== data.length) rebuildByIdMap();
+      const seen = new Set<string>([id]);
+      const queue = [id];
+      let count = 0;
+      while (queue.length && count < SLOW_DESCENDANT_THRESHOLD) {
+        const cur = queue.shift()!;
+        const node = byIdMap.get(cur);
+        if (!node) continue;
+        for (const c of node.rels.children) {
+          if (seen.has(c)) continue;
+          seen.add(c);
+          count++;
+          queue.push(c);
+        }
+      }
+      return count >= SLOW_DESCENDANT_THRESHOLD;
+    }
+
+    function showLoadingThen(applyUpdate: () => void) {
+      const loader = document.getElementById('family-chart-loading');
+      const wasHidden = !loader;
+      if (wasHidden) {
+        // Re-create a transient overlay; the bootstrap one removes itself.
+        const transient = document.createElement('div');
+        transient.id = 'family-chart-loading';
+        transient.className = 'absolute inset-0 z-20 grid place-items-center bg-[#1e1e1e]/70 text-stone-400 backdrop-blur-sm';
+        transient.innerHTML = `
+          <div class="flex items-center gap-3 rounded-lg border border-stone-700 bg-stone-900/90 px-4 py-3">
+            <svg class="h-5 w-5 animate-spin text-stone-400" viewBox="0 0 24 24" fill="none">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.4 0 0 5.4 0 12h4z"></path>
+            </svg>
+            <span class="text-sm">Rendering…</span>
+          </div>`;
+        container.appendChild(transient);
+      }
+      // Paint the overlay first, then run the heavy update in the next
+      // animation frame so the user sees the spinner immediately rather
+      // than a frozen UI.
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        applyUpdate();
+        document.getElementById('family-chart-loading')?.remove();
+      }));
+    }
+
     (window as any).__familytree = {
       focusOn: async (id: string, opts: { trace?: boolean } = {}) => {
         // Make sure the focus target (and its neighborhood) is loaded.
-        if (!data.find(d => d.id === id)) {
-          await ensureFullData();
-        } else if (opts.trace) {
-          // Trace mode might walk past the slice; make sure we have the whole
-          // ancestry chain available before drawing.
+        if (!data.find(d => d.id === id) || opts.trace) {
           await ensureFullData();
         }
-
-        if (opts.trace) {
-          chart.setAncestryDepth(50);
-          chart.setProgenyDepth(0);
-          chart.updateMainId(id);
-          chart.updateTree({ tree_position: 'fit' });
-        } else {
-          chart.setAncestryDepth(defaultAncestry);
-          chart.setProgenyDepth(defaultProgeny);
-          chart.updateMainId(id);
-          chart.updateTree({ tree_position: 'main_to_middle' });
-        }
+        const slow = !opts.trace && isLikelySlow(id);
+        const apply = () => {
+          if (opts.trace) {
+            chart.setAncestryDepth(50);
+            chart.setProgenyDepth(0);
+            chart.updateMainId(id);
+            chart.updateTree({ tree_position: 'fit' });
+          } else {
+            chart.setAncestryDepth(defaultAncestry);
+            chart.setProgenyDepth(defaultProgeny);
+            chart.updateMainId(id);
+            chart.updateTree({ tree_position: 'main_to_middle' });
+          }
+        };
+        if (slow) showLoadingThen(apply); else apply();
       },
       back: () => {
         if (!backStack.length) return false;
         const prev = backStack.pop()!;
         suppressNextPush = true;
-        // Always restore the default depth on back — the previous focus may
-        // have been a trace mode (ancestry=50, progeny=0), which would
-        // otherwise stick around and warp the parent view.
-        chart.setAncestryDepth(defaultAncestry);
-        chart.setProgenyDepth(defaultProgeny);
-        chart.updateMainId(prev);
-        chart.updateTree({ tree_position: 'main_to_middle' });
+        const apply = () => {
+          // Always restore the default depth on back — the previous focus may
+          // have been a trace mode (ancestry=50, progeny=0), which would
+          // otherwise stick around and warp the parent view.
+          chart.setAncestryDepth(defaultAncestry);
+          chart.setProgenyDepth(defaultProgeny);
+          chart.updateMainId(prev);
+          chart.updateTree({ tree_position: 'main_to_middle' });
+        };
+        if (isLikelySlow(prev)) showLoadingThen(apply); else apply();
         return true;
       },
       canGoBack: () => backStack.length > 0,
