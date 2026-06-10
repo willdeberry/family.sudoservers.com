@@ -212,9 +212,13 @@ try {
     };
 
     performance.mark('chart:create-end');
-    // Initial render — fit the tree to the container so it uses the full space
+    // Initial render — center on the focused person at full scale. Note:
+    // family-chart unconditionally calls treeFit when props.initial is
+    // truthy, ignoring tree_position. So we pass initial:false explicitly
+    // (the entry-animation delay we'd otherwise get isn't worth ~820
+    // cards rendering at scale 0.01 and the chart looking invisible).
     performance.mark('chart:render-start');
-    chart.updateTree({ initial: true, tree_position: 'fit' });
+    chart.updateTree({ initial: false, tree_position: 'main_to_middle' });
     performance.mark('chart:render-end');
 
     // Surface where time went in the console so we can profile real loads.
@@ -433,14 +437,16 @@ try {
       (window as any).__familytree?.back();
     });
 
-    // Re-fit if the window resizes (e.g., devtools toggled). Defer attaching
-    // the listener so the resize handler doesn't compete with initial paint.
+    // Re-center on the focused person if the window resizes (devtools
+    // toggled, GSI iframe mounting, etc.). 'inherit' keeps the user's
+    // current zoom/pan rather than rewinding it to fit — and avoids the
+    // scale-to-near-zero trap that 'fit' falls into for big subtrees.
     setTimeout(() => {
       let resizeTimer: number | undefined;
       window.addEventListener('resize', () => {
         window.clearTimeout(resizeTimer);
         resizeTimer = window.setTimeout(() => {
-          chart.updateTree({ tree_position: 'fit' });
+          chart.updateTree({ tree_position: 'inherit' });
         }, 200);
       });
     }, 1000);
