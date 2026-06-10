@@ -96,10 +96,11 @@ try {
       .setCardXSpacing(280)
       .setCardYSpacing(160)
       // Limit how many generations render at once. Without these, a focused
-      // founder pulls in ~8 generations of descendants (~4,900 nodes) and the
-      // layout pass takes seconds. Users can click cards to expand further.
-      .setAncestryDepth(6)
-      .setProgenyDepth(6)
+      // founder pulls in ~8 generations of descendants (~4,900 nodes) and
+      // the layout pass takes seconds. Depth 4 keeps the founder view under
+      // ~1k cards (~1-2s render). Users can click cards to expand further.
+      .setAncestryDepth(4)
+      .setProgenyDepth(4)
       .setDuplicateBranchToggle(true)
       .setModifyTreeHierarchy((root: any, isAncestry: boolean) => {
         // On the ancestry side, defer to family-chart's own duplicate
@@ -239,8 +240,8 @@ try {
     // `trace: true` lifts the ancestry depth so you can see the chain all
     // the way back to the founder, and zooms out to fit the whole chain in
     // the viewport. The defaults reset when you focus on someone else.
-    const defaultAncestry = 6;
-    const defaultProgeny = 6;
+    const defaultAncestry = 4;
+    const defaultProgeny = 4;
     // Trigger full-data load as soon as the user starts interacting (search
     // open, key press, etc.) — by then the chart's already rendered and the
     // main thread has cycles to spare.
