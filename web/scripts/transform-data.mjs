@@ -113,6 +113,7 @@ for (const p of people) {
     lineageCodes: p.lineageCodes || [],
     name: displayName(p.name),
     nameFirst: p.name?.first,
+    nameMiddle: p.name?.middle,
     nameLast: p.name?.last,
     nameMaiden: p.name?.maidenName,
     sex: p.sex,

@@ -1,21 +1,30 @@
 ---
-// Auth is initialised globally by AuthState.astro. This modal just reads
-// window.__auth and renders one of the GIS buttons when the user isn't
-// signed in yet.
+import PersonForm from './PersonForm.astro';
+
+// Hosts the PersonForm in either 'add' mode (footer "Suggest an
+// addition") or 'edit' mode (PersonModal "Suggest an edit"). Auth is
+// owned by AuthState.astro and accessed via window.__auth; this modal
+// just gates the form behind sign-in, then POSTs the structured form
+// payload to /api/submit.
+//
+// Trigger via:
+//   #suggest-addition-trigger    → open in add mode
+//   window.dispatchEvent(new CustomEvent('familytree:suggest-edit',
+//      { detail: { personId, person } }))   → open in edit mode
 ---
 
 <dialog
   id="suggestion-modal"
-  class="m-auto w-[min(560px,calc(100vw-2rem))] rounded-xl border border-stone-700 bg-[#1f1f1f] p-0 text-stone-100 shadow-2xl backdrop:bg-black/60 backdrop:backdrop-blur-sm"
+  class="m-auto h-[min(90vh,820px)] w-[min(720px,calc(100vw-2rem))] rounded-xl border border-stone-700 bg-[#1f1f1f] p-0 text-stone-100 shadow-2xl backdrop:bg-black/60 backdrop:backdrop-blur-sm"
 >
-  <form id="suggestion-form" class="flex flex-col gap-4 p-6">
-    <div class="flex items-start justify-between">
+  <div class="flex h-full max-h-[inherit] flex-col">
+    <header class="flex items-start justify-between border-b border-stone-800 p-6 pb-4">
       <div>
-        <h2 class="text-lg font-semibold">Suggest an addition</h2>
-        <p class="mt-1 text-sm text-stone-400">
-          Spotted a missing person, wrong date, or new source? Sign in with
-          Google so we can credit the suggestion, and we'll review it before
-          merging.
+        <h2 id="suggestion-title" class="text-lg font-semibold">Suggest an addition</h2>
+        <p id="suggestion-subtitle" class="mt-1 text-sm text-stone-400">
+          Share what you know. Sign in with Google so we can credit the
+          suggestion, then fill out as much as you can — every field is
+          optional except the name.
         </p>
       </div>
       <button
@@ -28,149 +37,153 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6l12 12M18 6L6 18" />
         </svg>
       </button>
-    </div>
+    </header>
 
-    <div id="suggestion-signin" class="flex flex-col items-start gap-2">
-      <span class="text-xs uppercase tracking-wide text-stone-500">Step 1 · Sign in</span>
-      <div class="g_id_signin" data-type="standard" data-theme="filled_black" data-size="large" data-text="signin_with"></div>
-      <p id="suggestion-signin-error" class="hidden text-xs text-red-400"></p>
-    </div>
-
-    <div id="suggestion-signed-in" class="hidden flex-col gap-3">
-      <div class="flex items-center justify-between rounded-md border border-stone-700 bg-stone-800 px-3 py-2 text-sm">
-        <span>
-          Signed in as <span id="suggestion-user" class="font-medium text-stone-100"></span>
-        </span>
-        <button type="button" id="suggestion-signout" class="text-xs text-stone-400 hover:text-stone-200 underline">
-          Use a different account
-        </button>
+    <div id="suggestion-body" class="flex-1 overflow-y-auto px-6 py-4">
+      <div id="suggestion-signin" class="flex flex-col items-start gap-2">
+        <span class="text-xs uppercase tracking-wide text-stone-500">Step 1 · Sign in</span>
+        <div class="g_id_signin" data-type="standard" data-theme="filled_black" data-size="large" data-text="signin_with"></div>
       </div>
 
-      <label class="flex flex-col gap-1 text-sm">
-        <span class="text-stone-300">Subject <span class="text-red-400">*</span></span>
-        <input
-          required
-          name="subject"
-          maxlength="200"
-          placeholder="e.g. Add death date for Charles Allen DeBerry"
-          class="rounded-md border border-stone-700 bg-stone-900 px-3 py-2 text-stone-100 placeholder-stone-500 focus:border-amber-500 focus:outline-none"
-        />
-      </label>
+      <div id="suggestion-signed-in" class="hidden flex-col gap-4">
+        <div class="flex items-center justify-between rounded-md border border-stone-700 bg-stone-800 px-3 py-2 text-sm">
+          <span>
+            Signed in as <span id="suggestion-user" class="font-medium text-stone-100"></span>
+          </span>
+          <button type="button" id="suggestion-signout" class="text-xs text-stone-400 hover:text-stone-200 underline">
+            Use a different account
+          </button>
+        </div>
 
-      <label class="flex flex-col gap-1 text-sm">
-        <span class="text-stone-300">
-          Related person ID
-          <span class="text-stone-500">(optional, e.g. <code>p_001234</code>)</span>
-        </span>
-        <input
-          name="personId"
-          pattern="^(p|sp)_\d{6}$"
-          placeholder="p_001234"
-          class="rounded-md border border-stone-700 bg-stone-900 px-3 py-2 font-mono text-sm text-stone-100 placeholder-stone-500 focus:border-amber-500 focus:outline-none"
-        />
-      </label>
+        <PersonForm />
+      </div>
 
-      <label class="flex flex-col gap-1 text-sm">
-        <span class="text-stone-300">Details <span class="text-red-400">*</span></span>
-        <textarea
-          required
-          name="body"
-          rows="5"
-          maxlength="8000"
-          placeholder="What's the change? What's the source?"
-          class="rounded-md border border-stone-700 bg-stone-900 px-3 py-2 text-stone-100 placeholder-stone-500 focus:border-amber-500 focus:outline-none"
-        ></textarea>
-      </label>
+      <div id="suggestion-success" class="hidden flex-col gap-3">
+        <p class="text-sm text-stone-300">
+          Thanks! Your suggestion is on its way as
+          <a id="suggestion-issue-link" class="text-amber-400 underline" href="#" target="_blank" rel="noopener">an issue on the dataset repo</a>.
+          We'll review it and update the tree.
+        </p>
+      </div>
+    </div>
 
-      <label class="flex flex-col gap-1 text-sm">
-        <span class="text-stone-300">Source URL <span class="text-stone-500">(optional)</span></span>
-        <input
-          name="sourceUrl"
-          type="url"
-          placeholder="https://…"
-          class="rounded-md border border-stone-700 bg-stone-900 px-3 py-2 text-stone-100 placeholder-stone-500 focus:border-amber-500 focus:outline-none"
-        />
-      </label>
-
-      <div class="flex items-center justify-between gap-3">
-        <p id="suggestion-error" class="text-sm text-red-400"></p>
+    <footer id="suggestion-footer" class="hidden items-center justify-between gap-3 border-t border-stone-800 p-4 sm:flex">
+      <p id="suggestion-error" class="text-sm text-red-400"></p>
+      <div class="flex gap-2">
+        <button type="button" id="suggestion-cancel" class="rounded-md border border-stone-700 bg-stone-800 px-3 py-1.5 text-sm text-stone-200 hover:bg-stone-700">
+          Cancel
+        </button>
         <button
-          type="submit"
+          type="button"
           id="suggestion-submit"
-          class="rounded-md bg-amber-600 px-4 py-2 text-sm font-medium text-stone-50 hover:bg-amber-500 disabled:cursor-not-allowed disabled:opacity-50"
+          class="rounded-md bg-amber-600 px-4 py-1.5 text-sm font-medium text-stone-50 hover:bg-amber-500 disabled:cursor-not-allowed disabled:opacity-50"
         >
           Submit suggestion
         </button>
       </div>
-    </div>
-
-    <div id="suggestion-success" class="hidden flex-col gap-3">
-      <p class="text-sm text-stone-300">
-        Thanks! Your suggestion is recorded as
-        <a id="suggestion-issue-link" class="text-amber-400 underline" href="#" target="_blank" rel="noopener">an issue on the dataset repo</a>.
-        We'll review it and update the tree.
-      </p>
-      <button
-        type="button"
-        id="suggestion-done"
-        class="self-end rounded-md border border-stone-700 bg-stone-800 px-3 py-1.5 text-sm text-stone-200 hover:bg-stone-700"
-      >
-        Done
-      </button>
-    </div>
-  </form>
+    </footer>
+  </div>
 </dialog>
 
 <script>
+  type SuggestMode = 'add' | 'edit';
+  type EditContext = { personId: string; person: any };
+
+  let mode: SuggestMode = 'add';
+  let editCtx: EditContext | null = null;
+  let peopleIndex: Record<string, any> | null = null;
+
   function dialog() {
     return document.getElementById('suggestion-modal') as HTMLDialogElement;
+  }
+  function el<T extends HTMLElement = HTMLElement>(id: string) {
+    return document.getElementById(id) as T | null;
   }
 
   function renderSignedState(u: any) {
     const signed = !!u;
-    const signinSec = document.getElementById('suggestion-signin');
-    const signedSec = document.getElementById('suggestion-signed-in');
+    const signinSec = el('suggestion-signin');
+    const signedSec = el('suggestion-signed-in');
+    const footer = el('suggestion-footer');
     if (signed) {
       signinSec?.classList.add('hidden');
       signedSec?.classList.remove('hidden');
       signedSec?.classList.add('flex');
-      const nameEl = document.getElementById('suggestion-user');
+      footer?.classList.remove('hidden');
+      footer?.classList.add('flex');
+      const nameEl = el('suggestion-user');
       if (nameEl) nameEl.textContent = u.name || u.email || 'your Google account';
     } else {
       signinSec?.classList.remove('hidden');
       signedSec?.classList.add('hidden');
       signedSec?.classList.remove('flex');
+      footer?.classList.add('hidden');
+      footer?.classList.remove('flex');
     }
   }
 
-  function open() {
+  function showHeaderFor(m: SuggestMode, person?: any) {
+    const title = el('suggestion-title');
+    const subtitle = el('suggestion-subtitle');
+    if (m === 'edit') {
+      const display = person?.name || 'this person';
+      if (title) title.textContent = `Suggest an edit to ${display}`;
+      if (subtitle) subtitle.textContent =
+        'The form is prefilled with what we have on file. Change whatever\'s wrong or missing, add a source note, and submit. We\'ll review the diff before merging.';
+    } else {
+      if (title) title.textContent = 'Suggest an addition';
+      if (subtitle) subtitle.textContent =
+        'Share what you know. Sign in with Google so we can credit the suggestion, then fill out as much as you can — every field is optional except the name.';
+    }
+  }
+
+  async function loadPeopleIndex() {
+    if (peopleIndex) return peopleIndex;
+    const r = await fetch('/data/people-index.json');
+    peopleIndex = await r.json();
+    return peopleIndex!;
+  }
+
+  async function openFor(m: SuggestMode, ctx?: EditContext) {
+    mode = m;
+    editCtx = ctx || null;
+    el('suggestion-success')?.classList.add('hidden');
+    el('suggestion-success')?.classList.remove('flex');
+    const errEl = el('suggestion-error');
+    if (errEl) errEl.textContent = '';
+
+    showHeaderFor(m, ctx?.person);
     renderSignedState((window as any).__auth?.getUser?.());
-    document.getElementById('suggestion-success')?.classList.add('hidden');
-    (document.getElementById('suggestion-form') as HTMLFormElement)?.reset();
-    const err = document.getElementById('suggestion-error');
-    if (err) err.textContent = '';
+
+    const pf = (window as any).__personForm;
+    if (pf) {
+      pf.reset();
+      if (m === 'edit' && ctx?.person) {
+        const idx = await loadPeopleIndex();
+        pf.fill({ ...ctx.person, peopleIndex: idx });
+      }
+    }
     dialog()?.showModal();
   }
 
-  // Keep the modal in sync when auth changes while it's open.
   document.addEventListener('auth:change', (e: any) => {
     if (!dialog()?.open) return;
     renderSignedState(e.detail.user);
   });
 
-  function close() {
-    dialog()?.close();
-  }
+  function close() { dialog()?.close(); }
 
-  document.getElementById('suggest-addition-trigger')?.addEventListener('click', (e) => {
+  el('suggest-addition-trigger')?.addEventListener('click', (e) => {
     e.preventDefault();
-    open();
+    openFor('add');
+  });
+  window.addEventListener('familytree:suggest-edit', (e: any) => {
+    openFor('edit', e.detail);
   });
 
-  document.getElementById('suggestion-close')?.addEventListener('click', close);
-  document.getElementById('suggestion-done')?.addEventListener('click', close);
-
-  document.getElementById('suggestion-signout')?.addEventListener('click', () => {
+  el('suggestion-close')?.addEventListener('click', close);
+  el('suggestion-cancel')?.addEventListener('click', close);
+  el('suggestion-signout')?.addEventListener('click', () => {
     (window as any).__auth?.signOut?.();
   });
 
@@ -179,39 +192,53 @@
     if (e.target === dialog()) close();
   });
 
-  document.getElementById('suggestion-form')?.addEventListener('submit', async (e) => {
-    e.preventDefault();
+  el('suggestion-submit')?.addEventListener('click', async () => {
     const user = (window as any).__auth?.getUser?.();
     if (!user) return;
-    const errEl = document.getElementById('suggestion-error');
-    const submitBtn = document.getElementById('suggestion-submit') as HTMLButtonElement;
+    const errEl = el('suggestion-error');
+    const submitBtn = el<HTMLButtonElement>('suggestion-submit')!;
     if (errEl) errEl.textContent = '';
+
+    const pf = (window as any).__personForm;
+    if (!pf) return;
+    const validation = pf.validate();
+    if (validation) {
+      if (errEl) errEl.textContent = validation;
+      return;
+    }
+    const person = pf.getValues();
+    const payload: any = {
+      idToken: user.idToken,
+      mode,
+      person,
+    };
+    if (mode === 'edit' && editCtx) {
+      payload.personId = editCtx.personId;
+      // Ship the existing record so the server can render a field-level
+      // diff in the issue body without having to reload people-index
+      // from the host filesystem.
+      payload.editOriginal = editCtx.person;
+      payload.editLabel = editCtx.person?.name;
+    }
+
     submitBtn.disabled = true;
     try {
-      const form = e.currentTarget as HTMLFormElement;
-      const data = Object.fromEntries(new FormData(form).entries());
-      const body = {
-        idToken: user.idToken,
-        subject: String(data.subject || '').trim(),
-        body: String(data.body || '').trim(),
-        personId: String(data.personId || '').trim() || undefined,
-        sourceUrl: String(data.sourceUrl || '').trim() || undefined,
-      };
       const res = await fetch('/api/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(body),
+        body: JSON.stringify(payload),
       });
       const json = await res.json();
       if (!res.ok || !json.ok) throw new Error(json.error || `HTTP ${res.status}`);
-      const signedSection = document.getElementById('suggestion-signed-in');
-      signedSection?.classList.add('hidden');
-      signedSection?.classList.remove('flex');
-      const success = document.getElementById('suggestion-success');
+      el('suggestion-signed-in')?.classList.add('hidden');
+      el('suggestion-signed-in')?.classList.remove('flex');
+      el('suggestion-footer')?.classList.add('hidden');
+      el('suggestion-footer')?.classList.remove('flex');
+      const success = el('suggestion-success');
       success?.classList.remove('hidden');
       success?.classList.add('flex');
-      const link = document.getElementById('suggestion-issue-link') as HTMLAnchorElement;
-      link.href = json.issueUrl;
+      const link = el<HTMLAnchorElement>('suggestion-issue-link');
+      if (link) link.href = json.issueUrl;
     } catch (err: any) {
       if (errEl) errEl.textContent = err.message || 'Something went wrong.';
     } finally {

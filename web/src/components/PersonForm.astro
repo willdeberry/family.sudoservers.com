@@ -1,0 +1,606 @@
+---
+// A comprehensive form for proposing a person card (add) or proposing
+// edits to one (edit). Embed once per page; expose a tiny window API:
+//
+//   window.__personForm.reset()                  // clear all fields
+//   window.__personForm.fill(person)             // prefill from a Person record
+//   window.__personForm.getValues(): PersonInput // structured payload to submit
+//   window.__personForm.validate(): string|null  // returns an error message, or null
+//
+// The picker autocomplete uses /data/search.json (already shipped for the
+// command palette). Each parent/spouse slot can be either an "existing"
+// person from the index OR a "new" inline record (name + birth/death year).
+---
+
+<div id="person-form" class="flex flex-col gap-5 text-sm">
+  <!-- ── Name ───────────────────────────────────────────────────────── -->
+  <fieldset class="flex flex-col gap-2">
+    <legend class="text-xs uppercase tracking-wide text-stone-500">Name</legend>
+    <div class="grid grid-cols-2 gap-2 sm:grid-cols-4">
+      <label class="flex flex-col gap-1">
+        <span class="text-stone-400">First <span class="text-red-400">*</span></span>
+        <input data-field="name.first" required class="rounded-md border border-stone-700 bg-stone-900 px-3 py-1.5 text-stone-100 focus:border-amber-500 focus:outline-none" />
+      </label>
+      <label class="flex flex-col gap-1">
+        <span class="text-stone-400">Middle</span>
+        <input data-field="name.middle" class="rounded-md border border-stone-700 bg-stone-900 px-3 py-1.5 text-stone-100 focus:border-amber-500 focus:outline-none" />
+      </label>
+      <label class="flex flex-col gap-1">
+        <span class="text-stone-400">Last <span class="text-red-400">*</span></span>
+        <input data-field="name.last" required class="rounded-md border border-stone-700 bg-stone-900 px-3 py-1.5 text-stone-100 focus:border-amber-500 focus:outline-none" />
+      </label>
+      <label class="flex flex-col gap-1">
+        <span class="text-stone-400">Maiden</span>
+        <input data-field="name.maidenName" class="rounded-md border border-stone-700 bg-stone-900 px-3 py-1.5 text-stone-100 focus:border-amber-500 focus:outline-none" />
+      </label>
+    </div>
+  </fieldset>
+
+  <!-- ── Sex ───────────────────────────────────────────────────────── -->
+  <fieldset class="flex items-center gap-3 text-sm">
+    <legend class="sr-only">Sex</legend>
+    <span class="text-xs uppercase tracking-wide text-stone-500">Sex</span>
+    <label class="flex items-center gap-1.5">
+      <input type="radio" name="sex" value="M" data-field="sex" class="accent-blue-500" />
+      <span>Male</span>
+    </label>
+    <label class="flex items-center gap-1.5">
+      <input type="radio" name="sex" value="F" data-field="sex" class="accent-orange-500" />
+      <span>Female</span>
+    </label>
+    <label class="flex items-center gap-1.5">
+      <input type="radio" name="sex" value="" data-field="sex" class="accent-stone-500" checked />
+      <span>Unknown</span>
+    </label>
+  </fieldset>
+
+  <!-- ── Birth / Death / Burial ────────────────────────────────────── -->
+  {['birth', 'death', 'burial'].map(ev => (
+    <fieldset class="flex flex-col gap-2">
+      <legend class="text-xs uppercase tracking-wide text-stone-500 capitalize">{ev}</legend>
+      <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+        {ev !== 'burial' && (
+          <label class="flex flex-col gap-1">
+            <span class="text-stone-400">Date</span>
+            <input data-field={`${ev}.dateRaw`} placeholder="1872-03-15 or 'about 1872'" class="rounded-md border border-stone-700 bg-stone-900 px-3 py-1.5 text-stone-100 placeholder-stone-500 focus:border-amber-500 focus:outline-none" />
+          </label>
+        )}
+        <label class="flex flex-col gap-1">
+          <span class="text-stone-400">Place</span>
+          <input data-field={`${ev}.place`} placeholder="Lewisburg, WV" class="rounded-md border border-stone-700 bg-stone-900 px-3 py-1.5 text-stone-100 placeholder-stone-500 focus:border-amber-500 focus:outline-none" />
+        </label>
+      </div>
+    </fieldset>
+  ))}
+
+  <!-- ── Parents ───────────────────────────────────────────────────── -->
+  <fieldset class="flex flex-col gap-2">
+    <legend class="text-xs uppercase tracking-wide text-stone-500">Parents</legend>
+    <div id="pf-parents" class="flex flex-col gap-3"></div>
+  </fieldset>
+
+  <!-- ── Marriages ─────────────────────────────────────────────────── -->
+  <fieldset class="flex flex-col gap-2">
+    <legend class="flex items-center justify-between text-xs uppercase tracking-wide text-stone-500">
+      <span>Marriages</span>
+      <button type="button" id="pf-add-marriage" class="rounded border border-stone-700 bg-stone-800 px-2 py-0.5 text-[11px] normal-case text-stone-300 hover:bg-stone-700">
+        + Add marriage
+      </button>
+    </legend>
+    <div id="pf-marriages" class="flex flex-col gap-3"></div>
+  </fieldset>
+
+  <!-- ── Residences (list) ─────────────────────────────────────────── -->
+  <fieldset class="flex flex-col gap-2">
+    <legend class="flex items-center justify-between text-xs uppercase tracking-wide text-stone-500">
+      <span>Residences</span>
+      <button type="button" id="pf-add-residence" class="rounded border border-stone-700 bg-stone-800 px-2 py-0.5 text-[11px] normal-case text-stone-300 hover:bg-stone-700">
+        + Add residence
+      </button>
+    </legend>
+    <div id="pf-residences" class="flex flex-col gap-2"></div>
+  </fieldset>
+
+  <!-- ── Occupation / Notes / Source notes ─────────────────────────── -->
+  <label class="flex flex-col gap-1">
+    <span class="text-xs uppercase tracking-wide text-stone-500">Occupation</span>
+    <input data-field="occupation" class="rounded-md border border-stone-700 bg-stone-900 px-3 py-1.5 text-stone-100 focus:border-amber-500 focus:outline-none" />
+  </label>
+
+  <label class="flex flex-col gap-1">
+    <span class="text-xs uppercase tracking-wide text-stone-500">Notes</span>
+    <textarea data-field="notes" rows="3" class="rounded-md border border-stone-700 bg-stone-900 px-3 py-1.5 text-stone-100 focus:border-amber-500 focus:outline-none"></textarea>
+  </label>
+
+  <label class="flex flex-col gap-1">
+    <span class="text-xs uppercase tracking-wide text-stone-500">
+      Where does this information come from?
+      <span class="ml-1 text-stone-500 normal-case">(family bible, census record, family member, etc.)</span>
+    </span>
+    <textarea data-field="sourceNotes" rows="2" class="rounded-md border border-stone-700 bg-stone-900 px-3 py-1.5 text-stone-100 focus:border-amber-500 focus:outline-none"></textarea>
+  </label>
+</div>
+
+<!-- Hidden templates for repeatable items (cloned by JS) -->
+<template id="pf-tpl-parent">
+  <div class="rounded-md border border-stone-700 bg-stone-900/40 p-3" data-parent-slot>
+    <div class="mb-2 flex items-center justify-between">
+      <span class="text-xs text-stone-400" data-parent-label>Parent</span>
+    </div>
+    <div data-picker></div>
+  </div>
+</template>
+
+<template id="pf-tpl-marriage">
+  <div class="rounded-md border border-stone-700 bg-stone-900/40 p-3" data-marriage-slot>
+    <div class="mb-2 flex items-center justify-between">
+      <span class="text-xs text-stone-400">Spouse</span>
+      <button type="button" data-remove class="text-xs text-stone-500 hover:text-red-300">Remove</button>
+    </div>
+    <div data-picker class="mb-3"></div>
+    <div class="grid grid-cols-1 gap-2 sm:grid-cols-3">
+      <label class="flex flex-col gap-1 text-xs">
+        <span class="text-stone-400">Marriage date</span>
+        <input data-mfield="dateRaw" placeholder="1898-06-12 or 'June 1898'" class="rounded-md border border-stone-700 bg-stone-900 px-2.5 py-1 text-sm text-stone-100 placeholder-stone-500 focus:border-amber-500 focus:outline-none" />
+      </label>
+      <label class="flex flex-col gap-1 text-xs">
+        <span class="text-stone-400">Place</span>
+        <input data-mfield="place" class="rounded-md border border-stone-700 bg-stone-900 px-2.5 py-1 text-sm text-stone-100 focus:border-amber-500 focus:outline-none" />
+      </label>
+      <label class="flex flex-col gap-1 text-xs">
+        <span class="text-stone-400">Order</span>
+        <input data-mfield="marriageOrder" type="number" min="1" max="9" placeholder="1" class="rounded-md border border-stone-700 bg-stone-900 px-2.5 py-1 text-sm text-stone-100 placeholder-stone-500 focus:border-amber-500 focus:outline-none" />
+      </label>
+    </div>
+    <label class="mt-2 flex flex-col gap-1 text-xs">
+      <span class="text-stone-400">Notes</span>
+      <input data-mfield="notes" class="rounded-md border border-stone-700 bg-stone-900 px-2.5 py-1 text-sm text-stone-100 focus:border-amber-500 focus:outline-none" />
+    </label>
+  </div>
+</template>
+
+<template id="pf-tpl-residence">
+  <div class="flex items-center gap-2" data-residence-slot>
+    <input data-residence placeholder="Lewisburg, WV (1880–1910)" class="flex-1 rounded-md border border-stone-700 bg-stone-900 px-3 py-1.5 text-stone-100 placeholder-stone-500 focus:border-amber-500 focus:outline-none" />
+    <button type="button" data-remove class="text-xs text-stone-500 hover:text-red-300">Remove</button>
+  </div>
+</template>
+
+<template id="pf-tpl-picker">
+  <div class="relative" data-picker-root>
+    <div data-picker-search>
+      <input data-picker-input type="text" autocomplete="off" placeholder="Search existing people…" class="w-full rounded-md border border-stone-700 bg-stone-900 px-3 py-1.5 text-stone-100 placeholder-stone-500 focus:border-amber-500 focus:outline-none" />
+      <div data-picker-results class="absolute left-0 right-0 z-30 mt-1 max-h-60 overflow-y-auto rounded-md border border-stone-700 bg-stone-900 shadow-lg" hidden></div>
+    </div>
+    <div data-picker-selected hidden class="flex items-center justify-between rounded-md border border-amber-700/60 bg-amber-950/30 px-3 py-1.5">
+      <span data-picker-selected-label class="truncate text-stone-100"></span>
+      <button type="button" data-picker-clear class="text-xs text-stone-400 hover:text-stone-200 underline">Change</button>
+    </div>
+    <div data-picker-newform hidden class="mt-2 grid grid-cols-1 gap-2 rounded-md border border-stone-700 bg-stone-900/40 p-2 sm:grid-cols-3">
+      <label class="flex flex-col gap-1 text-xs sm:col-span-3">
+        <span class="text-stone-400">Full name <span class="text-red-400">*</span></span>
+        <input data-picker-newname class="rounded-md border border-stone-700 bg-stone-900 px-2.5 py-1 text-sm text-stone-100 focus:border-amber-500 focus:outline-none" />
+      </label>
+      <label class="flex flex-col gap-1 text-xs">
+        <span class="text-stone-400">Birth year</span>
+        <input data-picker-newbirth maxlength="4" inputmode="numeric" class="rounded-md border border-stone-700 bg-stone-900 px-2.5 py-1 text-sm text-stone-100 focus:border-amber-500 focus:outline-none" />
+      </label>
+      <label class="flex flex-col gap-1 text-xs">
+        <span class="text-stone-400">Death year</span>
+        <input data-picker-newdeath maxlength="4" inputmode="numeric" class="rounded-md border border-stone-700 bg-stone-900 px-2.5 py-1 text-sm text-stone-100 focus:border-amber-500 focus:outline-none" />
+      </label>
+      <button type="button" data-picker-newcancel class="text-xs text-stone-400 hover:text-stone-200 underline sm:col-span-3 sm:text-right">
+        Back to search
+      </button>
+    </div>
+  </div>
+</template>
+
+<script>
+  type SearchRow = { id: string; n: string; c: string; l: string };
+  type PickerValue =
+    | { kind: 'none' }
+    | { kind: 'existing'; id: string; displayName: string }
+    | { kind: 'new'; name: string; birthYear?: string; deathYear?: string };
+
+  // ── Lazy data loading ────────────────────────────────────────────
+  // Both indexes are shared with other components (SearchPalette,
+  // PersonModal). Cache at module scope so opening the form repeatedly
+  // doesn't re-fetch.
+  let searchIndex: SearchRow[] | null = null;
+  let searchIndexPromise: Promise<SearchRow[]> | null = null;
+  async function loadSearchIndex(): Promise<SearchRow[]> {
+    if (searchIndex) return searchIndex;
+    if (!searchIndexPromise) {
+      searchIndexPromise = fetch('/data/search.json').then(r => r.json());
+    }
+    searchIndex = await searchIndexPromise;
+    return searchIndex!;
+  }
+  // Kick off the prefetch as soon as the form is on the page; users
+  // generally don't click it instantly so the round-trip is hidden.
+  loadSearchIndex().catch(() => { /* surfaced on first picker keystroke */ });
+
+  // ── Picker factory ───────────────────────────────────────────────
+  // Instantiates one autocomplete picker into the given container,
+  // returns a small handle for read/write/reset.
+  type PickerHandle = {
+    getValue(): PickerValue;
+    setValue(v: PickerValue): void;
+    reset(): void;
+  };
+
+  function createPicker(container: HTMLElement): PickerHandle {
+    const tpl = document.getElementById('pf-tpl-picker') as HTMLTemplateElement;
+    const node = tpl.content.firstElementChild!.cloneNode(true) as HTMLElement;
+    container.replaceChildren(node);
+
+    const searchSection = node.querySelector('[data-picker-search]') as HTMLElement;
+    const selectedSection = node.querySelector('[data-picker-selected]') as HTMLElement;
+    const selectedLabel = node.querySelector('[data-picker-selected-label]') as HTMLElement;
+    const newformSection = node.querySelector('[data-picker-newform]') as HTMLElement;
+    const input = node.querySelector('[data-picker-input]') as HTMLInputElement;
+    const results = node.querySelector('[data-picker-results]') as HTMLElement;
+    const newname = node.querySelector('[data-picker-newname]') as HTMLInputElement;
+    const newbirth = node.querySelector('[data-picker-newbirth]') as HTMLInputElement;
+    const newdeath = node.querySelector('[data-picker-newdeath]') as HTMLInputElement;
+
+    let value: PickerValue = { kind: 'none' };
+
+    function render() {
+      searchSection.hidden = value.kind !== 'none';
+      selectedSection.hidden = value.kind !== 'existing';
+      newformSection.hidden = value.kind !== 'new';
+      if (value.kind === 'existing') selectedLabel.textContent = value.displayName;
+    }
+
+    function chooseExisting(row: SearchRow) {
+      const lifespan = row.l ? ` (${row.l}–)` : '';
+      value = { kind: 'existing', id: row.id, displayName: `${row.n}${lifespan}` };
+      render();
+      hideResults();
+    }
+    function chooseNew(seedName: string) {
+      value = { kind: 'new', name: seedName };
+      newname.value = seedName;
+      newbirth.value = '';
+      newdeath.value = '';
+      render();
+      newname.focus();
+    }
+    function clear() {
+      value = { kind: 'none' };
+      input.value = '';
+      render();
+    }
+
+    // Search
+    let lastQuery = '';
+    function showResults(rows: SearchRow[], query: string) {
+      results.replaceChildren();
+      results.hidden = false;
+      if (rows.length === 0 && !query.trim()) {
+        results.hidden = true;
+        return;
+      }
+      for (const r of rows.slice(0, 8)) {
+        const item = document.createElement('button');
+        item.type = 'button';
+        item.className = 'flex w-full items-center justify-between gap-2 px-3 py-1.5 text-left text-sm hover:bg-stone-800';
+        const lifespan = r.l ? ` (${r.l})` : '';
+        item.innerHTML = `<span class="truncate text-stone-100">${escapeHtml(r.n)}${escapeHtml(lifespan)}</span><span class="text-xs text-stone-500">${escapeHtml(r.id)}</span>`;
+        item.addEventListener('click', () => chooseExisting(r));
+        results.appendChild(item);
+      }
+      const addRow = document.createElement('button');
+      addRow.type = 'button';
+      addRow.className = 'flex w-full items-center justify-between border-t border-stone-700 bg-stone-900 px-3 py-1.5 text-left text-sm hover:bg-stone-800';
+      addRow.innerHTML = `<span class="text-amber-400">+ Add new person…</span>${query ? `<span class="text-xs text-stone-500">${escapeHtml(query)}</span>` : ''}`;
+      addRow.addEventListener('click', () => chooseNew(query));
+      results.appendChild(addRow);
+    }
+    function hideResults() {
+      results.hidden = true;
+      results.replaceChildren();
+    }
+    async function runSearch(q: string) {
+      lastQuery = q;
+      if (q.trim().length < 2) {
+        hideResults();
+        return;
+      }
+      const idx = await loadSearchIndex();
+      if (q !== lastQuery) return; // user kept typing
+      const needle = q.trim().toLowerCase();
+      const hits = idx.filter(r => r.n.toLowerCase().includes(needle));
+      showResults(hits, q);
+    }
+    input.addEventListener('input', () => runSearch(input.value));
+    input.addEventListener('focus', () => { if (input.value.trim().length >= 2) runSearch(input.value); });
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') hideResults();
+    });
+    document.addEventListener('click', (e) => {
+      if (!node.contains(e.target as Node)) hideResults();
+    });
+
+    // New-person form bindings
+    newname.addEventListener('input', () => {
+      if (value.kind === 'new') value.name = newname.value;
+    });
+    newbirth.addEventListener('input', () => {
+      if (value.kind === 'new') value.birthYear = newbirth.value || undefined;
+    });
+    newdeath.addEventListener('input', () => {
+      if (value.kind === 'new') value.deathYear = newdeath.value || undefined;
+    });
+    (node.querySelector('[data-picker-newcancel]') as HTMLElement)
+      .addEventListener('click', clear);
+    (node.querySelector('[data-picker-clear]') as HTMLElement)
+      .addEventListener('click', clear);
+
+    render();
+
+    return {
+      getValue: () => value,
+      setValue: (v) => {
+        value = v;
+        if (v.kind === 'new') {
+          newname.value = v.name || '';
+          newbirth.value = v.birthYear || '';
+          newdeath.value = v.deathYear || '';
+        } else if (v.kind === 'existing') {
+          input.value = '';
+        }
+        render();
+      },
+      reset: clear,
+    };
+  }
+
+  function escapeHtml(s: string) {
+    return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!));
+  }
+
+  // ── Repeated sections (parents, marriages, residences) ───────────
+  const parentPickers: PickerHandle[] = [];
+  const marriageSlots: Array<{ picker: PickerHandle; slot: HTMLElement }> = [];
+
+  function buildParents() {
+    const host = document.getElementById('pf-parents')!;
+    host.replaceChildren();
+    parentPickers.length = 0;
+    const tpl = document.getElementById('pf-tpl-parent') as HTMLTemplateElement;
+    for (let i = 0; i < 2; i++) {
+      const node = tpl.content.firstElementChild!.cloneNode(true) as HTMLElement;
+      (node.querySelector('[data-parent-label]') as HTMLElement).textContent = i === 0 ? 'Parent 1' : 'Parent 2';
+      host.appendChild(node);
+      parentPickers.push(createPicker(node.querySelector('[data-picker]') as HTMLElement));
+    }
+  }
+
+  function addMarriage(): { picker: PickerHandle; slot: HTMLElement } {
+    const host = document.getElementById('pf-marriages')!;
+    const tpl = document.getElementById('pf-tpl-marriage') as HTMLTemplateElement;
+    const node = tpl.content.firstElementChild!.cloneNode(true) as HTMLElement;
+    host.appendChild(node);
+    const picker = createPicker(node.querySelector('[data-picker]') as HTMLElement);
+    const entry = { picker, slot: node };
+    marriageSlots.push(entry);
+    (node.querySelector('[data-remove]') as HTMLElement).addEventListener('click', () => {
+      node.remove();
+      const idx = marriageSlots.indexOf(entry);
+      if (idx >= 0) marriageSlots.splice(idx, 1);
+    });
+    return entry;
+  }
+
+  function addResidence(initialValue = ''): HTMLInputElement {
+    const host = document.getElementById('pf-residences')!;
+    const tpl = document.getElementById('pf-tpl-residence') as HTMLTemplateElement;
+    const node = tpl.content.firstElementChild!.cloneNode(true) as HTMLElement;
+    host.appendChild(node);
+    const input = node.querySelector('[data-residence]') as HTMLInputElement;
+    input.value = initialValue;
+    (node.querySelector('[data-remove]') as HTMLElement).addEventListener('click', () => node.remove());
+    return input;
+  }
+
+  document.getElementById('pf-add-marriage')?.addEventListener('click', () => addMarriage());
+  document.getElementById('pf-add-residence')?.addEventListener('click', () => addResidence());
+
+  // ── Field helpers ────────────────────────────────────────────────
+  function getInput(field: string) {
+    return document.querySelector<HTMLInputElement | HTMLTextAreaElement>(
+      `#person-form [data-field="${field}"]`
+    );
+  }
+  function getValue(field: string): string {
+    const el = getInput(field);
+    return el ? el.value.trim() : '';
+  }
+  function setValue(field: string, v: string | null | undefined) {
+    const el = getInput(field);
+    if (el) el.value = v ?? '';
+  }
+  function getSex(): 'M' | 'F' | '' {
+    const checked = document.querySelector<HTMLInputElement>(
+      `#person-form input[name="sex"]:checked`
+    );
+    const v = checked?.value;
+    return v === 'M' || v === 'F' ? v : '';
+  }
+  function setSex(v: 'M' | 'F' | '' | null | undefined) {
+    const target = v === 'M' || v === 'F' ? v : '';
+    const el = document.querySelector<HTMLInputElement>(
+      `#person-form input[name="sex"][value="${target}"]`
+    );
+    if (el) el.checked = true;
+  }
+
+  // ── Public API ───────────────────────────────────────────────────
+  function reset() {
+    document.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>(
+      '#person-form [data-field]'
+    ).forEach(el => {
+      if (el instanceof HTMLInputElement && el.type === 'radio') return;
+      el.value = '';
+    });
+    setSex('');
+    buildParents();
+    document.getElementById('pf-marriages')!.replaceChildren();
+    marriageSlots.length = 0;
+    document.getElementById('pf-residences')!.replaceChildren();
+  }
+
+  function getValues() {
+    const parents = parentPickers
+      .map(p => p.getValue())
+      .filter(p => p.kind !== 'none');
+    const marriages = marriageSlots.map(({ picker, slot }) => {
+      const fields = (name: string) => {
+        const el = slot.querySelector<HTMLInputElement>(`[data-mfield="${name}"]`);
+        return el?.value.trim() || '';
+      };
+      return {
+        spouse: picker.getValue(),
+        dateRaw: fields('dateRaw') || undefined,
+        place: fields('place') || undefined,
+        marriageOrder: fields('marriageOrder') ? Number(fields('marriageOrder')) : undefined,
+        notes: fields('notes') || undefined,
+      };
+    }).filter(m => m.spouse.kind !== 'none' || m.dateRaw || m.place || m.notes);
+
+    const residences = Array.from(
+      document.querySelectorAll<HTMLInputElement>('#pf-residences [data-residence]')
+    ).map(el => el.value.trim()).filter(Boolean);
+
+    return {
+      name: {
+        first: getValue('name.first') || undefined,
+        middle: getValue('name.middle') || undefined,
+        last: getValue('name.last') || undefined,
+        maidenName: getValue('name.maidenName') || undefined,
+      },
+      sex: getSex() || undefined,
+      birth: {
+        dateRaw: getValue('birth.dateRaw') || undefined,
+        place: getValue('birth.place') || undefined,
+      },
+      death: {
+        dateRaw: getValue('death.dateRaw') || undefined,
+        place: getValue('death.place') || undefined,
+      },
+      burial: {
+        place: getValue('burial.place') || undefined,
+      },
+      parents,
+      marriages,
+      residences: residences.length ? residences : undefined,
+      occupation: getValue('occupation') || undefined,
+      notes: getValue('notes') || undefined,
+      sourceNotes: getValue('sourceNotes') || undefined,
+    };
+  }
+
+  function validate(): string | null {
+    if (!getValue('name.first')) return 'First name is required.';
+    if (!getValue('name.last')) return 'Last name is required.';
+    for (const { picker } of marriageSlots) {
+      const v = picker.getValue();
+      if (v.kind === 'new' && !v.name.trim()) {
+        return 'A new spouse needs at least a full name.';
+      }
+    }
+    for (const p of parentPickers.map(pp => pp.getValue())) {
+      if (p.kind === 'new' && !p.name.trim()) {
+        return 'A new parent needs at least a full name.';
+      }
+    }
+    return null;
+  }
+
+  // The people-index.json shape stores name as flat fields
+  // (nameFirst, nameLast, nameMaiden) plus a `name` string for display.
+  // The raw schema uses a nested `name: {first,last,maidenName}` object.
+  // fill() accepts both — we just read whichever is present.
+  type PersonRecord = {
+    name?: string | { first?: string; middle?: string; last?: string; maidenName?: string };
+    nameFirst?: string;
+    nameMiddle?: string;
+    nameLast?: string;
+    nameMaiden?: string;
+    sex?: string;
+    birth?: { date?: string; dateRaw?: string; place?: string };
+    death?: { date?: string; dateRaw?: string; place?: string };
+    burial?: { place?: string } | null;
+    parentIds?: string[];
+    marriages?: Array<{
+      spouseId?: string; spouseName?: string;
+      date?: string; dateRaw?: string; place?: string;
+      marriageOrder?: number; notes?: string;
+    }>;
+    residences?: string[];
+    occupation?: string;
+    notes?: string;
+  };
+
+  async function fill(person: PersonRecord & { peopleIndex?: Record<string, any> }) {
+    reset();
+    const nameObj = typeof person.name === 'object' ? person.name : undefined;
+    const first = nameObj?.first ?? person.nameFirst;
+    const last = nameObj?.last ?? person.nameLast;
+    const maiden = nameObj?.maidenName ?? person.nameMaiden;
+    setValue('name.first', first);
+    setValue('name.middle', nameObj?.middle ?? person.nameMiddle);
+    setValue('name.last', last);
+    setValue('name.maidenName', maiden);
+    setSex((person.sex as any) || '');
+    setValue('birth.dateRaw', person.birth?.dateRaw || person.birth?.date);
+    setValue('birth.place', person.birth?.place);
+    setValue('death.dateRaw', person.death?.dateRaw || person.death?.date);
+    setValue('death.place', person.death?.place);
+    setValue('burial.place', person.burial?.place);
+    setValue('occupation', person.occupation);
+    setValue('notes', person.notes);
+
+    // Parents: look them up in the index for the display label
+    const idx = person.peopleIndex || {};
+    (person.parentIds || []).slice(0, 2).forEach((id, i) => {
+      const found = idx[id];
+      if (!found) return;
+      const lifespan = (found.birth?.date || found.birth?.dateRaw || '').slice(0, 4);
+      const label = lifespan ? `${found.name} (${lifespan}–)` : found.name;
+      parentPickers[i].setValue({ kind: 'existing', id, displayName: label });
+    });
+
+    // Marriages
+    (person.marriages || []).forEach(m => {
+      const entry = addMarriage();
+      if (m.spouseId && idx[m.spouseId]) {
+        const found = idx[m.spouseId];
+        const lifespan = (found.birth?.date || found.birth?.dateRaw || '').slice(0, 4);
+        const label = lifespan ? `${found.name} (${lifespan}–)` : found.name;
+        entry.picker.setValue({ kind: 'existing', id: m.spouseId, displayName: label });
+      } else if (m.spouseName) {
+        entry.picker.setValue({ kind: 'new', name: m.spouseName });
+      }
+      const set = (name: string, val: any) => {
+        const el = entry.slot.querySelector<HTMLInputElement>(`[data-mfield="${name}"]`);
+        if (el) el.value = val == null ? '' : String(val);
+      };
+      set('dateRaw', m.dateRaw || m.date);
+      set('place', m.place);
+      set('marriageOrder', m.marriageOrder);
+      set('notes', m.notes);
+    });
+
+    // Residences
+    (person.residences || []).forEach(r => addResidence(r));
+  }
+
+  // Initial empty state
+  buildParents();
+
+  (window as any).__personForm = { reset, fill, getValues, validate };
+</script>

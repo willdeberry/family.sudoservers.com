@@ -191,6 +191,7 @@
       <div class="border-t border-stone-800 bg-[#171717] px-6 py-3 flex items-center justify-between text-xs text-stone-400">
         <span>ID ${p.id}</span>
         <span class="flex gap-4">
+          <a class="text-stone-300 hover:text-amber-300" href="#" id="suggest-edit">Suggest an edit →</a>
           <a class="text-stone-300 hover:text-amber-300" href="#" id="trace-to-founder">Trace ancestry to founder →</a>
           <a class="text-stone-300 hover:text-amber-300" href="#" id="focus-tree-on">Focus tree here →</a>
         </span>
@@ -232,6 +233,16 @@
       const ft = (window as any).__familytree;
       if (ft && id) ft.focusOn(id, { trace: true });
       modal.close();
+    });
+    content.querySelector('#suggest-edit')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      // Hand the suggestion modal the full person record it needs to
+      // prefill the form. Closing this modal first keeps focus management
+      // clean — only one <dialog> open at a time.
+      modal.close();
+      window.dispatchEvent(new CustomEvent('familytree:suggest-edit', {
+        detail: { personId: id, person: p },
+      }));
     });
   }
 
