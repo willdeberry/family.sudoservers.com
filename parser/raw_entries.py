@@ -15308,6 +15308,18 @@ ENTRIES.append({
             "married": "23 Dec 2024",
             "married_place": "Raleigh, NC",
             "order": 2,
+            # Cassila's parents added via issues #23 (Jorge) and #24
+            # (Rita). Jorge's own parents (Mauro + Alice) were declared
+            # in #23 as his parents and recurse one generation up as
+            # Cassila's paternal grandparents.
+            "father": {
+                "name": "Jorge De Carvalho",
+                "father": {"name": "Mauro De Carvalho"},
+                "mother": {"name": "Alice Nunes Duarte"},
+            },
+            "mother": {
+                "name": "Rita De Cassia Antunes Batista",
+            },
         },
     ],
     "source": {"pdf": "user-submission", "page": None},
