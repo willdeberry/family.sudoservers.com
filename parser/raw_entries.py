@@ -15214,8 +15214,33 @@ ENTRIES.append({
                     "died": "31 Mar 1937",
                     "died_place": "Newtown, MO",
                     "married": "1884",
-                    "father": {"name": "James Moses Hughs", "born": "1811", "died": "1861"},
-                    "mother": {"name": "Elizabeth Betsy Bradburn", "born": "1810", "died": "1889"},
+                    # Issue #33 enriched James Moses Hughs and added his
+                    # own parents Hudson Hughes + Margaret Robertson
+                    # Balfour.
+                    "father": {
+                        "name": "James Moses Hughs",
+                        "born": "1811",
+                        "born_place": "VA",
+                        "died": "2 Mar 1861",
+                        "died_place": "St Louis, MO",
+                        "father": {"name": "Hudson Hughes", "born": "1775", "died": "1841"},
+                        "mother": {"name": "Margaret Mary Robertson Balfour", "born": "1775", "died": "1820"},
+                    },
+                    # Issue #32 enriched Elizabeth Betsy Bradburn and
+                    # added her parents. Joseph Bradburn's submitted
+                    # birth year (1817) is incompatible with Elizabeth's
+                    # (1810), so it's omitted until a corrected year is
+                    # submitted; Ann Mackley's year stands.
+                    "mother": {
+                        "name": "Elizabeth Betsy Bradburn",
+                        "born": "1810",
+                        "born_place": "TN",
+                        "died": "1889",
+                        "married": "16 Jun 1831",
+                        "married_place": "Vermillion, IN",
+                        "father": {"name": "Joseph Bradburn", "died": "1881"},
+                        "mother": {"name": "Ann Mackley", "born": "1793", "died": "1845"},
+                    },
                 },
                 "mother": {
                     "name": "Florence Elizabeth 'Flora' Jobe",
@@ -15223,8 +15248,27 @@ ENTRIES.append({
                     "born_place": "Newtown, MO",
                     "died": "10 Jan 1910",
                     "died_place": "Newtown, MO",
-                    "father": {"name": "Joseph W Jobe", "born": "1838", "died": "1925"},
-                    "mother": {"name": "Catharine Buress", "born": "1834", "died": "1912"},
+                    # Issue #31 enriched Joseph W Jobe's dates and #30
+                    # enriched Catharine Buress + added her parents.
+                    "father": {
+                        "name": "Joseph W Jobe",
+                        "born": "20 Mar 1838",
+                        "born_place": "Cole, MO",
+                        "died": "1 Dec 1925",
+                        "died_place": "Trenton, MO",
+                    },
+                    "mother": {
+                        "name": "Catharine Buress",
+                        "born": "4 Dec 1834",
+                        "born_place": "Campbell, TN",
+                        "died": "22 Oct 1912",
+                        "died_place": "Trenton, MO",
+                        "buried": "Newtown, MO",
+                        "married": "4 May 1856",
+                        "married_place": "Mercer, MO",
+                        "father": {"name": "William Burris", "born": "1792", "died": "1840"},
+                        "mother": {"name": "Elizabeth Matilda Taylor", "born": "1794", "died": "1862"},
+                    },
                 },
             },
             # Issue #17 corrected the original "Florence Elizabeth 'Flora'
