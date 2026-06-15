@@ -10528,9 +10528,21 @@ ENTRIES.append({
     "name": "Kermit Nelson DeBerry",
     "sex": "M",
     "born": "6 Dec 1937",
-    "spouses": [{"name": "Barbara Ann Mary Voelker", "born": "1 Dec 1940", "married": "18 Jun 1960"}],
+    # died/buried + Barbara's death+burial backfilled from user submissions
+    # (issues #8 and #9 — Tuscon→Tucson spelling normalised).
+    "died": "19 Oct 2007",
+    "died_place": "Seffner, FL",
+    "buried": "Seffner, FL",
+    "spouses": [{
+        "name": "Barbara Ann Mary Voelker",
+        "born": "1 Dec 1940",
+        "died": "5 Jul 2024",
+        "died_place": "Tucson, AZ",
+        "buried": "Seffner, FL",
+        "married": "18 Jun 1960",
+    }],
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 80},
-    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-15", "notes": "Death/burial details for Kermit and Barbara added via user submissions (issues #8, #9)."},
     "children": [
         {"code": "1224311", "name": "Michael Nelson DeBerry", "born": "25 Mar 1961"},
         {"code": "1224312", "name": "William (Teddy) Dale DeBerry", "born": "6 Apr 1963"},
@@ -15156,9 +15168,23 @@ ENTRIES.append({
     "name": "William (Teddy) Dale DeBerry",
     "sex": "M",
     "born": "6 Apr 1963",
-    "spouses": [{"name": "Kelli Louise Hughs", "born": "13 Apr 1965", "married": "25 May 1985", "married_place": "Wahiawa, Hawaii"}],
+    # Birth place + death/place backfilled from user submission (issue #10).
+    "born_place": "HI",
+    "died": "26 Apr 2019",
+    "died_place": "FL",
+    "spouses": [{
+        "name": "Kelli Louise Hughs",
+        "born": "13 Apr 1965",
+        "married": "25 May 1985",
+        "married_place": "Wahiawa, Hawaii",
+        # Kelli's parents added via issue #7. Dict form carries through
+        # the life-event fields so build.py can materialize each parent
+        # with a proper birth and death record.
+        "father": {"name": "Ralph Edward Hughs", "born": "1924", "died": "2007"},
+        "mother": {"name": "Betty Laura Sellman", "born": "1925", "died": "1990"},
+    }],
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 124},
-    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
+    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-15", "notes": "Updated via user submissions: William Teddy's HI birth + FL death (issue #10), Kelli's parents (issue #7)."},
     "children": [
         # William Dale and Crystal both have their own ENTRIES below for the
         # marriages they carry; we keep the children stubs only to establish

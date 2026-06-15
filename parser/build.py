@@ -580,6 +580,52 @@ def build():
             if key:
                 materialized_by_key[key] = sp_pid
 
+            # Materialize the spouse's own parents when the spouse dict
+            # carried `father`/`mother`. Plain-string form ("Ralph Edward
+            # Hughs") creates a name-only stub; dict form
+            # ({"name":..., "born":..., "died":...}) carries through life
+            # events too. Either way the resulting person is linked as a
+            # parent of the spouse so the suggestion/edit flow can surface
+            # them as grandparents in the tree.
+            for role, key_name in (
+                ("father", "_spouseFather"),
+                ("mother", "_spouseMother"),
+            ):
+                raw_parent = m.get(key_name)
+                if not raw_parent:
+                    continue
+                parent_info = (
+                    {"name": raw_parent} if isinstance(raw_parent, str) else dict(raw_parent)
+                )
+                if not parent_info.get("name"):
+                    continue
+                spouse_counter += 1
+                parent_pid = f"sp_{spouse_counter:06d}"
+                ensure_person(parent_pid, None)
+                parent_p = people[parent_pid]
+                parent_p["name"] = split_name(parent_info["name"])
+                parent_p["sex"] = "M" if role == "father" else "F"
+                if parent_info.get("born") or parent_info.get("born_place"):
+                    parent_p["birth"] = make_lifeevent(
+                        parent_info.get("born"), parent_info.get("born_place")
+                    )
+                if parent_info.get("died") or parent_info.get("died_place"):
+                    parent_p["death"] = make_lifeevent(
+                        parent_info.get("died"), parent_info.get("died_place")
+                    )
+                parent_p["verification"] = {
+                    "status": "verified",
+                    "source": "vision",
+                    "lastChecked": p.get("verification", {}).get("lastChecked"),
+                    "notes": (
+                        f"Materialized as {role} of {spouse_name} (spouse of {primary_code})."
+                    ),
+                }
+                if parent_pid not in sp_person["parentIds"]:
+                    sp_person["parentIds"].append(parent_pid)
+                if sp_pid not in parent_p["childIds"]:
+                    parent_p["childIds"].append(sp_pid)
+
     # Link spouses as co-parents of their partner's children. Without this,
     # children only get a single parent (the lineage-code path), so the chart
     # only renders one parent line. Heuristic: if person A is married to B
