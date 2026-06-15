@@ -11,8 +11,10 @@
 #  - Your SWAG/nginx container is on a docker network named `swag`. The
 #    nginx config (deploy/family.sudoservers.com.conf) proxies /api/ to
 #    http://family-api:4321, which resolves over that shared network.
-#  - /etc/family-sudoservers/env exists on the host with GOOGLE_CLIENT_ID,
-#    GITHUB_TOKEN, and GITHUB_REPO. See web/.env.example.
+#  - GOOGLE_CLIENT_ID, GITHUB_TOKEN, GITHUB_REPO are available to the
+#    shell that runs `docker compose up` (set them via your stack's
+#    secrets store, a .env next to this file that compose auto-loads,
+#    or plain shell exports). See web/.env.example.
 #  - The Astro server bundle + its node_modules are deployed to
 #    /config/www/family.sudoservers.com/. The deploy step is:
 #      cd web
@@ -33,12 +35,18 @@ services:
     restart: unless-stopped
     working_dir: /app
     command: ["node", "./dist/server/entry.mjs"]
-    env_file:
-      - /etc/family-sudoservers/env
+    # The Node bundle reads env at startup (Astro's import.meta.env bridges
+    # to process.env in server mode). Compose's ${VAR} substitution pulls
+    # these from whatever shell / .env / secrets store you run
+    # `docker compose up` against — no on-disk env file required, and the
+    # values never end up in the compose file itself.
     environment:
       HOST: 0.0.0.0
       PORT: 4321
       NODE_ENV: production
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:?GOOGLE_CLIENT_ID is required}
+      GITHUB_TOKEN: ${GITHUB_TOKEN:?GITHUB_TOKEN is required}
+      GITHUB_REPO: ${GITHUB_REPO:-willdeberry/family.sudoservers.com}
     volumes:
       - /config/www/family.sudoservers.com/server:/app/dist/server:ro
       - /config/www/family.sudoservers.com/node_modules:/app/node_modules:ro
