@@ -15160,8 +15160,68 @@ ENTRIES.append({
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 124},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-07", "notes": None},
     "children": [
-        {"code": "12243121", "name": "William Dale DeBerry", "born": "14 Sep 1986", "verified_terminal": True},
+        # William Dale and Crystal both have their own ENTRIES below for the
+        # marriages they carry; we keep the children stubs only to establish
+        # the parent→child relationship.
+        {"code": "12243121", "name": "William Dale DeBerry", "born": "14 Sep 1986"},
+        {"code": "12243122", "name": "Crystal Nicole DeBerry", "born": "12 Jun 1990"},
     ],
+})
+
+# ── User submission via family.sudoservers.com (issue #1) ────────────────────
+ENTRIES.append({
+    "code": "12243122",
+    "name": "Crystal Nicole DeBerry",
+    "sex": "F",
+    "born": "12 Jun 1990",
+    "born_place": "Brandon, FL",
+    "spouses": [{"name": "David Holloway"}],
+    "source": {"pdf": "user-submission", "page": None},
+    "verification": {
+        "status": "verified",
+        "source": "user-submission",
+        "lastChecked": "2026-06-15",
+        "notes": "Submitted by Will DeBerry via family.sudoservers.com (issue #1).",
+    },
+})
+
+# ── User submissions via family.sudoservers.com (issues #2, #3) ──────────────
+# William Dale's two marriages: Janelle Harriette Holdridge (1, deceased) and
+# Cassila Batista Carvalho (2).
+ENTRIES.append({
+    "code": "12243121",
+    "name": "William Dale DeBerry",
+    "sex": "M",
+    "born": "14 Sep 1986",
+    "spouses": [
+        {
+            "name": "Janelle Harriette Holdridge",
+            "born": "11 Sep 1976",
+            "born_place": "St. Petersburg, FL",
+            "died": "26 May 2020",
+            "died_place": "Frederick, MD",
+            "father": "Kim Holdridge",
+            "mother": "Sandy Mastry",
+            "married": "21 Dec 2013",
+            "married_place": "FL",
+            "order": 1,
+        },
+        {
+            "name": "Cassila Batista Carvalho",
+            "born": "30 May 1982",
+            "born_place": "Brazil",
+            "married": "23 Dec 2024",
+            "married_place": "Raleigh, NC",
+            "order": 2,
+        },
+    ],
+    "source": {"pdf": "user-submission", "page": None},
+    "verification": {
+        "status": "verified",
+        "source": "user-submission",
+        "lastChecked": "2026-06-15",
+        "notes": "Submitted by Will DeBerry via family.sudoservers.com (issues #2, #3).",
+    },
 })
 
 ENTRIES.append({

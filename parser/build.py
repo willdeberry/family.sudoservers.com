@@ -253,7 +253,9 @@ def build():
                 "marriageOrder": sp.get("order"),
                 "notes": sp.get("notes"),
                 "_spouseBirth": sp.get("born"),
+                "_spouseBirthPlace": sp.get("born_place"),
                 "_spouseDeath": sp.get("died"),
+                "_spouseDeathPlace": sp.get("died_place"),
                 "_spouseBuried": sp.get("buried"),
                 "_spouseFather": sp.get("father"),
                 "_spouseMother": sp.get("mother"),
@@ -539,10 +541,14 @@ def build():
                 sp_person["sex"] = "F"
             elif p.get("sex") == "F":
                 sp_person["sex"] = "M"
-            if m.get("_spouseBirth"):
-                sp_person["birth"] = make_lifeevent(m["_spouseBirth"])
-            if m.get("_spouseDeath"):
-                sp_person["death"] = make_lifeevent(m["_spouseDeath"])
+            if m.get("_spouseBirth") or m.get("_spouseBirthPlace"):
+                sp_person["birth"] = make_lifeevent(
+                    m.get("_spouseBirth"), m.get("_spouseBirthPlace")
+                )
+            if m.get("_spouseDeath") or m.get("_spouseDeathPlace"):
+                sp_person["death"] = make_lifeevent(
+                    m.get("_spouseDeath"), m.get("_spouseDeathPlace")
+                )
             if m.get("_spouseBuried"):
                 sp_person["burial"] = {"place": m["_spouseBuried"]}
             sp_person["sources"] = list(p.get("sources") or [])
