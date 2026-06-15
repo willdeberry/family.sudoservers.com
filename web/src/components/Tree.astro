@@ -36,8 +36,8 @@ try {
 </div>
 
 <script>
-  import f3 from 'family-chart';
-  import 'family-chart/styles/family-chart.css';
+  import * as f3 from 'family-chart-premium';
+  import 'family-chart-premium/styles/family-chart.css';
 
   type Datum = {
     id: string;
@@ -55,20 +55,6 @@ try {
         .then(p => p.people as Datum[]);
     }
     return fullDataPromise;
-  }
-
-  // Spouse-list mutations made by setModifyTreeHierarchy need to be undone
-  // before the next render so the next focus point sees the full marriage
-  // graph. Keyed by person id → original rels.spouses array reference.
-  const savedSpouseLists = new Map<any, string[]>();
-  function allDescendants(root: any): any[] {
-    const out: any[] = [];
-    const queue = [root];
-    while (queue.length) {
-      const n = queue.shift();
-      if (n.children) for (const c of n.children) { out.push(c); queue.push(c); }
-    }
-    return out;
   }
 
   async function bootstrap() {
@@ -107,63 +93,23 @@ try {
       // expand arrows on cards to drill past the default.
       .setAncestryDepth(8)
       .setProgenyDepth(4)
-      .setDuplicateBranchToggle(true)
-      .setModifyTreeHierarchy((root: any, isAncestry: boolean) => {
-        // On the ancestry side, defer to family-chart's own duplicate
-        // handling (enabled by setDuplicateBranchToggle above): it places
-        // a clickable C1/C2 toggle on cards whose ancestry path is shared
-        // with another card, so the user can flip which branch is shown
-        // instead of having one silently severed.
-        if (isAncestry) return;
-        const seenInTree = new Set<string>();
-        seenInTree.add(root.data.id);
-        const queue: any[] = [root];
-        while (queue.length) {
-          const node = queue.shift();
-          if (!node.children) continue;
-          const kept: any[] = [];
-          for (const c of node.children) {
-            const id = c?.data?.id;
-            if (!id || seenInTree.has(id)) continue;
-            seenInTree.add(id);
-            kept.push(c);
-          }
-          // d3.tree's firstWalk does `if (children)` and then reads
-          // `children[0].z`, so an empty array crashes the layout. Drop
-          // the property entirely instead.
-          if (kept.length === 0) delete node.children;
-          else node.children = kept;
-          for (const c of kept) queue.push(c);
-        }
-        // family-chart's setupSpouses (called later) reads d.data.rels.spouses
-        // and synthesizes a spouse card next to every non-ancestry node.
-        // For cousin marriages where BOTH partners are descendants, this
-        // produces a synth duplicate of a person we already placed as a
-        // real descendant. Trim those redundant spouse ids; restore them
-        // in chart.afterUpdate so subsequent recenters see the full
-        // spouse list.
-        savedSpouseLists.clear();
-        for (const node of [root, ...allDescendants(root)]) {
-          const spouses: string[] = node.data.rels.spouses || [];
-          let needsTrim = false;
-          for (const spId of spouses) {
-            if (seenInTree.has(spId)) { needsTrim = true; break; }
-          }
-          if (!needsTrim) continue;
-          savedSpouseLists.set(node.data, spouses);
-          node.data.rels.spouses = spouses.filter(spId => !seenInTree.has(spId));
-        }
-      })
       .setOrientationVertical();
+    // FCP replaces setDuplicateBranchToggle with a plugin. Install the
+    // duplicate toggle so cousin-marriage cases (a single ancestor reached
+    // via two child paths) render a clickable Cn marker instead of being
+    // silently duplicated.
+    chart.use(new f3.DuplicatesTogglePlugin(
+      () => chart.updateTree(),
+      () => false, // not horizontal
+    ));
 
     const card = chart
       .setCardSvg()
       .setCardDisplay([['full name'], ['lifespan']])
       // setMiniTree renders the small expand-arrow on cards that have hidden
-      // relations (children/parents past the depth limit). Without it there's
-      // no way to expand a node's children inline — the only navigation is
-      // click-to-recenter via the modal.
-      .setMiniTree(true)
+      // relations (children/parents past the depth limit). FCP uses
+      // setMiniTree()/unsetMiniTree() — no boolean arg.
+      .setMiniTree()
       .setCardDim({
         width: 250,
         height: 70,
@@ -194,7 +140,7 @@ try {
     // After every update: hide the loader, and hide synthetic "to_add"
     // placeholder cards that family-chart auto-creates for missing parents.
     // The Datum is on the parent .card_cont's __data__ (D3 attaches it there).
-    chart.afterUpdate = () => {
+    chart.setAfterUpdate(() => {
       document.getElementById('family-chart-loading')?.remove();
       const svg = container.querySelector('svg');
       if (!svg) return;
@@ -205,17 +151,7 @@ try {
         const isPlaceholder = !!datum?.to_add;
         if (isPlaceholder) cont.style.display = 'none';
       });
-      // Restore the marriage links we temporarily stripped in the dedup hook.
-      // The chart only reads rels.spouses during a layout pass, so by the
-      // time afterUpdate fires the trimmed list has already done its job.
-      // (We keyed by the data object itself so this is O(saved), not O(n²).)
-      if (savedSpouseLists.size) {
-        for (const [datum, original] of savedSpouseLists) {
-          datum.rels.spouses = original;
-        }
-        savedSpouseLists.clear();
-      }
-    };
+    });
 
     performance.mark('chart:create-end');
     // Initial render — center on the focused person at full scale. Note:
@@ -224,7 +160,13 @@ try {
     // (the entry-animation delay we'd otherwise get isn't worth ~820
     // cards rendering at scale 0.01 and the chart looking invisible).
     performance.mark('chart:render-start');
-    chart.updateTree({ initial: false, tree_position: 'main_to_middle' });
+    // FCP (like the free version) auto-detects "first render" by checking
+    // whether any .card_cont elements exist and force-applies fit mode
+    // when none do. The fix is to render once (any tree_position is
+    // ignored on the first pass), then immediately call updateTree again
+    // — now the second call sees the cards and respects main_to_middle.
+    chart.updateTree({ tree_position: 'main_to_middle', transition_time: 0 });
+    chart.updateTree({ tree_position: 'main_to_middle', transition_time: 0 });
     performance.mark('chart:render-end');
 
     // Surface where time went in the console so we can profile real loads.
@@ -259,18 +201,12 @@ try {
     async function ensureFullData() {
       if (fullDataMerged) return;
       const full = await loadFullData();
-      // Replace the chart's data with the full dataset. family-chart reads
-      // state.data each updateTree, so just swapping the array is enough.
-      // We mutate in place rather than reassigning so existing closures keep
-      // working.
       const known = new Set(data.map(d => d.id));
       for (const d of full) {
         if (known.has(d.id)) continue;
         data.push(d);
         known.add(d.id);
       }
-      // Now patch the slice's rels: items in the slice had their pointers to
-      // outside-the-slice nodes stripped at build time. Restore them.
       const fullById = new Map(full.map(d => [d.id, d]));
       for (const d of data) {
         const fd = fullById.get(d.id);
@@ -279,6 +215,12 @@ try {
         d.rels.children = fd.rels.children;
         d.rels.spouses = fd.rels.spouses;
       }
+      // FCP wraps the data array in a `Data` class with its own internal
+      // id-keyed dictionary; the free version read state.data directly
+      // each updateTree, so push-and-mutate was enough. With FCP we have
+      // to call updateData() so it rebuilds its index — otherwise any
+      // focusOn for a person added by the merge throws "Datum not found".
+      chart.updateData(data as any);
       fullDataMerged = true;
       console.log(`[chart] full data merged (${data.length} nodes)`);
     }
@@ -302,11 +244,17 @@ try {
     let suppressNextPush = false;
     // Seed lastMainId from the initial render that already completed, so
     // the first focusOn after page load correctly pushes the founder onto
-    // the back stack (rather than discarding it as "null").
-    let lastMainId: string | null = chart.store.state.main_id;
+    // the back stack (rather than discarding it as "null"). FCP exposes
+    // getMainId() on the store; fall back to the data[0] id (founder)
+    // if that's somehow not set yet.
+    let lastMainId: string | null =
+      (chart as any).store.getMainId?.()
+      ?? (chart as any).store.state.main_id
+      ?? data[0]?.id
+      ?? null;
 
-    chart.beforeUpdate = () => {
-      const currentMain = chart.store.state.main_id;
+    chart.setBeforeUpdate(() => {
+      const currentMain = (chart as any).store.getMainId?.() ?? (chart as any).store.state.main_id;
       if (lastMainId && currentMain && lastMainId !== currentMain) {
         if (suppressNextPush) {
           suppressNextPush = false;
@@ -316,18 +264,20 @@ try {
         }
       }
       lastMainId = currentMain;
-    };
+    });
 
     function emitNav() {
       document.dispatchEvent(new CustomEvent('familytree:nav', {
         detail: { canGoBack: backStack.length > 0 },
       }));
     }
-    const prevAfterUpdate = chart.afterUpdate;
-    chart.afterUpdate = (props: any) => {
-      prevAfterUpdate?.(props);
+    // FCP's setAfterUpdate replaces the previous handler entirely, so we
+    // re-install our composite (placeholder hide + nav emit).
+    const prevAfter = chart.afterUpdate;
+    chart.setAfterUpdate((props: any) => {
+      prevAfter?.(props);
       emitNav();
-    };
+    });
 
     // Rough heuristic for "is this focus going to be slow to render."
     // Anyone within a few hops of the founder pulls in 2k+ cards at depth 6;
@@ -476,11 +426,22 @@ try {
 </script>
 
 <style is:global>
-  /* Dark-mode palette */
+  /* Dark-mode palette. FCP renames its CSS custom properties from the
+     free version (`--male-color` → `--f3-male-color`, etc.), so we set
+     the f3-prefixed names. The bare names are kept as a no-op safety
+     net in case other styles in the bundle still reference them. */
   #family-chart {
-    --male-color: #2389ce;       /* blue cards */
-    --female-color: #e87a32;     /* orange cards */
-    --genderless-color: #6b7280; /* neutral gray */
+    --f3-male-color: #2389ce;        /* blue cards */
+    --f3-female-color: #e87a32;      /* orange cards */
+    --f3-genderless-color: #6b7280;  /* neutral gray */
+    --f3-text-primary: #ffffff;
+    --f3-bg-primary: #1e1e1e;
+    --f3-bg-secondary: #181818;
+    --f3-bg-tertiary: #2b2b2b;
+
+    --male-color: #2389ce;
+    --female-color: #e87a32;
+    --genderless-color: #6b7280;
     --text-color: #ffffff;
     --background-color: #1e1e1e;
 

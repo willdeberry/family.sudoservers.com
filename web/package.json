@@ -18,7 +18,9 @@
     "@astrojs/node": "^10.1.4",
     "@tailwindcss/vite": "^4.3.0",
     "astro": "^6.4.2",
+    "d3": "^7.9.0",
     "family-chart": "^0.9.0",
+    "family-chart-premium": "^0.0.0-beta.0",
     "tailwindcss": "^4.3.0"
   },
   "devDependencies": {
