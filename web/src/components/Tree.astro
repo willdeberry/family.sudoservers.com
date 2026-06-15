@@ -121,25 +121,32 @@ try {
         text_y: 24,
       });
 
+    function openPersonModal(id: string) {
+      window.dispatchEvent(new CustomEvent('familytree:open-person', { detail: { id } }));
+    }
+
+    // Click on the card body — recenter the chart on that person (the
+    // Ancestry-style behavior). The "i" info icon (added in
+    // setOnCardUpdate below) opens the modal instead; shift- or
+    // alt-click on the body is also a modal shortcut for users who
+    // already have a hand on the keyboard.
     card.setOnCardClick((e: MouseEvent, d: any) => {
       const id = d.data.id;
-      // Shift-click (or alt-click) recenters the chart on this card without
-      // opening the modal — a quick way to navigate. Plain click opens modal
-      // as before. The small expand-arrow icon on cards (rendered by
-      // family-chart when there are off-screen relations) also recenters.
       if (e.shiftKey || e.altKey) {
-        const ft = (window as any).__familytree;
-        if (ft) ft.focusOn(id);
+        openPersonModal(id);
         return;
       }
-      window.dispatchEvent(
-        new CustomEvent('familytree:open-person', { detail: { id } })
-      );
+      (window as any).__familytree?.focusOn(id);
     });
+
+    // Info icon injection happens in chart.afterUpdate (see below) —
+    // we iterate every card_cont after each layout pass and append a
+    // small "i" button that opens the modal.
 
     // After every update: hide the loader, and hide synthetic "to_add"
     // placeholder cards that family-chart auto-creates for missing parents.
     // The Datum is on the parent .card_cont's __data__ (D3 attaches it there).
+    const SVG_NS = 'http://www.w3.org/2000/svg';
     chart.setAfterUpdate(() => {
       document.getElementById('family-chart-loading')?.remove();
       const svg = container.querySelector('svg');
@@ -148,8 +155,34 @@ try {
       conts.forEach(cont => {
         const td: any = (cont as any).__data__;
         const datum = td?.data;
-        const isPlaceholder = !!datum?.to_add;
-        if (isPlaceholder) cont.style.display = 'none';
+        if (datum?.to_add) {
+          cont.style.display = 'none';
+          return;
+        }
+        const id = datum?.id as string | undefined;
+        if (!id) return;
+        // The card group is center-origin: the inner card spans from
+        // (-125, -35) to (125, 35) for a 250×70 card. The info icon
+        // goes in the top-right corner. Skip if already injected for
+        // this render pass; d3's join means existing card_cont reuses
+        // the same DOM node so the icon persists across updates.
+        if (cont.querySelector(':scope > g.card-info-icon')) return;
+        const g = document.createElementNS(SVG_NS, 'g');
+        g.setAttribute('class', 'card-info-icon');
+        g.setAttribute('transform', 'translate(102, -29)'); // top-right of inner card
+        g.style.cursor = 'pointer';
+        g.innerHTML = `
+          <circle r="9" fill="rgba(255,255,255,0.16)"></circle>
+          <text y="3.5" text-anchor="middle"
+                font-family="ui-sans-serif, system-ui, sans-serif"
+                font-size="11" font-weight="700"
+                fill="#ffffff" pointer-events="none">i</text>
+        `;
+        g.addEventListener('click', (e) => {
+          e.stopPropagation();
+          openPersonModal(id);
+        });
+        cont.appendChild(g);
       });
     });
 
