@@ -214,6 +214,13 @@ try {
           cont.style.display = 'none';
           return;
         }
+        // Skip mini-tree member cards. The MiniTreePlugin /
+        // FullMiniTreePlugin tag their tiny stand-in cards with
+        // `runtime.mini = true` and apply the `f3-mini-tree-card`
+        // CSS class — neither has room for the full-size info button
+        // and the click handler we'd attach to it would compete with
+        // the plugins' own onCardClick recenter.
+        if (td?.runtime?.mini) return;
         const id = datum?.id as string | undefined;
         if (!id) return;
         // The visible card is `.card` inside `.card_cont`. `.card_cont`
@@ -224,6 +231,7 @@ try {
         // rectangle instead of the anchor point.
         const cardEl = cont.querySelector<HTMLElement>(':scope > .card');
         if (!cardEl) return;
+        if (cardEl.classList.contains('f3-mini-tree-card')) return;
         if (cardEl.querySelector(':scope > .card-info-icon')) return;
         const btn = document.createElement('div');
         btn.className = 'card-info-icon';
