@@ -67,9 +67,9 @@ import PersonForm from './PersonForm.astro';
       </div>
     </div>
 
-    <footer id="suggestion-footer" class="hidden items-center justify-between gap-3 border-t border-stone-800 p-4 sm:flex">
+    <footer id="suggestion-footer" class="hidden items-center justify-between gap-3 border-t border-stone-800 p-4">
       <p id="suggestion-error" class="text-sm text-red-400"></p>
-      <div class="flex gap-2">
+      <div id="suggestion-footer-actions" class="flex gap-2">
         <button type="button" id="suggestion-cancel" class="rounded-md border border-stone-700 bg-stone-800 px-3 py-1.5 text-sm text-stone-200 hover:bg-stone-700">
           Cancel
         </button>
@@ -81,6 +81,13 @@ import PersonForm from './PersonForm.astro';
           Submit suggestion
         </button>
       </div>
+      <button
+        type="button"
+        id="suggestion-done"
+        class="hidden rounded-md bg-amber-600 px-4 py-1.5 text-sm font-medium text-stone-50 hover:bg-amber-500"
+      >
+        Close
+      </button>
     </footer>
   </div>
 </dialog>
@@ -120,6 +127,11 @@ import PersonForm from './PersonForm.astro';
       footer?.classList.add('hidden');
       footer?.classList.remove('flex');
     }
+    // Whenever the auth state re-renders, the form footer is what the
+    // user should see — not the post-submit Close button.
+    el('suggestion-footer-actions')?.classList.remove('hidden');
+    el('suggestion-footer-actions')?.classList.add('flex');
+    el('suggestion-done')?.classList.add('hidden');
   }
 
   function showHeaderFor(m: SuggestMode, person?: any) {
@@ -183,6 +195,7 @@ import PersonForm from './PersonForm.astro';
 
   el('suggestion-close')?.addEventListener('click', close);
   el('suggestion-cancel')?.addEventListener('click', close);
+  el('suggestion-done')?.addEventListener('click', close);
   el('suggestion-signout')?.addEventListener('click', () => {
     (window as any).__auth?.signOut?.();
   });
@@ -232,13 +245,21 @@ import PersonForm from './PersonForm.astro';
       if (!res.ok || !json.ok) throw new Error(json.error || `HTTP ${res.status}`);
       el('suggestion-signed-in')?.classList.add('hidden');
       el('suggestion-signed-in')?.classList.remove('flex');
-      el('suggestion-footer')?.classList.add('hidden');
-      el('suggestion-footer')?.classList.remove('flex');
       const success = el('suggestion-success');
       success?.classList.remove('hidden');
       success?.classList.add('flex');
       const link = el<HTMLAnchorElement>('suggestion-issue-link');
       if (link) link.href = json.issueUrl;
+      // Swap the footer from Cancel/Submit to a single Close button —
+      // no further action is required, but the user still has an
+      // obvious way out of the dialog.
+      el('suggestion-footer-actions')?.classList.add('hidden');
+      el('suggestion-footer-actions')?.classList.remove('flex');
+      el('suggestion-done')?.classList.remove('hidden');
+      el('suggestion-done')?.classList.add('block');
+      el('suggestion-footer-actions')?.parentElement?.classList.add('justify-end');
+      const errEl2 = el('suggestion-error');
+      if (errEl2) errEl2.textContent = '';
     } catch (err: any) {
       if (errEl) errEl.textContent = err.message || 'Something went wrong.';
     } finally {
