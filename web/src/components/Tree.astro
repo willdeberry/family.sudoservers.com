@@ -106,34 +106,36 @@ try {
     // Sibling row beside the focused person — Ancestry-style.
     chart.setShowSiblingsOfMain();
 
-    const card = chart
-      .setCardSvg()
-      .setCardDisplay([['full name'], ['lifespan']])
-      .setCardDim({
-        width: 250,
-        height: 70,
-        img_w: 0,
-        img_h: 0,
-        img_x: 0,
-        img_y: 0,
-        text_x: 16,
-        text_y: 24,
-      });
-
-    // MiniTreePlugin replaces the basic setMiniTree() chip with a proper
-    // miniature subtree drawn next to each card — siblings, spouses,
-    // hidden kids — without forcing a recenter. Clicking any member of
-    // a mini-tree routes through our focusOn so depth resets, slow-load
-    // overlay, and back-nav stack all behave the same as a search
-    // navigation.
-    //
-    // FullMiniTreePlugin (the companion that draws the embedded next-
-    // generation preview on cards at the depth limit) caused NaN
-    // transform errors in the layout pass when wired with the obvious
-    // partition filter from the FCP combined demo. Leaving it commented
-    // out until I can reproduce against the upstream demo source.
+    // Switch from CardSvg to CardHtml so FullMiniTreePlugin /
+    // MiniTreePlugin can measure card dimensions correctly — when fed
+    // CardSvg they emit ~30 transform=NaN errors per render. See the
+    // FCP combined demo (src/plugins/combined/__demos__/mini-tree-
+    // with-full) for the reference setup.
     const CARD_W = 250;
     const CARD_H = 70;
+    const card = chart
+      .setCardHtml()
+      .setCardDisplay([['full name'], ['lifespan']])
+      .setCardWidth(CARD_W)
+      .setCardHeight(CARD_H);
+
+    card.setCardDim({ width: CARD_W, height: CARD_H });
+
+    // Mini-tree plugins — render embedded sub-trees on cards. The
+    // partition (from the FCP combined demo) routes every visible card
+    // through one or the other:
+    //   • FullMiniTreePlugin draws on cards at the depth limit, so the
+    //     user gets a "what's beyond here" preview inline.
+    //   • MiniTreePlugin draws on every other card to surface nearby
+    //     siblings, spouses, and hidden kids.
+    // Clicking any member routes through our focusOn so depth resets,
+    // slow-render overlay, and back-nav stack stay consistent.
+    function fullMiniTreeFilter(td: any, tree: any, is_ancestry?: boolean): boolean {
+      if (!tree?.meta?.max_depth) return false;
+      if (td.is_ancestry && tree.meta.max_depth.ancestry === td.depth && is_ancestry) return true;
+      if (!td.is_ancestry && tree.meta.max_depth.progeny === td.depth && !is_ancestry) return true;
+      return false;
+    }
     const onMiniCardClick = (_e: Event, d: any) => {
       const id = d?.data?.id;
       if (id) (window as any).__familytree?.focusOn(id);
@@ -144,6 +146,9 @@ try {
       onCardClick: onMiniCardClick,
       memberCardTooltip: { cont: chart.cont, fullCardRenderer: card.getCard() },
     }));
+    // TODO: FullMiniTreePlugin still NaNs even after switching to
+    // CardHtml; reproducing the demo verbatim is the next step.
+    void fullMiniTreeFilter;
 
     function openPersonModal(id: string) {
       window.dispatchEvent(new CustomEvent('familytree:open-person', { detail: { id } }));
@@ -167,15 +172,14 @@ try {
     // we iterate every card_cont after each layout pass and append a
     // small "i" button that opens the modal.
 
-    // After every update: hide the loader, and hide synthetic "to_add"
-    // placeholder cards that family-chart auto-creates for missing parents.
-    // The Datum is on the parent .card_cont's __data__ (D3 attaches it there).
-    const SVG_NS = 'http://www.w3.org/2000/svg';
+    // After every update: hide the loader, hide synthetic "to_add"
+    // placeholder cards, and inject an info "i" button into the top-
+    // right corner of each HTML card. d3's enter/update reuses the
+    // existing card_cont so we skip re-injection when the icon is
+    // already present.
     chart.setAfterUpdate(() => {
       document.getElementById('family-chart-loading')?.remove();
-      const svg = container.querySelector('svg');
-      if (!svg) return;
-      const conts = svg.querySelectorAll<SVGGElement>('g.card_cont');
+      const conts = container.querySelectorAll<HTMLElement>('.card_cont');
       conts.forEach(cont => {
         const td: any = (cont as any).__data__;
         const datum = td?.data;
@@ -185,35 +189,30 @@ try {
         }
         const id = datum?.id as string | undefined;
         if (!id) return;
-        // The card group is center-origin: the inner card spans from
-        // (-125, -35) to (125, 35) for a 250×70 card. The info icon
-        // goes in the top-right corner. Skip if already injected for
-        // this render pass; d3's join means existing card_cont reuses
-        // the same DOM node so the icon persists across updates.
-        if (cont.querySelector(':scope > g.card-info-icon')) return;
-        const g = document.createElementNS(SVG_NS, 'g');
-        g.setAttribute('class', 'card-info-icon');
-        // Center the icon inside the card's top-right corner. Card is
-        // 250×70 with center-origin, so the right edge is x=125 and the
-        // top edge y=-35. Pulling the icon in to (108, -22) keeps the
-        // 9-px radius circle fully inside the rect with ~8 px breathing
-        // room from each edge.
-        g.setAttribute('transform', 'translate(108, -22)');
-        g.style.cursor = 'pointer';
-        // White disc + black glyph. Lowercase "i" rendered as text was
-        // a hairline that read as a featureless dot at this size, so
-        // draw the glyph as two small SVG shapes — a tittle and a
-        // stem — both sized generously enough to actually be visible.
-        g.innerHTML = `
-          <circle r="10" fill="#ffffff"></circle>
-          <circle cx="0" cy="-3.6" r="1.7" fill="#1f1f1f"></circle>
-          <rect x="-1.7" y="-0.5" width="3.4" height="6.5" rx="0.6" fill="#1f1f1f"></rect>
-        `;
-        g.addEventListener('click', (e) => {
+        // The visible card is `.card` inside `.card_cont`. `.card_cont`
+        // is just a position anchor (translate to chart-coords); the
+        // inner `.card` carries the actual top-left of the colored box
+        // via translate(-50%, -50%). Attach the icon to `.card` so the
+        // CSS `right: 6px / top: 6px` lines up with the visible
+        // rectangle instead of the anchor point.
+        const cardEl = cont.querySelector<HTMLElement>(':scope > .card');
+        if (!cardEl) return;
+        if (cardEl.querySelector(':scope > .card-info-icon')) return;
+        const btn = document.createElement('div');
+        btn.className = 'card-info-icon';
+        btn.setAttribute('aria-label', 'Open person details');
+        btn.addEventListener('click', (e) => {
           e.stopPropagation();
           openPersonModal(id);
         });
-        cont.appendChild(g);
+        btn.innerHTML = `
+          <svg viewBox="0 0 20 20" aria-hidden="true">
+            <circle cx="10" cy="10" r="10" fill="#ffffff"></circle>
+            <circle cx="10" cy="6.4" r="1.7" fill="#1f1f1f"></circle>
+            <rect x="8.3" y="9.5" width="3.4" height="6.5" rx="0.6" fill="#1f1f1f"></rect>
+          </svg>
+        `;
+        cardEl.appendChild(btn);
       });
     });
 
@@ -541,6 +540,29 @@ try {
   #family-chart rect.card-female {
     rx: 8;
     ry: 8;
+  }
+
+  /* HTML info-icon button — anchored to the visible `.card` rect so
+     `right: 6px / top: 6px` lines up with the colored card edge, not
+     the card_cont anchor point.  The card needs position: relative
+     for absolute children to anchor against it. */
+  #family-chart .card_cont > .card {
+    position: relative;
+  }
+  #family-chart .card_cont .card-info-icon {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 2;
+    line-height: 0;
+  }
+  #family-chart .card_cont .card-info-icon svg {
+    width: 100%;
+    height: 100%;
+    display: block;
   }
 
   /* Connector lines: white on dark background */
