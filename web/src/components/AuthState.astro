@@ -3,11 +3,15 @@ const clientId = import.meta.env.PUBLIC_GOOGLE_CLIENT_ID || '';
 ---
 
 <!-- Global GIS config. The rendered Sign-in buttons in TopBar and the
-     SuggestionModal both fire onAuthSignIn defined below. -->
+     SuggestionModal both fire onAuthSignIn defined below.
+     auto_prompt=false suppresses Google's One Tap overlay on every
+     page load — we still surface a clear "Sign in with Google" button
+     when the user isn't authenticated. -->
 <div id="g_id_onload"
   data-client_id={clientId}
   data-callback="onAuthSignIn"
   data-auto_select="false"
+  data-auto_prompt="false"
   data-ux_mode="popup"
   style="display: none;"></div>
 
