@@ -90,6 +90,18 @@ const treeData = people.map(p => {
     ? `${birthYear || '?'} – ${deathYear || ''}`.trim().replace(/\s+–\s+$/, '')
     : '';
 
+  // Per-spouse marriage metadata. The shape is the DatumJson.rel_data
+  // pattern from FCP: keyed by the OTHER party's id, with any per-rel
+  // fields we want to ship to the client. SpouseLinkTextPlugin reads
+  // `marriage_date` to label the connector between spouses.
+  const relData = {};
+  for (const m of p.marriages || []) {
+    if (!m.spouseId) continue;
+    const label = m.dateRaw || (m.date ? m.date.slice(0, 4) : null);
+    if (!label) continue;
+    relData[m.spouseId] = { marriage_date: label };
+  }
+
   return {
     id: p.id,
     data: {
@@ -97,6 +109,7 @@ const treeData = people.map(p => {
       'full name': displayName(p.name),
       lifespan,
     },
+    rel_data: relData,
     rels: {
       parents,
       spouses: spouseIds,

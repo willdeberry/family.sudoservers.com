@@ -171,6 +171,15 @@ try {
         !fullMiniTreeFilter(td, tree, is_ancestry),
     }));
     chart.use(new f3.SpouseBypassLinkPlugin());
+    // Label the spouse connector with the marriage date — the data is
+    // pre-baked into each Person's rel_data table by transform-data.mjs
+    // (rel_data[spouse_id].marriage_date is the dateRaw, falling back
+    // to the year of the ISO date when only that's known).
+    chart.use(new f3.SpouseLinkTextPlugin({
+      text: (sp1: any, sp2: any) => {
+        return sp2?.data?.rel_data?.[sp1?.data?.id]?.marriage_date || '';
+      },
+    }));
 
     function openPersonModal(id: string) {
       window.dispatchEvent(new CustomEvent('familytree:open-person', { detail: { id } }));
