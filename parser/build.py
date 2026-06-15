@@ -641,15 +641,25 @@ def build():
             def materialize_couple(child_pid, child_label, father_info, mother_info):
                 father_pid = materialize_one_ancestor(father_info, child_pid, "father", child_label) if father_info else None
                 mother_pid = materialize_one_ancestor(mother_info, child_pid, "mother", child_label) if mother_info else None
-                # Link parents as spouses if either declared marriage info.
+                # Co-parents almost always married, so we link them as
+                # spouses by default. If either side carries married /
+                # married_place, those land on the marriage record;
+                # otherwise the marriage is recorded date- and place-less
+                # but still surfaces them as a couple in the tree.
+                # An explicit `no_marriage: True` on either dict opts out.
                 if father_pid and mother_pid:
-                    married = married_place = None
-                    for info in (father_info, mother_info):
-                        if isinstance(info, dict) and (info.get("married") or info.get("married_place")):
-                            married = info.get("married")
-                            married_place = info.get("married_place")
-                            break
-                    if married or married_place:
+                    opt_out = any(
+                        isinstance(info, dict) and info.get("no_marriage")
+                        for info in (father_info, mother_info)
+                    )
+                    if not opt_out:
+                        married = married_place = None
+                        for info in (father_info, mother_info):
+                            if isinstance(info, dict):
+                                if info.get("married") and married is None:
+                                    married = info["married"]
+                                if info.get("married_place") and married_place is None:
+                                    married_place = info["married_place"]
                         iso_m, raw_m = parse_date(married) if married else (None, None)
                         for pid_a, pid_b in ((father_pid, mother_pid), (mother_pid, father_pid)):
                             people[pid_a]["marriages"].append({

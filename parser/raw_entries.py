@@ -15195,22 +15195,30 @@ ENTRIES.append({
             "married_place": "Alexandria, VA",
             # Issue #16 corrected the original "Edward Roland Hughs
             # (1856–1937)" to the right person: William Edward Hughs
-            # (1886–1965) of Ravanna / Princeton, MO.
+            # (1886–1965) of Ravanna / Princeton, MO. Issue #20 then
+            # placed Edward Roland Hughs + Flora Jobe one generation up
+            # as William Edward's parents (great-great-grandparents of
+            # William Teddy's kids).
             "father": {
                 "name": "William Edward Hughs",
                 "born": "10 May 1886",
                 "born_place": "Ravanna, MO",
                 "died": "25 Jun 1965",
                 "died_place": "Princeton, MO",
+                "father": {"name": "Edward Roland Hughs", "born": "1856", "died": "1937"},
+                "mother": {"name": "Florence Elizabeth 'Flora' Jobe", "born": "1865", "died": "1910"},
             },
             # Issue #17 corrected the original "Florence Elizabeth 'Flora'
             # Jobe (1865–1910)" to Alma Lorraine Stout (1887–1942).
+            # Issue #21 then added Alma's parents.
             "mother": {
                 "name": "Alma Lorraine Stout",
                 "born": "30 Nov 1887",
                 "born_place": "Newtown, MO",
                 "died": "25 Nov 1942",
                 "died_place": "Lucerne, MO",
+                "father": {"name": "John Stout", "born": "1849", "died": "1935"},
+                "mother": {"name": "Laura J Vencil", "born": "1860", "died": "1925"},
             },
         },
         "mother": {
@@ -15229,6 +15237,9 @@ ENTRIES.append({
                 "buried": "Bowling Green, OH",
                 "married": "16 Jun 1924",
                 "married_place": "Clark, OH",
+                # Issue #22 added Francis's parents.
+                "father": {"name": "Oliver Selman", "born": "1876", "died": "1916"},
+                "mother": {"name": "Elizabeth Lee Aleshire", "born": "1878", "died": "1965"},
             },
             "mother": {
                 "name": "Dorothy E Develvis",
