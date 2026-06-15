@@ -43,11 +43,15 @@ SOURCE_FILES = [
 ]
 
 FOUNDER_NOTE = (
-    "All seven documented PDFs are children of an unnamed common Guthrie patriarch. "
-    "Their lineage codes are 1 (John), 2 (William), 5 (Stephen), 6 (Rachel), "
-    "7 (James), 8 (Absalom), A (Alexander). Codes 3, 4, 9 are unaccounted for "
-    "and may represent siblings whose lines were never documented. The unnamed "
-    "patriarch is recorded here as code '0' so all branches connect to a single root."
+    "All seven documented PDFs share an unnamed common Guthrie patriarch — "
+    "logically required by the overlapping geography and the shared lineage-code "
+    "numbering, but never directly attested in any source. The seven sibling "
+    "branches are 1 (John), 2 (William), 5 (Stephen), 6 (Rachel), 7 (James), "
+    "8 (Absalom), A (Alexander). Codes 3, 4, 9 are unaccounted for and may "
+    "represent siblings whose lines were never documented. The patriarch was "
+    "previously recorded under code '0' as a synthesized root; that placeholder "
+    "was removed at the submitter's request, and each sibling now roots its own "
+    "subtree."
 )
 
 # Same-person-multiple-codes table. Each entry merges into one Person record.
@@ -358,40 +362,23 @@ SEE_REFS = [
 # sibling system, but listing one here makes that person a tree root.
 # Used to break a person off from the synthesized Patriarch (code "0") at
 # the submitter's request.
-NO_LINEAGE_PARENT = {
-    # John Guthrie (issue #12) — the patriarch is a transcription-time
-    # inference, never attested in the source PDFs. Submitter asked to
-    # disconnect him from that placeholder so John roots his own branch.
-    "1",
-}
+NO_LINEAGE_PARENT: set[str] = set()
+# Codes listed here are treated as tree roots even when parent_code() would
+# otherwise link them to a higher-level code in the same sibling system.
+# We don't currently need any — code "0" (the synthesized patriarch) has
+# been removed from the dataset (issue #12), so the heuristic naturally
+# stops at single-character codes since parent_code("1") = "0" but no
+# entry with code "0" exists. Kept here as the documented opt-out hook
+# in case a future submitter wants another branch detached.
 
 # ---------------------------------------------------------------------------
 # ENTRIES
 # ---------------------------------------------------------------------------
+# Note: the seven sibling branches (codes 1, 2, 5, 6, 7, 8, A) used to all
+# point at a synthesized "Unknown Guthrie Patriarch" at code "0". That
+# placeholder was removed at the submitter's request (issue #12); each
+# sibling now roots its own subtree. See FOUNDER_NOTE for context.
 ENTRIES = []
-
-# === Founder placeholder ===
-ENTRIES.append({
-    "code": "0",
-    "name": "Unknown Guthrie Patriarch",
-    "notes": "Inferred common ancestor of the seven documented sibling branches. "
-             "Not directly attested in any of the source PDFs but logically required: "
-             "John (b. 1792), William (b. 1794), Stephen (b. 1801), Rachel (b. 1804), "
-             "James (b. 1806), Absalom (b. 1810), and Alexander (b. 1815) share "
-             "the Guthrie surname, overlap geographically (WV/PA), and the PDFs' "
-             "shared numbering scheme treats them as siblings. Gaps at codes 3, 4, "
-             "and 9 suggest additional undocumented siblings.",
-    "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-08", "notes": "Inferred common ancestor; not directly attested in any PDF."},
-    "children": [
-        {"code": "1", "name": "John Guthrie", "born": "31 Aug 1792"},
-        {"code": "2", "name": "William Guthrie", "born": "10 Sep 1794"},
-        {"code": "5", "name": "Stephen Guthrie", "born": "26 Mar 1801"},
-        {"code": "6", "name": "Rachel Guthrie", "born": "16 Apr 1804"},
-        {"code": "7", "name": "James Guthrie", "born": "7 Sep 1806"},
-        {"code": "8", "name": "Absalom Guthrie", "born": "20 Feb 1810"},
-        {"code": "A", "name": "Alexander B. Guthrie", "born": "30 Apr 1815"},
-    ],
-})
 
 # === 1. JOHN GUTHRIE ===
 ENTRIES.append({
