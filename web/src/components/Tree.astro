@@ -146,6 +146,11 @@ try {
       onCardClick: onMiniCardClick,
       memberCardTooltip: { cont: chart.cont, fullCardRenderer: card.getCard() },
     }));
+    // Route multi-spouse links around each other rather than overlapping.
+    // Matters on cards like William Dale (married Janelle, then Cassila)
+    // where the spouse connectors would otherwise stack on top of one
+    // another along the same horizontal line.
+    chart.use(new f3.SpouseBypassLinkPlugin());
     // TODO: FullMiniTreePlugin still NaNs even after switching to
     // CardHtml; reproducing the demo verbatim is the next step.
     void fullMiniTreeFilter;
