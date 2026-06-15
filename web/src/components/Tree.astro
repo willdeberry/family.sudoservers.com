@@ -117,7 +117,12 @@ try {
       .setCardHtml()
       .setCardDisplay([['full name'], ['lifespan']])
       .setCardWidth(CARD_W)
-      .setCardHeight(CARD_H);
+      .setCardHeight(CARD_H)
+      // Highlight the path from the hovered card back to the focused
+      // person — same Ancestry-style affordance as in the demo. Only
+      // exists on CardHtml, which is why we couldn't enable it back on
+      // CardSvg.
+      .setOnHoverPathToMain();
 
     card.setCardDim({ width: CARD_W, height: CARD_H });
 
