@@ -92,8 +92,29 @@ try {
       // ancestry to 50 and zeroes out progeny. Users can also click
       // expand arrows on cards to drill past the default.
       .setAncestryDepth(8)
-      .setProgenyDepth(4)
-      .setOrientationVertical();
+      .setProgenyDepth(4);
+    // Flip to horizontal layout on narrow viewports. The vertical
+    // layout's natural width is `cards × node_separation` — at depth 4
+    // from a wide ancestor that's many screens wide and the user has
+    // to pan to see anything. Horizontal flips the long axis to be
+    // generations (top-down → left-right) so a single generation fits
+    // the screen and the user scrolls along the lineage instead.
+    // Tailwind's `sm` breakpoint is 640px; match it here so the
+    // orientation crossover aligns with the header layout's mobile
+    // switch.
+    const orientationMQ = window.matchMedia('(max-width: 639px)');
+    function applyOrientation() {
+      if (orientationMQ.matches) chart.setOrientationHorizontal();
+      else chart.setOrientationVertical();
+    }
+    applyOrientation();
+    // Listen for breakpoint crossings so rotating a phone or toggling
+    // devtools re-flows the tree rather than leaving it stuck in the
+    // wrong axis.
+    orientationMQ.addEventListener('change', () => {
+      applyOrientation();
+      chart.updateTree({ tree_position: 'main_to_middle' });
+    });
     // FCP replaces setDuplicateBranchToggle with a plugin. Install the
     // duplicate toggle so cousin-marriage cases (a single ancestor reached
     // via two child paths) render a clickable Cn marker instead of being
