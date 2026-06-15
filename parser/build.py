@@ -33,6 +33,10 @@ try:
     from raw_entries import EXTERNAL_ENTRIES  # noqa: E402
 except ImportError:
     EXTERNAL_ENTRIES = []
+try:
+    from raw_entries import NO_LINEAGE_PARENT  # noqa: E402
+except ImportError:
+    NO_LINEAGE_PARENT = set()
 
 MONTHS = {
     "jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
@@ -289,6 +293,11 @@ def build():
     # e.g., 172A inherits parent 172 even when only 74A has a full entry.
     all_codes = set(code_to_pid.keys())
     for code in all_codes:
+        # Allow specific codes to be tree roots even when the parent_code
+        # heuristic would otherwise link them to a synthesized parent.
+        # See NO_LINEAGE_PARENT in raw_entries.py.
+        if code in NO_LINEAGE_PARENT:
+            continue
         pcode = parent_code(code)
         if not pcode or pcode not in code_to_pid:
             continue
@@ -397,6 +406,11 @@ def build():
     # a verified_terminal child of 717) would never get its parent link.
     all_codes = set(code_to_pid.keys())
     for code in all_codes:
+        # Allow specific codes to be tree roots even when the parent_code
+        # heuristic would otherwise link them to a synthesized parent.
+        # See NO_LINEAGE_PARENT in raw_entries.py.
+        if code in NO_LINEAGE_PARENT:
+            continue
         pcode = parent_code(code)
         if not pcode or pcode not in code_to_pid:
             continue
@@ -580,25 +594,20 @@ def build():
             if key:
                 materialized_by_key[key] = sp_pid
 
-            # Materialize the spouse's own parents when the spouse dict
-            # carried `father`/`mother`. Plain-string form ("Ralph Edward
-            # Hughs") creates a name-only stub; dict form
-            # ({"name":..., "born":..., "died":...}) carries through life
-            # events too. Either way the resulting person is linked as a
-            # parent of the spouse so the suggestion/edit flow can surface
-            # them as grandparents in the tree.
-            for role, key_name in (
-                ("father", "_spouseFather"),
-                ("mother", "_spouseMother"),
-            ):
-                raw_parent = m.get(key_name)
-                if not raw_parent:
-                    continue
-                parent_info = (
-                    {"name": raw_parent} if isinstance(raw_parent, str) else dict(raw_parent)
-                )
-                if not parent_info.get("name"):
-                    continue
+            # Materialize the spouse's own parents (and recursively their
+            # parents) when the spouse dict carried `father`/`mother`.
+            # Plain-string form ("Ralph Edward Hughs") creates a name-only
+            # stub; dict form ({"name":..., "born":..., "died":...,
+            # "father":..., "mother":...}) carries life events through and
+            # recurses into grandparents. Each materialized ancestor is
+            # linked as a parent of the child so the suggestion/edit flow
+            # can surface them in the tree.
+            def materialize_ancestor(parent_info, child_pid, role, child_label):
+                nonlocal spouse_counter
+                if isinstance(parent_info, str):
+                    parent_info = {"name": parent_info}
+                if not isinstance(parent_info, dict) or not parent_info.get("name"):
+                    return
                 spouse_counter += 1
                 parent_pid = f"sp_{spouse_counter:06d}"
                 ensure_person(parent_pid, None)
@@ -617,14 +626,32 @@ def build():
                     "status": "verified",
                     "source": "vision",
                     "lastChecked": p.get("verification", {}).get("lastChecked"),
-                    "notes": (
-                        f"Materialized as {role} of {spouse_name} (spouse of {primary_code})."
-                    ),
+                    "notes": f"Materialized as {role} of {child_label}.",
                 }
-                if parent_pid not in sp_person["parentIds"]:
-                    sp_person["parentIds"].append(parent_pid)
-                if sp_pid not in parent_p["childIds"]:
-                    parent_p["childIds"].append(sp_pid)
+                if parent_pid not in people[child_pid]["parentIds"]:
+                    people[child_pid]["parentIds"].append(parent_pid)
+                if child_pid not in parent_p["childIds"]:
+                    parent_p["childIds"].append(child_pid)
+                # Recurse: a parent dict can carry its own father/mother
+                # so a single entry can declare grandparents in one block.
+                for sub_role in ("father", "mother"):
+                    sub_info = parent_info.get(sub_role)
+                    if sub_info:
+                        materialize_ancestor(
+                            sub_info, parent_pid, sub_role,
+                            f"{parent_info['name']} ({role} of {child_label})",
+                        )
+
+            for role, key_name in (
+                ("father", "_spouseFather"),
+                ("mother", "_spouseMother"),
+            ):
+                raw_parent = m.get(key_name)
+                if raw_parent:
+                    materialize_ancestor(
+                        raw_parent, sp_pid, role,
+                        f"{spouse_name} (spouse of {primary_code})",
+                    )
 
     # Link spouses as co-parents of their partner's children. Without this,
     # children only get a single parent (the lineage-code path), so the chart

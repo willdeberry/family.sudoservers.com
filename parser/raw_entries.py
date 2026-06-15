@@ -351,6 +351,21 @@ SEE_REFS = [
 ]
 
 # ---------------------------------------------------------------------------
+# Lineage-parent opt-out
+# ---------------------------------------------------------------------------
+# Codes whose lineage-derived parent should be suppressed. parent_code() in
+# build.py would normally link these to a higher-level code in the same
+# sibling system, but listing one here makes that person a tree root.
+# Used to break a person off from the synthesized Patriarch (code "0") at
+# the submitter's request.
+NO_LINEAGE_PARENT = {
+    # John Guthrie (issue #12) — the patriarch is a transcription-time
+    # inference, never attested in the source PDFs. Submitter asked to
+    # disconnect him from that placeholder so John roots his own branch.
+    "1",
+}
+
+# ---------------------------------------------------------------------------
 # ENTRIES
 # ---------------------------------------------------------------------------
 ENTRIES = []
@@ -15179,9 +15194,23 @@ ENTRIES.append({
         "married_place": "Wahiawa, Hawaii",
         # Kelli's parents added via issue #7. Dict form carries through
         # the life-event fields so build.py can materialize each parent
-        # with a proper birth and death record.
-        "father": {"name": "Ralph Edward Hughs", "born": "1924", "died": "2007"},
-        "mother": {"name": "Betty Laura Sellman", "born": "1925", "died": "1990"},
+        # with a proper birth and death record. Each parent can itself
+        # carry father/mother dicts — those grandparents (issues #11,
+        # #13) recurse through the same materialization pass.
+        "father": {
+            "name": "Ralph Edward Hughs",
+            "born": "1924",
+            "died": "2007",
+            "father": {"name": "Edward Roland Hughs", "born": "1856", "died": "1937"},
+            "mother": {"name": "Florence Elizabeth 'Flora' Jobe", "born": "1865", "died": "1910"},
+        },
+        "mother": {
+            "name": "Betty Laura Sellman",
+            "born": "1925",
+            "died": "1990",
+            "father": {"name": "Francis Allen Sellman", "born": "1904", "died": "1990"},
+            "mother": {"name": "Dorothy E Develvis", "born": "1903", "died": "1953"},
+        },
     }],
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 124},
     "verification": {"status": "verified", "source": "vision", "lastChecked": "2026-06-15", "notes": "Updated via user submissions: William Teddy's HI birth + FL death (issue #10), Kelli's parents (issue #7)."},
