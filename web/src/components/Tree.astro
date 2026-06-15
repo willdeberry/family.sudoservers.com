@@ -176,15 +176,14 @@ try {
         // room from each edge.
         g.setAttribute('transform', 'translate(108, -22)');
         g.style.cursor = 'pointer';
-        // White disc + black glyph reads cleanly on both blue and
-        // orange cards (the previous semi-transparent white had poor
-        // contrast on orange).
+        // White disc + black glyph. Lowercase "i" rendered as text was
+        // a hairline that read as a featureless dot at this size, so
+        // draw the glyph as two small SVG shapes — a tittle and a
+        // stem — both sized generously enough to actually be visible.
         g.innerHTML = `
-          <circle r="8" fill="#ffffff"></circle>
-          <text y="3" text-anchor="middle"
-                font-family="ui-sans-serif, system-ui, sans-serif"
-                font-size="10" font-weight="700"
-                fill="#1f1f1f" pointer-events="none">i</text>
+          <circle r="10" fill="#ffffff"></circle>
+          <circle cx="0" cy="-3.6" r="1.7" fill="#1f1f1f"></circle>
+          <rect x="-1.7" y="-0.5" width="3.4" height="6.5" rx="0.6" fill="#1f1f1f"></rect>
         `;
         g.addEventListener('click', (e) => {
           e.stopPropagation();
