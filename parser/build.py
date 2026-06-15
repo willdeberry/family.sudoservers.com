@@ -23,7 +23,16 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "parser"))
 
-from raw_entries import ENTRIES, SEE_REFS, FOUNDER_NOTE, SOURCE_FILES  # noqa: E402
+from raw_entries import (  # noqa: E402
+    ENTRIES,
+    SEE_REFS,
+    FOUNDER_NOTE,
+    SOURCE_FILES,
+)
+try:
+    from raw_entries import EXTERNAL_ENTRIES  # noqa: E402
+except ImportError:
+    EXTERNAL_ENTRIES = []
 
 MONTHS = {
     "jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
@@ -611,6 +620,118 @@ def build():
             sp = people.get(primary_sp_id)
             if sp and child_id not in sp.get("childIds", []):
                 sp["childIds"].append(child_id)
+
+    # ── External entries (codeless people whose bio parents we declare by
+    # reference rather than via the Guthrie lineage-code mechanism). Used for
+    # step-children whose other biological parent isn't a Guthrie descendant:
+    # we want the accurate parentage on the record, but they have no place in
+    # the sibling-order code system.
+    if EXTERNAL_ENTRIES:
+        # Build a name → [pid] index of every person we already have, so
+        # parent refs can match against materialized spouses too.
+        ext_name_index = {}
+        for pid_, p_ in people.items():
+            full = (p_.get("name") or {}).get("full")
+            if full:
+                ext_name_index.setdefault(full.lower().strip(), []).append(pid_)
+
+        def find_existing(ref):
+            name = (ref.get("name") or "").lower().strip()
+            if not name:
+                return None
+            matches = ext_name_index.get(name, [])
+            if len(matches) == 1:
+                return matches[0]
+            if len(matches) > 1 and ref.get("born"):
+                ref_year = re.search(r"\b(1[6-9]\d{2}|20\d{2})\b", ref["born"])
+                if ref_year:
+                    target = int(ref_year.group(1))
+                    for cand_pid in matches:
+                        cb = (people[cand_pid].get("birth") or {}).get("dateRaw") or \
+                             (people[cand_pid].get("birth") or {}).get("date") or ""
+                        m = re.search(r"\b(1[6-9]\d{2}|20\d{2})\b", cb)
+                        if m and abs(int(m.group(1)) - target) <= 1:
+                            return cand_pid
+            return None
+
+        # Allocate pids for the external entries themselves. Continue the
+        # p_NNNNNN sequence so existing ids don't shift around.
+        used_nums = [
+            int(pid_[2:]) for pid_ in people.keys()
+            if pid_.startswith("p_") and pid_[2:].isdigit()
+        ]
+        next_p_num = (max(used_nums) + 1) if used_nums else 1
+
+        for entry in EXTERNAL_ENTRIES:
+            ext_pid = f"p_{next_p_num:06d}"
+            next_p_num += 1
+            ensure_person(ext_pid, None)
+            p_ = people[ext_pid]
+            p_["name"] = split_name(entry["name"])
+            if entry.get("sex"):
+                p_["sex"] = entry["sex"]
+            if entry.get("born") or entry.get("born_place"):
+                p_["birth"] = make_lifeevent(entry.get("born"), entry.get("born_place"))
+            if entry.get("died") or entry.get("died_place"):
+                p_["death"] = make_lifeevent(entry.get("died"), entry.get("died_place"))
+            if entry.get("buried"):
+                p_["burial"] = {"place": entry["buried"]}
+            if entry.get("notes"):
+                p_["notes"] = entry["notes"]
+            if entry.get("occupation"):
+                p_["occupation"] = entry["occupation"]
+            if entry.get("residences"):
+                p_["residences"] = list(entry["residences"])
+            if entry.get("source"):
+                src = entry["source"]
+                p_["sources"].append({
+                    "pdf": src.get("pdf"),
+                    "entryCode": None,
+                    "page": src.get("page"),
+                })
+            p_["verification"] = entry.get("verification") or {
+                "status": "verified",
+                "source": "user-submission",
+                "lastChecked": None,
+                "notes": None,
+            }
+            # Resolve / materialize parents
+            for ref in entry.get("parent_refs", []):
+                parent_pid = find_existing(ref)
+                if parent_pid is None:
+                    # Materialize a new "loose" person record (sp_ namespace,
+                    # since they have no children's-list lineage of their own).
+                    spouse_counter += 1
+                    parent_pid = f"sp_{spouse_counter:06d}"
+                    ensure_person(parent_pid, None)
+                    parent_p = people[parent_pid]
+                    parent_p["name"] = split_name(ref["name"])
+                    if ref.get("sex"):
+                        parent_p["sex"] = ref["sex"]
+                    if ref.get("born") or ref.get("born_place"):
+                        parent_p["birth"] = make_lifeevent(
+                            ref.get("born"), ref.get("born_place")
+                        )
+                    if ref.get("died") or ref.get("died_place"):
+                        parent_p["death"] = make_lifeevent(
+                            ref.get("died"), ref.get("died_place")
+                        )
+                    parent_p["verification"] = {
+                        "status": "verified",
+                        "source": "user-submission",
+                        "lastChecked": None,
+                        "notes": (
+                            f"Materialized as biological parent of "
+                            f"{(p_.get('name') or {}).get('full')} via external entry."
+                        ),
+                    }
+                    # Index the new parent for any subsequent external entries
+                    # that might reference them.
+                    ext_name_index.setdefault(ref["name"].lower().strip(), []).append(parent_pid)
+                if parent_pid not in p_["parentIds"]:
+                    p_["parentIds"].append(parent_pid)
+                if ext_pid not in people[parent_pid]["childIds"]:
+                    people[parent_pid]["childIds"].append(ext_pid)
 
     # Integrity sweep: family-chart will infinite-loop on self-references or
     # bidirectional parent/child links. Drop any that slipped past the guards

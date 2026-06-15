@@ -15222,6 +15222,77 @@ ENTRIES.append({
         "lastChecked": "2026-06-15",
         "notes": "Submitted by Will DeBerry via family.sudoservers.com (issues #2, #3).",
     },
+    # Logan is William Dale's bio son with Janelle (issue #5). Joshua (#4) and
+    # James Carvalho Sterley (#6) are NOT in this list — they're stepchildren
+    # via Janelle's and Cassila's prior relationships, recorded with their
+    # accurate biological parents in EXTERNAL_ENTRIES below.
+    "children": [
+        {"code": "122431211", "name": "Logan Pierce DeBerry", "born": "17 Jul 2011"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "122431211",
+    "name": "Logan Pierce DeBerry",
+    "sex": "M",
+    "born": "17 Jul 2011",
+    "born_place": "Safety Harbor, FL",
+    "source": {"pdf": "user-submission", "page": None},
+    "verification": {
+        "status": "verified",
+        "source": "user-submission",
+        "lastChecked": "2026-06-15",
+        "notes": "Submitted by Will DeBerry via family.sudoservers.com (issue #5).",
+    },
+})
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# External entries — people whose biological parents we want recorded
+# accurately, but who have no place in the Guthrie lineage-code sibling
+# system (typically stepchildren via a spouse's prior relationship). Their
+# parent_refs match by name (and birth year if given) against existing
+# people; unmatched refs are materialized as new "loose" Person records.
+# ─────────────────────────────────────────────────────────────────────────────
+EXTERNAL_ENTRIES = []
+
+# Issue #4: Joshua Paul Paterno — Janelle Holdridge's son with James Paul
+# Paterno, born before her marriage to William Dale DeBerry.
+EXTERNAL_ENTRIES.append({
+    "name": "Joshua Paul Paterno",
+    "sex": "M",
+    "born": "14 May 2006",
+    "born_place": "Safety Harbor, FL",
+    "parent_refs": [
+        {"name": "Janelle Harriette Holdridge", "born": "11 Sep 1976"},
+        {"name": "James Paul Paterno", "sex": "M", "born": "1974"},
+    ],
+    "source": {"pdf": "user-submission", "page": None},
+    "verification": {
+        "status": "verified",
+        "source": "user-submission",
+        "lastChecked": "2026-06-15",
+        "notes": "Submitted by Will DeBerry via family.sudoservers.com (issue #4).",
+    },
+})
+
+# Issue #6: James Carvalho Sterley — Cassila Batista Carvalho's son with
+# Andre Sterley, born before her marriage to William Dale DeBerry.
+EXTERNAL_ENTRIES.append({
+    "name": "James Carvalho Sterley",
+    "born": "1 Aug 2014",
+    "born_place": "Stellenbosch, South Africa",
+    "parent_refs": [
+        {"name": "Cassila Batista Carvalho", "born": "30 May 1982"},
+        {"name": "Andre Sterley", "sex": "M", "born": "1982"},
+    ],
+    "source": {"pdf": "user-submission", "page": None},
+    "verification": {
+        "status": "verified",
+        "source": "user-submission",
+        "lastChecked": "2026-06-15",
+        "notes": "Submitted by Will DeBerry via family.sudoservers.com (issue #6).",
+    },
 })
 
 ENTRIES.append({
