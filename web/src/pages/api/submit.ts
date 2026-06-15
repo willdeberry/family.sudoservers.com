@@ -65,6 +65,10 @@ type PersonInput = {
   occupation?: string;
   notes?: string;
   sourceNotes?: string;
+  children?: Array<{
+    person: PickerValue;
+    notes?: string;
+  }>;
 };
 
 async function verifyIdToken(idToken: string, expectedAud: string): Promise<TokenInfo> {
@@ -162,6 +166,13 @@ function validatePerson(raw: any): PersonInput {
     ? raw.residences.map((s: any) => trim(s, 200)).filter(Boolean) as string[]
     : undefined;
 
+  const children = Array.isArray(raw.children)
+    ? raw.children.slice(0, 30).map((c: any, i: number) => ({
+        person: validatePicker(c?.person || { kind: 'none' }, `children[${i}].person`),
+        notes: trim(c?.notes, 500),
+      })).filter((c: any) => c.person.kind !== 'none' || c.notes)
+    : undefined;
+
   return {
     name: {
       first,
@@ -179,6 +190,7 @@ function validatePerson(raw: any): PersonInput {
     occupation: trim(raw.occupation, 200),
     notes: trim(raw.notes, 4000),
     sourceNotes: trim(raw.sourceNotes, 4000),
+    children,
   };
 }
 
@@ -229,6 +241,13 @@ function renderPersonBlock(p: PersonInput): string {
       return sub ? `${head}\n  - ${sub}` : head;
     });
     sections.push(`**Marriages:**\n${lines.map(l => `- ${l}`).join('\n')}`);
+  }
+  if (p.children?.length) {
+    const lines = p.children.map((c, i) => {
+      const head = `Child ${i + 1}: ${pickerLabel(c.person) || '_(person not specified)_'}`;
+      return c.notes ? `${head}\n  - notes: ${c.notes}` : head;
+    });
+    sections.push(`**Children:**\n${lines.map(l => `- ${l}`).join('\n')}`);
   }
   if (p.notes) sections.push(`**Notes:**\n\n${p.notes}`);
   return sections.join('\n\n');
@@ -287,6 +306,18 @@ function renderEditDiff(originalRaw: any, proposed: PersonInput): string {
 
   // Marriages: list any change as a single field rather than per-row
   // diff — easier for the reviewer to read in one go.
+  // Children are additive — the form's children section is for
+  // proposing NEW children to attach to this person, not for re-stating
+  // existing ones. List them as such on the diff so the reviewer
+  // doesn't read it as a swap.
+  if (proposed.children?.length) {
+    const added = proposed.children
+      .map(c => c.person.kind === 'existing' ? c.person.id : c.person.kind === 'new' ? `(new) ${c.person.name}` : '')
+      .filter(Boolean)
+      .join(', ');
+    if (added) lines.push(`- **Children to add:** ${added}`);
+  }
+
   const beforeMar = (before.marriages || []).map((m: any) => {
     const sp = m.spouseId || m.spouseName || '?';
     return `${sp} ${m.dateRaw || m.date || ''}`.trim();

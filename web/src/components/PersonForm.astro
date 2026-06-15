@@ -90,6 +90,17 @@
     <div id="pf-marriages" class="flex flex-col gap-3"></div>
   </fieldset>
 
+  <!-- ── Children ──────────────────────────────────────────────────── -->
+  <fieldset class="flex flex-col gap-2">
+    <legend class="flex items-center justify-between text-xs uppercase tracking-wide text-stone-500">
+      <span>Children</span>
+      <button type="button" id="pf-add-child" class="rounded border border-stone-700 bg-stone-800 px-2 py-0.5 text-[11px] normal-case text-stone-300 hover:bg-stone-700">
+        + Add child
+      </button>
+    </legend>
+    <div id="pf-children" class="flex flex-col gap-3"></div>
+  </fieldset>
+
   <!-- ── Residences (list) ─────────────────────────────────────────── -->
   <fieldset class="flex flex-col gap-2">
     <legend class="flex items-center justify-between text-xs uppercase tracking-wide text-stone-500">
@@ -155,6 +166,23 @@
     <label class="mt-2 flex flex-col gap-1 text-xs">
       <span class="text-stone-400">Notes</span>
       <input data-mfield="notes" class="rounded-md border border-stone-700 bg-stone-900 px-2.5 py-1 text-sm text-stone-100 focus:border-amber-500 focus:outline-none" />
+    </label>
+  </div>
+</template>
+
+<template id="pf-tpl-child">
+  <div class="rounded-md border border-stone-700 bg-stone-900/40 p-3" data-child-slot>
+    <div class="mb-2 flex items-center justify-between">
+      <span class="text-xs text-stone-400">Child</span>
+      <button type="button" data-remove class="text-xs text-stone-500 hover:text-red-300">Remove</button>
+    </div>
+    <div data-picker class="mb-2"></div>
+    <label class="flex flex-col gap-1 text-xs">
+      <span class="text-stone-400">
+        Notes
+        <span class="text-stone-500 normal-case">(optional — e.g. which marriage they're from)</span>
+      </span>
+      <input data-cfield="notes" class="rounded-md border border-stone-700 bg-stone-900 px-2.5 py-1 text-sm text-stone-100 placeholder-stone-500 focus:border-amber-500 focus:outline-none" />
     </label>
   </div>
 </template>
@@ -362,9 +390,10 @@
     return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!));
   }
 
-  // ── Repeated sections (parents, marriages, residences) ───────────
+  // ── Repeated sections (parents, marriages, children, residences) ─
   const parentPickers: PickerHandle[] = [];
   const marriageSlots: Array<{ picker: PickerHandle; slot: HTMLElement }> = [];
+  const childSlots: Array<{ picker: PickerHandle; slot: HTMLElement }> = [];
 
   function buildParents() {
     const host = document.getElementById('pf-parents')!;
@@ -395,6 +424,22 @@
     return entry;
   }
 
+  function addChild(): { picker: PickerHandle; slot: HTMLElement } {
+    const host = document.getElementById('pf-children')!;
+    const tpl = document.getElementById('pf-tpl-child') as HTMLTemplateElement;
+    const node = tpl.content.firstElementChild!.cloneNode(true) as HTMLElement;
+    host.appendChild(node);
+    const picker = createPicker(node.querySelector('[data-picker]') as HTMLElement);
+    const entry = { picker, slot: node };
+    childSlots.push(entry);
+    (node.querySelector('[data-remove]') as HTMLElement).addEventListener('click', () => {
+      node.remove();
+      const idx = childSlots.indexOf(entry);
+      if (idx >= 0) childSlots.splice(idx, 1);
+    });
+    return entry;
+  }
+
   function addResidence(initialValue = ''): HTMLInputElement {
     const host = document.getElementById('pf-residences')!;
     const tpl = document.getElementById('pf-tpl-residence') as HTMLTemplateElement;
@@ -407,6 +452,7 @@
   }
 
   document.getElementById('pf-add-marriage')?.addEventListener('click', () => addMarriage());
+  document.getElementById('pf-add-child')?.addEventListener('click', () => addChild());
   document.getElementById('pf-add-residence')?.addEventListener('click', () => addResidence());
 
   // ── Field helpers ────────────────────────────────────────────────
@@ -450,6 +496,8 @@
     buildParents();
     document.getElementById('pf-marriages')!.replaceChildren();
     marriageSlots.length = 0;
+    document.getElementById('pf-children')!.replaceChildren();
+    childSlots.length = 0;
     document.getElementById('pf-residences')!.replaceChildren();
   }
 
@@ -470,6 +518,12 @@
         notes: fields('notes') || undefined,
       };
     }).filter(m => m.spouse.kind !== 'none' || m.dateRaw || m.place || m.notes);
+
+    const children = childSlots.map(({ picker, slot }) => {
+      const notesEl = slot.querySelector<HTMLInputElement>('[data-cfield="notes"]');
+      const notes = notesEl?.value.trim() || undefined;
+      return { person: picker.getValue(), notes };
+    }).filter(c => c.person.kind !== 'none' || c.notes);
 
     const residences = Array.from(
       document.querySelectorAll<HTMLInputElement>('#pf-residences [data-residence]')
@@ -496,6 +550,7 @@
       },
       parents,
       marriages,
+      children,
       residences: residences.length ? residences : undefined,
       occupation: getValue('occupation') || undefined,
       notes: getValue('notes') || undefined,
@@ -510,6 +565,12 @@
       const v = picker.getValue();
       if (v.kind === 'new' && !v.name.trim()) {
         return 'A new spouse needs at least a full name.';
+      }
+    }
+    for (const { picker } of childSlots) {
+      const v = picker.getValue();
+      if (v.kind === 'new' && !v.name.trim()) {
+        return 'A new child needs at least a full name.';
       }
     }
     for (const p of parentPickers.map(pp => pp.getValue())) {
