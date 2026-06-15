@@ -95,11 +95,17 @@ try {
       .setTransitionTime(550)
       .setCardXSpacing(280)
       .setCardYSpacing(160)
-      // Limit how many generations render at once. Without these, a focused
-      // founder pulls in ~8 generations of descendants (~4,900 nodes) and
-      // the layout pass takes seconds. Depth 4 keeps the founder view under
-      // ~1k cards (~1-2s render). Users can click cards to expand further.
-      .setAncestryDepth(4)
+      // Asymmetric depth: ancestors fan out modestly (each generation up
+      // is bounded — at most 2× parents per child), so a generous depth
+      // surfaces the full ancestor chain back to the documented great-
+      // great-greats. Descendants fan out aggressively at the top of
+      // the tree (John Guthrie's subtree pulls in ~3000 cards at depth
+      // 6), so progeny stays at 4 to keep top-of-tree views snappy.
+      // Either side can be lifted past these on a per-focus basis via
+      // setAncestryDepth/setProgenyDepth — e.g. trace mode bumps
+      // ancestry to 50 and zeroes out progeny. Users can also click
+      // expand arrows on cards to drill past the default.
+      .setAncestryDepth(8)
       .setProgenyDepth(4)
       .setDuplicateBranchToggle(true)
       .setModifyTreeHierarchy((root: any, isAncestry: boolean) => {
@@ -244,7 +250,7 @@ try {
     // `trace: true` lifts the ancestry depth so you can see the chain all
     // the way back to the founder, and zooms out to fit the whole chain in
     // the viewport. The defaults reset when you focus on someone else.
-    const defaultAncestry = 4;
+    const defaultAncestry = 8;
     const defaultProgeny = 4;
     // Trigger full-data load as soon as the user starts interacting (search
     // open, key press, etc.) — by then the chart's already rendered and the
