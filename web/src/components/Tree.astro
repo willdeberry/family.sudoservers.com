@@ -606,6 +606,24 @@ try {
     stroke-width: 1.5px;
   }
 
+  /* Hover-path-to-main: the plugin adds .f3-path-to-main to every card
+     and link on the chain from the hovered card to the focused person.
+     FCP's bundled CSS targets `.f3 ...` which loses specificity to our
+     `#family-chart`-prefixed rules above; re-state with the ID prefix
+     so the highlighted links thicken and turn fully opaque.  Cards
+     pick up the bundled outline already (we don't override .card-
+     inner outline), but we bump it here to make the path read
+     unmistakably. */
+  #family-chart path.link.f3-path-to-main {
+    stroke: #ffffff !important;
+    stroke-width: 3.5px;
+  }
+  #family-chart div.card-inner.f3-path-to-main {
+    outline: 3px solid #ffffff;
+    outline-offset: 1px;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.18);
+  }
+
   /* The main person gets a stronger outline */
   #family-chart .card-main-outline {
     stroke: rgba(255, 255, 255, 0.85);
