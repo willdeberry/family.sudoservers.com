@@ -4,12 +4,18 @@
 <header class="z-10 flex h-14 items-center gap-4 border-b border-stone-800 bg-[#171717] px-4">
   <div class="flex items-center gap-2">
     <div
-      class="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-amber-500 to-amber-700 text-sm font-bold text-amber-50 shadow-inner"
+      class="grid h-8 w-8 place-items-center rounded-lg bg-amber-700 text-amber-50 shadow-inner"
+      aria-hidden="true"
     >
-      G
+      <!-- Tiered pine-tree silhouette in a single fill. Reads cleanly
+           at this size and stays generic now that the title isn't
+           surname-bound. -->
+      <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2L6 10H8L4 16H10V20H14V16H20L16 10H18L12 2Z" />
+      </svg>
     </div>
     <h1 class="hidden whitespace-nowrap text-lg font-semibold tracking-tight text-stone-100 sm:inline">
-      Guthrie Family Tree
+      Family Tree
     </h1>
   </div>
 
