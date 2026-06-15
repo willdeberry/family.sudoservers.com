@@ -103,13 +103,12 @@ try {
       () => false, // not horizontal
     ));
 
+    // Sibling row beside the focused person — Ancestry-style.
+    chart.setShowSiblingsOfMain();
+
     const card = chart
       .setCardSvg()
       .setCardDisplay([['full name'], ['lifespan']])
-      // setMiniTree renders the small expand-arrow on cards that have hidden
-      // relations (children/parents past the depth limit). FCP uses
-      // setMiniTree()/unsetMiniTree() — no boolean arg.
-      .setMiniTree()
       .setCardDim({
         width: 250,
         height: 70,
@@ -120,6 +119,31 @@ try {
         text_x: 16,
         text_y: 24,
       });
+
+    // MiniTreePlugin replaces the basic setMiniTree() chip with a proper
+    // miniature subtree drawn next to each card — siblings, spouses,
+    // hidden kids — without forcing a recenter. Clicking any member of
+    // a mini-tree routes through our focusOn so depth resets, slow-load
+    // overlay, and back-nav stack all behave the same as a search
+    // navigation.
+    //
+    // FullMiniTreePlugin (the companion that draws the embedded next-
+    // generation preview on cards at the depth limit) caused NaN
+    // transform errors in the layout pass when wired with the obvious
+    // partition filter from the FCP combined demo. Leaving it commented
+    // out until I can reproduce against the upstream demo source.
+    const CARD_W = 250;
+    const CARD_H = 70;
+    const onMiniCardClick = (_e: Event, d: any) => {
+      const id = d?.data?.id;
+      if (id) (window as any).__familytree?.focusOn(id);
+    };
+    chart.use(new f3.MiniTreePlugin({
+      member_card_width: CARD_W,
+      member_card_height: CARD_H,
+      onCardClick: onMiniCardClick,
+      memberCardTooltip: { cont: chart.cont, fullCardRenderer: card.getCard() },
+    }));
 
     function openPersonModal(id: string) {
       window.dispatchEvent(new CustomEvent('familytree:open-person', { detail: { id } }));
