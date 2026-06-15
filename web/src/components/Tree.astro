@@ -169,14 +169,22 @@ try {
         if (cont.querySelector(':scope > g.card-info-icon')) return;
         const g = document.createElementNS(SVG_NS, 'g');
         g.setAttribute('class', 'card-info-icon');
-        g.setAttribute('transform', 'translate(102, -29)'); // top-right of inner card
+        // Center the icon inside the card's top-right corner. Card is
+        // 250×70 with center-origin, so the right edge is x=125 and the
+        // top edge y=-35. Pulling the icon in to (108, -22) keeps the
+        // 9-px radius circle fully inside the rect with ~8 px breathing
+        // room from each edge.
+        g.setAttribute('transform', 'translate(108, -22)');
         g.style.cursor = 'pointer';
+        // White disc + black glyph reads cleanly on both blue and
+        // orange cards (the previous semi-transparent white had poor
+        // contrast on orange).
         g.innerHTML = `
-          <circle r="9" fill="rgba(255,255,255,0.16)"></circle>
-          <text y="3.5" text-anchor="middle"
+          <circle r="8" fill="#ffffff"></circle>
+          <text y="3" text-anchor="middle"
                 font-family="ui-sans-serif, system-ui, sans-serif"
-                font-size="11" font-weight="700"
-                fill="#ffffff" pointer-events="none">i</text>
+                font-size="10" font-weight="700"
+                fill="#1f1f1f" pointer-events="none">i</text>
         `;
         g.addEventListener('click', (e) => {
           e.stopPropagation();
