@@ -586,6 +586,14 @@ try {
     height: 100%;
     display: block;
   }
+  /* Keep the name + lifespan clear of the info-icon. The icon lives at
+     right:6px and is 20px wide, so the text area needs ≥26px of right
+     padding to never overlap. We add the padding on the label wrapper
+     so the icon shrinks the usable text width rather than running on
+     top of long names like "William Dale DeBerry 1986 – ". */
+  #family-chart .card_cont .card-label {
+    padding-right: 28px;
+  }
 
   /* Connector lines: white on dark background */
   #family-chart path.link {
