@@ -1,0 +1,62 @@
+# Stub for merging into your existing stack, or running on its own with:
+#   docker compose -f deploy/docker-compose.yml up -d
+#
+# No custom image: we use the off-the-shelf node:22-alpine and bind-mount
+# the host-built dist/server/, node_modules/, and package.json into the
+# container, then override CMD. Tradeoff: every deploy rsyncs node_modules
+# instead of baking it into an image. For this size of dataset (small,
+# pure-JS deps, no native modules) that's fine.
+#
+# Assumptions (adjust to your stack):
+#  - Your SWAG/nginx container is on a docker network named `swag`. The
+#    nginx config (deploy/family.sudoservers.com.conf) proxies /api/ to
+#    http://family-api:4321, which resolves over that shared network.
+#  - /etc/family-sudoservers/env exists on the host with GOOGLE_CLIENT_ID,
+#    GITHUB_TOKEN, and GITHUB_REPO. See web/.env.example.
+#  - The Astro server bundle + its node_modules are deployed to
+#    /config/www/family.sudoservers.com/. The deploy step is:
+#      cd web
+#      npm ci --omit=dev
+#      npm run build
+#      rsync -a --delete dist/client/      <host>:/config/www/family.sudoservers.com/client/
+#      rsync -a --delete dist/server/      <host>:/config/www/family.sudoservers.com/server/
+#      rsync -a --delete node_modules/     <host>:/config/www/family.sudoservers.com/node_modules/
+#      rsync -a package.json package-lock.json <host>:/config/www/family.sudoservers.com/
+#      ssh <host> 'docker compose restart family-api'
+#    SWAG picks up the new client files immediately; restart-on-change
+#    keeps the API container fresh.
+
+services:
+  family-api:
+    image: node:22-alpine
+    container_name: family-api
+    restart: unless-stopped
+    working_dir: /app
+    command: ["node", "./dist/server/entry.mjs"]
+    env_file:
+      - /etc/family-sudoservers/env
+    environment:
+      HOST: 0.0.0.0
+      PORT: 4321
+      NODE_ENV: production
+    volumes:
+      - /config/www/family.sudoservers.com/server:/app/dist/server:ro
+      - /config/www/family.sudoservers.com/node_modules:/app/node_modules:ro
+      - /config/www/family.sudoservers.com/package.json:/app/package.json:ro
+    networks:
+      - swag
+    # Cheap liveness probe: POST {} and look for a 4xx — anything other
+    # than connection-refused means the listener is up.
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "--method=POST", "--header=Content-Type: application/json", "--body-data={}", "http://127.0.0.1:4321/api/submit"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+networks:
+  # If your SWAG stack uses a different network name (e.g. `swag_default`,
+  # `proxy`, etc.), change it both here and in
+  # deploy/family.sudoservers.com.conf's proxy_pass variable.
+  swag:
+    external: true
