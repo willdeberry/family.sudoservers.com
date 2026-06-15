@@ -140,20 +140,37 @@ try {
       const id = d?.data?.id;
       if (id) (window as any).__familytree?.focusOn(id);
     };
+    // FullMiniTreePlugin draws an embedded next-generation preview on
+    // every card sitting at the visible depth limit. MiniTreePlugin
+    // covers everything else — the inverse of the same predicate. Both
+    // route clicks through our focusOn so back-nav and slow-render
+    // overlay stay consistent.
+    //
+    // NB: the demo's `add_spacing_for_last_level_*: true` produces
+    // ~100 NaN transform errors per render on our data — its In
+    // spacing pass hits an undefined member_node_separation and the
+    // resulting offsets cascade through the layout. We disable both
+    // flags; the mini-trees still render and overlap is minor for
+    // our card sizes.
+    chart.use(new f3.FullMiniTreePlugin({
+      member_card_width: CARD_W,
+      member_card_height: CARD_H,
+      onCardClick: onMiniCardClick,
+      memberCardTooltip: { cont: chart.cont, fullCardRenderer: card.getCard() },
+      generateFilter: fullMiniTreeFilter,
+      add_spacing_for_last_level_ancestry: false,
+      add_spacing_for_last_level_progeny: false,
+      align_children_with_member: true,
+    }));
     chart.use(new f3.MiniTreePlugin({
       member_card_width: CARD_W,
       member_card_height: CARD_H,
       onCardClick: onMiniCardClick,
       memberCardTooltip: { cont: chart.cont, fullCardRenderer: card.getCard() },
+      generateFilter: (td: any, tree: any, is_ancestry?: boolean) =>
+        !fullMiniTreeFilter(td, tree, is_ancestry),
     }));
-    // Route multi-spouse links around each other rather than overlapping.
-    // Matters on cards like William Dale (married Janelle, then Cassila)
-    // where the spouse connectors would otherwise stack on top of one
-    // another along the same horizontal line.
     chart.use(new f3.SpouseBypassLinkPlugin());
-    // TODO: FullMiniTreePlugin still NaNs even after switching to
-    // CardHtml; reproducing the demo verbatim is the next step.
-    void fullMiniTreeFilter;
 
     function openPersonModal(id: string) {
       window.dispatchEvent(new CustomEvent('familytree:open-person', { detail: { id } }));
