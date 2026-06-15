@@ -597,17 +597,19 @@ def build():
             # Materialize the spouse's own parents (and recursively their
             # parents) when the spouse dict carried `father`/`mother`.
             # Plain-string form ("Ralph Edward Hughs") creates a name-only
-            # stub; dict form ({"name":..., "born":..., "died":...,
-            # "father":..., "mother":...}) carries life events through and
-            # recurses into grandparents. Each materialized ancestor is
-            # linked as a parent of the child so the suggestion/edit flow
-            # can surface them in the tree.
-            def materialize_ancestor(parent_info, child_pid, role, child_label):
+            # stub; dict form carries life events through and can declare:
+            #   buried, married, married_place — applied to the person
+            #   father, mother — recurse another generation
+            # If either parent in a pair declares married/married_place,
+            # the two materialized parents are linked to each other as
+            # spouses (so e.g. Ralph–Betty appear as a couple in the tree
+            # even though the data only flows in from one side).
+            def materialize_one_ancestor(parent_info, child_pid, role, child_label):
                 nonlocal spouse_counter
                 if isinstance(parent_info, str):
                     parent_info = {"name": parent_info}
                 if not isinstance(parent_info, dict) or not parent_info.get("name"):
-                    return
+                    return None
                 spouse_counter += 1
                 parent_pid = f"sp_{spouse_counter:06d}"
                 ensure_person(parent_pid, None)
@@ -622,6 +624,8 @@ def build():
                     parent_p["death"] = make_lifeevent(
                         parent_info.get("died"), parent_info.get("died_place")
                     )
+                if parent_info.get("buried"):
+                    parent_p["burial"] = {"place": parent_info["buried"]}
                 parent_p["verification"] = {
                     "status": "verified",
                     "source": "vision",
@@ -632,26 +636,48 @@ def build():
                     people[child_pid]["parentIds"].append(parent_pid)
                 if child_pid not in parent_p["childIds"]:
                     parent_p["childIds"].append(child_pid)
-                # Recurse: a parent dict can carry its own father/mother
-                # so a single entry can declare grandparents in one block.
-                for sub_role in ("father", "mother"):
-                    sub_info = parent_info.get(sub_role)
-                    if sub_info:
-                        materialize_ancestor(
-                            sub_info, parent_pid, sub_role,
-                            f"{parent_info['name']} ({role} of {child_label})",
-                        )
+                return parent_pid
 
-            for role, key_name in (
-                ("father", "_spouseFather"),
-                ("mother", "_spouseMother"),
-            ):
-                raw_parent = m.get(key_name)
-                if raw_parent:
-                    materialize_ancestor(
-                        raw_parent, sp_pid, role,
-                        f"{spouse_name} (spouse of {primary_code})",
+            def materialize_couple(child_pid, child_label, father_info, mother_info):
+                father_pid = materialize_one_ancestor(father_info, child_pid, "father", child_label) if father_info else None
+                mother_pid = materialize_one_ancestor(mother_info, child_pid, "mother", child_label) if mother_info else None
+                # Link parents as spouses if either declared marriage info.
+                if father_pid and mother_pid:
+                    married = married_place = None
+                    for info in (father_info, mother_info):
+                        if isinstance(info, dict) and (info.get("married") or info.get("married_place")):
+                            married = info.get("married")
+                            married_place = info.get("married_place")
+                            break
+                    if married or married_place:
+                        iso_m, raw_m = parse_date(married) if married else (None, None)
+                        for pid_a, pid_b in ((father_pid, mother_pid), (mother_pid, father_pid)):
+                            people[pid_a]["marriages"].append({
+                                "spouseId": pid_b,
+                                "spouseName": (people[pid_b].get("name") or {}).get("full"),
+                                "date": iso_m,
+                                "dateRaw": raw_m,
+                                "place": married_place,
+                                "marriageOrder": None,
+                                "notes": None,
+                            })
+                # Recurse another generation up. The labels keep stack
+                # frames identifiable in materialization-source notes.
+                if father_pid and isinstance(father_info, dict):
+                    materialize_couple(
+                        father_pid, f"{father_info['name']} (father of {child_label})",
+                        father_info.get("father"), father_info.get("mother"),
                     )
+                if mother_pid and isinstance(mother_info, dict):
+                    materialize_couple(
+                        mother_pid, f"{mother_info['name']} (mother of {child_label})",
+                        mother_info.get("father"), mother_info.get("mother"),
+                    )
+
+            materialize_couple(
+                sp_pid, f"{spouse_name} (spouse of {primary_code})",
+                m.get("_spouseFather"), m.get("_spouseMother"),
+            )
 
     # Link spouses as co-parents of their partner's children. Without this,
     # children only get a single parent (the lineage-code path), so the chart

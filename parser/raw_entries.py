@@ -15192,24 +15192,66 @@ ENTRIES.append({
         "born": "13 Apr 1965",
         "married": "25 May 1985",
         "married_place": "Wahiawa, Hawaii",
-        # Kelli's parents added via issue #7. Dict form carries through
-        # the life-event fields so build.py can materialize each parent
-        # with a proper birth and death record. Each parent can itself
-        # carry father/mother dicts — those grandparents (issues #11,
-        # #13) recurse through the same materialization pass.
+        # Kelli's parents added via issue #7, then enriched and corrected
+        # across issues #11, #13, #14–#19. Each ancestor dict can declare:
+        #   born/born_place, died/died_place, buried, married/married_place,
+        #   father, mother. build.py recursively materializes the lot and
+        #   links marriages between paired parents.
         "father": {
             "name": "Ralph Edward Hughs",
-            "born": "1924",
-            "died": "2007",
-            "father": {"name": "Edward Roland Hughs", "born": "1856", "died": "1937"},
-            "mother": {"name": "Florence Elizabeth 'Flora' Jobe", "born": "1865", "died": "1910"},
+            "born": "5 Nov 1924",
+            "born_place": "Lucerne, MO",
+            "died": "11 Jul 2007",
+            "died_place": "Brandon, FL",
+            "buried": "Brandon, FL",
+            "married": "26 Jun 1947",
+            "married_place": "Alexandria, VA",
+            # Issue #16 corrected the original "Edward Roland Hughs
+            # (1856–1937)" to the right person: William Edward Hughs
+            # (1886–1965) of Ravanna / Princeton, MO.
+            "father": {
+                "name": "William Edward Hughs",
+                "born": "10 May 1886",
+                "born_place": "Ravanna, MO",
+                "died": "25 Jun 1965",
+                "died_place": "Princeton, MO",
+            },
+            # Issue #17 corrected the original "Florence Elizabeth 'Flora'
+            # Jobe (1865–1910)" to Alma Lorraine Stout (1887–1942).
+            "mother": {
+                "name": "Alma Lorraine Stout",
+                "born": "30 Nov 1887",
+                "born_place": "Newtown, MO",
+                "died": "25 Nov 1942",
+                "died_place": "Lucerne, MO",
+            },
         },
         "mother": {
             "name": "Betty Laura Sellman",
-            "born": "1925",
-            "died": "1990",
-            "father": {"name": "Francis Allen Sellman", "born": "1904", "died": "1990"},
-            "mother": {"name": "Dorothy E Develvis", "born": "1903", "died": "1953"},
+            "born": "5 Apr 1925",
+            "born_place": "Springfield, OH",
+            "died": "25 Oct 1990",
+            "died_place": "Brandon, FL",
+            "buried": "Brandon, FL",
+            "father": {
+                "name": "Francis Allen Sellman",
+                "born": "9 Jun 1904",
+                "born_place": "Luray, VA",
+                "died": "28 Feb 1990",
+                "died_place": "Bowling Green, OH",
+                "buried": "Bowling Green, OH",
+                "married": "16 Jun 1924",
+                "married_place": "Clark, OH",
+            },
+            "mother": {
+                "name": "Dorothy E Develvis",
+                "born": "25 Apr 1903",
+                "born_place": "Rosewood, OH",
+                "died": "3 May 1953",
+                # Issue #19 added Dorothy's parents.
+                "father": {"name": "Earl Isaac Develvis", "born": "1882", "died": "1945"},
+                "mother": {"name": "Mary Nancy Hall", "born": "1885", "died": "1912"},
+            },
         },
     }],
     "source": {"pdf": "John_Guthrie - Eight Generations.pdf", "page": 124},
