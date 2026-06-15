@@ -99,6 +99,12 @@ import PersonForm from './PersonForm.astro';
   let mode: SuggestMode = 'add';
   let editCtx: EditContext | null = null;
   let peopleIndex: Record<string, any> | null = null;
+  // Tracks whether the user has touched any form field since the modal
+  // opened. We use this to guard close (X, Cancel, backdrop click, Esc)
+  // with a "discard your changes?" prompt — but only when there's
+  // actually something to discard.
+  let formDirty = false;
+  const DISCARD_PROMPT = 'Close without submitting? Your changes will be lost.';
 
   function dialog() {
     return document.getElementById('suggestion-modal') as HTMLDialogElement;
@@ -175,6 +181,9 @@ import PersonForm from './PersonForm.astro';
         pf.fill({ ...ctx.person, peopleIndex: idx });
       }
     }
+    // After reset/fill the form is at the starting state — nothing the
+    // user has touched yet.
+    formDirty = false;
     dialog()?.showModal();
   }
 
@@ -183,7 +192,30 @@ import PersonForm from './PersonForm.astro';
     renderSignedState(e.detail.user);
   });
 
-  function close() { dialog()?.close(); }
+  function close(opts: { force?: boolean } = {}) {
+    if (!opts.force && formDirty) {
+      if (!window.confirm(DISCARD_PROMPT)) return;
+    }
+    formDirty = false;
+    dialog()?.close();
+  }
+
+  // Any keystroke or selection inside the person form counts as a touch.
+  // Listening on the modal body (not on a specific id) means we catch
+  // the picker inputs as they're cloned into place at runtime.
+  el('suggestion-body')?.addEventListener('input', () => { formDirty = true; });
+  el('suggestion-body')?.addEventListener('change', () => { formDirty = true; });
+
+  // `<dialog>` fires `cancel` when the user presses Esc; intercepting
+  // it lets us run the discard prompt before the browser closes us.
+  dialog()?.addEventListener('cancel', (e) => {
+    if (!formDirty) return;
+    e.preventDefault();
+    if (window.confirm(DISCARD_PROMPT)) {
+      formDirty = false;
+      dialog()?.close();
+    }
+  });
 
   el('suggest-addition-trigger')?.addEventListener('click', (e) => {
     e.preventDefault();
@@ -193,14 +225,17 @@ import PersonForm from './PersonForm.astro';
     openFor('edit', e.detail);
   });
 
-  el('suggestion-close')?.addEventListener('click', close);
-  el('suggestion-cancel')?.addEventListener('click', close);
-  el('suggestion-done')?.addEventListener('click', close);
+  el('suggestion-close')?.addEventListener('click', () => close());
+  el('suggestion-cancel')?.addEventListener('click', () => close());
+  // The post-submit "Close" button — at this point the suggestion is on
+  // its way as an issue and there's nothing left to discard, so skip
+  // the prompt.
+  el('suggestion-done')?.addEventListener('click', () => close({ force: true }));
   el('suggestion-signout')?.addEventListener('click', () => {
     (window as any).__auth?.signOut?.();
   });
 
-  // Close on backdrop click
+  // Close on backdrop click — same guard as X / Cancel.
   dialog()?.addEventListener('click', (e) => {
     if (e.target === dialog()) close();
   });
@@ -243,6 +278,9 @@ import PersonForm from './PersonForm.astro';
       });
       const json = await res.json();
       if (!res.ok || !json.ok) throw new Error(json.error || `HTTP ${res.status}`);
+      // Suggestion successfully filed; any subsequent close is just a
+      // dismissal of the confirmation screen.
+      formDirty = false;
       el('suggestion-signed-in')?.classList.add('hidden');
       el('suggestion-signed-in')?.classList.remove('flex');
       const success = el('suggestion-success');
