@@ -306,9 +306,12 @@ function renderEditDiff(originalRaw: any, proposed: PersonInput): string {
 
 // ── Handler ──────────────────────────────────────────────────────────
 export const POST: APIRoute = async ({ request }) => {
-  const audience = import.meta.env.GOOGLE_CLIENT_ID;
-  const ghToken = import.meta.env.GITHUB_TOKEN;
-  const ghRepo = import.meta.env.GITHUB_REPO;
+  // Vite only inlines PUBLIC_* vars into import.meta.env; non-public
+  // server-side vars need to be read at runtime via process.env so the
+  // docker container's environment actually reaches the handler.
+  const audience = process.env.GOOGLE_CLIENT_ID;
+  const ghToken = process.env.GITHUB_TOKEN;
+  const ghRepo = process.env.GITHUB_REPO;
   if (!audience) return fail(500, 'server misconfigured: GOOGLE_CLIENT_ID');
   if (!ghRepo) return fail(500, 'server misconfigured: GITHUB_REPO');
 
