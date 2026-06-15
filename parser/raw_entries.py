@@ -15198,15 +15198,34 @@ ENTRIES.append({
             # (1886–1965) of Ravanna / Princeton, MO. Issue #20 then
             # placed Edward Roland Hughs + Flora Jobe one generation up
             # as William Edward's parents (great-great-grandparents of
-            # William Teddy's kids).
+            # William Teddy's kids). Issues #28 + #29 enriched both
+            # those grandparents and added their own parents — the
+            # great-great-great-grandparents.
             "father": {
                 "name": "William Edward Hughs",
                 "born": "10 May 1886",
                 "born_place": "Ravanna, MO",
                 "died": "25 Jun 1965",
                 "died_place": "Princeton, MO",
-                "father": {"name": "Edward Roland Hughs", "born": "1856", "died": "1937"},
-                "mother": {"name": "Florence Elizabeth 'Flora' Jobe", "born": "1865", "died": "1910"},
+                "father": {
+                    "name": "Edward Roland Hughs",
+                    "born": "29 Apr 1856",
+                    "born_place": "Lancaster, MO",
+                    "died": "31 Mar 1937",
+                    "died_place": "Newtown, MO",
+                    "married": "1884",
+                    "father": {"name": "James Moses Hughs", "born": "1811", "died": "1861"},
+                    "mother": {"name": "Elizabeth Betsy Bradburn", "born": "1810", "died": "1889"},
+                },
+                "mother": {
+                    "name": "Florence Elizabeth 'Flora' Jobe",
+                    "born": "7 Jan 1865",
+                    "born_place": "Newtown, MO",
+                    "died": "10 Jan 1910",
+                    "died_place": "Newtown, MO",
+                    "father": {"name": "Joseph W Jobe", "born": "1838", "died": "1925"},
+                    "mother": {"name": "Catharine Buress", "born": "1834", "died": "1912"},
+                },
             },
             # Issue #17 corrected the original "Florence Elizabeth 'Flora'
             # Jobe (1865–1910)" to Alma Lorraine Stout (1887–1942).
@@ -15237,18 +15256,48 @@ ENTRIES.append({
                 "buried": "Bowling Green, OH",
                 "married": "16 Jun 1924",
                 "married_place": "Clark, OH",
-                # Issue #22 added Francis's parents.
+                # Issue #22 added Francis's parents. Issue #25 enriched
+                # Elizabeth Lee Aleshire and added her own parents (no
+                # equivalent enrichment for Oliver Selman yet).
                 "father": {"name": "Oliver Selman", "born": "1876", "died": "1916"},
-                "mother": {"name": "Elizabeth Lee Aleshire", "born": "1878", "died": "1965"},
+                "mother": {
+                    "name": "Elizabeth Lee Aleshire",
+                    "born": "13 Oct 1878",
+                    "born_place": "Luray, VA",
+                    "died": "28 Jan 1965",
+                    "died_place": "Baltimore, MD",
+                    "buried": "Page, VA",
+                    "father": {"name": "Isaac N Short", "born": "1852", "died": "1939"},
+                    "mother": {"name": "Arbelia Angeline Aleshire", "born": "1849", "died": "1932"},
+                },
             },
             "mother": {
                 "name": "Dorothy E Develvis",
                 "born": "25 Apr 1903",
                 "born_place": "Rosewood, OH",
                 "died": "3 May 1953",
-                # Issue #19 added Dorothy's parents.
-                "father": {"name": "Earl Isaac Develvis", "born": "1882", "died": "1945"},
-                "mother": {"name": "Mary Nancy Hall", "born": "1885", "died": "1912"},
+                # Issue #19 added Dorothy's parents. Issues #26 + #27
+                # enriched Earl and Mary and added their own parents.
+                "father": {
+                    "name": "Earl Isaac Develvis",
+                    "born": "18 Oct 1882",
+                    "born_place": "Perry, OH",
+                    "died": "9 Jun 1945",
+                    "died_place": "Springfield, OH",
+                    "married": "11 Jun 1903",
+                    "married_place": "Shelby, OH",
+                    "father": {"name": "William Francis Develvis", "born": "1850", "died": "1918"},
+                    "mother": {"name": "Mollie Reeder"},
+                },
+                "mother": {
+                    "name": "Mary Nancy Hall",
+                    "born": "5 May 1885",
+                    "born_place": "Springfield, OH",
+                    "died": "12 May 1912",
+                    "died_place": "Springfield, OH",
+                    "father": {"name": "John Hall"},
+                    "mother": {"name": "Dorothy Venrich"},
+                },
             },
         },
     }],
