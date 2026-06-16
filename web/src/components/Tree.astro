@@ -136,7 +136,20 @@ try {
     const CARD_H = 70;
     const card = chart
       .setCardHtml()
-      .setCardDisplay([['full name'], ['lifespan']])
+      .setCardDisplay([
+        ['full name'],
+        ['lifespan'],
+        // Kinship line — empty string when self isn't set or the card
+        // is self itself, otherwise something like "second cousin
+        // twice removed". The wrapper around getKinship makes this a
+        // single-line function so card_display's I() helper keeps it
+        // as a function entry (rather than treating it as a string
+        // field lookup).
+        (d: any) => {
+          const ft = (window as any).__familytree;
+          return ft?.getKinship?.(d.id) || '';
+        },
+      ])
       .setCardWidth(CARD_W)
       .setCardHeight(CARD_H)
       // Highlight the path from the hovered card back to the focused
@@ -207,17 +220,31 @@ try {
     const kinship = new f3.KinshipPlugin();
     chart.use(kinship);
     const SELF_KEY = 'ft:self-id';
+    // Cached label map computed once per self change. calculateKinship
+    // walks the entire dataset, so we cannot afford to call it from a
+    // per-card display function (5k cards × 5k people per render).
+    let kinshipMap: Record<string, string> = {};
     function getStoredSelf(): string | null {
       try { return localStorage.getItem(SELF_KEY); } catch { return null; }
     }
     function applySelf(id: string | null) {
-      if (id) kinship.setSelfId(id);
-      // KinshipPlugin only renders kinship labels when self_id is set;
-      // clearing means we want to drop the labels. There's no public
-      // unsetSelfId but setting an empty string short-circuits the
-      // plugin's label-rendering pass (it bails when datum.id never
-      // matches self_id, which is what an empty string guarantees).
-      else kinship.setSelfId('');
+      if (id) {
+        kinship.setSelfId(id);
+        // Pre-compute the full map so the card display function can
+        // look up each datum's relationship in O(1).
+        try {
+          const result = kinship.calculateKinship((chart as any).store.getData());
+          kinshipMap = result?.kinships || {};
+        } catch {
+          kinshipMap = {};
+        }
+      } else {
+        // KinshipPlugin only renders labels when self_id is set; an
+        // empty string short-circuits the plugin's lookup since no
+        // datum.id will match.
+        kinship.setSelfId('');
+        kinshipMap = {};
+      }
       chart.updateTree({ tree_position: 'inherit' });
       document.dispatchEvent(new CustomEvent('familytree:self-change', {
         detail: { id, displayName: id ? lookupDisplayName(id) : null },
@@ -552,18 +579,13 @@ try {
       },
       // Returns the kinship label between `self` and the given person
       // id, e.g. "second cousin twice removed". null when no self is
-      // set or the person isn't in the data set yet. The plugin caches
-      // the full kinship map per call, so callers that want many
-      // labels at once should use the chart's KinshipPlugin directly.
+      // set or the person isn't in the data set yet. Reads from the
+      // pre-computed kinshipMap (built once per self change in
+      // applySelf) so the card-display function can call this on every
+      // visible card without quadratic blowup.
       getKinship: (id: string): string | null => {
-        const selfId = kinship.self_id;
-        if (!selfId || !id || selfId === id) return null;
-        try {
-          const { kinships } = kinship.calculateKinship((chart as any).store.getData());
-          return kinships?.[id] || null;
-        } catch {
-          return null;
-        }
+        if (!kinship.self_id || !id || kinship.self_id === id) return null;
+        return kinshipMap[id] || null;
       },
     };
 
