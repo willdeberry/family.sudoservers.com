@@ -57,6 +57,24 @@
     <span class="ml-1.5"><span id="stat-verified">…</span> verified</span>
   </div>
 
+  <!-- "You: <Name>" indicator — only visible when the visitor has
+       marked themselves via a person modal's "This is me" action.
+       Click the × icon to clear. KinshipPlugin then shows relationship
+       labels relative to this person on every other card. -->
+  <button
+    id="self-pill"
+    type="button"
+    style="display:none"
+    class="hidden items-center gap-2 rounded-md border border-amber-700/50 bg-amber-900/30 px-2.5 py-1.5 text-sm text-amber-100 hover:border-amber-600 hover:bg-amber-900/50 sm:flex"
+    title="Click to clear who you are"
+  >
+    <span class="text-xs text-amber-300/70">You:</span>
+    <span id="self-pill-name" class="max-w-[140px] truncate"></span>
+    <svg class="h-3 w-3 text-amber-300/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 6l12 12M18 6L6 18" />
+    </svg>
+  </button>
+
   <!-- Auth pill. The GIS button renders inside #auth-signin-host when
        signed out; #auth-user shows name + sign-out when signed in. The
        GIS DOM API mounts only on data-rendered elements, so we ship a
@@ -129,5 +147,35 @@
   document.addEventListener('auth:change', (e: any) => renderAuth(e.detail.user));
   document.getElementById('auth-signout')?.addEventListener('click', () => {
     (window as any).__auth?.signOut?.();
+  });
+
+  // "You: …" self-marker pill. Visible only when the visitor has marked
+  // someone via the person modal's "This is me" action.
+  const selfPill = document.getElementById('self-pill');
+  const selfPillName = document.getElementById('self-pill-name');
+  function renderSelf(self: { id: string; displayName: string | null } | null) {
+    if (!selfPill || !selfPillName) return;
+    if (self?.displayName) {
+      selfPill.style.removeProperty('display');
+      selfPillName.textContent = self.displayName;
+    } else {
+      selfPill.style.display = 'none';
+    }
+  }
+  // Pick up the persisted choice once the chart bootstrap exposes
+  // __familytree. The chart fires familytree:self-change immediately
+  // after seeding from localStorage on load, but if this script runs
+  // first we miss that — so also poll once via getSelf() when nav
+  // events arrive (the first one fires right after the initial render).
+  document.addEventListener('familytree:self-change', (e: any) => renderSelf(e.detail));
+  document.addEventListener('familytree:nav', () => {
+    if (selfPill?.style.display === 'none') {
+      const ft = (window as any).__familytree;
+      const self = ft?.getSelf?.();
+      if (self) renderSelf(self);
+    }
+  });
+  selfPill?.addEventListener('click', () => {
+    (window as any).__familytree?.clearSelf?.();
   });
 </script>

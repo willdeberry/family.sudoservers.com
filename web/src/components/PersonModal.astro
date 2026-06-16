@@ -102,7 +102,7 @@
     </button>`;
   }
 
-  function render(p: PersonDetail, idx: Record<string, PersonDetail>) {
+  function render(p: PersonDetail, idx: Record<string, PersonDetail>, isSelf: boolean) {
     const ls = lifespan(p);
     const code = p.lineageCodes[0] || '';
     const allCodes = p.lineageCodes.length > 1
@@ -119,12 +119,21 @@
       return `<div class="flex flex-wrap items-baseline gap-2">${name}${date}${order}</div>`;
     }).join('') || '<span class="text-stone-400">—</span>';
 
+    // Kinship: if the visitor has marked someone as themselves and the
+    // plugin can compute a relationship to this person, show it just
+    // under the name in the modal header.
+    const kinship = (window as any).__familytree?.getKinship?.(p.id);
+    const kinshipChip = kinship
+      ? `<div class="mt-1 text-sm"><span class="rounded-full bg-amber-900/30 px-2 py-0.5 text-amber-200 ring-1 ring-amber-700/40">Your ${kinship}</span></div>`
+      : '';
+
     return `
       <div class="border-b border-stone-800 px-6 py-5">
         <div class="flex items-start justify-between gap-4">
           <div>
             <h2 class="text-xl font-semibold tracking-tight text-stone-100">${p.name}</h2>
             ${p.nameMaiden ? `<div class="mt-0.5 text-sm text-stone-400">née ${p.nameMaiden}</div>` : ''}
+            ${kinshipChip}
             <div class="mt-1 flex items-baseline gap-2 text-sm text-stone-300">
               ${ls ? `<span>${ls}</span>` : ''}
               ${code ? `<span class="rounded bg-stone-800 px-1.5 py-0.5 font-mono text-xs text-stone-300">${code}</span>` : ''}
@@ -190,7 +199,10 @@
 
       <div class="border-t border-stone-800 bg-[#171717] px-6 py-3 flex items-center justify-between text-xs text-stone-400">
         <span>ID ${p.id}</span>
-        <span class="flex gap-4">
+        <span class="flex flex-wrap gap-4">
+          <a class="text-stone-300 hover:text-amber-300" href="#" id="mark-self" data-self-action="${isSelf ? 'clear' : 'set'}">
+            ${isSelf ? 'Not me anymore' : 'This is me'} →
+          </a>
           <a class="text-stone-300 hover:text-amber-300" href="#" id="suggest-edit">Suggest an edit →</a>
           <a class="text-stone-300 hover:text-amber-300" href="#" id="trace-to-founder">Trace ancestry to founder →</a>
           <a class="text-stone-300 hover:text-amber-300" href="#" id="focus-tree-on">Focus tree here →</a>
@@ -212,7 +224,9 @@
     const modal = document.getElementById('person-modal') as HTMLDialogElement | null;
     const content = document.getElementById('person-modal-content');
     if (!modal || !content) return;
-    content.innerHTML = render(p, idx);
+    const currentSelf = (window as any).__familytree?.getSelf?.();
+    const isSelf = !!currentSelf && currentSelf.id === id;
+    content.innerHTML = render(p, idx, isSelf);
     modal.showModal();
 
     content.querySelector('#person-modal-close')?.addEventListener('click', () => modal.close());
@@ -243,6 +257,15 @@
       window.dispatchEvent(new CustomEvent('familytree:suggest-edit', {
         detail: { personId: id, person: p },
       }));
+    });
+    content.querySelector('#mark-self')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      const ft = (window as any).__familytree;
+      if (!ft) return;
+      const action = (e.currentTarget as HTMLElement).getAttribute('data-self-action');
+      if (action === 'clear') ft.clearSelf?.();
+      else ft.setSelf?.(id);
+      modal.close();
     });
   }
 

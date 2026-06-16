@@ -198,6 +198,42 @@ try {
     }));
     chart.use(new f3.SpouseBypassLinkPlugin());
 
+    // Kinship: shows "second cousin twice removed"-style labels on each
+    // card relative to whoever the visitor marks as themselves. The
+    // chosen id persists in localStorage so it survives page reloads
+    // (per-browser, not per-Google-account — see commit log for the
+    // tradeoff). The PersonModal exposes a "This is me" action that
+    // writes to localStorage and fires familytree:self-change.
+    const kinship = new f3.KinshipPlugin();
+    chart.use(kinship);
+    const SELF_KEY = 'ft:self-id';
+    function getStoredSelf(): string | null {
+      try { return localStorage.getItem(SELF_KEY); } catch { return null; }
+    }
+    function applySelf(id: string | null) {
+      if (id) kinship.setSelfId(id);
+      // KinshipPlugin only renders kinship labels when self_id is set;
+      // clearing means we want to drop the labels. There's no public
+      // unsetSelfId but setting an empty string short-circuits the
+      // plugin's label-rendering pass (it bails when datum.id never
+      // matches self_id, which is what an empty string guarantees).
+      else kinship.setSelfId('');
+      chart.updateTree({ tree_position: 'inherit' });
+      document.dispatchEvent(new CustomEvent('familytree:self-change', {
+        detail: { id, displayName: id ? lookupDisplayName(id) : null },
+      }));
+    }
+    function lookupDisplayName(id: string): string | null {
+      const node = data.find(d => d.id === id);
+      return (node?.data as any)?.['full name'] || null;
+    }
+    // Seed from localStorage. Defer past the first updateTree so the
+    // kinship pass runs after the initial layout has settled.
+    queueMicrotask(() => {
+      const stored = getStoredSelf();
+      if (stored && data.find(d => d.id === stored)) applySelf(stored);
+    });
+
     function openPersonModal(id: string) {
       window.dispatchEvent(new CustomEvent('familytree:open-person', { detail: { id } }));
     }
@@ -342,6 +378,13 @@ try {
       chart.updateData(data as any);
       fullDataMerged = true;
       console.log(`[chart] full data merged (${data.length} nodes)`);
+      // The "this is me" seed-from-localStorage might have aborted on
+      // initial boot because the persisted id wasn't in the slice yet.
+      // Re-try now that everyone's loaded.
+      const stored = getStoredSelf();
+      if (stored && (!kinship.self_id || kinship.self_id !== stored) && data.find(d => d.id === stored)) {
+        applySelf(stored);
+      }
     }
     // Kick off full-data preload right after first paint, but only if the
     // browser is idle and not busy with the chart layout.
@@ -495,6 +538,33 @@ try {
       },
       canGoBack: () => backStack.length > 0,
       fit: () => chart.updateTree({ tree_position: 'fit' }),
+      setSelf: (id: string) => {
+        try { localStorage.setItem(SELF_KEY, id); } catch {}
+        applySelf(id);
+      },
+      clearSelf: () => {
+        try { localStorage.removeItem(SELF_KEY); } catch {}
+        applySelf(null);
+      },
+      getSelf: () => {
+        const id = getStoredSelf();
+        return id ? { id, displayName: lookupDisplayName(id) } : null;
+      },
+      // Returns the kinship label between `self` and the given person
+      // id, e.g. "second cousin twice removed". null when no self is
+      // set or the person isn't in the data set yet. The plugin caches
+      // the full kinship map per call, so callers that want many
+      // labels at once should use the chart's KinshipPlugin directly.
+      getKinship: (id: string): string | null => {
+        const selfId = kinship.self_id;
+        if (!selfId || !id || selfId === id) return null;
+        try {
+          const { kinships } = kinship.calculateKinship((chart as any).store.getData());
+          return kinships?.[id] || null;
+        } catch {
+          return null;
+        }
+      },
     };
 
     // Backspace = go back, when no input/textarea is focused and neither
