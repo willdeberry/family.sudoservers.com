@@ -242,11 +242,14 @@ try {
     function getStoredSelf(): string | null {
       try { return localStorage.getItem(SELF_KEY); } catch { return null; }
     }
-    function applySelf(id: string | null) {
+    // Pure state mutation: set the plugin's self-id and rebuild the
+    // cached kinshipMap.  No DOM side-effects so the boot path can
+    // call this BEFORE the initial render — the upcoming updateTree
+    // already picks up the kinship state via the setOnCardUpdate
+    // bubble injector.
+    function computeSelfState(id: string | null) {
       if (id) {
         kinship.setSelfId(id);
-        // Pre-compute the full map so the card display function can
-        // look up each datum's relationship in O(1).
         try {
           const result = kinship.calculateKinship((chart as any).store.getData());
           kinshipMap = result?.kinships || {};
@@ -254,13 +257,16 @@ try {
           kinshipMap = {};
         }
       } else {
-        // KinshipPlugin only renders labels when self_id is set; an
-        // empty string short-circuits the plugin's lookup since no
-        // datum.id will match.
         kinship.setSelfId('');
         kinshipMap = {};
       }
+    }
+    function applySelf(id: string | null) {
+      computeSelfState(id);
       chart.updateTree({ tree_position: 'inherit' });
+      emitSelfChange(id);
+    }
+    function emitSelfChange(id: string | null) {
       document.dispatchEvent(new CustomEvent('familytree:self-change', {
         detail: { id, displayName: id ? lookupDisplayName(id) : null },
       }));
@@ -269,13 +275,6 @@ try {
       const node = data.find(d => d.id === id);
       return (node?.data as any)?.['full name'] || null;
     }
-    // Seed from localStorage. Defer past the first updateTree so the
-    // kinship pass runs after the initial layout has settled.
-    queueMicrotask(() => {
-      const stored = getStoredSelf();
-      if (stored && data.find(d => d.id === stored)) applySelf(stored);
-    });
-
     function openPersonModal(id: string) {
       window.dispatchEvent(new CustomEvent('familytree:open-person', { detail: { id } }));
     }
@@ -351,6 +350,54 @@ try {
     });
 
     performance.mark('chart:create-end');
+
+    // Defined ahead of the initial render so the boot path can pull in
+    // full data when the persisted self id isn't in the initial slice.
+    let fullDataMerged = false;
+    async function ensureFullData() {
+      if (fullDataMerged) return;
+      const full = await loadFullData();
+      const known = new Set(data.map(d => d.id));
+      for (const d of full) {
+        if (known.has(d.id)) continue;
+        data.push(d);
+        known.add(d.id);
+      }
+      const fullById = new Map(full.map(d => [d.id, d]));
+      for (const d of data) {
+        const fd = fullById.get(d.id);
+        if (!fd) continue;
+        d.rels.parents = fd.rels.parents;
+        d.rels.children = fd.rels.children;
+        d.rels.spouses = fd.rels.spouses;
+      }
+      // FCP wraps the data array in a `Data` class with its own internal
+      // id-keyed dictionary; the free version read state.data directly
+      // each updateTree, so push-and-mutate was enough. With FCP we have
+      // to call updateData() so it rebuilds its index — otherwise any
+      // focusOn for a person added by the merge throws "Datum not found".
+      chart.updateData(data as any);
+      fullDataMerged = true;
+      console.log(`[chart] full data merged (${data.length} nodes)`);
+    }
+
+    // If the visitor has previously marked themselves, land the very
+    // first paint on their card instead of the founder.  Eagerly pull
+    // in the full dataset if the persisted id isn't in the initial
+    // slice — most descendants 6+ generations out aren't.  Costs ~1
+    // extra fetch and ~100ms on first paint when self is set, but
+    // avoids a jarring jump-after-render.
+    const storedSelfAtBoot = getStoredSelf();
+    if (storedSelfAtBoot) {
+      if (!data.find(d => d.id === storedSelfAtBoot)) {
+        await ensureFullData();
+      }
+      if (data.find(d => d.id === storedSelfAtBoot)) {
+        chart.updateMainId(storedSelfAtBoot);
+        computeSelfState(storedSelfAtBoot);
+      }
+    }
+
     // Initial render — center on the focused person at full scale. Note:
     // family-chart unconditionally calls treeFit when props.initial is
     // truthy, ignoring tree_position. So we pass initial:false explicitly
@@ -365,6 +412,14 @@ try {
     chart.updateTree({ tree_position: 'main_to_middle', transition_time: 0 });
     chart.updateTree({ tree_position: 'main_to_middle', transition_time: 0 });
     performance.mark('chart:render-end');
+
+    // Notify TopBar after the first render so the pill's "You: <Name>"
+    // chip lights up.  Emitted post-render rather than pre- because the
+    // listener may be wired after our bootstrap kick-off (idle callback),
+    // and emitNav() / setAfterUpdate also catch up via the nav handler.
+    if (storedSelfAtBoot && data.find(d => d.id === storedSelfAtBoot)) {
+      emitSelfChange(storedSelfAtBoot);
+    }
 
     // Surface where time went in the console so we can profile real loads.
     queueMicrotask(() => {
@@ -393,50 +448,17 @@ try {
     const defaultProgeny = 4;
     // Trigger full-data load as soon as the user starts interacting (search
     // open, key press, etc.) — by then the chart's already rendered and the
-    // main thread has cycles to spare.
-    let fullDataMerged = false;
-    async function ensureFullData() {
-      if (fullDataMerged) return;
-      const full = await loadFullData();
-      const known = new Set(data.map(d => d.id));
-      for (const d of full) {
-        if (known.has(d.id)) continue;
-        data.push(d);
-        known.add(d.id);
-      }
-      const fullById = new Map(full.map(d => [d.id, d]));
-      for (const d of data) {
-        const fd = fullById.get(d.id);
-        if (!fd) continue;
-        d.rels.parents = fd.rels.parents;
-        d.rels.children = fd.rels.children;
-        d.rels.spouses = fd.rels.spouses;
-      }
-      // FCP wraps the data array in a `Data` class with its own internal
-      // id-keyed dictionary; the free version read state.data directly
-      // each updateTree, so push-and-mutate was enough. With FCP we have
-      // to call updateData() so it rebuilds its index — otherwise any
-      // focusOn for a person added by the merge throws "Datum not found".
-      chart.updateData(data as any);
-      fullDataMerged = true;
-      console.log(`[chart] full data merged (${data.length} nodes)`);
-      // The "this is me" seed-from-localStorage might have aborted on
-      // initial boot because the persisted id wasn't in the slice yet.
-      // Re-try now that everyone's loaded.
-      const stored = getStoredSelf();
-      if (stored && (!kinship.self_id || kinship.self_id !== stored) && data.find(d => d.id === stored)) {
-        applySelf(stored);
-      }
+    // main thread has cycles to spare.  Skipped if the boot already pulled
+    // it in to land on the persisted self.
+    if (!fullDataMerged) {
+      setTimeout(() => {
+        if ('requestIdleCallback' in window) {
+          (window as any).requestIdleCallback(ensureFullData, { timeout: 3000 });
+        } else {
+          ensureFullData();
+        }
+      }, 100);
     }
-    // Kick off full-data preload right after first paint, but only if the
-    // browser is idle and not busy with the chart layout.
-    setTimeout(() => {
-      if ('requestIdleCallback' in window) {
-        (window as any).requestIdleCallback(ensureFullData, { timeout: 3000 });
-      } else {
-        ensureFullData();
-      }
-    }, 100);
 
     // Focus history. Each recenter (search, modal "Focus tree", shift-click,
     // family-chart's own mini-tree expand arrow, etc.) pushes the previous
