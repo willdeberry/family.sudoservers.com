@@ -136,27 +136,38 @@ try {
     const CARD_H = 70;
     const card = chart
       .setCardHtml()
-      .setCardDisplay([
-        ['full name'],
-        ['lifespan'],
-        // Kinship line — empty string when self isn't set or the card
-        // is self itself, otherwise something like "second cousin
-        // twice removed". The wrapper around getKinship makes this a
-        // single-line function so card_display's I() helper keeps it
-        // as a function entry (rather than treating it as a string
-        // field lookup).
-        (d: any) => {
-          const ft = (window as any).__familytree;
-          return ft?.getKinship?.(d.id) || '';
-        },
-      ])
+      .setCardDisplay([['full name'], ['lifespan']])
       .setCardWidth(CARD_W)
       .setCardHeight(CARD_H)
       // Highlight the path from the hovered card back to the focused
       // person — same Ancestry-style affordance as in the demo. Only
       // exists on CardHtml, which is why we couldn't enable it back on
       // CardSvg.
-      .setOnHoverPathToMain();
+      .setOnHoverPathToMain()
+      // Kinship bubble in the bottom-right corner. Pattern lifted from
+      // the FCP kinship/basic-usage demo — a tiny pill that floats half
+      // off the card edge with the relationship label. We re-build the
+      // bubble each render rather than tracking add/remove state since
+      // d3's enter/update reuses the card element across updates.
+      .setOnCardUpdate(function (this: HTMLElement, d: any) {
+        // `this` is the `.card_cont` anchor; the visible card sits at
+        // `.card_cont > .card > .card-inner`.  Mini-tree preview cards
+        // pin the `f3-mini-tree-card` class on the inner `.card` and
+        // also set `runtime.mini` on the datum.  Either signal means
+        // skip — the bubble would dominate a 12px-tall card.
+        if (d?.runtime?.mini) return;
+        const cardEl = this.querySelector(':scope > .card');
+        if (!cardEl || cardEl.classList.contains('f3-mini-tree-card')) return;
+        const inner = cardEl.querySelector(':scope > .card-inner');
+        if (!inner) return;
+        inner.querySelector(':scope > .card-kinship-bubble')?.remove();
+        const label = kinshipMap[d?.data?.id];
+        if (!label) return;
+        const tag = document.createElement('div');
+        tag.className = 'card-kinship-bubble';
+        tag.textContent = label;
+        inner.appendChild(tag);
+      });
 
     card.setCardDim({ width: CARD_W, height: CARD_H });
 
@@ -719,6 +730,29 @@ try {
      top of long names like "William Dale DeBerry 1986 – ". */
   #family-chart .card_cont .card-label {
     padding-right: 28px;
+  }
+
+  /* Kinship bubble — themed to match the amber "You:" pill in the top
+     bar so the visual link between the self-marker and the relationship
+     labels reads as one system.  Anchored to the bottom-right corner
+     and overhangs slightly so it doesn't crowd the card text. */
+  #family-chart .card_cont .card-kinship-bubble {
+    position: absolute;
+    right: 6px;
+    bottom: -9px;
+    z-index: 2;
+    pointer-events: none;
+    background-color: #7c2d12;
+    color: #fef3c7;
+    border: 1px solid rgba(180, 83, 9, 0.7);
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
   }
 
   /* Connector lines: white on dark background */
