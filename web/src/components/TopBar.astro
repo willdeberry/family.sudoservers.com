@@ -57,13 +57,26 @@
     <span class="ml-1.5"><span id="stat-verified">…</span> verified</span>
   </div>
 
-  <!-- "You: <Name>" indicator — only visible when the visitor has
-       marked themselves via a person modal's "This is me" action.
-       The name area focuses the tree on them; the × clears the mark.
-       KinshipPlugin then shows relationship labels relative to this
-       person on every other card. Two buttons rather than one with
-       target-detection so each gets its own hover affordance / focus
-       ring / tooltip and the semantics read straight from the markup. -->
+  <!-- Self slot — one of two states lives here:
+         • #self-prompt: shown when no self is marked.  Clicking it
+           opens the search palette in "find yourself" mode.
+         • #self-pill: shown when self is marked.  Name area focuses
+           the tree; × clears the mark.
+       KinshipPlugin uses the marked self to label every other card
+       with its relationship. -->
+  <button
+    id="self-prompt"
+    type="button"
+    title="Find yourself in the tree to see how everyone's related"
+    class="hidden cursor-pointer items-center gap-2 rounded-md border border-dashed border-amber-700/40 bg-transparent px-2.5 py-1.5 text-sm text-amber-200/80 hover:border-amber-600/70 hover:bg-amber-900/20 hover:text-amber-100 sm:flex"
+  >
+    <svg class="h-4 w-4 text-amber-300/70" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2" />
+      <circle cx="9" cy="7" r="4" stroke-linecap="round" stroke-linejoin="round" />
+      <path stroke-linecap="round" stroke-linejoin="round" d="M20 8v6M23 11h-6" />
+    </svg>
+    <span>Find me</span>
+  </button>
   <div
     id="self-pill"
     style="display:none"
@@ -165,17 +178,20 @@
     (window as any).__auth?.signOut?.();
   });
 
-  // "You: …" self-marker pill. Visible only when the visitor has marked
-  // someone via the person modal's "This is me" action.
+  // Self slot — toggles between the "Find me" prompt and the
+  // "You: <Name>" pill based on whether a self id is marked.
   const selfPill = document.getElementById('self-pill');
   const selfPillName = document.getElementById('self-pill-name');
+  const selfPrompt = document.getElementById('self-prompt');
   function renderSelf(self: { id: string; displayName: string | null } | null) {
-    if (!selfPill || !selfPillName) return;
+    if (!selfPill || !selfPillName || !selfPrompt) return;
     if (self?.displayName) {
       selfPill.style.removeProperty('display');
       selfPillName.textContent = self.displayName;
+      selfPrompt.style.display = 'none';
     } else {
       selfPill.style.display = 'none';
+      selfPrompt.style.removeProperty('display');
     }
   }
   // Pick up the persisted choice once the chart bootstrap exposes
@@ -199,4 +215,22 @@
   document.getElementById('self-pill-clear')?.addEventListener('click', () => {
     (window as any).__familytree?.clearSelf?.();
   });
+  document.getElementById('self-prompt')?.addEventListener('click', () => {
+    document.dispatchEvent(new CustomEvent('familytree:open-search', {
+      detail: { mode: 'self' },
+    }));
+  });
+
+  // Pick the right initial state before the chart bootstrap fires its
+  // self-change event.  Reading localStorage directly avoids the brief
+  // flash of "Find me" when the visitor has already marked themselves.
+  try {
+    const seed = localStorage.getItem('ft:self-id');
+    if (!seed) renderSelf(null);
+    // If a self id is persisted, leave both elements hidden; the chart
+    // bootstrap will fire familytree:self-change with the display name
+    // once the data is loaded.
+  } catch {
+    renderSelf(null);
+  }
 </script>

@@ -16,6 +16,9 @@
       class="flex-1 border-0 bg-transparent text-sm text-stone-100 placeholder-stone-500 focus:outline-none focus:ring-0"
       autocomplete="off"
     />
+    <span id="search-mode-tag" class="hidden rounded bg-amber-900/40 px-2 py-0.5 text-xs font-medium text-amber-200 ring-1 ring-amber-700/40">
+      Find yourself
+    </span>
     <kbd class="rounded border border-stone-700 bg-stone-800 px-1.5 py-0.5 text-xs font-mono text-stone-400">esc</kbd>
   </div>
   <ul id="search-results" class="max-h-[50vh] overflow-y-auto p-2">
@@ -115,16 +118,34 @@
     document.querySelector('.hit-row[aria-selected="true"]')?.scrollIntoView({ block: 'nearest' });
   }
 
+  // Mode determines what selecting a result does:
+  //   'open' (default) — opens the person modal (existing behavior)
+  //   'self'           — sets that person as the visitor's "you" marker
+  // The mode is carried on the openPalette call rather than a global flag
+  // so a forgotten reset can't leak between unrelated opens.
+  type Mode = 'open' | 'self';
+  let currentMode: Mode = 'open';
+
   function selectResult(id: string) {
     const modal = document.getElementById('search-palette') as HTMLDialogElement;
     modal?.close();
-    window.dispatchEvent(new CustomEvent('familytree:open-person', { detail: { id } }));
+    if (currentMode === 'self') {
+      (window as any).__familytree?.setSelf?.(id);
+    } else {
+      window.dispatchEvent(new CustomEvent('familytree:open-person', { detail: { id } }));
+    }
   }
 
-  function openPalette() {
+  function openPalette(mode: Mode = 'open') {
     const modal = document.getElementById('search-palette') as HTMLDialogElement;
     const input = document.getElementById('search-input') as HTMLInputElement;
     if (!modal || !input) return;
+    currentMode = mode;
+    const tag = document.getElementById('search-mode-tag');
+    if (tag) tag.classList.toggle('hidden', mode !== 'self');
+    input.placeholder = mode === 'self'
+      ? 'Search for your name…'
+      : 'Search by name…';
     loadIndex();
     modal.showModal();
     input.value = '';
@@ -132,12 +153,18 @@
     render([], '');
   }
 
-  document.getElementById('search-trigger')?.addEventListener('click', openPalette);
+  document.getElementById('search-trigger')?.addEventListener('click', () => openPalette('open'));
+
+  // Cross-component open. TopBar's "Find me" prompt dispatches this with
+  // mode: 'self' to launch the palette in self-marker mode.
+  document.addEventListener('familytree:open-search', (e: any) => {
+    openPalette(e.detail?.mode || 'open');
+  });
 
   document.addEventListener('keydown', (e) => {
     if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
       e.preventDefault();
-      openPalette();
+      openPalette('open');
     }
   });
 
