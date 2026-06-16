@@ -1,7 +1,7 @@
 ---
 ---
 
-<header class="z-10 flex h-14 items-center gap-4 border-b border-stone-800 bg-[#171717] px-4">
+<header class="relative z-10 flex h-14 items-center justify-between gap-4 border-b border-stone-800 bg-[#171717] px-4">
   <div class="flex items-center gap-2">
     <div
       class="grid h-8 w-8 place-items-center rounded-lg bg-amber-700 text-amber-50 shadow-inner"
@@ -19,34 +19,54 @@
     </h1>
   </div>
 
-  <div class="flex-1"></div>
+  <!-- Center group, anchored to the viewport midline so search always
+       sits in the middle of the screen regardless of how wide the side
+       clusters grow.  Back stays glued to Search's left edge.  A mirror
+       of Back is appended after Search (visibility:hidden, aria-hidden)
+       so the group is symmetric — without it, Search would land offset
+       right of midline by half the Back+gap width. -->
+  <div class="pointer-events-none absolute left-1/2 flex -translate-x-1/2 items-center gap-2">
+    <button
+      id="nav-back"
+      type="button"
+      disabled
+      title="Back (Backspace)"
+      class="pointer-events-auto hidden items-center gap-1.5 rounded-md border border-stone-700 bg-stone-800 px-2.5 py-1.5 text-sm text-stone-400 hover:border-stone-600 hover:bg-stone-700 hover:text-stone-200 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-stone-800 disabled:hover:text-stone-400 sm:flex"
+    >
+      <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+      </svg>
+      <span>Back</span>
+    </button>
 
-  <button
-    id="nav-back"
-    type="button"
-    disabled
-    title="Back (Backspace)"
-    class="hidden items-center gap-1.5 rounded-md border border-stone-700 bg-stone-800 px-2.5 py-1.5 text-sm text-stone-400 hover:border-stone-600 hover:bg-stone-700 hover:text-stone-200 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-stone-800 disabled:hover:text-stone-400 sm:flex"
-  >
-    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-    </svg>
-    <span>Back</span>
-  </button>
+    <button
+      id="search-trigger"
+      type="button"
+      class="group pointer-events-auto flex items-center gap-2 rounded-md border border-stone-700 bg-stone-800 px-3 py-1.5 text-sm text-stone-400 hover:border-stone-600 hover:bg-stone-700 hover:text-stone-200"
+    >
+      <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M17 10a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+      <span class="hidden sm:inline">Search anyone…</span>
+      <kbd class="hidden rounded border border-stone-600 bg-stone-900 px-1.5 py-0.5 text-xs font-mono text-stone-400 sm:inline-block">
+        ⌘K
+      </kbd>
+    </button>
 
-  <button
-    id="search-trigger"
-    type="button"
-    class="group flex items-center gap-2 rounded-md border border-stone-700 bg-stone-800 px-3 py-1.5 text-sm text-stone-400 hover:border-stone-600 hover:bg-stone-700 hover:text-stone-200"
-  >
-    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M17 10a7 7 0 11-14 0 7 7 0 0114 0z" />
-    </svg>
-    <span class="hidden sm:inline">Search anyone…</span>
-    <kbd class="hidden rounded border border-stone-600 bg-stone-900 px-1.5 py-0.5 text-xs font-mono text-stone-400 sm:inline-block">
-      ⌘K
-    </kbd>
-  </button>
+    <span
+      aria-hidden="true"
+      class="invisible hidden items-center gap-1.5 rounded-md border border-stone-700 px-2.5 py-1.5 text-sm sm:flex"
+    >
+      <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+      </svg>
+      <span>Back</span>
+    </span>
+  </div>
+
+  <!-- Right cluster — Find me / self-pill / auth. Lives inside its own
+       flex so justify-between on the header pins it to the right edge. -->
+  <div class="flex items-center gap-4">
 
 
   <!-- Self slot — one of two states lives here:
@@ -115,6 +135,7 @@
     <button id="auth-signout" type="button" class="text-xs text-stone-400 hover:text-stone-200 underline">
       Sign out
     </button>
+  </div>
   </div>
 </header>
 
