@@ -76,32 +76,43 @@
            the tree; × clears the mark.
        KinshipPlugin uses the marked self to label every other card
        with its relationship. -->
+  <!-- Both visible on every viewport; the inner text collapses on
+       small screens so mobile gets an icon-only chip while desktop
+       keeps the full "Find me" / "You: <Name>" label. -->
   <button
     id="self-prompt"
     type="button"
     title="Find yourself in the tree to see how everyone's related"
-    class="hidden cursor-pointer items-center gap-2 rounded-md border border-dashed border-amber-700/40 bg-transparent px-2.5 py-1.5 text-sm text-amber-200/80 hover:border-amber-600/70 hover:bg-amber-900/20 hover:text-amber-100 sm:flex"
+    aria-label="Find yourself"
+    class="flex cursor-pointer items-center gap-2 rounded-md border border-dashed border-amber-700/40 bg-transparent px-2.5 py-1.5 text-sm text-amber-200/80 hover:border-amber-600/70 hover:bg-amber-900/20 hover:text-amber-100"
   >
     <svg class="h-4 w-4 text-amber-300/70" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2" />
       <circle cx="9" cy="7" r="4" stroke-linecap="round" stroke-linejoin="round" />
       <path stroke-linecap="round" stroke-linejoin="round" d="M20 8v6M23 11h-6" />
     </svg>
-    <span>Find me</span>
+    <span class="hidden sm:inline">Find me</span>
   </button>
   <div
     id="self-pill"
     style="display:none"
-    class="hidden items-center gap-px rounded-md border border-amber-700/50 bg-amber-900/30 text-sm text-amber-100 sm:flex"
+    class="flex items-center gap-px rounded-md border border-amber-700/50 bg-amber-900/30 text-sm text-amber-100"
   >
     <button
       id="self-pill-focus"
       type="button"
       title="Focus tree on you"
+      aria-label="Focus tree on you"
       class="flex cursor-pointer items-center gap-2 rounded-l-md px-2.5 py-1.5 hover:bg-amber-900/40"
     >
-      <span class="text-xs text-amber-300/70">You:</span>
-      <span id="self-pill-name" class="max-w-[140px] truncate"></span>
+      <!-- Mobile gets a filled person icon as the visual identity of
+           the chip (since the text label collapses).  Hidden at sm+
+           where the label takes over. -->
+      <svg class="h-4 w-4 text-amber-300/70 sm:hidden" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 12a5 5 0 100-10 5 5 0 000 10zm0 2c-4 0-8 2-8 6v2h16v-2c0-4-4-6-8-6z" />
+      </svg>
+      <span class="hidden text-xs text-amber-300/70 sm:inline">You:</span>
+      <span id="self-pill-name" class="hidden max-w-[140px] truncate sm:inline"></span>
     </button>
     <button
       id="self-pill-clear"
@@ -233,15 +244,12 @@
   });
 
   // Pick the right initial state before the chart bootstrap fires its
-  // self-change event.  Reading localStorage directly avoids the brief
-  // flash of "Find me" when the visitor has already marked themselves.
+  // self-change event.  The prompt defaults to visible (CSS `flex` with
+  // no inline override); if a self id is persisted we proactively hide
+  // it so the user doesn't see "Find me" flash before the pill
+  // replaces it.  The pill stays hidden via its own inline display:none.
   try {
     const seed = localStorage.getItem('ft:self-id');
-    if (!seed) renderSelf(null);
-    // If a self id is persisted, leave both elements hidden; the chart
-    // bootstrap will fire familytree:self-change with the display name
-    // once the data is loaded.
-  } catch {
-    renderSelf(null);
-  }
+    if (seed && selfPrompt) selfPrompt.style.display = 'none';
+  } catch {}
 </script>
