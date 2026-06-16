@@ -59,21 +59,37 @@
 
   <!-- "You: <Name>" indicator — only visible when the visitor has
        marked themselves via a person modal's "This is me" action.
-       Click the × icon to clear. KinshipPlugin then shows relationship
-       labels relative to this person on every other card. -->
-  <button
+       The name area focuses the tree on them; the × clears the mark.
+       KinshipPlugin then shows relationship labels relative to this
+       person on every other card. Two buttons rather than one with
+       target-detection so each gets its own hover affordance / focus
+       ring / tooltip and the semantics read straight from the markup. -->
+  <div
     id="self-pill"
-    type="button"
     style="display:none"
-    class="hidden items-center gap-2 rounded-md border border-amber-700/50 bg-amber-900/30 px-2.5 py-1.5 text-sm text-amber-100 hover:border-amber-600 hover:bg-amber-900/50 sm:flex"
-    title="Click to clear who you are"
+    class="hidden items-center gap-px rounded-md border border-amber-700/50 bg-amber-900/30 text-sm text-amber-100 sm:flex"
   >
-    <span class="text-xs text-amber-300/70">You:</span>
-    <span id="self-pill-name" class="max-w-[140px] truncate"></span>
-    <svg class="h-3 w-3 text-amber-300/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 6l12 12M18 6L6 18" />
-    </svg>
-  </button>
+    <button
+      id="self-pill-focus"
+      type="button"
+      title="Focus tree on you"
+      class="flex items-center gap-2 rounded-l-md px-2.5 py-1.5 hover:bg-amber-900/40"
+    >
+      <span class="text-xs text-amber-300/70">You:</span>
+      <span id="self-pill-name" class="max-w-[140px] truncate"></span>
+    </button>
+    <button
+      id="self-pill-clear"
+      type="button"
+      title="Clear who you are"
+      aria-label="Clear self-marker"
+      class="grid place-items-center rounded-r-md px-2 py-1.5 text-amber-300/70 hover:bg-amber-900/50 hover:text-amber-100"
+    >
+      <svg class="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 6l12 12M18 6L6 18" />
+      </svg>
+    </button>
+  </div>
 
   <!-- Auth pill. The GIS button renders inside #auth-signin-host when
        signed out; #auth-user shows name + sign-out when signed in. The
@@ -175,7 +191,12 @@
       if (self) renderSelf(self);
     }
   });
-  selfPill?.addEventListener('click', () => {
+  document.getElementById('self-pill-focus')?.addEventListener('click', () => {
+    const ft = (window as any).__familytree;
+    const self = ft?.getSelf?.();
+    if (self?.id) ft?.focusOn?.(self.id);
+  });
+  document.getElementById('self-pill-clear')?.addEventListener('click', () => {
     (window as any).__familytree?.clearSelf?.();
   });
 </script>
