@@ -130,7 +130,13 @@
     const modal = document.getElementById('search-palette') as HTMLDialogElement;
     modal?.close();
     if (currentMode === 'self') {
-      (window as any).__familytree?.setSelf?.(id);
+      const ft = (window as any).__familytree;
+      ft?.setSelf?.(id);
+      // Land on the picked person — same intent as a regular search hit.
+      // Modal's "This is me" doesn't focus because the user is already
+      // looking at that card, but reaching "Find me" via search means
+      // they expect a recenter.
+      ft?.focusOn?.(id);
     } else {
       window.dispatchEvent(new CustomEvent('familytree:open-person', { detail: { id } }));
     }
