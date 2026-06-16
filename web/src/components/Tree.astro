@@ -155,18 +155,22 @@ try {
         // pin the `f3-mini-tree-card` class on the inner `.card` and
         // also set `runtime.mini` on the datum.  Either signal means
         // skip — the bubble would dominate a 12px-tall card.
+        //
+        // The bubble lives on `.card` (not `.card-inner`) because FCP's
+        // base stylesheet sets `overflow: hidden` on `.card-inner` to
+        // clip the colored body — that clip also chops our overhanging
+        // pill.  `.card` is already `position: relative` (we set that
+        // for the info icon) so `bottom: -9px` overhangs cleanly.
         if (d?.runtime?.mini) return;
-        const cardEl = this.querySelector(':scope > .card');
+        const cardEl = this.querySelector<HTMLElement>(':scope > .card');
         if (!cardEl || cardEl.classList.contains('f3-mini-tree-card')) return;
-        const inner = cardEl.querySelector(':scope > .card-inner');
-        if (!inner) return;
-        inner.querySelector(':scope > .card-kinship-bubble')?.remove();
+        cardEl.querySelector(':scope > .card-kinship-bubble')?.remove();
         const label = kinshipMap[d?.data?.id];
         if (!label) return;
         const tag = document.createElement('div');
         tag.className = 'card-kinship-bubble';
         tag.textContent = label;
-        inner.appendChild(tag);
+        cardEl.appendChild(tag);
       });
 
     card.setCardDim({ width: CARD_W, height: CARD_H });
