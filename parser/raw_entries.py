@@ -15356,20 +15356,59 @@ ENTRIES.append({
     ],
 })
 
-# ── User submission via family.sudoservers.com (issue #1) ────────────────────
+# ── User submission via family.sudoservers.com (issues #1, #34–#37) ──────────
 ENTRIES.append({
     "code": "12243122",
     "name": "Crystal Nicole DeBerry",
     "sex": "F",
     "born": "12 Jun 1990",
     "born_place": "Brandon, FL",
-    "spouses": [{"name": "David Holloway"}],
+    "spouses": [{
+        "name": "David Michael Holloway",
+        "born": "11 Aug 1991",
+        "born_place": "Salisbury, MD",
+        "married": "16 May 2015",
+    }],
     "source": {"pdf": "user-submission", "page": None},
     "verification": {
         "status": "verified",
         "source": "user-submission",
-        "lastChecked": "2026-06-15",
-        "notes": "Submitted by Will DeBerry via family.sudoservers.com (issue #1).",
+        "lastChecked": "2026-06-16",
+        "notes": "Submitted by Will DeBerry via family.sudoservers.com (issue #1); spouse details and marriage date added via Crystal Holloway submissions (issues #36, #37); children added via issues #34, #35.",
+    },
+    "children": [
+        {"code": "122431221", "name": "Kayden Michael Holloway", "born": "12 Jul 2012"},
+        {"code": "122431222", "name": "Kole Jax Holloway", "born": "10 Feb 2017"},
+    ],
+})
+
+ENTRIES.append({
+    "code": "122431221",
+    "name": "Kayden Michael Holloway",
+    "sex": "M",
+    "born": "12 Jul 2012",
+    "born_place": "Brandon, FL",
+    "source": {"pdf": "user-submission", "page": None},
+    "verification": {
+        "status": "verified",
+        "source": "user-submission",
+        "lastChecked": "2026-06-16",
+        "notes": "Submitted by Crystal Holloway via family.sudoservers.com (issue #34).",
+    },
+})
+
+ENTRIES.append({
+    "code": "122431222",
+    "name": "Kole Jax Holloway",
+    "sex": "M",
+    "born": "10 Feb 2017",
+    "born_place": "Brandon, FL",
+    "source": {"pdf": "user-submission", "page": None},
+    "verification": {
+        "status": "verified",
+        "source": "user-submission",
+        "lastChecked": "2026-06-16",
+        "notes": "Submitted by Crystal Holloway via family.sudoservers.com (issue #35).",
     },
 })
 
