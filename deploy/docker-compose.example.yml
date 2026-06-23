@@ -1,0 +1,37 @@
+# Stub for merging into your existing stack, or running on its own with:
+#   docker compose -f deploy/docker-compose.example.yml up -d
+#
+# Builds a self-contained image from the repo root — no host-side build or
+# rsync step required. The Dockerfile handles the data transform, npm build,
+# and packages dist/ + prod node_modules into the image.
+#
+# Assumptions (adjust to your stack):
+#  - Your nginx container is on a shared docker network. The nginx config
+#    proxies all traffic to http://family-api:4321 over that network.
+#  - GOOGLE_CLIENT_ID, GITHUB_TOKEN, GITHUB_REPO are available to the shell
+#    that runs `docker compose up`. See web/.env.example.
+
+services:
+  family-api:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: family-api
+    restart: unless-stopped
+    environment:
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:?GOOGLE_CLIENT_ID is required}
+      GITHUB_TOKEN: ${GITHUB_TOKEN:?GITHUB_TOKEN is required}
+      GITHUB_REPO: ${GITHUB_REPO:-willdeberry/family.sudoservers.com}
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "--method=POST", "--header=Content-Type: application/json", "--body-data={}", "http://127.0.0.1:4321/api/submit"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    networks:
+      - default
+
+networks:
+  default:
+    name: homelab-net
+    external: true

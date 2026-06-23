@@ -1,0 +1,9 @@
+.git
+.venv
+.claude
+web/node_modules
+web/dist
+web/.astro
+ocr/
+parser/
+schema/
