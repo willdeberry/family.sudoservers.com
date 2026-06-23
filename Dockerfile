@@ -5,6 +5,8 @@ COPY web/package*.json ./web/
 WORKDIR /repo/web
 RUN npm ci
 COPY web/ .
+ARG PUBLIC_GOOGLE_CLIENT_ID
+ENV PUBLIC_GOOGLE_CLIENT_ID=${PUBLIC_GOOGLE_CLIENT_ID}
 RUN npm run build
 
 FROM node:22-alpine
