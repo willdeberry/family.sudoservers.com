@@ -25,7 +25,7 @@ services:
       GITHUB_TOKEN: ${GITHUB_TOKEN:?GITHUB_TOKEN is required}
       GITHUB_REPO: ${GITHUB_REPO:-willdeberry/family.sudoservers.com}
     healthcheck:
-      test: ["CMD", "wget", "-qO-", "--method=POST", "--header=Content-Type: application/json", "--body-data={}", "http://127.0.0.1:4321/api/submit"]
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:4321/"]
       interval: 30s
       timeout: 5s
       retries: 3
