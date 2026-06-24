@@ -12,7 +12,7 @@
 #    that runs `docker compose up`. See web/.env.example.
 
 services:
-  family-api:
+  family-tree:
     build:
       context: ..
       dockerfile: Dockerfile
